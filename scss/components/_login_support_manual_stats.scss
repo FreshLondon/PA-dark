@@ -1,0 +1,222 @@
+/* LOGIN, SUPPORT, MANUAL & STATS
+   -------------------------------------------------------*/
+#page_login,
+#page_support,
+#page_manual {
+  #page {
+    display: initial;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  #header {
+    height: 6.5rem;
+  }
+
+  #tnav {
+    margin: -2.25rem 0.5rem 0;
+  }
+
+  #contents_header,
+  #contents_footer {
+    display: none;
+  }
+}
+
+#left_menu_closed, #right_menu_closed {
+  display: none;
+}
+
+
+#tnav_links {
+  display: flex;
+}
+
+#page_login,
+#page_support {
+  #contents {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+
+    .header {
+      height: 2rem;
+    }
+  }
+
+  .container {
+    grid-column: 2 / 3;
+  }
+
+  input[type="submit"] {
+    display: block;
+    margin: 0 auto 1rem;
+  }
+}
+
+#page_login form.login label, #page_support form label {
+  font-size: var(--txt-small);
+  text-transform: uppercase;
+  width: 80%;
+  margin: 0 auto;
+}
+
+#page_login {
+  #contents {
+    margin: 1rem 0;
+
+    .header::before {
+      content: 'Planetarion Login ';
+    }
+
+    .maintext p:last-child {
+      display: none;
+    }
+  }
+
+  .container {
+    box-shadow: 0 1px 5px rgba(255, 255, 255, 0.12);
+    border-radius:0.5rem;
+    overflow: hidden;
+
+    .header:first-child {
+      margin-top: 0;
+    }
+
+    form {
+      width: 100%;
+
+      &.login {
+        text-align: center;
+
+        input[type="submit"] {
+          margin: 0 auto;
+        }
+
+        .g-recaptcha {
+          margin: 0 auto 18px;
+          display: table;
+        }
+      }
+
+      input:not([type="submit"]) {
+        width: 80%;
+        margin: 0 auto 1rem;
+      }
+    }
+  }
+}
+
+
+#page_support ~ div[id^="pabox"],
+#page_manual ~ div[id^="pabox"],
+#support + p {
+  display: none;
+}
+
+#page_support {
+  form {
+    label {
+      width: 100%;
+    }
+
+    input:not([type="submit"]),
+    select {
+      width: 100%;
+      margin: 0 auto 1rem;
+      color: var(--col-text-main);
+    }
+
+    textarea {
+      width: 100%;
+      min-width: 35rem;
+      min-height: 15rem;
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+#page_manual {
+  #contents {
+    display: grid;
+    grid-template-columns: 12rem minmax(12rem, 60rem) 1fr;
+    grid-column-gap: 0.5rem;
+  }
+
+  #menu {
+    margin: 0.5rem 0 0.5rem 0.5rem;
+    grid-column: 1 / 2;
+
+    li {
+      margin: 0;
+    }
+
+    .entry_sep {
+      display: block;
+      margin: 0.5rem;
+      border-top: 1px solid var(--col-panel-dark);
+    }
+
+    #entry_search + .entry_sep + .entries {
+      display: none;
+    }
+  }
+
+  .entries a {
+    font-weight: normal;
+    margin-left: 0.5rem;
+    text-indent: -0.5rem;
+  }
+
+  input[type="text"] {
+    max-width: 10.5rem;
+  }
+
+  span[style="font-size: 13pt;"] {
+    display: block;
+    font-size: 1.5rem !important;
+    border-bottom: 1px solid var(--col-panel-dark);
+  }
+
+  span[style="font-size: 12pt;"] {
+    display: block;
+    font-size: 1.15rem !important;
+    margin-bottom: 0;
+  }
+
+  span[style="color: lime;"] {
+    color: var(--col-text-main) !important;
+    font-size: var(--txt-small);
+    margin-left: 1rem;
+    padding-left: 0.5rem;
+    border-left: 5px solid var(--col-alert-dark);
+    text-transform: uppercase;
+    /* font-weight: bold; */
+  }
+
+  .tech_table td:last-child {
+    color: var(--col-text-main);
+    font-size: var(--txt-small);
+    vertical-align: middle;
+  }
+
+  h2 {
+    color: var(--col-text-main);
+    background: var(--col-panel-light);
+    background: linear-gradient(135deg, var(--col-panel-light) 0%, var(--col-panel-dark) 100%);
+    text-transform: initial;
+    font-size: 1rem;
+  }
+}
+
+.stats_tbl {
+  th, td {
+    background-color: var(--col-panel-light);
+    padding: 0.15rem 0.5rem;
+  }
+
+  th[colspan="17"] {
+    background-color: transparent;
+    color: white;
+  }
+}

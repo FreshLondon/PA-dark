@@ -1,0 +1,34 @@
+// lets define here all the separated SCSS files to compile into one..
+// fingers crossed they'll all get useful naming conventions to help with organisation!
+//
+// necessary stuff, mixins etc
+@import "lib/mixins";
+@import "lib/variables";
+//
+// start the actual styles here:
+@import "components/global";
+@import "components/top_bar";
+@import "components/menu";
+@import "components/planet_details";
+@import "components/page_content";
+@import "components/overview";
+@import "components/galaxy_forum";
+@import "components/mining";
+@import "components/research_construction_waves";
+@import "components/population";
+@import "components/covert_ops";
+@import "components/production";
+@import "components/fleets";
+@import "components/foreign_affairs";
+@import "components/login_support_manual_stats";
+@import "components/universe";
+@import "components/galaxy";
+@import "components/alliance_defence";
+@import "components/history";
+@import "components/news";
+@import "components/bcalc";
+@import "components/scans";
+//
+@import "components/forms";
+@import "components/buttons_links";
+@import "components/tables";

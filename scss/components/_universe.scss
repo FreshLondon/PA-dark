@@ -1,0 +1,123 @@
+#page_universe {
+  #contents {
+    .container {
+      &:nth-last-child(2),
+      &:nth-last-child(3) {
+        table {
+          tr {
+            th,
+            td {
+              width: auto !important;
+
+              &:nth-child(1) {
+                flex: 2;
+              }
+
+              &:nth-child(2) {
+                flex: 2;
+              }
+
+              &:nth-child(3) {
+                flex: 2;
+              }
+
+              &:nth-child(4) {
+                flex: 7;
+              }
+
+              &:nth-child(5) {
+                flex: 6;
+              }
+
+              &:nth-child(6) {
+                flex: 2;
+              }
+
+              &:nth-child(7) {
+                flex: 2;
+              }
+
+              &:nth-child(8) {
+                flex: 3;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    table {
+      a {
+        color: $color-text;
+      }
+
+      tr {
+        display: flex;
+        justify-content: space-between;
+        margin: 2px 0;
+
+        &:first-child th {
+          font-weight: bold;
+          background: $color-borders;
+          color: $color-text;
+          padding: 12px 0;
+
+          &.right {
+            padding-right: 5px;
+          }
+        }
+
+
+        td {
+          &.moc,
+          &.mow,
+          &.mod,
+          &.gc {
+            color: $color-text;
+          }
+        }
+      }
+    }
+  }
+}
+
+#intel {
+  tr {
+    th,
+    td {
+      color: $color-primary;
+    }
+  }
+}
+
+
+#load_box {
+  background: $color-borders;
+  border: 1px solid $color-primary;
+  color: $color-offwhite;
+}
+
+
+.relations_own_member,
+.relations_neutral,
+.relations_nap,
+.relations_war,
+.relations_allied {
+  outline: none;
+}
+
+.relations_war {
+  background: rgba($color-negative, 0.25);
+}
+
+.relations_nap {
+  background: rgba($color-neutral, 0.2);
+}
+
+.relations_allied {
+  background: rgba($color-positive, 0.25);
+}
+
+.relations_own_member {
+  background: rgba($color-own, 0.25);
+}

@@ -1,0 +1,11 @@
+table {
+  margin-bottom: 1rem;
+}
+
+table tr:first-child th {
+  font-weight: bold;
+}
+
+th, td {
+  vertical-align: middle;
+}

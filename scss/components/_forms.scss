@@ -1,0 +1,75 @@
+
+#page table input[type="submit"] {
+  margin: 0;
+}
+
+input,
+.input,
+textarea,
+select,
+.checkbox {
+  font-family: "Ubuntu", "Lato", "Open Sans", sans-serif;
+  background-color: $color-borders;
+  border: 1px solid $color-primary;
+  color: $color_text;
+  font-size: 1rem;
+  height: 1.5rem;
+}
+
+input[type="radio"] {
+  vertical-align: -7px;
+}
+
+option {
+  font-family: "Ubuntu", "Lato", "Open Sans", sans-serif;
+  background-color: var(--col-panel-light);
+}
+
+input[type="text"],
+input[type="number"],
+input[type="email"],
+input[type="password"] {
+  padding: 0.25rem !important;
+  color: $color_text;
+  background-color: $color-borders;
+}
+
+
+input[type="checkbox"] {
+  position: relative;
+  vertical-align: -0.25rem;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  width: 1rem;
+  height: 1rem;
+  background-color: $color-borders;
+  cursor: pointer;
+  outline: none;
+  transition: 0.3s;
+
+  &:checked::before {
+    display: block;
+    content: '\2714';
+    font-weight: bold;
+    color: $color-primary;
+    font-size: 1.2rem;
+    position: absolute;
+    top: -0.5rem;
+  }
+}
+
+input[type="checkbox"],
+select {
+  background-color: $color-borders !important;
+  color: $color_text !important;
+}
+
+.checkbox > input:active {
+  border: 1px solid $color-primary;
+}
+
+textarea {
+  min-height: 5rem;
+}

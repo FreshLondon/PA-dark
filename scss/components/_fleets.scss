@@ -1,0 +1,51 @@
+/* FLEETS
+   -------------------------------------------------------*/
+
+#fleet_overview {
+  tr {
+    &.mission_defend,
+    &.mission_attack,
+    &.mission_return {
+      .btn {
+        color: $color-primary;
+        //border: 1px solid $color-primary;
+        background: transparent !important;
+        padding: 0 2px;
+        font-size: 14px;
+        &:hover {
+          color: black;
+          background: $color-primary !important;
+        }
+      }
+    }
+  }
+}
+
+#base_behavior {
+  p {
+    color: $color-offwhite;
+  }
+
+  input[type="submit"] {
+    margin: 0;
+  }
+}
+
+th.superhighlight {
+  color: $color-white;
+}
+
+#d_from,
+#d_num,
+#d_to {
+  border: 0 !important;
+
+  th,
+  td {
+    color: $color-offwhite;
+  }
+
+  a:hover {
+    color: $color-primary-dark;
+  }
+}

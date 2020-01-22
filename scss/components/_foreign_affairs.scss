@@ -1,0 +1,36 @@
+/* FOREIGN AFFAIRS
+   -------------------------------------------------------*/
+#page_politics #tab1 .container:first-child .header::before {
+  content: 'Galaxy Status ';
+}
+
+#galaxy_banner {
+  .header::before {
+    content: 'Galaxy Banner ';
+  }
+
+  + script + .container {
+    .header {
+      display: none;
+    }
+
+    .maintext > p {
+      font-weight: bold;
+      background: var(--col-panel-light);
+      background: linear-gradient(135deg, var(--col-panel-light) 0%, var(--col-panel-dark) 100%);
+      margin-bottom: 1rem;
+
+      .superhighlight {
+        display: inline-block;
+        padding: 0.5rem 0 0.25rem;
+        font-size: 1.3rem;
+      }
+
+    }
+  }
+}
+
+.tablesort_asc,
+.tablesort_desc {
+  color: $color-primary;
+}

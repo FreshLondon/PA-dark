@@ -1,0 +1,83 @@
+/* Top Bar
+   -------------------------------------------------------*/
+//#top,
+#page_login #header,
+#page_support #header,
+#page_manual #header {
+  width: 100% !important;
+  padding: 0.5rem;
+  background: $color-black-dark;
+  background: linear-gradient(180deg, $color-black-light 0%, $color-black-medium 15%, $color-black-dark 100%);
+}
+#top {
+  display: none;
+}
+
+#logo {
+  display: inline-block;
+  margin: 0;
+  line-height: 1;
+
+  &:before, &:after {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: $color-offwhite;
+  }
+
+  &:before {
+    content: 'Planetarion';
+    font-size: 2.5rem;
+  }
+
+  &:after {
+    display: block;
+    content: 'The original space combat browser game';
+    font-size: var(--txt-small);
+  }
+
+  &:hover {
+    text-decoration: none;
+
+    &:before, &:after {
+      color: var(--col-alert-light);
+    }
+  }
+}
+
+#bar_forums,
+#bar_manual,
+#bar_logout,
+#bar_support,
+#bar_portal,
+#bar_login,
+#bar_signup {
+  span {
+    display: block;
+  }
+}
+
+#tnav {
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+.tnav_link {
+  a {
+    margin: 0;
+
+    &:hover {
+      color: black;
+      text-decoration: none;
+
+      span {
+        color: black;
+        background: $color-primary;
+      }
+    }
+  }
+
+  span {
+    padding: 0.25rem 1rem;
+  }
+}

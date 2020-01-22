@@ -1,0 +1,314 @@
+/* Name:       Planetarion Modern - Light
+   Version:    0.5b
+   Date:       05-01-2020
+   Author:     Leshy
+
+
+   Default colors and values
+   -------------------------
+   Customise these values to create alternative colour
+   schemes. The colour value below the variables sets the
+   text color on alternate buttons as used for the news
+   indicator and the battle calc. Adjust this if a light
+   background colour is chosen for these buttons.
+   -------------------------------------------------------*/
+:root {
+  font-size: 1rem;
+  --col-text-main: #111111;
+  --col-text-highlight: #fefefe;
+  --col-accent-light: #75b44a;
+  --col-accent-dark: #2ba87e;
+  --col-header-light: #4d5154;
+  --col-header-medium: #384147;
+  --col-header-dark: #010304;
+  --col-panel-light: #f1f1f1;
+  --col-panel-dark: #e1e1e1;
+  --col-background: #fefefe;
+  --col-alert-light: #f49915;
+  --col-alert-dark: #c93716;
+  --col-terran: #a18181;
+  --col-cathaar: #4d88bc;
+  --col-xandathrii: #2ba87e;
+  --col-zikonian: #c93716;
+  --col-eitraides: #111111;
+  --txt-small: 0.85rem;
+}
+
+
+/* Remove most template background images
+   -------------------------------------------------------*/
+body, .pages, #top, #logo, #tnav, #bar_manual, #bar_support, #bar_portal, #bar_forums, #bar_logout, #bar_login, #bar_signup, #menu_top, .menu_grp, #menu_overview, #menu_preferences, #menu_logout, #menu_bottom, #header, #header_planet, #header_mail, #header_news, #header_tick, #header_metal, #header_crystal, #header_eonium, #header_asteroids, #header_value, #header_xp, #header_score, #header_rank, #planet_summary_construction, #planet_summary_research, #planet_summary_production, #planet_summary_footer, #contents_header, #contents_information, .container, #contents_footer, #tab_links, #footer, #important_messages_contents_header, #important_messages_contents_footer, #page_manual .entries, #page_manual .entry_sep, #entry_search {
+  background: none;
+}
+
+/* Remove fixed dimensions from elements where necessary
+   -------------------------------------------------------*/
+.pages, #page, #logo, #tnav, #bar_manual, #bar_support, #bar_portal, #bar_forums, #bar_login, #bar_logout, #contents_header, #contents_information, .container, #header_planet, #menu, .menu_grp, .menu_grp li, #time_loaded, #header, #planet_summary, #tab_links, .research_current, .research_next, .construction_info, .construction_build, .scan_info, .training_info, .scan_action, .training_info .resources li, .training_info .resources li .textvalue, .scan_action, .training_amounts, #security_redundancy_form table, #production_form table .resources li .textvalue, .production_orders table, #full_page, #bcalc, #my_bcalcs, .forum_thread_actions {
+  width: auto !important;
+}
+
+#logo, #tnav,
+.tnav_link a,
+.header, h2,
+#def_side, #att_side {
+  height: auto;
+}
+
+#page, #contents {
+  min-height: auto;
+  padding-bottom: 0;
+}
+
+/* Standard Elements
+   -------------------------------------------------------*/
+* {
+  box-sizing: border-box;
+  float: none !important;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body,
+p,
+td,
+th,
+input {
+  font-family: "Ubuntu", "Lato", "Open Sans", sans-serif;
+  font-size: 1rem;
+  line-height: 1.4;
+  color: $color-offwhite;
+}
+
+body {
+  background-color: $color-background;
+}
+
+th {
+  font-size: var(--txt-small);
+  text-transform: uppercase;
+}
+
+
+option {
+  background-color: var(--col-panel-light) !important;
+  color: var(--col-text-main) !important;
+}
+
+
+/* Page Outline
+   -------------------------------------------------------*/
+
+#page {
+  position: relative;
+  max-width: 80rem;
+  padding: 3rem 0.5rem 0;
+  display: grid;
+  grid-template-columns: 12rem 1fr 1fr;
+  grid-template-rows: auto 1fr 1rem;
+  grid-column-gap: 0.5rem;
+}
+
+
+/* OTHER
+   ---------------------------------*/
+#important_messages_contents {
+  width: 80%;
+  background: $color-black-medium !important;
+  border: 0;
+  color: var(--col-text-main);
+  padding: 0.25rem 0.5rem;
+  white-space: initial;
+  box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, 0.4);
+}
+
+#mail_new {
+  background: $color-positive;
+  //background: linear-gradient(135deg, $color-primary 0%, $color-primary-dark 100%);
+  color: $color-offwhite !important;
+}
+
+#news_new {
+  background: $color-neutral;
+  //background: linear-gradient(170deg, var(--col-alert-light) 0%, var(--col-alert-dark) 100%);
+  color: $color-offwhite !important;
+}
+
+#message_form {
+  width: 60rem;
+  max-width: 100%;
+  margin: 0 auto;
+
+  #to {
+    display: inline-block;
+    margin-left: 4rem;
+  }
+
+  #subject {
+    display: inline-block;
+    margin-left: 1.7rem;
+    width: calc(100% - 6rem);
+  }
+
+  #message_body {
+    display: inline-block;
+    vertical-align: -14rem;
+    width: calc(100% - 6rem) !important;
+    margin-left: 1.1rem;
+    height: 15rem;
+  }
+
+  br {
+    display: none;
+  }
+
+  #charsleft {
+    display: block;
+  }
+
+  + p {
+    font-size: var(--txt-small);
+  }
+}
+
+#page_messages #tab1 .container {
+  &:nth-child(2) .header::before {
+    content: 'Send recall message';
+  }
+
+  &:nth-child(3) {
+    .header::before {
+      content: 'Messages';
+    }
+
+    table th {
+      text-transform: initial;
+    }
+  }
+}
+
+.mail_unread th {
+  color: $color-primary;
+}
+
+#page_messages {
+  a[onclick^="read"],
+  a[onclick^="reply"],
+  a[href*='action=delete'],
+  a[href*='action=report'] {
+    display: inline-block;
+    position: relative;
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  img {
+    display: none !important;
+  }
+
+  &:after {
+    position: absolute;
+    top: 0;
+    left: 1px;
+    color: var(--col-zikonian);
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+  }
+
+  a[onclick^="read"]::after {
+    content: '\2709';
+    color: var(--col-text-main);
+  }
+
+  a[onclick^="reply"]::after {
+    content: '\21a9';
+    color: $color-primary-dark;
+  }
+
+  a[href*='action=report']::after {
+    content: '\26a0';
+    color: var(--col-alert-light);
+  }
+
+  a[href*='action=delete']::after {
+    content: '\2716';
+    color: var(--col-zikonian);
+  }
+}
+
+#page_alliance #notice + .container .header {
+  display: none;
+}
+
+#alliance_menu {
+  a {
+    display: inline-block;
+    margin: 8px 0;
+    padding: 0.25rem 0.5rem;
+    color: $color-primary;
+    //border: 1px solid $color-primary;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+
+    &:hover {
+      text-decoration: none;
+      border: none;
+      color: black;
+      background: $color-primary;
+      //background: linear-gradient(135deg, $color-primary 0%, $color-primary-dark 100%);
+    }
+  }
+}
+
+.important_message {
+  .title {
+    display: block;
+    padding: 0.5rem;
+    font-size: 1rem;
+    background: var(--col-panel-light);
+    background: linear-gradient(135deg, var(--col-panel-light) 0%, var(--col-panel-dark) 100%);
+  }
+
+  .time {
+    display: block;
+    font-size: var(--txt-small);
+    margin: 0.25rem 0.5rem 1rem;
+  }
+
+  p {
+    margin: 0.5rem;
+  }
+}
+
+#page_journal #notice + .container .header {
+  display: none;
+}
+
+
+/* MEDIA QUERIES
+   ---------------------------------*/
+@include respond-below(md) {
+  :root {
+    font-size: 14px;
+  }
+
+  #page {
+    grid-template-columns: 12rem 1fr;
+    grid-template-rows: 1fr 1fr auto 1rem;
+    grid-row-gap: 0.5rem;
+  }
+
+  #menu {
+    grid-row: 1 / 4;
+  }
+
+  #planet_summary {
+    grid-column: 2 / 3;
+  }
+}

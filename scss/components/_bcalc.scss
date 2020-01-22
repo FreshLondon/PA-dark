@@ -1,0 +1,287 @@
+/* BCALC
+   ---------------------------------*/
+
+//#full_page,
+//#bcalc {
+//  max-width: 72rem;
+//}
+
+#page_bcalc {
+  #contents_header {
+    display: block;
+    width: 100%;
+    background: $color-borders;
+    //background: linear-gradient(180deg, $color-black-light 0%, $color-black-medium 15%, $color-black-dark 100%);
+    color: $color-offwhite;
+    position: relative;
+    height: 2rem;
+
+    &:before {
+      content: 'Planetarion Battle Calculator';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      text-align: center;
+      font-size: var(--txt-small);
+      text-transform: uppercase;
+      font-weight: bold;
+      padding: 0.5rem 0;
+    }
+  }
+}
+
+#bcalc {
+
+  input {
+    color: $color-offwhite;
+    background-color: $color-borders;
+  }
+
+  option {
+    background-color: $color-borders;
+  }
+
+  th,
+  td {
+    color: $color-offwhite;
+    font-size: var(--txt-small);
+    white-space: nowrap;
+
+    .t1 + {
+      background-color: red !important;
+      color: $color-offwhite !important;
+    }
+
+    &.def_total,
+    &.att_total {
+      color: $color-offwhite;
+    }
+
+    &.def_emped,
+    &.att_emped {
+      color: var(--col-cathaar);
+    }
+
+    &.def_killed,
+    &.att_killed {
+      color: var(--col-zikonian);
+    }
+
+    &.def_stolen,
+    &.att_stolen {
+      color: var(--col-alert-light);
+    }
+  }
+
+  td {
+    &.def_value_lost,
+    &.att_score_lost {
+      color: var(--col-zikonian);
+    }
+
+    &.def_value_gained,
+    &.att_score_gained {
+      color: $color-primary-dark;
+    }
+  }
+
+  #def_side {
+    background: rgba($color-positive, .4);
+    //background: linear-gradient(135deg, $color-primary 0%, $color-primary-dark 100%);
+    color: $color-offwhite;
+    padding-bottom: 0.25rem;
+  }
+
+  #att_side {
+    background: rgba($color-negative, .35);
+    //background: linear-gradient(170deg, var(--col-alert-light) 0%, var(--col-alert-dark) 100%);
+    padding-bottom: 0.25rem;
+  }
+
+  .att_controls input,
+  input[onclick*="att"]:not([type="checkbox"]) {
+    background: var(--col-alert-light);
+    background: linear-gradient(170deg, var(--col-alert-light) 0%, var(--col-alert-dark) 100%);
+    padding-bottom: 0.25rem;
+
+    &:hover {
+      background: $color-black-light;
+      background: linear-gradient(170deg, $color-black-light 0%, $color-black-dark 100%);
+      padding-bottom: 0.25rem;
+      color: var(--text-main);
+    }
+  }
+
+  #att_add_to,
+  .att_filter,
+  #att_show input[type="checkbox"],
+  #att_table input,
+  #att_table select {
+    //border-color: rgba($color-negative, .45);
+    border-color: $color-primary;
+
+    &:before {
+      color: $color-negative;
+    }
+  }
+
+  #def_add_to,
+  .def_filter,
+  #def_show input[type="checkbox"],
+  #def_table input,
+  #def_table select {
+    //border-color: rgba($color-positive, .45);
+    border-color: $color-primary;
+
+    &:before {
+      color: $color-positive;
+    }
+  }
+
+  .global_controls {
+    padding: 0 0.5rem 0.5rem;
+  }
+
+  .def_ter,
+  .att_ter {
+    th,
+    td {
+      //color: var(--col-terran);
+      background-color: rgba($color-terran, 0.3);
+    }
+  }
+
+  .def_cat,
+  .att_cat {
+    th,
+    td {
+      //color: var(--col-cathaar);
+      background-color: rgba($color-cathaar, 0.3);
+    }
+  }
+
+  .def_xan,
+  .att_xan {
+    th,
+    td {
+      //color: var(--col-xandathrii);
+      background-color: rgba($color-xandathrii, 0.3);
+    }
+  }
+
+  .def_zik,
+  .att_zik {
+    th,
+    td {
+      //color: var(--col-zikonian);
+      background-color: rgba($color-zikonian, 0.3);
+    }
+  }
+
+  .def_etd,
+  .att_etd {
+    th,
+    td {
+      //color: var(--col-eitraides);
+      background-color: rgba($color-eitraides, 1);
+    }
+  }
+
+  span[onmouseover] {
+    cursor: default;
+  }
+
+  #def_table,
+  #att_table {
+    td {
+      &:nth-child(2) {
+        input {
+          background-color: $color-borders;
+        }
+      }
+    }
+  }
+
+  .def_report_fleet,
+  .def_report_salvage,
+  .att_report_fleet {
+    tr {
+      &:nth-child(2) {
+        th {
+
+          font-weight: bold;
+        }
+      }
+    }
+  }
+
+  #att_war + .att_row_sep {
+    height: 4.35rem;
+  }
+
+  input[id^="att_race"] {
+    border-color: var(--col-alert-light);
+  }
+}
+
+#def_value_table td:first-child, #att_score_table td:first-child {
+  width: 60%;
+}
+
+
+#bcalc tr:nth-child(4) .global_controls,
+#def_table tr:nth-last-child(-n+3),
+#att_table tr:nth-last-child(-n+5),
+.def_ter,
+.att_ter,
+.def_cat,
+.att_cat,
+.def_xan,
+.att_xan,
+.def_zik,
+.att_zik,
+.def_etd,
+.att_etd {
+  background-color: $color-borders;
+}
+
+#scans_area {
+  background-color: $color-borders;
+  height: 3rem;
+}
+
+
+#my_bcalcs,
+#add_other,
+#add_own,
+#fleet_select_box,
+#side_select_box {
+  p {
+    color: $color-offwhite;
+  }
+
+  .right {
+    padding-right: 0;
+
+    a {
+      font-weight: bold;
+    }
+  }
+
+}
+
+#add_other input[type="number"] {
+  background-color: var(--col-background);
+  color: var(--col-text-main);
+}
+
+#my_bcalcs a:hover,
+#add_own a:hover,
+#add_other a:hover,
+#fleet_select_box a:hover,
+#side_select_box a:hover,
+#add_own th,
+#con_fleets a:hover {
+  color: $color-primary;
+}

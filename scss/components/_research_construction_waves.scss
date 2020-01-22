@@ -1,0 +1,264 @@
+/* RESEARCH, CONSTRUCTION & WAVES
+   -------------------------------------------------------*/
+.research {
+  border: 0;
+}
+
+.branch_name h3,
+.construction_info .title,
+.scans .title,
+.governments .title {
+  display: block;
+  padding: 0.25rem 0.5rem;
+  margin-bottom: 0.5rem;
+  background: $color-borders;
+  //background: linear-gradient(135deg, var(--col-panel-light) 0%, var(--col-panel-dark) 100%);
+  font-size: 1rem;
+}
+
+.research,
+.research_branch {
+  .title {
+    display: inline-block;
+    font-size: 1rem;
+    margin-bottom: 0.25rem;
+  }
+}
+
+.research,
+.construction_info,
+.scans {
+  p {
+    position: relative;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    font-size: 1rem;
+
+    .desc_link {
+      display: inline-block;
+      position: absolute;
+      top: 3px;
+      right: 2rem;
+      font-size: var(--txt-small);
+    }
+  }
+}
+
+.construction_info {
+  p {
+    padding-right: 15rem;
+  }
+}
+
+.scans p {
+  padding-left: 0.5rem;
+}
+
+.research_next[id] p:not(.center) {
+  padding-left: 0;
+}
+
+
+.constructions {
+  display: flex;
+  flex-wrap: wrap;
+  border: none;
+  margin-bottom: 0;
+}
+
+.construction_info {
+  flex-basis: 100%;
+  display: flex;
+  flex-wrap: wrap;
+
+  .title,
+  .description {
+    flex-basis: 100%;
+  }
+}
+
+.construction_info {
+  .resources {
+    flex-basis: 33%;
+    font-size: var(--txt-small);
+
+    + p {
+      flex-basis: 66%;
+      display: flex;
+      font-size: var(--txt-small);
+    }
+  }
+
+  p {
+    .time,
+    .cu {
+      flex-basis: 50%;
+    }
+  }
+
+  p,
+  .resources {
+    padding-left: 0.5rem;
+  }
+}
+
+
+.construction_build {
+  flex-basis: 66%;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: left;
+  padding: 1rem 0.5rem;
+
+  .resources {
+    flex-basis: 70%;
+    margin-bottom: 0;
+
+    li {
+      display: inline-block;
+    }
+  }
+
+  form {
+    flex-basis: 30%;
+    margin-top: -1.25rem;
+
+    p {
+      text-align: left;
+    }
+  }
+}
+
+.construction_built {
+  flex-basis: 33%;
+  text-align: left;
+  padding: 1rem 0.5rem;
+
+  .textvalue {
+    font-weight: bold;
+  }
+
+  .progress_wrapper {
+    margin: 0.5rem 0;
+
+    .progress_expected {
+      background-image: none;
+      background-color: rgba(155, 255, 155, 0.5);
+      height: 1.5rem;
+      margin-top: -1.5rem;
+    }
+
+    + p {
+      text-align: left;
+      font-size: var(--txt-small);
+    }
+  }
+}
+
+
+.research_current,
+.research_next {
+  .time,
+  .rp {
+    font-size: var(--txt-small);
+  }
+}
+
+.research_next {
+  font-style: italic;
+
+  &[id] {
+    position: relative;
+    font-style: normal;
+    border-top: 1px solid var(--col-panel-dark);
+    margin: 0.5rem 0 0 1.5rem;
+    padding: 1rem 0 0;
+
+    .researchform p {
+      padding-right: 0;
+      margin-right: 2rem;
+    }
+  }
+
+}
+
+
+.research_branch {
+  margin-left: 1.5rem;
+
+  .completed {
+    .title {
+      position: relative;
+      background: none;
+
+      &:after {
+        content: '\2714';
+        color: $color-primary;
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+    }
+  }
+}
+
+.researchform {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: -3rem;
+}
+
+.research_branch_list {
+  padding: 0.25rem 0.5rem;
+  background: var(--col-panel-light);
+  background: linear-gradient(135deg, var(--col-panel-light) 0%, var(--col-panel-dark) 100%);
+  border: 0;
+  margin: 0 0 0.5rem 1.5rem;
+  font-style: normal;
+
+  p {
+    position: relative;
+    padding-right: 15rem;
+    text-align: left !important;
+  }
+}
+
+.scans {
+  border: 0;
+
+  .resources {
+    font-size: var(--txt-small);
+    margin-top: 1rem;
+    padding-left: 0.5rem;
+  }
+
+  .scan_form {
+    padding-right: 2rem;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    margin-top: -2.25rem;
+
+    input[type="submit"] {
+      margin: 0 0 0 1rem !important;
+    }
+  }
+}
+
+
+.scan_time {
+  font-size: var(--txt-small);
+  text-align: center;
+}
+
+#scan {
+  table {
+    tr:first-child td {
+      font-weight: bold;
+    }
+
+    + p {
+      margin-top: 1rem;
+    }
+  }
+}

@@ -1,0 +1,115 @@
+/* POPULATION
+   -------------------------------------------------------*/
+.population_slider {
+  background: $color-primary;
+  //background: linear-gradient(135deg, $color-primary 0%, $color-primary-dark 100%);
+  border: 0;
+  border: none;
+  height: 0.75rem;
+  width: 0.75rem;
+}
+
+.population_display {
+  font-weight: bold;
+  color: var(--col-text-main);
+}
+
+#population {
+  table {
+    width: auto;
+    margin: 0 auto;
+
+    td,
+    th {
+      &:first-child {
+        text-align: left;
+        padding-right: 4rem;
+      }
+
+      &:last-child {
+        padding-left: 4rem;
+      }
+    }
+
+    tr {
+      &:nth-child(7) th {
+        text-align: right;
+        padding: 0.5rem 0;
+        font-weight: normal;
+      }
+
+      &:last-child {
+        td {
+          text-align: center;
+        }
+      }
+    }
+
+    #total {
+      padding: 0 !important;
+      min-width: 2rem;
+    }
+
+    #max_total {
+      font-weight: bold;
+    }
+  }
+}
+
+
+#page_population {
+  .container {
+    &:nth-child(4) {
+      .header {
+        &:before {
+          content: 'Output changes';
+        }
+      }
+
+      table {
+        width: auto;
+
+        th,
+        td {
+          padding: 0.15rem 2rem;
+        }
+      }
+    }
+  }
+
+  .government_effects {
+    width: 50%;
+    margin: 0 auto;
+
+    li {
+      display: flex;
+
+      span {
+        display: inline-block;
+        padding: 0.15rem 1rem;
+        flex-basis: 50%;
+      }
+    }
+
+    .textlabel {
+      text-align: right;
+    }
+
+    .textvalue {
+      text-align: left;
+      font-weight: bold;
+    }
+  }
+
+  #tab2 .container:nth-child(2) .header {
+    display: none;
+  }
+}
+
+.governments {
+  border: none;
+
+  p {
+    margin-left: 0.5rem;
+  }
+}

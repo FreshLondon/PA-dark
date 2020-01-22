@@ -1,0 +1,168 @@
+
+/* GALAXY FORUM
+   -------------------------------------------------------*/
+.forum_description {
+  font-size: var(--txt-small);
+  color: var(--col-text-main);
+}
+
+.forum {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.forum_title {
+  flex-basis: 100%;
+  margin-bottom: 1rem;
+}
+
+.forum_thread_header_title,
+.forum_thread_title {
+  flex-basis: 50%;
+  text-align: left;
+}
+
+.forum_thread_header_lastpost,
+.forum_thread_lastpost {
+  flex-basis: 40%;
+  text-align: left;
+  font-size: var(--txt-small);
+}
+
+.forum_thread_header_replies,
+.forum_thread_replies {
+  flex-basis: 10%;
+}
+
+div[class^='forum_thread_header'] {
+  font-size: var(--txt-small);
+  text-transform: uppercase;
+}
+
+.forum_thread_actions_button {
+  background: none;
+  display: inline-block;
+  text-indent: -99rem;
+
+  &:hover {
+    text-decoration: none;
+
+    &:after {
+      color: var(--col-text-main);
+    }
+  }
+
+  &:after {
+    content: '\25BC';
+    color: $color-primary;
+    position: relative;
+    top: 0;
+    left: 95.2rem;
+  }
+}
+
+.forum_thread_actions span {
+  display: block;
+}
+
+#forum_nav {
+  margin-bottom: 1rem;
+}
+
+.forum_post {
+  padding: 0 0.5rem;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.forum_post_number,
+.forum_poster,
+.forum_post_title,
+.forum_post_time {
+  font-size: var(--txt-small);
+}
+
+.forum_post_number {
+  order: 1;
+  flex-basis: 3rem;
+  font-weight: bold;
+}
+
+.forum_poster {
+  order: 2;
+  flex-grow: 1;
+}
+
+.forum_post_title {
+  order: 3;
+  text-align: left;
+  flex-grow: 1;
+}
+
+.forum_post_time {
+  order: 4;
+  flex-basis: 10rem;
+  text-align: right;
+}
+
+.forum_post_text {
+  order: 5;
+  flex-basis: 100%;
+  flex-shrink: 0;
+  padding-top: 0.5rem;
+}
+
+.forum_post_notes {
+  order: 6;
+}
+
+.forum_post_actions {
+  order: 7;
+}
+
+.forum_post_seperator {
+  border-top: 1px solid var(--col-panel-dark);
+  margin: 1rem 0.5rem;
+}
+
+.forum_post_delete,
+.forum_post_edit,
+.forum_post_report,
+.forum_post_quote,
+.forum_post_reply {
+  margin: 0;
+}
+
+.mceEditor,
+.mceToolbarContainer,
+.mceStatusbarBottom {
+  border-style: solid !important;
+  border-color: $color-primary !important;
+}
+
+.mceEditor {
+  margin: 0.5rem;
+  width: calc(100% - 1rem);
+  border-width: 2px !important;
+}
+
+.mceToolbarContainer {
+  border-width: 0 0 2px 0 !important;
+}
+
+.mceStatusbarBottom {
+  border-width: 1px 0 0 0 !important;
+}
+
+.mceContentBody {
+  font-size: 1rem !important;
+}
+
+#editor > .center,
+#editor + .center {
+  font-size: var(--txt-small);
+  a {
+    display: inline-block;
+    margin-right: 1rem;
+  }
+}

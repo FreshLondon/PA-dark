@@ -1,0 +1,105 @@
+/* MINING
+   -------------------------------------------------------*/
+#mining,
+#galaxy_fund {
+  table {
+    margin: 1rem 0;
+  }
+
+  td {
+    height: 1.5rem;
+
+    .textlabel {
+      display: inline-block;
+      margin: 0.2rem 0 0 2rem;
+    }
+
+    .metal,
+    .crystal,
+    .eonium {
+      background-repeat: no-repeat;
+      background-size: 1.5rem 1.5rem;
+      height: 1.5rem;
+
+      .textvalue {
+        background-repeat: no-repeat;
+        background-position-y: 1px;
+        padding: 0 1rem 0 1.2rem;
+      }
+    }
+
+    .metal {
+      background-image: url('/images/template53/metal_48.png');
+    }
+
+    .crystal {
+      background-image: url('/images/template53/crystal_48.png');
+    }
+
+    .eonium {
+      background-image: url('/images/template53/eonium_48.png');
+    }
+  }
+
+  .resources {
+    .metal,
+    .crystal,
+    .eonium {
+
+
+      .textvalue {
+        background-repeat: no-repeat;
+        background-position-y: 1px;
+        padding: 0 1rem 0 1.2rem;
+      }
+    }
+
+    .metal .textvalue {
+      background-image: url('/images/template53/metal_16.png');
+    }
+
+    .crystal .textvalue {
+      background-image: url('/images/template53/crystal_16.png');
+    }
+
+    .eonium .textvalue {
+      background-image: url('/images/template53/eonium_16.png');
+    }
+  }
+
+  #guard_cost {
+    margin-bottom: 0.5rem;
+  }
+
+  input[type="number"] {
+    padding-right: 0.1rem;
+    min-width: 3rem;
+  }
+
+  #mining p.center:last-child {
+    font-style: italic;
+  }
+
+  table {
+    &:not(:last-child) {
+      tr {
+        &:first-child {
+          th {
+            text-transform: initial;
+            font-size: 1rem;
+            padding-bottom: 1rem;
+          }
+        }
+      }
+    }
+
+    td {
+      height: 1.5rem;
+    }
+  }
+
+  #gal_target_amount,
+  #uni_target_amount {
+    font-weight: bold;
+  }
+}

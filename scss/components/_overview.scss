@@ -1,0 +1,179 @@
+/* OVERVIEW
+   -------------------------------------------------------*/
+.notice_protection {
+  color: var(--col-alert-light);
+}
+
+#quest_system {
+  table {
+    margin: 0 auto;
+    width: 80%;
+
+    th {
+      &:nth-child(1) {
+        width: 0 !important;
+      }
+
+      &:nth-child(2) {
+        width: auto !important;
+      }
+
+      &:nth-child(3) {
+        width: 100px !important;
+      }
+
+      &:nth-child(4) {
+        width: 1rem !important;
+      }
+
+      &:nth-child(5) {
+        width: 0 !important;
+      }
+    }
+
+    tr {
+      &:nth-child(n+2) {
+        th {
+          text-transform: initial;
+          font-size: 1rem;
+
+          &:nth-child(2) {
+            padding: 0.15rem 0;
+            background: $color-borders;
+            //background: linear-gradient(135deg, var(--col-panel-light) 0%, var(--col-panel-dark) 100%);
+          }
+        }
+      }
+
+      &[id^='quest'] p {
+        font-size: var(--txt-small);
+        margin: 0 1.1rem;
+      }
+    }
+
+    table {
+      width: calc(100% - 2rem);
+      margin-left: 1rem;
+
+      td {
+        &:nth-child(1) {
+          width: auto !important;
+        }
+
+        &:nth-child(2) {
+          width: 100px !important;
+        }
+
+        &:nth-child(2n+2) {
+          td {
+            padding: 0.5rem;
+            background: var(--col-panel-light);
+            background: linear-gradient(135deg, var(--col-panel-light) 0%, var(--col-panel-dark) 100%);
+          }
+        }
+      }
+    }
+  }
+
+  .completed {
+    width: 100%;
+    background: none;
+
+    &:after {
+      content: '\2714';
+      font-weight: bold;
+      color: $color-primary;
+    }
+  }
+}
+
+
+.expand {
+  display: inline-block;
+  margin-right: 0.5rem;
+  background: none;
+
+  &:before {
+    content: '\25BC';
+    color: $color-primary;
+    display: inline;
+  }
+
+  &:hover {
+    &:before {
+      color: var(--col-text-main);
+    }
+  }
+}
+
+.progress_wrapper {
+  background-color: $color-black-light;
+  color: var(--col-text-main);
+  font-size: var(--txt-small);
+  height: 1.5rem;
+  width: 100px;
+}
+
+.progress_bar {
+  height: 1.5rem;
+  background: $color-primary;
+  //background: linear-gradient(135deg, $color-primary 0%, $color-primary-dark 100%);
+}
+
+.progress_expected {
+  background: rgba(237, 255, 0, 0.4);
+  height: 100%;
+  margin-top: -1.5rem;
+  background-size: 100%;
+}
+
+.progress_value {
+  margin-top: -1.3rem;
+  color: white;
+  position: relative;
+  text-shadow: 0px 1px 1px black;
+}
+
+
+#mfc .maintext {
+  text-align: center;
+}
+
+.info_header {
+  color: $color-offwhite;
+  text-align: left;
+  margin-bottom: 0.25rem;
+  padding-left: 0.25rem;
+  position: relative;
+  padding: 0.5rem 1rem 0.5rem 0.5rem;
+  font-size: var(--txt-small);
+
+  a {
+    position: absolute;
+    top: 0.45rem;
+    right: 0.25rem;
+    text-transform: uppercase;
+
+    &:hover {
+      color: $color-primary-dark;
+    }
+  }
+}
+
+.info_contents {
+  p {
+    min-width: 15rem;
+    font-size: var(--txt-small);
+    color: $color-offwhite;
+  }
+}
+
+.mission_attack {
+  color: #FF0000;
+  background-color: rgba($color-negative, .14);
+}
+
+.mission_defend {
+  color: #00AA00;
+  background: rgba($color-positive, 0.14);
+}
