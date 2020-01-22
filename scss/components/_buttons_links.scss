@@ -6,7 +6,7 @@ a,
   transition: 0.3s;
 
   &:hover {
-    color: $color-primary-dark;
+    color: rgba($color-primary, .8);
   }
 }
 
