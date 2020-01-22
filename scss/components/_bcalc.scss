@@ -33,6 +33,15 @@
 
 #bcalc {
 
+  #controls {
+    tr {
+      th {
+        width: auto;
+        vertical-align: baseline;
+      }
+    }
+  }
+
   input {
     color: $color-offwhite;
     background-color: $color-borders;
