@@ -76,7 +76,7 @@
 
   .container {
     box-shadow: 0 1px 5px rgba(255, 255, 255, 0.12);
-    border-radius:0.5rem;
+    border-radius: 0.5rem;
     overflow: hidden;
 
     .header:first-child {
@@ -211,7 +211,7 @@
 
 .stats_tbl {
   th, td {
-    background-color: var(--col-panel-light);
+    //background-color: var(--col-panel-light);
     padding: 0.15rem 0.5rem;
   }
 
@@ -219,4 +219,24 @@
     background-color: transparent;
     color: white;
   }
+}
+
+.Ter {
+  background: rgba($color-terran, .3);
+}
+
+.Xan {
+  background: rgba($color-xandathrii, .3);
+}
+
+.Cat {
+  background: rgba($color-cathaar, .3);
+}
+
+.Zik {
+  background: rgba($color-zikonian, .3);
+}
+
+.Etd {
+  background: rgba($color-eitraides, .3);
 }
