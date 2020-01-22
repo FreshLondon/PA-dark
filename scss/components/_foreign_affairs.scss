@@ -16,8 +16,8 @@
 
     .maintext > p {
       font-weight: bold;
-      background: var(--col-panel-light);
-      background: linear-gradient(135deg, var(--col-panel-light) 0%, var(--col-panel-dark) 100%);
+      background: $color-borders;
+      //background: linear-gradient(135deg, var(--col-panel-light) 0%, var(--col-panel-dark) 100%);
       margin-bottom: 1rem;
 
       .superhighlight {
