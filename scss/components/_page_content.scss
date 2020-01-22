@@ -54,7 +54,7 @@ h2 {
   background: linear-gradient(180deg, $color-borders 0%, $color-borders 15%, $color-borders 100%) !important;
 
   a:hover {
-    color: $color-primary-dark;
+    color: rgba($color-primary, .8);
   }
 }
 
