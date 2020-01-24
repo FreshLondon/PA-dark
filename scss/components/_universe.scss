@@ -15,6 +15,9 @@
 
               &:nth-child(2) {
                 flex: 2;
+                @include respond-below(sm) {
+                  display: none;
+                }
               }
 
               &:nth-child(3) {
@@ -23,10 +26,16 @@
 
               &:nth-child(4) {
                 flex: 7;
+                @include respond-below(sm) {
+                  display: none;
+                }
               }
 
               &:nth-child(5) {
                 flex: 6;
+                @include respond-below(sm) {
+                  display: none;
+                }
               }
 
               &:nth-child(6) {
@@ -49,12 +58,19 @@
     table {
       a {
         color: $color-text;
+        @include respond-below(sm) {
+          padding: 0 8px;
+        }
       }
 
       tr {
         display: flex;
         justify-content: space-between;
         margin: 2px 0;
+        @include respond-below(sm) {
+          flex-wrap: wrap;
+          justify-content: center;
+        }
 
         &:first-child th {
           font-weight: bold;

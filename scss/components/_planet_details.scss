@@ -8,6 +8,20 @@
   align-content: flex-start;
   background: $color-borders;
   //background: linear-gradient(135deg, var(--col-panel-light) 0%, var(--col-panel-dark) 100%);
+  @include respond-below(sm) {
+    grid-row: 1/3;
+    grid-column: 2 / 2;
+    max-width: calc(100vw - 114px);
+    > * {
+      max-width: 50%;
+      float: left;
+
+      &#header_planet {
+        max-width: unset;
+        font-size: 11px !important;
+      }
+    }
+  }
 
   > div {
     flex-basis: 50%;
@@ -129,6 +143,7 @@
       padding-top: 0.5rem;
     }
   }
+
 }
 
 
@@ -183,6 +198,11 @@
   display: flex;
   flex-flow: column nowrap;
   justify-content: space-between;
+  @include respond-below(sm) {
+    grid-row: 2/3;
+    grid-column: 2 / 2;
+    max-width: calc(100vw - 114px);
+  }
 
   &:before {
     display: block;
@@ -226,6 +246,12 @@
   text-align: left;
   flex-basis: 10rem;
   font-size: var(--txt-small);
+  @include respond-below(sm) {
+    margin: 0;
+    padding: 0 4px 0 0;
+    text-align: right;
+    flex: 1;
+  }
 }
 
 

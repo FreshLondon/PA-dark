@@ -112,6 +112,11 @@ option {
   grid-template-columns: 12rem 1fr 1fr;
   grid-template-rows: auto 1fr 1rem;
   grid-column-gap: 0.5rem;
+  @include respond-below(sm) {
+    grid-template-columns: 100px auto;
+    grid-template-rows: 165px auto auto;
+    grid-row-gap: 0;
+  }
 }
 
 
@@ -133,16 +138,53 @@ option {
   color: $color-offwhite !important;
 }
 
+//@keyframes changewidth {
+//  from {
+//    height: 100%;
+//    background: $color-neutral;
+//    color: #cccccc;
+//  }
+//
+//  to {
+//    height: calc(100% + 2px);
+//    background: rgba(255, 165, 0, 0.85);
+//    color: white;
+//  }
+//}
+
 #news_new {
   background: $color-neutral;
   //background: linear-gradient(170deg, var(--col-alert-light) 0%, var(--col-alert-dark) 100%);
   color: $color-offwhite !important;
+  //animation-duration: 1s;
+  //animation-name: changewidth;
+  //animation-iteration-count: infinite;
+  //animation-direction: alternate;
+  //transform: translateY(-50%);
+  //position: relative;
+  //top: 50%;
+  //display: flex;
+  //align-items: center;
+  //justify-content: center;
 }
 
 #message_form {
   width: 60rem;
   max-width: 100%;
   margin: 0 auto;
+
+  p {
+    &:nth-child(1) {
+      display: flex;
+      justify-content: center;
+    }
+
+    &:nth-child(2),
+    &:nth-child(3) {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
 
   #to {
     display: inline-block;
@@ -296,12 +338,6 @@ option {
 @include respond-below(md) {
   :root {
     font-size: 14px;
-  }
-
-  #page {
-    grid-template-columns: 12rem 1fr;
-    grid-template-rows: 1fr 1fr auto 1rem;
-    grid-row-gap: 0.5rem;
   }
 
   #menu {

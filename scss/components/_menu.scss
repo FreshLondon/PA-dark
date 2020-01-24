@@ -12,6 +12,11 @@
   padding: 1rem 0;
   background: $color-borders;
   //background: linear-gradient(135deg, var(--col-panel-light) 0%, var(--col-panel-dark) 100%);
+  @include respond-below(sm) {
+    grid-column: 1 / 2;
+    grid-row: 1/4;
+    max-width: 100px;
+  }
 
   li {
     padding: 0 0.5rem 0.15rem;
