@@ -242,33 +242,41 @@
 
   .def_ter,
   .att_ter {
+    background: transparent;
+
     th,
     td {
       //color: $color-terran;
-      background-color: rgba($color-terran, 0.3);
+      background-color: rgba($color-terran, 0.4);
     }
   }
 
   .def_cat,
   .att_cat {
+    background: transparent;
+
     th,
     td {
       //color: $color-cathaar;
-      background-color: rgba($color-cathaar, 0.3);
+      background-color: rgba($color-cathaar, 0.4);
     }
   }
 
   .def_xan,
   .att_xan {
+    background: transparent;
+
     th,
     td {
       //color: $color-xandathrii;
-      background-color: rgba($color-xandathrii, 0.3);
+      background-color: rgba($color-xandathrii, 0.35);
     }
   }
 
   .def_zik,
   .att_zik {
+    background: transparent;
+
     th,
     td {
       //color: $color-zikonian;
@@ -278,10 +286,12 @@
 
   .def_etd,
   .att_etd {
+    background: transparent;
+
     th,
     td {
       //color: $color-eitraides;
-      background-color: rgba($color-eitraides, 1);
+      background-color: rgba($color-eitraides, 0.5);
     }
   }
 
@@ -347,17 +357,18 @@
 
 #bcalc tr:nth-child(4) .global_controls,
 #def_table tr:nth-last-child(-n+3),
-#att_table tr:nth-last-child(-n+5),
-.def_ter,
-.att_ter,
-.def_cat,
-.att_cat,
-.def_xan,
-.att_xan,
-.def_zik,
-.att_zik,
-.def_etd,
-.att_etd {
+#att_table tr:nth-last-child(-n+5)
+  //.def_ter,
+  //.att_ter,
+  //.def_cat,
+  //.att_cat,
+  //.def_xan,
+  //.att_xan,
+  //.def_zik,
+  //.att_zik,
+  //.def_etd,
+  //.att_etd
+{
   background-color: $color-borders;
 }
 
