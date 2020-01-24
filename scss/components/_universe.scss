@@ -155,10 +155,15 @@
   background: rgba($color-neutral, 0.2);
 }
 
+.relations_friendly {
+  background: rgba($color-positive, 0.15);
+  outline: none;
+}
+
 .relations_allied {
-  background: rgba($color-positive, 0.25);
+  background: rgba($color-positive, 0.35);
 }
 
 .relations_own_member {
-  background: rgba($color-own, 0.25);
+  background: rgba($color-own, 0.4);
 }
