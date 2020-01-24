@@ -9,7 +9,9 @@
   background: $color-borders;
   margin: 0;
   height: unset;
-  //background: linear-gradient(135deg, var(--col-panel-light) 0%, var(--col-panel-dark) 100%);
+  border: 1px solid transparent;
+  border-image: linear-gradient(to right, transparent 0%, rgba($color-primary, .5) 50%, transparent 100%);
+  border-image-slice: 1;
   @include respond-below(sm) {
     grid-row: 1/3;
     grid-column: 2 / 2;
@@ -20,7 +22,7 @@
 
       &#header_planet {
         max-width: unset;
-        font-size: 11px !important;
+        font-size: 0.6875rem !important;
       }
     }
   }
@@ -33,14 +35,43 @@
     margin: 0 0 .5rem;
   }
 
+  #header_mail,
+  #header_news {
+    background: black;
+
+    &:hover {
+      a {
+        color: $color-primary;
+      }
+    }
+
+    a {
+      flex-basis: 100%;
+      text-align: center;
+      font-size: $text-small;
+      text-transform: uppercase;
+      font-weight: bold;
+      padding: .5rem 0 !important;
+      color: $color-offwhite;
+      transition: ease all .5s;
+    }
+  }
+
   #header_mail {
     padding: 0;
     order: 1;
+    border: 1px solid transparent;
+    border-image: linear-gradient(to right, transparent 0%, rgba($color-primary, .5) 100%);
+    border-image-slice: 1;
   }
 
   #header_news {
     padding: 0;
     order: 2;
+    border: 1px solid transparent;
+    border-image: linear-gradient(to right, rgba($color-primary, .5) 0%, transparent 100%);
+    border-image-slice: 1;
+    border-left: none;
   }
 
 
@@ -176,23 +207,6 @@
 }
 
 
-#header_mail,
-#header_news {
-  background: black;
-  //background: linear-gradient(180deg, $color-black-light 0%, $color-black-medium 15%, $color-black-dark 100%);
-
-  a {
-    flex-basis: 100%;
-    text-align: center;
-    font-size: $text-small;
-    text-transform: uppercase;
-    font-weight: bold;
-    padding: 0.5rem 0 !important;
-    color: $color-offwhite;
-  }
-}
-
-
 #planet_summary {
   grid-column: 3 / 3;
   background: $color-borders;
@@ -201,6 +215,9 @@
   flex-flow: column nowrap;
   justify-content: space-between;
   height: unset;
+  border: 1px solid transparent;
+  border-image: linear-gradient(to right, transparent 0%, rgba($color-primary, .5) 50%, transparent 100%);
+  border-image-slice: 1;
   @include respond-below(sm) {
     grid-row: 2/3;
     grid-column: 2 / 2;
@@ -210,20 +227,22 @@
   &:before {
     display: block;
     content: 'Planetary Development ';
-    width: calc(100% - .5rem);
-    padding: 0.5rem;
-    margin: -.25rem -.25rem 0;
+    width: calc(100% - .4375rem);
+    padding: .5rem .5rem .6125rem;
+    margin: -.3125rem -.25rem 0;
     font-size: $text-small;
     text-transform: uppercase;
     font-weight: bold;
     text-align: center;
     color: $color-offwhite;
     background: black;
-    //background: linear-gradient(180deg, $color-black-light 0%, $color-black-medium 15%, $color-black-dark 100%);
+    border-bottom: 1px solid transparent;
+    border-image: linear-gradient(to right, transparent 0%, rgba($color-primary, .5) 50%, transparent 100%);
+    border-image-slice: 1;
   }
 
   .textlabel {
-    padding: 0 0.5rem;
+    padding: 0 .5rem;
     flex-basis: 8rem;
   }
 }
@@ -236,7 +255,7 @@
 #planet_summary_construction,
 #planet_summary_research,
 #planet_summary_production {
-  margin: 0.5rem 0;
+  margin: .5rem 0;
   padding: 0;
   display: flex;
   flex-flow: row wrap;
@@ -245,14 +264,14 @@
 #planet_summary_construction_complete,
 #planet_summary_research_complete,
 .planet_summary_production_orders {
-  margin: 0 0.5rem 0 8rem;
+  margin: 0 .5rem 0 8rem;
   padding: 0;
   text-align: left;
   width: 100%;
   font-size: $text-small;
   @include respond-below(sm) {
     margin: 0;
-    padding: 0 4px 0 0;
+    padding: 0 0.25rem 0 0;
     text-align: right;
     flex: 1;
   }

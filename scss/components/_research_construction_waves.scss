@@ -144,7 +144,7 @@
 
     .progress_expected {
       background-image: none;
-      background-color: rgba(155, 255, 155, 0.5);
+      background-color: $color-progress-expected;
       height: 1.5rem;
       margin-top: -1.5rem;
     }
@@ -171,7 +171,7 @@
   &[id] {
     position: relative;
     font-style: normal;
-    border-top: 1px solid var(--col-panel-dark);
+    border-top: 1px solid rgba($color-primary, .5);
     margin: 0.5rem 0 0 1.5rem;
     padding: 1rem 0 0;
 

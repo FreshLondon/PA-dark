@@ -154,7 +154,7 @@
     .entry_sep {
       display: block;
       margin: 0.5rem;
-      border-top: 1px solid var(--col-panel-dark);
+      border-top: 1px solid rgba($color-primary, .5);
     }
 
     #entry_search + .entry_sep + .entries {
@@ -175,7 +175,7 @@
   span[style="font-size: 13pt;"] {
     display: block;
     font-size: 1.5rem !important;
-    border-bottom: 1px solid var(--col-panel-dark);
+    border-bottom: 1px solid rgba($color-primary, .5);
   }
 
   span[style="font-size: 12pt;"] {

@@ -2,16 +2,16 @@
   .maintext {
     .ally_def_eta_wrapper {
       .ally_def_eta {
-        font-size: 32px;
+        font-size: 2rem;
 
         img.ally_def_eta_toggle_img {
-          width: 11px;
-          height: 11px;
+          width: 0.6875rem;
+          height: 0.6875rem;
         }
       }
 
       .ally_def_incs_wrapper {
-        margin: 0 0 32px 5px;
+        margin: 0 0 2rem 5px;
         background: $color-borders;
 
         .ally_def_target {
@@ -23,13 +23,13 @@
           }
 
           .ally_def_target_toggle_link {
-            margin: 0 8px 0 -18px;
+            margin: 0 .5rem 0 -18px;
             width: 10px;
             cursor: pointer;
 
             img {
-              width: 11px;
-              height: 11px;
+              width: 0.6875rem;
+              height: 0.6875rem;
             }
           }
 
@@ -57,7 +57,7 @@
 
               &:before {
                 content: "Asteroids:";
-                font-size: 11px;
+                font-size: 0.6875rem;
                 margin: 5px 5px 0 0;
               }
             }
@@ -68,7 +68,7 @@
               &:before {
                 white-space: nowrap;
                 content: "Base fleet:";
-                font-size: 11px;
+                font-size: 0.6875rem;
                 margin: 5px 5px 0 0;
               }
             }
@@ -83,7 +83,7 @@
               &:after {
                 padding: 2px 4px;
                 border-radius: 4px;
-                font-size: 11px;
+                font-size: 0.6875rem;
                 background: #2d72bb;
                 color: white;
                 content: "BATTLE CALC";
