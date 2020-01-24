@@ -10,7 +10,7 @@ select,
 .checkbox {
   font-family: "Ubuntu", "Lato", "Open Sans", sans-serif;
   background-color: $color-borders;
-  border: 1px solid $color-primary;
+  border: 1px solid rgba($color-primary, .5);
   color: $color_text;
   font-size: 1rem;
   height: 1.5rem;

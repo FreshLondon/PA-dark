@@ -127,8 +127,7 @@
   #att_show input[type="checkbox"],
   #att_table input,
   #att_table select {
-    //border-color: rgba($color-negative, .45);
-    border-color: $color-primary;
+    border-color: rgba($color-primary, .5);
 
     &:before {
       color: $color-negative;
@@ -140,8 +139,7 @@
   #def_show input[type="checkbox"],
   #def_table input,
   #def_table select {
-    //border-color: rgba($color-positive, .45);
-    border-color: $color-primary;
+    border-color: rgba($color-primary, .5);
 
     &:before {
       color: $color-positive;
