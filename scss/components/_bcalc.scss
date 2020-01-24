@@ -320,6 +320,24 @@
   input[id^="att_race"] {
     border-color: $color-neutral;
   }
+
+  #def_header_killed,
+  .def_killed,
+  #def_header_emped,
+  .def_emped,
+  #def_header_stolen,
+  .def_stolen,
+  #att_header_killed,
+  .att_killed,
+  #att_header_emped,
+  .att_emped,
+  #att_header_stolen,
+  .att_stolen,
+  .def_total,
+  .att_total {
+    width: unset;
+    min-width: 70px;
+  }
 }
 
 #def_value_table td:first-child, #att_score_table td:first-child {
