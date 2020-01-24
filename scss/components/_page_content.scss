@@ -70,7 +70,7 @@ h2 {
 
 #notice {
   background-color: black;
-  border: 1px solid $color-primary;
+  border: 1px solid rgba($color-primary, .5);
   margin-top: 0.5rem;
 
   .header,
