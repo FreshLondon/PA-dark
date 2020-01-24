@@ -1,8 +1,7 @@
 /* Menu
    -------------------------------------------------------*/
 #menu_top,
-#menu_bottom,
-#menu_view_link {
+#menu_bottom {
   display: none;
 }
 
@@ -39,6 +38,14 @@
     margin-top: 2rem;
     font-size: $text-small;
   }
+
+  #menu_view_link {
+
+  }
+}
+
+#tnav {
+  border: none;
 }
 
 .menu_grp > span {
