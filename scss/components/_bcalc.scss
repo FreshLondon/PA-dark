@@ -74,12 +74,12 @@
 
     &.def_killed,
     &.att_killed {
-      color: $color-zikonian;
+      color: $color-killed;
     }
 
     &.def_stolen,
     &.att_stolen {
-      color: $color-neutral;
+      color: $color-stolen;
     }
   }
 

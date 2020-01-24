@@ -46,6 +46,7 @@
 
             .ally_def_target_mdata_nick {
               font-size: 1rem;
+
               a {
                 color: $color-positive;
               }
@@ -130,29 +131,35 @@
               flex: 2;
 
               a {
-                border: 1px solid rgba(0, 0, 0, 0.5);
+                border: 1px solid rgba(146, 146, 146, 0.3);
                 display: inline-flex;
                 width: 15px;
                 height: 15px;
                 align-items: center;
                 justify-content: center;
                 border-radius: 4px;
-                color: white !important;
+                color: black !important;
+                margin-right: 3px;
+
+                &:last-child {
+                  margin-right: 0;
+                }
 
                 &.scan_age_new {
-                  background: rgba($color-positive, 0.35);
+                  background: rgba($color-positive, 0.7);
                 }
 
                 &.scan_age_older {
-                  background: rgba($color-neutral, 0.45);
+                  background: rgba($color-neutral, 0.55);
                 }
 
                 &.scan_age_old {
-                  background: rgba($color-neutral, 0.3);
+                  background: rgba(255, 255, 0, 0.7);
                 }
 
                 &.scan_age_ancient {
                   background: rgba($color-negative, 0.25);
+                  color: white !important;
                 }
               }
             }
