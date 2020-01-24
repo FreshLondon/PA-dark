@@ -137,19 +137,19 @@
                 color: white !important;
 
                 &.scan_age_new {
-                  background: rgba($color-positive, 0.4);
+                  background: rgba($color-positive, 0.35);
                 }
 
                 &.scan_age_older {
-                  background: rgba($color-neutral, 0.5);
+                  background: rgba($color-neutral, 0.45);
                 }
 
                 &.scan_age_old {
-                  background: rgba($color-neutral, 0.4);
+                  background: rgba($color-neutral, 0.3);
                 }
 
                 &.scan_age_ancient {
-                  background: rgba($color-negative, 0.4);
+                  background: rgba($color-negative, 0.25);
                 }
               }
             }
@@ -210,8 +210,8 @@
 
 
         .mission_return {
-          color: #949494;
-          background: rgba(0, 193, 255, 0.16) !important;
+          background: unset;
+          opacity: 0.5;
         }
       }
     }
