@@ -1,12 +1,14 @@
 #page_universe {
+  .maintext {
+    padding: 0;
+  }
+
   #contents {
     .container {
       &:nth-last-child(2),
       &:nth-last-child(3) {
         table {
           tr {
-            background-color: #23303f;
-
             th,
             td {
               width: auto !important;
@@ -82,8 +84,11 @@
           font-weight: bold;
           background: $color-borders;
           color: $color-text;
-          padding: .75rem 0;
+          //padding: .75rem 0;
           font-size: .75rem;
+          padding: 0.5rem .125rem;
+          display: flex;
+          align-items: center;
 
           &.right {
             padding-right: .25rem;
@@ -100,7 +105,10 @@
           }
         }
 
-        th,
+        th {
+          padding: 0 2px;
+        }
+
         td {
           display: flex;
           align-items: center;
@@ -137,6 +145,10 @@
 
 .relations_war {
   background: rgba($color-negative, 0.25);
+}
+
+.relations_neutral {
+  background-color: $color-borders;
 }
 
 .relations_nap {
