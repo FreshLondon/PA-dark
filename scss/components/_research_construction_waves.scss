@@ -211,8 +211,8 @@
 
 .research_branch_list {
   padding: 0.25rem 0.5rem;
-  background: var(--col-panel-light);
-  background: linear-gradient(135deg, var(--col-panel-light) 0%, var(--col-panel-dark) 100%);
+  background: $color-borders;
+  //background: linear-gradient(135deg, var(--col-panel-light) 0%, var(--col-panel-dark) 100%);
   border: 0;
   margin: 0 0 0.5rem 1.5rem;
   font-style: normal;

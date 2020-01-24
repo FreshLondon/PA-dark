@@ -22,7 +22,8 @@ input[type="radio"] {
 
 option {
   font-family: "Ubuntu", "Lato", "Open Sans", sans-serif;
-  background-color: var(--col-panel-light);
+  background-color: $color-borders;
+  color: $color-text;
 }
 
 input[type="text"],

@@ -45,7 +45,10 @@
             }
 
             .ally_def_target_mdata_nick {
-              font-size: 17px;
+              font-size: 1rem;
+              a {
+                color: $color-positive;
+              }
             }
 
             .ally_def_target_mdata_roids {

@@ -60,7 +60,7 @@ span.small.notice_warning {
   font-size: var(--txt-small) !important;
   font-style: italic;
   padding-left: 0.5rem;
-  color: var(--col-alert-light);
+  color: $color-neutral;
 }
 
 #ship_cost {

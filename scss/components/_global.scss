@@ -96,8 +96,8 @@ th {
 
 
 option {
-  background-color: var(--col-panel-light) !important;
-  color: var(--col-text-main) !important;
+  background-color: $color-borders !important;
+  color: $color-text !important;
 }
 
 
@@ -126,9 +126,9 @@ option {
    ---------------------------------*/
 #important_messages_contents {
   width: 80%;
-  background: $color-black-medium !important;
+  background: $color-borders !important;
   border: 0;
-  color: var(--col-text-main);
+  color: $color-text;
   padding: 0.25rem 0.5rem;
   white-space: initial;
   box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, 0.4);
@@ -156,7 +156,7 @@ option {
 
 #news_new {
   background: $color-neutral;
-  //background: linear-gradient(170deg, var(--col-alert-light) 0%, var(--col-alert-dark) 100%);
+  //background: linear-gradient(170deg, $color-neutral 0%, $color-negative 100%);
   color: $color-offwhite !important;
   //animation-duration: 1s;
   //animation-name: changewidth;
@@ -259,29 +259,29 @@ option {
     position: absolute;
     top: 0;
     left: 1px;
-    color: var(--col-zikonian);
+    color: $color-zikonian;
     font-size: 1.25rem;
     line-height: 1.5rem;
   }
 
   a[onclick^="read"]::after {
     content: '\2709';
-    color: var(--col-text-main);
+    color: $color-text;
   }
 
   a[onclick^="reply"]::after {
     content: '\21a9';
-    color: $color-primary-dark;
+    color: $color-text;
   }
 
   a[href*='action=report']::after {
     content: '\26a0';
-    color: var(--col-alert-light);
+    color: $color-neutral;
   }
 
   a[href*='action=delete']::after {
     content: '\2716';
-    color: var(--col-zikonian);
+    color: $color-zikonian;
   }
 }
 
@@ -315,8 +315,9 @@ option {
     display: block;
     padding: 0.5rem;
     font-size: 1rem;
-    background: var(--col-panel-light);
-    background: linear-gradient(135deg, var(--col-panel-light) 0%, var(--col-panel-dark) 100%);
+    background: $color-borders;
+    color: $color-text;
+    //background: linear-gradient(135deg, var(--col-panel-light) 0%, var(--col-panel-dark) 100%);
   }
 
   .time {

@@ -34,11 +34,11 @@
 
   span {
     &[style*="red"] {
-      color: var(--col-alert-dark) !important;
+      color: $color-negative !important;
     }
 
     &[style*="yellow"] {
-      color: var(--col-alert-light) !important;
+      color: $color-neutral !important;
     }
 
     &[style*="white"] {

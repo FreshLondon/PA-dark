@@ -124,7 +124,7 @@
     select {
       width: 100%;
       margin: 0 auto 1rem;
-      color: var(--col-text-main);
+      color: $color-text;
     }
 
     textarea {
@@ -185,25 +185,25 @@
   }
 
   span[style="color: lime;"] {
-    color: var(--col-text-main) !important;
+    color: $color-text !important;
     font-size: var(--txt-small);
     margin-left: 1rem;
     padding-left: 0.5rem;
-    border-left: 5px solid var(--col-alert-dark);
+    border-left: 5px solid $color-negative;
     text-transform: uppercase;
     /* font-weight: bold; */
   }
 
   .tech_table td:last-child {
-    color: var(--col-text-main);
+    color: $color-text;
     font-size: var(--txt-small);
     vertical-align: middle;
   }
 
   h2 {
-    color: var(--col-text-main);
-    background: var(--col-panel-light);
-    background: linear-gradient(135deg, var(--col-panel-light) 0%, var(--col-panel-dark) 100%);
+    color: $color-text;
+    background: $color-borders;
+    //background: linear-gradient(135deg, var(--col-panel-light) 0%, var(--col-panel-dark) 100%);
     text-transform: initial;
     font-size: 1rem;
   }

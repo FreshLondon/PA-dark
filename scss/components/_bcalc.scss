@@ -69,24 +69,24 @@
 
     &.def_emped,
     &.att_emped {
-      color: var(--col-cathaar);
+      color: $color-emp;
     }
 
     &.def_killed,
     &.att_killed {
-      color: var(--col-zikonian);
+      color: $color-zikonian;
     }
 
     &.def_stolen,
     &.att_stolen {
-      color: var(--col-alert-light);
+      color: $color-neutral;
     }
   }
 
   td {
     &.def_value_lost,
     &.att_score_lost {
-      color: var(--col-zikonian);
+      color: $color-zikonian;
     }
 
     &.def_value_gained,
@@ -104,21 +104,21 @@
 
   #att_side {
     background: rgba($color-negative, .35);
-    //background: linear-gradient(170deg, var(--col-alert-light) 0%, var(--col-alert-dark) 100%);
+    //background: linear-gradient(170deg, $color-neutral 0%, $color-negative 100%);
     padding-bottom: 0.25rem;
   }
 
   .att_controls input,
   input[onclick*="att"]:not([type="checkbox"]) {
-    background: var(--col-alert-light);
-    background: linear-gradient(170deg, var(--col-alert-light) 0%, var(--col-alert-dark) 100%);
+    background: $color-neutral;
+    background: linear-gradient(170deg, $color-neutral 0%, $color-negative 100%);
     padding-bottom: 0.25rem;
 
     &:hover {
       background: $color-black-light;
       background: linear-gradient(170deg, $color-black-light 0%, $color-black-dark 100%);
       padding-bottom: 0.25rem;
-      color: var(--text-main);
+      color: $color-text;
     }
   }
 
@@ -148,6 +148,94 @@
     }
   }
 
+  #def_show {
+    input[type="checkbox"] {
+      &#def_race_ter {
+        border-color: $color-terran;
+
+        &:before {
+          color: $color-terran;
+        }
+      }
+
+      &#def_race_cat {
+        border-color: $color-cathaar;
+
+        &:before {
+          color: $color-cathaar;
+        }
+      }
+
+      &#def_race_xan {
+        border-color: $color-xandathrii;
+
+        &:before {
+          color: $color-xandathrii;
+        }
+      }
+
+      &#def_race_zik {
+        border-color: $color-zikonian;
+
+        &:before {
+          color: $color-zikonian;
+        }
+      }
+
+      &#def_race_etd {
+        border-color: $color-offwhite;
+
+        &:before {
+          color: $color-offwhite;
+        }
+      }
+    }
+  }
+
+  #att_show {
+    input[type="checkbox"] {
+      &#att_race_ter {
+        border-color: $color-terran;
+
+        &:before {
+          color: $color-terran;
+        }
+      }
+
+      &#att_race_cat {
+        border-color: $color-cathaar;
+
+        &:before {
+          color: $color-cathaar;
+        }
+      }
+
+      &#att_race_xan {
+        border-color: $color-xandathrii;
+
+        &:before {
+          color: $color-xandathrii;
+        }
+      }
+
+      &#att_race_zik {
+        border-color: $color-zikonian;
+
+        &:before {
+          color: $color-zikonian;
+        }
+      }
+
+      &#att_race_etd {
+        border-color: $color-offwhite;
+
+        &:before {
+          color: $color-offwhite;
+        }
+      }
+    }
+  }
+
   .global_controls {
     padding: 0 0.5rem 0.5rem;
   }
@@ -156,7 +244,7 @@
   .att_ter {
     th,
     td {
-      //color: var(--col-terran);
+      //color: $color-terran;
       background-color: rgba($color-terran, 0.3);
     }
   }
@@ -165,7 +253,7 @@
   .att_cat {
     th,
     td {
-      //color: var(--col-cathaar);
+      //color: $color-cathaar;
       background-color: rgba($color-cathaar, 0.3);
     }
   }
@@ -174,7 +262,7 @@
   .att_xan {
     th,
     td {
-      //color: var(--col-xandathrii);
+      //color: $color-xandathrii;
       background-color: rgba($color-xandathrii, 0.3);
     }
   }
@@ -183,7 +271,7 @@
   .att_zik {
     th,
     td {
-      //color: var(--col-zikonian);
+      //color: $color-zikonian;
       background-color: rgba($color-zikonian, 0.3);
     }
   }
@@ -192,7 +280,7 @@
   .att_etd {
     th,
     td {
-      //color: var(--col-eitraides);
+      //color: $color-eitraides;
       background-color: rgba($color-eitraides, 1);
     }
   }
@@ -230,7 +318,7 @@
   }
 
   input[id^="att_race"] {
-    border-color: var(--col-alert-light);
+    border-color: $color-neutral;
   }
 }
 
@@ -281,8 +369,8 @@
 }
 
 #add_other input[type="number"] {
-  background-color: var(--col-background);
-  color: var(--col-text-main);
+  background-color: $color-borders;
+  color: $color-text;
 }
 
 #my_bcalcs a:hover,
@@ -293,4 +381,10 @@
 #add_own th,
 #con_fleets a:hover {
   color: $color-primary;
+}
+
+#add_own {
+  th {
+    font-size: 11px;
+  }
 }

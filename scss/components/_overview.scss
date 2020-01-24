@@ -1,7 +1,7 @@
 /* OVERVIEW
    -------------------------------------------------------*/
 .notice_protection {
-  color: var(--col-alert-light);
+  color: $color-neutral;
 }
 
 #quest_system {
@@ -67,8 +67,8 @@
         &:nth-child(2n+2) {
           td {
             padding: 0.5rem;
-            background: var(--col-panel-light);
-            background: linear-gradient(135deg, var(--col-panel-light) 0%, var(--col-panel-dark) 100%);
+            background: $color-borders;
+            //background: linear-gradient(135deg, var(--col-panel-light) 0%, var(--col-panel-dark) 100%);
           }
         }
       }
@@ -101,14 +101,14 @@
 
   &:hover {
     &:before {
-      color: var(--col-text-main);
+      color: $color-text;
     }
   }
 }
 
 .progress_wrapper {
   background-color: $color-black-light;
-  color: var(--col-text-main);
+  color: $color-text;
   font-size: var(--txt-small);
   height: 1.5rem;
   width: 100px;

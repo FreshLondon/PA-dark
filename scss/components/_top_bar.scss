@@ -39,7 +39,7 @@
     text-decoration: none;
 
     &:before, &:after {
-      color: var(--col-alert-light);
+      color: $color-neutral;
     }
   }
 }
