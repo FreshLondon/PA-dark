@@ -38,6 +38,7 @@
     td {
       padding-left: 0;
       font-size: $text-small;
+      background: $color-borders;
 
       &:nth-child(3),
       &:nth-child(4),
@@ -55,9 +56,11 @@
       &:nth-child(1) {
         font-size: 1rem;
       }
+
       &.notice_warning {
-        color: red;
+        color: $color-negative;
         font-size: .75rem;
+        background: transparent;
       }
     }
   }

@@ -106,7 +106,8 @@ option {
 
 #page {
   position: relative;
-  max-width: 80rem;
+  width: 100%;
+  max-width: 90rem;
   padding: 3rem 0.5rem 0;
   display: grid;
   grid-template-columns: 12rem 1fr 1fr;
