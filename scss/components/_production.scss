@@ -33,31 +33,38 @@
 
 
 #production_form {
-  th,
-  td {
-    padding-left: 0;
-    font-size: var(--txt-small);
+  tr {
+    th,
+    td {
+      padding-left: 0;
+      font-size: $text-small;
 
-    &:nth-child(3),
-    &:nth-child(4),
-    &:nth-child(5) {
-      width: 2rem;
-      text-align: center;
+      &:nth-child(3),
+      &:nth-child(4),
+      &:nth-child(5) {
+        width: 2rem;
+        text-align: center;
+      }
+
+      &:nth-child(9) {
+        text-align: right;
+      }
     }
 
-    &:nth-child(9) {
-      text-align: right;
+    td {
+      &:nth-child(1) {
+        font-size: 1rem;
+      }
+      &.notice_warning {
+        color: red;
+        font-size: .75rem;
+      }
     }
-  }
-
-  td:nth-child(1) {
-    font-size: 1rem;
   }
 }
 
-
 span.small.notice_warning {
-  font-size: var(--txt-small) !important;
+  font-size: $text-small !important;
   font-style: italic;
   padding-left: 0.5rem;
   color: $color-neutral;
@@ -69,10 +76,10 @@ span.small.notice_warning {
 
 #production_factories_row {
   td {
-    font-size: var(--txt-small) !important;
+    font-size: $text-small !important;
 
     .textlabel {
-      font-size: var(--txt-small);
+      font-size: $text-small;
       font-weight: bold;
       padding-bottom: 0.5rem;
     }
@@ -103,7 +110,7 @@ span.small.notice_warning {
       th,
       td {
         color: $color-offwhite;
-        font-size: var(--txt-small);
+        font-size: $text-small;
       }
     }
 

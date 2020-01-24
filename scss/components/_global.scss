@@ -13,7 +13,7 @@
    background colour is chosen for these buttons.
    -------------------------------------------------------*/
 :root {
-  font-size: 1rem;
+  font-size: 0.9rem;
   --col-text-main: #111111;
   --col-text-highlight: #fefefe;
   --col-accent-light: #75b44a;
@@ -31,7 +31,7 @@
   --col-xandathrii: #2ba87e;
   --col-zikonian: #c93716;
   --col-eitraides: #111111;
-  --txt-small: 0.85rem;
+  --txt-small: 0.8rem;
 }
 
 
@@ -90,7 +90,7 @@ body {
 }
 
 th {
-  font-size: var(--txt-small);
+  font-size: $text-small;
   text-transform: uppercase;
 }
 
@@ -216,7 +216,7 @@ option {
   }
 
   + p {
-    font-size: var(--txt-small);
+    font-size: $text-small;
   }
 }
 
@@ -322,7 +322,7 @@ option {
 
   .time {
     display: block;
-    font-size: var(--txt-small);
+    font-size: $text-small;
     margin: 0.25rem 0.5rem 1rem;
   }
 

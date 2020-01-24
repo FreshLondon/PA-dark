@@ -1,7 +1,7 @@
 /* GALAXY FORUM
    -------------------------------------------------------*/
 .forum_description {
-  font-size: var(--txt-small);
+  font-size: $text-small;
   color: $color-offwhite;
 }
 
@@ -25,7 +25,7 @@
 .forum_thread_lastpost {
   flex-basis: 40%;
   text-align: left;
-  font-size: var(--txt-small);
+  font-size: $text-small;
 }
 
 .forum_thread_header_replies,
@@ -34,7 +34,7 @@
 }
 
 div[class^='forum_thread_header'] {
-  font-size: var(--txt-small);
+  font-size: $text-small;
   text-transform: uppercase;
 }
 
@@ -78,7 +78,7 @@ div[class^='forum_thread_header'] {
 .forum_poster,
 .forum_post_title,
 .forum_post_time {
-  font-size: var(--txt-small);
+  font-size: $text-small;
 }
 
 .forum_post_number {
@@ -160,7 +160,7 @@ div[class^='forum_thread_header'] {
 
 #editor > .center,
 #editor + .center {
-  font-size: var(--txt-small);
+  font-size: $text-small;
 
   a {
     display: inline-block;

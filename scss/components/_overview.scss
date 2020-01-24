@@ -46,7 +46,7 @@
       }
 
       &[id^='quest'] p {
-        font-size: var(--txt-small);
+        font-size: $text-small;
         margin: 0 1.1rem;
       }
     }
@@ -109,7 +109,7 @@
 .progress_wrapper {
   background-color: $color-black-light;
   color: $color-text;
-  font-size: var(--txt-small);
+  font-size: $text-small;
   height: 1.5rem;
   width: 100px;
 }
@@ -146,7 +146,7 @@
   padding-left: 0.25rem;
   position: relative;
   padding: 0.5rem 1rem 0.5rem 0.5rem;
-  font-size: var(--txt-small);
+  font-size: $text-small;
 
   a {
     position: absolute;
@@ -163,7 +163,7 @@
 .info_contents {
   p {
     min-width: 15rem;
-    font-size: var(--txt-small);
+    font-size: $text-small;
     color: $color-offwhite;
   }
 }

@@ -23,7 +23,7 @@
       left: 0;
       width: 100%;
       text-align: center;
-      font-size: var(--txt-small);
+      font-size: $text-small;
       text-transform: uppercase;
       font-weight: bold;
       padding: 0.5rem 0;
@@ -54,7 +54,7 @@
   th,
   td {
     color: $color-offwhite;
-    font-size: var(--txt-small);
+    font-size: $text-small;
     white-space: nowrap;
 
     .t1 + {

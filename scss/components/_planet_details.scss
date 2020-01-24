@@ -182,7 +182,7 @@
   a {
     flex-basis: 100%;
     text-align: center;
-    font-size: var(--txt-small);
+    font-size: $text-small;
     text-transform: uppercase;
     font-weight: bold;
     padding: 0.5rem 0 !important;
@@ -209,7 +209,7 @@
     content: 'Planetary Development ';
     width: calc(100% - 1rem);
     padding: 0.5rem;
-    font-size: var(--txt-small);
+    font-size: $text-small;
     text-transform: uppercase;
     font-weight: bold;
     text-align: center;
@@ -245,7 +245,7 @@
   padding: 0;
   text-align: left;
   flex-basis: 10rem;
-  font-size: var(--txt-small);
+  font-size: $text-small;
   @include respond-below(sm) {
     margin: 0;
     padding: 0 4px 0 0;
@@ -257,13 +257,13 @@
 
 .planet_summary_production_shipname {
   display: inline-block;
-  font-size: var(--txt-small);
+  font-size: $text-small;
   width: 6rem;
 }
 
 .planet_summary_production_shipcount {
   display: inline-block;
-  font-size: var(--txt-small);
+  font-size: $text-small;
   width: 3.5rem;
   text-align: right;
 }

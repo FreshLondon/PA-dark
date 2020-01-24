@@ -37,7 +37,7 @@
 
   #menu_time {
     margin-top: 2rem;
-    font-size: var(--txt-small);
+    font-size: $text-small;
   }
 }
 
@@ -47,7 +47,7 @@
   border-bottom: 1px solid $color-primary;
   padding: 4px 9px;
   background: #19222b;
-  font-size: var(--txt-small);
+  font-size: $text-small;
   font-weight: bold;
   text-transform: uppercase;
 }

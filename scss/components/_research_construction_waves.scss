@@ -40,7 +40,7 @@
       position: absolute;
       top: 3px;
       right: 2rem;
-      font-size: var(--txt-small);
+      font-size: $text-small;
     }
   }
 }
@@ -81,12 +81,12 @@
 .construction_info {
   .resources {
     flex-basis: 33%;
-    font-size: var(--txt-small);
+    font-size: $text-small;
 
     + p {
       flex-basis: 66%;
       display: flex;
-      font-size: var(--txt-small);
+      font-size: $text-small;
     }
   }
 
@@ -151,7 +151,7 @@
 
     + p {
       text-align: left;
-      font-size: var(--txt-small);
+      font-size: $text-small;
     }
   }
 }
@@ -161,7 +161,7 @@
 .research_next {
   .time,
   .rp {
-    font-size: var(--txt-small);
+    font-size: $text-small;
   }
 }
 
@@ -228,7 +228,7 @@
   border: 0;
 
   .resources {
-    font-size: var(--txt-small);
+    font-size: $text-small;
     margin-top: 1rem;
     padding-left: 0.5rem;
   }
@@ -248,7 +248,7 @@
 
 
 .scan_time {
-  font-size: var(--txt-small);
+  font-size: $text-small;
   text-align: center;
 }
 

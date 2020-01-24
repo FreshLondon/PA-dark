@@ -108,7 +108,7 @@ span.center {
 }
 
 .small {
-  font-size: var(--txt-small);
+  font-size: $text-small;
 }
 
 .container .header:first-child {
@@ -157,7 +157,7 @@ span.center {
 
     b {
       font-weight: normal;
-      font-size: var(--txt-small);
+      font-size: $text-small;
     }
   }
 

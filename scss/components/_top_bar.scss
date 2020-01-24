@@ -32,7 +32,7 @@
   &:after {
     display: block;
     content: 'The original space combat browser game';
-    font-size: var(--txt-small);
+    font-size: $text-small;
   }
 
   &:hover {
