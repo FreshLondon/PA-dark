@@ -2,7 +2,7 @@
 // variables for the skin
 //
 $color-primary: #52a5f8;
-$color-primary-dark: #854ff0;
+$color-primary-dark: darken($color-primary, 20%);
 $color-secondary: #010304;
 //
 $color-white: #fff;

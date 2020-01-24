@@ -12,6 +12,7 @@
         background: transparent !important;
         padding: 0 2px;
         font-size: 14px;
+
         &:hover {
           color: black;
           background: $color-primary !important;
@@ -24,6 +25,7 @@
 #base_behavior {
   p {
     color: $color-offwhite;
+    padding: 0;
   }
 
   input[type="submit"] {

@@ -200,14 +200,14 @@
           padding: 2px 12px 2px 2px;
         }
 
-        .relations_war {
-          outline: rgba($color-negative, 0.3) 2px dashed;
-          background: inherit;
+        .mission_attack {
+          background-color: rgba($color-negative, 0.12);
         }
 
-        .mission_attack {
-          background-color: rgba($color-negative, 0.14);
+        .relations_war {
+          background-color: rgba($color-negative, 0.3);
         }
+
 
         .mission_return {
           color: #949494;

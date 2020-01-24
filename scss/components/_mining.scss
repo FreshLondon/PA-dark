@@ -2,6 +2,7 @@
    -------------------------------------------------------*/
 #mining,
 #galaxy_fund {
+
   table {
     margin: 1rem 0;
   }
@@ -101,5 +102,21 @@
   #gal_target_amount,
   #uni_target_amount {
     font-weight: bold;
+  }
+}
+
+#mining,
+#galaxy_fund,
+#alliance_fund,
+#alliance_fund_trade,
+#alliance_fund_donate {
+  .metal,
+  .crystal,
+  .eonium {
+    width: 100%;
+    height: 30px;
+    display: block;
+    background-size: contain;
+    background-position: center;
   }
 }
