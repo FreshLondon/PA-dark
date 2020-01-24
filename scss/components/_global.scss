@@ -250,6 +250,10 @@ option {
     position: relative;
     width: 1.5rem;
     height: 1.5rem;
+
+    &:after {
+      font-size: 1.3rem;
+    }
   }
 
   img {
