@@ -47,9 +47,15 @@
         text-align: center;
       }
 
+      &:nth-child(6),
+      &:nth-child(8) {
+        text-align: center;
+      }
+
       &:nth-child(9) {
         text-align: right;
       }
+
     }
 
     td {
@@ -58,7 +64,7 @@
       }
 
       &.notice_warning {
-        color: $color-negative;
+        color: rgba($color-negative, .6);
         font-size: .75rem;
         background: transparent;
       }
