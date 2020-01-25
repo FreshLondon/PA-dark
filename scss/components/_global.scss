@@ -177,6 +177,11 @@ option {
   margin: 0 auto;
 
   p {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+
     &:nth-child(1) {
       display: flex;
       justify-content: center;
@@ -187,33 +192,42 @@ option {
       display: flex;
       justify-content: space-between;
     }
+
+    #to {
+      display: inline-block;
+      margin-left: 4rem;
+    }
+
+    #subject {
+      display: inline-block;
+      margin-left: 1.7rem;
+      width: calc(100% - 6rem);
+    }
+
+    #message_body {
+      display: inline-block;
+      vertical-align: -14rem;
+      width: calc(100% - 6rem) !important;
+      margin-left: 1.1rem;
+      height: 15rem;
+    }
+
+    #charsleft {
+      display: block;
+      text-align: center !important;
+      margin: 0 auto;
+      width: 100%;
+      font-size: $text-small;
+    }
+
+    input[type="submit"] {
+      margin: 0 auto;
+    }
   }
 
-  #to {
-    display: inline-block;
-    margin-left: 4rem;
-  }
-
-  #subject {
-    display: inline-block;
-    margin-left: 1.7rem;
-    width: calc(100% - 6rem);
-  }
-
-  #message_body {
-    display: inline-block;
-    vertical-align: -14rem;
-    width: calc(100% - 6rem) !important;
-    margin-left: 1.1rem;
-    height: 15rem;
-  }
 
   br {
     display: none;
-  }
-
-  #charsleft {
-    display: block;
   }
 
   + p {

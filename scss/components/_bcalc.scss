@@ -91,7 +91,7 @@
 
     &.def_value_gained,
     &.att_score_gained {
-      color: $color-primary-dark;
+      color: $color-positive;
     }
   }
 
@@ -348,8 +348,21 @@
   }
 }
 
-#def_value_table td:first-child, #att_score_table td:first-child {
-  width: 60%;
+#def_value_table,
+#att_score_table {
+  tr {
+    td {
+      &:last-of-type {
+        font-size: 1rem;
+      }
+    }
+
+    td {
+      &:first-child {
+        width: 60%;
+      }
+    }
+  }
 }
 
 
