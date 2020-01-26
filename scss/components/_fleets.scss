@@ -16,6 +16,18 @@
     th,
     td {
       background: $color-borders;
+
+      &.mission_return {
+        opacity: 1;
+      }
+
+      &.mission_attack {
+        background: rgba($color-negative, .14);
+      }
+
+      &.mission_defend {
+        background: rgba($color-positive, 0.14);
+      }
     }
   }
 }
