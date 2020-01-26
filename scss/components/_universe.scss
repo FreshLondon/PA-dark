@@ -131,7 +131,11 @@
 #load_box {
   background: $color-borders;
   border: 1px solid rgba($color-primary, .5);
-  color: $color-offwhite;
+  color: $color-offwhite !important;
+
+  > * {
+    color: $color-offwhite !important;
+  }
 }
 
 

@@ -48,7 +48,11 @@
               font-size: 1rem;
 
               a {
-                color: $color-positive;
+                color: $color-offwhite;
+
+                &:hover {
+                  color: rgba($color-offwhite, .7);
+                }
               }
             }
 
@@ -132,14 +136,14 @@
 
               a {
                 display: inline-flex;
-                width: 17px;
-                height: 17px;
+                //width: 11px;
+                //height: 17px;
                 align-items: center;
                 justify-content: center;
                 border-radius: 4px;
                 color: black !important;
-                margin-right: 3px;
-                background: $color-background;
+                margin-right: 5px;
+                //background: $color-background;
                 font-size: 1rem;
                 line-height: 1rem;
 
@@ -148,23 +152,23 @@
                 }
 
                 &.scan_age_new {
-                  border: 1px solid rgba($color-positive, 0.7);
-                  color: rgba($color-positive, 0.7) !important;
+                  //border: 1px solid rgba($color-positive, 0.7);
+                  color: rgba($color-positive, 1) !important;
                 }
 
                 &.scan_age_older {
-                  border: 1px solid rgba($color-neutral, 0.7);
-                  color: rgba($color-neutral, 0.7) !important;
+                  //border: 1px solid rgba($color-neutral, 0.7);
+                  color: rgba($color-neutral, 1) !important;
                 }
 
                 &.scan_age_old {
-                  border: 1px solid rgba(255, 255, 0, 0.7);
-                  color: rgba(255, 255, 0, 0.7) !important;
+                  //border: 1px solid rgba(255, 255, 0, 0.7);
+                  color: rgba(255, 255, 0, 1) !important;
                 }
 
                 &.scan_age_ancient {
-                  border: 1px solid rgba($color-negative, .5);
-                  color: rgba($color-negative, .5) !important;
+                  //border: 1px solid rgba($color-negative, .5);
+                  color: rgba($color-negative, 1) !important;
                 }
               }
             }
@@ -190,6 +194,7 @@
 
             .ally_def_attacker_intel {
               flex: 2;
+              color: $color-offwhite;
             }
           }
         }

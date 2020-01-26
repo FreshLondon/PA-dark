@@ -173,6 +173,15 @@
   }
 }
 
+span {
+  &.mission_attack,
+  &.mission_defend,
+  &.mission_return {
+    background: transparent;
+    opacity: 1;
+  }
+}
+
 .mission_return {
   opacity: .5;
   color: #888888;
