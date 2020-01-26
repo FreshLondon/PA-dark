@@ -10,6 +10,10 @@ a,
   }
 }
 
+#menu a {
+  color: rgba($color-primary, .8);
+}
+
 #page input[type="submit"],
 input[type="submit"],
 .forum_thread_new a,
