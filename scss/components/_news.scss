@@ -21,10 +21,10 @@
 
 
     tr {
-      &.new {
-        th,
-        td {
-          background: rgba($color-positive, .05);
+      th,
+      td {
+        &.new {
+          background: rgba($color-primary, .2);
         }
       }
     }
