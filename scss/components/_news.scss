@@ -1,8 +1,31 @@
 #view_news {
-  .new {
-    th,
-    td {
-      background: rgba($color-positive, .05);
+  table {
+    tr {
+      .news_incoming {
+        background: rgba(255, 0, 0, 0.25);
+      }
+
+
+      table {
+        background: transparent;
+
+        tr {
+          th,
+          td {
+            background: rgba(255, 255, 255, 0.05);
+          }
+        }
+      }
+    }
+
+
+    .new {
+      tr {
+        th,
+        td {
+          background: rgba($color-positive, .05);
+        }
+      }
     }
   }
 }

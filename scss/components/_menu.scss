@@ -44,6 +44,12 @@
   }
 }
 
+#hc_links {
+  a.ally_def_selected {
+    color: $color-positive;
+  }
+}
+
 #tnav {
   border: none;
 }
