@@ -76,13 +76,18 @@ body {
 
 body,
 p,
+input {
+  color: $color-offwhite;
+}
+
+body,
+p,
 td,
 th,
 input {
   font-family: "Ubuntu", "Lato", "Open Sans", sans-serif;
   font-size: 1rem;
   line-height: 1.4;
-  color: $color-offwhite;
 }
 
 body {

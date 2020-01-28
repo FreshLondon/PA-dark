@@ -1,8 +1,9 @@
 #view_news {
   table {
     tr {
-      .news_incoming {
-        background: rgba(255, 0, 0, 0.25);
+      th,
+      td {
+        background: $color-borders;
       }
 
 
@@ -12,15 +13,15 @@
         tr {
           th,
           td {
-            background: rgba(255, 255, 255, 0.05);
+            background: rgba(0, 0, 0, 0.25);
           }
         }
       }
     }
 
 
-    .new {
-      tr {
+    tr {
+      &.new {
         th,
         td {
           background: rgba($color-positive, .05);
