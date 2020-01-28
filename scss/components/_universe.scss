@@ -87,6 +87,14 @@
                 flex: 3;
               }
             }
+
+            &:nth-child(odd) {
+              background-color: darken($color-borders, 3%);
+
+              &.relations_neutral {
+                background-color: darken($color-borders, 3%);
+              }
+            }
           }
         }
       }
@@ -182,6 +190,9 @@
 
 .relations_neutral {
   background-color: $color-borders;
+  &:nth-child(odd) {
+    background-color: darken($color-borders, 3%);
+  }
 }
 
 .relations_nap {

@@ -32,7 +32,7 @@
     }
 
     tr {
-      &:nth-child(n+2) {
+      &:not(:first-child) {
         th {
           text-transform: initial;
           font-size: 1rem;
@@ -43,16 +43,18 @@
             //background: linear-gradient(135deg, var(--col-panel-light) 0%, var(--col-panel-dark) 100%);
           }
         }
+
       }
 
       &[id^='quest'] p {
         font-size: $text-small;
         margin: 0 1.1rem;
+        color: white;
       }
     }
 
     table {
-      width: calc(100% - 2rem);
+      width: calc(100% - 2.4rem);
       margin-left: 1rem;
 
       td {
