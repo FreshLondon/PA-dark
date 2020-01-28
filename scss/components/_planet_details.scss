@@ -22,14 +22,14 @@
 
       &#header_planet {
         max-width: unset;
-        font-size: 0.6875rem !important;
+        font-size: .6875rem !important;
       }
     }
   }
 
   > div {
     width: 50%;
-    padding: 0 0.5rem;
+    padding: 0 .5rem;
     display: flex;
     justify-content: space-between;
     margin: 0 0 .5rem;
@@ -91,7 +91,7 @@
 
   #header_planet {
     position: absolute;
-    top: 0.65rem;
+    top: .65rem;
     left: 0;
     font-size: 1.5rem;
     flex-basis: 100%;
@@ -270,7 +270,7 @@
   font-size: $text-small;
   @include respond-below(sm) {
     margin: 0;
-    padding: 0 0.25rem 0 0;
+    padding: 0 .25rem 0 0;
     text-align: right;
     flex: 1;
   }

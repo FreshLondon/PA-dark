@@ -26,7 +26,7 @@
       font-size: $text-small;
       text-transform: uppercase;
       font-weight: bold;
-      padding: 0.5rem 0;
+      padding: .5rem 0;
     }
   }
 }
@@ -99,25 +99,25 @@
     background: rgba($color-positive, .4);
     //background: linear-gradient(135deg, $color-primary 0%, $color-primary-dark 100%);
     color: $color-offwhite;
-    padding-bottom: 0.25rem;
+    padding-bottom: .25rem;
   }
 
   #att_side {
     background: rgba($color-negative, .35);
     //background: linear-gradient(170deg, $color-neutral 0%, $color-negative 100%);
-    padding-bottom: 0.25rem;
+    padding-bottom: .25rem;
   }
 
   .att_controls input,
   input[onclick*="att"]:not([type="checkbox"]) {
     background: $color-neutral;
     background: linear-gradient(170deg, $color-neutral 0%, $color-negative 100%);
-    padding-bottom: 0.25rem;
+    padding-bottom: .25rem;
 
     &:hover {
       background: $color-black-light;
       background: linear-gradient(170deg, $color-black-light 0%, $color-black-dark 100%);
-      padding-bottom: 0.25rem;
+      padding-bottom: .25rem;
       color: $color-text;
     }
   }
@@ -235,7 +235,7 @@
   }
 
   .global_controls {
-    padding: 0 0.5rem 0.5rem;
+    padding: 0 .5rem .5rem;
   }
 
   .def_ter,
@@ -245,7 +245,7 @@
     th,
     td {
       //color: $color-terran;
-      background-color: rgba($color-terran, 0.4);
+      background-color: rgba($color-terran, .4);
     }
   }
 
@@ -256,7 +256,7 @@
     th,
     td {
       //color: $color-cathaar;
-      background-color: rgba($color-cathaar, 0.4);
+      background-color: rgba($color-cathaar, .4);
     }
   }
 
@@ -267,7 +267,7 @@
     th,
     td {
       //color: $color-xandathrii;
-      background-color: rgba($color-xandathrii, 0.35);
+      background-color: rgba($color-xandathrii, .35);
     }
   }
 
@@ -278,7 +278,7 @@
     th,
     td {
       //color: $color-zikonian;
-      background-color: rgba($color-zikonian, 0.3);
+      background-color: rgba($color-zikonian, .3);
     }
   }
 
@@ -289,7 +289,7 @@
     th,
     td {
       //color: $color-eitraides;
-      background-color: rgba($color-eitraides, 0.5);
+      background-color: rgba($color-eitraides, .5);
     }
   }
 
@@ -425,6 +425,6 @@
 
 #add_own {
   th {
-    font-size: 0.6875rem;
+    font-size: .6875rem;
   }
 }

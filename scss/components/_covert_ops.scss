@@ -18,7 +18,7 @@
 
       a {
         display: inline-block;
-        padding: 0.25rem 1rem;
+        padding: .25rem 1rem;
         color: $color-primary;
 
         &:hover {
@@ -52,8 +52,8 @@
 
   .training_info .title {
     display: block;
-    padding: 0.25rem 0.5rem;
-    margin-bottom: 0.5rem;
+    padding: .25rem .5rem;
+    margin-bottom: .5rem;
     background: $color-borders;
     //background: linear-gradient(135deg, var(--col-panel-light) 0%, var(--col-panel-dark) 100%);
     font-size: 1rem;
@@ -61,7 +61,7 @@
 
   .description {
     position: relative;
-    padding-left: 0.5rem;
+    padding-left: .5rem;
     padding-right: 15rem;
   }
 
@@ -75,8 +75,8 @@
 
   .resources {
     font-size: $text-small;
-    margin-top: 0.15rem;
-    padding-left: 0.5rem;
+    margin-top: .15rem;
+    padding-left: .5rem;
     display: flex;
 
     li.textlabel {
@@ -107,7 +107,7 @@
   #wage_bill {
     display: flex;
     justify-content: center;
-    margin-bottom: 0.5rem;
+    margin-bottom: .5rem;
 
     .resources {
       font-size: 1rem;
@@ -132,7 +132,7 @@
 #security_redundancy_form {
   th,
   td {
-    padding: 0.15rem 1rem;
+    padding: .15rem 1rem;
   }
 }
 

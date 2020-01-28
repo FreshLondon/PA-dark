@@ -5,8 +5,8 @@
   //background: linear-gradient(135deg, $color-primary 0%, $color-primary-dark 100%);
   border: 0;
   border: none;
-  height: 0.75rem;
-  width: 0.75rem;
+  height: .75rem;
+  width: .75rem;
 }
 
 .population_display {
@@ -34,7 +34,7 @@
     tr {
       &:nth-child(7) th {
         text-align: right;
-        padding: 0.5rem 0;
+        padding: .5rem 0;
         font-weight: normal;
       }
 
@@ -71,7 +71,7 @@
 
         th,
         td {
-          padding: 0.15rem 2rem;
+          padding: .15rem 2rem;
         }
       }
     }
@@ -86,7 +86,7 @@
 
       span {
         display: inline-block;
-        padding: 0.15rem 1rem;
+        padding: .15rem 1rem;
         flex-basis: 50%;
       }
     }
@@ -110,6 +110,6 @@
   border: none;
 
   p {
-    margin-left: 0.5rem;
+    margin-left: .5rem;
   }
 }

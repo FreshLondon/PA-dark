@@ -3,7 +3,7 @@ a,
 #menu a {
   color: $color-primary;
   text-decoration: none;
-  transition: 0.3s;
+  transition: .3s;
 
   &:hover {
     color: $color-offwhite;
@@ -30,7 +30,7 @@ input[type="submit"],
   display: inline-block;
   height: 1.5rem;
   margin: 1rem 0;
-  padding: 0 0.5rem;
+  padding: 0 .5rem;
   color: black !important;
   background: $color-primary !important;
   //background: linear-gradient(135deg, $color-primary 0%, $color-primary-dark 100%);
@@ -40,7 +40,7 @@ input[type="submit"],
   border-radius: 0;
   text-transform: initial;
   font-weight: initial;
-  transition: 0.3s;
+  transition: .3s;
   font-family: inherit;
   font-size: 1rem;
 

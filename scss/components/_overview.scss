@@ -38,7 +38,7 @@
           font-size: 1rem;
 
           &:nth-child(2) {
-            padding: 0.15rem 0;
+            padding: .15rem 0;
             background: $color-borders;
             //background: linear-gradient(135deg, var(--col-panel-light) 0%, var(--col-panel-dark) 100%);
           }
@@ -66,7 +66,7 @@
 
         &:nth-child(2n+2) {
           td {
-            padding: 0.5rem;
+            padding: .5rem;
             background: $color-borders;
             //background: linear-gradient(135deg, var(--col-panel-light) 0%, var(--col-panel-dark) 100%);
           }
@@ -90,7 +90,7 @@
 
 .expand {
   display: inline-block;
-  margin-right: 0.5rem;
+  margin-right: .5rem;
   background: none;
 
   &:before {
@@ -121,7 +121,7 @@
 }
 
 .progress_expected {
-  background: rgba(237, 255, 0, 0.4);
+  background: rgba(237, 255, 0, .4);
   height: 100%;
   margin-top: -1.5rem;
   background-size: 100%;
@@ -138,16 +138,16 @@
 .info_header {
   color: $color-offwhite;
   text-align: left;
-  margin-bottom: 0.25rem;
-  padding-left: 0.25rem;
+  margin-bottom: .25rem;
+  padding-left: .25rem;
   position: relative;
-  padding: 0.5rem 1rem 0.5rem 0.5rem;
+  padding: .5rem 1rem .5rem .5rem;
   font-size: $text-small;
 
   a {
     position: absolute;
-    top: 0.45rem;
-    right: 0.25rem;
+    top: .45rem;
+    right: .25rem;
     text-transform: uppercase;
 
     &:hover {
@@ -193,7 +193,7 @@ span {
 
 .mission_defend {
   color: #00AA00;
-  background: rgba($color-positive, 0.14);
+  background: rgba($color-positive, .14);
 
   .mission_defend {
     background: transparent;

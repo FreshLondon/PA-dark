@@ -14,7 +14,7 @@
             background-color: #24303f;
 
             &.relations_war {
-              background: rgba($color-negative, 0.25);
+              background: rgba($color-negative, .25);
             }
 
             &.relations_neutral {
@@ -22,20 +22,20 @@
             }
 
             &.relations_nap {
-              background: rgba($color-neutral, 0.2);
+              background: rgba($color-neutral, .2);
             }
 
             &.relations_friendly {
-              background: rgba($color-positive, 0.15);
+              background: rgba($color-positive, .15);
               outline: none;
             }
 
             &.relations_allied {
-              background: rgba($color-positive, 0.35);
+              background: rgba($color-positive, .35);
             }
 
             &.relations_own_member {
-              background: rgba($color-own, 0.25);
+              background: rgba($color-own, .25);
             }
 
             th,
@@ -115,7 +115,7 @@
           color: $color-text;
           //padding: .75rem 0;
           font-size: .75rem;
-          padding: 0.5rem .125rem;
+          padding: .5rem .125rem;
           display: flex;
           align-items: center;
 
@@ -162,7 +162,7 @@
   border: 1px solid rgba($color-primary, .5);
   color: $color-offwhite !important;
 
-  > * {
+  * {
     color: $color-offwhite !important;
   }
 }
@@ -177,7 +177,7 @@
 }
 
 .relations_war {
-  background: rgba($color-negative, 0.25);
+  background: rgba($color-negative, .25);
 }
 
 .relations_neutral {
@@ -185,20 +185,20 @@
 }
 
 .relations_nap {
-  background: rgba($color-neutral, 0.2);
+  background: rgba($color-neutral, .2);
 }
 
 .relations_friendly {
-  background: rgba($color-positive, 0.15);
+  background: rgba($color-positive, .15);
   outline: none;
 }
 
 .relations_allied {
-  background: rgba($color-positive, 0.35);
+  background: rgba($color-positive, .35);
 }
 
 .relations_own_member {
-  background: rgba($color-own, 0.25);
+  background: rgba($color-own, .25);
 }
 
 #page_universe_launches,
@@ -217,9 +217,7 @@
           background: #24303f;
           color: #ccc;
           font-size: .75rem;
-          padding: 0.5rem .125rem;
-          display: flex;
-          align-items: center;
+          padding: .5rem .125rem;
         }
       }
 
