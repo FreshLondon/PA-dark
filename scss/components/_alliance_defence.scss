@@ -15,7 +15,7 @@
         background: $color-borders;
 
         .ally_def_target {
-          font-size: 15px;
+          font-size: 1rem;
 
           > div {
             display: flex;
@@ -34,7 +34,10 @@
           }
 
           .ally_def_target_coords {
-            flex: 1;
+            width: 55px;
+            justify-content: flex-end;
+            padding-right: 7px;
+            font-size: .9rem;
           }
 
           .ally_def_target_mdata {
@@ -115,11 +118,30 @@
             }
 
             .ally_def_attacker_coords {
-              flex: 1;
+              order: 1;
+              width: 54px;
+              position: relative;
+              justify-content: flex-end;
+              padding-right: 7px;
+
+              .ally_def_attacker_not_calc {
+                position: absolute;
+                left: 4px;
+                order: 1;
+                font-size: 0;
+                transform: translateY(2px);
+
+                &:before {
+                  content: "*";
+                  font-size: .75rem;
+                }
+              }
             }
 
             .ally_def_attacker_fleetname {
-              flex: 2;
+              order: 2;
+              width: 120px;
+              max-width: 120px !important;
               display: flex;
               align-items: center;
               overflow: hidden;
@@ -127,15 +149,26 @@
             }
 
             .ally_def_attacker_race {
-              flex: 1;
+              order: 3;
+              width: 30px;
             }
 
             .ally_def_attacker_shipcount {
-              flex: 1;
+              order: 5;
+              width: 70px;
+              max-width: 70px;
+              text-align: right;
+              justify-content: flex-end;
             }
 
             .ally_def_attacker_links {
+              order: 6;
               flex: 2;
+              padding-left: 0;
+              padding-right: 10px;
+              text-align: right;
+              justify-content: flex-end;
+              width: unset;
 
               a {
                 display: inline-flex;
@@ -177,6 +210,7 @@
             }
 
             .ally_def_attacker_call_status {
+              order: 7;
               flex: 2;
 
               form {
@@ -188,10 +222,12 @@
             }
 
             .ally_def_attacker_orig_eta {
-              flex: 1;
+              order: 4;
+              width: 20px;
             }
 
             .ally_def_attacker_classes {
+              order: 8;
               flex: 2;
               color: transparent;
               text-transform: uppercase;
@@ -213,6 +249,7 @@
             }
 
             .ally_def_attacker_intel {
+              order: 9;
               padding-right: 4px;
               flex: 2;
               color: $color-offwhite;
@@ -342,9 +379,73 @@
 
         .mission_return {
           background: unset;
-          opacity: 0.5;
+          opacity: .7;
         }
 
+        .ally_def_defenders {
+          font-size: 0.9rem;
+
+          .ally_def_defender {
+            .ally_def_defender_coords {
+              order: 1;
+              display: flex;
+              position: relative;
+              width: 54px;
+              align-items: center;
+
+              a {
+                position: absolute;
+                right: 8px;
+              }
+
+              .ally_def_defender_not_calc {
+                position: absolute;
+                left: 4px;
+                order: 1;
+                font-size: 0;
+
+                &:before {
+                  content: "*";
+                  font-size: 0.75rem;
+                }
+              }
+            }
+
+            .ally_def_defender_fleetname {
+              order: 2;
+              width: 120px;
+              max-width: 120px !important;
+              margin-right: 4px;
+            }
+
+            .ally_def_defender_race {
+              order: 3;
+              width: 30px;
+            }
+
+            .ally_def_defender_shipcount {
+              order: 5;
+              width: 70px;
+              max-width: 70px;
+              text-align: right;
+            }
+
+            .ally_def_defender_orig_eta {
+              order: 4;
+              text-align: left;
+              width: 20px;
+            }
+
+            .ally_def_defender_mdata {
+              order: 6;
+
+              .ally_def_defender_mdata_ap, .ally_def_defender_mdata_dp {
+                display: flex;
+                justify-content: flex-start;
+              }
+            }
+          }
+        }
       }
     }
   }
