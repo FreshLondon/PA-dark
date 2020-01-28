@@ -1,14 +1,43 @@
 #page_universe {
+
   .maintext {
     padding: 0;
   }
 
   #contents {
     .container {
+
       &:nth-last-child(2),
       &:nth-last-child(3) {
         table {
           tr {
+            background-color: #24303f;
+
+            &.relations_war {
+              background: rgba($color-negative, 0.25);
+            }
+
+            &.relations_neutral {
+              background-color: $color-borders;
+            }
+
+            &.relations_nap {
+              background: rgba($color-neutral, 0.2);
+            }
+
+            &.relations_friendly {
+              background: rgba($color-positive, 0.15);
+              outline: none;
+            }
+
+            &.relations_allied {
+              background: rgba($color-positive, 0.35);
+            }
+
+            &.relations_own_member {
+              background: rgba($color-own, 0.25);
+            }
+
             th,
             td {
               width: auto !important;
@@ -170,4 +199,38 @@
 
 .relations_own_member {
   background: rgba($color-own, 0.25);
+}
+
+#page_universe_launches,
+#page_universe_covert_ops,
+#page_universe_misc,
+#page_universe_races,
+#page_universe_xp,
+#page_universe_politics,
+#page_universe_feed,
+#page_universe_combat_reports {
+  table {
+    tr {
+      &:first-child {
+        th {
+          font-weight: bold;
+          background: #24303f;
+          color: #ccc;
+          font-size: .75rem;
+          padding: 0.5rem .125rem;
+          display: flex;
+          align-items: center;
+        }
+      }
+
+      a,
+      .tablesort_asc,
+      .tablesort_desc {
+        color: $color-text;
+        @include respond-below(sm) {
+          padding: 0 .5rem;
+        }
+      }
+    }
+  }
 }

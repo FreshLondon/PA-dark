@@ -142,38 +142,12 @@ option {
 
 #mail_new {
   background: $color-positive;
-  //background: linear-gradient(135deg, $color-primary 0%, $color-primary-dark 100%);
-  color: $color-offwhite !important;
+  color: black !important;
 }
-
-//@keyframes changewidth {
-//  from {
-//    height: 100%;
-//    background: $color-neutral;
-//    color: #cccccc;
-//  }
-//
-//  to {
-//    height: calc(100% + 2px);
-//    background: rgba(255, 165, 0, 0.85);
-//    color: white;
-//  }
-//}
 
 #news_new {
   background: $color-neutral;
-  //background: linear-gradient(170deg, $color-neutral 0%, $color-negative 100%);
-  color: $color-offwhite !important;
-  //animation-duration: 1s;
-  //animation-name: changewidth;
-  //animation-iteration-count: infinite;
-  //animation-direction: alternate;
-  //transform: translateY(-50%);
-  //position: relative;
-  //top: 50%;
-  //display: flex;
-  //align-items: center;
-  //justify-content: center;
+  color: black !important;
 }
 
 #message_form {
