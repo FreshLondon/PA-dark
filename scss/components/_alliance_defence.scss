@@ -223,7 +223,15 @@
 
             .ally_def_attacker_orig_eta {
               order: 4;
-              width: 20px;
+              width: 70px;
+              justify-content: flex-end;
+              align-items: flex-end;
+
+              &:before {
+                content: "Reported:";
+                font-size: .75rem;
+                padding-right: 4px;
+              }
             }
 
             .ally_def_attacker_classes {
@@ -436,8 +444,16 @@
 
             .ally_def_defender_orig_eta {
               order: 4;
-              text-align: left;
-              width: 20px;
+              text-align: right;
+              width: 70px;
+              justify-content: flex-end;
+              align-items: flex-end;
+
+              &:before {
+                content: "Sent:";
+                font-size: .75rem;
+                padding-right: 4px;
+              }
             }
 
             .ally_def_defender_mdata {
