@@ -108,12 +108,19 @@
   flex-basis: 66%;
   display: flex;
   flex-wrap: wrap;
+  justify-content: flex-end;
   text-align: left;
   padding: 1rem .5rem;
 
   .resources {
-    flex-basis: 70%;
     margin-bottom: 0;
+    text-align: right;
+    width: calc(100% - 137px);
+    order: 3;
+
+    &:first-of-type {
+      order: 1;
+    }
 
     li {
       display: inline-block;
@@ -121,14 +128,28 @@
   }
 
   form {
-    flex-basis: 30%;
     margin-top: -1.25rem;
+    order: 4;
+    width: 137px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    &:first-of-type {
+      order: 2;
+    }
+
+    input[type="submit"] {
+      min-width: 110px;
+    }
 
     p {
-      text-align: left;
+      text-align: right;
     }
   }
 }
+
+
 
 .construction_built {
   flex-basis: 33%;

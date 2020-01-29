@@ -289,6 +289,10 @@
             font-size: .75rem;
             text-transform: uppercase;
 
+            .ally_def_details_fleetname {
+              font-style: italic;
+            }
+
             .ally_def_details_classes {
               display: flex;
               justify-content: flex-end;
