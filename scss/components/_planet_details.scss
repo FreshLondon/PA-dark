@@ -38,10 +38,13 @@
   #header_mail,
   #header_news {
     background: black;
+    transition: ease all .3s;
 
     &:hover {
+      background: $color-primary;
+
       a {
-        color: $color-primary;
+        color: black;
       }
     }
 
@@ -218,6 +221,7 @@
   border: 1px solid transparent;
   border-image: linear-gradient(to right, transparent 0%, rgba($color-primary, .5) 50%, transparent 100%);
   border-image-slice: 1;
+  padding: 0;
   @include respond-below(sm) {
     grid-row: 2/3;
     grid-column: 2 / 2;
