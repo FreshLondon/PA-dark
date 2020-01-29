@@ -296,9 +296,16 @@
             padding-left: 4px;
             font-size: .75rem;
             text-transform: uppercase;
+            text-align: right;
 
             .ally_def_details_fleetname {
               font-style: italic;
+              flex-grow: 100;
+
+              &:after {
+                content: "-";
+                padding-left: 5px;
+              }
             }
 
             .ally_def_details_classes {
