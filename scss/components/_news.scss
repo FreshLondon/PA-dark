@@ -94,9 +94,18 @@
 
   tr {
     &.new > {
-      th,
-      td {
-        background: rgba($color-primary, .1);
+      &:nth-child(odd) {
+        th,
+        td {
+          background: rgba($color-primary, .1);
+        }
+      }
+
+      &:nth-child(even) {
+        th,
+        td {
+          background: rgba($color-primary, .2);
+        }
       }
     }
   }
