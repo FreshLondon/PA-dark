@@ -146,19 +146,51 @@
   #menu {
     margin: .5rem 0 .5rem .5rem;
     grid-column: 1 / 2;
+    display: flex;
+    flex-direction: column;
 
     li {
       margin: 0;
+
+      a {
+        font-size: 0.75rem;
+      }
     }
 
     .entry_sep {
       display: block;
-      margin: .5rem;
-      border-top: 1px solid rgba($color-primary, .5);
+      margin: .5rem 0 .5rem;
+      //border-top: 1px solid rgba($color-primary, .5);
+      border-top: 1px solid transparent;
+      border-image: linear-gradient(to right, transparent 0%, rgba(82, 165, 248, 0.5) 100%);
+      border-image-slice: 1;
     }
 
     #entry_search + .entry_sep + .entries {
       display: none;
+    }
+
+    #entry_search {
+      form {
+        margin: 0;
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        br {
+          display: none;
+        }
+
+        input {
+          width: calc(100% - 8px);
+          max-width: none;
+
+          &[type="submit"] {
+            margin-top: 4px;
+          }
+        }
+      }
     }
   }
 
@@ -207,36 +239,73 @@
     text-transform: initial;
     font-size: 1rem;
   }
-}
 
-.stats_tbl {
-  th, td {
-    //background-color: var(--col-panel-light);
-    padding: .15rem .5rem;
-  }
+  .stats_tbl {
+    tr {
+      th:not([colspan="17"]).stats_title {
+        background: $color-borders;
+        color: white;
+      }
 
-  th[colspan="17"] {
-    background-color: transparent;
-    color: white;
+      &.Ter td,
+      &.Cat td,
+      &.Xan td,
+      &.Zik td,
+      &.Etd td {
+        color: $color-offwhite;
+      }
+    }
+
+    th, td {
+      //background-color: var(--col-panel-light);
+      padding: .15rem .5rem;
+    }
+
+    th[colspan="17"] {
+      background-color: transparent;
+      color: white;
+      font-size: 1.25rem;
+      text-shadow: 1px 2px 2px black;
+    }
   }
 }
 
 .Ter {
   background: rgba($color-terran, .3);
-}
 
-.Xan {
-  background: rgba($color-xandathrii, .3);
+  &:nth-child(odd) {
+    background: rgba($color-terran, .4);
+  }
 }
 
 .Cat {
   background: rgba($color-cathaar, .3);
+
+  &:nth-child(odd) {
+    background: rgba($color-cathaar, .4);
+  }
+}
+
+.Xan {
+  background: rgba($color-xandathrii, .3);
+
+  &:nth-child(odd) {
+    background: rgba($color-xandathrii, .4);
+  }
 }
 
 .Zik {
   background: rgba($color-zikonian, .3);
+
+  &:nth-child(odd) {
+    background: rgba($color-zikonian, .4);
+  }
 }
 
 .Etd {
   background: rgba($color-eitraides, .3);
+
+  &:nth-child(odd) {
+    background: rgba($color-eitraides, .4);
+  }
 }
