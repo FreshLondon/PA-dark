@@ -28,6 +28,10 @@
       &.mission_defend {
         background: rgba($color-positive, .14);
       }
+
+      &.mission_fake_defend {
+        background: rgba($color-neutral, .14);
+      }
     }
   }
 }

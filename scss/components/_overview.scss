@@ -166,8 +166,18 @@
   }
 }
 
+span {
+  &.mission_attack,
+  &.mission_defend,
+  &.mission_return,
+  &.mission_fake_defend {
+    background: transparent;
+    opacity: 1;
+  }
+}
+
 .mission_attack {
-  color: #FF0000;
+  color: $color-negative;
   background: rgba($color-negative, .14);
 
   .mission_attack {
@@ -175,12 +185,12 @@
   }
 }
 
-span {
-  &.mission_attack,
-  &.mission_defend,
-  &.mission_return {
+.mission_fake_defend {
+  color: $color-neutral;
+  background: rgba($color-neutral, .14);
+
+  .mission_fake_defend {
     background: transparent;
-    opacity: 1;
   }
 }
 
