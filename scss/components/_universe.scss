@@ -185,7 +185,7 @@
 }
 
 .relations_war {
-  background: rgba($color-negative, .25);
+  background: rgba($color-negative, .25) !important;
 }
 
 .relations_neutral {
@@ -196,20 +196,20 @@
 }
 
 .relations_nap {
-  background: rgba($color-neutral, .2);
+  background: rgba($color-neutral, .2) !important;
 }
 
 .relations_friendly {
-  background: rgba($color-positive, .15);
+  background: rgba($color-positive, .15) !important;
   outline: none;
 }
 
 .relations_allied {
-  background: rgba($color-positive, .35);
+  background: rgba($color-positive, .35) !important;
 }
 
 .relations_own_member {
-  background: rgba($color-own, .25);
+  background: rgba($color-own, .25) !important;
 }
 
 #page_universe_launches,
