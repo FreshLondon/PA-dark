@@ -49,6 +49,8 @@
 
             .ally_def_target_mdata_nick {
               font-size: 1rem;
+              min-width: 125px;
+              overflow: hidden;
 
               a {
                 color: $color-offwhite;
