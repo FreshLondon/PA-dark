@@ -33,11 +33,19 @@
 
         td {
           background: $color-borders;
+
+          &:empty {
+            background: transparent;
+          }
         }
 
         &:nth-child(odd) {
           td {
             background-color: darken($color-borders, 3%);
+
+            &:empty {
+              background: transparent;
+            }
           }
         }
       }
