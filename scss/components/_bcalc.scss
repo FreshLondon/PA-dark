@@ -349,21 +349,22 @@
     min-width: 70px;
   }
 
-  .t1 {
+  span.t1 {
     color: $color-negative;
   }
 
-  input.t1 {
+  input.t1:not([value="0"]) {
+    color: $color-negative;
     background-color: darken($color-borders, 4%) !important;
     border-color: rgba($color-negative, .5) !important;
   }
 
-
-  .t2 {
+  span.t2 {
     color: $color-neutral;
   }
 
-  input.t2 {
+  input.t2:not([value="0"]) {
+    color: $color-neutral;
     background-color: darken($color-borders, 4%) !important;
     border-color: rgba($color-neutral, .5) !important;
   }
@@ -415,7 +416,6 @@
       font-weight: bold;
     }
   }
-
 }
 
 #add_other input[type="number"] {
