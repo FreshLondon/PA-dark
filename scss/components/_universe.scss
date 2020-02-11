@@ -11,10 +11,15 @@
       &:nth-last-child(3) {
         table {
           tr {
-            background-color: #24303f;
+            background-color: $color-borders;
 
             &.relations_war {
               background: rgba($color-negative, .25);
+            }
+
+            &.relations_hostile {
+              background: rgba($color-negative, .125);
+              outline: none;
             }
 
             &.relations_neutral {
