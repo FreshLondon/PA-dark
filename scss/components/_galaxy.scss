@@ -39,19 +39,19 @@
             color: $color-offwhite;
 
             &.gc {
-              color: #0080ff;
+              color: $color-gc;
             }
 
             &.moc {
-              color: #8081FF;
+              color: $color-moc;
             }
 
             &.mow {
-              color: #FF0000;
+              color: $color-mow;
             }
 
             &.mod {
-              color: #00b500;
+              color: $color-mod;
             }
           }
         }

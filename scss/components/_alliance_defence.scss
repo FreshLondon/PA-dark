@@ -45,6 +45,7 @@
 
             > span {
               flex: 1;
+              min-width: 40px;
             }
 
             .ally_def_target_mdata_nick {
@@ -152,7 +153,7 @@
 
             .ally_def_attacker_race {
               order: 3;
-              width: 30px;
+              min-width: 30px;
             }
 
             .ally_def_attacker_shipcount {
@@ -165,23 +166,18 @@
 
             .ally_def_attacker_links {
               order: 6;
-              flex: 2;
-              padding-left: 0;
-              padding-right: 10px;
+              padding: 0 10px;
               text-align: right;
               justify-content: flex-end;
-              width: unset;
+              min-width: 110px;
 
               a {
                 display: inline-flex;
-                //width: 11px;
-                //height: 17px;
                 align-items: center;
                 justify-content: center;
                 border-radius: 4px;
                 color: black !important;
                 margin-right: 5px;
-                //background: $color-background;
                 font-size: 1rem;
                 line-height: 1rem;
 
@@ -213,7 +209,6 @@
 
             .ally_def_attacker_call_status {
               order: 7;
-              flex: 2;
 
               form {
                 select {
@@ -227,7 +222,7 @@
               order: 4;
               width: 70px;
               justify-content: flex-end;
-              align-items: flex-end;
+              align-items: center;
 
               &:before {
                 content: "Reported:";
@@ -261,7 +256,6 @@
             .ally_def_attacker_intel {
               order: 9;
               padding-right: 4px;
-              flex: 2;
               color: $color-offwhite;
             }
           }

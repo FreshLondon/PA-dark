@@ -119,3 +119,13 @@
     background-size: contain;
   }
 }
+
+#alliance_fund,
+#alliance_fund_trade,
+#alliance_fund_donate {
+  .metal,
+  .crystal,
+  .eonium {
+    background-position: center;
+  }
+}
