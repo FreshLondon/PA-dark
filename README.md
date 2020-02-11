@@ -1,7 +1,7 @@
-# PA-light
-Customised dark theme for [Planetarion](https://planetarion.com) created for the 'Round 32' skin by Leshy - updated and actively maintained by UltimateNewbie.
+# PA-dark
+Customised dark theme for [Planetarion](https://planetarion.com) created for use with the 'Round 32' skin.
 
-For anyone wishing to use the styles, please see the compiled output found at /dist/styles.css.
+For anyone wishing to use the styles, please see the raw compiled output found at [/dist/styles.css](https://raw.githubusercontent.com/FreshLondon/PA-dark/master/dist/styles.css).
 
 ---
 
