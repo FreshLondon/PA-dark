@@ -57,11 +57,6 @@
     font-size: $text-small;
     white-space: nowrap;
 
-    .t1 + {
-      background-color: red !important;
-      color: $color-offwhite !important;
-    }
-
     &.def_total,
     &.att_total {
       color: $color-offwhite;
@@ -181,10 +176,10 @@
       }
 
       &#def_race_etd {
-        border-color: $color-offwhite;
+        border-color: $color-eitraides;
 
         &:before {
-          color: $color-offwhite;
+          color: $color-eitraides;
         }
       }
     }
@@ -225,10 +220,10 @@
       }
 
       &#att_race_etd {
-        border-color: $color-offwhite;
+        border-color: $color-eitraides;
 
         &:before {
-          color: $color-offwhite;
+          color: $color-eitraides;
         }
       }
     }
@@ -245,7 +240,7 @@
     th,
     td {
       //color: $color-terran;
-      background-color: rgba($color-terran, .4);
+      background-color: rgba($color-terran, .3);
     }
   }
 
@@ -256,7 +251,7 @@
     th,
     td {
       //color: $color-cathaar;
-      background-color: rgba($color-cathaar, .4);
+      background-color: rgba($color-cathaar, .3);
     }
   }
 
@@ -267,7 +262,7 @@
     th,
     td {
       //color: $color-xandathrii;
-      background-color: rgba($color-xandathrii, .35);
+      background-color: rgba($color-xandathrii, .3);
     }
   }
 
@@ -289,17 +284,25 @@
     th,
     td {
       //color: $color-eitraides;
-      background-color: rgba($color-eitraides, .5);
+      background-color: rgba($color-eitraides, .3);
     }
   }
 
-  span[onmouseover] {
-    cursor: default;
+  span {
+    transition: ease all .3s;
+
+    &[onmouseover] {
+      cursor: crosshair;
+    }
   }
 
   #def_table,
   #att_table {
     td {
+      input {
+        height: 1.375rem;
+      }
+
       &:nth-child(2) {
         input {
           background-color: $color-borders;
@@ -314,7 +317,6 @@
     tr {
       &:nth-child(2) {
         th {
-
           font-weight: bold;
         }
       }
@@ -346,6 +348,25 @@
     width: unset;
     min-width: 70px;
   }
+
+  .t1 {
+    color: $color-negative;
+  }
+
+  input.t1 {
+    background-color: darken($color-borders, 4%) !important;
+    border-color: rgba($color-negative, .5) !important;
+  }
+
+
+  .t2 {
+    color: $color-neutral;
+  }
+
+  input.t2 {
+    background-color: darken($color-borders, 4%) !important;
+    border-color: rgba($color-neutral, .5) !important;
+  }
 }
 
 #def_value_table,
@@ -368,18 +389,7 @@
 
 #bcalc tr:nth-child(4) .global_controls,
 #def_table tr:nth-last-child(-n+3),
-#att_table tr:nth-last-child(-n+5)
-  //.def_ter,
-  //.att_ter,
-  //.def_cat,
-  //.att_cat,
-  //.def_xan,
-  //.att_xan,
-  //.def_zik,
-  //.att_zik,
-  //.def_etd,
-  //.att_etd
-{
+#att_table tr:nth-last-child(-n+5) {
   background-color: $color-borders;
 }
 
