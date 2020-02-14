@@ -63,7 +63,6 @@ h2 {
   color: $color-offwhite;
   background: $color-borders;
   background: linear-gradient(180deg, $color-borders 0%, $color-borders 15%, $color-borders 100%) !important;
-  //border: 1px solid rgba($color-primary, .5);
   border: 1px solid transparent;
   border-image: linear-gradient(to right, transparent 0%, rgba(82, 165, 248, .5) 50%, transparent 100%);
   border-image-slice: 1;
