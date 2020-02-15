@@ -65,183 +65,178 @@
   flex-wrap: wrap;
   border: none;
   margin-bottom: 0;
-}
 
-.construction_info {
-  flex-basis: 100%;
-  display: flex;
-  flex-wrap: wrap;
-
-  .title,
-  .description {
+  .construction_info {
     flex-basis: 100%;
-  }
-}
-
-.construction_info {
-  .resources {
-    flex-basis: 33%;
-    font-size: $text-small;
-
-    + p {
-      flex-basis: 66%;
-      display: flex;
-      font-size: $text-small;
-    }
-  }
-
-  p {
-    .time,
-    .cu {
-      flex-basis: 50%;
-    }
-  }
-
-  p,
-  .resources {
-    padding-left: .5rem;
-  }
-}
-
-
-.construction_build {
-  flex-basis: 66%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-end;
-  text-align: left;
-  padding: 1rem .5rem;
-
-  .resources {
-    margin-bottom: 0;
-    text-align: right;
-    width: calc(100% - 137px);
-    order: 3;
-
-    &:first-of-type {
-      order: 1;
-    }
-
-    li {
-      display: inline-block;
-    }
-  }
-
-  form {
-    margin-top: -1.25rem;
-    order: 4;
-    width: 137px;
     display: flex;
-    align-items: center;
-    justify-content: flex-end;
+    flex-wrap: wrap;
 
-    &:first-of-type {
-      order: 2;
+    .title,
+    .description {
+      flex-basis: 100%;
     }
 
-    input[type="submit"] {
-      min-width: 110px;
+    .resources {
+      flex-basis: 33%;
+      font-size: $text-small;
+
+      + p {
+        flex-basis: 66%;
+        display: flex;
+        font-size: $text-small;
+      }
     }
 
     p {
+      .time,
+      .cu {
+        flex-basis: 50%;
+      }
+    }
+
+    p,
+    .resources {
+      padding-left: .5rem;
+    }
+  }
+
+  .construction_built {
+    flex-basis: 33%;
+    text-align: left;
+    padding: 1rem .5rem;
+
+    .textvalue {
+      font-weight: bold;
+    }
+
+    .progress_wrapper {
+      margin: .5rem 0;
+
+      .progress_expected {
+        background-image: none;
+        background-color: $color-progress-expected;
+        height: 1.5rem;
+        margin-top: -1.5rem;
+      }
+
+      + p {
+        text-align: left;
+        font-size: $text-small;
+      }
+    }
+  }
+
+  .construction_build {
+    flex-basis: 66%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem .5rem;
+    flex-wrap: wrap;
+
+    .resources {
+      margin-bottom: 0;
       text-align: right;
-    }
-  }
-}
+      order: 2;
+      width: 50%;
 
+      li {
+        display: inline-block;
 
-
-.construction_built {
-  flex-basis: 33%;
-  text-align: left;
-  padding: 1rem .5rem;
-
-  .textvalue {
-    font-weight: bold;
-  }
-
-  .progress_wrapper {
-    margin: .5rem 0;
-
-    .progress_expected {
-      background-image: none;
-      background-color: $color-progress-expected;
-      height: 1.5rem;
-      margin-top: -1.5rem;
+        //&.textlabel {
+        //  width: 100%;
+        //}
+      }
     }
 
-    + p {
-      text-align: left;
-      font-size: $text-small;
-    }
-  }
-}
+    form {
+      width: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      order: 1;
 
+      &.queueform {
+        order: 3;
+      }
 
-.research_current,
-.research_next {
-  .time,
-  .rp {
-    font-size: $text-small;
-  }
-}
+      input[type="submit"] {
+        min-width: 110px;
+      }
 
-.research_next {
-  font-style: italic;
-
-  &[id] {
-    position: relative;
-    font-style: normal;
-    border-top: 1px solid rgba($color-primary, .5);
-    margin: .5rem 0 0 1.5rem;
-    padding: 1rem 0 0;
-
-    .researchform p {
-      padding-right: 0;
-      margin-right: 2rem;
-    }
-  }
-
-}
-
-
-.research_branch {
-  margin-left: 1.5rem;
-
-  .completed {
-    .title {
-      position: relative;
-      background: none;
-
-      &:after {
-        content: '\2714';
-        color: $color-primary;
-        position: absolute;
-        top: 0;
-        right: 0;
+      p {
+        text-align: right;
       }
     }
   }
 }
 
-.researchform {
-  display: flex;
-  justify-content: flex-end;
-  margin-top: -3rem;
-}
+.research {
+  .research_current,
+  .research_next {
+    .time,
+    .rp {
+      font-size: $text-small;
+    }
+  }
 
-.research_branch_list {
-  padding: .25rem .5rem;
-  background: $color-borders;
-  //background: linear-gradient(135deg, var(--col-panel-light) 0%, var(--col-panel-dark) 100%);
-  border: 0;
-  margin: 0 0 .5rem 1.5rem;
-  font-style: normal;
+  .research_next {
+    font-style: italic;
 
-  p {
-    position: relative;
-    padding-right: 15rem;
-    text-align: left !important;
+    &[id] {
+      position: relative;
+      font-style: normal;
+      border-top: 1px solid rgba($color-primary, .5);
+      margin: .5rem 0 0 1.5rem;
+      padding: 1rem 0 0;
+
+      .researchform p {
+        padding-right: 0;
+        margin-right: 2rem;
+      }
+    }
+
+  }
+
+
+  .research_branch {
+    margin-left: 1.5rem;
+
+    .completed {
+      .title {
+        position: relative;
+        background: none;
+
+        &:after {
+          content: '\2714';
+          color: $color-primary;
+          position: absolute;
+          top: 0;
+          right: 0;
+        }
+      }
+    }
+  }
+
+  .researchform {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -3rem;
+  }
+
+  .research_branch_list {
+    padding: .25rem .5rem;
+    background: $color-borders;
+    //background: linear-gradient(135deg, var(--col-panel-light) 0%, var(--col-panel-dark) 100%);
+    border: 0;
+    margin: 0 0 .5rem 1.5rem;
+    font-style: normal;
+
+    p {
+      position: relative;
+      padding-right: 15rem;
+      text-align: left !important;
+    }
   }
 }
 
