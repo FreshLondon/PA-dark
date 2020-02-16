@@ -40,6 +40,10 @@
       font-size: $text-small;
       background: $color-borders;
 
+      &:nth-child(1) {
+        padding-left: .5rem;
+      }
+
       &:nth-child(3),
       &:nth-child(4),
       &:nth-child(5) {
@@ -55,11 +59,19 @@
       &:nth-child(9) {
         text-align: right;
       }
+    }
 
+    th {
+      background: $color-background;
     }
 
     td {
       &:nth-child(1) {
+        font-size: 1rem;
+      }
+
+      &:nth-child(9),
+      &:nth-child(11) {
         font-size: 1rem;
       }
 

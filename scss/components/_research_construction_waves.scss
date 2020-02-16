@@ -2,6 +2,7 @@
    -------------------------------------------------------*/
 .research {
   border: 0;
+  text-align: center;
 }
 
 .branch_name h3,
@@ -138,7 +139,7 @@
       margin-bottom: 0;
       text-align: right;
       order: 2;
-      width: 50%;
+      width: 67%;
 
       li {
         display: inline-block;
@@ -150,10 +151,10 @@
     }
 
     form {
-      width: 50%;
+      width: 33%;
       display: flex;
       align-items: center;
-      justify-content: center;
+      justify-content: flex-end;
       order: 1;
 
       &.queueform {
@@ -166,6 +167,7 @@
 
       p {
         text-align: right;
+        padding: 0;
       }
     }
   }
@@ -187,8 +189,9 @@
       position: relative;
       font-style: normal;
       border-top: 1px solid rgba($color-primary, .5);
-      margin: .5rem 0 0 1.5rem;
+      margin: .5rem auto 0;
       padding: 1rem 0 0;
+      width: 300px !important;
 
       .researchform p {
         padding-right: 0;
@@ -206,6 +209,7 @@
       .title {
         position: relative;
         background: none;
+        margin: 0 auto;
 
         &:after {
           content: '\2714';
@@ -223,20 +227,21 @@
     justify-content: flex-end;
     margin-top: -3rem;
   }
+}
 
-  .research_branch_list {
-    padding: .25rem .5rem;
-    background: $color-borders;
-    //background: linear-gradient(135deg, var(--col-panel-light) 0%, var(--col-panel-dark) 100%);
-    border: 0;
-    margin: 0 0 .5rem 1.5rem;
-    font-style: normal;
+.research_branch_list {
+  padding: .25rem .5rem;
+  background: $color-borders;
+  border: 0;
+  margin: .25rem auto;
+  text-align: center;
+  font-style: normal;
+  width: 300px;
 
-    p {
-      position: relative;
-      padding-right: 15rem;
-      text-align: left !important;
-    }
+  p {
+    position: relative;
+    text-align: center !important;
+    width: 100%;
   }
 }
 
@@ -274,5 +279,20 @@
     + p {
       margin-top: 1rem;
     }
+  }
+}
+
+#waves,
+#search_scans,
+#stored_scans {
+  form {
+    display: table;
+    margin: 0 auto;
+  }
+}
+
+#search_scans {
+  input[type="submit"] {
+    margin-top: .25rem;
   }
 }

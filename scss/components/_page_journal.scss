@@ -1,0 +1,66 @@
+#page_journal {
+  table {
+    background: $color-borders;
+
+    table {
+      tr {
+        &:nth-child(odd) {
+          th,
+          td {
+            background: rgba(0, 0, 0, 0.15);
+          }
+        }
+
+        &:nth-child(even) {
+          th,
+          td {
+            background: rgba(0, 0, 0, 0.1);
+          }
+        }
+
+        &:first-child {
+          th,
+          td {
+            background: transparent;
+          }
+        }
+      }
+    }
+  }
+
+  #page_logs {
+    table {
+      width: auto;
+      max-width: 350px;
+
+      tr {
+        &:nth-child(odd) {
+          th,
+          td {
+            background: rgba(0, 0, 0, 0.15);
+          }
+        }
+
+        &:nth-child(even) {
+          th,
+          td {
+            background: rgba(0, 0, 0, 0.1);
+          }
+        }
+
+        &:first-child {
+          th,
+          td {
+            background: transparent;
+          }
+        }
+
+        td {
+          &:nth-child(2) {
+            color: white;
+          }
+        }
+      }
+    }
+  }
+}
