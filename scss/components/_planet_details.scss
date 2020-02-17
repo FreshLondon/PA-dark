@@ -58,6 +58,24 @@
       color: $color-offwhite !important;
       transition: ease all .5s;
     }
+
+    #mail_new {
+      background: $color-positive;
+      color: black !important;
+
+      a {
+        color: black !important;
+      }
+    }
+
+    #news_new {
+      background: $color-neutral;
+      color: black !important;
+
+      a {
+        color: black !important;
+      }
+    }
   }
 
   #header_mail {

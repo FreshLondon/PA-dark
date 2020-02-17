@@ -56,10 +56,6 @@
   padding-left: .5rem;
 }
 
-.research_next[id] p:not(.center) {
-  padding-left: 0;
-}
-
 
 .constructions {
   display: flex;
@@ -207,7 +203,10 @@
       border-top: 1px solid rgba($color-primary, .5);
       margin: .5rem auto 0;
       padding: 1rem 0 0;
-      width: 300px !important;
+
+      p:not(.center) {
+        padding: 0;
+      }
 
       .researchform p {
         padding-right: 0;
@@ -252,7 +251,6 @@
   margin: .25rem auto;
   text-align: center;
   font-style: normal;
-  width: 300px;
 
   p {
     position: relative;

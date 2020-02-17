@@ -62,15 +62,26 @@
 }
 
 #page_login {
+  #header,
+  #nav {
+    display: none;
+  }
+
   #contents {
-    margin: 1rem auto;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 
-    .header::before {
-      content: 'Planetarion Login ';
-    }
+    .maintext {
+      padding: 1rem;
+      background: $color-borders;
+      border-radius: .5rem;
+      border: 1px solid rgba($color-primary, .5);
 
-    .maintext p:last-child {
-      display: none;
+      p:last-child {
+        display: none;
+      }
     }
   }
 
