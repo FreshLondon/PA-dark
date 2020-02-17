@@ -138,11 +138,11 @@
     .resources {
       margin-bottom: 0;
       text-align: right;
-      order: 2;
+      order: 40;
       width: 67%;
 
-      &:nth-of-type(2) {
-        order: 4;
+      &:first-of-type {
+        order: 20;
       }
 
       li {
@@ -159,14 +159,14 @@
       display: flex;
       align-items: center;
       justify-content: flex-end;
-      order: 1;
+      order: 10;
 
-      &:nth-of-type(2) {
-        order: 2;
+      &:nth-child(4) {
+        order: 30;
       }
 
       &.queueform {
-        order: 3;
+        order: 30;
       }
 
       input {
