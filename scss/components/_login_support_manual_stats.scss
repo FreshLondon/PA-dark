@@ -54,12 +54,6 @@
   }
 }
 
-#page_login form.login label, #page_support form label {
-  font-size: $text-small;
-  text-transform: uppercase;
-  width: 80%;
-  margin: 0 auto;
-}
 
 #page_login {
   #header,
@@ -69,9 +63,20 @@
 
   #contents {
     position: fixed;
-    top: 50%;
+    top: 20%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translateX(-50%);
+
+    .header {
+      display: none;
+    }
+
+    form.login label, #page_support form label {
+      font-size: $text-small;
+      text-transform: uppercase;
+      width: 80%;
+      margin: 0 auto;
+    }
 
     .maintext {
       padding: 1rem;
