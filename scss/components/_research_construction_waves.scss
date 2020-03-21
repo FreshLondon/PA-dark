@@ -21,34 +21,45 @@
 .research,
 .research_branch {
   .title {
-    display: inline-block;
-    font-size: 1rem;
-    margin-bottom: .25rem;
+	display: inline-block;
+	font-size: 1rem;
+	margin-bottom: .25rem;
+	color: $color-primary;
   }
 }
 
-.research,
 .construction_info,
 .scans {
   p {
-    position: relative;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-    font-size: 1rem;
+	position: relative;
+	padding-left: 1.5rem;
+	padding-right: 1.5rem;
+	font-size: 1rem;
 
-    .desc_link {
-      display: inline-block;
-      position: absolute;
-      top: 3px;
-      right: 2rem;
-      font-size: $text-small;
-    }
+	.desc_link {
+	  display: inline-block;
+	  position: absolute;
+	  top: 3px;
+	  right: 2rem;
+	  font-size: $text-small;
+	}
+  }
+}
+
+.research {
+  p.description {
+	width: 100%;
+	max-width: 450px;
+	margin: 0 auto;
+	padding-left: 1.5rem;
+	padding-right: 1.5rem;
+	font-size: 1rem;
   }
 }
 
 .construction_info {
   p {
-    padding-right: 15rem;
+	padding-right: 15rem;
   }
 }
 
@@ -64,183 +75,183 @@
   margin-bottom: 0;
 
   .construction_info {
-    flex-basis: 100%;
-    display: flex;
-    flex-wrap: wrap;
+	flex-basis: 100%;
+	display: flex;
+	flex-wrap: wrap;
 
-    .title,
-    .description {
-      flex-basis: 100%;
-    }
+	.title,
+	.description {
+	  flex-basis: 100%;
+	}
 
-    .resources {
-      flex-basis: 33%;
-      font-size: $text-small;
+	.resources {
+	  flex-basis: 33%;
+	  font-size: $text-small;
 
-      + p {
-        flex-basis: 66%;
-        display: flex;
-        font-size: $text-small;
-      }
-    }
+	  + p {
+		flex-basis: 66%;
+		display: flex;
+		font-size: $text-small;
+	  }
+	}
 
-    p {
-      .time,
-      .cu {
-        flex-basis: 50%;
-      }
-    }
+	p {
+	  .time,
+	  .cu {
+		flex-basis: 50%;
+	  }
+	}
 
-    p,
-    .resources {
-      padding-left: .5rem;
-    }
+	p,
+	.resources {
+	  padding-left: .5rem;
+	}
   }
 
   .construction_built {
-    flex-basis: 33%;
-    text-align: left;
-    padding: 1rem .5rem;
+	flex-basis: 33%;
+	text-align: left;
+	padding: 1rem .5rem;
 
-    .textvalue {
-      font-weight: bold;
-    }
+	.textvalue {
+	  font-weight: bold;
+	}
 
-    .progress_wrapper {
-      margin: .5rem 0;
+	.progress_wrapper {
+	  margin: .5rem 0;
 
-      .progress_expected {
-        background-image: none;
-        background-color: $color-progress-expected;
-        height: 1.5rem;
-        margin-top: -1.5rem;
-      }
+	  .progress_expected {
+		background-image: none;
+		background-color: $color-progress-expected;
+		height: 1.5rem;
+		margin-top: -1.5rem;
+	  }
 
-      + p {
-        text-align: left;
-        font-size: $text-small;
-      }
-    }
+	  + p {
+		text-align: left;
+		font-size: $text-small;
+	  }
+	}
   }
 
   .construction_build {
-    flex-basis: 66%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem .5rem;
-    flex-wrap: wrap;
+	flex-basis: 66%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1rem .5rem;
+	flex-wrap: wrap;
 
-    .resources {
-      margin-bottom: 0;
-      text-align: right;
-      order: 40;
-      width: 67%;
+	.resources {
+	  margin-bottom: 0;
+	  text-align: right;
+	  order: 40;
+	  width: 67%;
 
-      &:first-of-type {
-        order: 20;
-      }
+	  &:first-of-type {
+		order: 20;
+	  }
 
-      li {
-        display: inline-block;
+	  li {
+		display: inline-block;
 
-        //&.textlabel {
-        //  width: 100%;
-        //}
-      }
-    }
+		//&.textlabel {
+		//  width: 100%;
+		//}
+	  }
+	}
 
-    form {
-      width: 33%;
-      display: flex;
-      align-items: center;
-      justify-content: flex-end;
-      order: 10;
+	form {
+	  width: 33%;
+	  display: flex;
+	  align-items: center;
+	  justify-content: flex-end;
+	  order: 10;
 
-      &:nth-child(4) {
-        order: 30;
-      }
+	  &:nth-child(4) {
+		order: 30;
+	  }
 
-      &.queueform {
-        order: 30;
-      }
+	  &.queueform {
+		order: 30;
+	  }
 
-      input {
-        &[type="checkbox"] {
-          margin-right: .5rem;
-        }
+	  input {
+		&[type="checkbox"] {
+		  margin-right: .5rem;
+		}
 
-        &[type="submit"] {
-          min-width: 110px;
-        }
-      }
+		&[type="submit"] {
+		  min-width: 110px;
+		}
+	  }
 
-      p {
-        text-align: right;
-        padding: 0;
-        display: flex;
-        align-items: center;
-      }
-    }
+	  p {
+		text-align: right;
+		padding: 0;
+		display: flex;
+		align-items: center;
+	  }
+	}
   }
 }
 
 .research {
   .research_current,
   .research_next {
-    .time,
-    .rp {
-      font-size: $text-small;
-    }
+	.time,
+	.rp {
+	  font-size: $text-small;
+	}
   }
 
   .research_next {
-    font-style: italic;
+	font-style: italic;
 
-    &[id] {
-      position: relative;
-      font-style: normal;
-      border-top: 1px solid rgba($color-primary, .5);
-      margin: .5rem auto 0;
-      padding: 1rem 0 0;
+	&[id] {
+	  position: relative;
+	  font-style: normal;
+	  border-top: 1px solid rgba($color-primary, .5);
+	  margin: .5rem auto 0;
+	  padding: 1rem 0 0;
 
-      p:not(.center) {
-        padding: 0;
-      }
+	  p:not(.center) {
+		padding: 0;
+	  }
 
-      .researchform p {
-        padding-right: 0;
-        margin-right: 2rem;
-      }
-    }
+	  .researchform p {
+		padding-right: 0;
+		margin-right: 2rem;
+	  }
+	}
 
   }
 
 
   .research_branch {
-    margin-left: 1.5rem;
+	margin-left: 1.5rem;
 
-    .completed {
-      .title {
-        position: relative;
-        background: none;
-        margin: 0 auto;
+	.completed {
+	  .title {
+		position: relative;
+		background: none;
+		margin: 0 auto;
 
-        &:after {
-          content: '\2714';
-          color: $color-primary;
-          position: absolute;
-          top: 0;
-          right: 0;
-        }
-      }
-    }
+		&:after {
+		  content: '\2714';
+		  color: $color-primary;
+		  position: absolute;
+		  top: 0;
+		  right: 0;
+		}
+	  }
+	}
   }
 
   .researchform {
-    display: flex;
-    justify-content: flex-end;
-    margin-top: -3rem;
+	display: flex;
+	justify-content: flex-end;
+	margin-top: -3rem;
   }
 }
 
@@ -253,9 +264,9 @@
   font-style: normal;
 
   p {
-    position: relative;
-    text-align: center !important;
-    width: 100%;
+	position: relative;
+	text-align: center !important;
+	width: 100%;
   }
 }
 
@@ -263,21 +274,21 @@
   border: 0;
 
   .resources {
-    font-size: $text-small;
-    margin-top: 1rem;
-    padding-left: .5rem;
+	font-size: $text-small;
+	margin-top: 1rem;
+	padding-left: .5rem;
   }
 
   .scan_form {
-    padding-right: 2rem;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: flex-end;
-    margin-top: -2.25rem;
+	padding-right: 2rem;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: flex-end;
+	margin-top: -2.25rem;
 
-    input[type="submit"] {
-      margin: 0 0 0 1rem !important;
-    }
+	input[type="submit"] {
+	  margin: 0 0 0 1rem !important;
+	}
   }
 }
 
@@ -290,9 +301,9 @@
 #scan {
   table {
 
-    + p {
-      margin-top: 1rem;
-    }
+	+ p {
+	  margin-top: 1rem;
+	}
   }
 }
 
@@ -300,13 +311,13 @@
 #search_scans,
 #stored_scans {
   form {
-    display: table;
-    margin: 0 auto;
+	display: table;
+	margin: 0 auto;
   }
 }
 
 #search_scans {
   input[type="submit"] {
-    margin-top: .25rem;
+	margin-top: .25rem;
   }
 }
