@@ -1,171 +1,171 @@
 #page_universe {
 
   .maintext {
-    padding: 0;
+	padding: 0;
   }
 
   #contents {
-    .container {
+	.container {
 
-      &:nth-last-child(2),
-      &:nth-last-child(3) {
-        table {
-          tr {
-            background-color: $color-borders;
+	  &:nth-last-child(2),
+	  &:nth-last-child(3) {
+		table {
+		  tr {
+			background-color: $color-borders;
 
-            &.relations_war {
-              background: rgba($color-negative, .25);
-            }
+			&.relations_war {
+			  background: rgba($color-negative, .25);
+			}
 
-            &.relations_hostile {
-              background: rgba($color-negative, .125);
-              outline: none;
-            }
+			&.relations_hostile {
+			  background: rgba($color-negative, .125);
+			  outline: none;
+			}
 
-            &.relations_neutral {
-              background-color: $color-borders;
-            }
+			&.relations_neutral {
+			  background-color: $color-borders;
+			}
 
-            &.relations_nap {
-              background: rgba($color-neutral, .2);
-            }
+			&.relations_nap {
+			  background: rgba($color-neutral, .2);
+			}
 
-            &.relations_friendly {
-              background: rgba($color-positive, .15);
-              outline: none;
-            }
+			&.relations_friendly {
+			  background: rgba($color-positive, .15);
+			  outline: none;
+			}
 
-            &.relations_allied {
-              background: rgba($color-positive, .35);
-            }
+			&.relations_allied {
+			  background: rgba($color-positive, .35);
+			}
 
-            &.relations_own_member {
-              background: rgba($color-own, .25);
-            }
+			&.relations_own_member {
+			  background: rgba($color-own, .25);
+			}
 
-            th,
-            td {
-              width: auto !important;
+			th,
+			td {
+			  width: auto !important;
 
-              &:nth-child(1) {
-                flex: 2;
-              }
+			  &:nth-child(1) {
+				flex: 2;
+			  }
 
-              &:nth-child(2) {
-                flex: 3;
-                @include respond-below(sm) {
-                  display: none;
-                }
-              }
+			  &:nth-child(2) {
+				flex: 3;
+				@include respond-below(sm) {
+				  display: none;
+				}
+			  }
 
-              &:nth-child(3) {
-                flex: 3;
-              }
+			  &:nth-child(3) {
+				flex: 3;
+			  }
 
-              &:nth-child(4) {
-                flex: 7;
-                @include respond-below(sm) {
-                  display: none;
-                }
-              }
+			  &:nth-child(4) {
+				flex: 7;
+				@include respond-below(sm) {
+				  display: none;
+				}
+			  }
 
-              &:nth-child(5) {
-                flex: 6;
-                @include respond-below(sm) {
-                  display: none;
-                }
-              }
+			  &:nth-child(5) {
+				flex: 6;
+				@include respond-below(sm) {
+				  display: none;
+				}
+			  }
 
-              &:nth-child(6) {
-                flex: 2;
-              }
+			  &:nth-child(6) {
+				flex: 2;
+			  }
 
-              &:nth-child(7) {
-                flex: 3;
-              }
+			  &:nth-child(7) {
+				flex: 3;
+			  }
 
-              &:nth-child(8) {
-                flex: 3;
-              }
+			  &:nth-child(8) {
+				flex: 3;
+			  }
 
-              &:nth-child(9) {
-                flex: 3;
-              }
-            }
+			  &:nth-child(9) {
+				flex: 3;
+			  }
+			}
 
-            &:nth-child(odd) {
-              background-color: darken($color-borders, 3%);
+			&:nth-child(odd) {
+			  background-color: darken($color-borders, 3%);
 
-              &.relations_neutral {
-                background-color: darken($color-borders, 3%);
-              }
-            }
-          }
-        }
-      }
-    }
+			  &.relations_neutral {
+				background-color: darken($color-borders, 3%);
+			  }
+			}
+		  }
+		}
+	  }
+	}
 
-    table {
-      a {
-        color: $color-text;
-        @include respond-below(sm) {
-          padding: 0 .5rem;
-        }
-      }
+	table {
+	  a {
+		color: $color-text;
+		@include respond-below(sm) {
+		  padding: 0 .5rem;
+		}
+	  }
 
-      tr {
-        display: flex;
-        justify-content: space-between;
-        margin: .125rem 0;
-        @include respond-below(sm) {
-          flex-wrap: wrap;
-          justify-content: center;
-        }
+	  tr {
+		//display: flex;
+		//justify-content: space-between;
+		margin: .125rem 0;
+		//@include respond-below(sm) {
+		//  flex-wrap: wrap;
+		//  justify-content: center;
+		//}
 
-        &:first-child th {
-          font-weight: bold;
-          background: $color-borders;
-          color: $color-text;
-          //padding: .75rem 0;
-          font-size: .75rem;
-          padding: .5rem .125rem;
-          display: flex;
-          align-items: center;
+		&:first-child th {
+		  font-weight: bold;
+		  background: $color-borders;
+		  color: $color-text;
+		  //padding: .75rem 0;
+		  font-size: .75rem;
+		  padding: .5rem .125rem;
+		  //display: flex;
+		  //align-items: center;
 
-          &.right {
-            padding-right: .25rem;
-          }
-        }
+		  &.right {
+			padding-right: .25rem;
+		  }
+		}
 
 
-        td {
-          &.moc,
-          &.mow,
-          &.mod,
-          &.gc {
-            color: $color-text;
-          }
-        }
+		td {
+		  &.moc,
+		  &.mow,
+		  &.mod,
+		  &.gc {
+			color: $color-text;
+		  }
+		}
 
-        th {
-          padding: 0 2px;
-        }
+		th {
+		  padding: 0 2px;
+		}
 
-        td {
-          display: flex;
-          align-items: center;
-        }
-      }
-    }
+		//td {
+		//  display: flex;
+		//  align-items: center;
+		//}
+	  }
+	}
   }
 }
 
 #intel {
   tr {
-    th,
-    td {
-      color: $color-primary;
-    }
+	th,
+	td {
+	  color: $color-primary;
+	}
   }
 }
 
@@ -176,7 +176,7 @@
   color: $color-offwhite !important;
 
   * {
-    color: $color-offwhite !important;
+	color: $color-offwhite !important;
   }
 }
 
@@ -197,7 +197,7 @@
   background-color: $color-borders;
 
   &:nth-child(odd) {
-    background-color: darken($color-borders, 3%);
+	background-color: darken($color-borders, 3%);
   }
 }
 
@@ -227,29 +227,33 @@
 #page_universe_feed,
 #page_universe_combat_reports {
   table {
-    tr {
-      &:first-child {
-        th {
-          font-weight: bold;
-          background: #24303f;
-          color: #ccc;
-          font-size: .75rem;
-          padding: .5rem .125rem;
-        }
-      }
+	tr {
+	  &:first-child {
+		th {
+		  font-weight: bold;
+		  background: #24303f;
+		  color: #ccc;
+		  font-size: .75rem;
+		  padding: .5rem .125rem;
 
-      .gc {
-        color: $color-gc;
-      }
+		  abbr[title] {
+			text-decoration: none;
+		  }
+		}
+	  }
 
-      a,
-      .tablesort_asc,
-      .tablesort_desc {
-        color: $color-text;
-        @include respond-below(sm) {
-          padding: 0 .5rem;
-        }
-      }
-    }
+	  .gc {
+		color: $color-gc;
+	  }
+
+	  a,
+	  .tablesort_asc,
+	  .tablesort_desc {
+		color: $color-text;
+		@include respond-below(sm) {
+		  padding: 0 .5rem;
+		}
+	  }
+	}
   }
 }
