@@ -80,3 +80,7 @@ select {
 textarea {
   min-height: 5rem;
 }
+
+.mceEditorIframe {
+  min-height: 150px !important;
+}
