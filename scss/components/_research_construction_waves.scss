@@ -29,7 +29,8 @@
 }
 
 .construction_info,
-.scans {
+.scans,
+.research {
   p {
 	position: relative;
 	padding-left: 1.5rem;
@@ -46,20 +47,12 @@
   }
 }
 
-.research {
-  p.description {
-	width: 100%;
-	max-width: 450px;
-	margin: 0 auto;
-	padding-left: 1.5rem;
-	padding-right: 1.5rem;
-	font-size: 1rem;
-  }
-}
-
+.research,
 .construction_info {
   p {
+	padding-left: 0;
 	padding-right: 15rem;
+	text-align: left;
   }
 }
 
@@ -197,8 +190,18 @@
 }
 
 .research {
+
+  .branch_name {
+	h3 {
+	  text-align: left;
+	}
+  }
+
   .research_current,
   .research_next {
+	text-align: left;
+	padding-left: .5rem !important;
+
 	.time,
 	.rp {
 	  font-size: $text-small;
@@ -214,9 +217,57 @@
 	  border-top: 1px solid rgba($color-primary, .5);
 	  margin: .5rem auto 0;
 	  padding: 1rem 0 0;
+	  display: flex;
+	  flex-direction: column;
 
-	  p:not(.center) {
-		padding: 0;
+
+	  .title {
+		order: 1;
+	  }
+
+	  .progress_wrapper {
+		margin: 10px 0 0;
+		order: 3;
+	  }
+
+
+	  p {
+
+		&:not(.center) {
+		  padding: 0;
+		}
+
+		&:first-of-type {
+		  order: 2;
+		}
+
+		&.research_queue {
+		  order: 5;
+		}
+
+		&:last-of-type {
+		  order: 6;
+		  padding-bottom: 10px;
+		}
+	  }
+
+	  form {
+		&.cancelform {
+		  order: 4;
+
+		  input[type="submit"] {
+			margin-top: 0;
+		  }
+		}
+
+		&.queueform,
+		&.cancelqueueform {
+		  order: 7;
+		}
+
+		input[type="submit"] {
+		  width: 200px;
+		}
 	  }
 
 	  .researchform p {
