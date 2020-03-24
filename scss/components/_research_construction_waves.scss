@@ -302,7 +302,7 @@
   .researchform {
 	display: flex;
 	justify-content: flex-end;
-	margin-top: -3rem;
+	flex-direction: column;
   }
 }
 
