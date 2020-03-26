@@ -111,6 +111,16 @@
 		@include respond-below(sm) {
 		  padding: 0 .5rem;
 		}
+
+		&.moc {
+		  color: #00b7ff;
+		  font-weight: bold;
+		}
+
+		&.gc {
+		  color: #00e413;
+		  font-weight: bold;
+		}
 	  }
 
 	  tr {
