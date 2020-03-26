@@ -295,6 +295,7 @@
             .ally_def_details_fleetname {
               font-style: italic;
               flex-grow: 100;
+			  overflow: hidden;
 
               &:after {
                 content: "-";
@@ -429,6 +430,7 @@
               width: 120px;
               max-width: 120px !important;
               margin-right: 4px;
+			  overflow: hidden;
             }
 
             .ally_def_defender_race {
