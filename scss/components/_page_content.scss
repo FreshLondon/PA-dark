@@ -65,9 +65,7 @@ h2 {
   border: 1px solid transparent;
   border-image: linear-gradient(to right, transparent 0%, rgba(82, 165, 248, .5) 50%, transparent 100%);
   border-image-slice: 1;
-  font-family: "VT323", monospace;
-  font-size: 1.4rem;
-  letter-spacing: 1px;
+  line-height: 100%;
 
   &:empty {
 	display: none;

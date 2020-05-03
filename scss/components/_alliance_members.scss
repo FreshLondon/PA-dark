@@ -1,0 +1,24 @@
+#page_alliance_members {
+  table {
+
+	tr {
+	  &:first-child th {
+		font-weight: bold;
+		background: $color-borders;
+		color: $color-text;
+	  }
+
+	  &:nth-child(odd) {
+		td {
+		  background-color: darken($color-borders, 3%);
+		}
+	  }
+
+	  &:nth-child(even) {
+		td {
+		  background-color: $color-borders;
+		}
+	  }
+	}
+  }
+}
