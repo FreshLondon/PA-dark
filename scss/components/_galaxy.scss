@@ -38,6 +38,10 @@
           span {
             color: $color-offwhite;
 
+			&.bashlimit {
+			  color: $color-neutral;
+			}
+
             &.gc {
               color: $color-gc;
             }
