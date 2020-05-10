@@ -237,7 +237,7 @@ option {
 .mail_unread,
 .mail_read {
   img {
-	display: none;
+	display: none !important;
   }
 }
 
