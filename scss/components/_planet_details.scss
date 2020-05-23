@@ -189,17 +189,22 @@
 	order: 12;
   }
 
+
   #header_tick {
-	width: 100%;
+	//width: 100%;
 	order: 3;
 
 	span {
 	  flex-basis: 25%;
 	}
 
-	.textlabel {
-	  margin-left: calc(50% + .5rem);
-	}
+	//.textlabel {
+	//  margin-left: calc(50% + .5rem);
+	//}
+  }
+
+  #header_remaining {
+	order: 3;
   }
 
 }
