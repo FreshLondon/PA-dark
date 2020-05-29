@@ -60,20 +60,26 @@
 	}
 
 	#mail_new {
-	  background: $color-positive;
-	  color: black !important;
+	  background: #244b45;
+	  //color: black !important;
+	  &:hover {
+		background: $color-xandathrii;
+	  }
 
 	  a {
-		color: black !important;
+		//color: black !important;
 	  }
 	}
 
 	#news_new {
-	  background: $color-neutral;
-	  color: black !important;
+	  background: #523f68;
+	  //color: black !important;
+	  &:hover {
+		background: $color-eitraides;
+	  }
 
 	  a {
-		color: black !important;
+		//color: black !important;
 	  }
 	}
   }
@@ -82,7 +88,7 @@
 	padding: 0;
 	order: 1;
 	border: 1px solid transparent;
-	border-image: linear-gradient(to right, transparent 0%, rgba($color-primary, .5) 100%);
+	border-image: linear-gradient(to right, #264b45 0%, rgb(58, 101, 147) 100%);
 	border-image-slice: 1;
   }
 
@@ -90,7 +96,7 @@
 	padding: 0;
 	order: 2;
 	border: 1px solid transparent;
-	border-image: linear-gradient(to right, rgba($color-primary, .5) 0%, transparent 100%);
+	border-image: linear-gradient(to right, rgb(58, 101, 147) 0%, #513f67 100%);
 	border-image-slice: 1;
 	border-left: none;
   }
