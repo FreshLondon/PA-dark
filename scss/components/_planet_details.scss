@@ -38,6 +38,7 @@
   #header_mail,
   #header_news {
 	background: black;
+	position: relative;
 	transition: ease all .3s;
 
 	&:hover {
@@ -60,10 +61,28 @@
 	}
 
 	#mail_new {
-	  background: #244b45;
+	  background: rgba($color-xandathrii, .6);
 	  //color: black !important;
 	  &:hover {
 		background: $color-xandathrii;
+
+		span.tooltip {
+		  background: $color-xandathrii !important;
+		}
+	  }
+
+	  span.tooltip {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		display: block !important;
+		border: 0;
+		background: rgba($color-xandathrii, .6) !important;
+		box-shadow: none;
+		color: black !important;
+		text-transform: uppercase !important;
+		font-weight: bold !important;
 	  }
 
 	  a {
@@ -72,10 +91,28 @@
 	}
 
 	#news_new {
-	  background: #523f68;
+	  background: rgba($color-eitraides, .6);
 	  //color: black !important;
 	  &:hover {
 		background: $color-eitraides;
+
+		span.tooltip {
+		  background: $color-eitraides !important;
+		}
+	  }
+
+	  span.tooltip {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		display: block !important;
+		border: 0;
+		background: rgba($color-eitraides, .6) !important;
+		box-shadow: none;
+		color: black !important;
+		text-transform: uppercase !important;
+		font-weight: bold !important;
 	  }
 
 	  a {
