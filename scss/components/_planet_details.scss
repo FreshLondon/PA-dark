@@ -125,7 +125,7 @@
 	padding: 0;
 	order: 1;
 	border: 1px solid transparent;
-	border-image: linear-gradient(to right, #264b45 0%, rgb(58, 101, 147) 100%);
+	border-image: linear-gradient(to right, transparent 0%, rgb(58, 101, 147) 100%);
 	border-image-slice: 1;
   }
 
@@ -133,7 +133,7 @@
 	padding: 0;
 	order: 2;
 	border: 1px solid transparent;
-	border-image: linear-gradient(to right, rgb(58, 101, 147) 0%, #513f67 100%);
+	border-image: linear-gradient(to right, rgb(58, 101, 147) 0%, transparent 100%);
 	border-image-slice: 1;
 	border-left: none;
   }
