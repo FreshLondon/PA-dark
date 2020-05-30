@@ -61,62 +61,20 @@
 	}
 
 	#mail_new {
-	  background: rgba($color-xandathrii, .6);
-	  //color: black !important;
+	  background: $color-positive;
+	  color: black !important;
+
 	  &:hover {
-		background: $color-xandathrii;
-
-		span.tooltip {
-		  background: $color-xandathrii !important;
-		}
-	  }
-
-	  span.tooltip {
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-		display: block !important;
-		border: 0;
-		background: rgba($color-xandathrii, .6) !important;
-		box-shadow: none;
-		color: black !important;
-		text-transform: uppercase !important;
-		font-weight: bold !important;
-	  }
-
-	  a {
-		//color: black !important;
+		background: rgba($color-positive, .8);
 	  }
 	}
 
 	#news_new {
-	  background: rgba($color-eitraides, .6);
-	  //color: black !important;
+	  background: $color-neutral;
+	  color: black !important;
+
 	  &:hover {
-		background: $color-eitraides;
-
-		span.tooltip {
-		  background: $color-eitraides !important;
-		}
-	  }
-
-	  span.tooltip {
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-		display: block !important;
-		border: 0;
-		background: rgba($color-eitraides, .6) !important;
-		box-shadow: none;
-		color: black !important;
-		text-transform: uppercase !important;
-		font-weight: bold !important;
-	  }
-
-	  a {
-		//color: black !important;
+		background: rgba($color-neutral, .8);
 	  }
 	}
   }
@@ -125,7 +83,7 @@
 	padding: 0;
 	order: 1;
 	border: 1px solid transparent;
-	border-image: linear-gradient(to right, transparent 0%, rgb(58, 101, 147) 100%);
+	border-image: linear-gradient(to right, transparent 0%, rgba(82, 165, 248, 0.5) 100%);
 	border-image-slice: 1;
   }
 
@@ -133,11 +91,10 @@
 	padding: 0;
 	order: 2;
 	border: 1px solid transparent;
-	border-image: linear-gradient(to right, rgb(58, 101, 147) 0%, transparent 100%);
+	border-image: linear-gradient(to right, rgba(82, 165, 248, 0.5) 0%, transparent 100%);
 	border-image-slice: 1;
 	border-left: none;
   }
-
 
   span {
 	flex-basis: 50%;
