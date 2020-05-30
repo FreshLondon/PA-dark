@@ -83,7 +83,7 @@
 	padding: 0;
 	order: 1;
 	border: 1px solid transparent;
-	border-image: linear-gradient(to right, transparent 0%, rgba(82, 165, 248, 0.5) 100%);
+	border-image: linear-gradient(to left, rgb(60, 107, 156) 0%, #24313f 100%);
 	border-image-slice: 1;
   }
 
@@ -91,7 +91,7 @@
 	padding: 0;
 	order: 2;
 	border: 1px solid transparent;
-	border-image: linear-gradient(to right, rgba(82, 165, 248, 0.5) 0%, transparent 100%);
+	border-image: linear-gradient(to right, rgb(60, 107, 156) 0%, #24313f 100%);
 	border-image-slice: 1;
 	border-left: none;
   }
