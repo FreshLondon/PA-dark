@@ -132,7 +132,7 @@
 
 		&:first-child th {
 		  font-weight: bold;
-		  background: $color-borders;
+		  background: $color-bg-th;
 		  color: $color-text;
 		  font-size: .75rem;
 		  padding: .5rem .125rem;
@@ -236,7 +236,7 @@
 	  &:first-child {
 		th {
 		  font-weight: bold;
-		  background: #24303f;
+		  background: $color-bg-th;
 		  color: #ccc;
 		  font-size: .75rem;
 		  padding: .5rem .125rem;

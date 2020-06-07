@@ -1,5 +1,9 @@
 table {
   margin-bottom: 1rem;
+
+  th {
+	background: $color-bg-th;
+  }
 }
 
 table tr:first-child th {

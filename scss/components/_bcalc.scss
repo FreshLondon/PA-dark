@@ -10,11 +10,19 @@
   #contents_header {
     display: block;
     width: 100%;
-    background: $color-borders;
-    //background: linear-gradient(180deg, $color-black-light 0%, $color-black-medium 15%, $color-black-dark 100%);
-    color: $color-offwhite;
     position: relative;
     height: 2rem;
+	margin: 1rem 0;
+	padding: .5rem 0;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: $color-offwhite;
+	background: $color-borders;
+	background: linear-gradient(to right, $color-borders 0%, $color-background 50%, $color-borders 100%) !important;
+	border: 1px solid transparent;
+	border-image: linear-gradient(to right, transparent 0%, rgba(82, 165, 248, .5) 50%, transparent 100%);
+	border-image-slice: 1;
+	line-height: 1;
 
     &:before {
       content: 'Planetarion Battle Calculator';
@@ -28,6 +36,11 @@
       font-weight: bold;
       padding: .5rem 0;
     }
+  }
+  #bcalc_stats {
+	th {
+	  background: transparent;
+	}
   }
 }
 
@@ -56,6 +69,7 @@
     color: $color-offwhite;
     font-size: $text-small;
     white-space: nowrap;
+	background: transparent;
 
     &.def_total,
     &.att_total {

@@ -2,58 +2,69 @@
    -------------------------------------------------------*/
 #page_fleets {
   #base_behavior {
-    p {
-      color: $color-offwhite;
-      padding: 0;
-    }
+	p {
+	  color: $color-offwhite;
+	  padding: 0;
+	}
 
-    input[type="submit"] {
-      margin: 0;
-    }
+	input[type="submit"] {
+	  margin: 0;
+	}
   }
 
   form {
-    th,
-    td {
-      background: $color-borders;
+	tr {
+	  &:last-child {
+		td {
+		  background: transparent;
+		}
+	  }
 
-      &.mission_return {
-        opacity: 1;
-      }
+	  th {
+		background: $color-background;
+	  }
 
-      &.mission_attack {
-        background: rgba($color-negative, .14);
-      }
+	  td {
+		background: $color-borders;
 
-      &.mission_defend {
-        background: rgba($color-positive, .14);
-      }
+		&.mission_return {
+		  opacity: 1;
+		}
 
-      &.mission_fake_defend {
-        background: rgba($color-neutral, .14);
-      }
-    }
+		&.mission_attack {
+		  background: rgba($color-negative, .14);
+		}
+
+		&.mission_defend {
+		  background: rgba($color-positive, .14);
+		}
+
+		&.mission_fake_defend {
+		  background: rgba($color-neutral, .14);
+		}
+	  }
+	}
   }
 }
 
 #fleet_overview {
   tr {
-    &.mission_defend,
-    &.mission_attack,
-    &.mission_return {
-      .btn {
-        color: $color-primary;
-        //border: 1px solid $color-primary;
-        background: transparent !important;
-        padding: 0 2px;
-        font-size: 14px;
+	&.mission_defend,
+	&.mission_attack,
+	&.mission_return {
+	  .btn {
+		color: $color-primary;
+		//border: 1px solid $color-primary;
+		background: transparent !important;
+		padding: 0 2px;
+		font-size: 14px;
 
-        &:hover {
-          color: black;
-          background: $color-primary !important;
-        }
-      }
-    }
+		&:hover {
+		  color: black;
+		  background: $color-primary !important;
+		}
+	  }
+	}
   }
 }
 
@@ -68,10 +79,10 @@ th.superhighlight {
 
   th,
   td {
-    color: $color-offwhite;
+	color: $color-offwhite;
   }
 
   a:hover {
-    color: $color-primary-dark;
+	color: $color-primary-dark;
   }
 }
