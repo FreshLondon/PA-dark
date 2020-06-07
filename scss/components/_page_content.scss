@@ -64,7 +64,7 @@ h2 {
   text-transform: uppercase;
   color: $color-offwhite;
   background: $color-secondary;
-  background: linear-gradient(to right, $color-secondary 0%, $color-background 50%, $color-secondary 100%) !important;
+  background: linear-gradient(to right, $color-background 0%, $color-secondary 50%, $color-background 100%) !important;
   border: 1px solid transparent;
   border-image: linear-gradient(to right, transparent 0%, rgba(82, 165, 248, .5) 50%, transparent 100%);
   border-image-slice: 1;
