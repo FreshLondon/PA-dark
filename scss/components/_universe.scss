@@ -11,7 +11,7 @@
 	  &:nth-last-child(3) {
 		table {
 		  tr {
-			background-color: $color-borders;
+			background-color: $color-secondary;
 
 			&.relations_war {
 			  background: rgba($color-negative, .25);
@@ -23,7 +23,7 @@
 			}
 
 			&.relations_neutral {
-			  background-color: $color-borders;
+			  background-color: $color-secondary;
 			}
 
 			&.relations_nap {
@@ -94,10 +94,10 @@
 			}
 
 			&:nth-child(odd) {
-			  background-color: darken($color-borders, 3%);
+			  background-color: $color-secondary-alt;
 
 			  &.relations_neutral {
-				background-color: darken($color-borders, 3%);
+				background-color: $color-secondary-alt;
 			  }
 			}
 		  }
@@ -176,7 +176,7 @@
 
 
 #load_box {
-  background: $color-borders;
+  background: $color-secondary;
   border: 1px solid rgba($color-primary, .5);
   color: $color-offwhite !important;
 
@@ -199,10 +199,10 @@
 }
 
 .relations_neutral {
-  background-color: $color-borders;
+  background-color: $color-secondary;
 
   &:nth-child(odd) {
-	background-color: darken($color-borders, 3%);
+	background-color: $color-secondary-alt;
   }
 }
 

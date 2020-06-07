@@ -9,7 +9,7 @@
   grid-column: 1 / 2;
   grid-row: 1 / 3;
   padding: 1rem 0;
-  background: $color-borders;
+  background: $color-secondary;
   @include respond-below(sm) {
     grid-column: 1 / 2;
     grid-row: 1/4;

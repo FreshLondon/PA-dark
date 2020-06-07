@@ -10,7 +10,7 @@
 
         > tbody {
           > tr {
-            background: $color-borders;
+            background: $color-secondary;
 
             &:first-child {
               th {
@@ -46,7 +46,7 @@
             }
 
             &:nth-child(even) {
-              background: darken($color-borders, 2%);
+              background: $color-secondary-alt;
             }
 
             table {

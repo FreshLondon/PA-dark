@@ -6,7 +6,7 @@
   display: flex;
   flex-flow: row wrap;
   align-content: flex-start;
-  background: $color-borders;
+  background: $color-secondary;
   margin: 0;
   height: unset;
   border: 1px solid transparent;
@@ -238,7 +238,7 @@
 
 #planet_summary {
   grid-column: 3 / 3;
-  background: $color-borders;
+  background: $color-secondary;
   //background: linear-gradient(135deg, var(--col-panel-light) 0%, var(--col-panel-dark) 100%);
   display: flex;
   flex-flow: column nowrap;

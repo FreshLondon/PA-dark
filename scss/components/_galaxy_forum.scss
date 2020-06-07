@@ -8,6 +8,20 @@
 .forum {
   display: flex;
   flex-flow: row wrap;
+
+  > div {
+	background: $color-secondary;
+
+	&.forum_title {
+	  background: transparent !important;
+	}
+
+	&:nth-child(8n - 0),
+	&:nth-child(8n - 1),
+	&:nth-child(8n - 2) {
+	  background: $color-secondary-alt;
+	}
+  }
 }
 
 .forum_title {
@@ -26,6 +40,8 @@
   flex-basis: 40%;
   text-align: left;
   font-size: $text-small;
+  display: inline-flex;
+  align-items: center;
 }
 
 .forum_thread_header_replies,
@@ -36,6 +52,7 @@
 div[class^='forum_thread_header'] {
   font-size: $text-small;
   text-transform: uppercase;
+  background: $color-bg-th;
 }
 
 .forum_thread_actions_button {
@@ -44,19 +61,20 @@ div[class^='forum_thread_header'] {
   text-indent: -99rem;
 
   &:hover {
-    text-decoration: none;
+	text-decoration: none;
 
-    &:after {
-      color: $color-offwhite;
-    }
+	&:after {
+	  color: $color-offwhite;
+	}
   }
 
   &:after {
-    content: '\25BC';
-    color: $color-primary;
-    position: relative;
-    top: 0;
-    left: 95.2rem;
+	content: '\25BC';
+	color: $color-primary;
+	position: relative;
+	top: 0;
+	left: 95.2rem;
+	font-size: 10px;
   }
 }
 
@@ -163,7 +181,7 @@ div[class^='forum_thread_header'] {
   font-size: $text-small;
 
   a {
-    display: inline-block;
-    margin-right: 1rem;
+	display: inline-block;
+	margin-right: 1rem;
   }
 }

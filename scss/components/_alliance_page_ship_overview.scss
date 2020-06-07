@@ -11,8 +11,8 @@
           text-transform: uppercase;
           font-size: 1.2rem;
           color: $color-offwhite;
-          background: $color-borders;
-          background: linear-gradient(180deg, $color-borders 0%, $color-borders 15%, $color-borders 100%) !important;
+          background: $color-secondary;
+          background: linear-gradient(180deg, $color-secondary 0%, $color-secondary 15%, $color-secondary 100%) !important;
           //border: 1px solid rgba($color-primary, .5);
           border: 1px solid transparent;
           border-image: linear-gradient(to right, transparent 0%, rgba(82, 165, 248, .5) 50%, transparent 100%);
@@ -21,7 +21,7 @@
 
         &:nth-child(2) th {
           font-weight: bold;
-          background: $color-borders;
+          background: $color-secondary;
           color: $color-text;
           font-size: .75rem;
           padding: .5rem .125rem;
@@ -32,7 +32,7 @@
         }
 
         td {
-          background: $color-borders;
+          background: $color-secondary;
 
           &:empty {
             background: transparent;
@@ -41,7 +41,7 @@
 
         &:nth-child(odd) {
           td {
-            background-color: darken($color-borders, 3%);
+            background-color: $color-secondary-alt;
 
             &:empty {
               background: transparent;

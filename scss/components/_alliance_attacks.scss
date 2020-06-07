@@ -4,10 +4,10 @@
       > thead,
       > tbody {
         > tr {
-          background-color: $color-borders;
+          background-color: $color-secondary;
 
           &:nth-child(4n+1) {
-            background-color: darken($color-borders, 3%);
+            background-color: $color-secondary-alt;
           }
 
           &:first-child th {
@@ -88,7 +88,7 @@
   width: auto !important;
   max-width: 300px;
   border: 1px solid rgba($color-primary, .5);
-  background: $color-borders;
+  background: $color-secondary;
 
   table {
     margin-bottom: 0;

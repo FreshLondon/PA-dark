@@ -10,13 +10,13 @@
 
 	  &:nth-child(odd) {
 		td {
-		  background-color: darken($color-borders, 3%);
+		  background-color: $color-secondary-alt;
 		}
 	  }
 
 	  &:nth-child(even) {
 		td {
-		  background-color: $color-borders;
+		  background-color: $color-secondary;
 		}
 	  }
 	}

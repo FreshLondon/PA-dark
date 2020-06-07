@@ -13,7 +13,8 @@ $color-eitraides: #a76cc3;
 //
 $color-primary: #52a5f8;
 $color-primary-dark: darken($color-primary, 20%);
-$color-secondary: #010304;
+$color-secondary: #24303f;
+$color-secondary-alt: darken($color-secondary, 3%);
 //
 $color-white: #fff;
 $color-offwhite: #cccccc;
@@ -28,11 +29,10 @@ $color-black-medium: #384147;
 $color-black-dark: #010304;
 //
 $color-background: #1a222c;
-$color-borders: #24303f;
 $color-links: $color-primary;
 $color-links-hover: $color-black;
 $color-text: $color-offwhite;
-$color-bg-th: rgba(black, .1);
+$color-bg-th: rgba(black, .12);
 //
 $color-own: rgb(0, 130, 255);
 $color-positive: limegreen;

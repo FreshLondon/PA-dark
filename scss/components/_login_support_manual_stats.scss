@@ -86,7 +86,7 @@
 
 	.maintext {
 	  padding: 1rem;
-	  background: $color-borders;
+	  background: $color-secondary;
 	  border-radius: .5rem;
 	  border: 1px solid rgba($color-primary, .5);
 
@@ -256,7 +256,7 @@
 
   h2 {
 	color: $color-text;
-	background: $color-borders;
+	background: $color-secondary;
 	//background: linear-gradient(135deg, var(--col-panel-light) 0%, var(--col-panel-dark) 100%);
 	text-transform: initial;
 	font-size: 1rem;
@@ -265,7 +265,7 @@
   .stats_tbl {
 	tr {
 	  th:not([colspan="17"]).stats_title {
-		background: $color-borders;
+		background: $color-secondary;
 		color: white;
 	  }
 

@@ -17,8 +17,8 @@
 	font-weight: bold;
 	text-transform: uppercase;
 	color: $color-offwhite;
-	background: $color-borders;
-	background: linear-gradient(to right, $color-borders 0%, $color-background 50%, $color-borders 100%) !important;
+	background: $color-secondary;
+	background: linear-gradient(to right, $color-secondary 0%, $color-background 50%, $color-secondary 100%) !important;
 	border: 1px solid transparent;
 	border-image: linear-gradient(to right, transparent 0%, rgba(82, 165, 248, .5) 50%, transparent 100%);
 	border-image-slice: 1;
@@ -56,12 +56,12 @@
 
   input {
     color: $color-offwhite;
-    background-color: $color-borders;
+    background-color: $color-secondary;
     font-size: $text-default;
   }
 
   option {
-    background-color: $color-borders;
+    background-color: $color-secondary;
   }
 
   th,
@@ -319,7 +319,7 @@
 
       &:nth-child(2) {
         input {
-          background-color: $color-borders;
+          background-color: $color-secondary;
         }
       }
     }
@@ -369,7 +369,7 @@
 
   input.t1:not([value="0"]) {
     color: $color-negative;
-    background-color: darken($color-borders, 4%) !important;
+    background-color: $color-secondary-alt !important;
     border-color: rgba($color-negative, .5) !important;
   }
 
@@ -379,7 +379,7 @@
 
   input.t2:not([value="0"]) {
     color: $color-neutral;
-    background-color: darken($color-borders, 4%) !important;
+    background-color: $color-secondary-alt !important;
     border-color: rgba($color-neutral, .5) !important;
   }
 }
@@ -405,11 +405,11 @@
 #bcalc tr:nth-child(4) .global_controls,
 #def_table tr:nth-last-child(-n+3),
 #att_table tr:nth-last-child(-n+5) {
-  background-color: $color-borders;
+  background-color: $color-secondary;
 }
 
 #scans_area {
-  background-color: $color-borders;
+  background-color: $color-secondary;
   height: 3rem;
 }
 
@@ -433,7 +433,7 @@
 }
 
 #add_other input[type="number"] {
-  background-color: $color-borders;
+  background-color: $color-secondary;
   color: $color-text;
 }
 

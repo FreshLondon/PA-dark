@@ -63,8 +63,8 @@ h2 {
   font-weight: bold;
   text-transform: uppercase;
   color: $color-offwhite;
-  background: $color-borders;
-  background: linear-gradient(to right, $color-borders 0%, $color-background 50%, $color-borders 100%) !important;
+  background: $color-secondary;
+  background: linear-gradient(to right, $color-secondary 0%, $color-background 50%, $color-secondary 100%) !important;
   border: 1px solid transparent;
   border-image: linear-gradient(to right, transparent 0%, rgba(82, 165, 248, .5) 50%, transparent 100%);
   border-image-slice: 1;
@@ -125,7 +125,7 @@ h2 {
 	margin: 0 auto 1rem;
 
 	table {
-	  background: $color-borders;
+	  background: $color-secondary;
 	}
   }
 }
@@ -161,7 +161,7 @@ span.center {
 #side_select_box,
 #con_fleets,
 #dships_box {
-  background: $color-borders !important;
+  background: $color-secondary !important;
   color: $color-offwhite !important;
   border: 1px solid rgba($color-primary, .5);
   padding: .25rem .5rem;
@@ -222,13 +222,13 @@ span.center {
   }
 
   .tab_link_active {
-	color: lighten($color-borders, 90%);
+	color: lighten($color-secondary, 90%);
 	cursor: default;
 
 	&:hover {
 	  background: none;
 	  text-decoration: none;
-	  color: lighten($color-borders, 70%);
+	  color: lighten($color-secondary, 70%);
 	}
   }
 
