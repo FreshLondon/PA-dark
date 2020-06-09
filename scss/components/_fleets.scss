@@ -1,6 +1,14 @@
 /* FLEETS
    -------------------------------------------------------*/
 #page_fleets {
+  td[colspan="11"] {
+	background: transparent !important;
+
+	&:empty {
+	  display: none;
+	}
+  }
+
   #base_behavior {
 	p {
 	  color: $color-offwhite;
@@ -27,6 +35,10 @@
 	  td {
 		background: $color-secondary;
 
+		&:empty {
+		  background: transparent;
+		}
+
 		&.mission_return {
 		  opacity: 1;
 		}
@@ -43,9 +55,36 @@
 		  background: rgba($color-neutral, .14);
 		}
 	  }
+
+	  &:nth-child(even) {
+		td {
+		  background: $color-secondary-alt;
+
+		  &:empty {
+			background: transparent;
+		  }
+		}
+	  }
+
+	  &:nth-last-child(1),
+	  &:nth-last-child(2),
+	  &:nth-last-child(3),
+	  &:nth-last-child(4),
+	  &:nth-last-child(5) {
+		td {
+		  background: transparent;
+		}
+	  }
+
+	  &:nth-last-child(7) {
+		th {
+		  background: $color-secondary;
+		}
+	  }
 	}
   }
 }
+
 
 #fleet_overview {
   tr {
@@ -80,6 +119,7 @@ th.superhighlight {
   th,
   td {
 	color: $color-offwhite;
+	word-break: break-word;
   }
 
   a:hover {
