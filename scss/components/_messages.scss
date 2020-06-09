@@ -5,14 +5,18 @@
 	  table {
 		tr {
 		  background: $color-secondary-alt;
+
 		  &:first-child {
 			background: transparent;
 		  }
+
 		  &:nth-child(4n) {
 			background: $color-secondary;
 		  }
+
 		  &:nth-child(2n - 1) {
 			background: $color-background;
+
 			td {
 			  padding: 20px 0;
 			}
@@ -36,9 +40,8 @@
 			  height: 1.5rem;
 			  margin: 1rem 0;
 			  padding: 0 .5rem;
-			  color: black !important;
-			  background: $color-primary !important;
-			  //background: linear-gradient(135deg, $color-primary 0%, $color-primary-dark 100%);
+			  color: $color-primary !important;
+			  background: $color-secondary !important;
 			  border: 1px solid rgba($color-primary, .5) !important;
 			  cursor: pointer;
 			  box-shadow: none;
@@ -51,9 +54,8 @@
 
 			  &:hover {
 				text-decoration: none !important;
-				color: $color-primary !important;
-				background: $color-secondary !important;
-				//background: linear-gradient(180deg, $color-black-light 0%, $color-black-medium 15%, $color-black-dark 100%);
+				color: black !important;
+				background: $color-primary !important;
 			  }
 			}
 		  }
