@@ -178,81 +178,9 @@ option {
   }
 }
 
-#page_messages #tab1 .container {
-  &:nth-child(2) .header::before {
-	content: 'Send recall message';
-  }
 
-  &:nth-child(3) {
-	.header::before {
-	  content: 'Messages';
-	}
 
-	table th {
-	  text-transform: initial;
-	}
-  }
-}
 
-.mail_unread th {
-  color: $color-primary;
-}
-
-.mail_unread,
-.mail_read {
-  img {
-	display: none !important;
-  }
-}
-
-#page_messages {
-  a[onclick^="read"],
-  a[onclick^="reply"],
-  a[href*='action=delete'],
-  a[href*='action=report'] {
-	display: inline-block;
-	position: relative;
-	width: 1.5rem;
-	height: 1.5rem;
-
-	&:after {
-	  font-size: 1.3rem;
-	}
-  }
-
-  //img {
-  //  display: none !important;
-  //}
-
-  &:after {
-	position: absolute;
-	top: 0;
-	left: 1px;
-	color: $color-zikonian;
-	font-size: 1.25rem;
-	line-height: 1.5rem;
-  }
-
-  a[onclick^="read"]::after {
-	content: '\2709';
-	color: $color-text;
-  }
-
-  a[onclick^="reply"]::after {
-	content: '\21a9';
-	color: $color-text;
-  }
-
-  a[href*='action=report']::after {
-	content: '\26a0';
-	color: $color-neutral;
-  }
-
-  a[href*='action=delete']::after {
-	content: '\2716';
-	color: $color-zikonian;
-  }
-}
 
 #page_alliance #notice + .container .header {
   display: none;
