@@ -339,11 +339,44 @@
 	margin-top: -2.25rem;
 
 	input[type="submit"] {
-	  margin: 0 0 0 1rem !important;
+	  margin: 1rem 0 0 !important;
 	}
   }
 }
 
+#page_waves {
+  table {
+	tr {
+	  td {
+		background: $color-secondary;
+
+		&[colspan="5"] {
+		  background: transparent;
+		}
+	  }
+
+	  &:nth-child(even) {
+		td {
+		  background: $color-secondary-alt;
+		}
+	  }
+
+	  th,
+	  td {
+		&:empty,
+		&:nth-child(5) {
+		  background: transparent;
+		}
+	  }
+	}
+  }
+}
+
+#stored_scans_form {
+  input[type="submit"] {
+	margin: 0 0 0 1rem !important;
+  }
+}
 
 .scan_time {
   font-size: $text-small;
