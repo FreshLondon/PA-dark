@@ -2,126 +2,180 @@
    -------------------------------------------------------*/
 #page_covert {
   #notice {
-    + .container {
-      .header {
-        display: none;
-      }
+	+ .container {
+	  .header {
+		display: none;
+	  }
 
-      table {
-        width: auto;
-        margin: 0 auto;
-      }
+	  table {
+		width: auto;
+		margin: 0 auto;
+	  }
 
-      td {
-        font-weight: bold;
-      }
+	  td {
+		font-weight: bold;
+	  }
 
-      a {
-        display: inline-block;
-        padding: .25rem 1rem;
-        color: $color-primary;
+	  a {
+		display: inline-block;
+		padding: .25rem 1rem;
+		color: $color-primary;
 
-        &:hover {
-          color: black;
-          background: $color-primary;
-          //background: linear-gradient(135deg, $color-primary 0%, $color-primary-dark 100%);
-          text-decoration: none;
-        }
-      }
-    }
+		&:hover {
+		  color: black;
+		  background: $color-primary;
+		  //background: linear-gradient(135deg, $color-primary 0%, $color-primary-dark 100%);
+		  text-decoration: none;
+		}
+	  }
+	}
+  }
+
+  #contents {
+	.container {
+	  &:nth-last-child(4) {
+		table {
+		  max-width: 600px;
+		}
+
+		form {
+		  max-width: 600px;
+		  margin: 30px auto 0;
+
+		  table {
+			tr {
+			  th,
+			  td {
+				background: transparent;
+
+				&:nth-child(2) {
+				  text-align: center;
+				}
+
+				&:last-child:not([colspan="3"]) {
+				  text-align: right;
+				}
+			  }
+			}
+		  }
+		}
+	  }
+
+	}
+
+	table {
+	  th {
+		background: transparent;
+	  }
+	}
   }
 
   span {
-    &[style*="red"] {
-      color: $color-negative !important;
-    }
+	&[style*="red"] {
+	  color: $color-negative !important;
+	}
 
-    &[style*="yellow"] {
-      color: $color-neutral !important;
-    }
+	&[style*="yellow"] {
+	  color: $color-neutral !important;
+	}
 
-    &[style*="white"] {
-      color: inherit !important;
-      font-weight: bold;
-    }
+	&[style*="white"] {
+	  color: inherit !important;
+	  font-weight: bold;
+	}
   }
 
-  table tr:nth-child(5) td, #page_covert table + p {
-    padding-top: 1rem;
+  table {
+	+ p {
+	  padding-top: 1rem;
+	}
+
+	tr {
+	  td {
+		background: $color-secondary;
+	  }
+
+	  &:nth-child(even) {
+		td {
+		  background: $color-secondary-alt;
+		}
+	  }
+	}
   }
 
   .training_info .title {
-    display: block;
-    padding: .25rem .5rem;
-    margin-bottom: .5rem;
-    background: $color-secondary;
-    //background: linear-gradient(135deg, var(--col-panel-light) 0%, var(--col-panel-dark) 100%);
-    font-size: 1rem;
+	display: block;
+	padding: .25rem .5rem;
+	margin-bottom: .5rem;
+	background: $color-secondary;
+	//background: linear-gradient(135deg, var(--col-panel-light) 0%, var(--col-panel-dark) 100%);
+	font-size: 1rem;
   }
 
   .description {
-    position: relative;
-    padding-left: .5rem;
-    padding-right: 15rem;
+	position: relative;
+	padding-left: .5rem;
+	padding-right: 15rem;
   }
 
   .desc_link {
-    display: inline-block;
-    position: absolute;
-    top: 3px;
-    right: 2rem;
-    font-size: $text-small;
+	display: inline-block;
+	position: absolute;
+	top: 3px;
+	right: 2rem;
+	font-size: $text-small;
   }
 
   .resources {
-    font-size: $text-small;
-    margin-top: .15rem;
-    padding-left: .5rem;
-    display: flex;
+	font-size: $text-small;
+	margin-top: .15rem;
+	padding-left: .5rem;
+	display: flex;
 
-    li.textlabel {
-      min-width: 7rem;
-    }
+	li.textlabel {
+	  min-width: 7rem;
+	}
   }
 
   .training_amounts {
-    margin-top: -2.5rem;
-    margin-right: 2rem;
-    display: flex;
-    justify-content: flex-end;
+	margin-top: -2.5rem;
+	margin-right: 2rem;
+	display: flex;
+	justify-content: flex-end;
   }
 
   .current_amount {
-    padding-right: 2rem;
+	padding-right: 2rem;
   }
 
   .new_amount {
-    margin-top: -0.2rem;
+	margin-top: -0.2rem;
 
-    input {
-      width: 4rem;
-    }
+	input {
+	  width: 4rem;
+	}
   }
 
   #unit_cost,
   #wage_bill {
-    display: flex;
-    justify-content: center;
-    margin-bottom: .5rem;
+	display: flex;
+	justify-content: center;
+	margin-bottom: .5rem;
 
-    .resources {
-      font-size: 1rem;
+	.resources {
+	  font-size: 1rem;
 
-      > .textlabel {
-        display: inline-block;
-        min-width: 12rem;
-      }
-    }
+	  > .textlabel {
+		display: inline-block;
+		min-width: 12rem;
+	  }
+	}
   }
 
   #unit_cost .textlabel {
-    text-align: left;
+	text-align: left;
   }
+
 }
 
 #agents_training,
@@ -132,7 +186,7 @@
 #security_redundancy_form {
   th,
   td {
-    padding: .15rem 1rem;
+	padding: .15rem 1rem;
   }
 }
 
