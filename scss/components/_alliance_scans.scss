@@ -1,0 +1,17 @@
+#page_alliance_scans {
+  .tabs {
+	table {
+	  tr {
+		td {
+		  background: $color-secondary;
+		}
+
+		&:nth-child(even) {
+		  td {
+			background: $color-secondary-alt;
+		  }
+		}
+	  }
+	}
+  }
+}

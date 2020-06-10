@@ -61,9 +61,20 @@
 		}
 	  }
 
+	  &:nth-last-child(5) {
+		table {
+		  tr {
+			th,
+			td {
+			  background: transparent;
+			}
+		  }
+		}
+	  }
 	}
 
 	table {
+	  max-width: 800px;
 	  th {
 		background: transparent;
 	  }
