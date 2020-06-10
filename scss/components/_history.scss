@@ -1,8 +1,41 @@
 #page_history {
   .maintext {
-    img {
-      width: 100%;
-      max-width: 800px;
-    }
+	img {
+	  width: 100%;
+	  max-width: 800px;
+	}
+
+	table {
+	  tr {
+		th,
+		td {
+		  background: $color-secondary;
+		}
+
+		&:nth-child(even) {
+		  th,
+		  td {
+			background: $color-secondary-alt;
+		  }
+		}
+	  }
+	}
+
+  }
+
+  #tab5,
+  #tab6 {
+	.maintext {
+	  table {
+		tr {
+		  th,
+		  td {
+			&:empty {
+			  background: transparent;
+			}
+		  }
+		}
+	  }
+	}
   }
 }
