@@ -1,0 +1,33 @@
+#page_alliance_access {
+  .maintext {
+	table {
+	  tr {
+		th {
+		  background: transparent;
+
+		  &:nth-child(3) {
+			width: auto !important;
+		  }
+		}
+
+		&[id^=ally_group_] {
+		  table {
+			tr {
+			  th,
+			  td {
+				background: $color-secondary;
+			  }
+
+			  &:nth-child(even) {
+				th,
+				td {
+				  background: $color-secondary-alt;
+				}
+			  }
+			}
+		  }
+		}
+	  }
+	}
+  }
+}
