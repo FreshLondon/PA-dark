@@ -165,6 +165,11 @@ option {
 
 	input[type="submit"] {
 	  margin: 0 auto;
+	  color: black;
+
+	  &:hover {
+		color: $color-primary;
+	  }
 	}
   }
 
@@ -177,9 +182,6 @@ option {
 	font-size: $text-small;
   }
 }
-
-
-
 
 
 #page_alliance #notice + .container .header {

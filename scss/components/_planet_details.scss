@@ -37,15 +37,15 @@
 
   #header_mail,
   #header_news {
-	background: black;
+	background: rgba(black, .6);
 	position: relative;
-	transition: ease all .3s;
+	transition: ease background-color .5s;
 
 	&:hover {
-	  background: $color-primary;
+	  background: rgba(black, 1);
 
 	  a {
-		color: black !important;
+		color: white !important;
 	  }
 	}
 
@@ -85,6 +85,11 @@
 	border: 1px solid transparent;
 	border-image: linear-gradient(to left, rgb(60, 107, 156) 0%, #24313f 100%);
 	border-image-slice: 1;
+
+	&:hover {
+	  border-image: linear-gradient(to left, $color-primary 0%, #24313f 100%);
+	  border-image-slice: 1;
+	}
   }
 
   #header_news {
@@ -94,6 +99,10 @@
 	border-image: linear-gradient(to right, rgb(60, 107, 156) 0%, #24313f 100%);
 	border-image-slice: 1;
 	border-left: none;
+	&:hover {
+	  border-image: linear-gradient(to right, $color-primary 0%, #24313f 100%);
+	  border-image-slice: 1;
+	}
   }
 
   span {
@@ -264,10 +273,17 @@
 	font-weight: bold;
 	text-align: center;
 	color: $color-offwhite;
-	background: black;
+	background: rgba(black, .6);
 	border-bottom: 1px solid transparent;
 	border-image: linear-gradient(to right, transparent 0%, rgba($color-primary, .5) 50%, transparent 100%);
 	border-image-slice: 1;
+	transition: ease all 0.5s;
+  }
+
+  &:hover {
+	&:before {
+	  background: rgba(black, 1);
+	}
   }
 
   .textlabel {
