@@ -7,13 +7,11 @@
 
 	table {
 	  tr {
-		th,
 		td {
 		  background: $color-secondary;
 		}
 
 		&:nth-child(even) {
-		  th,
 		  td {
 			background: $color-secondary-alt;
 		  }
