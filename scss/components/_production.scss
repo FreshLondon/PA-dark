@@ -108,7 +108,7 @@ span.small.notice_warning {
 #production_factories_row {
   td {
 	font-size: $text-small !important;
-	background: transparent;
+	background: transparent !important;
 
 	.textlabel {
 	  font-size: $text-small;
