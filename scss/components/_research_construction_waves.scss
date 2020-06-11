@@ -363,10 +363,18 @@
 
 	  th,
 	  td {
-		&:empty,
-		&:nth-child(5) {
+		&:empty {
 		  background: transparent;
 		}
+	  }
+	}
+  }
+
+  #tab3 {
+	th,
+	td {
+	  &:nth-child(5) {
+		background: transparent;
 	  }
 	}
   }
