@@ -17,8 +17,8 @@
   .population_slider {
 	background: $color-primary;
 
-	background: linear-gradient(135deg, $color-primary 25%, rgb(109, 98, 37) 100%);
-	border: 1px solid rgba(0, 0, 0, 0.8);
+	background: linear-gradient(135deg, $color-primary 25%, $color-secondary 100%);
+	border: 1px solid rgba(0, 0, 0, 0.5);
 	height: 1.25rem;
 	width: 0.8rem;
 	margin-left: 5px;
