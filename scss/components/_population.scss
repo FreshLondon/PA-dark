@@ -102,6 +102,8 @@
 			&[type="number"] {
 			  border: 1px solid rgba($color-primary, .5);
 			  transition: ease all .5s;
+			  padding: 0 !important;
+			  text-align: center;
 
 			  &:focus {
 				border: 1px solid $color-primary;
