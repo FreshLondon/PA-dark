@@ -86,9 +86,11 @@
 	  td {
 		background: $color-secondary-alt;
 	  }
-	}&:last-child {
+	}
+
+	&:last-child {
 	  td {
-		background: rgba(0,0,0,0.12);
+		background: rgba(0, 0, 0, 0.12);
 	  }
 	}
   }
@@ -156,6 +158,14 @@ span.small.notice_warning {
   }
 }
 
-.production_orders .resources {
-  margin: 1rem 0;
+.production_orders {
+  .resources {
+	margin: 1rem 0;
+  }
+
+  form.cancelform {
+	input[type="submit"] {
+	  margin: 0;
+	}
+  }
 }
