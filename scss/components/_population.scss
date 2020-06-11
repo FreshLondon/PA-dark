@@ -1,12 +1,27 @@
 /* POPULATION
    -------------------------------------------------------*/
-.population_slider {
-  background: $color-primary;
-  //background: linear-gradient(135deg, $color-primary 0%, $color-primary-dark 100%);
-  border: 0;
-  border: none;
-  height: .75rem;
-  width: .75rem;
+.slider_track {
+  .slider_slider {
+	background: rgb(26, 34, 44);
+	height: 4px;
+	line-height: 0px;
+	margin: 3px 4px 3px 4px;
+	position: absolute;
+	width: 110px;
+	z-index: 1;
+	border: 1px solid rgba(82, 165, 248, 0.5);
+	box-shadow: -1px 1px 3px 0px rgb(0, 0, 0);
+  }
+
+  .population_slider {
+	background: $color-primary;
+	background: linear-gradient(135deg, $color-primary 0%, $color-primary-dark 100%);
+	border: 1px solid rgba(0, 0, 0, 0.8);
+	height: 1.25rem;
+	width: 0.8rem;
+	margin-left: 5px;
+	box-shadow: inset 0px -1px 2px 1px rgba(0, 0, 0, .5);
+  }
 }
 
 .population_display {
