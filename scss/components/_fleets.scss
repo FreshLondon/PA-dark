@@ -26,11 +26,11 @@
 	  border-image-slice: 1;
 
 	  &.mission_attack {
-		background: linear-gradient(to right, $color-background 0%, rgba($color-negative, .2) 50%, $color-background 100%);
+		background: linear-gradient(to right, transparent 0%, rgba($color-negative, .2) 50%, transparent 100%);
 	  }
 
 	  &.mission_defend {
-		background: linear-gradient(to right, $color-background 0%, rgba($color-positive, .2) 50%, $color-background 100%);
+		background: linear-gradient(to right, transparent 0%, rgba($color-positive, .2) 50%, transparent 100%);
 	  }
 	}
 

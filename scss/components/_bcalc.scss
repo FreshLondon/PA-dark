@@ -8,10 +8,10 @@
 
 #page_bcalc {
   #contents_header {
-    display: block;
-    width: 100%;
-    position: relative;
-    height: 2rem;
+	display: block;
+	width: 100%;
+	position: relative;
+	height: 2rem;
 	margin: 1rem 0;
 	padding: .5rem 0;
 	font-weight: bold;
@@ -24,19 +24,20 @@
 	border-image-slice: 1;
 	line-height: 1;
 
-    &:before {
-      content: 'Planetarion Battle Calculator';
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      text-align: center;
-      font-size: $text-small;
-      text-transform: uppercase;
-      font-weight: bold;
-      padding: .5rem 0;
-    }
+	&:before {
+	  content: 'Planetarion Battle Calculator';
+	  position: absolute;
+	  top: 0;
+	  left: 0;
+	  width: 100%;
+	  text-align: center;
+	  font-size: $text-small;
+	  text-transform: uppercase;
+	  font-weight: bold;
+	  padding: .5rem 0;
+	}
   }
+
   #bcalc_stats {
 	th {
 	  background: transparent;
@@ -46,89 +47,89 @@
 
 #bcalc {
   #controls {
-    tr {
-      th {
-        width: auto;
-        vertical-align: baseline;
-      }
-    }
+	tr {
+	  th {
+		width: auto;
+		vertical-align: baseline;
+	  }
+	}
   }
 
   input {
-    color: $color-offwhite;
-    background-color: $color-secondary;
-    font-size: $text-default;
+	color: $color-offwhite;
+	background-color: $color-secondary;
+	font-size: $text-default;
   }
 
   option {
-    background-color: $color-secondary;
+	background-color: $color-secondary;
   }
 
   th,
   td {
-    color: $color-offwhite;
-    font-size: $text-small;
-    white-space: nowrap;
+	color: $color-offwhite;
+	font-size: $text-small;
+	white-space: nowrap;
 	background: transparent;
 
-    &.def_total,
-    &.att_total {
-      color: $color-offwhite;
-    }
+	&.def_total,
+	&.att_total {
+	  color: $color-offwhite;
+	}
 
-    &.def_emped,
-    &.att_emped {
-      color: $color-emp;
-    }
+	&.def_emped,
+	&.att_emped {
+	  color: $color-emp;
+	}
 
-    &.def_killed,
-    &.att_killed {
-      color: $color-killed;
-    }
+	&.def_killed,
+	&.att_killed {
+	  color: $color-killed;
+	}
 
-    &.def_stolen,
-    &.att_stolen {
-      color: $color-stolen;
-    }
+	&.def_stolen,
+	&.att_stolen {
+	  color: $color-stolen;
+	}
   }
 
   td {
-    &.def_value_lost,
-    &.att_score_lost {
-      color: $color-zikonian;
-    }
+	&.def_value_lost,
+	&.att_score_lost {
+	  color: $color-zikonian;
+	}
 
-    &.def_value_gained,
-    &.att_score_gained {
-      color: $color-positive;
-    }
+	&.def_value_gained,
+	&.att_score_gained {
+	  color: $color-positive;
+	}
   }
 
   #def_side {
-    background: rgba($color-positive, .4);
-    //background: linear-gradient(135deg, $color-primary 0%, $color-primary-dark 100%);
-    color: $color-offwhite;
-    padding-bottom: .25rem;
+	background: rgba($color-positive, .4);
+	//background: linear-gradient(135deg, $color-primary 0%, $color-primary-dark 100%);
+	color: $color-offwhite;
+	padding-bottom: .25rem;
   }
 
   #att_side {
-    background: rgba($color-negative, .35);
-    //background: linear-gradient(170deg, $color-neutral 0%, $color-negative 100%);
-    padding-bottom: .25rem;
+	background: rgba($color-negative, .35);
+	//background: linear-gradient(170deg, $color-neutral 0%, $color-negative 100%);
+	padding-bottom: .25rem;
   }
 
   .att_controls input,
   input[onclick*="att"]:not([type="checkbox"]) {
-    background: $color-neutral;
-    background: linear-gradient(170deg, $color-neutral 0%, $color-negative 100%);
-    padding-bottom: .25rem;
+	background: $color-neutral;
+	background: linear-gradient(170deg, $color-neutral 0%, $color-negative 100%);
+	padding-bottom: .25rem;
 
-    &:hover {
-      background: $color-black-light;
-      background: linear-gradient(170deg, $color-black-light 0%, $color-black-dark 100%);
-      padding-bottom: .25rem;
-      color: $color-text;
-    }
+	&:hover {
+	  background: $color-black-light;
+	  background: linear-gradient(170deg, $color-black-light 0%, $color-black-dark 100%);
+	  padding-bottom: .25rem;
+	  color: $color-text;
+	}
   }
 
   #att_add_to,
@@ -136,11 +137,11 @@
   #att_show input[type="checkbox"],
   #att_table input,
   #att_table select {
-    border-color: rgba($color-primary, .5);
+	border-color: rgba($color-primary, .5);
 
-    &:before {
-      color: $color-negative;
-    }
+	&:before {
+	  color: $color-negative;
+	}
   }
 
   #def_add_to,
@@ -148,201 +149,201 @@
   #def_show input[type="checkbox"],
   #def_table input,
   #def_table select {
-    border-color: rgba($color-primary, .5);
+	border-color: rgba($color-primary, .5);
 
-    &:before {
-      color: $color-positive;
-    }
+	&:before {
+	  color: $color-positive;
+	}
   }
 
   #def_show {
-    input[type="checkbox"] {
-      &#def_race_ter {
-        border-color: $color-terran;
+	input[type="checkbox"] {
+	  &#def_race_ter {
+		border-color: $color-terran;
 
-        &:before {
-          color: $color-terran;
-        }
-      }
+		&:before {
+		  color: $color-terran;
+		}
+	  }
 
-      &#def_race_cat {
-        border-color: $color-cathaar;
+	  &#def_race_cat {
+		border-color: $color-cathaar;
 
-        &:before {
-          color: $color-cathaar;
-        }
-      }
+		&:before {
+		  color: $color-cathaar;
+		}
+	  }
 
-      &#def_race_xan {
-        border-color: $color-xandathrii;
+	  &#def_race_xan {
+		border-color: $color-xandathrii;
 
-        &:before {
-          color: $color-xandathrii;
-        }
-      }
+		&:before {
+		  color: $color-xandathrii;
+		}
+	  }
 
-      &#def_race_zik {
-        border-color: $color-zikonian;
+	  &#def_race_zik {
+		border-color: $color-zikonian;
 
-        &:before {
-          color: $color-zikonian;
-        }
-      }
+		&:before {
+		  color: $color-zikonian;
+		}
+	  }
 
-      &#def_race_etd {
-        border-color: $color-eitraides;
+	  &#def_race_etd {
+		border-color: $color-eitraides;
 
-        &:before {
-          color: $color-eitraides;
-        }
-      }
-    }
+		&:before {
+		  color: $color-eitraides;
+		}
+	  }
+	}
   }
 
   #att_show {
-    input[type="checkbox"] {
-      &#att_race_ter {
-        border-color: $color-terran;
+	input[type="checkbox"] {
+	  &#att_race_ter {
+		border-color: $color-terran;
 
-        &:before {
-          color: $color-terran;
-        }
-      }
+		&:before {
+		  color: $color-terran;
+		}
+	  }
 
-      &#att_race_cat {
-        border-color: $color-cathaar;
+	  &#att_race_cat {
+		border-color: $color-cathaar;
 
-        &:before {
-          color: $color-cathaar;
-        }
-      }
+		&:before {
+		  color: $color-cathaar;
+		}
+	  }
 
-      &#att_race_xan {
-        border-color: $color-xandathrii;
+	  &#att_race_xan {
+		border-color: $color-xandathrii;
 
-        &:before {
-          color: $color-xandathrii;
-        }
-      }
+		&:before {
+		  color: $color-xandathrii;
+		}
+	  }
 
-      &#att_race_zik {
-        border-color: $color-zikonian;
+	  &#att_race_zik {
+		border-color: $color-zikonian;
 
-        &:before {
-          color: $color-zikonian;
-        }
-      }
+		&:before {
+		  color: $color-zikonian;
+		}
+	  }
 
-      &#att_race_etd {
-        border-color: $color-eitraides;
+	  &#att_race_etd {
+		border-color: $color-eitraides;
 
-        &:before {
-          color: $color-eitraides;
-        }
-      }
-    }
+		&:before {
+		  color: $color-eitraides;
+		}
+	  }
+	}
   }
 
   .global_controls {
-    padding: 0 .5rem .5rem;
+	padding: 0 .5rem .5rem;
   }
 
   .def_ter,
   .att_ter {
-    background: transparent;
+	background: transparent;
 
-    th,
-    td {
-      //color: $color-terran;
-      background-color: rgba($color-terran, .3);
-    }
+	th,
+	td {
+	  //color: $color-terran;
+	  background-color: rgba($color-terran, .3);
+	}
   }
 
   .def_cat,
   .att_cat {
-    background: transparent;
+	background: transparent;
 
-    th,
-    td {
-      //color: $color-cathaar;
-      background-color: rgba($color-cathaar, .3);
-    }
+	th,
+	td {
+	  //color: $color-cathaar;
+	  background-color: rgba($color-cathaar, .3);
+	}
   }
 
   .def_xan,
   .att_xan {
-    background: transparent;
+	background: transparent;
 
-    th,
-    td {
-      //color: $color-xandathrii;
-      background-color: rgba($color-xandathrii, .3);
-    }
+	th,
+	td {
+	  //color: $color-xandathrii;
+	  background-color: rgba($color-xandathrii, .3);
+	}
   }
 
   .def_zik,
   .att_zik {
-    background: transparent;
+	background: transparent;
 
-    th,
-    td {
-      //color: $color-zikonian;
-      background-color: rgba($color-zikonian, .3);
-    }
+	th,
+	td {
+	  //color: $color-zikonian;
+	  background-color: rgba($color-zikonian, .3);
+	}
   }
 
   .def_etd,
   .att_etd {
-    background: transparent;
+	background: transparent;
 
-    th,
-    td {
-      //color: $color-eitraides;
-      background-color: rgba($color-eitraides, .3);
-    }
+	th,
+	td {
+	  //color: $color-eitraides;
+	  background-color: rgba($color-eitraides, .3);
+	}
   }
 
   span {
-    transition: ease all .3s;
+	transition: ease all .3s;
 
-    &[onmouseover] {
-      cursor: crosshair;
-    }
+	&[onmouseover] {
+	  cursor: crosshair;
+	}
   }
 
   #def_table,
   #att_table {
-    td {
-      input {
-        height: 1.375rem;
-      }
+	td {
+	  input {
+		height: 1.375rem;
+	  }
 
-      &:nth-child(2) {
-        input {
-          background-color: $color-secondary;
-        }
-      }
-    }
+	  &:nth-child(2) {
+		input {
+		  background-color: $color-secondary;
+		}
+	  }
+	}
   }
 
   .def_report_fleet,
   .def_report_salvage,
   .att_report_fleet {
-    tr {
-      &:nth-child(2) {
-        th {
-          font-weight: bold;
-        }
-      }
-    }
+	tr {
+	  &:nth-child(2) {
+		th {
+		  font-weight: bold;
+		}
+	  }
+	}
   }
 
   #att_war + .att_row_sep {
-    height: 4.35rem;
+	height: 4.35rem;
   }
 
   input[id^="att_race"] {
-    border-color: $color-neutral;
+	border-color: $color-neutral;
   }
 
   #def_header_killed,
@@ -359,45 +360,45 @@
   .att_stolen,
   .def_total,
   .att_total {
-    width: unset;
-    min-width: 70px;
+	width: unset;
+	min-width: 70px;
   }
 
   span.t1 {
-    color: $color-negative;
+	color: $color-negative;
   }
 
   input.t1:not([value="0"]) {
-    color: $color-negative;
-    background-color: $color-secondary-alt !important;
-    border-color: rgba($color-negative, .5) !important;
+	color: $color-negative;
+	background-color: $color-secondary-alt !important;
+	border-color: rgba($color-negative, .5) !important;
   }
 
   span.t2 {
-    color: $color-neutral;
+	color: $color-neutral;
   }
 
   input.t2:not([value="0"]) {
-    color: $color-neutral;
-    background-color: $color-secondary-alt !important;
-    border-color: rgba($color-neutral, .5) !important;
+	color: $color-neutral;
+	background-color: $color-secondary-alt !important;
+	border-color: rgba($color-neutral, .5) !important;
   }
 }
 
 #def_value_table,
 #att_score_table {
   tr {
-    td {
-      &:last-of-type {
-        font-size: 1rem;
-      }
-    }
+	td {
+	  &:last-of-type {
+		font-size: 1rem;
+	  }
+	}
 
-    td {
-      &:first-child {
-        width: 60%;
-      }
-    }
+	td {
+	  &:first-child {
+		width: 60%;
+	  }
+	}
   }
 }
 
@@ -420,15 +421,15 @@
 #fleet_select_box,
 #side_select_box {
   p {
-    color: $color-offwhite;
+	color: $color-offwhite;
   }
 
   .right {
-    padding-right: 0;
+	padding-right: 0;
 
-    a {
-      font-weight: bold;
-    }
+	a {
+	  font-weight: bold;
+	}
   }
 }
 
@@ -448,7 +449,34 @@
 }
 
 #add_own {
-  th {
-    font-size: .6875rem;
+  background: $color-background !important;
+  padding: 1px;
+
+  p:first-child {
+	height: 0;
+  }
+
+  table {
+	margin-bottom: 0;
+
+	tr {
+	  background: $color-secondary;
+
+	  th {
+		font-size: .6875rem;
+		background: transparent;
+	  }
+	  td {
+		padding-right: 5px;
+	  }
+
+	  &:first-child {
+		background: $color-bg-th;
+	  }
+
+	  &:nth-child(even) {
+		background: $color-secondary-alt;
+	  }
+	}
   }
 }
