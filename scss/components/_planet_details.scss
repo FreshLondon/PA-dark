@@ -5,7 +5,7 @@
   padding-top: 0;
   display: flex;
   flex-flow: row wrap;
-  align-content: flex-start;
+  align-content: space-between;
   background: $color-secondary;
   margin: 0;
   height: unset;
@@ -31,7 +31,7 @@
 	width: 50%;
 	padding: 0 .5rem;
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-evenly;
 	margin: 0 0 .5rem;
   }
 
@@ -106,7 +106,7 @@
   }
 
   span {
-	flex-basis: 50%;
+	flex-basis: 35%;
   }
 
   .textlabel {
@@ -200,16 +200,7 @@
 
 
   #header_tick {
-	//width: 100%;
 	order: 3;
-
-	span {
-	  flex-basis: 25%;
-	}
-
-	//.textlabel {
-	//  margin-left: calc(50% + .5rem);
-	//}
   }
 
   #header_remaining {
