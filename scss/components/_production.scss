@@ -105,6 +105,10 @@ span.small.notice_warning {
 
 #ship_cost {
   margin: 1rem 0;
+
+  + table {
+	max-width: 600px;
+  }
 }
 
 #production_factories_row {
