@@ -27,7 +27,8 @@ input[type="submit"],
 #bcalc input[type="submit"],
 #page input[type="button"],
 #add_other input[type="button"],
-ul.alliance_attack_claims_list a {
+ul.alliance_attack_claims_list a,
+#currentMoves a {
   display: inline-block;
   height: 1.5rem;
   margin: 1rem 0;

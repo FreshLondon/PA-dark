@@ -20,7 +20,7 @@
 
 	p {
 	  color: $color-offwhite;
-	  padding: 12px 0;
+	  padding: 8px 0;
 	  border: 1px solid transparent;
 	  border-image: linear-gradient(to right, transparent 0%, rgba($color-primary, .5) 50%, transparent 100%);
 	  border-image-slice: 1;
@@ -99,6 +99,29 @@
 	  &:nth-last-child(7) {
 		th {
 		  background: $color-secondary-alt;
+		}
+	  }
+	}
+
+	&[name="movement"] {
+	  div#currentMoves {
+		max-width: 600px;
+		margin: 0 auto;
+		text-align: center;
+		line-height: 2;
+
+		a {
+		  margin: 0 !important;
+		  line-height: 1.5rem !important;
+		}
+
+		br + br {
+		  display: none;
+		}
+
+		input[type="submit"] {
+		  display: block !important;
+		  margin: 1rem auto .5rem !important;
 		}
 	  }
 	}

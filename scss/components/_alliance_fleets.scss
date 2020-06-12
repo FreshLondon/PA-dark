@@ -1,4 +1,5 @@
-#page_alliance_fleets {
+#page_alliance_fleets,
+#page_universe_combat_reports {
   #contents {
 	table {
 	  tr {
@@ -6,7 +7,7 @@
 		  background: $color-secondary;
 
 		  &:empty {
-			background: transparent;
+			background: transparent !important;
 		  }
 		}
 
