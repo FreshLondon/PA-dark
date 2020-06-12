@@ -1,19 +1,49 @@
 #page_alliance_fleets,
-#page_universe_combat_reports {
+#page_universe_combat_reports,
+#page_alliance_fund {
   #contents {
 	table {
 	  tr {
 		td {
 		  background: $color-secondary;
 
-		  &:empty {
+		  &:empty,
+		  &[colspan="5"] {
 			background: transparent !important;
 		  }
+
 		}
 
 		&:nth-child(odd) {
 		  td {
 			background-color: $color-secondary-alt;
+		  }
+		}
+	  }
+	}
+  }
+}
+
+#page_alliance_fund {
+  #contents {
+	table {
+	  max-width: 800px;
+
+	  tr {
+		th {
+		  &[colspan="5"] {
+			background: transparent !important;
+			padding-bottom: 1rem;
+		  }
+		}
+
+		td {
+		  &[colspan="5"] {
+			padding: 1rem 0;
+
+			&[class="center"] {
+			  padding: 0;
+			}
 		  }
 		}
 	  }
