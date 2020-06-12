@@ -1,6 +1,13 @@
 
-#page table input[type="submit"] {
-  margin: 0;
+#page table td {
+  &:first-child {
+	input[type="submit"] {
+	  margin: 1rem 0 0;
+	}
+  }
+  input[type="submit"] {
+	margin: 0;
+  }
 }
 
 input,
