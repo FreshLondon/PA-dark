@@ -6,7 +6,7 @@ a,
   transition: .3s;
 
   &:hover {
-    color: $color-offwhite;
+	color: $color-offwhite;
   }
 }
 
@@ -32,9 +32,8 @@ ul.alliance_attack_claims_list a {
   height: 1.5rem;
   margin: 1rem 0;
   padding: 0 .5rem;
-  color: black !important;
-  background: $color-primary !important;
-  //background: linear-gradient(135deg, $color-primary 0%, $color-primary-dark 100%);
+  color: $color-primary !important;
+  background: $color-secondary !important;
   border: 1px solid rgba($color-primary, .5) !important;
   cursor: pointer;
   box-shadow: none;
@@ -46,25 +45,12 @@ ul.alliance_attack_claims_list a {
   font-size: 1rem;
 
   &:hover {
-    text-decoration: none !important;
-    color: $color-primary !important;
-    background: $color-secondary !important;
-    //background: linear-gradient(180deg, $color-black-light 0%, $color-black-medium 15%, $color-black-dark 100%);
+	text-decoration: none !important;
+	color: black !important;
+	background: $color-primary !important;
   }
 }
 
 input[type="submit"] {
   border: none;
 }
-
-
-
-//#page input[type="submit"] {
-//  text-transform: initial !important;
-//  border: none !important;
-//  border-radius: 0 !important;
-//  font-family: "Ubuntu", "Lato", "Open Sans", sans-serif !important;
-//  font-size: 1rem !important;
-//  font-weight: normal !important;
-//  box-shadow: none !important;
-//}

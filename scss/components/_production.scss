@@ -121,12 +121,32 @@ span.small.notice_warning {
 }
 
 #d_stats {
+  background: $color-background !important;
+  padding: 0;
+
   table {
 	&:first-child {
 	  tr {
-		&:first-child th {
-		  border-bottom: 1px solid $color-offwhite;
-		  padding-bottom: .25rem;
+		&:nth-child(odd) {
+		  th,
+		  td {
+			background: $color-secondary;
+		  }
+		}
+
+		&:nth-child(even) {
+		  th,
+		  td {
+			background: $color-secondary-alt;
+		  }
+		}
+
+		&:first-child {
+		  th {
+			border-bottom: 1px solid $color-offwhite;
+			padding-bottom: .25rem;
+			background: $color-bg-th;
+		  }
 		}
 
 		&:nth-child(2) {
@@ -139,6 +159,7 @@ span.small.notice_warning {
 		&:nth-child(6) th {
 		  padding-top: .5rem;
 		}
+
 	  }
 
 	  th,
@@ -149,10 +170,46 @@ span.small.notice_warning {
 	}
 
 	& + table {
-	  margin-top: .5rem;
+	  margin-bottom: 0;
 
 	  th:first-child {
-		width: 45%;
+		width: 45% !important;
+	  }
+	}
+  }
+}
+
+#d_from {
+  padding: 0;
+  width: unset !important;
+  background: $color-background !important;
+
+  table {
+	margin: 0;
+
+	tr {
+	  &:first-child {
+		background: $color-background;
+
+		th {
+		  background: $color-bg-th;
+		}
+	  }
+
+	  &:nth-child(odd) {
+		td {
+		  background: $color-secondary;
+		}
+	  }
+
+	  &:nth-child(even) {
+		td {
+		  background: $color-secondary-alt;
+		}
+	  }
+
+	  td {
+		padding: 2px 5px;
 	  }
 	}
   }

@@ -10,9 +10,28 @@
   }
 
   #base_behavior {
+	.header {
+	  display: none;
+	}
+
+	.maintext {
+	  margin-top: .5rem;
+	}
+
 	p {
 	  color: $color-offwhite;
-	  padding: 0;
+	  padding: 12px 0;
+	  border: 1px solid transparent;
+	  border-image: linear-gradient(to right, transparent 0%, rgba($color-primary, .5) 50%, transparent 100%);
+	  border-image-slice: 1;
+
+	  &.mission_attack {
+		background: linear-gradient(to right, $color-background 0%, rgba($color-negative, .2) 50%, $color-background 100%);
+	  }
+
+	  &.mission_defend {
+		background: linear-gradient(to right, $color-background 0%, rgba($color-positive, .2) 50%, $color-background 100%);
+	  }
 	}
 
 	input[type="submit"] {
@@ -29,7 +48,7 @@
 	  }
 
 	  th {
-		background: $color-background;
+		background: $color-bg-th;
 	  }
 
 	  td {
@@ -71,6 +90,7 @@
 	  &:nth-last-child(3),
 	  &:nth-last-child(4),
 	  &:nth-last-child(5) {
+		th,
 		td {
 		  background: transparent;
 		}
