@@ -1,0 +1,21 @@
+#page_alliance_fleets {
+  #contents {
+	table {
+	  tr {
+		td {
+		  background: $color-secondary;
+
+		  &:empty {
+			background: transparent;
+		  }
+		}
+
+		&:nth-child(odd) {
+		  td {
+			background-color: $color-secondary-alt;
+		  }
+		}
+	  }
+	}
+  }
+}
