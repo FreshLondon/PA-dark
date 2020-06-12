@@ -74,6 +74,10 @@ option {
   color: $color-text !important;
 }
 
+hr {
+  background: rgba($color-primary, .5);
+}
+
 
 /* Page Outline
    -------------------------------------------------------*/

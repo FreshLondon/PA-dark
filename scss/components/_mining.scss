@@ -4,104 +4,129 @@
 #galaxy_fund {
 
   table {
-    margin: 1rem 0;
-  }
+	max-width: 900px;
+	margin: 1rem auto;
 
-  td {
-    height: 1.5rem;
+	tr {
+	  td {
+		height: 1.5rem;
+		background: $color-secondary;
 
-    .textlabel {
-      display: inline-block;
-      margin: .2rem 0 0 2rem;
-    }
+		.textlabel {
+		  display: inline-block;
+		  margin: .2rem 0 0 2rem;
+		}
 
-    .metal,
-    .crystal,
-    .eonium {
-      background-repeat: no-repeat;
-      background-size: 1.5rem 1.5rem;
-      height: 1.5rem;
+		.metal,
+		.crystal,
+		.eonium {
+		  background-repeat: no-repeat;
+		  background-size: 1.5rem 1.5rem;
+		  height: 1.5rem;
 
-      .textvalue {
-        background-repeat: no-repeat;
-        background-position-y: 1px;
-        padding: 0 1rem 0 1.2rem;
-      }
-    }
+		  .textvalue {
+			background-repeat: no-repeat;
+			background-position-y: 1px;
+			padding: 0 1rem 0 1.2rem;
+		  }
+		}
 
-    .metal {
-      background-image: url('/images/template53/metal_48.png');
-    }
+		.metal {
+		  background-image: url('/images/template53/metal_48.png');
+		}
 
-    .crystal {
-      background-image: url('/images/template53/crystal_48.png');
-    }
+		.crystal {
+		  background-image: url('/images/template53/crystal_48.png');
+		}
 
-    .eonium {
-      background-image: url('/images/template53/eonium_48.png');
-    }
+		.eonium {
+		  background-image: url('/images/template53/eonium_48.png');
+		}
+	  }
+
+	  &:nth-child(even) {
+		td {
+		  background: $color-secondary-alt;
+		}
+	  }
+	}
   }
 
   .resources {
-    .metal,
-    .crystal,
-    .eonium {
+	.metal,
+	.crystal,
+	.eonium {
 
 
-      .textvalue {
-        background-repeat: no-repeat;
-        background-position-y: 1px;
-        padding: 0 1rem 0 1.2rem;
-      }
-    }
+	  .textvalue {
+		background-repeat: no-repeat;
+		background-position-y: 1px;
+		padding: 0 1rem 0 1.2rem;
+	  }
+	}
 
-    .metal .textvalue {
-      background-image: url('/images/template53/metal_16.png');
-    }
+	.metal .textvalue {
+	  background-image: url('/images/template53/metal_16.png');
+	}
 
-    .crystal .textvalue {
-      background-image: url('/images/template53/crystal_16.png');
-    }
+	.crystal .textvalue {
+	  background-image: url('/images/template53/crystal_16.png');
+	}
 
-    .eonium .textvalue {
-      background-image: url('/images/template53/eonium_16.png');
-    }
+	.eonium .textvalue {
+	  background-image: url('/images/template53/eonium_16.png');
+	}
   }
 
   #guard_cost {
-    margin-bottom: .5rem;
+	margin-bottom: .5rem;
   }
 
   input[type="number"] {
-    padding-right: .1rem;
-    min-width: 3rem;
+	padding-right: .1rem;
+	min-width: 3rem;
   }
 
   #mining p.center:last-child {
-    font-style: italic;
+	font-style: italic;
   }
 
   table {
-    &:not(:last-child) {
-      tr {
-        &:first-child {
-          th {
-            text-transform: initial;
-            font-size: 1rem;
-            padding-bottom: .3rem;
-          }
-        }
-      }
-    }
+	&:not(:last-child) {
+	  tr {
+		&:first-child {
+		  th {
+			text-transform: initial;
+			font-size: 1rem;
+			padding-bottom: .3rem;
+		  }
+		}
+	  }
+	}
 
-    td {
-      height: 1.5rem;
-    }
+	td {
+	  height: 1.5rem;
+	}
   }
 
   #gal_target_amount,
   #uni_target_amount {
-    font-weight: bold;
+	font-weight: bold;
+  }
+}
+
+#galaxy_fund {
+  table {
+	margin-bottom: 0;
+
+	tr {
+	  td {
+		&[colspan="5"] {
+		  background: transparent;
+		  margin-bottom: 1rem;
+		}
+	  }
+	}
   }
 }
 
@@ -113,10 +138,10 @@
   .metal,
   .crystal,
   .eonium {
-    width: 100%;
-    height: 30px;
-    display: block;
-    background-size: contain;
+	width: 100%;
+	height: 30px;
+	display: block;
+	background-size: contain;
   }
 }
 
@@ -126,6 +151,6 @@
   .metal,
   .crystal,
   .eonium {
-    background-position: center;
+	background-position: center;
   }
 }

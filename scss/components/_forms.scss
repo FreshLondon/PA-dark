@@ -15,10 +15,12 @@ select,
   font-size: 1rem;
   height: 1.5rem;
   transition: ease all .3s;
+  display: inline-block;
+  vertical-align: middle;
 
   &:focus {
-    outline: none;
-    border: 1px solid $color-primary;
+	outline: none;
+	border: 1px solid $color-primary;
   }
 }
 
@@ -57,13 +59,13 @@ input[type="checkbox"] {
   transition: .3s;
 
   &:checked::before {
-    display: block;
-    content: '\2714';
-    font-weight: bold;
-    color: $color-primary;
-    font-size: 1.2rem;
-    position: absolute;
-    top: -.5rem;
+	display: block;
+	content: '\2714';
+	font-weight: bold;
+	color: $color-primary;
+	font-size: 1.2rem;
+	position: absolute;
+	top: -.5rem;
   }
 }
 

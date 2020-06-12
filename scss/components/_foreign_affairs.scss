@@ -1,32 +1,78 @@
 /* FOREIGN AFFAIRS
    -------------------------------------------------------*/
-#page_politics #tab1 .container:first-child .header::before {
-  content: 'Galaxy Status ';
+#page_politics {
+  #tab1 {
+	.container {
+	  &:first-child {
+		.header {
+		  &:before {
+			content: 'Galaxy Status ';
+		  }
+		}
+	  }
+	}
+  }
+
+  #tab3 {
+	table {
+	  tr {
+		td {
+		  background: $color-secondary;
+		}
+
+		&:nth-child(even) {
+		  td {
+			background: $color-secondary-alt;
+		  }
+		}
+
+		&:first-child {
+		  > * {
+			background: $color-bg-th;
+		  }
+		}
+	  }
+	}
+  }
+
+  #tab3 {
+	table {
+	  tr {
+		th {
+		  background: transparent;
+
+		  &:first-child {
+			width: 45px !important;
+		  }
+		}
+	  }
+	}
+  }
 }
 
 #galaxy_banner {
   .header::before {
-    content: 'Galaxy Banner ';
+	content: 'Galaxy Banner ';
   }
 
   + script + .container {
-    .header {
-      display: none;
-    }
+	.header {
+	  display: none;
+	}
 
-    .maintext > p {
-      font-weight: bold;
-      background: $color-secondary;
-      //background: linear-gradient(135deg, var(--col-panel-light) 0%, var(--col-panel-dark) 100%);
-      margin-bottom: 1rem;
+	.maintext > p {
+	  font-weight: bold;
+	  background: $color-secondary;
+	  //background: linear-gradient(135deg, var(--col-panel-light) 0%, var(--col-panel-dark) 100%);
+	  margin-bottom: 1rem;
 
-      .superhighlight {
-        display: inline-block;
-        padding: .5rem 0 .25rem;
-        font-size: 1.3rem;
-      }
+	  .superhighlight {
+		display: inline-block;
+		padding: .5rem 0 .25rem;
+		font-size: 1.3rem;
+	  }
 
-    }
+	}
   }
 }
 

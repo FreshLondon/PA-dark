@@ -1,54 +1,49 @@
 #page_ship_overview {
   #full_page {
-    max-width: 800px;
+	max-width: 800px;
 
-    table {
-      tr {
-        &:nth-child(1) th {
-          margin: 1rem 0;
-          padding: .5rem 0;
-          font-weight: bold;
-          text-transform: uppercase;
-          font-size: 1.2rem;
-          color: $color-offwhite;
-          background: $color-secondary;
-          background: linear-gradient(180deg, $color-secondary 0%, $color-secondary 15%, $color-secondary 100%) !important;
-          //border: 1px solid rgba($color-primary, .5);
-          border: 1px solid transparent;
-          border-image: linear-gradient(to right, transparent 0%, rgba(82, 165, 248, .5) 50%, transparent 100%);
-          border-image-slice: 1;
-        }
+	table {
+	  tr {
+		&:nth-child(1) th {
+		  margin: 1rem 0;
+		  padding: .5rem 0;
+		  font-weight: bold;
+		  text-transform: uppercase;
+		  font-size: 1.2rem;
+		  color: $color-offwhite;
+		  background: $color-secondary;
+		  background: linear-gradient(180deg, $color-secondary 0%, $color-secondary 15%, $color-secondary 100%) !important;
+		  //border: 1px solid rgba($color-primary, .5);
+		  border: 1px solid transparent;
+		  border-image: linear-gradient(to right, transparent 0%, rgba(82, 165, 248, .5) 50%, transparent 100%);
+		  border-image-slice: 1;
+		}
 
-        &:nth-child(2) th {
-          font-weight: bold;
-          background: $color-secondary;
-          color: $color-text;
-          font-size: .75rem;
-          padding: .5rem .125rem;
+		&:nth-child(2) th {
+		  font-weight: bold;
+		  color: $color-text;
+		  font-size: .75rem;
+		  padding: .5rem .125rem;
 
-          &.right {
-            padding-right: .25rem;
-          }
-        }
+		  &.right {
+			padding-right: .25rem;
+		  }
+		}
 
-        td {
-          background: $color-secondary;
+		td {
+		  background: $color-secondary;
 
-          &:empty {
-            background: transparent;
-          }
-        }
+		  &[style="width: 22%;"] {
+			background: transparent !important;
+		  }
+		}
 
-        &:nth-child(odd) {
-          td {
-            background-color: $color-secondary-alt;
-
-            &:empty {
-              background: transparent;
-            }
-          }
-        }
-      }
-    }
+		&:nth-child(odd) {
+		  td {
+			background-color: $color-secondary-alt;
+		  }
+		}
+	  }
+	}
   }
 }
