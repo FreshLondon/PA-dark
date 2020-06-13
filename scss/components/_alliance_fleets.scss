@@ -3,13 +3,20 @@
 #page_alliance_fund {
   #contents {
 	table {
+	  &:last-child:not(:first-child) {
+		max-width: 485px;
+	  }
 	  tr {
 		td {
 		  background: $color-secondary;
 
 		  &:empty,
-		  &[colspan="5"] {
+		  &[colspan="5"],
+		  &[colspan="6"] {
 			background: transparent !important;
+		  }
+		  &:empty {
+
 		  }
 
 		}

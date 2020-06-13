@@ -15,7 +15,7 @@
   background: $color-secondary;
   //background: linear-gradient(135deg, var(--col-panel-light) 0%, var(--col-panel-dark) 100%);
   font-size: 1.3rem;
-  text-shadow: 1px 1px 0px #000000;
+  text-shadow: 1px 1px 0px #000;
 }
 
 .research,
@@ -40,8 +40,8 @@
 	.desc_link {
 	  display: inline-block;
 	  position: absolute;
-	  top: 3px;
-	  right: 2rem;
+	  top: -30px;
+	  right: 16px;
 	  font-size: $text-small;
 	}
   }
@@ -60,12 +60,12 @@
   padding-left: .5rem;
 }
 
-
 .constructions {
   display: flex;
   flex-wrap: wrap;
   border: none;
   margin-bottom: 0;
+  position: relative;
 
   .construction_info {
 	flex-basis: 100%;
@@ -102,16 +102,25 @@
   }
 
   .construction_built {
-	flex-basis: 33%;
-	text-align: left;
 	padding: 1rem .5rem;
+	font-size: 1.3rem;
+	position: absolute;
+	top: 41px;
+	right: 0;
+	width: calc(150px + 1rem);
+	text-align: right;
 
 	.textvalue {
 	  font-weight: bold;
 	}
 
 	.progress_wrapper {
-	  margin: .5rem 0;
+	  margin: 1rem 0;
+
+	  .progress_value {
+		margin-top: -1.45rem;
+		font-size: 1rem;
+	  }
 
 	  .progress_expected {
 		background-image: none;
@@ -121,8 +130,8 @@
 	  }
 
 	  + p {
-		text-align: left;
-		font-size: $text-small;
+		text-align: right;
+		font-size: $text-default;
 	  }
 	}
   }
@@ -137,9 +146,10 @@
 
 	.resources {
 	  margin-bottom: 0;
-	  text-align: right;
+	  text-align: left;
 	  order: 40;
-	  width: 67%;
+	  width: calc(100% - 200px);
+	  padding-left: 2rem;
 
 	  &:first-of-type {
 		order: 20;
@@ -147,18 +157,14 @@
 
 	  li {
 		display: inline-block;
-
-		//&.textlabel {
-		//  width: 100%;
-		//}
 	  }
 	}
 
 	form {
-	  width: 33%;
+	  width: 200px;
 	  display: flex;
 	  align-items: center;
-	  justify-content: flex-end;
+	  justify-content: flex-start;
 	  order: 10;
 
 	  &:nth-child(4) {
@@ -172,17 +178,51 @@
 	  input {
 		&[type="checkbox"] {
 		  margin-right: .5rem;
+		  width: 1.5rem;
+		  height: 1.5rem;
+
+		  &:focus {
+			border: 1px solid rgba($color-negative, .5);
+		  }
+
+		  &:before {
+			display: block;
+			content: '\2718';
+			font-weight: bold;
+			color: rgba($color-negative, .8);
+			font-size: 1.5rem;
+			position: absolute;
+			top: -0.3125rem;
+			left: 0.1875rem;
+		  }
+
+		  &:checked {
+			&:focus {
+			  border: 1px solid rgba($color-positive, .5);
+			}
+
+			&:before {
+			  content: '\2714';
+			  color: $color-positive;
+			  left: 0.0625rem;
+			}
+		  }
 		}
 
 		&[type="submit"] {
 		  min-width: 110px;
+
+		  &:hover {
+			background: $color-negative;
+		  }
 		}
 	  }
 
 	  p {
-		text-align: right;
+		text-align: left;
 		padding: 0;
 		display: flex;
+		flex-direction: row-reverse;
 		align-items: center;
 	  }
 	}
@@ -220,7 +260,6 @@
 	  display: flex;
 	  flex-direction: column;
 
-
 	  .title {
 		order: 1;
 	  }
@@ -229,7 +268,6 @@
 		margin: 10px 0 0;
 		order: 3;
 	  }
-
 
 	  p {
 
@@ -277,7 +315,6 @@
 	}
 
   }
-
 
   .research_branch {
 	margin-left: 1.5rem;

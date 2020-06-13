@@ -68,7 +68,6 @@ th {
   text-transform: uppercase;
 }
 
-
 option {
   background-color: $color-secondary !important;
   color: $color-text !important;
@@ -76,8 +75,9 @@ option {
 
 hr {
   background: rgba($color-primary, .5);
+  border: none;
+  height: 2px;
 }
-
 
 /* Page Outline
    -------------------------------------------------------*/
@@ -104,7 +104,6 @@ hr {
   }
 }
 
-
 /* OTHER
    ---------------------------------*/
 #important_messages_contents {
@@ -116,7 +115,6 @@ hr {
   white-space: initial;
   box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, .4);
 }
-
 
 #message_form {
   width: 60rem;
@@ -177,7 +175,6 @@ hr {
 	}
   }
 
-
   br {
 	display: none;
   }
@@ -186,7 +183,6 @@ hr {
 	font-size: $text-small;
   }
 }
-
 
 #page_alliance #notice + .container .header {
   display: none;
@@ -237,7 +233,6 @@ hr {
 #page_journal #notice + .container .header {
   display: none;
 }
-
 
 /* MEDIA QUERIES
    ---------------------------------*/

@@ -11,32 +11,32 @@
   padding: 1rem 0;
   background: $color-secondary;
   @include respond-below(sm) {
-    grid-column: 1 / 2;
-    grid-row: 1/4;
-    max-width: 100px;
+	grid-column: 1 / 2;
+	grid-row: 1/4;
+	max-width: 100px;
   }
 
   li {
-    padding: 0 .5rem .15rem;
+	padding: 0 .5rem .15rem;
   }
 
   > li {
-    padding: 0 0 .15rem;
+	padding: 0 0 .15rem;
 
-    &#menu_overview,
-    &#menu_preferences,
-    &#menu_logout {
-      padding: 0 .5rem .15rem;
-    }
+	&#menu_overview,
+	&#menu_preferences,
+	&#menu_logout {
+	  padding: 0 .5rem .15rem;
+	}
 
-    &:nth-child(n+3) {
-      margin-top: 1rem;
-    }
+	&:nth-child(n+3) {
+	  margin-top: 1rem;
+	}
   }
 
   #menu_time {
-    margin-top: 2rem;
-    font-size: $text-small;
+	margin-top: 2rem;
+	font-size: $text-small;
   }
 
   #menu_view_link {
@@ -46,7 +46,7 @@
 
 #hc_links {
   a.ally_def_selected {
-    color: $color-positive;
+	color: $color-positive;
   }
 }
 
@@ -65,4 +65,21 @@
   border-bottom: 1px solid transparent;
   border-image: linear-gradient(to right, transparent 0%, rgba($color-primary, .5) 100%);
   border-image-slice: 1;
+}
+
+#alliance_menu {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  li {
+	display: inline;
+	padding: 0 1rem;
+
+	a {
+	  margin: .5rem 0;
+	}
+  }
 }
