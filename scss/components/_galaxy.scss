@@ -75,16 +75,20 @@
 	  text-align: center;
 
 	  &.right {
-		height: 0;
-		margin: 0;
-		text-align: right;
+		position: absolute;
+		right: -10px;
+		top: -4px;
 	  }
 	}
 
 	select#intel,
 	input[name="nick"] {
 	  width: 100%;
-	  margin: .5rem auto 0;
+	  margin: .25rem auto .5rem;
+	}
+
+	input[name="nick"] {
+	  margin-bottom: 0;
 	}
 
 	input[type="submit"] {
