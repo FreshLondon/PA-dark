@@ -4,6 +4,39 @@
   color: $color-neutral;
 }
 
+#page_overview {
+  th {
+	&:empty {
+	  background: transparent !important;
+	}
+  }
+
+  #ships {
+	table {
+	  tr {
+		td {
+		  background: $color-secondary;
+
+		  &[style="width: 22%;"],
+		  &[style="width: 2%;"] {
+			background: transparent !important;
+		  }
+		}
+
+		&:nth-child(even) {
+		  td {
+			background: $color-secondary-alt;
+		  }
+		}
+	  }
+	}
+	span.superhighlight {
+	  display: block;
+	  font-size: .8rem;
+	}
+  }
+}
+
 #quest_system {
   table {
 	margin: 0 auto;
@@ -93,7 +126,6 @@
   }
 }
 
-
 .expand {
   display: inline-block;
   margin-right: .5rem;
@@ -139,7 +171,6 @@
   position: relative;
   text-shadow: 0px 1px 1px black;
 }
-
 
 .info_header {
   color: $color-offwhite;
@@ -200,7 +231,7 @@ span {
 
 .mission_return {
   opacity: .5;
-  color: #888888;
+  color: #888;
 
   .mission_return {
 	opacity: 1;
@@ -208,7 +239,7 @@ span {
 }
 
 .mission_defend {
-  color: #00AA00;
+  color: #0a0;
   background: rgba($color-positive, .14);
 
   .mission_defend {

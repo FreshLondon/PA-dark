@@ -99,6 +99,7 @@
 	border-image: linear-gradient(to right, rgb(60, 107, 156) 0%, #24313f 100%);
 	border-image-slice: 1;
 	border-left: none;
+
 	&:hover {
 	  border-image: linear-gradient(to right, $color-primary 0%, #24313f 100%);
 	  border-image-slice: 1;
@@ -165,7 +166,6 @@
 	//}
   }
 
-
   #header_metal {
 	order: 7;
   }
@@ -198,7 +198,6 @@
 	order: 12;
   }
 
-
   #header_tick {
 	order: 3;
   }
@@ -208,7 +207,6 @@
   }
 
 }
-
 
 .ter,
 #page_manual .Ter td {
@@ -234,7 +232,6 @@
 #page_manual .Etd td {
   color: $color-eitraides;
 }
-
 
 #planet_summary {
   grid-column: 3 / 3;

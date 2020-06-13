@@ -147,7 +147,7 @@ span.small.notice_warning {
 
 		&:first-child {
 		  th {
-			border-bottom: 1px solid $color-offwhite;
+			border-bottom: 1px solid rgba($color-primary, .5);
 			padding-bottom: .25rem;
 			background: $color-bg-th;
 		  }
