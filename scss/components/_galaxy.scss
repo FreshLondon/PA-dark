@@ -1,65 +1,94 @@
 #page_galaxy {
   input[type="number"] {
-    padding: .25rem !important;
-    min-width: 3rem;
-    height: 1.5rem;
-    color: $color-primary;
+	padding: .25rem !important;
+	min-width: 3rem;
+	height: 1.5rem;
+	color: $color-primary;
   }
 
   .tablesort {
-    thead {
-      background: $color-secondary;
+	thead {
+	  background: $color-secondary;
 
-      th {
-        padding: 10px 4px;
+	  th {
+		padding: 10px 4px;
 
-        &.tablesort_asc,
-        &.tablesort_desc {
-          color: $color-offwhite;
-        }
-      }
-    }
+		&.tablesort_asc,
+		&.tablesort_desc {
+		  color: $color-offwhite;
+		}
+	  }
+	}
 
-    tbody {
-      tr {
-        td {
-          &:nth-child(9) {
-            a {
-              color: $color-primary;
-              padding-right: 2px;
+	tbody {
+	  tr {
+		td {
+		  &:nth-child(9) {
+			a {
+			  color: $color-primary;
+			  padding-right: 2px;
 
-              &:last-child {
-                padding-right: 0;
-              }
-            }
-          }
+			  &:last-child {
+				padding-right: 0;
+			  }
+			}
+		  }
 
-          a,
-          span {
-            color: $color-offwhite;
+		  a,
+		  span {
+			color: $color-offwhite;
 
 			&.bashlimit {
 			  color: $color-neutral;
 			}
 
-            &.gc {
-              color: $color-gc;
-            }
+			&.gc {
+			  color: $color-gc;
+			}
 
-            &.moc {
-              color: $color-moc;
-            }
+			&.moc {
+			  color: $color-moc;
+			}
 
-            &.mow {
-              color: $color-mow;
-            }
+			&.mow {
+			  color: $color-mow;
+			}
 
-            &.mod {
-              color: $color-mod;
-            }
-          }
-        }
-      }
-    }
+			&.mod {
+			  color: $color-mod;
+			}
+		  }
+		}
+	  }
+	}
+  }
+
+  #intel_form {
+	background: $color-background;
+	border: 1px solid rgba($color-primary, .5);
+	color: $color-offwhite !important;
+	padding: 0;
+
+	p {
+	  margin: .5rem 0;
+	  padding: 0 .5rem;
+	  text-align: center;
+
+	  &.right {
+		height: 0;
+		margin: 0;
+		text-align: right;
+	  }
+	}
+
+	select#intel,
+	input[name="nick"] {
+	  width: 100%;
+	  margin: .5rem auto 0;
+	}
+
+	input[type="submit"] {
+	  margin: .5rem;
+	}
   }
 }
