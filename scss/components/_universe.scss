@@ -142,7 +142,6 @@
 		  }
 		}
 
-
 		td {
 		  &.moc,
 		  &.mow,
@@ -166,25 +165,63 @@
 }
 
 #intel {
+  margin: 36px 0 0;
+  position: relative;
+
+  &:before {
+	content: "Intel";
+	text-align: center;
+	display: inline-block;
+	width: calc(100% - 4px);
+	position: absolute;
+	top: -32px;
+	padding: 8px 0;
+	font-size: 1rem;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: $color-offwhite;
+	background: $color-secondary;
+	background: linear-gradient(to right, $color-background 0%, $color-secondary 50%, $color-background 100%) !important;
+	border: 1px solid transparent;
+	border-top: none;
+	border-image: linear-gradient(to right, transparent 0%, rgba(82, 165, 248, .5) 50%, transparent 100%);
+	border-image-slice: 1;
+	line-height: 100%;
+  }
+
   tr {
+	background: $color-secondary;
+
 	th,
 	td {
 	  color: $color-primary;
+	  background: transparent !important;
+	}
+
+	&:nth-child(even) {
+	  background: $color-secondary-alt;
+	}
+
+	&:nth-child(5) {
+	  background: transparent;
+
+	  th {
+		padding: 1rem 0 .25rem;
+	  }
 	}
   }
 }
 
-
 #load_box {
-  background: $color-secondary;
+  background: $color-background;
   border: 1px solid rgba($color-primary, .5);
   color: $color-offwhite !important;
+  padding: 0;
 
   * {
 	color: $color-offwhite !important;
   }
 }
-
 
 .relations_own_member,
 .relations_neutral,
