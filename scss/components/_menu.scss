@@ -18,6 +18,19 @@
 
   li {
 	padding: 0 .5rem .15rem;
+	li {
+	  li {
+		&:before {
+		  content: "\279f";
+		  font-size: 2rem;
+		  line-height: .9rem;
+		  vertical-align: middle;
+		  left: -5px;
+		  position: relative;
+		  color: rgba($color-primary, .5);
+		}
+	  }
+	}
   }
 
   > li {
