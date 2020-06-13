@@ -8,7 +8,7 @@
 		  transition: ease all .5s;
 
 		  &:hover {
-			background-color: rgba($color-primary, .5);
+			background-color: rgba($color-primary, .25);
 		  }
 
 		  &:first-child {
@@ -19,7 +19,7 @@
 			background: $color-secondary;
 
 			&:hover {
-			  background-color: rgba($color-primary, .5);
+			  background-color: rgba($color-primary, .25);
 			}
 		  }
 
