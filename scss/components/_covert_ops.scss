@@ -35,6 +35,34 @@
 	.container {
 	  &:nth-last-child(4) {
 		table {
+		  tr {
+			&:nth-child(1),
+			&:nth-child(2) {
+			  th,
+			  td {
+				background: transparent;
+				font-size: $text-small;
+				text-transform: uppercase;
+				font-weight: normal;
+			  }
+
+			  td {
+				padding-bottom: .5rem;
+			  }
+			}
+
+			&:nth-child(1) {
+			  th {
+				font-size: $text-default;
+				font-weight: bold;
+			  }
+			}
+		  }
+		}
+	  }
+
+	  &:nth-last-child(4) {
+		table {
 		  max-width: 600px;
 		}
 
@@ -75,6 +103,7 @@
 
 	table {
 	  max-width: 800px;
+
 	  th {
 		background: transparent;
 	  }
