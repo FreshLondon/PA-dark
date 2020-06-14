@@ -61,10 +61,9 @@
 	}
 
 	.maintext > p {
-	  font-weight: bold;
-	  background: $color-secondary;
-	  //background: linear-gradient(135deg, var(--col-panel-light) 0%, var(--col-panel-dark) 100%);
-	  margin-bottom: 1rem;
+	  font-size: .9rem;
+	  line-height: 1.6rem;
+	  text-align: center;
 
 	  .superhighlight {
 		display: inline-block;
