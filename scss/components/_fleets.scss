@@ -128,7 +128,6 @@
   }
 }
 
-
 #fleet_overview {
   tr {
 	&.mission_defend,
@@ -157,13 +156,43 @@ th.superhighlight {
 #d_from,
 #d_num,
 #d_to {
-  border: 0 !important;
   padding: 0;
+  background: $color-background;
 
-  th,
-  td {
-	color: $color-offwhite;
-	word-break: break-word;
+  table {
+	max-width: 450px;
+	margin-bottom: 0;
+
+	tr {
+	  th,
+	  td {
+		color: $color-offwhite;
+		word-break: break-word;
+	  }
+
+	  td {
+		background: $color-bg-th;
+
+		&[colspan="4"] {
+		  text-align: center;
+		}
+	  }
+
+	  td {
+		background: $color-secondary;
+	  }
+
+	  &:first-child th {
+		background: rgba(black, .12);
+		padding: .25rem .5rem;
+	  }
+
+	  &:nth-child(even) {
+		td {
+		  background: $color-secondary-alt;
+		}
+	  }
+	}
   }
 
   a:hover {

@@ -161,18 +161,13 @@ span.center {
 #side_select_box,
 #con_fleets,
 #dships_box {
-  background: $color-secondary !important;
+  background: $color-background !important;
   color: $color-offwhite !important;
   border: 1px solid rgba($color-primary, .5);
   padding: .25rem .5rem;
   white-space: initial;
   box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, .4);
 }
-
-//.tooltip {
-//  top: auto !important;
-//  left: auto !important;
-//}
 
 #pabox_inner {
   top: 0 !important;
