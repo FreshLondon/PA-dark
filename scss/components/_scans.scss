@@ -74,3 +74,23 @@
 	}
   }
 }
+
+#page_waves {
+  #show_scan {
+	table {
+	  width: auto;
+	  min-width: 400px;
+
+	  tr {
+		&:first-child {
+		  td {
+			background: transparent;
+			font-weight: bold;
+			font-size: 1.2rem;
+			padding-bottom: 1rem;
+		  }
+		}
+	  }
+	}
+  }
+}
