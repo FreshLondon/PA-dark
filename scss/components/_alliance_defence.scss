@@ -13,11 +13,11 @@
 	  .ally_def_incs_wrapper {
 		margin: 0 0 2rem 5px;
 		background: $color-secondary;
-		border: 1px solid rgba($color-primary, .5);
+		border: 1px solid rgba($color-primary, .3);
 
 		.ally_def_target {
 		  font-size: 1rem;
-		  border-bottom: 1px solid rgba($color-primary, .5);
+		  border-bottom: 1px solid rgba($color-primary, .2);
 
 		  > div {
 			display: flex;
@@ -231,12 +231,13 @@
 			  order: 4;
 			  width: 70px;
 			  justify-content: flex-end;
-			  align-items: flex-end;
+			  align-items: center;
 
 			  &:before {
 				content: "Reported:";
 				font-size: .75rem;
 				padding-right: 4px;
+				line-height: 0.9rem;
 			  }
 			}
 
@@ -408,6 +409,14 @@
 		  font-size: .9rem;
 
 		  .ally_def_defender {
+			&.mission_defend {
+			  background: rgba($color-positive, .14);
+
+			  &:nth-child(even) {
+				background: rgba($color-positive, .09);
+			  }
+			}
+
 			.ally_def_defender_coords {
 			  order: 1;
 			  display: flex;
