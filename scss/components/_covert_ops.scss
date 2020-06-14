@@ -34,41 +34,46 @@
   #contents {
 	.container {
 	  &:nth-last-child(4) {
-		table {
-		  tr {
-			&:nth-child(1),
-			&:nth-child(2) {
-			  th,
-			  td {
-				background: transparent;
-				font-size: $text-small;
-				text-transform: uppercase;
-				font-weight: normal;
+		.maintext {
+		  > table {
+			border: 1px solid rgba($color-primary, .5);
+			tr {
+			  &:nth-child(1),
+			  &:nth-child(2) {
+				th,
+				td {
+				  background: transparent;
+				  font-size: $text-small;
+				  text-transform: uppercase;
+				  font-weight: normal;
+				}
+				th {
+				  padding-top: .5rem;
+				}
+
+				td {
+				  padding-bottom: .5rem;
+				  border-bottom: 1px solid rgba($color-primary, .5);
+				}
 			  }
 
-			  td {
-				padding-bottom: .5rem;
-			  }
-			}
-
-			&:nth-child(1) {
-			  th {
-				font-size: $text-default;
-				font-weight: bold;
+			  &:nth-child(1) {
+				th {
+				  font-size: $text-default;
+				  font-weight: bold;
+				}
 			  }
 			}
 		  }
 		}
-	  }
 
-	  &:nth-last-child(4) {
 		table {
 		  max-width: 600px;
 		}
 
 		form {
 		  max-width: 600px;
-		  margin: 30px auto 0;
+		  margin: 1rem auto 0;
 
 		  table {
 			tr {
