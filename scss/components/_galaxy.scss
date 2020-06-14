@@ -1,9 +1,20 @@
 #page_galaxy {
-  input[type="number"] {
-	padding: .25rem !important;
-	min-width: 3rem;
-	height: 1.5rem;
-	color: $color-primary;
+  #contents {
+	.maintext .superhighlight {
+	  color: inherit;
+	  font-size: 1.5rem;
+	}
+  }
+
+  input {
+	margin: 0 !important;
+
+	&[type="number"] {
+	  padding: .25rem !important;
+	  min-width: 3rem;
+	  height: 1.5rem;
+	  color: $color-primary;
+	}
   }
 
   .tablesort {
