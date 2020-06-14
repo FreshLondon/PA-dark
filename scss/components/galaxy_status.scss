@@ -1,19 +1,23 @@
 #page_galaxy_status {
   #page {
-    #contents {
-      .maintext {
-        table {
-          tr {
-            td {
-              &.mission_return {
-                background: rgba($color-grey, .5);
-                color: $color-offwhite;
-                opacity: 1;
-              }
-            }
-          }
-        }
-      }
-    }
+	#contents {
+	  .maintext {
+		table {
+		  tr {
+			td {
+			  &.mission_return {
+				background: rgba($color-grey, .5);
+				color: $color-offwhite;
+				opacity: 1;
+			  }
+			}
+
+			&[id*="notes_"] input[type="button"] {
+			  margin: 0;
+			}
+		  }
+		}
+	  }
+	}
   }
 }
