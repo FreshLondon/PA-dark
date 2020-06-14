@@ -31,7 +31,6 @@
   }
 }
 
-
 #production_form {
   tr {
 	th,
@@ -220,6 +219,20 @@ span.small.notice_warning {
 }
 
 .production_orders {
+  table {
+	tr {
+	  td {
+		background: $color-secondary;
+	  }
+
+	  &:nth-child(even) {
+		td {
+		  background: $color-secondary-alt;
+		}
+	  }
+	}
+  }
+
   .resources {
 	margin: 1rem 0;
   }
@@ -227,6 +240,9 @@ span.small.notice_warning {
   form.cancelform {
 	input[type="submit"] {
 	  margin: 0;
+	}
+	td {
+	  background: transparent !important;
 	}
   }
 }
