@@ -134,7 +134,7 @@
 		  font-weight: bold;
 		  background: $color-bg-th;
 		  color: $color-text;
-		  font-size: .75rem;
+		  font-size: $text-small;
 		  padding: .5rem .125rem;
 
 		  &.right {
@@ -275,7 +275,7 @@
 		  font-weight: bold;
 		  background: $color-bg-th;
 		  color: #ccc;
-		  font-size: .75rem;
+		  font-size: $text-small;
 		  padding: .5rem .125rem;
 
 		  abbr[title] {

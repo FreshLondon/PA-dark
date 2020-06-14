@@ -196,7 +196,7 @@ th.superhighlight {
 	  }
 
 	  a {
-		font-size: .9rem;
+		font-size: $text-default;
 		&[class*="d_fleet_"] {
 		  padding: .25rem .5rem;
 		}

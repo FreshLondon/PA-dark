@@ -14,7 +14,7 @@
             font-weight: bold;
 			background: $color-bg-th;
             color: $color-text;
-            font-size: .75rem;
+            font-size: $text-small;
             padding: .5rem .25rem;
 
             &.right {
@@ -35,7 +35,7 @@
               > tbody {
                 > tr {
                   > th {
-                    font-size: .75rem;
+                    font-size: $text-small;
                     padding: .25rem;
                   }
 
@@ -59,7 +59,7 @@
                     &.alliance_attack_claims_list {
                       li {
                         font-style: italic;
-                        font-size: .75rem;
+                        font-size: $text-small;
 
                         a {
                           margin: 0;

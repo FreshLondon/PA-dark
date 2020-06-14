@@ -450,7 +450,7 @@
 #side_select_box a:hover,
 #add_own th,
 #con_fleets a:hover {
-  color: $color-primary;
+  color: $color-text;
 }
 
 #add_own {
@@ -466,6 +466,11 @@
 
 	tr {
 	  background: $color-secondary;
+
+	  th,
+	  td {
+		font-size: $text-default;
+	  }
 
 	  th {
 		font-size: .6875rem;

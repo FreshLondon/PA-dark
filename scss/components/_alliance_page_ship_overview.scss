@@ -22,7 +22,7 @@
 		&:nth-child(2) th {
 		  font-weight: bold;
 		  color: $color-text;
-		  font-size: .75rem;
+		  font-size: $text-small;
 		  padding: .5rem .125rem;
 
 		  &.right {

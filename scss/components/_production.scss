@@ -88,7 +88,7 @@
 
 	  &.notice_warning {
 		color: rgba($color-negative, .9);
-		font-size: .75rem;
+		font-size: $text-small;
 		background: transparent;
 	  }
 	}

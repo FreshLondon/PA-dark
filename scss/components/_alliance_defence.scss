@@ -41,7 +41,7 @@
 			width: 55px;
 			justify-content: flex-end;
 			padding-right: 7px;
-			font-size: .9rem;
+			font-size: $text-default;
 		  }
 
 		  .ally_def_target_mdata {
@@ -116,7 +116,7 @@
 		}
 
 		.ally_def_attackers {
-		  font-size: .9rem;
+		  font-size: $text-default;
 
 		  > div {
 			background: $color-secondary;
@@ -147,7 +147,7 @@
 
 				&:before {
 				  content: "*";
-				  font-size: .75rem;
+				  font-size: $text-small;
 				}
 			  }
 			}
@@ -237,7 +237,7 @@
 
 			  &:before {
 				content: "Reported:";
-				font-size: .75rem;
+				font-size: $text-small;
 				padding-right: 4px;
 				line-height: 0.9rem;
 			  }
@@ -261,7 +261,7 @@
 				color: $color-primary !important;
 				background-color: transparent !important;
 				border-color: transparent !important;
-				font-size: .9rem !important;
+				font-size: $text-default !important;
 			  }
 			}
 
@@ -300,7 +300,7 @@
 			display: flex;
 			align-items: center;
 			padding-left: 4px;
-			font-size: .75rem;
+			font-size: $text-small;
 			text-transform: uppercase;
 			text-align: right;
 
@@ -341,7 +341,7 @@
 				content: "BATTLE CALC:";
 				position: relative;
 				display: inline;
-				font-size: .75rem;
+				font-size: $text-small;
 				padding-right: 4px;
 				letter-spacing: 1px;
 			  }
@@ -408,7 +408,7 @@
 		}
 
 		.ally_def_defenders {
-		  font-size: .9rem;
+		  font-size: $text-default;
 
 		  .ally_def_defender {
 			&.mission_defend {
@@ -439,7 +439,7 @@
 
 				&:before {
 				  content: "*";
-				  font-size: .75rem;
+				  font-size: $text-small;
 				}
 			  }
 			}
@@ -473,7 +473,7 @@
 
 			  &:before {
 				content: "Sent:";
-				font-size: .75rem;
+				font-size: $text-small;
 				padding-right: 4px;
 			  }
 			}
