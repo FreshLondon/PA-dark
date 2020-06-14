@@ -158,9 +158,9 @@ th.superhighlight {
 #d_to {
   padding: 0;
   background: $color-background;
+  width: auto !important;
 
   table {
-	max-width: 450px;
 	margin-bottom: 0;
 
 	tr {
@@ -173,7 +173,8 @@ th.superhighlight {
 	  td {
 		background: $color-bg-th;
 
-		&[colspan="4"] {
+		&[colspan="4"],
+		&[colspan="5"] {
 		  text-align: center;
 		}
 	  }
@@ -191,6 +192,10 @@ th.superhighlight {
 		td {
 		  background: $color-secondary-alt;
 		}
+	  }
+
+	  a {
+		font-size: .9rem;
 	  }
 	}
   }

@@ -142,44 +142,58 @@ span.small.notice_warning {
   table {
 	&:first-child {
 	  tr {
-		&:nth-child(odd) {
-		  background: $color-secondary;
-		}
-
-		&:nth-child(even) {
-		  background: $color-secondary-alt;
-		}
-
 		&:first-child {
+		  background: $color-background;
+
 		  th {
-			border-bottom: 1px solid rgba($color-primary, .5);
-			padding-bottom: .25rem;
-			background: $color-bg-th !important;
+			text-align: center;
+			padding: 8px 0;
+			font-size: 1rem;
+			font-weight: bold;
+			text-transform: uppercase;
+			color: $color-offwhite;
+			background: $color-secondary;
+			background: linear-gradient(to right, $color-background 0%, $color-secondary 50%, $color-background 100%) !important;
+			border: 1px solid transparent;
+			border-top: none;
+			border-image: linear-gradient(to right, transparent 0%, rgba(82, 165, 248, .5) 50%, transparent 100%);
+			border-image-slice: 1;
+			line-height: 100%;
 		  }
 		}
+	  }
+	}
 
-		&:nth-child(2) {
-		  th,
-		  td {
-			padding-top: .25rem;
-		  }
-		}
+	tr {
+	  &:nth-child(odd) {
+		background: $color-secondary;
+	  }
 
-		&:nth-child(6) th {
-		  padding-top: .5rem;
-		}
+	  &:nth-child(even) {
+		background: $color-secondary-alt;
+	  }
 
+	  &:nth-child(2) {
 		th,
 		td {
-		  background: transparent !important;
+		  padding-top: .25rem;
 		}
+	  }
+
+	  &:nth-child(6) th {
+		padding-top: .5rem;
 	  }
 
 	  th,
 	  td {
-		color: $color-offwhite;
-		font-size: $text-small;
+		background: transparent !important;
 	  }
+	}
+
+	th,
+	td {
+	  color: $color-offwhite;
+	  font-size: $text-small;
 	}
 
 	& + table {
