@@ -18,7 +18,8 @@
 		  background: $color-secondary;
 
 		  &[style="width: 22%;"],
-		  &[style="width: 2%;"] {
+		  &[style="width: 2%;"],
+		  &[colspan="3"] {
 			background: transparent !important;
 		  }
 		}
@@ -30,6 +31,7 @@
 		}
 	  }
 	}
+
 	span.superhighlight {
 	  display: block;
 	  font-size: .8rem;
