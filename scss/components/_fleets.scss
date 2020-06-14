@@ -162,6 +162,7 @@ th.superhighlight {
 
   table {
 	margin-bottom: 0;
+	white-space: nowrap;
 
 	tr {
 	  th,
@@ -196,6 +197,9 @@ th.superhighlight {
 
 	  a {
 		font-size: .9rem;
+		&[class*="d_fleet_"] {
+		  padding: .25rem .5rem;
+		}
 	  }
 	}
   }
