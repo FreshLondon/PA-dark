@@ -255,8 +255,8 @@
   &:before {
 	display: block;
 	content: 'Planetary Development ';
-	width: calc(100% - 1rem);
-	padding: .5rem .5rem .6125rem;
+	width: 100%;
+	padding: .5rem 0;
 	font-size: $text-small;
 	text-transform: uppercase;
 	font-weight: bold;
