@@ -256,7 +256,7 @@
   background: rgba($color-positive, .35) !important;
 }
 
-.relations_own_member {
+.relations_own_member:not(.header) {
   background: rgba($color-own, .25) !important;
 }
 
@@ -319,6 +319,30 @@
 		@include respond-below(sm) {
 		  padding: 0 .5rem;
 		}
+	  }
+	}
+  }
+}
+
+#page_universe_combat_reports {
+  table {
+	tr {
+	  th {
+		&:empty {
+		  background: transparent !important;
+		}
+	  }
+
+	  td {
+		&[colspan="8"] {
+		  background: transparent !important;
+		}
+	  }
+
+	  br {
+		content: "";
+		margin: 2rem;
+		display: block;
 	  }
 	}
   }

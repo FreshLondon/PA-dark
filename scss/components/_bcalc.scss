@@ -1,11 +1,6 @@
 /* BCALC
    ---------------------------------*/
 
-//#full_page,
-//#bcalc {
-//  max-width: 72rem;
-//}
-
 #page_bcalc {
   #contents_header {
 	display: block;
@@ -46,6 +41,17 @@
 }
 
 #bcalc {
+  > tbody {
+	> tr {
+	  th {
+		&#def,
+		&#att {
+		  vertical-align: top !important;
+		}
+	  }
+	}
+  }
+
   #controls {
 	tr {
 	  th {
@@ -118,19 +124,19 @@
 	padding-bottom: .25rem;
   }
 
-  .att_controls input,
-  input[onclick*="att"]:not([type="checkbox"]) {
-	background: $color-neutral;
-	background: linear-gradient(170deg, $color-neutral 0%, $color-negative 100%);
-	padding-bottom: .25rem;
-
-	&:hover {
-	  background: $color-black-light;
-	  background: linear-gradient(170deg, $color-black-light 0%, $color-black-dark 100%);
-	  padding-bottom: .25rem;
-	  color: $color-text;
-	}
-  }
+  //.att_controls input,
+  //input[onclick*="att"]:not([type="checkbox"]) {
+  //background: $color-neutral;
+  //background: linear-gradient(170deg, $color-neutral 0%, $color-negative 100%);
+  //padding-bottom: .25rem;
+  //
+  //&:hover {
+  //  background: $color-black-light;
+  //  background: linear-gradient(170deg, $color-black-light 0%, $color-black-dark 100%);
+  //  padding-bottom: .25rem;
+  //  color: $color-text;
+  //}
+  //}
 
   #att_add_to,
   .att_filter,
@@ -402,7 +408,6 @@
   }
 }
 
-
 #bcalc tr:nth-child(4) .global_controls,
 #def_table tr:nth-last-child(-n+3),
 #att_table tr:nth-last-child(-n+5) {
@@ -412,8 +417,8 @@
 #scans_area {
   background-color: $color-secondary;
   height: 3rem;
+  display: block !important;
 }
-
 
 #my_bcalcs,
 #add_other,
@@ -466,6 +471,7 @@
 		font-size: .6875rem;
 		background: transparent;
 	  }
+
 	  td {
 		padding-right: 5px;
 	  }

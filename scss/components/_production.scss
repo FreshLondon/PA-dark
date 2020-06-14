@@ -58,6 +58,18 @@
 	  &:nth-child(9) {
 		text-align: right;
 	  }
+
+	  &[colspan="10"] + td {
+		text-align: right;
+
+		&:after {
+		  content: ":";
+		}
+	  }
+
+	  &#stolen_value {
+		text-align: right;
+	  }
 	}
 
 	th {
@@ -131,24 +143,18 @@ span.small.notice_warning {
 	&:first-child {
 	  tr {
 		&:nth-child(odd) {
-		  th,
-		  td {
-			background: $color-secondary;
-		  }
+		  background: $color-secondary;
 		}
 
 		&:nth-child(even) {
-		  th,
-		  td {
-			background: $color-secondary-alt;
-		  }
+		  background: $color-secondary-alt;
 		}
 
 		&:first-child {
 		  th {
 			border-bottom: 1px solid rgba($color-primary, .5);
 			padding-bottom: .25rem;
-			background: $color-bg-th;
+			background: $color-bg-th !important;
 		  }
 		}
 
@@ -163,6 +169,10 @@ span.small.notice_warning {
 		  padding-top: .5rem;
 		}
 
+		th,
+		td {
+		  background: transparent !important;
+		}
 	  }
 
 	  th,
@@ -241,6 +251,7 @@ span.small.notice_warning {
 	input[type="submit"] {
 	  margin: 0;
 	}
+
 	td {
 	  background: transparent !important;
 	}

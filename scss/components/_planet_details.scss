@@ -5,7 +5,7 @@
   padding-top: 0;
   display: flex;
   flex-flow: row wrap;
-  align-content: space-between;
+  align-content: flex-start;
   background: $color-secondary;
   margin: 0;
   height: unset;
@@ -123,13 +123,14 @@
   #header_planet {
 	position: absolute;
 	top: .65rem;
-	left: 0;
+	left: 14px;
 	font-size: 1.5rem;
 	flex-basis: 100%;
 	flex-shrink: 0;
 	color: $color-offwhite;
 	font-size: 1.4rem;
 	letter-spacing: 1px;
+	white-space: nowrap;
 
 	span {
 	  flex-basis: 100%;

@@ -6,6 +6,7 @@
 	  &:last-child:not(:first-child) {
 		max-width: 485px;
 	  }
+
 	  tr {
 		td {
 		  background: $color-secondary;
@@ -15,6 +16,7 @@
 		  &[colspan="6"] {
 			background: transparent !important;
 		  }
+
 		  &:empty {
 
 		  }
@@ -24,6 +26,22 @@
 		&:nth-child(odd) {
 		  td {
 			background-color: $color-secondary-alt;
+		  }
+		}
+	  }
+	}
+  }
+}
+
+#page_alliance_fleets {
+  #contents {
+	table {
+	  width: auto;
+	  tr {
+		th,
+		td {
+		  &:empty {
+			background: $color-background !important;
 		  }
 		}
 	  }
