@@ -100,6 +100,10 @@
 				background-color: $color-secondary-alt;
 			  }
 			}
+
+			&:first-child {
+			  background: transparent;
+			}
 		  }
 		}
 	  }
@@ -122,23 +126,21 @@
 	  }
 
 	  tr {
-		//display: flex;
-		//justify-content: space-between;
 		margin: .125rem 0;
-		//@include respond-below(sm) {
-		//  flex-wrap: wrap;
-		//  justify-content: center;
-		//}
 
-		&:first-child th {
-		  font-weight: bold;
-		  background: $color-bg-th;
-		  color: $color-text;
-		  font-size: $text-small;
-		  padding: .5rem .125rem;
+		&:first-child {
+		  background: transparent;
 
-		  &.right {
-			padding-right: .25rem;
+		  th {
+			font-weight: bold;
+			background: $color-bg-th;
+			color: $color-text;
+			font-size: $text-small;
+			padding: .25rem .125rem;
+
+			&.right {
+			  padding-right: .25rem;
+			}
 		  }
 		}
 
@@ -161,6 +163,10 @@
 		//}
 	  }
 	}
+  }
+
+  input[type="submit"] {
+	margin: 0 !important;
   }
 }
 
@@ -321,6 +327,10 @@
 		}
 	  }
 	}
+  }
+
+  input[type="submit"] {
+	margin: 0 !important;
   }
 }
 
