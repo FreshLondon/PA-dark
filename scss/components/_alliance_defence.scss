@@ -19,6 +19,7 @@
 		.ally_def_target {
 		  font-size: 1rem;
 		  border-bottom: 1px solid rgba(black, .5);
+		  background: rgba(black, .2);
 
 		  > div {
 			display: flex;
@@ -121,7 +122,7 @@
 			background: $color-secondary;
 			padding: 3px 0;
 
-			&:nth-child(odd) {
+			&:nth-child(even) {
 			  background: $color-secondary-alt;
 			}
 
