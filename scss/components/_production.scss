@@ -91,17 +91,21 @@
 		font-size: $text-small;
 		background: transparent;
 	  }
+
+	  &[colspan="9"],
+	  &[colspan="10"] {
+		background: rgba(0, 0, 0, 0.12) !important;
+
+		+ td,
+		+ td + td {
+		  background: rgba(0, 0, 0, 0.12);
+		}
+	  }
 	}
 
 	&:nth-child(even) {
 	  td {
 		background: $color-secondary-alt;
-	  }
-	}
-
-	&:last-child {
-	  td {
-		background: rgba(0, 0, 0, 0.12);
 	  }
 	}
   }
