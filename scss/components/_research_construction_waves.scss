@@ -41,7 +41,7 @@
 	  display: inline-block;
 	  position: absolute;
 	  top: -30px;
-	  right: 16px;
+	  right: 150px;
 	  font-size: $text-small;
 	}
   }
@@ -105,7 +105,7 @@
 	padding: 1rem .5rem;
 	font-size: 1.3rem;
 	position: absolute;
-	top: 41px;
+	top: -11px;
 	right: 0;
 	width: calc(150px + 1rem);
 	text-align: right;
@@ -211,6 +211,7 @@
 
 		&[type="submit"] {
 		  min-width: 110px;
+		  margin: .5rem 0 !important;
 
 		  &:hover {
 			background: $color-negative;
@@ -407,11 +408,39 @@
 	}
   }
 
+  #tab1 {
+	.maintext {
+	  form {
+		table {
+		  tr {
+			&:last-child {
+			  td {
+				&[colspan="6"] {
+				  background: transparent;
+				}
+			  }
+			}
+		  }
+		}
+	  }
+	}
+  }
+
   #tab3 {
 	th,
 	td {
 	  &:nth-child(5) {
 		background: transparent;
+	  }
+	}
+
+	form {
+	  p {
+		line-height: 1.75;
+	  }
+
+	  input[value=" Request Scan "] {
+		margin-top: .5rem;
 	  }
 	}
   }
@@ -445,6 +474,7 @@
 	margin: 0 auto;
   }
 }
+
 #waves {
   p {
 	text-align: center;
