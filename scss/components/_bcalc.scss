@@ -142,20 +142,6 @@
 	padding-bottom: .25rem;
   }
 
-  //.att_controls input,
-  //input[onclick*="att"]:not([type="checkbox"]) {
-  //background: $color-neutral;
-  //background: linear-gradient(170deg, $color-neutral 0%, $color-negative 100%);
-  //padding-bottom: .25rem;
-  //
-  //&:hover {
-  //  background: $color-black-light;
-  //  background: linear-gradient(170deg, $color-black-light 0%, $color-black-dark 100%);
-  //  padding-bottom: .25rem;
-  //  color: $color-text;
-  //}
-  //}
-
   #att_add_to,
   .att_filter,
   #att_show input[type="checkbox"],
@@ -270,6 +256,11 @@
 
   .global_controls {
 	padding: 0 .5rem .5rem;
+
+	&.nowrap {
+	  box-shadow: 0 2px 4px 2px rgba(black, .15);
+	  background: $color-secondary;
+	}
   }
 
   .def_ter,
@@ -324,6 +315,22 @@
 	td {
 	  //color: $color-eitraides;
 	  background-color: rgba($color-eitraides, .3);
+	}
+  }
+
+  .def_ter,
+  .att_ter,
+  .def_cat,
+  .att_cat,
+  .def_xan,
+  .att_xan,
+  .def_zik,
+  .att_zik,
+  .def_etd,
+  .att_etd {
+	th,
+	td {
+	  box-shadow: inset 0 2px 4px 2px rgba(black, .15);
 	}
   }
 
