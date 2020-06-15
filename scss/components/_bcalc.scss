@@ -61,10 +61,19 @@
 	}
   }
 
-  input {
+  input,
+  input[type="checkbox"],
+  select {
 	color: $color-offwhite;
-	background-color: $color-secondary;
 	font-size: $text-default;
+	background-color: rgba($color-secondary, .4);
+	box-shadow: inset 0px 2px 4px 2px rgba(0, 0, 0, 0.4);
+	border-radius: 3px;
+	vertical-align: -webkit-baseline-middle;
+  }
+
+  input[type="checkbox"] {
+	vertical-align: middle;
   }
 
   option {
@@ -321,14 +330,15 @@
   #att_table {
 	td {
 	  input {
+		vertical-align: text-top;
 		height: 1.375rem;
 	  }
 
-	  &:nth-child(2) {
-		input {
-		  background-color: $color-secondary;
-		}
-	  }
+	  //&:nth-child(2) {
+	  //input {
+	  //  background-color: $color-secondary;
+	  //}
+	  //}
 	}
   }
 
