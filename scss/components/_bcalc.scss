@@ -108,6 +108,15 @@
 	}
   }
 
+  th {
+	&.att_name,
+	&.def_name {
+	  span {
+		font-weight: bold;
+	  }
+	}
+  }
+
   td {
 	&.def_value_lost,
 	&.att_score_lost {
