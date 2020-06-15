@@ -402,7 +402,7 @@
 
   input.t1:not([value="0"]) {
 	color: $color-negative;
-	background-color: $color-secondary-alt !important;
+	background-color: rgba($color-secondary-alt, .7) !important;
 	border-color: rgba($color-negative, .5) !important;
   }
 
@@ -412,7 +412,7 @@
 
   input.t2:not([value="0"]) {
 	color: $color-neutral;
-	background-color: $color-secondary-alt !important;
+	background-color: rgba($color-secondary-alt, .7) !important;
 	border-color: rgba($color-neutral, .5) !important;
   }
 }
