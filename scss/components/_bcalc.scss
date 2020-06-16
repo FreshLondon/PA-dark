@@ -2,40 +2,44 @@
    ---------------------------------*/
 
 #page_bcalc {
-  #contents_header {
-	display: block;
-	width: 100%;
-	position: relative;
-	height: 2rem;
-	margin: 1rem 0;
-	padding: .5rem 0;
-	font-weight: bold;
-	text-transform: uppercase;
-	color: $color-offwhite;
-	background: $color-secondary;
-	background: linear-gradient(to right, $color-secondary 0%, $color-background 50%, $color-secondary 100%) !important;
-	border: 1px solid transparent;
-	border-image: linear-gradient(to right, transparent 0%, rgba(82, 165, 248, .5) 50%, transparent 100%);
-	border-image-slice: 1;
-	line-height: 1;
+  #contents {
+	display: table;
 
-	&:before {
-	  content: 'Planetarion Battle Calculator';
-	  position: absolute;
-	  top: 0;
-	  left: 0;
+	#contents_header {
+	  display: block;
 	  width: 100%;
-	  text-align: center;
-	  font-size: $text-small;
-	  text-transform: uppercase;
-	  font-weight: bold;
+	  position: relative;
+	  height: 2rem;
+	  margin: 1rem 0;
 	  padding: .5rem 0;
-	}
-  }
+	  font-weight: bold;
+	  text-transform: uppercase;
+	  color: $color-offwhite;
+	  background: $color-secondary;
+	  background: linear-gradient(to right, $color-background 0%, $color-secondary 50%, $color-background 100%) !important;
+	  border: 1px solid transparent;
+	  border-image: linear-gradient(to right, transparent 0%, rgba($color-primary, .5) 50%, transparent 100%);
+	  border-image-slice: 1;
+	  line-height: 1;
 
-  #bcalc_stats {
-	th {
-	  background: transparent;
+	  &:before {
+		content: 'Planetarion Battle Calculator';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		text-align: center;
+		font-size: $text-small;
+		text-transform: uppercase;
+		font-weight: bold;
+		padding: .5rem 0;
+	  }
+	}
+
+	#bcalc_stats {
+	  th {
+		background: transparent;
+	  }
 	}
   }
 }
@@ -69,7 +73,6 @@
 	background-color: rgba($color-secondary, .4);
 	box-shadow: inset 0px 2px 4px 2px rgba(0, 0, 0, 0.4);
 	border-radius: 3px;
-	vertical-align: -webkit-baseline-middle;
   }
 
   input[type="checkbox"] {
@@ -258,8 +261,9 @@
 	padding: 0 .5rem .5rem;
 
 	&.nowrap {
-	  box-shadow: 0 2px 4px 2px rgba(black, .15);
+	  box-shadow: 0 2px 4px 2px rgba(0, 0, 0, 0.15), inset 0 2px 1px 1px rgba($color-primary, .09);
 	  background: $color-secondary;
+	  border-radius: 4px;
 	}
   }
 
@@ -344,17 +348,25 @@
 
   #def_table,
   #att_table {
-	td {
-	  input {
-		vertical-align: text-top;
-		height: 1.375rem;
+	tr {
+	  &:first-child {
+		th {
+		  background: $color-bg-th;
+		}
 	  }
 
-	  //&:nth-child(2) {
-	  //input {
-	  //  background-color: $color-secondary;
-	  //}
-	  //}
+	  td {
+		input {
+		  vertical-align: text-top;
+		  height: 1.375rem;
+		}
+
+		//&:nth-child(2) {
+		//input {
+		//  background-color: $color-secondary;
+		//}
+		//}
+	  }
 	}
   }
 

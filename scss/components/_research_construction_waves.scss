@@ -41,7 +41,7 @@
 	  display: inline-block;
 	  position: absolute;
 	  top: -30px;
-	  right: 150px;
+	  right: 110px;
 	  font-size: $text-small;
 	}
   }
@@ -103,11 +103,11 @@
 
   .construction_built {
 	padding: 1rem .5rem;
-	font-size: 1.3rem;
+	font-size: 1rem;
 	position: absolute;
-	top: -11px;
+	top: -8px;
 	right: 0;
-	width: calc(150px + 1rem);
+	width: calc(110px + 1rem);
 	text-align: right;
 
 	.textvalue {

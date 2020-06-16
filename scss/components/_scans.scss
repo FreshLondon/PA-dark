@@ -13,9 +13,11 @@
 			background: $color-secondary;
 
 			&:first-child {
+			  background: transparent;
+
 			  th {
-				padding: .5rem .125rem;
-				background: $color-bg-th;
+				//padding: .5rem .125rem;
+				//background: $color-bg-th;
 				text-align: center;
 			  }
 			}
