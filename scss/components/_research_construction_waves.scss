@@ -41,7 +41,7 @@
 	  display: inline-block;
 	  position: absolute;
 	  top: -30px;
-	  right: 110px;
+	  right: 150px;
 	  font-size: $text-small;
 	}
   }
@@ -107,7 +107,7 @@
 	position: absolute;
 	top: -8px;
 	right: 0;
-	width: calc(110px + 1rem);
+	width: calc(150px + 1rem);
 	text-align: right;
 
 	.textvalue {
@@ -231,6 +231,9 @@
 }
 
 .research {
+  p .desc_link {
+	top: -55px;
+  }
 
   .branch_name {
 	h3 {
@@ -317,31 +320,32 @@
 
   }
 
-  .research_branch {
-	margin-left: 1.5rem;
-
-	.completed {
-	  .title {
-		position: relative;
-		background: none;
-		margin: 0 auto;
-
-		&:after {
-		  content: '\2714';
-		  color: $color-primary;
-		  position: absolute;
-		  top: 0;
-		  right: 0;
-		}
-	  }
-	}
-  }
-
   .researchform {
 	display: flex;
 	justify-content: flex-end;
 	flex-direction: column;
 	order: 7;
+  }
+}
+
+.research_branch {
+  max-width: 700px;
+  margin: 0 auto;
+
+  .completed {
+	.title {
+	  position: relative;
+	  background: none;
+	  margin: 0 auto;
+
+	  &:after {
+		content: '\2714';
+		color: $color-primary;
+		position: absolute;
+		top: 0;
+		right: 0;
+	  }
+	}
   }
 }
 

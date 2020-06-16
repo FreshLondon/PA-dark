@@ -29,7 +29,8 @@ input[type="submit"],
 #add_other input[type="button"],
 ul.alliance_attack_claims_list a,
 #currentMoves a,
-#alliance_menu a {
+#alliance_menu a,
+[id^="page_universe"] table:not(.tablesort) tr:first-child td a:not(.intel) {
   display: inline-block;
   height: 1.5rem;
   margin: 1rem 0;

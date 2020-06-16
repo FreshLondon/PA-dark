@@ -50,13 +50,26 @@
 		}
 	  }
 	}
+
+	&:not(:last-child) {
+	  tr {
+		&:first-child {
+		  th {
+			padding-bottom: .3rem;
+		  }
+		}
+	  }
+	}
+
+	td {
+	  height: 1.5rem;
+	}
   }
 
   .resources {
 	.metal,
 	.crystal,
 	.eonium {
-
 
 	  .textvalue {
 		background-repeat: no-repeat;
@@ -87,26 +100,8 @@
 	min-width: 3rem;
   }
 
-  #mining p.center:last-child {
+  p.center:last-child {
 	font-style: italic;
-  }
-
-  table {
-	&:not(:last-child) {
-	  tr {
-		&:first-child {
-		  th {
-			text-transform: initial;
-			font-size: 1rem;
-			padding-bottom: .3rem;
-		  }
-		}
-	  }
-	}
-
-	td {
-	  height: 1.5rem;
-	}
   }
 
   #gal_target_amount,
@@ -126,6 +121,11 @@
 		  padding: 1rem 0 0;
 		}
 	  }
+	}
+
+	&:not(:last-child) tr:first-child th {
+	  padding-bottom: .5rem;
+	  background: transparent;
 	}
   }
 }

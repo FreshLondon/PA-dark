@@ -10,6 +10,16 @@
 	  &:nth-last-child(2),
 	  &:nth-last-child(3) {
 		table {
+		  thead {
+			tr:first-child {
+			  background: rgba(black, .12) !important;
+
+			  th {
+				background: transparent !important;
+			  }
+			}
+		  }
+
 		  tr {
 			background-color: $color-secondary;
 
@@ -43,53 +53,37 @@
 			  background: rgba($color-own, .25);
 			}
 
+			th {
+			  background: #171e27 !important;
+			}
+
 			th,
 			td {
 			  width: auto !important;
 
-			  &:nth-child(1) {
-				flex: 2;
-			  }
-
 			  &:nth-child(2) {
-				flex: 3;
 				@include respond-below(sm) {
 				  display: none;
 				}
 			  }
 
-			  &:nth-child(3) {
-				flex: 3;
-			  }
-
 			  &:nth-child(4) {
-				flex: 7;
 				@include respond-below(sm) {
 				  display: none;
 				}
 			  }
 
 			  &:nth-child(5) {
-				flex: 6;
 				@include respond-below(sm) {
 				  display: none;
 				}
 			  }
+			}
 
-			  &:nth-child(6) {
-				flex: 2;
-			  }
-
-			  &:nth-child(7) {
-				flex: 3;
-			  }
-
-			  &:nth-child(8) {
-				flex: 3;
-			  }
-
-			  &:nth-child(9) {
-				flex: 3;
+			td {
+			  &[colspan="6"],
+			  &[colspan="8"] {
+				background: $color-background;
 			  }
 			}
 
@@ -101,9 +95,9 @@
 			  }
 			}
 
-			&:first-child {
-			  background: transparent;
-			}
+			//&:first-child {
+			//  background: transparent;
+			//}
 		  }
 		}
 	  }
@@ -272,9 +266,11 @@
 #page_universe_races,
 #page_universe_xp,
 #page_universe_politics,
-#page_universe_feed,
-#page_universe_combat_reports {
+#page_universe_feed {
   table {
+	width: auto;
+	min-width: 700px;
+
 	tr {
 	  &:first-child {
 		th {
@@ -282,12 +278,23 @@
 		  background: $color-bg-th;
 		  color: #ccc;
 		  font-size: $text-small;
-		  padding: .5rem .125rem;
+		  padding: .25rem .5rem;
+
+		  &:empty {
+			background: transparent !important;
+		  }
 
 		  abbr[title] {
 			text-decoration: none;
 		  }
 		}
+
+		//td {
+		//  &.left,
+		//  &.right {
+		//	background: $color-secondary-alt;
+		//  }
+		//}
 	  }
 
 	  .moc {
@@ -326,6 +333,26 @@
 		  padding: 0 .5rem;
 		}
 	  }
+
+	  &:not(:first-child) {
+		td {
+		  background: $color-secondary;
+
+		  &:empty {
+			background: transparent !important;
+		  }
+		}
+
+		&:nth-child(odd) {
+		  td {
+			background: $color-secondary-alt;
+
+			&:empty {
+			  background: transparent !important;
+			}
+		  }
+		}
+	  }
 	}
   }
 
@@ -334,9 +361,101 @@
   }
 }
 
-#page_universe_combat_reports {
+#page_universe,
+#page_universe_launches,
+#page_universe_covert_ops {
+  table {
+	width: 100%;
+	max-width: unset;
+
+	tr {
+	  td {
+		&[colspan="4"],
+		&[colspan="5"],
+		&[colspan="6"],
+		&[colspan="8"] {
+		  background: $color-background !important;
+		}
+	  }
+	}
+  }
+}
+
+#page_universe_races,
+#page_universe_xp {
   table {
 	tr {
+	  td {
+		&[colspan="4"],
+		&[colspan="5"],
+		&[colspan="6"],
+		&[colspan="7"],
+		&[colspan="8"] {
+		  background: $color-background !important;
+		}
+	  }
+	}
+  }
+}
+
+#page_universe_misc,
+#page_universe_races,
+#page_universe_xp {
+  #contents {
+	div:nth-child(3) {
+	  table {
+		width: 100% !important;
+	  }
+	}
+  }
+
+  table {
+	tr {
+	  td {
+		&[style="width: 30%;"] {
+		  width: 5% !important;
+		}
+	  }
+	}
+  }
+}
+
+#page_universe_misc,
+#page_universe_politics {
+  table {
+	tr {
+	  &:first-child {
+		td {
+		  &.left,
+		  &.right {
+			background: $color-secondary-alt !important;
+		  }
+		}
+	  }
+	}
+  }
+
+  #d_stats {
+	table {
+	  min-width: unset;
+	}
+  }
+}
+
+#page_universe_combat_reports {
+  table {
+	&#intel + .container table {
+	  width: auto;
+	  min-width: 700px;
+	}
+
+	tr {
+	  &:first-child {
+		td {
+		  background: transparent !important;
+		}
+	  }
+
 	  th {
 		&:empty {
 		  background: transparent !important;
@@ -355,5 +474,90 @@
 		display: block;
 	  }
 	}
+  }
+
+  #tab1 {
+	width: auto;
+	min-width: 700px;
+  }
+
+  #tab2 {
+	table {
+	  width: auto;
+	  position: relative;
+
+	  tr {
+		&[class^="relations"] {
+		  position: relative;
+
+		  th {
+			background: transparent;
+			border: 1px solid transparent;
+			border-image: linear-gradient(to right, transparent 0%, rgba($color-primary, .5) 50%, transparent 100%);
+			border-image-slice: 1;
+			padding: 6px;
+			font-size: $text-default;
+		  }
+
+		  + tr th {
+			padding: 15px 0 5px;
+			font-size: $text-smaller;
+		  }
+
+		  &:after {
+			content: " ";
+			height: 11px;
+			background: $color-background;
+			position: absolute;
+			width: 100%;
+			left: 0;
+			transform: translateY(34px);
+		  }
+		}
+
+		&.relations_neutral {
+		  background: linear-gradient(to right, $color-background 0%, $color-secondary 50%, $color-background 100%) !important;
+		}
+
+		&.relations_own_member {
+		  background: linear-gradient(to right, $color-background 0%, rgba($color-own, .25) 50%, $color-background 100%) !important;
+		}
+
+		th {
+		  &.center.bad {
+			color: $color-text;
+			background: transparent;
+			background: linear-gradient(to right, $color-background 0%, rgba($color-negative, .25) 50%, $color-background 100%) !important;
+			border: 1px solid transparent;
+			border-image: linear-gradient(to right, transparent 0%, rgba($color-negative, .5) 50%, transparent 100%);
+			border-image-slice: 1;
+
+		  }
+
+		  &:not([colspan="2"]):not([colspan="8"]) {
+			width: 12.5%;
+		  }
+		}
+
+		&:not([class^="relations_"]) {
+		  th {
+			&[colspan="8"] {
+			  background: linear-gradient(to right, $color-background 25%, rgba($color-positive, .2) 50%, $color-background 75%) !important;
+			  border: none;
+			  border-bottom: 1px solid transparent;
+			  border-image: linear-gradient(to right, transparent 25%, rgba(limegreen, .3) 50%, transparent 75%);
+			  border-image-slice: 1;
+			  padding: 5px 0;
+			  font-size: $text-smaller;
+			}
+		  }
+		}
+	  }
+	}
+  }
+
+  .pagination_stats,
+  p.left {
+	text-align: center;
   }
 }
