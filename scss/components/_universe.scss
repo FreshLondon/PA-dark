@@ -321,6 +321,7 @@
 	background-color: $color-secondary-alt;
   }
 }
+
 .relations_hostile {
   background: rgba($color-negative, .125) !important;
 }
@@ -653,20 +654,22 @@
 		  }
 
 		  + tr th {
-			padding: 5px 0 !important;
+			padding: 15px 0 3px !important;
 			font-size: $text-small;
+			position: relative;
+
+			&:after {
+			  content: " ";
+			  height: 17px;
+			  background: $color-background;
+			  position: absolute;
+			  width: 100%;
+			  left: 0;
+			  top: -2px;
+			  //transform: translateY(34px);
+			}
 		  }
 
-		  //&:after {
-			//content: " ";
-			//height: 47px;
-			//background: $color-background;
-			//position: absolute;
-			//width: 100%;
-			//left: 0;
-			//top:0;
-			////transform: translateY(34px);
-		  //}
 		}
 
 		&.relations_war {
@@ -750,7 +753,9 @@
   .container {
 	&#javascriptwarning {
 	  + .container,
-	  + #tab_container {
+	  + #tab_container,
+	  + #notice + .container,
+	  + #notice + #tab_container {
 		table {
 		  margin-bottom: 1rem;
 

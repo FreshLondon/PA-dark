@@ -65,6 +65,8 @@ ul.alliance_attack_claims_list a,
 #page_universe_races #intel + .container table a,
 #page_alliance_attacks .container#javascriptwarning + .container + .container table tr a,
 #page_alliance_attacks .container#javascriptwarning + .container + .container + .container table tr:not([class]):not([id]) a,
+#page_alliance_attacks .container#javascriptwarning + #notice + .container + .container table tr a,
+#page_alliance_attacks .container#javascriptwarning + #notice + .container + .container + .container table tr:not([class]):not([id]) a,
 #page_alliance_fleets #contents table tr td[style="width: 20%;"] a {
   display: inline-block;
   min-height: 1.5rem;
@@ -102,7 +104,9 @@ input[type="submit"] {
   .container {
 	&#javascriptwarning {
 	  + .container,
-	  + #tab_container {
+	  + #tab_container,
+	  + #notice + .container,
+	  + #notice + #tab_container {
 
 		table,
 		ul {

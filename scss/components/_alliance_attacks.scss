@@ -2,7 +2,9 @@
   .container {
 	&#javascriptwarning {
 	  + .container + .container,
-	  + .container + .container + .container {
+	  + .container + .container + .container,
+	  + #notice + .container + .container,
+	  + #notice + .container + .container + .container {
 		> .maintext {
 		  > table {
 			tr {
