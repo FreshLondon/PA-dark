@@ -329,10 +329,6 @@
   background: rgba($color-neutral, .2) !important;
 }
 
-.relations_allied {
-  background: rgba($color-neutral, .3) !important;
-}
-
 .relations_friendly {
   background: rgba($color-positive, .15) !important;
 }
@@ -657,19 +653,20 @@
 		  }
 
 		  + tr th {
-			padding: 15px 0 5px !important;
+			padding: 5px 0 !important;
 			font-size: $text-small;
 		  }
 
-		  &:after {
-			content: " ";
-			height: 11px;
-			background: $color-background;
-			position: absolute;
-			width: 100%;
-			left: 0;
-			transform: translateY(34px);
-		  }
+		  //&:after {
+			//content: " ";
+			//height: 47px;
+			//background: $color-background;
+			//position: absolute;
+			//width: 100%;
+			//left: 0;
+			//top:0;
+			////transform: translateY(34px);
+		  //}
 		}
 
 		&.relations_war {
@@ -686,7 +683,7 @@
 		}
 
 		&.relations_nap {
-		  background: linear-gradient(to right, $color-background 0%, rgba($color-neutral, .25) 50%, $color-background 100%) !important;
+		  background: linear-gradient(to right, $color-background 0%, rgba($color-neutral, .15) 50%, $color-background 100%) !important;
 		}
 
 		&.relations_friendly {
@@ -695,7 +692,7 @@
 		}
 
 		&.relations_allied {
-		  background: linear-gradient(to right, $color-background 0%, rgba($color-neutral, .3) 50%, $color-background 100%) !important;
+		  background: linear-gradient(to right, $color-background 0%, rgba($color-positive, .3) 50%, $color-background 100%) !important;
 		}
 
 		&.relations_own_member {

@@ -93,7 +93,7 @@ h2 {
   }
 
   &.relations_allied {
-	background: linear-gradient(to right, $color-background 0%, rgba($color-neutral, .3) 50%, $color-background 100%) !important;
+	background: linear-gradient(to right, $color-background 0%, rgba($color-neutral, .3) 50%, $color-positive 100%) !important;
   }
 
   &.relations_own_member {
