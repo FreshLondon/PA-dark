@@ -660,13 +660,12 @@
 
 			&:after {
 			  content: " ";
-			  height: 17px;
+			  height: 1rem;
 			  background: $color-background;
 			  position: absolute;
 			  width: 100%;
 			  left: 0;
-			  top: -2px;
-			  //transform: translateY(34px);
+			  top: -0.145rem;
 			}
 		  }
 
