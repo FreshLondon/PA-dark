@@ -12,6 +12,37 @@ a,
 
 #menu a {
   color: rgba($color-primary, .8);
+  position: relative;
+
+  &:before,
+  &:after {
+	content: "";
+	position: absolute;
+	bottom: -2px;
+	width: 0;
+	height: 1px;
+	margin: 5px 0 0;
+	transition: all 0.5s ease-in-out;
+	//opacity: 0;
+	background-color: $color-primary;
+  }
+
+  &:before,
+  &:after {
+	left: 0%;
+  }
+
+  &:hover {
+	cursor: pointer;
+	color: $color-text;
+
+	&:before,
+	&:after {
+	  background-color: $color-text;
+	  width: 100%;
+	  opacity: 1;
+	}
+  }
 }
 
 #page input[type="submit"],
@@ -29,10 +60,14 @@ input[type="submit"],
 #add_other input[type="button"],
 ul.alliance_attack_claims_list a,
 #currentMoves a,
-#alliance_menu a,
-[id^="page_universe"] table:not(.tablesort) tr:first-child td a:not(.intel) {
+#wave_table + p a[onclick^="add_row"],
+#target_table + p a[onclick^="add_row"],
+#page_universe_races #intel + .container table a,
+#page_alliance_attacks .container#javascriptwarning + .container + .container table tr a,
+#page_alliance_attacks .container#javascriptwarning + .container + .container + .container table tr:not([class]):not([id]) a,
+#page_alliance_fleets #contents table tr td[style="width: 20%;"] a {
   display: inline-block;
-  height: 1.5rem;
+  min-height: 1.5rem;
   margin: 1rem 0;
   padding: 0 .5rem;
   color: $color-primary !important;
@@ -43,7 +78,7 @@ ul.alliance_attack_claims_list a,
   border-radius: 3px;
   text-transform: initial;
   font-weight: initial;
-  transition: .3s;
+  transition: .75s;
   font-family: inherit;
   font-size: 1rem;
 
@@ -55,6 +90,87 @@ ul.alliance_attack_claims_list a,
   }
 }
 
+ul.alliance_attack_claims_list a {
+  margin: .25rem 0;
+}
+
 input[type="submit"] {
   border: none;
+}
+
+#page {
+  .container {
+	&#javascriptwarning {
+	  + .container,
+	  + #tab_container {
+
+		table,
+		ul {
+		  tr {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+		  }
+
+		  td, li {
+			a {
+			  margin: .75rem;
+			  text-transform: uppercase;
+			  font-size: $text-medium;
+			  font-weight: bold;
+			  letter-spacing: .5px;
+			  color: $color-primary;
+			  position: relative;
+			  display: inline-block;
+			  white-space: nowrap;
+			  transition: all 0.5s ease-in-out;
+
+			  &.tab_link_active {
+				color: $color-text;
+
+				&:before,
+				&:after {
+				  width: 50%;
+				  background-color: $color-text;
+				}
+			  }
+
+			  &:before,
+			  &:after {
+				content: "";
+				position: absolute;
+				bottom: -2px;
+				width: 0;
+				height: 1px;
+				margin: 5px 0 0;
+				transition: all 0.3s ease-in-out;
+				//opacity: 0;
+				background-color: $color-primary;
+			  }
+
+			  &:before {
+				left: 50%;
+			  }
+
+			  &:after {
+				right: 50%;
+			  }
+
+			  &:hover {
+				cursor: pointer;
+				color: $color-text;
+
+				&:before,
+				&:after {
+				  background-color: $color-text;
+				  width: 50%;
+				  opacity: 1;
+				}
+			  }
+			}
+		  }
+		}
+	  }
+	}
+  }
 }

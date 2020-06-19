@@ -142,6 +142,7 @@ span.small.notice_warning {
 #d_stats {
   background: $color-background !important;
   padding: 0;
+  z-index: 10;
 
   table {
 	&:first-child {

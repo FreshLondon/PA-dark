@@ -1,9 +1,10 @@
 //
 // variables for the skin
 //
+$text-huge: 1.2rem;
 $text-large: 1rem;
 $text-default: .9rem;
-$text-smaller: .8rem;
+$text-medium: .8rem;
 $text-small: .75rem;
 //
 $color-terran: #a18181;
@@ -18,10 +19,10 @@ $color-secondary: #24303f;
 $color-secondary-alt: darken($color-secondary, 3%);
 //
 $color-white: #fff;
-$color-offwhite: #cccccc;
-$color-grey: #888888;
+$color-offwhite: #ccc;
+$color-grey: #888;
 $color-black: #202020;
-$color-black-light: #4D5154;
+$color-black-light: #4d5154;
 $color-black-medium: #384147;
 $color-black-dark: #010304;
 //
@@ -29,25 +30,23 @@ $color-background: #1a222c;
 $color-links: $color-primary;
 $color-links-hover: $color-black;
 $color-text: $color-offwhite;
-$color-bg-th: rgba(black, .12);
+$color-bg-th: #171e27;
 //
 $color-own: rgb(0, 130, 255);
 $color-positive: limegreen;
 $color-neutral: orange;
 $color-negative: red;
 //
-$color-killed: #ff4444;
+$color-killed: #f44;
 $color-emp: #41c9ff;
 $color-stolen: orange;
 //
 $color-gc: #0080ff;
-$color-moc: #8081FF;
-$color-mow: #ff4444;
+$color-moc: #8081ff;
+$color-mow: #f44;
 $color-mod: #00b500;
 //
 $color-progress-completed: #378059;
 $color-progress-expected: rgba(#FAC05E, .4);
 
-@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
-$font-retro: 'VT323', monospace;
 $font-default: "Ubuntu", "Lato", "Open Sans", sans-serif;

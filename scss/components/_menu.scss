@@ -18,6 +18,7 @@
 
   li {
 	padding: 0 .5rem .15rem;
+
 	li {
 	  li {
 		&:before {
@@ -43,17 +44,13 @@
 	}
 
 	&:nth-child(n+3) {
-	  margin-top: 1rem;
+	  margin-top: .75rem;
 	}
   }
 
   #menu_time {
 	margin-top: 2rem;
 	font-size: $text-small;
-  }
-
-  #menu_view_link {
-
   }
 }
 
@@ -86,13 +83,66 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
 
   li {
 	display: inline;
-	padding: 0 1rem;
+	padding: 0;
 
 	a {
-	  margin: .5rem 0;
+	  margin: .5rem;
+	  text-transform: uppercase;
+	  font-size: $text-medium;
+	  font-weight: bold;
+	  letter-spacing: .5px;
+	  color: $color-primary;
+	  position: relative;
+	  display: inline-block;
+	  white-space: nowrap;
+	  transition: all 0.5s ease-in-out;
+
+	  &.tab_link_active {
+		color: $color-text;
+
+		&:before,
+		&:after {
+		  width: 50%;
+		  background-color: $color-text;
+		}
+	  }
+
+	  &:before,
+	  &:after {
+		content: "";
+		position: absolute;
+		bottom: -2px;
+		width: 0;
+		height: 1px;
+		margin: 5px 0 0;
+		transition: all 0.3s ease-in-out;
+		//opacity: 0;
+		background-color: $color-primary;
+	  }
+
+	  &:before {
+		left: 50%;
+	  }
+
+	  &:after {
+		right: 50%;
+	  }
+
+	  &:hover {
+		cursor: pointer;
+		color: $color-text;
+
+		&:before,
+		&:after {
+		  background-color: $color-text;
+		  width: 50%;
+		  opacity: 1;
+		}
+	  }
 	}
   }
 }

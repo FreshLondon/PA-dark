@@ -1,6 +1,25 @@
 #page_alliance_attacks {
+  .container {
+	&#javascriptwarning {
+	  + .container + .container,
+	  + .container + .container + .container {
+		> .maintext {
+		  > table {
+			tr {
+			  &:not([class]):not([id]) {
+				background: transparent !important;
+			  }
+			}
+		  }
+		}
+	  }
+	}
+  }
+
   .maintext {
 	> table {
+	  width: auto;
+
 	  > thead,
 	  > tbody {
 		> tr {
@@ -10,36 +29,77 @@
 			background-color: $color-secondary-alt;
 		  }
 
-		  &:first-child th {
-			font-weight: bold;
-			background: #171e27;
-			color: $color-text;
-			font-size: $text-small;
-			padding: .25rem;
-
-			&.right {
-			  padding-right: .25rem;
+		  &:first-child {
+			th {
+			  font-weight: bold;
+			  background: #171e27;
+			  color: $color-text;
+			  font-size: $text-small;
+			  padding: .25rem .5rem;
 			}
 		  }
 
 		  &[id^="target_"] {
+			height: auto;
+			transition: all 1s linear;
+
+			&[style="display: none;"] {
+			  height: 0;
+			}
+
+			&[style="display: table-row;"],
+			&[style] {
+			  height: auto;
+			  animation: fade 1s;
+			}
+
 			> td {
 			  background: $color-background;
 			}
 
 			table {
-			  border-left: 5px double rgba($color-primary, .19);
+			  border: 2px solid rgba($color-primary, .25);
+			  border-left: 12px double rgba($color-primary, .15);
+			  border-right: 12px double rgba($color-primary, .15);
 			  padding: 0;
-			  margin-left: 2rem;
-			  width: calc(100% - 2rem);
 			  background: $color-background;
+			  width: 100%;
+			  margin-bottom: 0;
 
 			  tr {
+				th {
+				  white-space: nowrap;
+				}
+
 				&[class^="shadedbackground"] {
 				  background: $color-secondary;
 
 				  td {
 					border-top: 1px solid rgba($color-primary, .19);
+
+					ul {
+					  &.alliance_attack_claims_list {
+						display: flex;
+						justify-content: flex-start;
+						align-items: center;
+						flex-wrap: wrap;
+
+						li {
+						  font-style: italic;
+						  font-size: $text-small;
+						  margin: 0 .5rem;
+
+						  a {
+							margin: 0;
+							font-style: normal;
+						  }
+
+						  table {
+							font-style: normal;
+						  }
+						}
+					  }
+					}
 				  }
 
 				  &:nth-child(even) {
@@ -50,10 +110,20 @@
 			}
 		  }
 
-		  th {
-		  }
+		  > td:not([colspan="6"]) {
+			padding: .25rem .5rem;
 
-		  > td {
+			&.center {
+			  &[style="width: 50%;"],
+			  &[style="width: 50%;"] + td {
+				background: transparent;
+
+				//a {
+				//  background: red;
+				//}
+			  }
+			}
+
 			> table {
 			  border-spacing: 0;
 			  margin: 0;
@@ -80,27 +150,47 @@
 					  padding-left: 1rem;
 					}
 				  }
-
-				  ul {
-					&.alliance_attack_claims_list {
-					  li {
-						font-style: italic;
-						font-size: $text-small;
-
-						a {
-						  margin: 0;
-						  font-style: normal;
-						}
-
-						table {
-						  font-style: normal;
-						}
-					  }
-					}
-				  }
 				}
 			  }
 			}
+		  }
+		}
+	  }
+	}
+
+	#wave_table,
+	#target_table {
+	  width: auto;
+	  margin-bottom: 0;
+
+	  tr {
+		th {
+		  padding: .25rem .5rem;
+		}
+
+		td {
+		  background: $color-secondary;
+		  padding: .25rem .5rem;
+
+		  &[colspan="5"] {
+			border-top: 4px double rgba($color-primary, .25);
+		  }
+
+		  &:last-child {
+			text-align: center;
+		  }
+		}
+
+		&:nth-child(odd) {
+		  td {
+			background: $color-secondary-alt;
+		  }
+		}
+
+		th,
+		td {
+		  &:empty {
+			background: transparent;
 		  }
 		}
 	  }
@@ -113,6 +203,7 @@
   width: auto !important;
   border: 1px solid rgba($color-primary, .5);
   background: $color-background;
+  min-width: unset !important;
 
   table {
 	margin-bottom: 0;

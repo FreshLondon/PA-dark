@@ -6,7 +6,7 @@
 	.maintext {
 	  > table {
 		width: auto;
-		min-width: 250px;
+		min-width: 400px;
 
 		> tbody {
 		  > tr {
@@ -19,6 +19,17 @@
 				//padding: .5rem .125rem;
 				//background: $color-bg-th;
 				text-align: center;
+			  }
+
+			  > td {
+				&[colspan="2"] {
+				  background: $color-background;
+				  font-size: $text-large;
+				  padding: 1rem 0;
+				  font-weight: bold;
+				  color: white;
+				  font-style: italic;
+				}
 			  }
 			}
 
@@ -68,27 +79,15 @@
 					background: rgba(0, 0, 0, 0.1);
 				  }
 				}
+
+				th,
+				td {
+				  &:empty {
+					background: $color-background;
+				  }
+				}
 			  }
 			}
-		  }
-		}
-	  }
-	}
-  }
-}
-
-#page_waves {
-  #show_scan {
-	table {
-	  width: auto;
-	  min-width: 400px;
-
-	  tr {
-		&:first-child {
-		  td {
-			background: transparent;
-			padding: .5rem;
-			font-style: italic;
 		  }
 		}
 	  }

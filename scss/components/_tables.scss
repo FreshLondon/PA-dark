@@ -4,12 +4,20 @@ table {
   th {
 	background: $color-bg-th;
   }
+
+  tr:first-child th {
+	font-weight: bold;
+  }
+
+  th,
+  td {
+	vertical-align: middle;
+	padding: .25rem .5rem;
+  }
 }
 
-table tr:first-child th {
-  font-weight: bold;
-}
-
-th, td {
-  vertical-align: middle;
+[id^="form_prod"] {
+  table {
+	min-width: 350px;
+  }
 }

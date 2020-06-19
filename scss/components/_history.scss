@@ -6,7 +6,15 @@
 	}
 
 	table {
+	  width: auto;
+	  min-width: 450px;
+
 	  tr {
+		th,
+		td {
+		  padding: .25rem .75rem;
+		}
+
 		td {
 		  background: $color-secondary;
 		}
@@ -19,6 +27,14 @@
 	  }
 	}
 
+  }
+
+  #tab3,
+  #tab4 {
+	th,
+	td {
+	  text-align: center;
+	}
   }
 
   #tab5,

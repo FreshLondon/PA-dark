@@ -37,6 +37,7 @@
 		.maintext {
 		  > table {
 			border: 1px solid rgba($color-primary, .3);
+
 			tr {
 			  &:nth-child(1),
 			  &:nth-child(2) {
@@ -47,6 +48,7 @@
 				  text-transform: uppercase;
 				  font-weight: normal;
 				}
+
 				th {
 				  padding-top: .5rem;
 				}
@@ -225,7 +227,13 @@
 
 #agents_training,
 #guards_training {
-  border: 0;
+  border: 1px solid rgba($color-primary, .5);
+  background: $color-secondary-alt;
+  padding: 0 0 1rem;
+}
+
+#agents_training {
+  margin-bottom: 2rem;
 }
 
 #security_redundancy_form {

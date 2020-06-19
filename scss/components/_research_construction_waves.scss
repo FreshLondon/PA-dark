@@ -361,6 +361,11 @@
 	position: relative;
 	text-align: center !important;
 	width: 100%;
+
+	a.desc_link {
+	  display: block;
+	  font-size: $text-medium;
+	}
   }
 }
 
@@ -406,7 +411,29 @@
 	  th,
 	  td {
 		&:empty {
-		  background: transparent;
+		  background: $color-background;
+		}
+	  }
+	}
+  }
+
+  #show_scan {
+	table {
+	  width: auto;
+	  min-width: 400px;
+
+	  tr {
+		td {
+		  padding: .25rem .75rem;
+
+		  &[colspan="2"] {
+			background: $color-background;
+			font-size: $text-large;
+			padding: 1rem 0;
+			font-weight: bold;
+			color: white;
+			font-style: italic;
+		  }
 		}
 	  }
 	}
@@ -415,11 +442,39 @@
   #tab1 {
 	.maintext {
 	  form {
-		table {
-		  tr {
-			&:last-child {
-			  td {
-				background: transparent;
+		&:not(#stored_scans_form) {
+		  table {
+			tr {
+			  &:last-child {
+				td {
+				  background: transparent;
+				}
+			  }
+			}
+		  }
+		}
+
+		&:not(#stored_scans_form) {
+		  table {
+			tr {
+			  &:not(:first-child) {
+				td {
+				  background: transparent;
+				}
+			  }
+			}
+		  }
+		}
+
+		&#stored_scans_form {
+		  p.right {
+			span.superhighlight + input[type="checkbox"] {
+			  margin: 0 0 0 .5rem;
+
+			  + br {
+				content: "";
+				display: block;
+				margin: .5rem;
 			  }
 			}
 		  }
@@ -429,6 +484,17 @@
   }
 
   #tab3 {
+	.container {
+	  &:nth-child(2) {
+		th,
+		td {
+		  &:first-child {
+			display: none;
+		  }
+		}
+	  }
+	}
+
 	th,
 	td {
 	  &:nth-child(5) {

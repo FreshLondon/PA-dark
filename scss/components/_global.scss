@@ -22,6 +22,11 @@ body, .pages, #top, #logo, #tnav, #bar_manual, #bar_support, #bar_portal, #bar_f
   padding-bottom: 0;
 }
 
+//remove annoying pabox from login page:
+div#page_login + div + div + div + div#pabox_wrapper {
+  display: none;
+}
+
 /* Standard Elements
    -------------------------------------------------------*/
 * {
@@ -88,7 +93,7 @@ hr {
   max-width: 90rem;
   padding: 3rem .5rem 0;
   display: grid;
-  grid-template-columns: 12rem 1fr 1fr;
+  grid-template-columns: 12rem 2fr 1fr;
   grid-template-rows: auto 1fr 1rem;
   grid-column-gap: .5rem;
   @include respond-below(sm) {
@@ -186,27 +191,6 @@ hr {
 
 #page_alliance #notice + .container .header {
   display: none;
-}
-
-#alliance_menu {
-  a {
-	display: inline-block;
-	margin: .5rem 0;
-	padding: .25rem .5rem;
-	color: $color-primary;
-	//border: 1px solid $color-primary;
-	cursor: pointer;
-	font-weight: bold;
-	transition: .3s;
-
-	&:hover {
-	  text-decoration: none;
-	  border: none;
-	  color: black;
-	  background: $color-primary;
-	  //background: linear-gradient(135deg, $color-primary 0%, $color-primary-dark 100%);
-	}
-  }
 }
 
 .important_message {

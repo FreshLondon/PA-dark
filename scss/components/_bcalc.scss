@@ -338,6 +338,28 @@
 	}
   }
 
+  tr {
+	&.def_row,
+	&.att_row {
+	  transition: ease all .4s;
+
+	  &.def_ter,
+	  &.att_ter,
+	  &.def_cat,
+	  &.att_cat,
+	  &.def_xan,
+	  &.att_xan,
+	  &.def_zik,
+	  &.att_zik,
+	  &.def_etd,
+	  &.att_etd {
+		&:hover {
+		  background: #151414 !important;
+		}
+	  }
+	}
+  }
+
   span {
 	transition: ease all .3s;
 
@@ -514,6 +536,7 @@
 	  th {
 		font-size: .6875rem;
 		background: transparent;
+		padding: 0 0 0 5px;
 	  }
 
 	  td {

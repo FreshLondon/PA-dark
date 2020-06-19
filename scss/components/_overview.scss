@@ -22,6 +22,10 @@
 		  &[colspan="3"] {
 			background: transparent !important;
 		  }
+
+		  //&[style="width: 22%;"] {
+			//display: none;
+		  //}
 		}
 
 		&:nth-child(even) {
@@ -32,9 +36,13 @@
 	  }
 	}
 
-	span.superhighlight {
+	span {
 	  display: block;
-	  font-size: $text-smaller;
+
+	  .superhighlight {
+		display: block;
+		font-size: $text-small;
+	  }
 	}
   }
 }

@@ -1,5 +1,6 @@
 #page_galaxy {
   #contents {
+
 	.maintext .superhighlight {
 	  color: inherit;
 	  font-size: 1.5rem;
@@ -15,6 +16,9 @@
 	  height: 1.5rem;
 	  color: $color-primary;
 	}
+  }
+  table {
+	width: 100% !important;
   }
 
   .tablesort {

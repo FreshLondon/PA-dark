@@ -37,11 +37,18 @@
   #contents {
 	table {
 	  width: auto;
+
 	  tr {
 		th,
 		td {
 		  &:empty {
 			background: $color-background !important;
+		  }
+		}
+
+		td {
+		  &[style="width: 20%;"] {
+			background: transparent !important;
 		  }
 		}
 	  }

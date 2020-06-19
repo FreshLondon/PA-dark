@@ -79,7 +79,6 @@ h2 {
   }
 }
 
-
 #notice {
   background: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .6) 50%, rgba(0, 0, 0, 0) 100%);
   padding: .5rem;
@@ -104,7 +103,7 @@ h2 {
 	  &.notice_warning {
 		color: white;
 		opacity: 0.75;
-		font-size: $text-smaller;
+		font-size: $text-small;
 	  }
 	}
 
@@ -123,6 +122,8 @@ h2 {
 
   table {
 	margin: 0 auto 1rem;
+	width: auto;
+	min-width: 450px;
 
 	table {
 	  background: $color-secondary;
@@ -200,46 +201,53 @@ span.center {
   }
 }
 
-
 .tooltip a:hover,
 .info a:hover,
 .forum_thread_actions a:hover {
   color: $color-primary-dark;
 }
 
-#tab_links {
-  li {
-	padding: 0;
+#tab_links li {
+  padding: 0;
 
-	+ li {
-	  margin-left: 1rem;
-	}
-  }
-
-  .tab_link_active {
-	color: lighten($color-secondary, 90%);
-	cursor: default;
-
-	&:hover {
-	  background: none;
-	  text-decoration: none;
-	  color: lighten($color-secondary, 70%);
-	}
-  }
-
-  .tab_link {
-	padding: .25rem .5rem;
-	//border-bottom: 1px solid transparent;
-	transition: ease all .5s;
-
-	&:hover {
-	  color: $color-black;
-	  background: $color-primary;
-	  text-decoration: none;
-	  //border-bottom: 1px solid rgba($color-primary, .5);
-	}
+  a {
+	margin: 0 .75rem;
   }
 }
+
+//#tab_links {
+//  li {
+//	padding: 0;
+//
+//	+ li {
+//	  margin-left: 1rem;
+//	}
+//  }
+//
+//  .tab_link {
+//	position: relative;
+//	padding: .4rem 1rem;
+//	font-size: $text-small;
+//	color: $color-primary;
+//	letter-spacing: 1px;
+//	text-transform: uppercase;
+//	&:hover {
+//	  color: $color-text;
+//	}
+//  }
+//
+//  .tab_link_active {
+//	color: lighten($color-primary, 90%);
+//	cursor: default;
+//
+//	&:hover {
+//	  background: none;
+//	  text-decoration: none;
+//	  color: lighten($color-primary, 70%);
+//	}
+//  }
+//}
+
 .error {
   color: $color-neutral;
   font-weight: normal;

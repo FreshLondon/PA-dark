@@ -1,0 +1,29 @@
+&.relations_war {
+  background: rgba($color-negative, .25);
+}
+
+&.relations_hostile {
+  background: rgba($color-negative, .125);
+  outline: none;
+}
+
+&.relations_neutral {
+  background-color: $color-secondary;
+}
+
+&.relations_nap {
+  background: rgba($color-neutral, .2);
+}
+
+&.relations_friendly {
+  background: rgba($color-positive, .15);
+  outline: none;
+}
+
+&.relations_allied {
+  background: rgba($color-positive, .35);
+}
+
+&.relations_own_member {
+  background: rgba($color-own, .25);
+}

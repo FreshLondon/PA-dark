@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" serverName="freshlondon.biz" exclude=".svn;.cvs;.idea;.DS_Store;.git;.hg;*.hprof;*.pyc;*.scss" autoUploadExternalChanges="true">
+    <serverData>
+      <paths name="freshlondon.biz">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/subdomains/planetarion" local="$PROJECT_DIR$/dist" web="/" />
+            <mapping local="" />
+          </mappings>
+        </serverdata>
+      </paths>
+    </serverData>
+  </component>
+</project>

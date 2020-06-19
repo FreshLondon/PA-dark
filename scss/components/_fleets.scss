@@ -138,6 +138,12 @@
 
 #fleet_overview {
   tr {
+	background-color: $color-secondary;
+
+	&:nth-child(odd) {
+	  background-color: $color-secondary-alt;
+	}
+
 	&.mission_defend,
 	&.mission_attack,
 	&.mission_return {
@@ -152,6 +158,48 @@
 		  color: black;
 		  background: $color-primary !important;
 		}
+	  }
+	}
+
+	&.mission_return {
+	  td {
+		opacity: 1;
+	  }
+	}
+
+	&.mission_attack {
+	  td {
+		background: rgba($color-negative, .14);
+	  }
+	}
+
+	&.mission_defend {
+	  td {
+		background: rgba($color-positive, .14);
+	  }
+	}
+
+	&.mission_fake_defend {
+	  td {
+		background: rgba($color-neutral, .14);
+	  }
+	}
+  }
+}
+
+#transships {
+  tr {
+	td {
+	  background: $color-secondary !important;
+	}
+
+	&:nth-child(even) {
+	  td {
+		background: $color-secondary-alt !important;
+	  }
+	}&:last-child {
+	  td {
+		background: transparent !important;
 	  }
 	}
   }
