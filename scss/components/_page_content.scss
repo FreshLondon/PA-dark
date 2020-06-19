@@ -70,6 +70,36 @@ h2 {
   border-image-slice: 1;
   line-height: 100%;
 
+  &.relations_war {
+	background: linear-gradient(to right, $color-background 0%, rgba($color-negative, .25) 50%, $color-background 100%) !important;
+  }
+
+  &.relations_hostile {
+	background: linear-gradient(to right, $color-background 0%, rgba($color-negative, .125) 50%, $color-background 100%) !important;
+	outline: none;
+  }
+
+  &.relations_neutral {
+	background: linear-gradient(to right, $color-background 0%, $color-secondary 50%, $color-background 100%) !important;
+  }
+
+  &.relations_nap {
+	background: linear-gradient(to right, $color-background 0%, rgba($color-neutral, .25) 50%, $color-background 100%) !important;
+  }
+
+  &.relations_friendly {
+	background: linear-gradient(to right, $color-background 0%, rgba($color-positive, .15) 50%, $color-background 100%) !important;
+	outline: none;
+  }
+
+  &.relations_allied {
+	background: linear-gradient(to right, $color-background 0%, rgba($color-neutral, .3) 50%, $color-background 100%) !important;
+  }
+
+  &.relations_own_member {
+	background: linear-gradient(to right, $color-background 0%, rgba($color-own, .25) 50%, $color-background 100%) !important;
+  }
+
   &:empty {
 	display: none;
   }
@@ -77,6 +107,7 @@ h2 {
   a:hover {
 	color: rgba($color-primary, .8);
   }
+
 }
 
 #notice {
