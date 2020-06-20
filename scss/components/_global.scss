@@ -102,7 +102,7 @@ hr {
   display: grid;
   grid-template-columns: 12rem 2fr 1fr;
   grid-template-rows: auto 1fr 1rem;
-  grid-column-gap: .5rem;
+  grid-column-gap: 1rem;
   @include respond-below(sm) {
 	grid-template-columns: 100px auto;
 	grid-template-rows: 165px auto auto;
