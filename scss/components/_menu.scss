@@ -38,6 +38,12 @@
 	&#menu_view_link {
 	  margin-bottom: 0;
 	  font-size: $text-small;
+
+	  a {
+		width: 100%;
+		display: inline-block;
+		text-align: center;
+	  }
 	}
 
 	&#menu_overview {
@@ -122,6 +128,11 @@
 	  &#time {
 		font-size: $text-huge;
 		color: $color-text;
+		animation: pulse 1s infinite;
+
+		&:hover {
+		  text-shadow: 0 0 0 $color-primary;
+		}
 	  }
 
 	  &#time_loaded {
@@ -172,7 +183,14 @@
 		&:before,
 		&:after {
 		  width: 50%;
-		  background-color: $color-text;
+		}
+
+		&:before {
+		  background: linear-gradient(to right, $color-primary 25%, transparent 100%);
+		}
+
+		&:after {
+		  background: linear-gradient(to left, $color-primary 25%, transparent 100%);
 		}
 	  }
 
@@ -185,8 +203,11 @@
 		height: 1px;
 		margin: 5px 0 0;
 		transition: all 0.3s ease-in-out;
-		//opacity: 0;
-		background-color: $color-primary;
+	  }
+
+	  &:after,
+	  &:before {
+		width: 0%;
 	  }
 
 	  &:before {
@@ -203,9 +224,16 @@
 
 		&:before,
 		&:after {
-		  background-color: $color-text;
 		  width: 50%;
 		  opacity: 1;
+		}
+
+		&:before {
+		  background: linear-gradient(to right, $color-primary 250%, transparent 100%);
+		}
+
+		&:after {
+		  background: linear-gradient(to left, $color-primary 25%, transparent 100%);
 		}
 	  }
 	}
