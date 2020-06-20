@@ -112,6 +112,8 @@
   }
 
   th {
+	padding: 0;
+
 	&.att_name,
 	&.def_name {
 	  span {
@@ -121,6 +123,8 @@
   }
 
   td {
+	padding: .125rem 0;
+
 	&.def_value_lost,
 	&.att_score_lost {
 	  color: $color-zikonian;
