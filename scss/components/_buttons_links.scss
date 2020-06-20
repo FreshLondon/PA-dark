@@ -10,35 +10,74 @@ a,
   }
 }
 
-#menu a {
-  color: rgba($color-primary, .8);
-  position: relative;
-
-  &:before,
-  &:after {
-	content: "";
-	position: absolute;
-	bottom: -2px;
-	width: 0;
-	height: 1px;
-	margin: 5px 0 0;
-	transition: all 0.5s ease-in-out;
-  }
-
-  &:before,
-  &:after {
-	left: 0%;
-  }
-
-  &:hover {
-	cursor: pointer;
-	color: $color-text;
+#menu {
+  a {
+	color: rgba($color-primary, .8);
+	position: relative;
 
 	&:before,
 	&:after {
-	  background: linear-gradient(to right, $color-primary 0%, transparent 100%);
-	  width: 100%;
-	  opacity: 1;
+	  content: "";
+	  position: absolute;
+	  bottom: -2px;
+	  width: 0;
+	  height: 1px;
+	  margin: 5px 0 0;
+	  transition: all 0.5s ease-in-out;
+	}
+
+	&:before,
+	&:after {
+	  left: 0%;
+	}
+
+	&:hover {
+	  cursor: pointer;
+	  color: $color-text;
+
+	  &:before,
+	  &:after {
+		background: linear-gradient(to right, $color-primary 0%, transparent 100%);
+		width: 100%;
+		opacity: 1;
+	  }
+	}
+  }
+
+  #menu_preferences,
+  #menu_logout,
+  #menu_view_link {
+	a {
+
+	  &:after,
+	  &:before {
+		width: 0 !important;
+	  }
+
+	  &:before {
+		left: 50% !important;
+	  }
+
+	  &:after {
+		left: unset !important;
+		right: 50% !important;
+	  }
+
+	  &:hover {
+		&:before,
+		&:after {
+		  width: 50% !important;
+		  opacity: 1 !important;
+		}
+
+		&:before {
+		  background: linear-gradient(to right, $color-primary 25%, transparent 100%) !important;
+		}
+
+		&:after {
+		  background: linear-gradient(to left, $color-primary 25%, transparent 100%) !important;
+		}
+	  }
 	}
   }
 }
