@@ -69,7 +69,7 @@ ul.alliance_attack_claims_list a,
 #page_alliance_attacks .container#javascriptwarning + #notice + .container + .container + .container table tr:not([class]):not([id]) a,
 #page_alliance_fleets #contents table tr td[style="width: 20%;"] a {
   display: inline-block;
-  min-height: 1.5rem;
+  height: 1.5rem;
   margin: 1rem 0;
   padding: 0 .5rem;
   color: $color-primary !important;
@@ -82,7 +82,7 @@ ul.alliance_attack_claims_list a,
   font-weight: initial;
   font-family: inherit;
   font-size: 1rem;
-
+  white-space: nowrap;
   transition-property: color, background, box-shadow;
   transition-duration: .75s;
   transition-timing-function: linear;
