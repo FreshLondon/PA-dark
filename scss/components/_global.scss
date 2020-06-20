@@ -34,12 +34,19 @@ div#page_login + div + div + div + div#pabox_wrapper {
   float: none !important;
 }
 
+html {
+  font-size: 14px;
+}
+
 html,
 body {
   height: 100%;
   width: 100%;
   margin: 0;
   padding: 0;
+}
+
+body {
   font-size: $text-default;
 }
 
