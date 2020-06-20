@@ -11,12 +11,20 @@
 	  &:nth-child(odd) {
 		td {
 		  background-color: $color-secondary-alt;
+
+		  &:empty {
+			background: transparent;
+		  }
 		}
 	  }
 
 	  &:nth-child(even) {
 		td {
 		  background-color: $color-secondary;
+
+		  &:empty {
+			background: transparent;
+		  }
 		}
 	  }
 	}
