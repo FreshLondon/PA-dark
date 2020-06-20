@@ -277,8 +277,14 @@
 
 	th,
 	td {
-	  //color: $color-terran;
 	  background-color: rgba($color-terran, .3);
+	}
+
+	&:hover {
+	  th,
+	  td {
+		background-color: rgba($color-terran, .4);
+	  }
 	}
   }
 
@@ -288,8 +294,14 @@
 
 	th,
 	td {
-	  //color: $color-cathaar;
 	  background-color: rgba($color-cathaar, .3);
+	}
+
+	&:hover {
+	  th,
+	  td {
+		background-color: rgba($color-cathaar, .4);
+	  }
 	}
   }
 
@@ -299,8 +311,14 @@
 
 	th,
 	td {
-	  //color: $color-xandathrii;
 	  background-color: rgba($color-xandathrii, .3);
+	}
+
+	&:hover {
+	  th,
+	  td {
+		background-color: rgba($color-xandathrii, .4);
+	  }
 	}
   }
 
@@ -310,8 +328,14 @@
 
 	th,
 	td {
-	  //color: $color-zikonian;
 	  background-color: rgba($color-zikonian, .3);
+	}
+
+	&:hover {
+	  th,
+	  td {
+		background-color: rgba($color-zikonian, .4);
+	  }
 	}
   }
 
@@ -321,8 +345,14 @@
 
 	th,
 	td {
-	  //color: $color-eitraides;
 	  background-color: rgba($color-eitraides, .3);
+	}
+
+	&:hover {
+	  th,
+	  td {
+		background-color: rgba($color-eitraides, .4);
+	  }
 	}
   }
 
@@ -339,28 +369,7 @@
 	th,
 	td {
 	  box-shadow: inset 0 2px 4px 2px rgba(black, .15);
-	}
-  }
-
-  tr {
-	&.def_row,
-	&.att_row {
-	  transition: ease all .4s;
-
-	  &.def_ter,
-	  &.att_ter,
-	  &.def_cat,
-	  &.att_cat,
-	  &.def_xan,
-	  &.att_xan,
-	  &.def_zik,
-	  &.att_zik,
-	  &.def_etd,
-	  &.att_etd {
-		&:hover {
-		  background: #151414 !important;
-		}
-	  }
+	  transition: ease all .25s;
 	}
   }
 
@@ -386,12 +395,6 @@
 		  vertical-align: text-top;
 		  height: 1.375rem;
 		}
-
-		//&:nth-child(2) {
-		//input {
-		//  background-color: $color-secondary;
-		//}
-		//}
 	  }
 	}
   }

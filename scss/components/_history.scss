@@ -2,7 +2,7 @@
   .maintext {
 	img {
 	  width: 100%;
-	  max-width: 800px;
+	  max-width: 600px;
 	}
 
 	table {
@@ -10,6 +10,12 @@
 	  min-width: 450px;
 
 	  tr {
+		&:not(:nth-child(1)):not(:nth-child(2)) {
+		  th {
+			background: $color-background;
+		  }
+		}
+
 		th,
 		td {
 		  padding: .25rem .75rem;
@@ -37,17 +43,70 @@
 	}
   }
 
-  #tab5,
-  #tab6 {
-	.maintext {
-	  table {
-		tr {
-		  th,
-		  td {
-			&:empty {
-			  background: transparent;
+  #tab5 {
+	.container {
+	  &:first-child {
+		table {
+		  &:nth-child(1),
+		  &:nth-child(3) {
+			tr {
+			  &:first-child {
+				th {
+				  background: $color-background;
+				}
+			  }
 			}
 		  }
+
+		  &:nth-child(1) {
+			tr {
+			  &:first-child {
+				th {
+				  &[class="center"] {
+					background: $color-background;
+					font-size: $text-large;
+					color: rgba($color-positive, .75);
+				  }
+				}
+			  }
+			}
+		  }
+
+		  &:nth-child(3) {
+			color: red;
+
+			tr {
+			  &:first-child {
+				th {
+				  &[class="center"] {
+					background: $color-background;
+					font-size: $text-large;
+					color: rgba($color-negative, .75);
+				  }
+				}
+			  }
+			}
+		  }
+
+		  tr {
+			th,
+			td {
+			  &:empty {
+				background: $color-background;
+			  }
+			}
+		  }
+		}
+	  }
+	}
+  }
+
+  #tab6 {
+	tr {
+	  th,
+	  td {
+		&:empty {
+		  background: $color-background;
 		}
 	  }
 	}
