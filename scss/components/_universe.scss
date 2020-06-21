@@ -31,10 +31,6 @@
 			  outline: none;
 			}
 
-			&.relations_neutral {
-			  background-color: $color-secondary;
-			}
-
 			&.relations_nap {
 			  background: rgba($color-neutral, .2);
 			}
@@ -310,16 +306,16 @@
   outline: none;
 }
 
-.relations_war {
-  background: rgba($color-negative, .25) !important;
-}
-
 .relations_neutral {
   background-color: $color-secondary;
 
   &:nth-child(odd) {
 	background-color: $color-secondary-alt;
   }
+}
+
+.relations_war {
+  background: rgba($color-negative, .25) !important;
 }
 
 .relations_hostile {

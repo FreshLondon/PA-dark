@@ -1,3 +1,7 @@
+&.relations_neutral {
+  background-color: $color-secondary;
+}
+
 &.relations_war {
   background: rgba($color-negative, .25);
 }
@@ -5,10 +9,6 @@
 &.relations_hostile {
   background: rgba($color-negative, .125);
   outline: none;
-}
-
-&.relations_neutral {
-  background-color: $color-secondary;
 }
 
 &.relations_nap {
