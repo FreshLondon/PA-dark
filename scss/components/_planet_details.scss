@@ -382,7 +382,8 @@
 	position: absolute;
 	min-width: 110px;
 	top: 0 !important;
-	left: 100% !important;
+	right: 0 !important;
+	left: unset !important;
 
 	.planet_summary_production_shipname,
 	.planet_summary_production_shipcount {
