@@ -55,12 +55,6 @@
 	  border-image-slice: 1;
 	}
 
-	&#menu_help {
-	  border-bottom: 1px solid transparent;
-	  border-image: linear-gradient(to right, transparent 0%, rgba($color-primary, .5) 100%);
-	  border-image-slice: 1;
-	}
-
 	&#menu_overview,
 	&.menu_grp {
 	  background: $color-secondary;
