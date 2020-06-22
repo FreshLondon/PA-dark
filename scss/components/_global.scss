@@ -243,7 +243,8 @@ hr {
   }
 }
 
-#page_scan div#full_page .maintext > {
+#page_scan div#full_page .maintext >,
+#view_news > .maintext > table > tbody > tr {
   table {
 	border: 1px solid transparent;
 	border-image: linear-gradient(to right, transparent 0%, rgba($color-primary, .5) 50%, transparent 100%);
@@ -253,7 +254,7 @@ hr {
 }
 
 #page_population #tab1 .container:nth-last-child(5),
-#page_waves #tab1{
+#page_waves #tab1 {
   table {
 	border-top: 1px solid transparent;
 	border-image: linear-gradient(to right, transparent 0%, rgba($color-primary, .5) 50%, transparent 100%);

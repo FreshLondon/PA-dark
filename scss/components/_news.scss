@@ -1,122 +1,120 @@
 #view_news {
   > .maintext {
-    > table {
-      > tbody {
-        > tr {
-          &.new {
-            > th,
-            > td {
-              background: rgba($color-primary, .1) !important;
+	> table {
+	  > tbody {
+		> tr {
+		  &.new {
+			> th,
+			> td {
+			  background: rgba($color-primary, .1) !important;
 
-              table {
-                tr {
-                  &:nth-child(odd) {
-                    th,
-                    td {
-                      background: rgba(0, 0, 0, 0.15);
-                    }
-                  }
+			  table {
 
-                  &:nth-child(even) {
-                    th,
-                    td {
-                      background: rgba(0, 0, 0, 0.1);
-                    }
-                  }
-                  &:first-child {
-                    th,
-                    td {
-                      background: transparent;
-                    }
-                  }
-                }
-              }
-            }
-          }
+				tr {
+				  &:nth-child(odd) {
+					td {
+					  background: rgba(0, 0, 0, 0.15);
+					}
+				  }
 
-          &:first-child {
-            th {
-              padding: .5rem .125rem;
-            }
-          }
+				  &:nth-child(even) {
+					td {
+					  background: rgba(0, 0, 0, 0.1);
+					}
+				  }
 
-          th,
-          td {
-            background: $color-secondary;
-          }
+				  &:first-child {
+					td {
+					  background: transparent;
+					}
+				  }
+				}
+			  }
+			}
+		  }
 
-          > td {
-            &:last-child {
-              padding: 16px 12px;
-            }
-          }
+		  &:first-child {
+			th {
+			  padding: .5rem .125rem;
+			}
+		  }
 
-          &:nth-child(even) {
-            th,
-            td {
-              background: $color-secondary-alt;
-            }
-          }
+		  th {
+			background: rgba(black, .23);
+		  }
 
+		  td {
+			background: $color-secondary;
+		  }
 
-          table {
-            background: transparent;
+		  > td {
+			&:last-child {
+			  padding: 16px 12px;
+			}
+		  }
+
+		  &:nth-child(even) {
+			td {
+			  background: $color-secondary-alt;
+			}
+		  }
+
+		  table {
+			background: transparent;
 			min-width: 80%;
+			margin: 0 0 1rem;
 
-            tr {
-              &:first-child {
-                th,
-                td {
-                  background: transparent;
-                }
-              }
+			tr {
+			  &:first-child {
+				td {
+				  background: transparent;
+				}
+			  }
 
-              &:nth-child(even) {
-                th,
-                td {
-                  background: rgba(0, 0, 0, .1);
-                }
-              }
-            }
+			  &:nth-child(even) {
+				td {
+				  background: rgba(0, 0, 0, .1);
+				}
+			  }
+			}
 
-            &:last-child {
-              margin-bottom: 0;
-            }
-          }
-        }
-      }
-    }
+			&:last-child {
+			  margin-bottom: 0;
+			}
+		  }
+		}
+	  }
+	}
   }
 
   .maintext {
-    > table {
-      > tbody {
-        > tr {
-          > td {
-            &:first-child {
-              a {
-                color: rgba($color-primary, .8);
-              }
-            }
-          }
-        }
-      }
-    }
+	> table {
+	  > tbody {
+		> tr {
+		  > td {
+			&:first-child {
+			  a {
+				color: rgba($color-primary, .8);
+			  }
+			}
+		  }
+		}
+	  }
+	}
   }
 }
 
-
 #page_news_entry {
   table {
-    width: 100%;
-    max-width: 800px;
+	width: 100%;
+	max-width: 800px;
 
-    table {
-      tr {
-        &:nth-child(even) {
-          background: $color-secondary-alt;
-        }
-      }
-    }
+	table {
+	  tr {
+		&:nth-child(even) {
+		  background: $color-secondary-alt;
+		}
+	  }
+	}
   }
 }
