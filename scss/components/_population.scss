@@ -177,6 +177,12 @@
 	}
   }
 
+  #tab1 {
+	input[type="submit"] {
+	  margin: 1rem auto;
+	}
+  }
+
   #tab2 .container:nth-child(2) .header {
 	display: none;
   }

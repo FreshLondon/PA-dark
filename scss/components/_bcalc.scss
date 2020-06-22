@@ -176,7 +176,7 @@
   #def_show {
 	input[type="checkbox"] {
 	  &#def_race_ter {
-		border-color: $color-terran;
+		border-color: $color-terran !important;
 
 		&:before {
 		  color: $color-terran;
@@ -184,7 +184,7 @@
 	  }
 
 	  &#def_race_cat {
-		border-color: $color-cathaar;
+		border-color: $color-cathaar !important;
 
 		&:before {
 		  color: $color-cathaar;
@@ -192,7 +192,7 @@
 	  }
 
 	  &#def_race_xan {
-		border-color: $color-xandathrii;
+		border-color: $color-xandathrii !important;
 
 		&:before {
 		  color: $color-xandathrii;
@@ -200,7 +200,7 @@
 	  }
 
 	  &#def_race_zik {
-		border-color: $color-zikonian;
+		border-color: $color-zikonian !important;
 
 		&:before {
 		  color: $color-zikonian;
@@ -208,7 +208,7 @@
 	  }
 
 	  &#def_race_etd {
-		border-color: $color-eitraides;
+		border-color: $color-eitraides !important;
 
 		&:before {
 		  color: $color-eitraides;

@@ -225,6 +225,42 @@ hr {
   display: none;
 }
 
+// cool table styling, adding all in one place to save on multiple repeats of the same code:
+#production_form,
+[id^="form_prod_"],
+#page_covert #contents .container:nth-last-child(2),
+#page_covert #contents .container:nth-last-child(3),
+#page_covert #contents .container:nth-last-child(4) .maintext >,
+#page_population #tab1 .container:nth-last-child(2),
+#page_mining #tab1,
+#page_waves #show_scan,
+#page_alliance_scans #tab1 {
+  table:first-of-type {
+	border: 1px solid transparent;
+	border-image: linear-gradient(to right, transparent 0%, rgba($color-primary, .5) 50%, transparent 100%);
+	border-image-slice: 1;
+	box-shadow: inset 0 0 8px 2px rgba(black, .25), 0 0 3px 3px rgba(black, .15);
+  }
+}
+
+#page_scan div#full_page .maintext > {
+  table {
+	border: 1px solid transparent;
+	border-image: linear-gradient(to right, transparent 0%, rgba($color-primary, .5) 50%, transparent 100%);
+	border-image-slice: 1;
+	box-shadow: inset 0 0 8px 2px rgba(black, .25), 0 0 3px 3px rgba(black, .15);
+  }
+}
+
+#page_population #tab1 .container:nth-last-child(5),
+#page_waves #tab1{
+  table {
+	border-top: 1px solid transparent;
+	border-image: linear-gradient(to right, transparent 0%, rgba($color-primary, .5) 50%, transparent 100%);
+	border-image-slice: 1;
+  }
+}
+
 /* MEDIA QUERIES
    ---------------------------------*/
 @include respond-below(md) {

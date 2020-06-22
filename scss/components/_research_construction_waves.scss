@@ -407,13 +407,6 @@
 		  background: $color-secondary-alt;
 		}
 	  }
-
-	  //th,
-	  //td {
-		//&:empty {
-		//  background: $color-background;
-		//}
-	  //}
 	}
   }
 
@@ -445,18 +438,7 @@
 		&:not(#stored_scans_form) {
 		  table {
 			tr {
-			  &:last-child {
-				td {
-				  background: transparent;
-				}
-			  }
-			}
-		  }
-		}
-
-		&:not(#stored_scans_form) {
-		  table {
-			tr {
+			  &:last-child,
 			  &:not(:first-child) {
 				td {
 				  background: transparent;
