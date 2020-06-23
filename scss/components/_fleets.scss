@@ -107,11 +107,24 @@
 	  &:nth-last-child(7) {
 		th {
 		  background: $color-secondary-alt;
+
+		  &:not(:first-child) {
+			font-size: $text-large;
+		  }
 		}
 	  }
 	}
 
 	&[name="movement"] {
+	  display: table;
+	  margin: 0 auto;
+	  padding: 15px 30px;
+	  background: $color-secondary;
+	  border: 1px solid transparent;
+	  border-image: linear-gradient(to right, transparent 0%, rgba($color-primary, .5) 50%, transparent 100%);
+	  border-image-slice: 1;
+	  box-shadow: inset 0 0 8px 2px rgba(0, 0, 0, 0.25), 0 0 3px 3px rgba(0, 0, 0, 0.15);
+
 	  div#currentMoves {
 		max-width: 600px;
 		margin: 0 auto;
@@ -119,8 +132,9 @@
 		line-height: 2;
 
 		a {
-		  margin: 0 !important;
+		  margin: 0 0 0 5px !important;
 		  line-height: 1.5rem !important;
+		  width: auto !important;
 		}
 
 		br + br {
@@ -129,11 +143,24 @@
 
 		input[type="submit"] {
 		  display: block !important;
-		  margin: 1rem auto .5rem !important;
+		  margin: 1rem auto 0 !important;
 		}
 	  }
 	}
   }
+
+  //#d_stats {
+  // /*this is targeting the main ships table*/
+  //+ script + .container {
+  //  input {
+  //	&[type="submit"] {
+  //	  &:hover {
+  //		cursor: url('data:image/svg+xml;utf8,<svg xmlns= "http://www.w3.org/2000/svg" width= "12" height= "30" style= "font-size: 20px;" ><text y= "15" ><span>&#127919;</span></text></svg>'), auto !important;
+  //	  }
+  //	}
+  //  }
+  //}
+  //}
 }
 
 #fleet_overview {
@@ -197,7 +224,9 @@
 	  td {
 		background: $color-secondary-alt !important;
 	  }
-	}&:last-child {
+	}
+
+	&:last-child {
 	  td {
 		background: transparent !important;
 	  }
