@@ -33,6 +33,8 @@
 				  font-size: $text-small;
 				  text-transform: uppercase;
 				  font-weight: normal;
+				  padding-left: 2rem;
+				  padding-right: 2rem;
 				}
 
 				th {
@@ -47,10 +49,15 @@
 
 			  &:nth-child(1) {
 				th {
-				  font-size: $text-default;
+				  font-size: $text-medium;
 				  font-weight: bold;
 				}
 			  }
+
+			  td {
+				padding: .5rem;
+			  }
+
 			}
 		  }
 		}
