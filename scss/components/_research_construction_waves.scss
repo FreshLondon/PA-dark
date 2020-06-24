@@ -64,27 +64,46 @@
   display: flex;
   flex-wrap: wrap;
   border: none;
-  margin-bottom: 3rem;
   position: relative;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto 3rem;
+  border: 1px solid transparent;
+  border-image: linear-gradient(to right, transparent 0%, rgba($color-primary, .5) 50%, transparent 100%);
+  border-image-slice: 1;
+  box-shadow: inset 0 0 8px 2px rgba(0, 0, 0, 0.25), 0 0 3px 3px rgba(0, 0, 0, 0.15);
+  background: $color-secondary;
 
   .construction_info {
 	flex-basis: 100%;
 	display: flex;
 	flex-wrap: wrap;
+	position: relative;
 
 	.title,
 	.description {
 	  flex-basis: 100%;
 	}
 
+	.title {
+	  background: $color-bg-th;
+	  margin-bottom: 0;
+	  padding: .5rem 2rem;
+	}
+
 	.resources {
 	  flex-basis: 33%;
 	  font-size: $text-small;
+	  position: absolute;
+	  right: 2rem;
+	  top: .9rem;
 
 	  + p {
-		flex-basis: 66%;
+		width: 100%;
 		display: flex;
 		font-size: $text-small;
+		padding: 1rem 2rem;
+		background: $color-secondary-alt;
 	  }
 	}
 
@@ -92,6 +111,10 @@
 	  .time,
 	  .cu {
 		flex-basis: 50%;
+	  }
+
+	  .cu {
+		text-align: right;
 	  }
 	}
 
@@ -102,13 +125,10 @@
   }
 
   .construction_built {
-	padding: 1rem .5rem;
+	padding: 1rem 2rem;
 	font-size: 1rem;
-	position: absolute;
-	top: -8px;
-	right: 0;
-	width: calc(150px + 1rem);
-	text-align: right;
+	width: 206px;
+	text-align: left;
 
 	.textvalue {
 	  font-weight: bold;
@@ -130,29 +150,33 @@
 	  }
 
 	  + p {
-		text-align: right;
 		font-size: $text-default;
+		padding: 0;
+		text-align: left;
 	  }
 	}
   }
 
   .construction_build {
-	flex-basis: 66%;
 	display: flex;
 	justify-content: space-between;
-	align-items: center;
-	padding: 1rem .5rem;
+	align-items: flex-start;
+	padding: 1rem 2rem 1rem 0;
 	flex-wrap: wrap;
+	width: calc(100% - 206px) !important;
 
 	.resources {
-	  margin-bottom: 0;
+	  margin-bottom: 1rem;
 	  text-align: left;
 	  order: 40;
-	  width: calc(100% - 200px);
-	  padding-left: 2rem;
+	  width: 100%;
 
 	  &:first-of-type {
 		order: 20;
+	  }
+
+	  &:nth-child(3) {
+		margin-bottom: 0;
 	  }
 
 	  li {
@@ -161,7 +185,7 @@
 	}
 
 	form {
-	  width: 200px;
+	  width: 100%;
 	  display: flex;
 	  align-items: center;
 	  justify-content: flex-start;
@@ -173,11 +197,19 @@
 
 	  &.queueform {
 		order: 30;
+
+		&:last-child {
+		  input {
+			&[type="submit"] {
+			  margin-bottom: 0 !important;;
+			}
+		  }
+		}
 	  }
 
 	  input {
 		&[type="checkbox"] {
-		  margin-right: .5rem;
+		  margin: -0.3rem 0 0 0.5rem;
 		  width: 1.5rem;
 		  height: 1.5rem;
 
@@ -211,7 +243,7 @@
 
 		&[type="submit"] {
 		  min-width: 110px;
-		  margin: .5rem 0 !important;
+		  margin: 0 0 .5rem !important;
 
 		  &:hover {
 			background: $color-negative;
