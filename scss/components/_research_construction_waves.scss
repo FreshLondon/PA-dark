@@ -85,6 +85,16 @@
 	  flex-basis: 100%;
 	}
 
+	.description {
+	  padding: 1rem 2rem;
+
+	  a.desc_link {
+		top: -41px;
+		right: 50%;
+		transform: translate(50%, 100%);
+	  }
+	}
+
 	.title {
 	  background: $color-bg-th;
 	  margin-bottom: 0;
