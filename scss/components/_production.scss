@@ -26,6 +26,9 @@
 	  padding-left: 0;
 	  font-size: $text-small;
 	  background: $color-secondary;
+	  @include respond-above(md) {
+		padding: .25rem .5rem;
+	  }
 
 	  &:nth-child(1) {
 		padding-left: .5rem;
