@@ -95,6 +95,10 @@
 		  .ally_def_target_links {
 			flex: 3;
 
+			span[id^="note_tag"] {
+			  margin-right: .5rem;
+			}
+
 			a {
 			  font-size: 0;
 
@@ -229,6 +233,7 @@
 				select {
 				  font-size: 12px;
 				  height: 18px;
+				  width: 105px;
 				}
 			  }
 			}
@@ -482,8 +487,22 @@
 			  }
 			}
 
-			.ally_def_defender_mdata {
+			select[id^="recall"] {
+			  order: 5;
+			  margin-left: 110px !important;
+			  font-size: 12px;
+			  height: 18px;
+			}
+
+			input[id^="recall"] {
 			  order: 6;
+			  margin: .25rem !important;
+			  font-size: 12px;
+			  height: 18px;
+			}
+
+			.ally_def_defender_mdata {
+			  order: 7;
 
 			  .ally_def_defender_mdata_ap, .ally_def_defender_mdata_dp {
 				display: flex;
