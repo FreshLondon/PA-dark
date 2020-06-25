@@ -43,7 +43,8 @@ table {
 #page_scan div#full_page .maintext >,
 #view_news > .maintext > table > tbody > tr,
 form[name="gal_fund_trade"] + p + p +,
-#page_overview #fleet_overview {
+#page_overview #fleet_overview,
+#page_alliance_scans .tabs#tab2 {
   table {
 	border: 1px solid transparent;
 	border-image: linear-gradient(to right, transparent 0%, rgba($color-primary, .5) 50%, transparent 100%);

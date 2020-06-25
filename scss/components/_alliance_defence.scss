@@ -2,6 +2,7 @@
   table {
 	width: 100%;
   }
+
   .maintext {
 	.ally_def_eta_wrapper {
 	  .ally_def_eta {
@@ -494,9 +495,38 @@
 	  }
 	}
   }
-}
 
-#dships_box {
-  max-width: 250px;
-  min-width: 225px;
+  #dships_box {
+	width: 250px !important;
+
+	table {
+	  tr {
+		td {
+		  background: $color-secondary;
+		}
+
+		&:nth-child(even) {
+		  td {
+			background: $color-secondary-alt;
+		  }
+		}
+	  }
+	}
+  }
+
+  p#dbcalc {
+	a {
+	  margin: 0 !important;
+	}
+
+	.bcalc_target {
+	  display: flex;
+	  line-height: 0;
+
+	  a {
+		line-height: 1.4;
+		margin-top: .5rem !important;
+	  }
+	}
+  }
 }
