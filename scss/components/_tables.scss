@@ -41,8 +41,7 @@ table {
 }
 
 #page_scan div#full_page .maintext >,
-#view_news > .maintext > table > tbody > tr,
-#page_alliance_fleets #contents {
+#view_news > .maintext > table > tbody > tr {
   table {
 	border: 1px solid transparent;
 	border-image: linear-gradient(to right, transparent 0%, rgba($color-primary, .5) 50%, transparent 100%);
