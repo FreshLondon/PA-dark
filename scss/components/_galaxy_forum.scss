@@ -53,6 +53,9 @@ div[class^='forum_thread_header'] {
   font-size: $text-small;
   text-transform: uppercase;
   background: $color-bg-th;
+  border-top: 1px solid transparent;
+  border-image: linear-gradient(to right, transparent 0%, rgba($color-primary, .5) 50%, transparent 100%);
+  border-image-slice: 1;
 }
 
 .forum_thread_actions_button {
