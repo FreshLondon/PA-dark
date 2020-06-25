@@ -23,78 +23,76 @@
 
 	&#galtable {
 	  thead {
+		background: $color-background;
+
 		th {
 		  width: auto !important;
+
+		  &.tablesort_asc,
+		  &.tablesort_desc {
+			color: $color-offwhite;
+		  }
 		}
 	  }
-	}
-  }
 
-  .tablesort {
-	thead {
-	  background: $color-background;
+	  tbody {
+		tr {
+		  td {
+			&:nth-child(9) {
+			  a {
+				color: $color-primary;
+				padding-right: 2px;
 
-	  th {
-		padding: 2px 5px;
+				&:last-child {
+				  padding-right: 0;
+				}
+			  }
+			}
 
-		&.tablesort_asc,
-		&.tablesort_desc {
-		  color: $color-offwhite;
-		}
-	  }
-	}
+			a,
+			span {
+			  color: $color-offwhite;
 
-	tbody {
-	  tr {
-		td {
-		  &:nth-child(9) {
-			a {
-			  color: $color-primary;
-			  padding-right: 2px;
+			  &.bashlimit {
+				color: $color-neutral;
+			  }
 
-			  &:last-child {
-				padding-right: 0;
+			  &.gc {
+				color: $color-gc;
+			  }
+
+			  &.moc {
+				color: $color-moc;
+			  }
+
+			  &.mow {
+				color: $color-mow;
+			  }
+
+			  &.mod {
+				color: $color-mod;
 			  }
 			}
 		  }
-
-		  a,
-		  span {
-			color: $color-offwhite;
-
-			&.bashlimit {
-			  color: $color-neutral;
-			}
-
-			&.gc {
-			  color: $color-gc;
-			}
-
-			&.moc {
-			  color: $color-moc;
-			}
-
-			&.mow {
-			  color: $color-mow;
-			}
-
-			&.mod {
-			  color: $color-mod;
-			}
-		  }
 		}
 	  }
-	}
 
-	tfoot {
-	  tr {
-		&:nth-child(1) {
-		  display: none;
-		}
+	  th,
+	  td {
+		padding: .25rem .5rem;
+		white-space: normal;
+	  }
 
-		&:nth-child(2) {
-		  td {
-			background: $color-bg-th;
+	  tfoot {
+		tr {
+		  &:nth-child(1) {
+			display: none;
+		  }
+
+		  &:nth-child(2) {
+			td {
+			  background: $color-bg-th;
+			}
 		  }
 		}
 	  }
