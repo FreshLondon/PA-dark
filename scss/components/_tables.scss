@@ -51,7 +51,8 @@ table {
 }
 
 #page_population #tab1 .container:nth-last-child(5),
-#page_waves #tab1 {
+#page_waves #tab1,
+form[action^="mining.pl?"] {
   table {
 	border-top: 1px solid transparent;
 	border-image: linear-gradient(to right, transparent 0%, rgba($color-primary, .5) 50%, transparent 100%);

@@ -111,6 +111,16 @@
 }
 
 #galaxy_fund {
+  form[action^="mining.pl?"] {
+	table {
+	  tr {
+		&:first-child {
+		  display: none;
+		}
+	  }
+	}
+  }
+
   table {
 	margin-bottom: 0;
 
