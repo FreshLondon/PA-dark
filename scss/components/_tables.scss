@@ -64,7 +64,8 @@ form[action^="mining.pl?"] {
 
 #galtable,
 #agents_training,
-#guards_training {
+#guards_training,
+.research_branch_list {
   border: 1px solid transparent;
   border-image: linear-gradient(to right, transparent 0%, rgba($color-primary, .5) 50%, transparent 100%);
   border-image-slice: 1;
