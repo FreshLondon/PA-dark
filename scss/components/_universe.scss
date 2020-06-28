@@ -289,10 +289,12 @@
   background: $color-background;
   border: 1px solid rgba($color-primary, .5);
   color: $color-offwhite !important;
-  padding: 0;
+  padding: .25rem .5rem;
 
   * {
 	color: $color-offwhite !important;
+	text-align: right;
+	height: 0;
   }
 }
 
