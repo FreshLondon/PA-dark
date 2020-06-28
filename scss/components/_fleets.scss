@@ -266,7 +266,7 @@ th.superhighlight {
 	  }
 
 	  td {
-		background: $color-secondary;
+		background: $color-secondary-alt;
 	  }
 
 	  &:first-child th {
@@ -274,14 +274,16 @@ th.superhighlight {
 		padding: .25rem .5rem;
 	  }
 
-	  &:nth-child(even) {
+	  &:last-child {
 		td {
-		  background: $color-secondary-alt;
+		  background: $color-secondary;
+		  vertical-align: bottom;
 		}
 	  }
 
 	  a {
 		font-size: $text-default;
+		vertical-align: bottom;
 
 		&[class*="d_fleet_"] {
 		  padding: .25rem .5rem;
