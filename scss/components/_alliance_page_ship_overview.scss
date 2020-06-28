@@ -33,7 +33,8 @@
 		td {
 		  background: $color-secondary;
 
-		  &[style="width: 22%;"] {
+		  &[style="width: 22%;"],
+		  &[colspan="3"] {
 			background: transparent !important;
 		  }
 		}
