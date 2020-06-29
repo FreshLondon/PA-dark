@@ -1,5 +1,12 @@
+@include respond-below(md) {
+  :root,
+  html {
+	font-size: 18px;
+  }
+}
+
 body.mobile {
-  font-size: 16px;
+  //font-size: 1.6rem;
 
   #page {
 	position: relative;
@@ -16,7 +23,7 @@ body.mobile {
 	  grid-row: 1;
 	  padding: 0 0 1rem;
 	  display: grid;
-	  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+	  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 
 	  > li {
 		position: relative;
@@ -32,6 +39,11 @@ body.mobile {
 		  }
 		}
 
+		&#menu_overview,
+		&.menu_grp {
+		  grid-row: 2;
+		}
+
 		> ul {
 		  height: 0;
 		  overflow: hidden;
@@ -40,16 +52,32 @@ body.mobile {
 		  background: $color-secondary;
 		}
 
+		&#menu_time {
+		  grid-column: 1;
+		  grid-column-end: 3;
+		  grid-row: 1;
+		  display: flex;
+		  align-items: center;
+		  margin: 0 1rem 0 0;
+		}
+
 		&#menu_view_link {
-		  grid-column: 8/9;
+		  grid-column: 5;
+		  grid-column-end: 7;
+		  grid-row: 1;
+		  margin: 0;
+		}
+
+		&#menu_preferences {
+		  width: unset;
+		  margin: 0;
 		}
 
 		&#menu_logout {
-		  grid-column: 8;
-		}
-
-		&#menu_time {
-		  grid-column: 9/9;
+		  grid-column: 3;
+		  grid-column-end: 5;
+		  grid-row: 1;
+		  margin: 0;
 		}
 
 	  }

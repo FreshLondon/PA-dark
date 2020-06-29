@@ -224,19 +224,3 @@ hr {
 #page_journal #notice + .container .header {
   display: none;
 }
-
-/* MEDIA QUERIES
-   ---------------------------------*/
-@include respond-below(md) {
-  :root {
-	font-size: 14px;
-  }
-
-  #menu {
-	grid-row: 1 / 4;
-  }
-
-  #planet_summary {
-	grid-column: 2 / 3;
-  }
-}
