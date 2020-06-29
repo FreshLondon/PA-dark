@@ -1,8 +1,4 @@
 #page_alliance_defence {
-  table {
-	width: 100%;
-  }
-
   .maintext {
 	.ally_def_eta_wrapper {
 	  .ally_def_eta {
@@ -32,13 +28,13 @@
 		  }
 
 		  .ally_def_target_toggle_link {
-			margin: 0 0 0 -12px;
-			width: 10px;
+			margin: 0 .125rem 0 -1.25rem;
+			width: 1rem;
 			cursor: pointer;
 
 			img {
-			  width: .6875rem;
-			  height: .6875rem;
+			  width: 1rem;
+			  height: 1rem;
 			}
 		  }
 
