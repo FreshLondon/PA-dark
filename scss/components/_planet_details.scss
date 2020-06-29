@@ -192,6 +192,12 @@
 
   #header_metal {
 	order: 7;
+
+	.textvalue {
+	  &:before {
+		background: url(/images/template53/metal_16.png) no-repeat;
+	  }
+	}
   }
 
   #header_value {
@@ -200,6 +206,12 @@
 
   #header_crystal {
 	order: 9;
+
+	.textvalue {
+	  &:before {
+		background: url(/images/template53/crystal_16.png) no-repeat;
+	  }
+	}
   }
 
   #header_xp {
@@ -208,6 +220,12 @@
 
   #header_eonium {
 	order: 11;
+
+	.textvalue {
+	  &:before {
+		background: url(/images/template53/eonium_16.png) no-repeat;
+	  }
+	}
   }
 
   #header_score {
@@ -231,6 +249,25 @@
 	//text-indent: 5px;
   }
 
+  #header_metal,
+  #header_crystal,
+  #header_eonium {
+	.textvalue {
+	  position: relative;
+
+	  &:before {
+		width: 16px;
+		height: 13px;
+		margin-right: .4rem;
+		content: "";
+		display: inline-block;
+		position: absolute;
+		right: 0;
+		top: 40%;
+		transform: translate(150%, -50%);
+	  }
+	}
+  }
 }
 
 .ter,
