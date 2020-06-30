@@ -44,7 +44,8 @@ table {
 form[name="gal_fund_trade"] + p + p +,
 #page_overview #fleet_overview,
 #page_alliance_scans .tabs#tab2,
-#page_waves #show_scan {
+#page_waves #show_scan,
+#page_news_entry table {
   table {
 	border: 1px solid transparent;
 	border-image: linear-gradient(to right, transparent 0%, rgba($color-primary, .5) 50%, transparent 100%);
