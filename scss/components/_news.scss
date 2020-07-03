@@ -11,15 +11,15 @@
 			  table {
 
 				tr {
-				  &:nth-child(odd) {
+				  &:nth-child(even) {
 					td {
-					  background: rgba(0, 0, 0, 0.15);
+					  background: $color-secondary;
 					}
 				  }
 
-				  &:nth-child(even) {
+				  &:nth-child(odd) {
 					td {
-					  background: rgba(0, 0, 0, 0.1);
+					  background: $color-secondary-alt;
 					}
 				  }
 
@@ -39,47 +39,218 @@
 			}
 		  }
 
-		  th {
-			background: rgba(black, .23);
-		  }
-
-		  td {
+		  //th {
+		  //background: rgba(black, .23);
+		  //}
+		  //
+		  > td {
 			background: $color-secondary;
 		  }
 
 		  > td {
 			&:last-child {
-			  padding: 16px 12px;
+			  padding: 2rem 1rem;
 			}
 		  }
 
 		  &:nth-child(even) {
-			td {
+			> td {
 			  background: $color-secondary-alt;
 			}
 		  }
 
 		  table {
 			background: transparent;
-			min-width: 80%;
-			margin: 0 0 1rem;
+			width: 100%;
+			margin: 0 auto 1rem;
 
 			tr {
-			  &:first-child {
-				td {
-				  background: transparent;
-				}
-			  }
 
 			  &:nth-child(even) {
-				td {
-				  background: rgba(0, 0, 0, .1);
-				}
+				background: $color-secondary;
+			  }
+
+			  &:nth-child(odd) {
+				background: $color-secondary-alt;
+			  }
+
+			  &:first-child {
+				background: transparent;
 			  }
 			}
 
 			&:last-child {
 			  margin-bottom: 0;
+			}
+		  }
+
+		  &.news_fleet {
+			table {
+			  &:first-child {
+				tr {
+				  &:first-child {
+					th {
+					  text-align: center;
+					}
+				  }
+
+				  td {
+					&:nth-child(2) {
+					  background: rgba($color-positive, .1);
+					}
+
+					&:nth-child(3) {
+					  background: rgba($color-negative, .1);
+					}
+				  }
+				}
+			  }
+
+			  &:last-child {
+				th {
+				  position: relative;
+
+				  &:nth-child(2),
+				  &:nth-child(3),
+				  &:nth-child(4) {
+					font-size: $text-default;
+					line-height: 1;
+					text-align: center;
+					padding: .25rem .5rem;
+					font-weight: normal;
+					background: $color-secondary-alt;
+
+					&:after {
+					  width: 1rem;
+					  height: 1rem;
+					  margin-left: .4rem;
+					  content: "";
+					  display: inline-block;
+					  vertical-align: sub;
+					}
+				  }
+
+				  &:nth-child(2) {
+					&:after {
+					  background: url(/images/template53/metal_16.png) no-repeat center, $color-bg-th;
+					}
+				  }
+
+				  &:nth-child(3) {
+					&:after {
+					  background: url(/images/template53/crystal_16.png) no-repeat center, $color-bg-th;
+					}
+				  }
+
+				  &:nth-child(4) {
+					&:after {
+					  background: url(/images/template53/eonium_16.png) no-repeat center, $color-bg-th;
+					}
+				  }
+				}
+			  }
+			}
+		  }
+
+		  &:not(.news_fleet) {
+			table {
+			  &:first-child {
+				tr {
+				  &:nth-child(n + 3) {
+					th,
+					td {
+					  &:nth-child(2) {
+						background: rgba($color-negative, .2);
+					  }
+
+					  &:nth-child(3),
+					  &:nth-child(7) {
+						background: rgba($color-killed, .1);
+					  }
+
+					  &:nth-child(4),
+					  &:nth-child(8) {
+						background: rgba($color-emp, .1);
+					  }
+
+					  &:nth-child(5) {
+						border-right: 4px solid $color-background;
+					  }
+
+					  &:nth-child(5),
+					  &:nth-child(9) {
+						background: rgba($color-stolen, .1);
+					  }
+
+					  &:nth-child(6) {
+						background: rgba($color-positive, .23);
+					  }
+					}
+				  }
+				}
+			  }
+
+			  &:last-child {
+				tr {
+				  th,
+				  td {
+					&:nth-child(2),
+					&:nth-child(3),
+					&:nth-child(4) {
+					  text-align: center;
+					  font-size: $text-medium;
+					  line-height: 1;
+					}
+				  }
+
+				  td {
+					&:nth-child(2),
+					&:nth-child(3),
+					&:nth-child(4) {
+					  font-size: $text-large;
+					  line-height: 1;
+					}
+				  }
+
+				  &:nth-child(2) {
+					th {
+					  position: relative;
+
+					  &:nth-child(2),
+					  &:nth-child(3),
+					  &:nth-child(4) {
+
+						&:after {
+						  width: 1rem;
+						  height: 1rem;
+						  margin-left: .4rem;
+						  content: "";
+						  display: inline-block;
+						  vertical-align: sub;
+						}
+					  }
+
+					  &:nth-child(2) {
+						&:after {
+						  background: url(/images/template53/metal_16.png) no-repeat center, $color-bg-th;
+						}
+					  }
+
+					  &:nth-child(3) {
+						&:after {
+						  background: url(/images/template53/crystal_16.png) no-repeat center, $color-bg-th;
+						}
+					  }
+
+					  &:nth-child(4) {
+						&:after {
+						  background: url(/images/template53/eonium_16.png) no-repeat center, $color-bg-th;
+						}
+					  }
+					}
+				  }
+				}
+			  }
 			}
 		  }
 		}

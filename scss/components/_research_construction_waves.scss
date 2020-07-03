@@ -671,18 +671,6 @@
 	  }
 
 	  form {
-		&:not(#stored_scans_form) {
-		  table {
-			tr {
-			  &:last-child,
-			  &:not(:first-child) {
-				td {
-				  background: transparent;
-				}
-			  }
-			}
-		  }
-		}
 
 		&#stored_scans_form {
 		  p.right {
@@ -693,6 +681,24 @@
 				content: "";
 				display: block;
 				margin: .5rem;
+			  }
+			}
+		  }
+		}
+	  }
+	}
+
+	#waves {
+	  .maintext {
+		form {
+		  tr {
+			&:not(:first-child) {
+			  td {
+				background: transparent;
+
+				.resources {
+				  padding-top: .75rem;
+				}
 			  }
 			}
 		  }
@@ -764,6 +770,7 @@
 #waves {
   p {
 	text-align: center;
+	width: 100%;
   }
 }
 
