@@ -187,6 +187,12 @@
 					  }
 					}
 				  }
+
+				  &:last-child {
+					td {
+					  border-top: 4px solid $color-background;
+					}
+				  }
 				}
 			  }
 
