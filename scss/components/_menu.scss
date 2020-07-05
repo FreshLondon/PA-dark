@@ -132,6 +132,33 @@
 	  &#time_loaded {
 		font-size: $text-medium;
 		color: rgba($color-text, .5);
+		position: relative;
+
+		&:before {
+		  content: "Ultimate skin v2.2.6";
+		  position: absolute;
+		  white-space: pre-wrap;
+		  bottom: -2rem;
+		  font-size: $text-large;
+		  color: rgba($color-primary, .3);
+		  width: 100%;
+		  left: 50%;
+		  padding: .25rem;
+		  transform: translateX(-50%);
+		  border: 1px solid rgba($color-primary, .3);
+		}
+
+		&:after {
+		  content: "contact @UltimateNewbie \A on TG for help/bugs";
+		  position: absolute;
+		  white-space: pre-wrap;
+		  bottom: -4.75rem;
+		  font-size: $text-small;
+		  color: rgba($color-primary, .3);
+		  width: 100%;
+		  left: 50%;
+		  transform: translateX(-50%);
+		}
 	  }
 	}
   }
