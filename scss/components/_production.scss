@@ -138,8 +138,12 @@ span.small.notice_warning {
   background: $color-background !important;
   padding: 0;
   z-index: 10;
+  width: 15.5rem !important;
 
   table {
+	margin: 0 auto;
+	max-width: 100%;
+
 	&:first-child {
 	  tr {
 		&:first-child {

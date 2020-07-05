@@ -1,3 +1,27 @@
+div[id^="page_universe_"] {
+  table {
+	tr {
+	  td {
+		background: $color-secondary;
+
+		&:empty {
+		  background: transparent !important;
+		}
+	  }
+
+	  &:nth-child(odd) {
+		td {
+		  background: $color-secondary-alt;
+
+		  &:empty {
+			background: transparent !important;
+		  }
+		}
+	  }
+	}
+  }
+}
+
 #page_universe {
 
   .maintext {
@@ -353,24 +377,6 @@
 		  }
 		}
 	  }
-
-	  //td {
-		//background: $color-secondary;
-	  //
-		//&:empty {
-		//  background: transparent !important;
-		//}
-	  //}
-	  //
-	  //&:nth-child(odd) {
-		//td {
-		//  background: $color-secondary-alt;
-	  //
-		//  &:empty {
-		//	background: transparent !important;
-		//  }
-		//}
-	  //}
 
 	  .moc {
 		color: #00b7ff;
