@@ -11,7 +11,7 @@
 		table {
 		  thead {
 			tr:first-child {
-			  background: rgba(black, .12) !important;
+			  background: $color-bg-th !important;
 
 			  th {
 				background: transparent !important;
@@ -352,14 +352,25 @@
 			text-decoration: none;
 		  }
 		}
+	  }
 
+	  //td {
+		//background: $color-secondary;
+	  //
+		//&:empty {
+		//  background: transparent !important;
+		//}
+	  //}
+	  //
+	  //&:nth-child(odd) {
 		//td {
-		//  &.left,
-		//  &.right {
-		//	background: $color-secondary-alt;
+		//  background: $color-secondary-alt;
+	  //
+		//  &:empty {
+		//	background: transparent !important;
 		//  }
 		//}
-	  }
+	  //}
 
 	  .moc {
 		color: #00b7ff;
@@ -395,26 +406,6 @@
 		color: $color-text;
 		@include respond-below(sm) {
 		  padding: 0 .5rem;
-		}
-	  }
-
-	  &:not(:first-child) {
-		td {
-		  background: $color-secondary;
-
-		  &:empty {
-			background: transparent !important;
-		  }
-		}
-
-		&:nth-child(odd) {
-		  td {
-			background: $color-secondary-alt;
-
-			&:empty {
-			  background: transparent !important;
-			}
-		  }
 		}
 	  }
 	}

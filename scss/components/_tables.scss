@@ -91,3 +91,25 @@ form[action^="mining.pl?"] {
 	box-shadow: none;
   }
 }
+
+#page_alliance_relations {
+  table.tablesort {
+	thead {
+	  tr:first-child {
+		background: rgba(black, .12) !important;
+
+		th {
+		  background: transparent !important;
+		}
+	  }
+	}
+
+	tr {
+	  background-color: $color-secondary;
+
+	  &:nth-child(odd) {
+		background-color: $color-secondary-alt;
+	  }
+	}
+  }
+}
