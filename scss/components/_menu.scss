@@ -137,11 +137,10 @@
 		&:before {
 		  content: "Ultimate skin v2.2.7";
 		  position: absolute;
-		  white-space: pre-wrap;
 		  bottom: -3rem;
 		  font-size: $text-large;
 		  color: rgba($color-primary, .5);
-		  width: 100%;
+		  white-space: nowrap;
 		  left: 50%;
 		  padding: .25rem;
 		  transform: translateX(-50%);
