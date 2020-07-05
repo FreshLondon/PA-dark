@@ -77,6 +77,10 @@
 		font-size: 1rem;
 	  }
 
+	  &:nth-child(11) {
+		font-weight: bold;
+	  }
+
 	  &.notice_warning {
 		color: rgba($color-neutral, .75);
 		font-size: $text-small;
