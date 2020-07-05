@@ -91,6 +91,17 @@
 		  }
 		}
 	  }
+
+	  p {
+		span[id^="bcalc_target"] {
+		  padding-top: 1rem;
+		  display: block;
+
+		  &:empty {
+			padding: 0;
+		  }
+		}
+	  }
 	}
   }
 }
