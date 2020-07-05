@@ -78,9 +78,10 @@
 	  }
 
 	  &.notice_warning {
-		color: rgba($color-negative, .9);
+		color: rgba($color-neutral, .75);
 		font-size: $text-small;
 		background: transparent;
+		text-align: center;
 	  }
 
 	  &[colspan="9"],

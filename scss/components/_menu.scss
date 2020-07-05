@@ -138,23 +138,23 @@
 		  content: "Ultimate skin v2.2.6";
 		  position: absolute;
 		  white-space: pre-wrap;
-		  bottom: -2rem;
+		  bottom: -3rem;
 		  font-size: $text-large;
-		  color: rgba($color-primary, .3);
+		  color: rgba($color-primary, .5);
 		  width: 100%;
 		  left: 50%;
 		  padding: .25rem;
 		  transform: translateX(-50%);
-		  border: 1px solid rgba($color-primary, .3);
+		  border: 1px solid rgba($color-primary, .5);
 		}
 
 		&:after {
 		  content: "contact @UltimateNewbie \A on TG for help/bugs";
 		  position: absolute;
 		  white-space: pre-wrap;
-		  bottom: -4.75rem;
+		  bottom: -5.75rem;
 		  font-size: $text-small;
-		  color: rgba($color-primary, .3);
+		  color: rgba($color-primary, .5);
 		  width: 100%;
 		  left: 50%;
 		  transform: translateX(-50%);
