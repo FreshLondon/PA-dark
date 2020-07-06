@@ -555,7 +555,6 @@
 	  tr {
 		th,
 		td {
-		  padding: .25rem 1rem !important;
 
 		  &:empty {
 			display: none;
@@ -750,10 +749,47 @@
 }
 
 #scan {
-  table {
+  .maintext {
+	> table {
+	  min-width: 200px;
 
-	+ p {
-	  margin-top: 1rem;
+	  > tbody {
+		> tr {
+		  &:first-child {
+			th {
+			  text-align: center;
+			}
+		  }
+
+		  > td {
+			padding: .25rem .75rem;
+
+			&:first-child {
+			  &:not([colspan="2"]):not(:nth-last-child(3)) {
+				text-align: right;
+			  }
+
+			  a {
+				padding-right: .5rem;
+				width: 45px;
+			  }
+
+			  span {
+				font-size: 1rem;
+				text-transform: uppercase;
+				padding: 0 .125rem;
+				width: 35px;
+				text-align: center;
+				display: inline-block;
+			  }
+			}
+		  }
+
+		  + p {
+			margin-top: 1rem;
+		  }
+		}
+	  }
 	}
   }
 }
