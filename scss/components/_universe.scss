@@ -307,9 +307,9 @@ div[id^="page_universe_"] {
 
   * {
 	color: $color-offwhite !important;
-	height: 0;
   }
-  *:not([colspan="2"]){
+
+  *:not([colspan="2"]) {
 	text-align: right;
   }
 }
