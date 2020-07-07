@@ -137,7 +137,7 @@
 		&:before {
 		  content: "Ultimate skin v2.2.10";
 		  position: absolute;
-		  bottom: -3rem;
+		  bottom: -3.75rem;
 		  font-size: $text-large;
 		  color: rgba($color-primary, .5);
 		  white-space: nowrap;
@@ -151,6 +151,7 @@
 		  content: "contact @UltimateNewbie \A on TG for assistance / bugs";
 		  position: absolute;
 		  white-space: pre-wrap;
+		  line-height: 1.2;
 		  bottom: -5.75rem;
 		  font-size: $text-small;
 		  color: rgba($color-primary, .5);
