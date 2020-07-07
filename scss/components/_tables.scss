@@ -54,7 +54,8 @@ form[name="gal_fund_trade"] + p + p +,
 #page_history #tab6,
 #page_history #tab7,
 #page_history #tab8,
-[id^="page_universe"] .maintext > {
+[id^="page_universe"] .maintext >,
+#page_alliance_fleets #contents table {
   table {
 	border: 1px solid transparent;
 	border-image: linear-gradient(to right, transparent 0%, rgba($color-primary, .5) 50%, transparent 100%);

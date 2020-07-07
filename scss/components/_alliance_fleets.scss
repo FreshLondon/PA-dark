@@ -37,13 +37,14 @@
   #contents {
 	table {
 	  width: auto;
+	  min-width: unset;
 
 	  tr {
 		th,
 		td {
-		  &:empty {
-			background: $color-background !important;
-		  }
+		  //&:empty {
+		  //background: $color-background !important;
+		  //}
 		}
 
 		td {
@@ -51,6 +52,10 @@
 			background: transparent !important;
 		  }
 		}
+	  }
+
+	  table {
+		margin: 0;
 	  }
 	}
 
