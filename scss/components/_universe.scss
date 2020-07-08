@@ -519,6 +519,9 @@ div[id^="page_universe_"] {
 
 #page_universe_combat_reports {
   table {
+	border: none;
+	box-shadow: none;
+
 	&#intel + .container table {
 	  width: auto;
 	  min-width: 700px;
@@ -613,17 +616,17 @@ div[id^="page_universe_"] {
 			  th,
 			  td {
 				&:nth-child(2) {
-				  background: rgba($color-negative, .2);
+				  background: rgba($color-negative, .1);
 				}
 
 				&:nth-child(3),
 				&:nth-child(8) {
-				  background: rgba($color-killed, .1);
+				  background: rgba($color-killed, .075);
 				}
 
 				&:nth-child(4),
 				&:nth-child(9) {
-				  background: rgba($color-emp, .1);
+				  background: rgba($color-emp, .075);
 				}
 
 				&:nth-child(5) {
@@ -632,11 +635,11 @@ div[id^="page_universe_"] {
 
 				&:nth-child(5),
 				&:nth-child(10) {
-				  background: rgba($color-stolen, .1);
+				  background: rgba($color-stolen, .075);
 				}
 
 				&:nth-child(7) {
-				  background: rgba($color-positive, .23);
+				  background: rgba($color-positive, .1);
 				}
 			  }
 			}
@@ -706,7 +709,7 @@ div[id^="page_universe_"] {
 		  th {
 			background: transparent;
 			border: 1px solid transparent;
-			border-image: linear-gradient(to right, transparent 0%, rgba($color-primary, .5) 50%, transparent 100%);
+			border-image: linear-gradient(to right, transparent 0%, rgba(255, 255, 255, 0.14) 50%, transparent 100%);
 			border-image-slice: 1;
 			padding: 6px !important;
 			font-size: $text-default;
