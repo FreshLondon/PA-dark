@@ -1,23 +1,55 @@
 div[id^="page_universe_"] {
   table {
 	tr {
-	  td {
-		background: $color-secondary;
-
-		&:empty {
-		  background: transparent !important;
-		}
-	  }
-
-	  &:nth-child(odd) {
+	  &:not([class*="relations"]) {
 		td {
-		  background: $color-secondary-alt;
+		  background: $color-secondary;
 
 		  &:empty {
 			background: transparent !important;
 		  }
 		}
+
+		&:nth-child(odd) {
+		  td {
+			background: $color-secondary-alt;
+
+			&:empty {
+			  background: transparent !important;
+			}
+		  }
+		}
 	  }
+
+	  //&.relations_neutral {
+		//background: linear-gradient(to right, $color-background 0%, $color-secondary 50%, $color-background 100%) !important;
+	  //}
+	  //
+	  //&.relations_war {
+		//background: linear-gradient(to right, $color-background 0%, rgba($color-negative, .25) 50%, $color-background 100%) !important;
+	  //}
+	  //
+	  //&.relations_hostile {
+		//background: linear-gradient(to right, $color-background 0%, rgba($color-negative, .125) 50%, $color-background 100%) !important;
+		//outline: none;
+	  //}
+	  //
+	  //&.relations_nap {
+		//background: linear-gradient(to right, $color-background 0%, rgba($color-neutral, .15) 50%, $color-background 100%) !important;
+	  //}
+	  //
+	  //&.relations_friendly {
+		//background: linear-gradient(to right, $color-background 0%, rgba($color-positive, .15) 50%, $color-background 100%) !important;
+		//outline: none;
+	  //}
+	  //
+	  //&.relations_allied {
+		//background: linear-gradient(to right, $color-background 0%, rgba($color-positive, .3) 50%, $color-background 100%) !important;
+	  //}
+	  //
+	  //&.relations_own_member {
+		//background: linear-gradient(to right, $color-background 0%, rgba($color-own, .25) 50%, $color-background 100%) !important;
+	  //}
 	}
   }
 }
@@ -730,36 +762,6 @@ div[id^="page_universe_"] {
 			  top: -0.14rem;
 			}
 		  }
-		}
-
-		&.relations_neutral {
-		  background: linear-gradient(to right, $color-background 0%, $color-secondary 50%, $color-background 100%) !important;
-		}
-
-		&.relations_war {
-		  background: linear-gradient(to right, $color-background 0%, rgba($color-negative, .25) 50%, $color-background 100%) !important;
-		}
-
-		&.relations_hostile {
-		  background: linear-gradient(to right, $color-background 0%, rgba($color-negative, .125) 50%, $color-background 100%) !important;
-		  outline: none;
-		}
-
-		&.relations_nap {
-		  background: linear-gradient(to right, $color-background 0%, rgba($color-neutral, .15) 50%, $color-background 100%) !important;
-		}
-
-		&.relations_friendly {
-		  background: linear-gradient(to right, $color-background 0%, rgba($color-positive, .15) 50%, $color-background 100%) !important;
-		  outline: none;
-		}
-
-		&.relations_allied {
-		  background: linear-gradient(to right, $color-background 0%, rgba($color-positive, .3) 50%, $color-background 100%) !important;
-		}
-
-		&.relations_own_member {
-		  background: linear-gradient(to right, $color-background 0%, rgba($color-own, .25) 50%, $color-background 100%) !important;
 		}
 
 		th,

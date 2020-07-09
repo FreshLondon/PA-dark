@@ -1,5 +1,4 @@
 #page_alliance_fleets,
-#page_universe_combat_reports,
 #page_alliance_fund {
   #contents {
 	table {
@@ -16,11 +15,6 @@
 		  &[colspan="6"] {
 			background: transparent !important;
 		  }
-
-		  &:empty {
-
-		  }
-
 		}
 
 		&:nth-child(odd) {
