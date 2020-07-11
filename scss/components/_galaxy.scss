@@ -21,6 +21,10 @@
   table {
 	width: 100% !important;
 
+	&:not(#galtable) {
+	  margin-bottom: 0;
+	}
+
 	&#galtable {
 	  thead {
 		background: $color-background;
