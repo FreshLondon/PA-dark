@@ -87,6 +87,15 @@
 		white-space: normal;
 	  }
 
+	  td {
+		&:nth-last-child(2) {
+		  padding: .25rem ;
+		  a {
+			padding: 0 .125rem;
+		  }
+		}
+	  }
+
 	  tfoot {
 		tr {
 		  &:nth-child(1) {
