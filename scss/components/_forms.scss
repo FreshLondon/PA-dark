@@ -108,11 +108,13 @@ input[type="checkbox"] {
 }
 
 input[type="checkbox"],
-select {
+select,
+table.mceEditor tr td select.mceSelectList {
   color: $color_text;
   background: rgba($color-secondary, .4);
   border: 1px solid rgba($color-primary, .5);
   box-shadow: inset 0 2px 4px 2px rgba(0, 0, 0, .4);
+
 }
 
 .checkbox > input:active {

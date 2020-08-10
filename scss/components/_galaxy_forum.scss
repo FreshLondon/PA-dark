@@ -187,14 +187,106 @@ div[class^='forum_thread_header'] {
 
 .mceContentBody {
   font-size: 1rem !important;
+  padding: .5rem;
 }
 
-#editor > .center,
-#editor + .center {
-  font-size: $text-small;
+#editor {
+  margin: 0 1rem;
 
-  a {
-	display: inline-block;
-	margin-right: 1rem;
+  > .center,
+  + .center {
+
+	font-size: $text-small;
+
+	a {
+	  display: inline-block;
+	  margin-right: 1rem;
+	}
+  }
+}
+
+table.mceEditor {
+  tr {
+	display: table !important;
+	width: 100%;
+
+	td {
+	  width: 100%;
+	  padding: 0;
+
+	  &.mceToolbarTop {
+		> span {
+		  > span,
+		  > a {
+			margin: .25rem;
+		  }
+
+		  > span {
+			> a {
+			  margin: 0 .25rem;
+
+			  + a {
+				width: auto;
+			  }
+			}
+		  }
+		}
+	  }
+
+	  .mceToolbarContainer {
+		background: $color-secondary !important;
+		padding: .5rem .5rem 0;
+
+		a {
+		  background: #ccc !important;
+		}
+	  }
+
+	  &.mceStatusbarBottom {
+		display: none;
+	  }
+
+	  .mceSeparatorLine {
+		border: 0;
+		padding: 0;
+		margin-left: 1rem;
+		margin-right: 1rem;
+		margin-top: 0px;
+		height: 26px;
+	  }
+
+	  a {
+		margin: .5rem 0 !important;
+		width: 24px;
+		height: 24px;
+
+		&[accesskey="q"],
+		&[accesskey="z"] {
+		  display: none !important;
+		}
+
+		&.mceButtonDisabled img,
+		&.mceButtonNormal img,
+		&.mceButtonSelected img {
+		  width: 24px;
+		  height: 24px;
+		}
+
+		span.mceMenuButton img,
+		span.mceMenuButtonSelected img {
+		  width: 24px;
+		  height: 24px;
+		}
+	  }
+
+	  select.mceSelectList {
+		margin: 7px .5rem;
+		height: 1.8rem;
+
+		&:first-of-type {
+		  margin-right: 0;
+		}
+	  }
+	}
   }
 }
