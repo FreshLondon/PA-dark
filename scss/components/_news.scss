@@ -72,12 +72,6 @@
 				background: $color-background;
 			  }
 
-			  td {
-				&:first-child {
-				  text-align: right;
-				}
-			  }
-
 			  &:nth-child(even) {
 				background: $color-secondary;
 			  }
@@ -113,6 +107,104 @@
 			&:last-child {
 			  margin-bottom: 0;
 			}
+
+			&.news_combat_fleet_salvage,
+			&.news_combat_cap_roids {
+			  tr {
+				th,
+				td {
+				  text-align: center !important;
+				}
+
+				&:nth-child(2) {
+				  th {
+					span {
+					  &:after {
+						width: 1rem;
+						height: 1rem;
+						margin-left: .4rem;
+						content: "";
+						display: inline-block;
+						vertical-align: sub;
+					  }
+					}
+
+					&.metal {
+					  span {
+						&:after {
+						  background: url(/images/template53/metal_16.png) no-repeat center, $color-bg-th;
+						}
+					  }
+					}
+
+					&.crystal {
+					  span {
+						&:after {
+						  background: url(/images/template53/crystal_16.png) no-repeat center, $color-bg-th;
+						}
+					  }
+					}
+
+					&.eonium {
+					  span {
+						&:after {
+						  background: url(/images/template53/eonium_16.png) no-repeat center, $color-bg-th;
+						}
+					  }
+					}
+				  }
+				}
+			  }
+			}
+
+			&.news_combat_fleet_stolen_ships,
+			&.news_combat_fleet_loss {
+			  min-width: unset;
+
+			  th,
+			  td {
+				text-align: center;
+			  }
+			}
+
+			&.news_combat_fleet_cap_roids {
+			  td {
+				span:first-child {
+				  &:after {
+					width: 1rem;
+					height: 1rem;
+					margin-left: .4rem;
+					content: "";
+					display: inline-block;
+					vertical-align: sub;
+				  }
+				}
+
+				&.metal {
+				  span:first-child {
+					&:after {
+					  background: url(/images/template53/metal_16.png) no-repeat center, $color-bg-th;
+					}
+				  }
+				}
+
+				&.crystal {
+				  span {
+					&:after {
+					  background: url(/images/template53/crystal_16.png) no-repeat center, $color-bg-th;
+					}
+				  }
+				}
+
+				&.eonium {
+				  span {
+					&:after {
+					  background: url(/images/template53/eonium_16.png) no-repeat center, $color-bg-th;
+					}
+				  }
+				}
+			  }
+			}
 		  }
 
 		  &.news_fleet {
@@ -146,44 +238,6 @@
 
 				th {
 				  position: relative;
-
-				  //&:nth-child(2),
-				  //&:nth-child(3),
-				  //&:nth-child(4) {
-					//font-size: $text-default;
-					//line-height: 1;
-					//text-align: center;
-					//padding: .25rem .5rem;
-					//font-weight: normal;
-					//background: $color-secondary-alt;
-				  //
-					////&:after {
-					////  width: 1rem;
-					////  height: 1rem;
-					////  margin-left: .4rem;
-					////  content: "";
-					////  display: inline-block;
-					////  vertical-align: sub;
-					////}
-				  //}
-
-				  //&:nth-child(2) {
-					//&:after {
-					//  background: url(/images/template53/metal_16.png) no-repeat center, $color-bg-th;
-					//}
-				  //}
-				  //
-				  //&:nth-child(3) {
-					//&:after {
-					//  background: url(/images/template53/crystal_16.png) no-repeat center, $color-bg-th;
-					//}
-				  //}
-				  //
-				  //&:nth-child(4) {
-					//&:after {
-					//  background: url(/images/template53/eonium_16.png) no-repeat center, $color-bg-th;
-					//}
-				  //}
 				}
 			  }
 			}
@@ -274,21 +328,21 @@
 					  }
 
 					  //&:nth-child(2) {
-						//&:after {
-						//  background: url(/images/template53/metal_16.png) no-repeat center, $color-bg-th;
-						//}
+					  //&:after {
+					  //  background: url(/images/template53/metal_16.png) no-repeat center, $color-bg-th;
+					  //}
 					  //}
 					  //
 					  //&:nth-child(3) {
-						//&:after {
-						//  background: url(/images/template53/crystal_16.png) no-repeat center, $color-bg-th;
-						//}
+					  //&:after {
+					  //  background: url(/images/template53/crystal_16.png) no-repeat center, $color-bg-th;
+					  //}
 					  //}
 					  //
 					  //&:nth-child(4) {
-						//&:after {
-						//  background: url(/images/template53/eonium_16.png) no-repeat center, $color-bg-th;
-						//}
+					  //&:after {
+					  //  background: url(/images/template53/eonium_16.png) no-repeat center, $color-bg-th;
+					  //}
 					  //}
 					}
 				  }
