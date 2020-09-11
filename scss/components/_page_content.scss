@@ -77,6 +77,11 @@ h2 {
 	outline: none;
   }
 
+  &.relations_brokennap {
+	background: linear-gradient(to right, $color-background 0%, rgba($color-broken, .2) 50%, $color-background 100%) !important;
+	outline: none;
+  }
+
   &.relations_nap {
 	background: linear-gradient(to right, $color-background 0%, rgba($color-neutral, .25) 50%, $color-background 100%) !important;
   }

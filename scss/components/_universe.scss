@@ -87,6 +87,11 @@ div[id^="page_universe_"] {
 			  outline: none;
 			}
 
+			&.relations_brokennap {
+			  background: rgba($color-broken, .2);
+			  outline: none;
+			}
+
 			&.relations_nap {
 			  background: rgba($color-neutral, .2);
 			}
@@ -370,6 +375,10 @@ div[id^="page_universe_"] {
 
 .relations_hostile {
   background: rgba($color-negative, .125) !important;
+}
+
+.relations_brokennap {
+  background: rgba($color-broken, .2) !important;
 }
 
 .relations_nap {

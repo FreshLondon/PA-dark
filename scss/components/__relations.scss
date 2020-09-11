@@ -11,6 +11,10 @@
   outline: none;
 }
 
+&.relations_brokennap {
+  background: rgba($color-broken, .02);
+}
+
 &.relations_nap {
   background: rgba($color-neutral, .2);
 }
