@@ -106,6 +106,13 @@
 		}
 	  }
 
+	  &:nth-last-child(1) {
+		th,
+		td {
+		  text-align: center;
+		}
+	  }
+
 	  &:nth-last-child(8) {
 		th {
 		  background: $color-secondary-alt;
