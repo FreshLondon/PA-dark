@@ -97,14 +97,16 @@
 	  &:nth-last-child(2),
 	  &:nth-last-child(3),
 	  &:nth-last-child(4),
-	  &:nth-last-child(5) {
+	  &:nth-last-child(5),
+	  &:nth-last-child(6) {
 		th,
 		td {
 		  background: transparent;
+		  text-align: right;
 		}
 	  }
 
-	  &:nth-last-child(7) {
+	  &:nth-last-child(8) {
 		th {
 		  background: $color-secondary-alt;
 
