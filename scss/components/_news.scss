@@ -157,6 +157,12 @@
 			  }
 			}
 
+			&.news_combat_cap_roids {
+			  span.textlabel {
+				padding-left: 3rem;
+			  }
+			}
+
 			&.news_combat_fleet_stolen_ships,
 			&.news_combat_fleet_loss {
 			  min-width: unset;
@@ -169,6 +175,13 @@
 
 			&.news_combat_fleet_cap_roids {
 			  td {
+				border-left: 1px solid rgba($color-primary, .3);
+				text-align: center;
+
+				&:first-of-type {
+				  border-left: none;
+				}
+
 				span:first-child {
 				  &:after {
 					width: 1rem;
@@ -201,6 +214,66 @@
 					&:after {
 					  background: url(/images/template53/eonium_16.png) no-repeat center, $color-bg-th;
 					}
+				  }
+				}
+			  }
+			}
+
+			&.news_combat_stolen_ships {
+			  tr {
+				td {
+				  text-align: center;
+				}
+
+				&:not(:first-child) {
+				  td {
+					&:nth-child(2) {
+					  background: rgba($color-stolen, .075);
+					}
+				  }
+				}
+			  }
+			}
+
+			&.news_combat_report {
+			  text-align: center;
+
+			  tr {
+				&:nth-child(n + 3) {
+				  td {
+					&:nth-child(2) {
+					  background: rgba($color-negative, .15);
+					}
+
+					&:nth-child(3),
+					&:nth-child(7) {
+					  background: rgba($color-killed, .075);
+					}
+
+					&:nth-child(4),
+					&:nth-child(8) {
+					  background: rgba($color-emp, .075);
+					}
+
+					&:nth-child(5) {
+					  border-right: 4px solid $color-background;
+					}
+
+					&:nth-child(5),
+					&:nth-child(9) {
+					  background: rgba($color-stolen, .075);
+					}
+
+					&:nth-child(6) {
+					  background: rgba($color-positive, .1);
+					}
+				  }
+				}
+
+				&:last-child {
+				  td {
+					border-top: 4px solid $color-background;
+					font-weight: bold;
 				  }
 				}
 			  }
@@ -245,47 +318,6 @@
 
 		  &:not(.news_fleet) {
 			table {
-			  &:first-child {
-				tr {
-				  &:nth-child(n + 3) {
-					th,
-					td {
-					  &:nth-child(2) {
-						background: rgba($color-negative, .1);
-					  }
-
-					  &:nth-child(3),
-					  &:nth-child(7) {
-						background: rgba($color-killed, .075);
-					  }
-
-					  &:nth-child(4),
-					  &:nth-child(8) {
-						background: rgba($color-emp, .075);
-					  }
-
-					  &:nth-child(5) {
-						border-right: 4px solid $color-background;
-					  }
-
-					  &:nth-child(5),
-					  &:nth-child(9) {
-						background: rgba($color-stolen, .075);
-					  }
-
-					  &:nth-child(6) {
-						background: rgba($color-positive, .1);
-					  }
-					}
-				  }
-
-				  &:last-child {
-					td {
-					  border-top: 4px solid $color-background;
-					}
-				  }
-				}
-			  }
 
 			  &:last-child {
 				tr {
