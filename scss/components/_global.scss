@@ -4,11 +4,13 @@ body, .pages, #top, #logo, #tnav, #bar_manual, #bar_support, #bar_portal, #bar_f
   background: none;
 }
 
+
 /* Remove fixed dimensions from elements where necessary
    -------------------------------------------------------*/
 .pages, #page, #logo, #tnav, #bar_manual, #bar_support, #bar_portal, #bar_forums, #bar_login, #bar_logout, #contents_header, #contents_information, .container, #header_planet, #menu, .menu_grp, .menu_grp li, #time_loaded, #header, #planet_summary, #tab_links, .research_current, .research_next, .construction_info, .construction_build, .scan_info, .training_info, .scan_action, .training_info .resources li, .training_info .resources li .textvalue, .scan_action, .training_amounts, #security_redundancy_form table, #production_form table .resources li .textvalue, .production_orders table, #full_page, #bcalc, #my_bcalcs, .forum_thread_actions {
   width: auto !important;
 }
+
 
 #logo, #tnav,
 .tnav_link a,
@@ -17,15 +19,18 @@ body, .pages, #top, #logo, #tnav, #bar_manual, #bar_support, #bar_portal, #bar_f
   height: auto;
 }
 
+
 #page, #contents {
   min-height: auto;
   padding-bottom: 0;
 }
 
+
 //remove annoying pabox from login page:
 div#page_login + div + div + div + div#pabox_wrapper {
   display: none;
 }
+
 
 /* Standard Elements
    -------------------------------------------------------*/
@@ -34,9 +39,11 @@ div#page_login + div + div + div + div#pabox_wrapper {
   float: none !important;
 }
 
+
 html {
   font-size: 14px;
 }
+
 
 html,
 body {
@@ -46,15 +53,18 @@ body {
   padding: 0;
 }
 
+
 body {
   font-size: $text-default;
 }
+
 
 body,
 p,
 input {
   color: $color-offwhite;
 }
+
 
 body,
 p,
@@ -66,24 +76,29 @@ input {
   line-height: 1.4;
 }
 
+
 body {
   background-color: $color-background;
 }
+
 
 p {
   margin: 0;
   padding: 0 1rem .5rem;
 }
 
+
 th {
   font-size: $text-small;
   text-transform: uppercase;
 }
 
+
 option {
   background-color: $color-secondary !important;
   color: $color-text !important;
 }
+
 
 hr {
   background: rgba($color-primary, .5);
@@ -92,9 +107,9 @@ hr {
   display: none;
 }
 
+
 /* Page Outline
    -------------------------------------------------------*/
-
 #page {
   position: relative;
   width: 100%;
@@ -117,6 +132,7 @@ hr {
   }
 }
 
+
 /* OTHER
    ---------------------------------*/
 #important_messages_contents {
@@ -128,6 +144,7 @@ hr {
   white-space: initial;
   box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, .4);
 }
+
 
 #message_form {
   width: 60rem;
@@ -157,12 +174,16 @@ hr {
 	}
 
 	#subject {
+	  padding: 0 .75rem;
+	  text-align: left;
 	  display: inline-block;
 	  margin-left: 1.7rem;
 	  width: calc(100% - 6rem);
 	}
 
 	#message_body {
+	  padding: .5rem .75rem;
+	  text-align: left;
 	  display: inline-block;
 	  vertical-align: -14rem;
 	  width: calc(100% - 6rem) !important;
@@ -173,7 +194,7 @@ hr {
 	#charsleft {
 	  display: block;
 	  text-align: center !important;
-	  margin: 0 auto;
+	  margin: 0 auto .5rem;
 	  width: 100%;
 	  font-size: $text-small;
 	}
@@ -194,12 +215,15 @@ hr {
 
   + p {
 	font-size: $text-small;
+	text-align: center !important;
   }
 }
+
 
 #page_alliance #notice + .container .header {
   display: none;
 }
+
 
 .important_message {
   .title {
@@ -222,9 +246,11 @@ hr {
   }
 }
 
+
 #page_journal #notice + .container .header {
   display: none;
 }
+
 
 .input_coords {
   width: 1.6rem;
