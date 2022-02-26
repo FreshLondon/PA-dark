@@ -1,6 +1,5 @@
 /* BCALC
    ---------------------------------*/
-
 #page_bcalc {
   #contents {
 	display: table;
@@ -480,6 +479,7 @@
   #scans_area {
 	background-color: $color-secondary;
 	height: 3rem;
+	min-height: unset;
 	display: block !important;
 	padding: .5rem;
   }
@@ -498,6 +498,50 @@
 
 	  a {
 		font-weight: bold;
+	  }
+	}
+  }
+
+  #side_select_box {
+	width: 216px !important;
+
+	p#side_select {
+	  padding: 0 0 .5rem;
+
+	  a {
+		&:first-of-type {
+		  margin-right: .5rem;
+		}
+
+		&:not(:first-of-type) {
+		  margin-left: .5rem;
+		}
+	  }
+	}
+  }
+
+  #fleet_select_box {
+	p {
+	  &:first-child {
+		position: absolute;
+		right: 0;
+	  }
+
+	  &:nth-child(2) {
+		margin-top: 0.5rem;
+		display: flex;
+		flex-direction: column;
+
+		select {
+		  margin: 0.5rem 0;
+		  text-align: center !important;
+		}
+	  }
+
+	  &:last-child {
+		a {
+		  margin: 0;
+		}
 	  }
 	}
   }
@@ -543,9 +587,66 @@
   #add_own {
 	background: $color-background !important;
 	padding: 1px;
+	@include respond-above(sm) {
+	  position: fixed !important;
+	  left: 50% !important;
+	  top: 50% !important;
+	  transform: translate(-50%, -50%);
+	}
 
-	p:first-child {
-	  height: 0;
+	p {
+	  &:first-child {
+		height: 0;
+		padding: 0;
+	  }
+
+	  &:nth-of-type(2) {
+		background: #171e27;
+		padding: 6px;
+
+		br {
+		  display: none;
+		}
+
+		a {
+		  &:first-of-type {
+			margin: 0 0 0 .5rem !important;
+			color: rgba($color-positive, .75) !important;
+			border-color: rgba($color-positive, .5) !important;
+
+			&:hover {
+			  background-color: rgba($color-positive, .75) !important;
+			}
+		  }
+
+		  &:nth-of-type(2) {
+			margin: 0 !important;
+			color: rgba($color-negative, .75) !important;
+			border-color: rgba($color-negative, .5) !important;
+
+			&:hover {
+			  background-color: rgba($color-negative, .75) !important;
+			}
+		  }
+		}
+	  }
+
+	  &:nth-of-type(3) {
+		display: table;
+		text-align: left;
+		width: auto;
+		position: relative;
+		left: 50%;
+		transform: translateX(-50%);
+	  }
+
+	  &:nth-of-type(2),
+	  &:nth-of-type(3) {
+		a {
+		  display: inline-block;
+		  margin: .25rem !important;
+		}
+	  }
 	}
 
 	table {
@@ -553,6 +654,25 @@
 
 	  tr {
 		background: $color-secondary;
+
+		&:first-child {
+		  background: $color-bg-th;
+
+		  th {
+			max-width: 60px;
+			overflow: hidden;
+			white-space: nowrap;
+
+			&:not(:first-child) {
+			  text-align: right;
+			  padding: .25rem;
+			}
+		  }
+		}
+
+		&:nth-child(even) {
+		  background: $color-secondary-alt;
+		}
 
 		th,
 		td {
@@ -567,14 +687,6 @@
 
 		td {
 		  padding-right: 5px;
-		}
-
-		&:first-child {
-		  background: $color-bg-th;
-		}
-
-		&:nth-child(even) {
-		  background: $color-secondary-alt;
 		}
 	  }
 	}
