@@ -2,14 +2,21 @@
   0% {
 	opacity: 0;
   }
-
   100% {
 	opacity: 1;
   }
 }
 
+
 @keyframes pulse {
   to {
 	text-shadow: 0 0 100px rgba($color-primary, 0);
+  }
+}
+
+
+@keyframes pulse-incs {
+  to {
+	opacity: 1;
   }
 }

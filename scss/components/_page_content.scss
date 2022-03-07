@@ -14,15 +14,18 @@
   }
 }
 
+
 #contents_header,
 #notice .header {
   display: none;
 }
 
+
 #contents_information,
 .container {
   padding: 0;
 }
+
 
 #manual_info {
   display: inline-block;
@@ -46,6 +49,7 @@
 	opacity: 1;
   }
 }
+
 
 .header,
 h2 {
@@ -106,8 +110,8 @@ h2 {
   a:hover {
 	color: rgba($color-primary, .8);
   }
-
 }
+
 
 #notice {
   background: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .6) 50%, rgba(0, 0, 0, 0) 100%);
@@ -132,9 +136,15 @@ h2 {
 	  font-weight: normal;
 
 	  &.notice_warning {
-		color: white;
+		color: #f35050;
 		opacity: 0.75;
 		font-size: $text-small;
+		line-height: 1.8;
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		font-weight: 900;
+		//animation: pulse-incs 1.5s ease-in-out infinite;
 	  }
 	}
 
@@ -145,6 +155,7 @@ h2 {
 	}
   }
 }
+
 
 .maintext {
   p + p {
@@ -162,21 +173,26 @@ h2 {
   }
 }
 
+
 span.center {
   display: block;
 }
+
 
 .superhighlight {
   color: inherit;
 }
 
+
 .small {
   font-size: $text-small;
 }
 
+
 .container .header:first-child {
   margin-top: .5rem;
 }
+
 
 .tooltip,
 .info,
@@ -201,9 +217,12 @@ span.center {
   white-space: initial;
   box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, .4);
 }
+
+
 #side_select_box {
   width: auto !important;
 }
+
 
 #pabox_inner {
   top: 0 !important;
@@ -236,11 +255,13 @@ span.center {
   }
 }
 
+
 .tooltip a:hover,
 .info a:hover,
 .forum_thread_actions a:hover {
   color: $color-primary-dark;
 }
+
 
 #tab_links li {
   padding: 0;
@@ -249,6 +270,7 @@ span.center {
 	margin: 0 .75rem;
   }
 }
+
 
 //#tab_links {
 //  li {
@@ -282,19 +304,21 @@ span.center {
 //	}
 //  }
 //}
-
 .error {
   color: $color-neutral;
   font-weight: normal;
 }
 
+
 .textvalue {
   font-weight: bold;
 }
 
+
 .resources .textvalue {
   font-weight: normal;
 }
+
 
 #footer {
   grid-column: 1 / 4;
