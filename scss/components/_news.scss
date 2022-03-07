@@ -3,6 +3,8 @@
 	> table {
 	  > tbody {
 		> tr {
+
+
 		  &.new {
 			> th,
 			> td {
@@ -318,7 +320,6 @@
 
 		  &:not(.news_fleet) {
 			table {
-
 			  &:last-child {
 				tr {
 				  th,
@@ -348,7 +349,6 @@
 					  &:nth-child(2),
 					  &:nth-child(3),
 					  &:nth-child(4) {
-
 						&:after {
 						  width: 1rem;
 						  height: 1rem;
@@ -404,9 +404,9 @@
   }
 }
 
+
 #page_news_entry {
   table {
-
 	table {
 	  tr {
 		&:nth-child(even) {

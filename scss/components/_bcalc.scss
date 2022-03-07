@@ -587,12 +587,12 @@
   #add_own {
 	background: $color-background !important;
 	padding: 1px;
-	@include respond-above(sm) {
-	  position: fixed !important;
-	  left: 50% !important;
-	  top: 50% !important;
-	  transform: translate(-50%, -50%);
-	}
+	max-height: 94vh;
+	overflow: scroll;
+	position: fixed !important;
+	left: 50% !important;
+	top: 50% !important;
+	transform: translate(-50%, -50%);
 
 	p {
 	  &:first-child {

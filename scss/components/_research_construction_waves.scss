@@ -1,6 +1,5 @@
 /* RESEARCH, CONSTRUCTION & WAVES
    -------------------------------------------------------*/
-
 .branch_name h3,
 .construction_info .title,
 .scans .title,
@@ -14,6 +13,7 @@
   text-shadow: 1px 1px 0px #000;
 }
 
+
 .research,
 .research_branch {
   .title {
@@ -23,6 +23,7 @@
 	color: $color-primary;
   }
 }
+
 
 .construction_info,
 .scans {
@@ -42,6 +43,7 @@
   }
 }
 
+
 .research,
 .construction_info {
   p {
@@ -51,9 +53,11 @@
   }
 }
 
+
 .scans p {
   padding-left: .5rem;
 }
+
 
 #constructions {
   .maintext {
@@ -301,6 +305,7 @@
   }
 }
 
+
 #research {
   > .maintext {
 	> p {
@@ -308,6 +313,7 @@
 	}
   }
 }
+
 
 .research {
   text-align: center;
@@ -385,7 +391,6 @@
 	  }
 
 	  p {
-
 		&:not(.center) {
 		  padding: 0;
 		}
@@ -445,7 +450,6 @@
 		margin-right: 2rem;
 	  }
 	}
-
   }
 
   .researchform {
@@ -455,6 +459,7 @@
 	order: 7;
   }
 }
+
 
 .research_branch {
   max-width: 375px;
@@ -481,6 +486,7 @@
   }
 }
 
+
 .research_branch_list {
   padding: 0;
   background: $color-secondary;
@@ -506,6 +512,7 @@
   }
 }
 
+
 .scans {
   border: 0;
 
@@ -527,6 +534,7 @@
 	}
   }
 }
+
 
 #page_waves {
   table {
@@ -555,14 +563,18 @@
 	  tr {
 		th,
 		td {
-
 		  &:empty {
 			display: none;
 		  }
 		}
 
-		td {
+		td, th {
+		  &:empty {
+			display: table-cell;
+		  }
+		}
 
+		td {
 		  &[colspan="2"] {
 			background: $color-background;
 			font-size: $text-large;
@@ -659,7 +671,6 @@
 			  font-size: $text-small;
 			}
 		  }
-
 		}
 	  }
 
@@ -670,7 +681,6 @@
 	  }
 
 	  form {
-
 		&#stored_scans_form {
 		  p.right {
 			span.superhighlight + input[type="checkbox"] {
@@ -737,16 +747,19 @@
   }
 }
 
+
 #stored_scans_form {
   input[type="submit"] {
 	margin: 0 0 0 1rem !important;
   }
 }
 
+
 .scan_time {
   font-size: $text-small;
   text-align: center;
 }
+
 
 #scan {
   .maintext {
@@ -790,11 +803,13 @@
 		}
 	  }
 	}
+
 	p {
 	  text-align: center;
 	}
   }
 }
+
 
 #waves,
 #search_scans,
@@ -805,12 +820,14 @@
   }
 }
 
+
 #waves {
   p {
 	text-align: center;
 	width: 100%;
   }
 }
+
 
 #search_scans {
   input[type="submit"] {
