@@ -7,6 +7,8 @@
 	}
   }
 
+
+
   input {
 	margin: 0 !important;
 
@@ -76,6 +78,9 @@
 			  &.mod {
 				color: $color-mod;
 			  }
+			}
+			&:last-child {
+			  font-size: $text-medium;
 			}
 		  }
 		}
