@@ -194,7 +194,12 @@
 	  }
 	}
   }
+
+  p {
+	text-align: center;
+  }
 }
+
 
 #attack_claim_form,
 .alliance_attack_claims_status {
@@ -207,6 +212,7 @@
 	margin-bottom: 0;
   }
 }
+
 
 #attack_claim_form {
   padding-top: 36px;

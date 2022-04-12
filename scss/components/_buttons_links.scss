@@ -10,6 +10,7 @@ a,
   }
 }
 
+
 #menu {
   a {
 	color: rgba($color-primary, .8);
@@ -48,7 +49,6 @@ a,
   #menu_logout,
   #menu_view_link {
 	a {
-
 	  &:after,
 	  &:before {
 		width: 0 !important;
@@ -82,6 +82,7 @@ a,
   }
 }
 
+
 #page input[type="submit"],
 input[type="submit"],
 .forum_thread_new a,
@@ -93,7 +94,7 @@ input[type="submit"],
 #mce_editor_0_parent input,
 #bcalc input[type="button"],
 #bcalc input[type="submit"],
-#page_bcalc #fleet_select_box p:last-child  a,
+#page_bcalc #fleet_select_box p:last-child a,
 #page_bcalc #add_own p:nth-of-type(2) a,
 #page_bcalc #add_own p:nth-of-type(3) a,
 #page input[type="button"],
@@ -103,7 +104,7 @@ ul.alliance_attack_claims_list a,
 #wave_table + p a[onclick^="add_row"],
 #target_table + p a[onclick^="add_row"],
 #page_universe_races #intel + .container table a,
-#page_alliance_attacks .container#javascriptwarning + .container + .container table tr a,
+#page_alliance_attacks .container#javascriptwarning + .container + .container table tr[id^="target_"] a,
 #page_alliance_attacks .container#javascriptwarning + .container + .container + .container table tr:not([class]):not([id]) a,
 #page_alliance_attacks .container#javascriptwarning + #notice + .container + .container + .container table tr:not([class]):not([id]) a,
 #page_alliance_fleets #contents table tr td[style="width: 20%;"] a,
@@ -137,22 +138,34 @@ ul.alliance_attack_claims_list a,
   }
 }
 
+
 #page_scan .maintext a,
 #side_select_box p:not(:first-child) a {
   margin: 0;
 }
 
+
 #page_scan .maintext a[href^="showscan"] {
   margin-bottom: 1rem;
 }
+
 
 ul.alliance_attack_claims_list a {
   margin: .25rem 0;
 }
 
+
 input[type="submit"] {
   border: none;
 }
+
+
+a[target="scan"] {
+  display: inline-block;
+  min-width: 12px;
+  text-align: center;
+}
+
 
 #page {
   .container {
@@ -161,7 +174,6 @@ input[type="submit"] {
 	  + #tab_container,
 	  + #notice + .container,
 	  + #notice + #tab_container {
-
 		table,
 		ul {
 		  tr {
