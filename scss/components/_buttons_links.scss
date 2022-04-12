@@ -138,6 +138,10 @@ ul.alliance_attack_claims_list a,
   }
 }
 
+#page_alliance_attacks .container#javascriptwarning + .container + .container table tr[id^="target_"] a {
+  margin: 0;
+}
+
 
 #page_scan .maintext a,
 #side_select_box p:not(:first-child) a {
