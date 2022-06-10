@@ -1,0 +1,86 @@
+/*!
+*  v2.2.15
+*  This skin addon is designed to run with the r32 skin selected in PA preferences.
+*
+*  If this skin customisation adds even a tiny bit of enjoyment to your gaming experience it was well worth the countless hours of development.
+*  Made with love, for my fellow spreadsheet warriors.
+*  Ultimate <3
+*
+*  For any questions / bug reports / assistance, contact @UltimateNewbie on TG.
+*  Thanks to Leshy for the original inspiration and CSS grid layout, forever grateful!
+*
+*
+*  Here's some tips:
+*
+*  INSTALL INSTRUCTIONS:
+*  You'll need to enable the 'Round 32' as the base skin in preferences, and a browser extension to add the new CSS to the PA pages:
+*  Chrome or other chromium based browsers (Brave, Opera, Yandex beta, etc.. pretty much any non-FireFox browser): (https://chrome.google.com/webstore/detail/user-javascript-and-css/nbhcbdghjpllgmfilhnhkllmkecfmpld)
+*  FireFox: (https://addons.mozilla.org/en-GB/firefox/addon/custom-style-script/)
+*
+*  This Dark skin CSS can always be refreshed for new updates etc it's found here:
+*  https://raw.githubusercontent.com/FreshLondon/PA-dark/master/dist/styles.css
+*
+*  MOBILE USE:
+*  Any chromium based browser (yandex beta, brave, opera, etc) or FireFox (probably use this as that annoying PA calc import bug isn't present) supports addons, use the chrome extension above for any non-Firefox browser.
+*  Note: iOS disabled support for firefox extensions, I'd recommend Yandex Beta if on iOS.
+*
+*  IF IT'S FUCKED:
+*  Make sure you are not viewing mobile in SIMPLE view or it will look really shit.
+*  Hit the 'view pages in full version' button (change this at the bottom left of the side menu).
+*
+*  Have fun / enjoy / leave suggestions and feedback - let's make this awesome together!
+*
+*/
+
+// lets define here all the separated SCSS files to compile into one..
+// fingers crossed they'll all get useful naming conventions to help with organisation!
+//
+// necessary stuff, mixins etc
+@import "lib/mixins";
+@import "lib/variables";
+//
+// start the actual styles here:
+@import "components/global";
+@import "components/top_bar";
+@import "components/menu";
+@import "components/planet_details";
+@import "components/page_content";
+@import "components/overview";
+@import "components/messages";
+@import "components/galaxy_forum";
+@import "components/galaxy_status";
+@import "components/mining";
+@import "components/research_construction_waves";
+@import "components/population";
+@import "components/covert_ops";
+@import "components/production";
+@import "components/fleets";
+@import "components/foreign_affairs";
+@import "components/login_support_manual_stats";
+@import "components/universe";
+@import "components/galaxy";
+@import "components/alliance_defence";
+@import "components/alliance_page_ship_overview";
+@import "components/alliance_attacks";
+@import "components/alliance_fleets";
+@import "components/alliance_applicants";
+@import "components/alliance_members";
+@import "components/alliance_access";
+@import "components/alliance_scans";
+@import "components/history";
+@import "components/page_journal";
+@import "components/news";
+@import "components/bcalc";
+@import "components/scans";
+//
+@import "components/forms";
+@import "components/buttons_links";
+@import "components/tables";
+@import "components/mobile";
+//
+@import "lib/animations";
+
+/*!
+*
+*  P.S. If you can see this and the message at the start then you successfully copied and pasted the entire file, epic.
+*/
