@@ -21,7 +21,7 @@ Ultimate :purple_heart:
 * [Chrome or other chromium based browsers](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne) (Brave, Opera, Yandex beta, etc.. pretty much any non-FireFox browser).
 * [FireFox stylus extension](https://addons.mozilla.org/en-US/firefox/addon/styl-us/)
 
-* This Dark skin CSS can always be refreshed for new updates etc, it's [found here](https://raw.githubusercontent.com/FreshLondon/PA-dark/master/dist/styles.css).
+* This Dark skin CSS can always be refreshed for new updates etc, it's [found here](https://raw.githubusercontent.com/FreshLondon/PA-dark/master/dist/styles.min.css).
 
 ###  MOBILE USE:
 *  Any chromium based browser (yandex beta, brave, opera, etc) or FireFox (probably use this as that annoying PA calc import bug isn't present) supports addons, use the chrome extension above for any non-Firefox browser.
