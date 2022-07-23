@@ -624,7 +624,6 @@ hr {
 #header #header_news {
   max-width: unset;
   background: rgba(0, 0, 0, 0.6);
-  transition: ease background-color 0.5s;
   position: absolute;
   top: 0;
 }
@@ -683,7 +682,6 @@ hr {
   border: 1px solid transparent;
   border-image: linear-gradient(to right, #3c6b9c 0%, #24313f 100%);
   border-image-slice: 1;
-  border-left: none;
   right: 0;
 }
 #header #header_news:hover {

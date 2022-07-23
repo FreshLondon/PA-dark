@@ -68,7 +68,7 @@
   #header_news {
 	max-width: unset;
 	background: rgba(black, .6);
-	transition: ease background-color .5s;
+	//transition: ease background-color .5s;
 	position: absolute;
 	top: 0;
 
@@ -130,7 +130,6 @@
 	border: 1px solid transparent;
 	border-image: linear-gradient(to right, rgb(60, 107, 156) 0%, #24313f 100%);
 	border-image-slice: 1;
-	border-left: none;
 	right: 0;
 
 	&:hover {
