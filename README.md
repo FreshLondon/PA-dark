@@ -1,15 +1,11 @@
-# Ultimate v3.2
+# Ultimate v3.93
 
 Customised dark theme for [Planetarion](https://planetarion.com) created to enhance the 'Round 32' skin.
+For anyone wishing to use the styles, please see the raw compiled output found at [/dist/styles.css](https://raw.githubusercontent.com/FreshLondon/PA-dark/master/dist/styles.css).
 
 If this skin customisation adds even a tiny bit of enjoyment to your gaming experience it was well worth the countless hours of development.
 
-For anyone wishing to use the styles, please see the raw compiled output found at [/dist/styles.css](https://raw.githubusercontent.com/FreshLondon/PA-dark/master/dist/styles.css).
-
-
-Made with love, for my fellow spreadsheet warriors.
-
-Ultimate :purple_heart:
+Made with love, for my fellow spreadsheet warriors :purple_heart:
 
 *For any questions / bug reports / assistance, contact @UltimateNewbie on TG. Thanks to Leshy for the original inspiration and CSS grid layout, you rock - forever grateful!*
 
@@ -28,6 +24,7 @@ Ultimate :purple_heart:
 *  Note: iOS disabled support for firefox extensions, I'd recommend Yandex Beta if on iOS.
 
 ###  IF IT'S FUCKED:
-*  Make sure you are not viewing mobile in SIMPLE view or it will look really shit.
-*  Hit the 'view pages in full version' button (change this at the bottom left of the side menu).
-*  Have fun / enjoy / leave suggestions and feedback - let's make this awesome together!
+* Make sure you are not viewing mobile in SIMPLE view or it will look really shit.
+* Hit the 'view pages in full version' button (change this at the bottom left of the side menu).
+
+Have fun / enjoy / leave suggestions and feedback - let's make this awesome together!
