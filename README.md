@@ -6,8 +6,6 @@ For anyone wishing to use the styles, please see the raw compiled output found a
 
 *For any questions / bug reports / assistance, contact @UltimateNewbie on TG. Thanks to Leshy for the original inspiration and CSS grid layout, you rock - forever grateful!*
 
----
----
 
 ## Here's some tips:
 
@@ -31,5 +29,3 @@ For anyone wishing to use the styles, please see the raw compiled output found a
 If this skin customisation adds even a tiny bit of enjoyment to your gaming experience it was well worth the countless hours of development.
 
 Have fun / enjoy / leave suggestions and feedback - let's make this awesome together!
-
----
