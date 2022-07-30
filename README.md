@@ -1,11 +1,10 @@
 # Ultimate v3.93
 
-Customised dark theme for [Planetarion](https://planetarion.com) created to enhance the 'Round 32' skin.
+Customised dark theme for [Planetarion](https://planetarion.com) created to enhance the 'Round 32' skin. Made with :purple_heart: for my fellow spreadsheet warriors
+
 For anyone wishing to use the styles, please see the raw compiled output found at [/dist/styles.css](https://raw.githubusercontent.com/FreshLondon/PA-dark/master/dist/styles.css).
 
 If this skin customisation adds even a tiny bit of enjoyment to your gaming experience it was well worth the countless hours of development.
-
-Made with love, for my fellow spreadsheet warriors :purple_heart:
 
 *For any questions / bug reports / assistance, contact @UltimateNewbie on TG. Thanks to Leshy for the original inspiration and CSS grid layout, you rock - forever grateful!*
 
