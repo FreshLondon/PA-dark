@@ -293,6 +293,14 @@
 #page_manual .Etd td {
   color: $color-eitraides;
 }
+.kin,
+#page_manual .Kin td {
+  color: $color-kinthia;
+}
+.sly,
+#page_manual .Sly td {
+  color: $color-slythonian;
+}
 
 #planet_summary {
   grid-column: 3 / 3;
