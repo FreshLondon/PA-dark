@@ -1405,7 +1405,6 @@ span.center {
   color: #ccc;
   text-align: left;
   margin-bottom: 0.25rem;
-  padding-left: 0.25rem;
   position: relative;
   padding: 0.5rem 1rem 0.5rem 0.5rem;
   font-size: 0.75rem;
@@ -2370,7 +2369,6 @@ table.mceEditor tr td select.mceSelectList:first-of-type {
 }
 .research_branch .completed .title {
   position: relative;
-  background: none;
   margin: 0 auto;
   background: #171e27;
   padding: 0.5rem 2rem;
@@ -2614,11 +2612,7 @@ table.mceEditor tr td select.mceSelectList:first-of-type {
 
 /* POPULATION
    -------------------------------------------------------*/
-.slider_track {
-  /*! */
-}
 .slider_track .slider_slider {
-  background: rgb(26, 34, 44);
   height: 4px;
   line-height: 0;
   margin: 7px 4px 7px 4px;

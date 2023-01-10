@@ -2,7 +2,6 @@
    -------------------------------------------------------*/
 .slider_track {
   .slider_slider {
-	background: rgb(26, 34, 44);
 	height: 4px;
 	line-height: 0;
 	margin: 7px 4px 7px 4px;
@@ -13,8 +12,6 @@
 	background: rgba($color-primary, .18);
 	box-shadow: -1px 1px 5px 0px #000, 0px 0px 1px 1px $color-primary;
   }
-
-  /*! */
 
   .population_slider {
 	background: $color-primary;
