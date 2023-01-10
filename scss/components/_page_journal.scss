@@ -7,14 +7,14 @@
         &:nth-child(odd) {
           th,
           td {
-            background: rgba(0, 0, 0, 0.15);
+            background: rgba(#000, .15);
           }
         }
 
         &:nth-child(even) {
           th,
           td {
-            background: rgba(0, 0, 0, 0.1);
+            background: rgba(#000, .1);
           }
         }
 
@@ -37,14 +37,14 @@
         &:nth-child(odd) {
           th,
           td {
-            background: rgba(0, 0, 0, 0.15);
+            background: rgba(#000, .15);
           }
         }
 
         &:nth-child(even) {
           th,
           td {
-            background: rgba(0, 0, 0, 0.1);
+            background: rgba(#000, .1);
           }
         }
 

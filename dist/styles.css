@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*!
-*  v3.93
+*  v4.01
 *  This skin addon is designed to run with the r32 skin selected in PA preferences.
 *
 *  If this skin customisation adds even a tiny bit of enjoyment to your gaming experience it was well worth the countless hours of development.
@@ -32,6 +32,30 @@
 *  Have fun / enjoy / leave suggestions and feedback - let's make this awesome together!
 *
 */
+body {
+  overflow: auto;
+  /* total width */
+  /* background of the scrollbar except button or resizer */
+  /* scrollbar itself */
+  /* set button(top and bottom of the scrollbar) */
+}
+body::-webkit-scrollbar {
+  background-color: #24303f;
+  width: 8px;
+}
+body::-webkit-scrollbar-track {
+  background-color: #24303f;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: rgba(36, 48, 63, 0.4);
+  border: 1px solid rgba(82, 165, 248, 0.5);
+  box-shadow: inset 0 0 2px 0 rgba(82, 165, 248, 0.4), 0 0 16px 0 rgba(0, 0, 0, 0.9);
+  border-radius: 8px;
+}
+body::-webkit-scrollbar-button {
+  display: none;
+}
+
 /* Remove most template background images
    -------------------------------------------------------*/
 body, .pages, #top, #logo, #tnav, #bar_manual, #bar_support, #bar_portal, #bar_forums, #bar_logout, #bar_login, #bar_signup, #menu_top, .menu_grp, #menu_overview, #menu_preferences, #menu_logout, #menu_bottom, #header, #header_planet, #header_mail, #header_news, #header_tick, #header_metal, #header_crystal, #header_eonium, #header_asteroids, #header_value, #header_xp, #header_score, #header_rank, #planet_summary_construction, #planet_summary_research, #planet_summary_production, #planet_summary_footer, #contents_header, #contents_information, .container, #contents_footer, #tab_links, #footer, #important_messages_contents_header, #important_messages_contents_footer, #page_manual .entries, #page_manual .entry_sep, #entry_search {
@@ -457,7 +481,7 @@ hr {
   position: relative;
 }
 #menu #menu_time span#time_loaded:before {
-  content: "Ultimate skin v3.93";
+  content: "Ultimate skin v4.01";
   position: absolute;
   bottom: -3.75rem;
   font-size: 1rem;
@@ -839,6 +863,7 @@ hr {
   padding: 30px 0 0;
   box-shadow: inset 0 0 8px 2px rgba(0, 0, 0, 0.25), 0 0 3px 3px rgba(0, 0, 0, 0.15);
   position: relative;
+  overflow: hidden;
 }
 @media (max-width: 767px) {
   #planet_summary {

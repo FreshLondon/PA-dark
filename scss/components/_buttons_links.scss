@@ -118,7 +118,7 @@ ul.alliance_attack_claims_list a,
   color: $color-primary !important;
   background: rgba($color-secondary, .4) !important;
   border: 1px solid rgba($color-primary, .5) !important;
-  box-shadow: inset 0 2px 4px 2px rgba(0, 0, 0, .4);
+  box-shadow: inset 0 2px 4px 2px rgba(#000, .4);
   cursor: pointer;
   border-radius: 3px;
   text-transform: initial;

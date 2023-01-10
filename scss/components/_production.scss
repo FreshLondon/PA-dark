@@ -90,11 +90,11 @@
 
 	  &[colspan="9"],
 	  &[colspan="10"] {
-		background: rgba(0, 0, 0, 0.12) !important;
+		background: rgba(#000, .12) !important;
 
 		+ td,
 		+ td + td {
-		  background: rgba(0, 0, 0, 0.12);
+		  background: rgba(#000, .12);
 		}
 	  }
 	}

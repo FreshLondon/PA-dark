@@ -69,7 +69,7 @@
       color: $color-offwhite;
       font-size: $text-default;
       background-color: rgba($color-secondary, .4);
-      box-shadow: inset 0px 2px 4px 2px rgba(0, 0, 0, 0.4);
+      box-shadow: inset 0px 2px 4px 2px rgba(#000, .4);
       border-radius: 3px;
     }
 
@@ -292,7 +292,7 @@
       padding: 0 .5rem .5rem;
 
       &.nowrap {
-        box-shadow: 0 2px 4px 2px rgba(0, 0, 0, 0.15), inset 0 2px 1px 1px rgba($color-primary, .09);
+        box-shadow: 0 2px 4px 2px rgba(#000, .15), inset 0 2px 1px 1px rgba($color-primary, .09);
         background: $color-secondary;
         border-radius: 4px;
       }
