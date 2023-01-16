@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*!
-*  v4.01
+*  v4.02
 *  This skin addon is designed to run with the r32 skin selected in PA preferences.
 *
 *  If this skin customisation adds even a tiny bit of enjoyment to your gaming experience it was well worth the countless hours of development.
@@ -481,7 +481,7 @@ hr {
   position: relative;
 }
 #menu #menu_time span#time_loaded:before {
-  content: "Ultimate skin v4.01";
+  content: "Ultimate skin v4.02";
   position: absolute;
   bottom: -3.75rem;
   font-size: 1rem;
@@ -863,7 +863,6 @@ hr {
   padding: 30px 0 0;
   box-shadow: inset 0 0 8px 2px rgba(0, 0, 0, 0.25), 0 0 3px 3px rgba(0, 0, 0, 0.15);
   position: relative;
-  overflow: hidden;
 }
 @media (max-width: 767px) {
   #planet_summary {
@@ -3231,6 +3230,64 @@ span.small.notice_warning {
   display: block !important;
   margin: 1rem auto 0 !important;
 }
+#page_fleets .ct_fleets {
+  display: table;
+  border-spacing: 2px;
+  border: 0;
+  background: transparent;
+}
+#page_fleets .ct_fleets tr {
+  display: table-row !important;
+}
+#page_fleets .ct_fleets tr th,
+#page_fleets .ct_fleets tr td {
+  height: auto;
+  vertical-align: middle;
+  border: none;
+  border-spacing: 0;
+}
+#page_fleets .ct_fleets tr th {
+  background: transparent;
+}
+#page_fleets .ct_fleets tr td {
+  background: #24303f;
+}
+#page_fleets .ct_fleets tr:nth-child(odd) td {
+  background: #1e2935;
+}
+#page_fleets .ct_fleets tr:nth-child(1), #page_fleets .ct_fleets tr:nth-child(2) {
+  display: flex;
+}
+#page_fleets .ct_fleets tr:nth-child(1) th, #page_fleets .ct_fleets tr:nth-child(2) th {
+  width: 100%;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #ccc;
+  background: #24303f;
+  background: linear-gradient(to right, #1a222c 0%, #24303f 50%, #1a222c 100%) !important;
+  border: 1px solid transparent;
+  border-image: linear-gradient(to right, transparent 0%, rgba(82, 165, 248, 0.5) 50%, transparent 100%);
+  border-image-slice: 1;
+  line-height: 100%;
+}
+#page_fleets .ct_fleets tr:nth-child(1) th {
+  border-bottom-width: 0;
+  padding: 10px 10px 5px;
+}
+#page_fleets .ct_fleets tr:nth-child(2) th {
+  border-top-width: 0;
+  padding: 5px 10px 10px;
+}
+#page_fleets .ct_fleets tr:nth-child(3) td {
+  background: #171e27;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+#page_fleets .ct_fleets tr:nth-child(3) td small {
+  font-size: 0.75rem;
+}
 
 #fleet_overview tr {
   background-color: #24303f;
@@ -4495,7 +4552,7 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
   background: #52a5f8 !important;
   box-shadow: none;
 }
-#page_alliance_defence .maintext .ally_def_eta_wrapper .ally_def_incs_wrapper .ally_def_target .ally_def_target_links + div > a.autocalc {
+#page_alliance_defence .maintext .ally_def_eta_wrapper .ally_def_incs_wrapper .ally_def_target .ally_def_target_links + div > a.calcz {
   display: inline-block;
   padding: 0.25rem 0.5rem;
   color: #32ab52 !important;
@@ -4514,7 +4571,7 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
   transition-duration: 0.75s;
   transition-timing-function: linear;
 }
-#page_alliance_defence .maintext .ally_def_eta_wrapper .ally_def_incs_wrapper .ally_def_target .button-autocalc {
+#page_alliance_defence .maintext .ally_def_eta_wrapper .ally_def_incs_wrapper .ally_def_target .button-calcz {
   display: inline-block;
   padding: 0.25rem 0.5rem;
   color: #52a5f8 !important;

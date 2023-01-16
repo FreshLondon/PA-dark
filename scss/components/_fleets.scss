@@ -2,160 +2,160 @@
    -------------------------------------------------------*/
 #page_fleets {
   td[colspan="11"] {
-	background: transparent !important;
+    background: transparent !important;
 
-	&:empty {
-	  display: none;
-	}
+    &:empty {
+      display: none;
+    }
   }
 
   #base_behavior {
-	.header {
-	  display: none;
-	}
+    .header {
+      display: none;
+    }
 
-	.maintext {
-	  margin-top: .5rem;
-	}
+    .maintext {
+      margin-top: .5rem;
+    }
 
-	p {
-	  color: $color-offwhite;
-	  padding: 8px 0;
-	  border: 1px solid transparent;
-	  border-image: linear-gradient(to right, transparent 0%, rgba($color-primary, .5) 50%, transparent 100%);
-	  border-image-slice: 1;
+    p {
+      color: $color-offwhite;
+      padding: 8px 0;
+      border: 1px solid transparent;
+      border-image: linear-gradient(to right, transparent 0%, rgba($color-primary, .5) 50%, transparent 100%);
+      border-image-slice: 1;
 
-	  &.mission_attack {
-		background: linear-gradient(to right, transparent 0%, rgba($color-negative, .2) 50%, transparent 100%);
-	  }
+      &.mission_attack {
+        background: linear-gradient(to right, transparent 0%, rgba($color-negative, .2) 50%, transparent 100%);
+      }
 
-	  &.mission_defend {
-		background: linear-gradient(to right, transparent 0%, rgba($color-positive, .2) 50%, transparent 100%);
-	  }
-	}
+      &.mission_defend {
+        background: linear-gradient(to right, transparent 0%, rgba($color-positive, .2) 50%, transparent 100%);
+      }
+    }
 
-	input[type="submit"] {
-	  margin: 0;
-	}
+    input[type="submit"] {
+      margin: 0;
+    }
   }
 
   form {
-	tr {
-	  &:last-child {
-		td {
-		  background: transparent;
-		}
-	  }
+    tr {
+      &:last-child {
+        td {
+          background: transparent;
+        }
+      }
 
-	  th {
-		background: $color-bg-th;
-	  }
+      th {
+        background: $color-bg-th;
+      }
 
-	  td {
-		background: $color-secondary;
+      td {
+        background: $color-secondary;
 
-		input.input_coords {
-		  margin-right: 5px;
+        input.input_coords {
+          margin-right: 5px;
 
-		  &:last-child {
-			margin-right: 0;
-		  }
-		}
+          &:last-child {
+            margin-right: 0;
+          }
+        }
 
-		&:empty {
-		  background: transparent;
-		}
+        &:empty {
+          background: transparent;
+        }
 
-		&.mission_return {
-		  opacity: 1;
-		}
+        &.mission_return {
+          opacity: 1;
+        }
 
-		&.mission_attack {
-		  background: rgba($color-negative, .14);
-		}
+        &.mission_attack {
+          background: rgba($color-negative, .14);
+        }
 
-		&.mission_defend {
-		  background: rgba($color-positive, .14);
-		}
+        &.mission_defend {
+          background: rgba($color-positive, .14);
+        }
 
-		&.mission_fake_defend {
-		  background: rgba($color-neutral, .14);
-		}
-	  }
+        &.mission_fake_defend {
+          background: rgba($color-neutral, .14);
+        }
+      }
 
-	  &:nth-child(even) {
-		td {
-		  background: $color-secondary-alt;
+      &:nth-child(even) {
+        td {
+          background: $color-secondary-alt;
 
-		  &:empty {
-			background: transparent;
-		  }
-		}
-	  }
+          &:empty {
+            background: transparent;
+          }
+        }
+      }
 
-	  &:nth-last-child(1),
-	  &:nth-last-child(2),
-	  &:nth-last-child(3),
-	  &:nth-last-child(4),
-	  &:nth-last-child(5),
-	  &:nth-last-child(6) {
-		th,
-		td {
-		  background: transparent;
-		  text-align: right;
-		}
-	  }
+      &:nth-last-child(1),
+      &:nth-last-child(2),
+      &:nth-last-child(3),
+      &:nth-last-child(4),
+      &:nth-last-child(5),
+      &:nth-last-child(6) {
+        th,
+        td {
+          background: transparent;
+          text-align: right;
+        }
+      }
 
-	  &:nth-last-child(1) {
-		th,
-		td {
-		  text-align: center;
-		}
-	  }
+      &:nth-last-child(1) {
+        th,
+        td {
+          text-align: center;
+        }
+      }
 
-	  &:nth-last-child(8) {
-		th {
-		  background: $color-secondary-alt;
+      &:nth-last-child(8) {
+        th {
+          background: $color-secondary-alt;
 
-		  &:not(:first-child) {
-			font-size: $text-large;
-		  }
-		}
-	  }
-	}
+          &:not(:first-child) {
+            font-size: $text-large;
+          }
+        }
+      }
+    }
 
-	&[name="movement"] {
-	  display: table;
-	  margin: 0 auto .5rem;
-	  padding: 15px 30px;
-	  background: $color-secondary;
-	  border: 1px solid transparent;
-	  border-image: linear-gradient(to right, transparent 0%, rgba($color-primary, .5) 50%, transparent 100%);
-	  border-image-slice: 1;
-	  box-shadow: inset 0 0 8px 2px rgba(#000, .25), 0 0 3px 3px rgba(#000, .15);
+    &[name="movement"] {
+      display: table;
+      margin: 0 auto .5rem;
+      padding: 15px 30px;
+      background: $color-secondary;
+      border: 1px solid transparent;
+      border-image: linear-gradient(to right, transparent 0%, rgba($color-primary, .5) 50%, transparent 100%);
+      border-image-slice: 1;
+      box-shadow: inset 0 0 8px 2px rgba(#000, .25), 0 0 3px 3px rgba(#000, .15);
 
-	  div#currentMoves {
-		max-width: 600px;
-		margin: 0 auto;
-		text-align: center;
-		line-height: 2;
+      div#currentMoves {
+        max-width: 600px;
+        margin: 0 auto;
+        text-align: center;
+        line-height: 2;
 
-		a {
-		  margin: 0 0 0 5px !important;
-		  line-height: 1.5rem !important;
-		  width: auto !important;
-		}
+        a {
+          margin: 0 0 0 5px !important;
+          line-height: 1.5rem !important;
+          width: auto !important;
+        }
 
-		br + br {
-		  display: none;
-		}
+        br + br {
+          display: none;
+        }
 
-		input[type="submit"] {
-		  display: block !important;
-		  margin: 1rem auto 0 !important;
-		}
-	  }
-	}
+        input[type="submit"] {
+          display: block !important;
+          margin: 1rem auto 0 !important;
+        }
+      }
+    }
   }
 
   //#d_stats {
@@ -170,76 +170,158 @@
   //  }
   //}
   //}
+  .ct_fleets {
+    display: table;
+    border-spacing: 2px;
+    border: 0;
+    background: transparent;
+
+    tr {
+      //&:not(:nth-child(1)):not(:nth-child(2)) {
+        display: table-row !important;
+      //}
+
+      th,
+      td {
+        height: auto;
+        vertical-align: middle;
+        border: none;
+        border-spacing: 0;
+      }
+
+      th {
+        background: transparent;
+      }
+
+      td {
+        background: $color-secondary;
+      }
+
+      &:nth-child(odd) {
+        td {
+          background: $color-secondary-alt;
+        }
+      }
+
+      &:nth-child(1),
+      &:nth-child(2) {
+        display: flex;
+
+        th {
+          width: 100%;
+          font-size: 1rem;
+          font-weight: bold;
+          text-transform: uppercase;
+          color: $color-offwhite;
+          background: $color-secondary;
+          background: linear-gradient(to right, $color-background 0%, $color-secondary 50%, $color-background 100%) !important;
+          border: 1px solid transparent;
+          border-image: linear-gradient(to right, transparent 0%, rgba($color-primary, .5) 50%, transparent 100%);
+          border-image-slice: 1;
+          line-height: 100%;
+        }
+      }
+
+
+      &:nth-child(1) {
+        th {
+          border-bottom-width: 0;
+          padding: 10px 10px 5px;
+        }
+      }
+
+      &:nth-child(2) {
+        th {
+          border-top-width: 0;
+          padding: 5px 10px 10px;
+        }
+      }
+
+
+      &:nth-child(3) {
+        td {
+          background: $color-bg-th;
+          font-size: 0.75rem;
+          text-transform: uppercase;
+          font-weight: bold;
+
+          small {
+            font-size: 0.75rem;
+          }
+        }
+      }
+    }
+  }
 }
 
 #fleet_overview {
   tr {
-	background-color: $color-secondary;
+    background-color: $color-secondary;
 
-	&:nth-child(odd) {
-	  background-color: $color-secondary-alt;
-	}
+    &:nth-child(odd) {
+      background-color: $color-secondary-alt;
+    }
 
-	&.mission_defend,
-	&.mission_attack,
-	&.mission_return {
-	  .btn {
-		color: $color-primary;
-		//border: 1px solid $color-primary;
-		background: transparent !important;
-		padding: 0 2px;
-		font-size: 14px;
+    &.mission_defend,
+    &.mission_attack,
+    &.mission_return {
+      .btn {
+        color: $color-primary;
+        //border: 1px solid $color-primary;
+        background: transparent !important;
+        padding: 0 2px;
+        font-size: 14px;
 
-		&:hover {
-		  color: black;
-		  background: $color-primary !important;
-		}
-	  }
-	}
+        &:hover {
+          color: black;
+          background: $color-primary !important;
+        }
+      }
+    }
 
-	&.mission_return {
-	  td {
-		opacity: 1;
-	  }
-	}
+    &.mission_return {
+      td {
+        opacity: 1;
+      }
+    }
 
-	&.mission_attack {
-	  td {
-		background: rgba($color-negative, .14);
-	  }
-	}
+    &.mission_attack {
+      td {
+        background: rgba($color-negative, .14);
+      }
+    }
 
-	&.mission_defend {
-	  td {
-		background: rgba($color-positive, .14);
-	  }
-	}
+    &.mission_defend {
+      td {
+        background: rgba($color-positive, .14);
+      }
+    }
 
-	&.mission_fake_defend {
-	  td {
-		background: rgba($color-neutral, .14);
-	  }
-	}
+    &.mission_fake_defend {
+      td {
+        background: rgba($color-neutral, .14);
+      }
+    }
   }
 }
 
 #transships {
   tr {
-	td {
-	  background: $color-secondary !important;
-	}
+    td {
+      background: $color-secondary !important;
+    }
 
-	&:nth-child(even) {
-	  td {
-		background: $color-secondary-alt !important;
-	  }
-	}
+    &:nth-child(even) {
+      td {
+        background: $color-secondary-alt !important;
+      }
+    }
 
-	&:last-child {
-	  td {
-		background: transparent !important;
-	  }
-	}
+    &:last-child {
+      td {
+        background: transparent !important;
+      }
+    }
   }
 }
 
@@ -255,53 +337,53 @@ th.superhighlight {
   width: auto !important;
 
   table {
-	margin-bottom: 0;
-	white-space: nowrap;
+    margin-bottom: 0;
+    white-space: nowrap;
 
-	tr {
-	  th,
-	  td {
-		color: $color-offwhite;
-		word-break: break-word;
-	  }
+    tr {
+      th,
+      td {
+        color: $color-offwhite;
+        word-break: break-word;
+      }
 
-	  td {
-		background: $color-bg-th;
+      td {
+        background: $color-bg-th;
 
-		&[colspan="4"],
-		&[colspan="5"] {
-		  text-align: center;
-		}
-	  }
+        &[colspan="4"],
+        &[colspan="5"] {
+          text-align: center;
+        }
+      }
 
-	  td {
-		background: $color-secondary-alt;
-	  }
+      td {
+        background: $color-secondary-alt;
+      }
 
-	  &:first-child th {
-		background: rgba(black, .12);
-		padding: .25rem .5rem;
-	  }
+      &:first-child th {
+        background: rgba(black, .12);
+        padding: .25rem .5rem;
+      }
 
-	  &:last-child {
-		td {
-		  background: $color-secondary;
-		  vertical-align: bottom;
-		}
-	  }
+      &:last-child {
+        td {
+          background: $color-secondary;
+          vertical-align: bottom;
+        }
+      }
 
-	  a {
-		font-size: $text-default;
-		vertical-align: bottom;
+      a {
+        font-size: $text-default;
+        vertical-align: bottom;
 
-		&[class*="d_fleet_"] {
-		  padding: .25rem .5rem;
-		}
-	  }
-	}
+        &[class*="d_fleet_"] {
+          padding: .25rem .5rem;
+        }
+      }
+    }
   }
 
   a:hover {
-	color: $color-primary-dark;
+    color: $color-primary-dark;
   }
 }
