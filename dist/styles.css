@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*!
-*  v4.02
+*  v4.03
 *  This skin addon is designed to run with the r32 skin selected in PA preferences.
 *
 *  If this skin customisation adds even a tiny bit of enjoyment to your gaming experience it was well worth the countless hours of development.
@@ -482,7 +482,7 @@ hr {
   position: relative;
 }
 #menu #menu_time span#time_loaded:before {
-  content: "Ultimate skin v4.02";
+  content: "Ultimate skin v4.03";
   position: absolute;
   bottom: -3.75rem;
   font-size: 1rem;
