@@ -3339,6 +3339,10 @@ th.superhighlight {
   padding: 0;
   background: #1a222c;
   width: auto !important;
+  position: fixed !important;
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%);
 }
 #d_from table,
 #d_num table,
@@ -3354,6 +3358,7 @@ th.superhighlight {
 #d_to table tr td {
   color: #ccc;
   word-break: break-word;
+  width: auto !important;
 }
 #d_from table tr td,
 #d_num table tr td,

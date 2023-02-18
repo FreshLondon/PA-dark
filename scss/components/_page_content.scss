@@ -8,9 +8,9 @@
   border: none;
   width: auto;
   @include respond-below(sm) {
-	grid-row: 3/3;
-	grid-column: 2 / 2;
-	max-width: calc(100vw - 8.14rem);
+    grid-row: 3/3;
+    grid-column: 2 / 2;
+    max-width: calc(100vw - 8.14rem);
   }
 }
 
@@ -43,10 +43,10 @@
   transition: ease all 0.3s;
 
   &:hover {
-	text-decoration: none;
-	background: $color-primary;
-	color: black;
-	opacity: 1;
+    text-decoration: none;
+    background: $color-primary;
+    color: black;
+    opacity: 1;
   }
 }
 
@@ -69,46 +69,46 @@ h2 {
   line-height: 100%;
 
   &.relations_neutral {
-	background: linear-gradient(to right, $color-background 0%, $color-secondary 50%, $color-background 100%) !important;
+    background: linear-gradient(to right, $color-background 0%, $color-secondary 50%, $color-background 100%) !important;
   }
 
   &.relations_war {
-	background: linear-gradient(to right, $color-background 0%, rgba($color-negative, .25) 50%, $color-background 100%) !important;
+    background: linear-gradient(to right, $color-background 0%, rgba($color-negative, .25) 50%, $color-background 100%) !important;
   }
 
   &.relations_hostile {
-	background: linear-gradient(to right, $color-background 0%, rgba($color-negative, .125) 50%, $color-background 100%) !important;
-	outline: none;
+    background: linear-gradient(to right, $color-background 0%, rgba($color-negative, .125) 50%, $color-background 100%) !important;
+    outline: none;
   }
 
   &.relations_brokennap {
-	background: linear-gradient(to right, $color-background 0%, rgba($color-broken, .2) 50%, $color-background 100%) !important;
-	outline: none;
+    background: linear-gradient(to right, $color-background 0%, rgba($color-broken, .2) 50%, $color-background 100%) !important;
+    outline: none;
   }
 
   &.relations_nap {
-	background: linear-gradient(to right, $color-background 0%, rgba($color-neutral, .25) 50%, $color-background 100%) !important;
+    background: linear-gradient(to right, $color-background 0%, rgba($color-neutral, .25) 50%, $color-background 100%) !important;
   }
 
   &.relations_friendly {
-	background: linear-gradient(to right, $color-background 0%, rgba($color-positive, .15) 50%, $color-background 100%) !important;
-	outline: none;
+    background: linear-gradient(to right, $color-background 0%, rgba($color-positive, .15) 50%, $color-background 100%) !important;
+    outline: none;
   }
 
   &.relations_allied {
-	background: linear-gradient(to right, $color-background 0%, rgba($color-neutral, .3) 50%, $color-positive 100%) !important;
+    background: linear-gradient(to right, $color-background 0%, rgba($color-neutral, .3) 50%, $color-positive 100%) !important;
   }
 
   &.relations_own_member {
-	background: linear-gradient(to right, $color-background 0%, rgba($color-own, .25) 50%, $color-background 100%) !important;
+    background: linear-gradient(to right, $color-background 0%, rgba($color-own, .25) 50%, $color-background 100%) !important;
   }
 
   &:empty {
-	display: none;
+    display: none;
   }
 
   a:hover {
-	color: rgba($color-primary, .8);
+    color: rgba($color-primary, .8);
   }
 }
 
@@ -124,52 +124,52 @@ h2 {
 
   .header,
   .footer {
-	display: none;
+    display: none;
   }
 
   .maintext {
-	text-align: center;
-	padding: 0;
-	font-size: $text-default;
+    text-align: center;
+    padding: 0;
+    font-size: $text-default;
 
-	a {
-	  font-weight: normal;
+    a {
+      font-weight: normal;
 
-	  &.notice_warning {
-		color: #f35050;
-		opacity: 0.75;
-		font-size: $text-small;
-		line-height: 1.8;
-		display: inline-flex;
-		align-items: center;
-		justify-content: center;
-		font-weight: 900;
-		//animation: pulse-incs 1.5s ease-in-out infinite;
-	  }
-	}
+      &.notice_warning {
+        color: #f35050;
+        opacity: 0.75;
+        font-size: $text-small;
+        line-height: 1.8;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 900;
+        //animation: pulse-incs 1.5s ease-in-out infinite;
+      }
+    }
 
-	> br {
-	  &:last-child {
-		display: none;
-	  }
-	}
+    > br {
+      &:last-child {
+        display: none;
+      }
+    }
   }
 }
 
 
 .maintext {
   p + p {
-	margin-top: .5rem;
+    margin-top: .5rem;
   }
 
   table {
-	margin: 0 auto 1rem;
-	width: auto;
-	min-width: 450px;
+    margin: 0 auto 1rem;
+    width: auto;
+    min-width: 450px;
 
-	table {
-	  background: $color-secondary;
-	}
+    table {
+      background: $color-secondary;
+    }
   }
 }
 
@@ -230,28 +230,28 @@ span.center {
   padding: .5rem;
 
   h2 {
-	background: none;
-	margin: 0 0 .5rem;
-	padding: 0;
-	font-size: 1rem;
+    background: none;
+    margin: 0 0 .5rem;
+    padding: 0;
+    font-size: 1rem;
   }
 
   th,
   td,
   p {
-	color: $color-offwhite;
+    color: $color-offwhite;
 
-	b {
-	  font-weight: normal;
-	  font-size: $text-small;
-	}
+    b {
+      font-weight: normal;
+      font-size: $text-small;
+    }
   }
 
   table {
-	+ table,
-	+ p {
-	  margin-top: 1rem;
-	}
+    + table,
+    + p {
+      margin-top: 1rem;
+    }
   }
 }
 
@@ -267,7 +267,7 @@ span.center {
   padding: 0;
 
   a {
-	margin: 0 .75rem;
+    margin: 0 .75rem;
   }
 }
 

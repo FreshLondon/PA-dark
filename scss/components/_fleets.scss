@@ -335,6 +335,10 @@ th.superhighlight {
   padding: 0;
   background: $color-background;
   width: auto !important;
+  position: fixed !important;
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%);
 
   table {
     margin-bottom: 0;
@@ -345,6 +349,7 @@ th.superhighlight {
       td {
         color: $color-offwhite;
         word-break: break-word;
+        width: auto !important;
       }
 
       td {
