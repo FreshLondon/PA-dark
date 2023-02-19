@@ -386,21 +386,21 @@ ul, li {
 }
 
 #mining td .metal, #galaxy_fund .metal, #alliance_fund .metal, #alliance_fund_trade .metal, #alliance_fund_donate .metal {
-  background: url("metal_48.png") no-repeat;
+  background: url("/images/template53/metal_48.png") no-repeat;
   width: 48px;
   height: 46px;
   display: block;
 }
 
 #mining td .crystal, #galaxy_fund .crystal, #alliance_fund .crystal, #alliance_fund_trade .crystal, #alliance_fund_donate .crystal {
-  background: url("crystal_48.png") no-repeat;
+  background: url("/images/template53/crystal_48.png") no-repeat;
   width: 48px;
   height: 43px;
   display: block;
 }
 
 #mining td .eonium, #galaxy_fund .eonium, #alliance_fund .eonium, #alliance_fund_trade .eonium, #alliance_fund_donate .eonium {
-  background: url("eonium_48.png") no-repeat;
+  background: url("/images/template53/eonium_48.png") no-repeat;
   width: 48px;
   height: 41px;
   display: block;
@@ -481,7 +481,7 @@ ul, li {
 .research_branch .completed .title {
   width: 100%;
   display: block;
-  background: url("tick.gif") no-repeat right;
+  background: url("/images/template53/tick.gif") no-repeat right;
 }
 
 #production_form table .resources li .textvalue, .training_info .resources li .textvalue {
@@ -567,6 +567,7 @@ ul, li {
 
 .resources .textvalue {
   padding-left: 18px;
+  margin-left: 3px;
 }
 
 .resources span.textlabel {
@@ -574,19 +575,19 @@ ul, li {
 }
 
 .resources .metal .textvalue {
-  background: url("metal_16.png") no-repeat;
+  background: url("/images/template53/metal_16.png") no-repeat;
   width: 16px;
   height: 15px;
 }
 
 .resources .crystal .textvalue {
-  background: url("crystal_16.png") no-repeat;
+  background: url("/images/template53/crystal_16.png") no-repeat;
   width: 16px;
   height: 14px;
 }
 
 .resources .eonium .textvalue {
-  background: url("eonium_16.png") no-repeat;
+  background: url("/images/template53/eonium_16.png") no-repeat;
   width: 16px;
   height: 13px;
 }
@@ -609,12 +610,12 @@ ul, li {
 }
 
 .change_up {
-  background: url("up.png") no-repeat 1px;
+  background: url("/images/template53/up.png") no-repeat 1px;
   padding-left: 15px;
 }
 
 .change_down {
-  background: url("down.png") no-repeat 1px;
+  background: url("/images/template53/down.png") no-repeat 1px;
   padding-left: 15px;
 }
 
@@ -749,7 +750,7 @@ a.questionmark {
 }
 
 #quest_system .completed {
-  background: url("tick.gif") no-repeat;
+  background: url("/images/template53/tick.gif") no-repeat;
   width: 15px;
   height: 13px;
   display: block;
@@ -757,7 +758,7 @@ a.questionmark {
 }
 
 .expand {
-  background: url("expand.gif") no-repeat;
+  background: url("/images/template53/expand.gif") no-repeat;
   width: 13px;
   height: 12px;
   display: block;
@@ -798,12 +799,12 @@ a.questionmark {
 }
 
 .progress_bar {
-  background: url("progress_bar.jpg");
+  background: url("/images/template53/progress_bar.jpg");
   height: 18px;
 }
 
 .progress_expected {
-  background: url("progress_bar.jpg");
+  background: url("/images/template53/progress_bar.jpg");
   opacity: 0.5;
   filter: Alpha(opacity=50);
   -moz-opacity: 0.5;
@@ -988,7 +989,7 @@ a.forum_title {
 }
 
 .forum_thread_actions_button {
-  background: url("../down_arrow.jpg") no-repeat;
+  background: url("/images/template53/down_arrow.jpg") no-repeat;
   width: 17px;
   height: 15px;
   text-indent: -1000px;
@@ -1440,7 +1441,7 @@ a.forum_title {
 }
 
 #info_loading {
-  background: url("loading.gif") center no-repeat;
+  background: url("/images/template53/loading.gif") center no-repeat;
   display: block;
   height: 33px;
 }
@@ -1544,7 +1545,7 @@ a.forum_title {
   left: 50%;
   height: 32px;
   width: 32px;
-  background: url("loading.gif");
+  background: url("/images/template53/loading.gif");
   margin-top: -20px;
   margin-left: -20px;
   cursor: pointer;
@@ -1618,7 +1619,7 @@ a.forum_title {
   right: -15px;
   width: 30px;
   height: 30px;
-  background: url("close.png");
+  background: url("/images/template53/close.png");
   cursor: pointer;
   z-index: 1103;
   display: none;
@@ -1793,30 +1794,6 @@ a.forum_title {
   display: flex;
   justify-content: flex-end;
   flex: 1 1 auto;
-}
-
-body {
-  overflow: auto;
-  /* total width */
-  /* background of the scrollbar except button or resizer */
-  /* scrollbar itself */
-  /* set button(top and bottom of the scrollbar) */
-}
-body::-webkit-scrollbar {
-  background-color: #24303f;
-  width: 8px;
-}
-body::-webkit-scrollbar-track {
-  background-color: #24303f;
-}
-body::-webkit-scrollbar-thumb {
-  background-color: rgba(36, 48, 63, 0.4);
-  border: 1px solid rgba(82, 165, 248, 0.5);
-  box-shadow: inset 0 0 2px 0 rgba(82, 165, 248, 0.4), 0 0 16px 0 rgba(0, 0, 0, 0.9);
-  border-radius: 8px;
-}
-body::-webkit-scrollbar-button {
-  display: none;
 }
 
 /* Remove most template background images
@@ -7913,6 +7890,10 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
 #page_bcalc #add_own p:nth-of-type(2) br {
   display: none;
 }
+#page_bcalc #add_own p:nth-of-type(2) a {
+  display: inline-block;
+  margin: 0.25rem !important;
+}
 #page_bcalc #add_own p:nth-of-type(2) a:first-of-type {
   margin: 0 0 0 0.5rem !important;
   color: rgba(50, 205, 50, 0.75) !important;
@@ -7930,16 +7911,41 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
   background-color: rgba(255, 0, 0, 0.75) !important;
 }
 #page_bcalc #add_own p:nth-of-type(3) {
+  line-height: 24px;
   display: table;
   text-align: left;
-  width: auto;
+  width: 350px;
   position: relative;
   left: 50%;
   transform: translateX(-50%);
 }
-#page_bcalc #add_own p:nth-of-type(2) a, #page_bcalc #add_own p:nth-of-type(3) a {
-  display: inline-block;
-  margin: 0.25rem !important;
+#page_bcalc #add_own p:nth-of-type(3) a {
+  text-align: center;
+  position: absolute;
+  width: 34px;
+  margin: 0 !important;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(-23px);
+}
+#page_bcalc #add_own p:nth-of-type(3) a[onclick="show_side_select(event, 'type', 'fi', false);"], #page_bcalc #add_own p:nth-of-type(3) a[onclick="show_side_select(event, 'type', 'fi', true);"] {
+  left: 100px;
+}
+#page_bcalc #add_own p:nth-of-type(3) a[onclick="show_side_select(event, 'type', 'co', false);"], #page_bcalc #add_own p:nth-of-type(3) a[onclick="show_side_select(event, 'type', 'co', true);"] {
+  left: 140px;
+}
+#page_bcalc #add_own p:nth-of-type(3) a[onclick="show_side_select(event, 'type', 'fr', false);"], #page_bcalc #add_own p:nth-of-type(3) a[onclick="show_side_select(event, 'type', 'fr', true);"] {
+  left: 180px;
+}
+#page_bcalc #add_own p:nth-of-type(3) a[onclick="show_side_select(event, 'type', 'de', false);"], #page_bcalc #add_own p:nth-of-type(3) a[onclick="show_side_select(event, 'type', 'de', true);"] {
+  left: 220px;
+}
+#page_bcalc #add_own p:nth-of-type(3) a[onclick="show_side_select(event, 'type', 'cr', false);"], #page_bcalc #add_own p:nth-of-type(3) a[onclick="show_side_select(event, 'type', 'cr', true);"] {
+  left: 260px;
+}
+#page_bcalc #add_own p:nth-of-type(3) a[onclick="show_side_select(event, 'type', 'bs', false);"], #page_bcalc #add_own p:nth-of-type(3) a[onclick="show_side_select(event, 'type', 'bs', true);"] {
+  left: 300px;
 }
 #page_bcalc #add_own table {
   margin-bottom: 0;
@@ -7982,26 +7988,6 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
   transform: translate(-50%, -50%);
   overflow: auto;
   max-height: 80vh;
-  /* total width */
-  /* background of the scrollbar except button or resizer */
-  /* scrollbar itself */
-  /* set button(top and bottom of the scrollbar) */
-}
-#my_bcalcs::-webkit-scrollbar {
-  background-color: #24303f;
-  width: 8px;
-}
-#my_bcalcs::-webkit-scrollbar-track {
-  background-color: #24303f;
-}
-#my_bcalcs::-webkit-scrollbar-thumb {
-  background-color: rgba(36, 48, 63, 0.4);
-  border: 1px solid rgba(82, 165, 248, 0.5);
-  box-shadow: inset 0 0 2px 0 rgba(82, 165, 248, 0.4), 0 0 16px 0 rgba(0, 0, 0, 0.9);
-  border-radius: 8px;
-}
-#my_bcalcs::-webkit-scrollbar-button {
-  display: none;
 }
 #my_bcalcs > p:first-child {
   position: sticky;
@@ -8758,6 +8744,40 @@ form[action^="mining.pl?"] table {
 }
 #page_alliance_relations table.tablesort tr:nth-child(odd) {
   background-color: #1e2935;
+}
+
+body,
+#page_bcalc #add_own,
+#my_bcalcs {
+  overflow: auto;
+  /* total width */
+  /* background of the scrollbar except button or resizer */
+  /* scrollbar itself */
+  /* set button(top and bottom of the scrollbar) */
+}
+body::-webkit-scrollbar,
+#page_bcalc #add_own::-webkit-scrollbar,
+#my_bcalcs::-webkit-scrollbar {
+  background-color: #24303f;
+  width: 8px;
+}
+body::-webkit-scrollbar-track,
+#page_bcalc #add_own::-webkit-scrollbar-track,
+#my_bcalcs::-webkit-scrollbar-track {
+  background-color: #24303f;
+}
+body::-webkit-scrollbar-thumb,
+#page_bcalc #add_own::-webkit-scrollbar-thumb,
+#my_bcalcs::-webkit-scrollbar-thumb {
+  background-color: rgba(36, 48, 63, 0.4);
+  border: 1px solid rgba(82, 165, 248, 0.5);
+  box-shadow: inset 0 0 2px 0 rgba(82, 165, 248, 0.4), 0 0 16px 0 rgba(0, 0, 0, 0.9);
+  border-radius: 8px;
+}
+body::-webkit-scrollbar-button,
+#page_bcalc #add_own::-webkit-scrollbar-button,
+#my_bcalcs::-webkit-scrollbar-button {
+  display: none;
 }
 
 @keyframes fade {

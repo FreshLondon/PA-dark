@@ -2,108 +2,108 @@
    -------------------------------------------------------*/
 #page_production {
   #notice {
-	+ .container {
-	  .header {
-		display: none;
-	  }
+    + .container {
+      .header {
+        display: none;
+      }
 
-	  table {
-		width: auto;
-		margin: 0 auto;
-	  }
+      table {
+        width: auto;
+        margin: 0 auto;
+      }
 
-	  td {
-		font-weight: bold;
-	  }
-	}
+      td {
+        font-weight: bold;
+      }
+    }
   }
 }
 
 #production_form {
   tr {
-	th,
-	td {
-	  padding-left: 0;
-	  font-size: $text-small;
-	  background: $color-secondary;
-	  @include respond-above(md) {
-		padding: .25rem .5rem;
-	  }
+    th,
+    td {
+      padding-left: 0;
+      font-size: $text-small;
+      background: $color-secondary;
+      @include respond-above(md) {
+        padding: .25rem .5rem;
+      }
 
-	  &:nth-child(1) {
-		padding-left: .5rem;
-	  }
+      &:nth-child(1) {
+        padding-left: .5rem;
+      }
 
-	  &:nth-child(3),
-	  &:nth-child(4),
-	  &:nth-child(5) {
-		width: 2rem;
-		text-align: center;
-	  }
+      &:nth-child(3),
+      &:nth-child(4),
+      &:nth-child(5) {
+        width: 2rem;
+        text-align: center;
+      }
 
-	  &:nth-child(6),
-	  &:nth-child(8) {
-		text-align: center;
-	  }
+      &:nth-child(6),
+      &:nth-child(8) {
+        text-align: center;
+      }
 
-	  &:nth-child(9) {
-		text-align: right;
-	  }
+      &:nth-child(9) {
+        text-align: right;
+      }
 
-	  &[colspan="10"] + td {
-		text-align: right;
+      &[colspan="10"] + td {
+        text-align: right;
 
-		&:after {
-		  content: ":";
-		}
-	  }
+        &:after {
+          content: ":";
+        }
+      }
 
-	  &#stolen_value {
-		text-align: right;
-	  }
-	}
+      &#stolen_value {
+        text-align: right;
+      }
+    }
 
-	th {
-	  background: $color-bg-th;
-	}
+    th {
+      background: $color-bg-th;
+    }
 
-	td {
-	  &:nth-child(1) {
-		font-size: 1rem;
-	  }
+    td {
+      &:nth-child(1) {
+        font-size: 1rem;
+      }
 
-	  &:nth-child(9),
-	  &:nth-child(11) {
-		font-size: 1rem;
-	  }
+      &:nth-child(9),
+      &:nth-child(11) {
+        font-size: 1rem;
+      }
 
-	  &:nth-child(11) {
-		font-weight: bold;
-	  }
+      &:nth-child(11) {
+        font-weight: bold;
+      }
 
-	  &.notice_warning {
-		color: rgba($color-negative, .75);
-		font-size: $text-small;
-		background: transparent;
-		text-align: center;
-	  }
+      &.notice_warning {
+        color: rgba($color-negative, .75);
+        font-size: $text-small;
+        background: transparent;
+        text-align: center;
+      }
 
-	  &[colspan="9"],
-	  &[colspan="10"] {
-		background: rgba(#000, .12) !important;
+      &[colspan="9"],
+      &[colspan="10"] {
+        background: rgba(#000, .12) !important;
 
-		+ td,
-		+ td + td {
-		  background: rgba(#000, .12);
-		}
-	  }
-	}
+        + td,
+        + td + td {
+          background: rgba(#000, .12);
+        }
+      }
+    }
 
-	&:nth-child(even) {
-	  td {
-		background: $color-secondary-alt;
-	  }
-	}
+    &:nth-child(even) {
+      td {
+        background: $color-secondary-alt;
+      }
+    }
   }
 }
 
@@ -117,20 +117,20 @@ span.small.notice_warning {
   margin: 1rem 0;
 
   + table {
-	max-width: 600px;
+    max-width: 600px;
   }
 }
 
 #production_factories_row {
   td {
-	font-size: $text-small !important;
-	background: transparent !important;
+    font-size: $text-small !important;
+    background: transparent !important;
 
-	.textlabel {
-	  font-size: $text-small;
-	  font-weight: bold;
-	  padding-bottom: .5rem;
-	}
+    .textlabel {
+      font-size: $text-small;
+      font-weight: bold;
+      padding-bottom: .5rem;
+    }
   }
 }
 
@@ -141,72 +141,72 @@ span.small.notice_warning {
   width: 15.5rem !important;
 
   table {
-	margin: 0 auto;
-	max-width: 100%;
+    margin: 0 auto;
+    max-width: 100%;
 
-	&:first-child {
-	  tr {
-		&:first-child {
-		  background: $color-background;
+    &:first-child {
+      tr {
+        &:first-child {
+          background: $color-background;
 
-		  th {
-			text-align: center;
-			padding: 8px 0;
-			font-size: 1rem;
-			font-weight: bold;
-			text-transform: uppercase;
-			color: $color-offwhite;
-			background: $color-secondary;
-			background: linear-gradient(to right, $color-background 0%, $color-secondary 50%, $color-background 100%) !important;
-			border: 1px solid transparent;
-			border-top: none;
-			border-image: linear-gradient(to right, transparent 0%, rgba(82, 165, 248, .5) 50%, transparent 100%);
-			border-image-slice: 1;
-			line-height: 100%;
-		  }
-		}
-	  }
-	}
+          th {
+            text-align: center;
+            padding: 8px 0;
+            font-size: 1rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: $color-offwhite;
+            background: $color-secondary;
+            background: linear-gradient(to right, $color-background 0%, $color-secondary 50%, $color-background 100%) !important;
+            border: 1px solid transparent;
+            border-top: none;
+            border-image: linear-gradient(to right, transparent 0%, rgba(82, 165, 248, .5) 50%, transparent 100%);
+            border-image-slice: 1;
+            line-height: 100%;
+          }
+        }
+      }
+    }
 
-	tr {
-	  &:nth-child(odd) {
-		background: $color-secondary;
-	  }
+    tr {
+      &:nth-child(odd) {
+        background: $color-secondary;
+      }
 
-	  &:nth-child(even) {
-		background: $color-secondary-alt;
-	  }
+      &:nth-child(even) {
+        background: $color-secondary-alt;
+      }
 
-	  &:nth-child(2) {
-		th,
-		td {
-		  padding-top: .25rem;
-		}
-	  }
+      &:nth-child(2) {
+        th,
+        td {
+          padding-top: .25rem;
+        }
+      }
 
-	  &:nth-child(6) th {
-		padding-top: .5rem;
-	  }
+      &:nth-child(6) th {
+        padding-top: .5rem;
+      }
 
-	  th,
-	  td {
-		background: transparent !important;
-	  }
-	}
+      th,
+      td {
+        background: transparent !important;
+      }
+    }
 
-	th,
-	td {
-	  color: $color-offwhite;
-	  font-size: $text-small;
-	}
+    th,
+    td {
+      color: $color-offwhite;
+      font-size: $text-small;
+    }
 
-	& + table {
-	  margin-bottom: 0;
+    & + table {
+      margin-bottom: 0;
 
-	  th:first-child {
-		width: 45% !important;
-	  }
-	}
+      th:first-child {
+        width: 45% !important;
+      }
+    }
   }
 }
 
@@ -216,62 +216,62 @@ span.small.notice_warning {
   background: $color-background !important;
 
   table {
-	margin: 0;
+    margin: 0;
 
-	tr {
-	  &:first-child {
-		background: $color-background;
+    tr {
+      &:first-child {
+        background: $color-background;
 
-		th {
-		  background: $color-bg-th;
-		}
-	  }
+        th {
+          background: $color-bg-th;
+        }
+      }
 
-	  &:nth-child(odd) {
-		td {
-		  background: $color-secondary;
-		}
-	  }
+      &:nth-child(odd) {
+        td {
+          background: $color-secondary;
+        }
+      }
 
-	  &:nth-child(even) {
-		td {
-		  background: $color-secondary-alt;
-		}
-	  }
+      &:nth-child(even) {
+        td {
+          background: $color-secondary-alt;
+        }
+      }
 
-	  td {
-		padding: 2px 5px;
-	  }
-	}
+      td {
+        padding: 2px 5px;
+      }
+    }
   }
 }
 
 .production_orders {
   table {
-	tr {
-	  td {
-		background: $color-secondary;
-	  }
+    tr {
+      td {
+        background: $color-secondary;
+      }
 
-	  &:nth-child(even) {
-		td {
-		  background: $color-secondary-alt;
-		}
-	  }
-	}
+      &:nth-child(even) {
+        td {
+          background: $color-secondary-alt;
+        }
+      }
+    }
   }
 
   .resources {
-	margin: 1rem 0;
+    margin: 1rem 0;
   }
 
   form.cancelform {
-	input[type="submit"] {
-	  margin: 0;
-	}
+    input[type="submit"] {
+      margin: 0;
+    }
 
-	td {
-	  background: transparent !important;
-	}
+    td {
+      background: transparent !important;
+    }
   }
 }
