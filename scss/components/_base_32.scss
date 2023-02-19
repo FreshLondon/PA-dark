@@ -1,8 +1,5 @@
 html, body, .pages { min-height: 100%; height: 100%; margin: 0; }
-body { background: url('stars.jpg') #000; font-family: Arial, Helvetica, sans-serif; color: #ccc; }
 body, p, td { font-size: 9pt; }
-.pages { background: url('background2.jpg') no-repeat top center; width: 1072px; margin: 0 auto; }
-#footer { color: #FFFFFF; width: 1072px; height: 434px; background: url('planet_footer2.png') no-repeat bottom center; font-size:10px; margin: -376px auto 0 auto; text-align:center; float: left; clear: both; position: relative; z-index: -1; }
 #page { min-height: 90%; min-height: calc(100% - 153px); }
 #full_page { width: 1072px; margin: 0 auto; }
 table, th { color: #ccc; margin: 0px; padding: 0px; }
@@ -17,20 +14,14 @@ th, td { vertical-align: top; }
 p { margin: 0px; padding: 0 0 7px 0;}
 
 #top { width: 1070px; margin: 0 auto; padding-top: 10px; }
-#logo { display: block; height: 87px; width: 338px; background: url('planetarion-icon.png') top left no-repeat; margin-bottom: 10px; }
-#tnav { width: 1070px; padding-top: 13px; height: 38px; background: url('top-menu.png'); margin: 0 auto; text-align: center; }
 .tnav_link { display: inline-block; }
 .tnav_link a { height: 11px; margin: 3px 20px 0 20px; width: 100px; text-align: center; display: block; }
 
 #page_bcalc #top { display: none; }
 #page_bcalc #contents_header, #page_bcalc #contents_footer, #page_bcalc .container { background: none; }
 
-#bar_forums { width: 87px; background: url('forums.png'); }
 #bar_forums span, #bar_manual span, #bar_logout span, #bar_support span, #bar_portal span { display: none; }
-#bar_manual { width: 87px; background: url('manual.png'); }
-#bar_logout { width: 86px; background: url('logout.png'); }
-#bar_support { width: 97px; background: url('support.png'); }
-#bar_portal { width: 83px; background: url('portal.png'); }
+
 
 input, .input, textarea, select, .checkbox { background: #2e5b82; border: 1px solid #cfcfcf; color: #CCCCCC; font-size: 8pt; }
 #page input[type="submit"], #page input[type="button"] { color: #303135; padding: 2px 10px; font-weight: bold; font-family: Verdana, Geneva, Arial, Helvetica, sans-serif; text-transform: uppercase; background: rgb(209,210,214);
@@ -104,12 +95,9 @@ li.li_gen:last-child { padding-bottom: 7px; }
 /*	Menu	*/
 ul, li { list-style: none; margin: 0; padding: 0; }
 #menu { width: 161px; float: left; }
-#menu_top { background: url('left-menu-top.png'); width: 146px; height: 26px; }
-#menu_bottom { background: url('left-menu-bottom.png'); width: 146px; height: 26px; margin-bottom: 10px; }
 
 #menu li ul { height: 1%; }
 #menu li { padding-left: 15px; }
-.menu_grp, #menu_overview, #menu_preferences, #menu_logout { padding-bottom: 10px; background: url('menu-left-middle.png') repeat-y; width: 146px;  }
 .menu_grp li { text-align: left; text-decoration: none; display: block; padding: 4px 0 0 15px; margin: 0; width: 131px !important; }
 #menu a { color: #FFFFFF; text-decoration: none; }
 #menu a:hover { color: #5292da; }
@@ -120,9 +108,6 @@ ul, li { list-style: none; margin: 0; padding: 0; }
 #menu_view_link { margin-bottom: 10px; }
 
 #contents { margin: 0 162px; }
-#contents_header { width: 750px; height: 12px; background: url('center_top.png'); }
-#contents_footer { background: url('center_bottom.png'); width: 750px; height: 15px; margin-bottom: 25px; }
-#contents_information { width: 730px; background: url('center_middle.png'); padding: 0 10px; text-align: right; }
 .section_information { display: inline; }
 #mining td .metal, #galaxy_fund .metal, #alliance_fund .metal, #alliance_fund_trade .metal, #alliance_fund_donate .metal { background: url('metal_48.png') no-repeat; width: 48px; height: 46px; display: block; }
 #mining td .crystal, #galaxy_fund .crystal, #alliance_fund .crystal, #alliance_fund_trade .crystal, #alliance_fund_donate .crystal { background: url('crystal_48.png') no-repeat; width: 48px; height: 43px; display: block; }
@@ -193,8 +178,6 @@ ul, li { list-style: none; margin: 0; padding: 0; }
 #important_messages_overlay { width: 100%; height: 100%; position: absolute; top: 0px; left: 0px; background: #000000;	filter: alpha(opacity=60); -moz-opacity: 0.6; opacity: 0.6; }
 #important_messages_contents { width: 750px; margin-left: -375px; z-index: 2100; position: absolute; left: 50%; top: 140px; }
 #important_messages_contents .close_link { margin-right: 15px; }
-#important_messages_contents_header { width: 750px; height: 12px; background: url('center_top.png'); }
-#important_messages_contents_footer { background: url('center_bottom.png'); width: 750px; height: 15px; margin-bottom: 25px; }
 .important_message .title { font-size: 14px; font-weight: bold; }
 .important_message .time { display: block; }
 
@@ -209,13 +192,8 @@ a.questionmark { text-decoration: none; }
 .page_title { display: none; }
 
 /*	Resource header	*/
-#header { float: right; background: url('right-menu-top.png') no-repeat; width: 161px; padding-top: 26px; }
-#header_planet { text-indent: 5px; width: 161px; height: 29px;  font-weight: bold; text-align: center; background: url('menu-right-middle.png'); }
-#header_mail { width: 161px; padding-top: 10px; background: url('menu-right-middle.png'); text-indent: 5px; }
-#header_news { width: 161px; background: url('menu-right-middle.png'); text-indent: 5px; }
 #header_metal { padding-top: 29px; }
 
-#header_tick, #header_metal, #header_crystal, #header_eonium, #header_value, #header_xp, #header_score, #header_rank, #header_asteroids { width: 161px; background: url('menu-right-middle.png'); display: table; }
 #header .textlabel { float: left; margin-left: 5px; }
 #header .textvalue { float: right; padding-right: 15px; }
 #header_tick { padding-top: 10px; }
@@ -223,13 +201,11 @@ a.questionmark { text-decoration: none; }
 
 
 #planet_summary { float: right; width: 161px; clear: right; }
-#planet_summary_construction, #planet_summary_research, #planet_summary_production { background: url('menu-right-middle.png'); padding-left: 5px; padding-top: 10px; }
 #planet_summary_construction .textlabel, #planet_summary_research .textlabel { display: block; }
 #planet_summary_construction { padding-top: 29px; }
 #planet_summary_production { padding-bottom: 20px; }
 #planet_summary .countdown, #planet_summary_construction_current, #planet_summary_research_current, #planet_summary_production_current, #planet_summary_construction_complete, #planet_summary_research_complete { display: block; text-align: right; padding-right: 15px; }
 .planet_summary_production_orders { margin-bottom: 10px; }
-#planet_summary_footer { width: 147px; background: url('right-menu-bottom.png') bottom no-repeat; padding-bottom: 26px; padding-right: 15px; }
 #quest_system .completed { background: url('tick.gif') no-repeat; width: 15px; height: 13px; display: block; margin:0 auto; }
 .expand { background: url('expand.gif') no-repeat; width: 13px; height: 12px; display: block; float: left; padding: 0 2px; cursor: pointer; }
 .tooltip, .info { background: #213d58; border: 1px solid #FFFFFF; display: none; position: absolute; padding: 5px; font-size: 9pt !important; z-index: 1001; color: #ffffff !important; font-weight: normal !important; line-height: normal !important; text-align: left !important; text-transform: none !important; }
@@ -241,7 +217,6 @@ a.questionmark { text-decoration: none; }
 .progress_value { height: 18px; margin-top: -18px; text-align: center; }
 
 /*	Table	*/
-.container { width: 730px; background: url('center_middle.png'); padding: 10px; }
 #full_page .container { margin: 0 auto; }
 .header, h2 { font-weight: bold; font-size: 14px; text-align: center; margin: 0px; padding: 5px 0; }
 
@@ -400,7 +375,6 @@ a.forum_title { width: 100%; height: 16px; line-height: 16px; }
 
 #intel_form { background: #213d58; border: 1px solid #FFFFFF; padding: 5px; }
 
-#tab_links { background: url('center_middle.png'); font-weight: bold; text-align: center; width: 730px; padding: 10px; }
 #tab_links li { display: inline; padding: 0 20px; }
 .tab_link_active { text-decoration: none; color:#FFFFFF; }
 

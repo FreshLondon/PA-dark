@@ -25,34 +25,8 @@ html, body, .pages {
   margin: 0;
 }
 
-body {
-  background: url("stars.jpg") #000;
-  font-family: Arial, Helvetica, sans-serif;
-  color: #ccc;
-}
-
 body, p, td {
   font-size: 9pt;
-}
-
-.pages {
-  background: url("background2.jpg") no-repeat top center;
-  width: 1072px;
-  margin: 0 auto;
-}
-
-#footer {
-  color: #FFFFFF;
-  width: 1072px;
-  height: 434px;
-  background: url("planet_footer2.png") no-repeat bottom center;
-  font-size: 10px;
-  margin: -376px auto 0 auto;
-  text-align: center;
-  float: left;
-  clear: both;
-  position: relative;
-  z-index: -1;
 }
 
 #page {
@@ -107,23 +81,6 @@ p {
   padding-top: 10px;
 }
 
-#logo {
-  display: block;
-  height: 87px;
-  width: 338px;
-  background: url("planetarion-icon.png") top left no-repeat;
-  margin-bottom: 10px;
-}
-
-#tnav {
-  width: 1070px;
-  padding-top: 13px;
-  height: 38px;
-  background: url("top-menu.png");
-  margin: 0 auto;
-  text-align: center;
-}
-
 .tnav_link {
   display: inline-block;
 }
@@ -144,33 +101,8 @@ p {
   background: none;
 }
 
-#bar_forums {
-  width: 87px;
-  background: url("forums.png");
-}
-
 #bar_forums span, #bar_manual span, #bar_logout span, #bar_support span, #bar_portal span {
   display: none;
-}
-
-#bar_manual {
-  width: 87px;
-  background: url("manual.png");
-}
-
-#bar_logout {
-  width: 86px;
-  background: url("logout.png");
-}
-
-#bar_support {
-  width: 97px;
-  background: url("support.png");
-}
-
-#bar_portal {
-  width: 83px;
-  background: url("portal.png");
 }
 
 input, .input, textarea, select, .checkbox {
@@ -400,31 +332,12 @@ ul, li {
   float: left;
 }
 
-#menu_top {
-  background: url("left-menu-top.png");
-  width: 146px;
-  height: 26px;
-}
-
-#menu_bottom {
-  background: url("left-menu-bottom.png");
-  width: 146px;
-  height: 26px;
-  margin-bottom: 10px;
-}
-
 #menu li ul {
   height: 1%;
 }
 
 #menu li {
   padding-left: 15px;
-}
-
-.menu_grp, #menu_overview, #menu_preferences, #menu_logout {
-  padding-bottom: 10px;
-  background: url("menu-left-middle.png") repeat-y;
-  width: 146px;
 }
 
 .menu_grp li {
@@ -466,26 +379,6 @@ ul, li {
 
 #contents {
   margin: 0 162px;
-}
-
-#contents_header {
-  width: 750px;
-  height: 12px;
-  background: url("center_top.png");
-}
-
-#contents_footer {
-  background: url("center_bottom.png");
-  width: 750px;
-  height: 15px;
-  margin-bottom: 25px;
-}
-
-#contents_information {
-  width: 730px;
-  background: url("center_middle.png");
-  padding: 0 10px;
-  text-align: right;
 }
 
 .section_information {
@@ -759,19 +652,6 @@ ul, li {
   margin-right: 15px;
 }
 
-#important_messages_contents_header {
-  width: 750px;
-  height: 12px;
-  background: url("center_top.png");
-}
-
-#important_messages_contents_footer {
-  background: url("center_bottom.png");
-  width: 750px;
-  height: 15px;
-  margin-bottom: 25px;
-}
-
 .important_message .title {
   font-size: 14px;
   font-weight: bold;
@@ -817,43 +697,8 @@ a.questionmark {
 }
 
 /*	Resource header	*/
-#header {
-  float: right;
-  background: url("right-menu-top.png") no-repeat;
-  width: 161px;
-  padding-top: 26px;
-}
-
-#header_planet {
-  text-indent: 5px;
-  width: 161px;
-  height: 29px;
-  font-weight: bold;
-  text-align: center;
-  background: url("menu-right-middle.png");
-}
-
-#header_mail {
-  width: 161px;
-  padding-top: 10px;
-  background: url("menu-right-middle.png");
-  text-indent: 5px;
-}
-
-#header_news {
-  width: 161px;
-  background: url("menu-right-middle.png");
-  text-indent: 5px;
-}
-
 #header_metal {
   padding-top: 29px;
-}
-
-#header_tick, #header_metal, #header_crystal, #header_eonium, #header_value, #header_xp, #header_score, #header_rank, #header_asteroids {
-  width: 161px;
-  background: url("menu-right-middle.png");
-  display: table;
 }
 
 #header .textlabel {
@@ -881,12 +726,6 @@ a.questionmark {
   clear: right;
 }
 
-#planet_summary_construction, #planet_summary_research, #planet_summary_production {
-  background: url("menu-right-middle.png");
-  padding-left: 5px;
-  padding-top: 10px;
-}
-
 #planet_summary_construction .textlabel, #planet_summary_research .textlabel {
   display: block;
 }
@@ -907,13 +746,6 @@ a.questionmark {
 
 .planet_summary_production_orders {
   margin-bottom: 10px;
-}
-
-#planet_summary_footer {
-  width: 147px;
-  background: url("right-menu-bottom.png") bottom no-repeat;
-  padding-bottom: 26px;
-  padding-right: 15px;
 }
 
 #quest_system .completed {
@@ -986,12 +818,6 @@ a.questionmark {
 }
 
 /*	Table	*/
-.container {
-  width: 730px;
-  background: url("center_middle.png");
-  padding: 10px;
-}
-
 #full_page .container {
   margin: 0 auto;
 }
@@ -1645,14 +1471,6 @@ a.forum_title {
   background: #213d58;
   border: 1px solid #FFFFFF;
   padding: 5px;
-}
-
-#tab_links {
-  background: url("center_middle.png");
-  font-weight: bold;
-  text-align: center;
-  width: 730px;
-  padding: 10px;
 }
 
 #tab_links li {
@@ -2990,10 +2808,10 @@ hr {
 }
 
 #manual_info {
-  display: inline-block;
+  display: block;
   height: 1.5rem;
   width: 1.5rem;
-  margin: 0.5rem;
+  margin: 0.5rem 0.5rem 0.5rem auto;
   padding: 0 0 0 0.05rem;
   border: 1px solid #52a5f8;
   border-radius: 50%;
@@ -3194,6 +3012,13 @@ span.center {
   color: #0972db;
 }
 
+#tab_links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
 #tab_links li {
   padding: 0;
 }
@@ -8148,6 +7973,44 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
 }
 #page_bcalc #add_own table tr td {
   padding-right: 5px;
+}
+
+#my_bcalcs {
+  top: 50% !important;
+  left: 50% !important;
+  position: fixed;
+  transform: translate(-50%, -50%);
+  overflow: auto;
+  max-height: 80vh;
+  /* total width */
+  /* background of the scrollbar except button or resizer */
+  /* scrollbar itself */
+  /* set button(top and bottom of the scrollbar) */
+}
+#my_bcalcs::-webkit-scrollbar {
+  background-color: #24303f;
+  width: 8px;
+}
+#my_bcalcs::-webkit-scrollbar-track {
+  background-color: #24303f;
+}
+#my_bcalcs::-webkit-scrollbar-thumb {
+  background-color: rgba(36, 48, 63, 0.4);
+  border: 1px solid rgba(82, 165, 248, 0.5);
+  box-shadow: inset 0 0 2px 0 rgba(82, 165, 248, 0.4), 0 0 16px 0 rgba(0, 0, 0, 0.9);
+  border-radius: 8px;
+}
+#my_bcalcs::-webkit-scrollbar-button {
+  display: none;
+}
+#my_bcalcs > p:first-child {
+  position: sticky;
+  right: 0.5rem;
+  top: 0;
+  display: block;
+}
+#my_bcalcs #bcalclist {
+  margin-top: -29px;
 }
 
 #page_scan div#full_page {
