@@ -1,37 +1,1982 @@
 @charset "UTF-8";
 /*!
 *  v4.03
-*  This skin addon is designed to run with the r32 skin selected in PA preferences.
+*  This skin addon is designed to run by itself, with no other added CSS.
 *
-*  If this skin customisation adds even a tiny bit of enjoyment to your gaming experience it was well worth the countless hours of development.
+*  If this skin customisation adds even a tiny bit of enjoyment to your gaming experience it was well worth the
+*  countless hours of development.
 *  Made with love, for my fellow spreadsheet warriors.
 *  Ultimate <3
 *
 *  For any questions / bug reports / assistance, contact @UltimateNewbie on TG.
 *  Thanks to Leshy for the original inspiration and CSS grid layout, forever grateful!
 *
-*
-*  Here's some tips:
-*
-*  INSTALL INSTRUCTIONS:
-*  You'll need to enable the 'Round 32' as the base skin in preferences, and a browser extension to add the new CSS to the PA pages:
-*  Chrome or other chromium based browsers (Brave, Opera, Yandex beta, etc.. pretty much any non-FireFox browser): (https://chrome.google.com/webstore/detail/user-javascript-and-css/nbhcbdghjpllgmfilhnhkllmkecfmpld)
-*  FireFox: (https://addons.mozilla.org/en-GB/firefox/addon/custom-style-script/)
-*
-*  This Dark skin CSS can always be refreshed for new updates etc it's found here:
-*  https://raw.githubusercontent.com/FreshLondon/PA-dark/master/dist/styles.css
-*
-*  MOBILE USE:
-*  Any chromium based browser (yandex beta, brave, opera, etc) or FireFox (probably use this as that annoying PA calc import bug isn't present) supports addons, use the chrome extension above for any non-Firefox browser.
-*  Note: iOS disabled support for firefox extensions, I'd recommend Yandex Beta if on iOS.
-*
-*  IF IT'S FUCKED:
-*  Make sure you are not viewing mobile in SIMPLE view or it will look really shit.
-*  Hit the 'view pages in full version' button (change this at the bottom left of the side menu).
-*
 *  Have fun / enjoy / leave suggestions and feedback - let's make this awesome together!
 *
+*  Note, some CSS is really hacky and apologies for that in advance ..there simply aren't the classes and ID's available
+*  for targeting some elements! it's been a beautiful nightmare indeed..
+*
+*  Note2: If you use alli tools and for some reason these are displaying incorrectly, let me knnow on TG and I might help.
+*
 */
+html, body, .pages {
+  min-height: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  background: url("stars.jpg") #000;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #ccc;
+}
+
+body, p, td {
+  font-size: 9pt;
+}
+
+.pages {
+  background: url("background2.jpg") no-repeat top center;
+  width: 1072px;
+  margin: 0 auto;
+}
+
+#footer {
+  color: #FFFFFF;
+  width: 1072px;
+  height: 434px;
+  background: url("planet_footer2.png") no-repeat bottom center;
+  font-size: 10px;
+  margin: -376px auto 0 auto;
+  text-align: center;
+  float: left;
+  clear: both;
+  position: relative;
+  z-index: -1;
+}
+
+#page {
+  min-height: 90%;
+  min-height: calc(100% - 153px);
+}
+
+#full_page {
+  width: 1072px;
+  margin: 0 auto;
+}
+
+table, th {
+  color: #ccc;
+  margin: 0px;
+  padding: 0px;
+}
+
+table {
+  margin-bottom: 1px;
+}
+
+form {
+  margin: 0px;
+  padding: 0px;
+}
+
+th {
+  font-weight: bold;
+}
+
+th, td {
+  vertical-align: top;
+}
+
+.vtop {
+  vertical-align: top;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+p {
+  margin: 0px;
+  padding: 0 0 7px 0;
+}
+
+#top {
+  width: 1070px;
+  margin: 0 auto;
+  padding-top: 10px;
+}
+
+#logo {
+  display: block;
+  height: 87px;
+  width: 338px;
+  background: url("planetarion-icon.png") top left no-repeat;
+  margin-bottom: 10px;
+}
+
+#tnav {
+  width: 1070px;
+  padding-top: 13px;
+  height: 38px;
+  background: url("top-menu.png");
+  margin: 0 auto;
+  text-align: center;
+}
+
+.tnav_link {
+  display: inline-block;
+}
+
+.tnav_link a {
+  height: 11px;
+  margin: 3px 20px 0 20px;
+  width: 100px;
+  text-align: center;
+  display: block;
+}
+
+#page_bcalc #top {
+  display: none;
+}
+
+#page_bcalc #contents_header, #page_bcalc #contents_footer, #page_bcalc .container {
+  background: none;
+}
+
+#bar_forums {
+  width: 87px;
+  background: url("forums.png");
+}
+
+#bar_forums span, #bar_manual span, #bar_logout span, #bar_support span, #bar_portal span {
+  display: none;
+}
+
+#bar_manual {
+  width: 87px;
+  background: url("manual.png");
+}
+
+#bar_logout {
+  width: 86px;
+  background: url("logout.png");
+}
+
+#bar_support {
+  width: 97px;
+  background: url("support.png");
+}
+
+#bar_portal {
+  width: 83px;
+  background: url("portal.png");
+}
+
+input, .input, textarea, select, .checkbox {
+  background: #2e5b82;
+  border: 1px solid #cfcfcf;
+  color: #CCCCCC;
+  font-size: 8pt;
+}
+
+#page input[type=submit], #page input[type=button] {
+  color: #303135;
+  padding: 2px 10px;
+  font-weight: bold;
+  font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  background: rgb(209, 210, 214);
+  -webkit-box-shadow: inset 0 -8px 10px rgba(0, 0, 0, 0.35), 0 1px 0 rgba(255, 255, 255, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  -moz-box-shadow: inset 0 -8px 10px rgba(0, 0, 0, 0.35), 0 1px 0 rgba(255, 255, 255, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  box-shadow: inset 0 -8px 10px rgba(0, 0, 0, 0.35), 0 1px 0 rgba(255, 255, 255, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+  text-align: right;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+.input_coords {
+  width: 2em;
+}
+
+input.disabled {
+  opacity: 0.5;
+  cursor: not-allowed !important;
+}
+
+input.disabled:hover {
+  border: 1px solid #cfcfcf !important;
+}
+
+#page input[type=submit]:hover, #page input[type=button]:hover {
+  border: 1px solid #000000;
+  cursor: pointer;
+}
+
+option {
+  background: #213d58;
+}
+
+textarea {
+  width: 98%;
+}
+
+a {
+  color: #fff;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #ccc;
+}
+
+.caps {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.left {
+  text-align: left;
+  padding-left: 5px;
+}
+
+.right {
+  text-align: right;
+  padding-right: 5px;
+}
+
+.center {
+  text-align: center;
+}
+
+#motd span {
+  color: #ffffff !important;
+}
+
+.waiting {
+  color: #CC3333;
+}
+
+.inprogress {
+  color: #FFFF66;
+}
+
+.error {
+  color: #FF0000;
+  font-weight: bold;
+}
+
+.gc {
+  color: #0000FF;
+}
+
+.moc {
+  color: #8081FF;
+}
+
+.mod {
+  color: #00FF00;
+}
+
+.mow {
+  color: #FF0000;
+}
+
+.small {
+  font-size: 9px;
+}
+
+.superhighlight {
+  color: white;
+  font-weight: bold;
+}
+
+.shadedbackground {
+  background: none;
+}
+
+.shadedbackground2 {
+  background: none;
+}
+
+/*	Font stuff	*/
+.incs_hostile, .exile_vote {
+  color: #ff2b2b;
+  font-weight: bold;
+}
+
+.incs_friendly {
+  color: #00AA00;
+}
+
+.mission_none {
+  color: #FFFFFF;
+}
+
+.mission_attack {
+  color: #FF0000;
+}
+
+.mission_defend {
+  color: #00AA00;
+}
+
+.mission_fake_attack {
+  color: #FFA500;
+}
+
+.mission_fake_defend {
+  color: #0000FF;
+}
+
+.mission_return {
+  color: #777777;
+}
+
+.bashlimit {
+  color: #ff8c00;
+}
+
+.fund_transfer {
+  color: #FFA500;
+}
+
+.notice_protection {
+  color: #ccc;
+}
+
+.notice_allies {
+  color: #0082ff;
+}
+
+li.li_gen {
+  list-style: disc;
+  margin-left: 15px;
+}
+
+li.li_gen:last-child {
+  padding-bottom: 7px;
+}
+
+.msg_title {
+  font: 150% bold;
+  color: #FFFFFF;
+}
+
+.msg_subtitle {
+  font: 120% bold;
+}
+
+.bad {
+  color: #ff2b2b;
+}
+
+.good {
+  color: #00AA00;
+}
+
+/*	Menu	*/
+ul, li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#menu {
+  width: 161px;
+  float: left;
+}
+
+#menu_top {
+  background: url("left-menu-top.png");
+  width: 146px;
+  height: 26px;
+}
+
+#menu_bottom {
+  background: url("left-menu-bottom.png");
+  width: 146px;
+  height: 26px;
+  margin-bottom: 10px;
+}
+
+#menu li ul {
+  height: 1%;
+}
+
+#menu li {
+  padding-left: 15px;
+}
+
+.menu_grp, #menu_overview, #menu_preferences, #menu_logout {
+  padding-bottom: 10px;
+  background: url("menu-left-middle.png") repeat-y;
+  width: 146px;
+}
+
+.menu_grp li {
+  text-align: left;
+  text-decoration: none;
+  display: block;
+  padding: 4px 0 0 15px;
+  margin: 0;
+  width: 131px !important;
+}
+
+#menu a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+#menu a:hover {
+  color: #5292da;
+}
+
+#menu_time {
+  height: 34px;
+  line-height: 17px;
+}
+
+#time_loaded {
+  display: block;
+  width: 161px;
+}
+
+#menu_view_link, #menu_time {
+  text-align: center;
+  padding-left: 0 !important;
+}
+
+#menu_view_link {
+  margin-bottom: 10px;
+}
+
+#contents {
+  margin: 0 162px;
+}
+
+#contents_header {
+  width: 750px;
+  height: 12px;
+  background: url("center_top.png");
+}
+
+#contents_footer {
+  background: url("center_bottom.png");
+  width: 750px;
+  height: 15px;
+  margin-bottom: 25px;
+}
+
+#contents_information {
+  width: 730px;
+  background: url("center_middle.png");
+  padding: 0 10px;
+  text-align: right;
+}
+
+.section_information {
+  display: inline;
+}
+
+#mining td .metal, #galaxy_fund .metal, #alliance_fund .metal, #alliance_fund_trade .metal, #alliance_fund_donate .metal {
+  background: url("metal_48.png") no-repeat;
+  width: 48px;
+  height: 46px;
+  display: block;
+}
+
+#mining td .crystal, #galaxy_fund .crystal, #alliance_fund .crystal, #alliance_fund_trade .crystal, #alliance_fund_donate .crystal {
+  background: url("crystal_48.png") no-repeat;
+  width: 48px;
+  height: 43px;
+  display: block;
+}
+
+#mining td .eonium, #galaxy_fund .eonium, #alliance_fund .eonium, #alliance_fund_trade .eonium, #alliance_fund_donate .eonium {
+  background: url("eonium_48.png") no-repeat;
+  width: 48px;
+  height: 41px;
+  display: block;
+}
+
+#mining td .textlabel, #galaxy_fund .textlabel, #alliance_fund .textlabel, #alliance_fund_trade .textlabel, #alliance_fund_donate .textlabel {
+  display: none;
+}
+
+#galaxy_fund .center .metal, #galaxy_fund .center .crystal, #galaxy_fund .center .eonium,
+#alliance_fund_trade .center .metal, #alliance_fund_trade .center .crystal, #alliance_fund_trade .center .eonium,
+#alliance_fund_donate .center .metal, #alliance_fund_donate .center .crystal, #alliance_fund_donate .center .eonium {
+  margin: 0 auto;
+}
+
+.constructions, .research, .scans, .training, .governments {
+  display: table;
+  margin-bottom: 10px;
+  border-bottom: 1px dotted;
+  width: 100%;
+}
+
+.construction_info p, .research p, .scans p {
+  font-size: 8pt;
+}
+
+.construction_info, .construction_built, .construction_build {
+  float: left;
+}
+
+.construction_info {
+  width: 300px;
+}
+
+.construction_built {
+  width: 225px;
+  text-align: center;
+}
+
+.construction_build {
+  width: 175px;
+  text-align: center;
+}
+
+.construction_info .title, .research .title, .research_branch .title, .branch_name h3, .scans .title, .training_info .title, .governments .title {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.construction_info .time, .research .time, .research .rp, .scan_coords, .scan_fund {
+  display: block;
+}
+
+#mining .resources li, .construction_info .resources li, .production_orders .resources li, #ship_cost .resources li,
+#production_form .resources li, .scans .resources li, .training_info .resources li,
+#unit_cost .resources li, #wage_bill .resources li, #alliance_fund_tax .resources li, #est_scan_cost .resources li {
+  display: inline;
+}
+
+.construction_build .resources li {
+  margin: 0 auto;
+}
+
+.construction_build .resources {
+  margin-bottom: 10px;
+}
+
+.research_current, .research_next {
+  width: 50%;
+  float: left;
+}
+
+.research_branch_list {
+  margin-bottom: 10px;
+  border-bottom: 1px dotted;
+}
+
+.research_branch .completed .title {
+  width: 100%;
+  display: block;
+  background: url("tick.gif") no-repeat right;
+}
+
+#production_form table .resources li .textvalue, .training_info .resources li .textvalue {
+  width: 30px;
+  display: inline-block;
+}
+
+#production_factories_row .textlabel {
+  display: block;
+}
+
+#mining p, #mining .resources, .production_orders p, .production_orders .resources, #security_training_form p,
+#unit_cost .resources, #security_redundancy_form p, #security_redundancy_form .resources, #alliance_fund_tax .resources {
+  text-align: center;
+}
+
+#ship_cost, .scan_action {
+  text-align: center;
+}
+
+.scan_info, .training_info {
+  width: 70%;
+  float: left;
+}
+
+.scan_action, .training_amounts {
+  width: 30%;
+  float: left;
+}
+
+.scan_multi {
+  text-align: right;
+  height: 14px;
+  display: block;
+}
+
+.scan_form {
+  padding-bottom: 10px;
+}
+
+#scan_multi_form {
+  padding: 10px 0;
+  text-align: center;
+}
+
+.training_info .resources li.textlabel {
+  width: 80px;
+  display: inline-block;
+}
+
+.training_info p {
+  text-align: left !important;
+}
+
+.training_amounts {
+  padding-top: 14px;
+}
+
+.training_amounts .current_amount, .training_amounts .new_amount {
+  display: block;
+}
+
+#government .government_effects {
+  text-align: center;
+}
+
+.governments .government_effects {
+  margin-bottom: 10px;
+  display: table;
+  text-align: left;
+}
+
+.governments .government_effects .textlabel, .governments .government_effects .textvalue {
+  display: block;
+  width: 100px;
+  float: left;
+  text-align: left;
+}
+
+.governments .government_effects .textlabel {
+  clear: left;
+}
+
+.resources .textvalue {
+  padding-left: 18px;
+}
+
+.resources span.textlabel {
+  display: none;
+}
+
+.resources .metal .textvalue {
+  background: url("metal_16.png") no-repeat;
+  width: 16px;
+  height: 15px;
+}
+
+.resources .crystal .textvalue {
+  background: url("crystal_16.png") no-repeat;
+  width: 16px;
+  height: 14px;
+}
+
+.resources .eonium .textvalue {
+  background: url("eonium_16.png") no-repeat;
+  width: 16px;
+  height: 13px;
+}
+
+.pagination_stats {
+  text-align: right;
+}
+
+.pagination_links {
+  text-align: center;
+}
+
+.pagination_links li {
+  display: inline;
+  margin: 0 2px;
+}
+
+.pagination_links a {
+  padding: 2px;
+}
+
+.change_up {
+  background: url("up.png") no-repeat 1px;
+  padding-left: 15px;
+}
+
+.change_down {
+  background: url("down.png") no-repeat 1px;
+  padding-left: 15px;
+}
+
+#important_messages {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 2000;
+}
+
+#important_messages_overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background: #000000;
+  filter: alpha(opacity=60);
+  -moz-opacity: 0.6;
+  opacity: 0.6;
+}
+
+#important_messages_contents {
+  width: 750px;
+  margin-left: -375px;
+  z-index: 2100;
+  position: absolute;
+  left: 50%;
+  top: 140px;
+}
+
+#important_messages_contents .close_link {
+  margin-right: 15px;
+}
+
+#important_messages_contents_header {
+  width: 750px;
+  height: 12px;
+  background: url("center_top.png");
+}
+
+#important_messages_contents_footer {
+  background: url("center_bottom.png");
+  width: 750px;
+  height: 15px;
+  margin-bottom: 25px;
+}
+
+.important_message .title {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.important_message .time {
+  display: block;
+}
+
+.questionmark {
+  font-size: 14px;
+  font-weight: bold;
+  padding: 0 5px;
+}
+
+a.questionmark {
+  text-decoration: none;
+}
+
+.info {
+  max-width: 400px;
+  text-align: left;
+}
+
+.info_header {
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  padding: 5px 0;
+}
+
+#full_page #contents, #full_page #contents_header, #full_page #contents_footer, #full_page #tab_links {
+  margin: 0 auto;
+  float: none;
+}
+
+#full_page #contents_footer {
+  margin-bottom: 25px;
+}
+
+.page_title {
+  display: none;
+}
+
+/*	Resource header	*/
+#header {
+  float: right;
+  background: url("right-menu-top.png") no-repeat;
+  width: 161px;
+  padding-top: 26px;
+}
+
+#header_planet {
+  text-indent: 5px;
+  width: 161px;
+  height: 29px;
+  font-weight: bold;
+  text-align: center;
+  background: url("menu-right-middle.png");
+}
+
+#header_mail {
+  width: 161px;
+  padding-top: 10px;
+  background: url("menu-right-middle.png");
+  text-indent: 5px;
+}
+
+#header_news {
+  width: 161px;
+  background: url("menu-right-middle.png");
+  text-indent: 5px;
+}
+
+#header_metal {
+  padding-top: 29px;
+}
+
+#header_tick, #header_metal, #header_crystal, #header_eonium, #header_value, #header_xp, #header_score, #header_rank, #header_asteroids {
+  width: 161px;
+  background: url("menu-right-middle.png");
+  display: table;
+}
+
+#header .textlabel {
+  float: left;
+  margin-left: 5px;
+}
+
+#header .textvalue {
+  float: right;
+  padding-right: 15px;
+}
+
+#header_tick {
+  padding-top: 10px;
+}
+
+#header #news_new, #header #mail_new {
+  font-weight: bold;
+  color: #FF0000;
+}
+
+#planet_summary {
+  float: right;
+  width: 161px;
+  clear: right;
+}
+
+#planet_summary_construction, #planet_summary_research, #planet_summary_production {
+  background: url("menu-right-middle.png");
+  padding-left: 5px;
+  padding-top: 10px;
+}
+
+#planet_summary_construction .textlabel, #planet_summary_research .textlabel {
+  display: block;
+}
+
+#planet_summary_construction {
+  padding-top: 29px;
+}
+
+#planet_summary_production {
+  padding-bottom: 20px;
+}
+
+#planet_summary .countdown, #planet_summary_construction_current, #planet_summary_research_current, #planet_summary_production_current, #planet_summary_construction_complete, #planet_summary_research_complete {
+  display: block;
+  text-align: right;
+  padding-right: 15px;
+}
+
+.planet_summary_production_orders {
+  margin-bottom: 10px;
+}
+
+#planet_summary_footer {
+  width: 147px;
+  background: url("right-menu-bottom.png") bottom no-repeat;
+  padding-bottom: 26px;
+  padding-right: 15px;
+}
+
+#quest_system .completed {
+  background: url("tick.gif") no-repeat;
+  width: 15px;
+  height: 13px;
+  display: block;
+  margin: 0 auto;
+}
+
+.expand {
+  background: url("expand.gif") no-repeat;
+  width: 13px;
+  height: 12px;
+  display: block;
+  float: left;
+  padding: 0 2px;
+  cursor: pointer;
+}
+
+.tooltip, .info {
+  background: #213d58;
+  border: 1px solid #FFFFFF;
+  display: none;
+  position: absolute;
+  padding: 5px;
+  font-size: 9pt !important;
+  z-index: 1001;
+  color: #ffffff !important;
+  font-weight: normal !important;
+  line-height: normal !important;
+  text-align: left !important;
+  text-transform: none !important;
+}
+
+.tooltip {
+  white-space: pre;
+}
+
+.close_link {
+  float: right;
+  text-decoration: none;
+  font-size: 9pt !important;
+}
+
+.progress_wrapper {
+  background: #575757;
+  height: 18px;
+  margin: 0 auto;
+}
+
+.progress_bar {
+  background: url("progress_bar.jpg");
+  height: 18px;
+}
+
+.progress_expected {
+  background: url("progress_bar.jpg");
+  opacity: 0.5;
+  filter: Alpha(opacity=50);
+  -moz-opacity: 0.5;
+  height: 18px;
+  margin-top: -18px;
+}
+
+.progress_value {
+  height: 18px;
+  margin-top: -18px;
+  text-align: center;
+}
+
+/*	Table	*/
+.container {
+  width: 730px;
+  background: url("center_middle.png");
+  padding: 10px;
+}
+
+#full_page .container {
+  margin: 0 auto;
+}
+
+.header, h2 {
+  font-weight: bold;
+  font-size: 14px;
+  text-align: center;
+  margin: 0px;
+  padding: 5px 0;
+}
+
+.maintext {
+  text-align: left;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 10px;
+}
+
+.maintext table {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.show_hide {
+  font-size: 8pt;
+}
+
+#galaxy_banner .maintext {
+  text-align: center;
+}
+
+.slider_track {
+  float: left;
+  font-size: 0px;
+  line-height: 0px;
+  margin: 0;
+  padding: 4px;
+  width: 120px;
+}
+
+.slider_slider {
+  background: #DDDDDD;
+  height: 2px;
+  line-height: 0px;
+  margin: 4px 4px 2px 4px;
+  position: absolute;
+  width: 110px;
+  z-index: 1;
+}
+
+.population_slider {
+  background: #b3b5b6;
+  border: 1px solid #DDDDDD;
+  height: 10px;
+  line-height: 0px;
+  margin: 0;
+  position: relative;
+  width: 10px;
+  z-index: 1;
+}
+
+.display_holder {
+  float: right;
+  height: 20px;
+  margin: 0;
+  padding: 0;
+  text-align: right;
+  width: 34px;
+}
+
+.population_display {
+  border: 0;
+  color: #b3b5b6;
+  cursor: default;
+  font: 11px;
+  padding: 3px 2px 0 0;
+  text-align: right;
+  width: 30px;
+}
+
+.forum {
+  display: table;
+  padding-bottom: 16px;
+  width: 100%;
+}
+
+div.forum_title {
+  text-align: center;
+  height: 33px;
+}
+
+a.forum_title {
+  width: 100%;
+  height: 16px;
+  line-height: 16px;
+}
+
+.forum_description {
+  width: 100%;
+  display: block;
+  color: #FFFFFF;
+  font-size: 8px;
+}
+
+.forum_thread_title {
+  float: left;
+  width: 300px;
+  text-align: left;
+  padding-left: 5px;
+  overflow: visible;
+}
+
+.forum_thread_lastpost {
+  float: left;
+  width: 160px;
+  text-align: right;
+  padding-right: 5px;
+  overflow: visible;
+}
+
+.forum_thread_replies {
+  float: left;
+  width: 60px;
+  text-align: center;
+}
+
+.forum_thread_views {
+  display: none;
+}
+
+.forum_thread_header_title {
+  float: left;
+  width: 305px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.forum_thread_header_lastpost {
+  float: left;
+  width: 165px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.forum_thread_header_replies {
+  float: left;
+  width: 60px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.forum_thread_header_views {
+  display: none;
+}
+
+.forum_thread_actions {
+  width: 150px;
+  background: #213d58;
+  border: solid 1px #FFFFFF;
+  z-index: 2;
+  position: absolute;
+}
+
+.forum_thread_actions span {
+  float: left;
+  clear: both;
+}
+
+.forum_thread_actions_button {
+  background: url("../down_arrow.jpg") no-repeat;
+  width: 17px;
+  height: 15px;
+  text-indent: -1000px;
+}
+
+.forum_thread_title * {
+  float: left;
+  padding-right: 2px;
+}
+
+#forum_nav {
+  height: 20px;
+  padding-bottom: 5px;
+}
+
+.forum_post {
+  width: 100%;
+  display: table;
+}
+
+.forum_post_time {
+  float: right;
+  width: 300px;
+  text-align: right;
+}
+
+.forum_post_number {
+  float: left;
+  width: 30px;
+  text-align: left;
+}
+
+.forum_poster {
+  float: left;
+  width: 120px;
+  clear: left;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.forum_post_title {
+  float: left;
+  width: 400px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.forum_post_text {
+  float: left;
+  width: 100%;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.forum_post_notes {
+  float: left;
+  width: 100%;
+  font-size: 80%;
+  font-style: italic;
+}
+
+.forum_post_actions {
+  float: left;
+  width: 100%;
+}
+
+.forum_post_seperator {
+  border: 1px solid #FFFFFF;
+  margin: 10px 0;
+}
+
+.forum_post_delete, .forum_post_edit, .forum_post_report {
+  float: left;
+  margin-left: 15px;
+}
+
+.forum_post_quote, .forum_post_reply {
+  float: right;
+  margin-right: 15px;
+}
+
+#forum_poll {
+  width: 300px;
+  border: 1px solid #FFFFFF;
+  margin: 17px auto;
+  display: table;
+}
+
+.forum_poll_question #forum_poll_options {
+  clear: both;
+}
+
+#forum_poll_vote {
+  width: 100%;
+  clear: both;
+}
+
+.forum_poll_option {
+  width: 100%;
+  clear: right;
+}
+
+.forum_poll_option_name {
+  float: left;
+  width: 50%;
+  clear: left;
+}
+
+.forum_poll_option_select {
+  float: right;
+  width: 50%;
+}
+
+.forum_poll_votes {
+  width: 100%;
+  height: 20px;
+  font-size: 70%;
+}
+
+.forum_poll_votes div {
+  height: 5px;
+  float: left;
+  background: #5292da;
+}
+
+.forum_poll_votes_right {
+  float: left;
+  clear: right;
+}
+
+.quote, blockquote {
+  width: 90%;
+  border: dashed #FFFFFF 1px;
+  margin: 10px auto;
+  padding: 5px;
+}
+
+#d_stats {
+  background: #213d58 !important;
+  border: 1px solid #FFFFFF;
+}
+
+.mceEditorContainer td {
+  text-align: left;
+  color: #000000;
+}
+
+.ter {
+  color: #BBBBBB;
+}
+
+.cat {
+  color: #00CCFF;
+}
+
+.xan {
+  color: #00A000;
+}
+
+.zik {
+  color: #DD0000;
+}
+
+.etd {
+  color: #FFFFFF;
+}
+
+.kin {
+  color: #C685FF;
+}
+
+.sly {
+  color: #CA0065;
+}
+
+#ad_vert {
+  float: left;
+  margin-left: 10px;
+  margin-top: 33px;
+}
+
+#ad_horz {
+  text-align: center;
+}
+
+.mail_unread th {
+  color: #5292da;
+}
+
+#view_news .new {
+  background: rgba(27, 55, 71, 0.8);
+}
+
+.relations_friendly {
+  outline: #004000 1px solid;
+  background: rgba(0, 40, 0, 0.2);
+}
+
+.relations_allied {
+  outline: #009000 1px solid;
+  background: rgba(0, 90, 0, 0.2);
+}
+
+.relations_hostile {
+  outline: #500000 1px solid;
+  background: rgba(50, 0, 0, 0.2);
+}
+
+.relations_war {
+  outline: #900000 1px solid;
+  background: rgba(90, 0, 0, 0.2);
+}
+
+.relations_nap {
+  outline: #808000 1px solid;
+  background: rgba(80, 80, 0, 0.4);
+}
+
+.relations_own_member {
+  outline: #0082ff 1px solid;
+  background: rgba(0, 130, 255, 0.2);
+}
+
+.relations_own_recruit {
+  outline: #d57500 1px solid;
+  background: rgba(213, 117, 0, 0.3);
+}
+
+.relations_own_applicant {
+  background: rgba(255, 140, 0, 0.2);
+}
+
+.intel {
+  font-weight: bold;
+}
+
+/* bcalc */
+#calc #tnav, #calc #contents_header, #calc #contents_footer {
+  display: none !important;
+}
+
+#calc #full_page {
+  background: none;
+}
+
+#bcalc {
+  width: 970px;
+  margin: 10px auto;
+}
+
+#bcalc input, #bcalc select, #edit_comment_box input, #add_other input, #fleet_select_box select, #add_other select {
+  background: transparent;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+#bcalc option, #fleet_select_box option, #add_other option {
+  background: #000000;
+}
+
+#def, #att, #def_reports, #att_reports, #def_value, #att_score {
+  width: 50%;
+}
+
+.def_controls, .global_controls, .att_controls {
+  width: 33%;
+  text-align: center;
+  height: 25px;
+}
+
+.def_controls *, .global_controls *, .att_controls * {
+  vertical-align: middle;
+}
+
+#scans_area {
+  height: 20px;
+  width: 200px;
+  background: transparent;
+}
+
+#edit_comment {
+  width: 98%;
+}
+
+#def_side, #att_side {
+  font-weight: bold;
+  font-size: 14px;
+  height: 23px;
+  text-align: center;
+  margin: 0px;
+  padding: 5px 0 0 0;
+}
+
+#def_reports table, #att_reports table {
+  margin-bottom: 20px;
+}
+
+#controls, #def_table, #att_table, .def_report_fleet, .def_report_salvage, .def_report_stolen, .att_report_fleet, .att_report_roids, .att_report_resources, .att_report_stolen, #def_value_table, #att_score_table {
+  width: 100%;
+  border-spacing: 2px;
+}
+
+.def_report_fleet, .def_report_salvage, .def_report_stolen, .att_report_fleet, .att_report_roids, .att_report_resources, .att_report_stolen {
+  margin-bottom: 10px;
+}
+
+.def_name, #def_header_ship, .att_name, #att_header_ship {
+  font-weight: bold;
+  width: 120px;
+  min-width: 120px;
+  text-align: left;
+  text-indent: 5px;
+}
+
+.def_name, .att_name {
+  color: #FFFFFF;
+}
+
+#def_show, #att_show {
+  padding: 2px;
+  text-align: center;
+}
+
+.def_name span:hover, .att_name span:hover {
+  color: #5292da;
+}
+
+.def_fleet, .att_fleet, .def_fleet_gaps, .att_fleet_gaps, #def_header_st_ro_amount, #def_header_st_ro_lost {
+  width: 63px;
+  text-align: center;
+}
+
+.def_row input, .att_row input {
+  text-align: right;
+}
+
+.def_header, .att_header, .def_report_header, .att_report_header {
+  font-weight: bold;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+.def_report_metal, .att_report_metal, .def_report_crystal, .att_report_crystal, .def_report_eonium, .att_report_eonium,
+.def_report_name, .att_report_name, .def_report_arrived, .att_report_arrived, .def_report_lost, .att_report_lost, .def_value_name, .att_score_name {
+  width: 33%;
+  font-weight: normal;
+}
+
+.def_report_arrived, .att_report_arrived, .def_report_lost, .att_report_lost, .def_report_salvage * {
+  text-align: center;
+}
+
+.def_report_name, .att_report_name, .def_value_name, .att_score_name {
+  font-weight: normal;
+  text-align: left;
+  text-indent: 5px;
+}
+
+.def_report_gained, .att_report_gained {
+  width: 67%;
+  font-weight: normal;
+}
+
+#def_header_killed, .def_killed, #def_header_emped, .def_emped, #def_header_stolen, .def_stolen,
+#att_header_killed, .att_killed, #att_header_emped, .att_emped, #att_header_stolen, .att_stolen, .def_total, .att_total {
+  width: 80px;
+  min-width: 80px;
+  text-align: center;
+}
+
+.def_name, .att_name, .def_row, .att_row, .def_structures_lost, .def_metal_asteroids_lost, .def_crystal_asteroids_lost, .def_eonium_asteroids_lost {
+  font-weight: normal;
+}
+
+.def_killed, .att_killed {
+  font-weight: normal;
+  color: #d50000;
+}
+
+.def_emped, .att_emped {
+  font-weight: normal;
+  color: #00FFFF;
+}
+
+.def_stolen, .att_stolen {
+  font-weight: normal;
+  color: #ed6a12;
+}
+
+.def_value_lost, .att_score_lost {
+  font-weight: normal;
+  color: #d50000;
+  text-align: center;
+}
+
+.def_value_gained, .att_score_gained {
+  font-weight: normal;
+  color: #00aa01;
+  text-align: center;
+}
+
+.def_fleet input[type=number], .def_fleet_st input[type=number], .def_fleet_ro input[type=number], .def_fleet_rs input[type=number], .def_planet input[type=number],
+.att_fleet input[type=number], .att_planet input[type=number] {
+  width: 5em;
+}
+
+.def_ter, .att_ter {
+  background: #1b1b1b;
+}
+
+.def_cat, .att_cat {
+  background: #000140;
+}
+
+.def_xan, .att_xan {
+  background: #003500;
+}
+
+.def_zik, .att_zik {
+  background: #350000;
+}
+
+.def_etd, .att_etd {
+  background: #3C3C3C;
+}
+
+.def_kin, .att_kin {
+  background: #220040;
+}
+
+.def_sly, .att_sly {
+  background: #400020;
+}
+
+.ship_class {
+  font-size: 9px;
+}
+
+.t1 {
+  color: #FF0000;
+}
+
+.t2 {
+  color: #FFA500;
+}
+
+.t3 {
+  color: #FFFF00;
+}
+
+#info_loading {
+  background: url("loading.gif") center no-repeat;
+  display: block;
+  height: 33px;
+}
+
+#my_bcalcs, #add_other, #add_own, #fleet_select_box, #side_select_box, #edit_comment_box, #con_fleets, #con_planets, #planet_note, #load_box, .display_box_small {
+  width: 500px;
+  background: #213d58;
+  position: absolute;
+  z-index: 1000;
+  border: 1px solid #FFFFFF;
+}
+
+#add_other, #fleet_select_box, #side_select_box, #edit_comment_box, #con_fleets, #con_planets, #planet_note, .display_box_small {
+  width: 200px !important;
+  position: absolute;
+}
+
+#my_bcalcs table, #add_own table {
+  width: 100%;
+}
+
+.bcalc_row_selected {
+  color: #5292da;
+  font-weight: bold;
+}
+
+#intel_form {
+  background: #213d58;
+  border: 1px solid #FFFFFF;
+  padding: 5px;
+}
+
+#tab_links {
+  background: url("center_middle.png");
+  font-weight: bold;
+  text-align: center;
+  width: 730px;
+  padding: 10px;
+}
+
+#tab_links li {
+  display: inline;
+  padding: 0 20px;
+}
+
+.tab_link_active {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+#alliance_menu {
+  text-align: center;
+}
+
+#alliance_menu li {
+  display: inline;
+  padding: 0 20px;
+}
+
+.alliance_def_error {
+  border: 2px solid #FF0000;
+}
+
+.alliance_def_valid {
+  border: 2px solid #00FF00;
+}
+
+#con_fleets, #con_planets, #planet_note, #load_box, .display_box_small {
+  padding: 10px;
+}
+
+#con_fleets li, #con_planets li, #load_box li {
+  padding: 2px 0;
+}
+
+/* Scans */
+.scan_age_new {
+  color: #00FF00 !important;
+}
+
+.scan_age_old {
+  color: #FFFF00 !important;
+}
+
+.scan_age_older {
+  color: #FFA500 !important;
+}
+
+.scan_age_ancient {
+  color: #FF0000 !important;
+}
+
+.tablesort_asc, .tablesort_desc {
+  color: #CCCCCC;
+  cursor: pointer;
+}
+
+.tablesort_asc:hover, .tablesort_desc:hover {
+  text-decoration: underline;
+}
+
+.alliance_attack_claims_list li {
+  display: inline;
+}
+
+#pabox_loading {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  height: 32px;
+  width: 32px;
+  background: url("loading.gif");
+  margin-top: -20px;
+  margin-left: -20px;
+  cursor: pointer;
+  overflow: hidden;
+  z-index: 1104;
+  display: none;
+}
+
+#pabox_display {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  overflow: auto;
+  display: none;
+}
+
+#pabox_overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: #000000;
+  z-index: 1100;
+  display: none;
+}
+
+#pabox_wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 20px;
+  z-index: 1101;
+  display: none;
+}
+
+#pabox_outer {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: #213d58;
+  border: 1px solid #FFFFFF;
+}
+
+#pabox_inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: 0;
+  outline: none;
+  overflow: auto;
+}
+
+.pabox_title {
+  position: absolute;
+  z-index: 1102;
+}
+
+#pabox_title_layered {
+  bottom: 0;
+  background: #000000;
+}
+
+#pabox_close {
+  position: absolute;
+  top: -15px;
+  right: -15px;
+  width: 30px;
+  height: 30px;
+  background: url("close.png");
+  cursor: pointer;
+  z-index: 1103;
+  display: none;
+}
+
+.ally_def_incs_wrapper {
+  margin-bottom: 2px;
+}
+
+.ally_def_eta_sep {
+  height: 15px;
+}
+
+.ally_def_eta {
+  font-weight: bold;
+  font-size: 14px;
+  text-align: center;
+  padding: 2px 0;
+  cursor: pointer;
+}
+
+.ally_def_selected {
+  color: #5292da;
+  font-weight: bold;
+}
+
+.ally_def_target {
+  width: 100%;
+}
+
+.ally_def_target, .ally_def_attacker, .ally_def_defender, .ally_def_attacker_intel, .ally_def_fleetcatch_fleet {
+  display: flex;
+}
+
+.ally_def_target_toggle_link {
+  margin-left: -10px;
+  width: 10px;
+  cursor: pointer;
+}
+
+.ally_def_target_links {
+  width: 3em;
+  margin-left: 10px;
+}
+
+.ally_def_target_summary {
+  flex: 1 1 auto;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.ally_def_target_mdata {
+  width: 250px;
+  display: flex;
+}
+
+.ally_def_target_mdata_nick {
+  flex: 1 1 auto;
+}
+
+.ally_def_target_mdata_roids {
+  width: 50px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.ally_def_target_mdata_dp {
+  width: 50px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.ally_def_target_mdata_base {
+  width: 60px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.ally_def_target_coords, .ally_def_attacker_coords, .ally_def_defender_coords {
+  width: 4em;
+}
+
+.ally_def_attacker_fleetname {
+  width: 120px;
+  flex: 1 0 auto;
+  white-space: nowrap;
+}
+
+.ally_def_attacker_race, .ally_def_defender_race {
+  width: 2em;
+}
+
+.ally_def_attacker_orig_eta {
+  width: 1.5em;
+  text-align: right;
+}
+
+.ally_def_attacker_shipcount {
+  text-align: right;
+  width: 3em;
+  flex: 1 0 auto;
+}
+
+.ally_def_attacker_links {
+  width: 7em;
+  padding-left: 0.5em;
+}
+
+.ally_def_attacker_call_status {
+  width: 9em;
+}
+
+.ally_def_attacker_classes {
+  width: 120px;
+  padding-left: 0.5em;
+}
+
+.ally_def_attacker_intel {
+  width: 120px;
+  flex: 1 1 auto;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.ally_def_fleetcatch_fleet_name {
+  margin-left: 4em;
+  width: 120px;
+}
+
+.ally_def_fleetcatch_fleet_shipcount {
+  width: 6em;
+  text-align: right;
+}
+
+.ally_def_defender_fleetname {
+  width: 126px;
+  white-space: nowrap;
+}
+
+.ally_def_defender_shipcount {
+  text-align: right;
+  width: 42px;
+}
+
+.ally_def_defender_orig_eta {
+  width: 3em;
+  text-align: right;
+}
+
+.ally_def_defender_mdata {
+  flex: 1 1 auto;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.ally_def_defender_mdata_nick {
+  width: 100px;
+  display: flex;
+}
+
+.ally_def_defender_mdata_ap, .ally_def_defender_mdata_dp {
+  width: 50px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.ally_def_details_fleet {
+  display: flex;
+}
+
+.ally_def_details_classes {
+  display: flex;
+  justify-content: flex-end;
+  flex: 1 1 auto;
+}
+
 body {
   overflow: auto;
   /* total width */
@@ -6970,7 +8915,3 @@ form[action^="mining.pl?"] table {
     opacity: 1;
   }
 }
-/*!
-*
-*  P.S. If you can see this and the message at the start then you successfully copied and pasted the entire file, epic.
-*/

@@ -1,0 +1,43 @@
+
+#page_research {
+  .research {
+    .branch_name {
+
+    }
+
+    .research_current {
+
+    }
+
+    .research_next {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+
+      .title {
+        width: 100%;
+        order: 1;
+      }
+
+      .progress_wrapper {
+        order: 3;
+        + p {
+          order: 4;
+          font-size: 13px;
+        }
+      }
+
+      form {
+
+        &.cancelform {
+
+        }
+
+        p {
+          margin: 0;
+          padding: 0;
+        }
+      }
+    }
+  }
+}

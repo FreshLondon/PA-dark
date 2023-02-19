@@ -11,163 +11,168 @@
   padding: 0 0 1rem;
   background: $color-background;
   display: table;
+  list-style: none;
   @include respond-below(sm) {
-	grid-column: 1 / 2;
-	grid-row: 1/4;
-	max-width: 100px;
+    grid-column: 1 / 2;
+    grid-row: 1/4;
+    max-width: 100px;
   }
 
   > li {
-	padding: 0 0 .15rem;
+    padding: 0 0 .15rem;
 
-	&#menu_overview,
-	&#menu_preferences,
-	&#menu_logout {
-	  padding: 0 .5rem .15rem;
-	}
+    &#menu_overview,
+    &#menu_preferences,
+    &#menu_logout {
+      padding: 0 .5rem .15rem;
+    }
 
-	&#menu_preferences,
-	&#menu_logout {
-	  text-align: center;
-	  font-size: $text-small;
-	  float: left !important;
-	  width: 50%;
-	  margin: 1rem 0;
-	}
+    &#menu_preferences,
+    &#menu_logout {
+      text-align: center;
+      font-size: $text-small;
+      float: left !important;
+      width: 50%;
+      margin: 1rem 0;
+    }
 
-	&#menu_view_link {
-	  margin-bottom: 0;
-	  font-size: $text-small;
+    &#menu_view_link {
+      margin-bottom: 0;
+      font-size: $text-small;
 
-	  a {
-		width: 100%;
-		display: inline-block;
-		text-align: center;
-	  }
-	}
+      a {
+        width: 100%;
+        display: inline-block;
+        text-align: center;
+      }
+    }
 
-	&#menu_overview {
-	  padding: .5rem;
-	  width: 100%;
-	  box-shadow: inset 0 0 8px 2px rgba(#000, .25), 3px 0 6px -3px rgba(#000, .25);
-	  border-top: 1px solid transparent;
-	  border-image: linear-gradient(to right, transparent 0%, rgba($color-primary, .5) 100%);
-	  border-image-slice: 1;
-	}
+    &#menu_overview {
+      padding: .5rem;
+      width: 100%;
+      box-shadow: inset 0 0 8px 2px rgba(#000, .25), 3px 0 6px -3px rgba(#000, .25);
+      border-top: 1px solid transparent;
+      border-image: linear-gradient(to right, transparent 0%, rgba($color-primary, .5) 100%);
+      border-image-slice: 1;
+    }
 
-	&#menu_overview,
-	&.menu_grp {
-	  background: $color-secondary;
-	}
+    &#menu_overview,
+    &.menu_grp {
+      background: $color-secondary;
+    }
 
-	&.menu_grp {
-	  margin: 0;
-	  padding: 0;
+    &.menu_grp {
+      margin: 0;
+      padding: 0;
 
-	  > span {
-		display: block;
-		padding: .25rem .5rem;
-		background: #19222b;
-		font-size: $text-small;
-		font-weight: bold;
-		text-transform: uppercase;
-		border-bottom: 1px solid transparent;
-		border-image: linear-gradient(to right, transparent 0%, rgba($color-primary, .5) 100%);
-		border-image-slice: 1;
-	  }
-	}
+      > span {
+        display: block;
+        padding: .25rem .5rem;
+        background: #19222b;
+        font-size: $text-small;
+        font-weight: bold;
+        text-transform: uppercase;
+        border-bottom: 1px solid transparent;
+        border-image: linear-gradient(to right, transparent 0%, rgba($color-primary, .5) 100%);
+        border-image-slice: 1;
+      }
+    }
 
-	> ul {
-	  box-shadow: inset 0 0 8px 2px rgba(#000, .25), 3px 0 6px -3px rgba(#000, .25);
-	  padding: .25rem 0 .5rem;
+    > ul {
+      box-shadow: inset 0 0 8px 2px rgba(#000, .25), 3px 0 6px -3px rgba(#000, .25);
+      padding: .25rem 0 .5rem;
 
-	  > li {
-		> ul {
-		  margin-left: .5rem;
-		}
-	  }
-	}
+      > li {
+        > ul {
+          margin-left: .5rem;
+        }
+      }
+    }
+  }
+
+  ul {
+    list-style: none;
   }
 
   li {
-	padding: 0 .5rem .15rem;
+    padding: 0 .5rem .15rem;
 
-	li {
-	  li {
-		padding: 0;
+    li {
+      li {
+        padding: 0;
 
-		&:before {
-		  content: "\279f";
-		  font-size: 1.5rem;
-		  line-height: 1.5rem;
-		  vertical-align: middle;
-		  left: -5px;
-		  position: relative;
-		  color: rgba($color-primary, .5);
-		}
+        &:before {
+          content: "\279f";
+          font-size: 1.5rem;
+          line-height: 1.5rem;
+          vertical-align: middle;
+          left: -5px;
+          position: relative;
+          color: rgba($color-primary, .5);
+        }
 
-		a {
-		  line-height: 1.5rem;
-		}
-	  }
-	}
+        a {
+          line-height: 1.5rem;
+        }
+      }
+    }
   }
 
   #menu_time {
-	margin-top: 2rem;
-	font-size: 0;
-	color: rgba($color-primary, .55);
-	padding-bottom: 8rem;
+    margin-top: 2rem;
+    font-size: 0;
+    color: rgba($color-primary, .55);
+    padding-bottom: 8rem;
 
-	span {
-	  &#time {
-		font-size: $text-huge;
-		color: $color-text;
-		animation: pulse 1s infinite;
+    span {
+      &#time {
+        font-size: $text-huge;
+        color: $color-text;
+        animation: pulse 1s infinite;
 
-		&:hover {
-		  text-shadow: 0 0 0 $color-primary;
-		}
-	  }
+        &:hover {
+          text-shadow: 0 0 0 $color-primary;
+        }
+      }
 
-	  &#time_loaded {
-		font-size: $text-medium;
-		color: rgba($color-text, .5);
-		position: relative;
+      &#time_loaded {
+        font-size: $text-medium;
+        color: rgba($color-text, .5);
+        position: relative;
 
-		&:before {
-		  content: "Ultimate skin v4.03";
-		  position: absolute;
-		  bottom: -3.75rem;
-		  font-size: $text-large;
-		  color: rgba($color-primary, .5);
-		  white-space: nowrap;
-		  left: 50%;
-		  padding: .25rem;
-		  transform: translateX(-50%);
-		  border: 1px solid rgba($color-primary, .5);
-		}
+        &:before {
+          content: "Ultimate skin v4.03";
+          position: absolute;
+          bottom: -3.75rem;
+          font-size: $text-large;
+          color: rgba($color-primary, .5);
+          white-space: nowrap;
+          left: 50%;
+          padding: .25rem;
+          transform: translateX(-50%);
+          border: 1px solid rgba($color-primary, .5);
+        }
 
-		&:after {
-		  content: "contact @UltimateNewbie \A on TG for assistance / bugs";
-		  position: absolute;
-		  white-space: pre-wrap;
-		  line-height: 1.2;
-		  bottom: -5.75rem;
-		  font-size: $text-small;
-		  color: rgba($color-primary, .5);
-		  width: 100%;
-		  left: 50%;
-		  transform: translateX(-50%);
-		}
-	  }
-	}
+        &:after {
+          content: "contact @UltimateNewbie \A on TG for assistance / bugs";
+          position: absolute;
+          white-space: pre-wrap;
+          line-height: 1.2;
+          bottom: -5.75rem;
+          font-size: $text-small;
+          color: rgba($color-primary, .5);
+          width: 100%;
+          left: 50%;
+          transform: translateX(-50%);
+        }
+      }
+    }
   }
 }
 
 #hc_links {
   a.ally_def_selected {
-	color: $color-positive;
+    color: $color-positive;
   }
 }
 
@@ -184,80 +189,80 @@
   align-items: center;
 
   li {
-	display: inline;
-	padding: 0;
+    display: inline;
+    padding: 0;
 
-	a {
-	  margin: .5rem;
-	  text-transform: uppercase;
-	  font-size: $text-medium;
-	  font-weight: bold;
-	  letter-spacing: .5px;
-	  color: $color-primary;
-	  position: relative;
-	  display: inline-block;
-	  white-space: nowrap;
-	  transition: all 0.5s ease-in-out;
+    a {
+      margin: .5rem;
+      text-transform: uppercase;
+      font-size: $text-medium;
+      font-weight: bold;
+      letter-spacing: .5px;
+      color: $color-primary;
+      position: relative;
+      display: inline-block;
+      white-space: nowrap;
+      transition: all 0.5s ease-in-out;
 
-	  &.tab_link_active {
-		color: $color-text;
+      &.tab_link_active {
+        color: $color-text;
 
-		&:before,
-		&:after {
-		  width: 50%;
-		}
+        &:before,
+        &:after {
+          width: 50%;
+        }
 
-		&:before {
-		  background: linear-gradient(to right, $color-primary 25%, transparent 100%);
-		}
+        &:before {
+          background: linear-gradient(to right, $color-primary 25%, transparent 100%);
+        }
 
-		&:after {
-		  background: linear-gradient(to left, $color-primary 25%, transparent 100%);
-		}
-	  }
+        &:after {
+          background: linear-gradient(to left, $color-primary 25%, transparent 100%);
+        }
+      }
 
-	  &:before,
-	  &:after {
-		content: "";
-		position: absolute;
-		bottom: -2px;
-		width: 0;
-		height: 1px;
-		margin: 5px 0 0;
-		transition: all 0.3s ease-in-out;
-	  }
+      &:before,
+      &:after {
+        content: "";
+        position: absolute;
+        bottom: -2px;
+        width: 0;
+        height: 1px;
+        margin: 5px 0 0;
+        transition: all 0.3s ease-in-out;
+      }
 
-	  &:after,
-	  &:before {
-		width: 0;
-	  }
+      &:after,
+      &:before {
+        width: 0;
+      }
 
-	  &:before {
-		left: 50%;
-	  }
+      &:before {
+        left: 50%;
+      }
 
-	  &:after {
-		right: 50%;
-	  }
+      &:after {
+        right: 50%;
+      }
 
-	  &:hover {
-		cursor: pointer;
-		color: $color-text;
+      &:hover {
+        cursor: pointer;
+        color: $color-text;
 
-		&:before,
-		&:after {
-		  width: 50%;
-		  opacity: 1;
-		}
+        &:before,
+        &:after {
+          width: 50%;
+          opacity: 1;
+        }
 
-		&:before {
-		  background: linear-gradient(to right, $color-primary 250%, transparent 100%);
-		}
+        &:before {
+          background: linear-gradient(to right, $color-primary 250%, transparent 100%);
+        }
 
-		&:after {
-		  background: linear-gradient(to left, $color-primary 25%, transparent 100%);
-		}
-	  }
-	}
+        &:after {
+          background: linear-gradient(to left, $color-primary 25%, transparent 100%);
+        }
+      }
+    }
   }
 }
