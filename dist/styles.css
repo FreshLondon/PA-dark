@@ -1284,8 +1284,9 @@ span.center {
   position: relative;
 }
 #page_overview .section_information .info {
-  left: 20px !important;
-  top: 0 !important;
+  top: -11px !important;
+  left: -3px !important;
+  transform: translateX(-100%);
 }
 #page_overview #ships table tr td {
   background: #24303f;

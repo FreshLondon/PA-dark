@@ -15,8 +15,9 @@
     position: relative;
 
     .info {
-      left: 20px !important;
-      top: 0 !important;
+      top: -11px !important;
+      left: -3px !important;
+      transform: translateX(-100%);
     }
   }
 
