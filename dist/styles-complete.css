@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*!
-*  v4.03
+*  v4.04
 *  This skin addon is designed to run by itself, with no other added CSS.
 *
 *  If this skin customisation adds even a tiny bit of enjoyment to your gaming experience it was well worth the
@@ -2226,7 +2226,7 @@ hr {
   position: relative;
 }
 #menu #menu_time span#time_loaded:before {
-  content: "Ultimate skin v4.03";
+  content: "Ultimate skin v4.04";
   position: absolute;
   bottom: -3.75rem;
   font-size: 1rem;
