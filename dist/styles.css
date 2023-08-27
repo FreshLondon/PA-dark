@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*!
-*  v4.04
+*  v4.05
 *  This skin addon is designed to run with the r32 skin selected in PA preferences.
 *
 *  If this skin customisation adds even a tiny bit of enjoyment to your gaming experience it was well worth the countless hours of development.
@@ -462,7 +462,7 @@ hr {
   position: relative;
 }
 #menu #menu_time span#time_loaded:before {
-  content: "Ultimate skin v4.04";
+  content: "Ultimate skin v4.05";
   position: absolute;
   bottom: -3.75rem;
   font-size: 1rem;
@@ -939,8 +939,8 @@ hr {
 }
 @media (max-width: 767px) {
   #planet_summary_construction_complete,
-#planet_summary_research_complete,
-.planet_summary_production_orders {
+  #planet_summary_research_complete,
+  .planet_summary_production_orders {
     margin: 0;
     padding: 0 0.25rem 0 0;
     text-align: right;
@@ -2926,7 +2926,7 @@ table.mceEditor tr td select.mceSelectList:first-of-type {
 }
 @media (min-width: 992px) {
   #production_form tr th,
-#production_form tr td {
+  #production_form tr td {
     padding: 0.25rem 0.5rem;
   }
 }
@@ -3791,22 +3791,22 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
 }
 @media (max-width: 767px) {
   #page_universe #contents .container:nth-last-child(2) table tr th:nth-child(2),
-#page_universe #contents .container:nth-last-child(2) table tr td:nth-child(2), #page_universe #contents .container:nth-last-child(3) table tr th:nth-child(2),
-#page_universe #contents .container:nth-last-child(3) table tr td:nth-child(2) {
+  #page_universe #contents .container:nth-last-child(2) table tr td:nth-child(2), #page_universe #contents .container:nth-last-child(3) table tr th:nth-child(2),
+  #page_universe #contents .container:nth-last-child(3) table tr td:nth-child(2) {
     display: none;
   }
 }
 @media (max-width: 767px) {
   #page_universe #contents .container:nth-last-child(2) table tr th:nth-child(4),
-#page_universe #contents .container:nth-last-child(2) table tr td:nth-child(4), #page_universe #contents .container:nth-last-child(3) table tr th:nth-child(4),
-#page_universe #contents .container:nth-last-child(3) table tr td:nth-child(4) {
+  #page_universe #contents .container:nth-last-child(2) table tr td:nth-child(4), #page_universe #contents .container:nth-last-child(3) table tr th:nth-child(4),
+  #page_universe #contents .container:nth-last-child(3) table tr td:nth-child(4) {
     display: none;
   }
 }
 @media (max-width: 767px) {
   #page_universe #contents .container:nth-last-child(2) table tr th:nth-child(5),
-#page_universe #contents .container:nth-last-child(2) table tr td:nth-child(5), #page_universe #contents .container:nth-last-child(3) table tr th:nth-child(5),
-#page_universe #contents .container:nth-last-child(3) table tr td:nth-child(5) {
+  #page_universe #contents .container:nth-last-child(2) table tr td:nth-child(5), #page_universe #contents .container:nth-last-child(3) table tr th:nth-child(5),
+  #page_universe #contents .container:nth-last-child(3) table tr td:nth-child(5) {
     display: none;
   }
 }
@@ -4064,8 +4064,8 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
 }
 @media (max-width: 767px) {
   [id^=page_universe] table tr a,
-[id^=page_universe] table tr .tablesort_asc,
-[id^=page_universe] table tr .tablesort_desc {
+  [id^=page_universe] table tr .tablesort_asc,
+  [id^=page_universe] table tr .tablesort_desc {
     padding: 0 0.5rem;
   }
 }
@@ -4361,6 +4361,24 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
 }
 #page_galaxy table#galtable thead th.tablesort_asc, #page_galaxy table#galtable thead th.tablesort_desc {
   color: #ccc;
+}
+#page_galaxy table#galtable tbody tr:not(.relations_friendly,
+.relations_allied,
+.relations_hostile,
+.relations_war,
+.relations_nap,
+.relations_own_member,
+.relations_own_recruit):nth-child(odd) td {
+  background: #24303f;
+}
+#page_galaxy table#galtable tbody tr:not(.relations_friendly,
+.relations_allied,
+.relations_hostile,
+.relations_war,
+.relations_nap,
+.relations_own_member,
+.relations_own_recruit):nth-child(even) {
+  background: #1e2935;
 }
 #page_galaxy table#galtable tbody tr td:nth-child(9) a {
   color: #52a5f8;

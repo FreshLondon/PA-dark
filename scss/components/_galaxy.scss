@@ -1,152 +1,171 @@
 #page_galaxy {
   #contents {
 
-	.maintext .superhighlight {
-	  color: inherit;
-	  font-size: 1.5rem;
-	}
+    .maintext .superhighlight {
+      color: inherit;
+      font-size: 1.5rem;
+    }
   }
-
 
 
   input {
-	margin: 0 !important;
+    margin: 0 !important;
 
-	&[type="number"] {
-	  padding: .25rem !important;
-	  min-width: 3rem;
-	  height: 1.5rem;
-	  color: $color-primary;
-	}
+    &[type="number"] {
+      padding: .25rem !important;
+      min-width: 3rem;
+      height: 1.5rem;
+      color: $color-primary;
+    }
   }
 
   table {
-	width: 100% !important;
+    width: 100% !important;
 
-	&:not(#galtable) {
-	  margin-bottom: 0;
-	}
+    &:not(#galtable) {
+      margin-bottom: 0;
+    }
 
-	&#galtable {
-	  thead {
-		background: $color-background;
+    &#galtable {
+      thead {
+        background: $color-background;
 
-		th {
-		  width: auto !important;
+        th {
+          width: auto !important;
 
-		  &.tablesort_asc,
-		  &.tablesort_desc {
-			color: $color-offwhite;
-		  }
-		}
-	  }
+          &.tablesort_asc,
+          &.tablesort_desc {
+            color: $color-offwhite;
+          }
+        }
+      }
 
-	  tbody {
-		tr {
-		  td {
-			&:nth-child(9) {
-			  a {
-				color: $color-primary;
-				padding-right: 2px;
+      tbody {
+        tr {
+          &:not(.relations_friendly,
+                .relations_allied,
+                .relations_hostile,
+                .relations_war,
+                .relations_nap,
+                .relations_own_member,
+                .relations_own_recruit) {
+            &:nth-child(odd) {
+              td {
+                background: $color-secondary;
+              }
+            }
 
-				&:last-child {
-				  padding-right: 0;
-				}
-			  }
-			}
+            &:nth-child(even) {
+              background: $color-secondary-alt;
+            }
+          }
+          
+          td {
+            &:nth-child(9) {
+              a {
+                color: $color-primary;
+                padding-right: 2px;
 
-			a,
-			span {
-			  color: $color-offwhite;
+                &:last-child {
+                  padding-right: 0;
+                }
+              }
+            }
 
-			  &.bashlimit {
-				color: $color-neutral;
-			  }
+            a,
+            span {
+              color: $color-offwhite;
 
-			  &.gc {
-				color: $color-gc;
-			  }
+              &.bashlimit {
+                color: $color-neutral;
+              }
 
-			  &.moc {
-				color: $color-moc;
-			  }
+              &.gc {
+                color: $color-gc;
+              }
 
-			  &.mow {
-				color: $color-mow;
-			  }
+              &.moc {
+                color: $color-moc;
+              }
 
-			  &.mod {
-				color: $color-mod;
-			  }
-			}
-			&:last-child {
-			  font-size: $text-medium;
-			}
-		  }
-		}
-	  }
+              &.mow {
+                color: $color-mow;
+              }
 
-	  th,
-	  td {
-		padding: .25rem .5rem;
-		white-space: normal;
-	  }
+              &.mod {
+                color: $color-mod;
+              }
+            }
 
-	  td {
-		&:nth-last-child(2) {
-		  padding: .25rem ;
-		  a {
-			padding: 0 .125rem;
-		  }
-		}
-	  }
+            &:last-child {
+              font-size: $text-medium;
+            }
+          }
+        }
+      }
 
-	  tfoot {
-		tr {
-		  &:nth-child(1) {
-			display: none;
-		  }
+      th,
+      td {
+        padding: .25rem .5rem;
+        white-space: normal;
+      }
 
-		  &:nth-child(2) {
-			td {
-			  background: $color-bg-th;
-			}
-		  }
-		}
-	  }
-	}
+      td {
+        &:nth-last-child(2) {
+          padding: .25rem;
+
+          a {
+            padding: 0 .125rem;
+          }
+        }
+      }
+
+      tfoot {
+        tr {
+          &:nth-child(1) {
+            display: none;
+          }
+
+          &:nth-child(2) {
+            td {
+              background: $color-bg-th;
+            }
+          }
+        }
+      }
+    }
   }
 
   #intel_form {
-	background: $color-background;
-	border: 1px solid rgba($color-primary, .5);
-	color: $color-offwhite !important;
-	padding: 0;
+    background: $color-background;
+    border: 1px solid rgba($color-primary, .5);
+    color: $color-offwhite !important;
+    padding: 0;
 
-	p {
-	  margin: .5rem 0;
-	  padding: 0 .5rem;
-	  text-align: center;
+    p {
+      margin: .5rem 0;
+      padding: 0 .5rem;
+      text-align: center;
 
-	  &.right {
-		position: absolute;
-		right: -10px;
-		top: -4px;
-	  }
-	}
+      &.right {
+        position: absolute;
+        right: -10px;
+        top: -4px;
+      }
+    }
 
-	select#intel,
-	input[name="nick"] {
-	  width: 100%;
-	  margin: .25rem auto .5rem;
-	}
+    select#intel,
+    input[name="nick"] {
+      width: 100%;
+      margin: .25rem auto .5rem;
+    }
 
-	input[name="nick"] {
-	  margin-bottom: 0;
-	}
+    input[name="nick"] {
+      margin-bottom: 0;
+    }
 
-	input[type="submit"] {
-	  margin: .5rem;
-	}
+    input[type="submit"] {
+      margin: .5rem;
+    }
   }
 }
