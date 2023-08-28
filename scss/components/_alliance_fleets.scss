@@ -11,8 +11,8 @@
 		  background: $color-secondary;
 
 		  &:empty,
-		  &[colspan="5"],
-		  &[colspan="6"] {
+		  &[colspan='5'],
+		  &[colspan='6'] {
 			background: transparent !important;
 		  }
 		}
@@ -42,7 +42,7 @@
 		}
 
 		td {
-		  &[style="width: 20%;"] {
+		  &[style='width: 20%;'] {
 			background: transparent !important;
 		  }
 		}
@@ -55,7 +55,7 @@
 
 	.maintext {
 	  form {
-		input[type="number"] {
+		input[type='number'] {
 		  width: 2em;
 		}
 	  }
@@ -70,17 +70,17 @@
 
 	  tr {
 		th {
-		  &[colspan="5"] {
-			background: transparent !important;
+		  &[colspan='5'] {
 			padding-bottom: 1rem;
+			background: transparent !important;
 		  }
 		}
 
 		td {
-		  &[colspan="5"] {
+		  &[colspan='5'] {
 			padding: 1rem 0;
 
-			&[class="center"] {
+			&[class='center'] {
 			  padding: 0;
 			}
 		  }

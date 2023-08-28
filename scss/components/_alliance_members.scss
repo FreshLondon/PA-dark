@@ -1,11 +1,10 @@
 #page_alliance_members {
   table {
-
 	tr {
 	  &:first-child th {
+		color: $color-text;
 		font-weight: bold;
 		background: $color-bg-th;
-		color: $color-text;
 	  }
 
 	  &:nth-child(odd) {

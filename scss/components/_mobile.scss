@@ -7,22 +7,21 @@
 
 body.mobile {
   //font-size: 1.6rem;
-
   #page {
-	position: relative;
-	width: 100%;
 	padding: 1rem .5rem 0;
 	display: grid;
+	width: 100%;
+	position: relative;
 	grid-template-columns: 50% 50%;
 	grid-template-rows: auto;
 	grid-column-gap: 0;
 
 	#menu {
+	  padding: 0 0 1rem;
+	  display: grid;
 	  grid-column: 1/2;
 	  grid-column-end: 3;
 	  grid-row: 1;
-	  padding: 0 0 1rem;
-	  display: grid;
 	  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 
 	  > li {
@@ -45,27 +44,27 @@ body.mobile {
 		}
 
 		> ul {
-		  height: 0;
-		  overflow: hidden;
 		  padding: 0;
-		  position: absolute;
+		  overflow: hidden;
 		  background: $color-secondary;
+		  height: 0;
+		  position: absolute;
 		}
 
 		&#menu_time {
-		  grid-column: 1;
-		  grid-column-end: 3;
-		  grid-row: 1;
 		  display: flex;
 		  align-items: center;
 		  margin: 0 1rem 0 0;
+		  grid-column: 1;
+		  grid-column-end: 3;
+		  grid-row: 1;
 		}
 
 		&#menu_view_link {
+		  margin: 0;
 		  grid-column: 5;
 		  grid-column-end: 7;
 		  grid-row: 1;
-		  margin: 0;
 		}
 
 		&#menu_preferences {
@@ -74,12 +73,11 @@ body.mobile {
 		}
 
 		&#menu_logout {
+		  margin: 0;
 		  grid-column: 3;
 		  grid-column-end: 5;
 		  grid-row: 1;
-		  margin: 0;
 		}
-
 	  }
 	}
 
@@ -88,12 +86,12 @@ body.mobile {
 	  grid-column-end: 3;
 
 	  > div:last-of-type:nth-of-type(2n) {
+		padding-top: 0;
 		align-items: center;
 		width: 50%;
 		max-width: 245px;
 		border-top: none;
 		margin-top: 0;
-		padding-top: 0;
 
 		span {
 		  max-width: unset;
@@ -102,23 +100,23 @@ body.mobile {
 	}
 
 	#planet_summary {
+	  padding-top: 0;
+	  display: flex;
+	  align-content: space-between;
+	  flex-direction: row;
+	  justify-content: space-between;
+	  margin: 0;
 	  grid-column: 1 / 2;
 	  grid-column-end: 3;
 	  grid-row: 3;
-	  padding-top: 0;
-	  display: flex;
-	  flex-direction: row;
-	  align-content: space-between;
-	  justify-content: space-between;
-	  margin: 0;
 
 	  &:before {
 		display: none;
 	  }
 
 	  > div {
-		width: 33.333%;
 		display: flex;
+		width: 33.333%;
 
 		&#planet_summary_header,
 		&#planet_summary_footer {

@@ -6,223 +6,222 @@
 
 #page_overview {
   th {
-    &:empty {
-      background: transparent !important;
-    }
+	&:empty {
+	  background: transparent !important;
+	}
   }
 
   .section_information {
-    position: relative;
+	position: relative;
 
-    .info {
-      top: -11px !important;
-      left: -3px !important;
-      transform: translateX(-100%);
-    }
+	.info {
+	  top: -11px !important;
+	  left: -3px !important;
+	  transform: translateX(-100%);
+	}
   }
 
   #ships {
-    table {
-      tr {
-        td {
-          background: $color-secondary;
+	table {
+	  tr {
+		td {
+		  background: $color-secondary;
 
-          &[style="width: 22%;"],
-          &[style="width: 2%;"],
-          &[colspan="3"] {
-            background: transparent !important;
-          }
+		  &[style='width: 22%;'],
+		  &[style='width: 2%;'],
+		  &[colspan='3'] {
+			background: transparent !important;
+		  }
 
-          //&[style="width: 22%;"] {
-          //display: none;
-          //}
-        }
+		  //&[style="width: 22%;"] {
+		  //display: none;
+		  //}
+		}
 
-        &:nth-child(even) {
-          td {
-            background: $color-secondary-alt;
-          }
-        }
-      }
-    }
+		&:nth-child(even) {
+		  td {
+			background: $color-secondary-alt;
+		  }
+		}
+	  }
+	}
 
-    span {
-      display: block;
+	span {
+	  display: block;
 
-      .superhighlight {
-        display: block;
-        font-size: $text-small;
-      }
-    }
+	  .superhighlight {
+		font-size: $text-small;
+		display: block;
+	  }
+	}
   }
 }
 
 #quest_system {
   table {
-    margin: 0 auto;
-    width: 80%;
+	width: 80%;
+	margin: 0 auto;
 
-    th {
-      &:nth-child(1) {
-        width: 0 !important;
-      }
+	th {
+	  &:nth-child(1) {
+		width: 0 !important;
+	  }
 
-      &:nth-child(2) {
-        width: auto !important;
-      }
+	  &:nth-child(2) {
+		width: auto !important;
+	  }
 
-      &:nth-child(3) {
-        width: 100px !important;
-      }
+	  &:nth-child(3) {
+		width: 100px !important;
+	  }
 
-      &:nth-child(4) {
-        width: 1rem !important;
-      }
+	  &:nth-child(4) {
+		width: 1rem !important;
+	  }
 
-      &:nth-child(5) {
-        width: 0 !important;
-      }
-    }
+	  &:nth-child(5) {
+		width: 0 !important;
+	  }
+	}
 
-    tr {
-      &:not(:first-child) {
-        th {
-          text-transform: initial;
-          font-size: 1rem;
+	tr {
+	  &:not(:first-child) {
+		th {
+		  font-size: 1rem;
+		  text-transform: initial;
 
-          &:nth-child(2) {
-            padding: .15rem 0;
-            background: $color-secondary;
-            //background: linear-gradient(135deg, var(--col-panel-light) 0%, var(--col-panel-dark) 100%);
-          }
-        }
+		  &:nth-child(2) {
+			padding: .15rem 0;
+			background: $color-secondary;
+			//background: linear-gradient(135deg, var(--col-panel-light) 0%, var(--col-panel-dark) 100%);
+		  }
+		}
+	  }
 
-      }
+	  &[id^='quest'] p {
+		color: white;
+		font-size: $text-small;
+		margin: 0 1.1rem;
+	  }
+	}
 
-      &[id^='quest'] p {
-        font-size: $text-small;
-        margin: 0 1.1rem;
-        color: white;
-      }
-    }
+	table {
+	  width: calc(100% - 2.4rem);
+	  margin-left: 1rem;
 
-    table {
-      width: calc(100% - 2.4rem);
-      margin-left: 1rem;
+	  td {
+		&:nth-child(1) {
+		  width: auto !important;
+		}
 
-      td {
-        &:nth-child(1) {
-          width: auto !important;
-        }
+		&:nth-child(2) {
+		  width: 100px !important;
+		}
 
-        &:nth-child(2) {
-          width: 100px !important;
-        }
+		&:nth-child(3) {
+		  width: 162px;
+		}
 
-        &:nth-child(3) {
-          width: 162px;
-        }
-
-        &:nth-child(2n+2) {
-          td {
-            padding: .5rem;
-            background: $color-secondary;
-            //background: linear-gradient(135deg, var(--col-panel-light) 0%, var(--col-panel-dark) 100%);
-          }
-        }
-      }
-    }
+		&:nth-child(2n+2) {
+		  td {
+			padding: .5rem;
+			background: $color-secondary;
+			//background: linear-gradient(135deg, var(--col-panel-light) 0%, var(--col-panel-dark) 100%);
+		  }
+		}
+	  }
+	}
   }
 
   .completed {
-    width: 100%;
-    background: none;
+	background: none;
+	width: 100%;
 
-    &:after {
-      content: '\2714';
-      font-weight: bold;
-      color: $color-primary;
-    }
+	&:after {
+	  color: $color-primary;
+	  font-weight: bold;
+	  content: '\2714';
+	}
   }
 }
 
 .expand {
   display: inline-block;
-  margin-right: .5rem;
   background: none;
+  margin-right: .5rem;
 
   &:before {
-    content: '\25BC';
-    color: $color-primary;
-    display: inline;
+	color: $color-primary;
+	content: '\25BC';
+	display: inline;
   }
 
   &:hover {
-    &:before {
-      color: $color-text;
-    }
+	&:before {
+	  color: $color-text;
+	}
   }
 }
 
 .progress_wrapper {
-  background: rgba($color-secondary, .4);
-  border: 1px solid rgba($color-primary, .5);
-  box-shadow: inset 0 2px 4px 2px rgba(black, .4), 0 1px 3px 3px rgba(black, .15);
   font-size: $text-small;
-  height: 1.5rem;
-  width: 100px;
-  border-radius: 4px;
   overflow: hidden;
+  background: rgba($color-secondary, .4);
+  width: 100px;
+  height: 1.5rem;
+  border: 1px solid rgba($color-primary, .5);
+  border-radius: 4px;
+  box-shadow: inset 0 2px 4px 2px rgba(black, .4), 0 1px 3px 3px rgba(black, .15);
   position: relative;
 
   .progress_bar {
-    height: 1.5rem;
-    background: rgba($color-progress-completed, .6);
+	background: rgba($color-progress-completed, .6);
+	height: 1.5rem;
   }
 
   .progress_expected {
-    background: rgba($color-neutral, .2);
-    height: 100%;
-    margin-top: -1.5rem;
-    background-size: 100%;
+	background: rgba($color-neutral, .2);
+	background-size: 100%;
+	height: 100%;
+	margin-top: -1.5rem;
   }
 
   .progress_value {
-    color: $color-text;
-    font-size: $text-default;
-    text-shadow: 0 1px 1px black;
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+	color: $color-text;
+	font-size: $text-default;
+	text-shadow: 0 1px 1px black;
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
   }
 }
 
 .info_header {
   color: $color-offwhite;
+  font-size: $text-small;
   text-align: left;
+  padding: .5rem 1rem .5rem .5rem;
   margin-bottom: .25rem;
   position: relative;
-  padding: .5rem 1rem .5rem .5rem;
-  font-size: $text-small;
 
   a {
-    position: absolute;
-    top: .45rem;
-    right: .25rem;
-    text-transform: uppercase;
+	text-transform: uppercase;
+	position: absolute;
+	top: .45rem;
+	right: .25rem;
 
-    &:hover {
-      color: $color-primary-dark;
-    }
+	&:hover {
+	  color: $color-primary-dark;
+	}
   }
 }
 
 .info_contents {
   p {
-    min-width: 15rem;
-    font-size: $text-small;
-    color: $color-offwhite;
+	color: $color-offwhite;
+	font-size: $text-small;
+	min-width: 15rem;
   }
 }
 
@@ -231,8 +230,8 @@ span {
   &.mission_defend,
   &.mission_return,
   &.mission_fake_defend {
-    background: transparent;
-    opacity: 1;
+	opacity: 1;
+	background: transparent;
   }
 }
 
@@ -241,7 +240,7 @@ span {
   background: rgba($color-negative, .14);
 
   .mission_attack {
-    background: transparent;
+	background: transparent;
   }
 }
 
@@ -250,7 +249,7 @@ span {
   background: rgba($color-neutral, .14);
 
   .mission_fake_defend {
-    background: transparent;
+	background: transparent;
   }
 }
 
@@ -259,7 +258,7 @@ span {
   color: #888;
 
   .mission_return {
-    opacity: 1;
+	opacity: 1;
   }
 }
 
@@ -268,6 +267,6 @@ span {
   background: rgba($color-positive, .14);
 
   .mission_defend {
-    background: transparent;
+	background: transparent;
   }
 }

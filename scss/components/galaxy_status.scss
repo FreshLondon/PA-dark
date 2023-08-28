@@ -5,19 +5,19 @@
 		table {
 		  tr {
 			&.mission_return {
-			  background: rgba($color-grey, .1);
 			  color: $color-offwhite;
+			  background: rgba($color-grey, .1);
 			}
 
 			td {
 			  &.mission_return {
-				background: rgba($color-grey, .1);
 				color: $color-offwhite;
+				background: rgba($color-grey, .1);
 			  }
 			}
 
-			&[id*="notes_"] {
-			  input[type="button"] {
+			&[id*='notes_'] {
+			  input[type='button'] {
 				margin: 0;
 			  }
 
@@ -27,8 +27,8 @@
 					&:not(:first-child) {
 					  input {
 						&:nth-of-type(2) {
-						  margin: .5rem 0 0 0;
 						  width: 98%;
+						  margin: .5rem 0 0 0;
 						}
 					  }
 					}

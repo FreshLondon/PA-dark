@@ -14,7 +14,6 @@
 
 			&:first-child {
 			  //background: transparent;
-
 			  th {
 				//padding: .5rem .125rem;
 				//background: $color-bg-th;
@@ -22,13 +21,13 @@
 			  }
 
 			  > td {
-				&[colspan="2"] {
-				  background: $color-background;
-				  font-size: $text-large;
-				  padding: 1rem 0;
-				  font-weight: bold;
+				&[colspan='2'] {
 				  color: white;
+				  font-size: $text-large;
+				  font-weight: bold;
 				  font-style: italic;
+				  padding: 1rem 0;
+				  background: $color-background;
 				}
 			  }
 			}
@@ -42,23 +41,23 @@
 			  padding: .25rem .75rem;
 
 			  &:first-child {
-				&:not([colspan="2"]):not(:nth-last-child(3)) {
+				&:not([colspan='2']):not(:nth-last-child(3)) {
 				  text-align: right;
 				}
 
 				a {
-				  margin-right: .5rem;
 				  text-align: center;
 				  width: 4rem;
+				  margin-right: .5rem;
 				}
 
 				span {
 				  font-size: 1rem;
 				  text-transform: uppercase;
-				  padding: 0 .125rem;
-				  width: 2.5rem;
 				  text-align: center;
+				  padding: 0 .125rem;
 				  display: inline-block;
+				  width: 2.5rem;
 				}
 			  }
 			}
@@ -98,7 +97,7 @@
 	  }
 
 	  p {
-		span[id^="bcalc_target"] {
+		span[id^='bcalc_target'] {
 		  padding-top: 1rem;
 		  display: block;
 

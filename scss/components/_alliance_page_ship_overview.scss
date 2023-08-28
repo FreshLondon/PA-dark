@@ -5,24 +5,24 @@
 	table {
 	  tr {
 		&:nth-child(1) th {
-		  margin: 1rem 0;
-		  padding: .5rem 0;
+		  color: $color-offwhite;
+		  font-size: 1.2rem;
 		  font-weight: bold;
 		  text-transform: uppercase;
-		  font-size: 1.2rem;
-		  color: $color-offwhite;
+		  padding: .5rem 0;
 		  background: $color-secondary;
 		  background: linear-gradient(180deg, $color-secondary 0%, $color-secondary 15%, $color-secondary 100%) !important;
-		  //border: 1px solid rgba($color-primary, .5);
 		  border: 1px solid transparent;
+		  //border: 1px solid rgba($color-primary, .5);
 		  border-image: linear-gradient(to right, transparent 0%, rgba(82, 165, 248, .5) 50%, transparent 100%);
 		  border-image-slice: 1;
+		  margin: 1rem 0;
 		}
 
 		&:nth-child(2) th {
-		  font-weight: bold;
 		  color: $color-text;
 		  font-size: $text-small;
+		  font-weight: bold;
 		  padding: .5rem .125rem;
 
 		  &.right {
@@ -33,8 +33,8 @@
 		td {
 		  background: $color-secondary;
 
-		  &[style="width: 22%;"],
-		  &[colspan="3"] {
+		  &[style='width: 22%;'],
+		  &[colspan='3'] {
 			background: transparent !important;
 		  }
 		}

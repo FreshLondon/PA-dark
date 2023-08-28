@@ -1,271 +1,271 @@
 /* Planet Details
    -------------------------------------------------------*/
 #header {
-  grid-column: 2 / 3;
   padding-top: 38px;
   display: flex;
-  flex-flow: row wrap;
   align-content: space-between;
+  flex-flow: row wrap;
   justify-content: space-around;
   background: $color-secondary;
-  margin: 0;
   height: unset;
   border: 1px solid transparent;
   border-image: linear-gradient(to right, transparent 0%, rgba($color-primary, .5) 50%, transparent 100%);
   border-image-slice: 1;
   box-shadow: inset 0 0 8px 2px rgba(#000, .25), 0 0 3px 3px rgba(#000, .15);
+  margin: 0;
   position: relative;
+  grid-column: 2 / 3;
   @include respond-below(sm) {
-    grid-row: 1/3;
-    grid-column: 2 / 2;
-    max-width: calc(100vw - 114px);
-    > * {
-      max-width: 50%;
-      float: left;
+	max-width: calc(100vw - 114px);
+	grid-row: 1/3;
+	grid-column: 2 / 2;
+	> * {
+	  max-width: 50%;
+	  float: left;
 
-      &#header_planet {
-        max-width: unset;
-        font-size: .6875rem !important;
-      }
-    }
+	  &#header_planet {
+		font-size: .6875rem !important;
+		max-width: unset;
+	  }
+	}
   }
 
   > div {
-    width: 50%;
-    max-width: 245px;
-    padding: 0 2.25rem;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    margin: 0 0 .5rem;
+	padding: 0 2.25rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	width: 50%;
+	max-width: 245px;
+	margin: 0 0 .5rem;
 
-    &:last-of-type:nth-of-type(even) {
-      max-width: unset;
-      width: 100%;
-      border-top: 1px solid transparent;
-      margin-top: .75rem;
-      padding-top: 4px;
-      border-image: linear-gradient(to right, transparent 0%, rgba($color-primary, .5) 50%, transparent 100%);
-      border-image-slice: 1;
-      justify-content: center;
-      align-items: baseline;
+	&:last-of-type:nth-of-type(even) {
+	  padding-top: 4px;
+	  align-items: baseline;
+	  justify-content: center;
+	  width: 100%;
+	  max-width: unset;
+	  border-top: 1px solid transparent;
+	  border-image: linear-gradient(to right, transparent 0%, rgba($color-primary, .5) 50%, transparent 100%);
+	  border-image-slice: 1;
+	  margin-top: .75rem;
 
-      span {
-        max-width: 33px;
-      }
-    }
+	  span {
+		max-width: 33px;
+	  }
+	}
 
-    &:last-of-type:nth-of-type(odd) {
-      margin-bottom: .75rem;
-    }
+	&:last-of-type:nth-of-type(odd) {
+	  margin-bottom: .75rem;
+	}
 
-    span {
-      flex-basis: 50%;
-    }
+	span {
+	  flex-basis: 50%;
+	}
   }
 
   #header_mail,
   #header_news {
-    max-width: unset;
-    background: rgba(black, .6);
-    //transition: ease background-color .5s;
-    position: absolute;
-    top: 0;
+	background: rgba(black, .6);
+	max-width: unset;
+	//transition: ease background-color .5s;
+	position: absolute;
+	top: 0;
 
-    &:hover {
-      background: rgba(black, 1);
+	&:hover {
+	  background: rgba(black, 1);
 
-      a {
-        color: white !important;
-      }
-    }
+	  a {
+		color: white !important;
+	  }
+	}
 
-    a {
-      flex-basis: 100%;
-      text-align: center;
-      font-size: $text-small;
-      text-transform: uppercase;
-      font-weight: bold;
-      padding: .5rem 0 !important;
-      color: $color-offwhite !important;
-      transition: ease all .5s;
-    }
+	a {
+	  color: $color-offwhite !important;
+	  font-size: $text-small;
+	  font-weight: bold;
+	  text-transform: uppercase;
+	  text-align: center;
+	  padding: .5rem 0 !important;
+	  flex-basis: 100%;
+	  transition: ease all .5s;
+	}
 
-    #mail_new {
-      background: $color-positive;
-      color: black !important;
+	#mail_new {
+	  color: black !important;
+	  background: $color-positive;
 
-      &:hover {
-        background: rgba($color-positive, .8);
-      }
-    }
+	  &:hover {
+		background: rgba($color-positive, .8);
+	  }
+	}
 
-    #news_new {
-      background: $color-neutral;
-      color: black !important;
+	#news_new {
+	  color: black !important;
+	  background: $color-neutral;
 
-      &:hover {
-        background: rgba($color-neutral, .8);
-      }
-    }
+	  &:hover {
+		background: rgba($color-neutral, .8);
+	  }
+	}
   }
 
   #header_mail {
-    padding: 0;
-    order: 1;
-    border: 1px solid transparent;
-    border-image: linear-gradient(to left, rgb(60, 107, 156) 0%, #24313f 100%);
-    border-image-slice: 1;
-    left: 0;
+	padding: 0;
+	border: 1px solid transparent;
+	border-image: linear-gradient(to left, rgb(60, 107, 156) 0%, #24313f 100%);
+	border-image-slice: 1;
+	left: 0;
+	order: 1;
 
-    &:hover {
-      border-image: linear-gradient(to left, $color-primary 0%, #24313f 100%);
-      border-image-slice: 1;
-    }
+	&:hover {
+	  border-image: linear-gradient(to left, $color-primary 0%, #24313f 100%);
+	  border-image-slice: 1;
+	}
   }
 
   #header_news {
-    padding: 0;
-    order: 2;
-    border: 1px solid transparent;
-    border-image: linear-gradient(to right, rgb(60, 107, 156) 0%, #24313f 100%);
-    border-image-slice: 1;
-    right: 0;
+	padding: 0;
+	border: 1px solid transparent;
+	border-image: linear-gradient(to right, rgb(60, 107, 156) 0%, #24313f 100%);
+	border-image-slice: 1;
+	right: 0;
+	order: 2;
 
-    &:hover {
-      border-image: linear-gradient(to right, $color-primary 0%, #24313f 100%);
-      border-image-slice: 1;
-    }
+	&:hover {
+	  border-image: linear-gradient(to right, $color-primary 0%, #24313f 100%);
+	  border-image-slice: 1;
+	}
   }
 
   .textlabel {
-    margin-left: 0;
-    font-size: $text-small;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    color: #bbb;
-    font-weight: bold;
+	color: #bbb;
+	font-size: $text-small;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	margin-left: 0;
 
-    &:after {
-      content: ":";
-    }
+	&:after {
+	  content: ':';
+	}
   }
 
   .textvalue {
-    font-weight: bold;
-    text-align: right;
-    padding-right: 0;
+	font-weight: bold;
+	text-align: right;
+	padding-right: 0;
   }
 
   #header_planet {
-    max-width: unset;
-    height: unset;
-    text-indent: unset;
-    position: absolute;
-    top: -35px;
-    left: 0;
-    padding: 0;
+	text-indent: unset;
+	padding: 0;
+	max-width: unset;
+	height: unset;
+	position: absolute;
+	top: -35px;
+	left: 0;
 
-    span.textlabel {
-      flex-basis: 100%;
-      font-size: $text-huge;
-      letter-spacing: 2px;
-      text-shadow: 1px 1px 3px black;
-      white-space: nowrap;
+	span.textlabel {
+	  font-size: $text-huge;
+	  white-space: nowrap;
+	  letter-spacing: 2px;
+	  text-shadow: 1px 1px 3px black;
+	  flex-basis: 100%;
 
-      &:after {
-        display: none;
-      }
-    }
+	  &:after {
+		display: none;
+	  }
+	}
 
-    .ter,
-    .cat,
-    .xan,
-    .zik,
-    .etd {
-      font-style: italic;
-      font-size: $text-large;
-      padding-right: 2px;
-    }
+	.ter,
+	.cat,
+	.xan,
+	.zik,
+	.etd {
+	  font-size: $text-large;
+	  font-style: italic;
+	  padding-right: 2px;
+	}
   }
 
   #header_metal {
-    order: 7;
+	order: 7;
 
-    .textvalue {
-      &:before {
-        background: url(/images/template53/metal_16.png) no-repeat;
-      }
-    }
+	.textvalue {
+	  &:before {
+		background: url(/images/template53/metal_16.png) no-repeat;
+	  }
+	}
   }
 
   #header_value {
-    order: 6;
+	order: 6;
   }
 
   #header_crystal {
-    order: 9;
+	order: 9;
 
-    .textvalue {
-      &:before {
-        background: url(/images/template53/crystal_16.png) no-repeat;
-      }
-    }
+	.textvalue {
+	  &:before {
+		background: url(/images/template53/crystal_16.png) no-repeat;
+	  }
+	}
   }
 
   #header_xp {
-    order: 10;
+	order: 10;
   }
 
   #header_eonium {
-    order: 11;
+	order: 11;
 
-    .textvalue {
-      &:before {
-        background: url(/images/template53/eonium_16.png) no-repeat;
-      }
-    }
+	.textvalue {
+	  &:before {
+		background: url(/images/template53/eonium_16.png) no-repeat;
+	  }
+	}
   }
 
   #header_score {
-    order: 8;
+	order: 8;
   }
 
   #header_asteroids {
-    order: 5;
+	order: 5;
   }
 
   #header_rank {
-    order: 12;
+	order: 12;
   }
 
   #header_tick {
-    order: 3;
+	order: 3;
   }
 
   #header_remaining {
-    order: 3;
-    //text-indent: 5px;
+	order: 3;
+	//text-indent: 5px;
   }
 
   #header_metal,
   #header_crystal,
   #header_eonium {
-    .textvalue {
-      position: relative;
+	.textvalue {
+	  position: relative;
 
-      &:before {
-        width: 16px;
-        height: 13px;
-        margin-right: .4rem;
-        content: "";
-        display: inline-block;
-        position: absolute;
-        right: 0;
-        top: 40%;
-        transform: translate(150%, -50%);
-      }
-    }
+	  &:before {
+		content: '';
+		display: inline-block;
+		width: 16px;
+		height: 13px;
+		margin-right: .4rem;
+		position: absolute;
+		top: 40%;
+		right: 0;
+		transform: translate(150%, -50%);
+	  }
+	}
   }
 }
 
@@ -305,65 +305,65 @@
 }
 
 #planet_summary {
-  grid-column: 3 / 3;
-  background: $color-secondary;
-  //background: linear-gradient(135deg, var(--col-panel-light) 0%, var(--col-panel-dark) 100%);
+  padding: 30px 0 0;
   display: flex;
+  //background: linear-gradient(135deg, var(--col-panel-light) 0%, var(--col-panel-dark) 100%);
+  align-items: center;
   flex-flow: column nowrap;
   justify-content: space-around;
-  align-items: center;
+  background: $color-secondary;
   height: unset;
   border: 1px solid transparent;
   border-image: linear-gradient(to right, transparent 0%, rgba($color-primary, .5) 50%, transparent 100%);
   border-image-slice: 1;
-  padding: 30px 0 0;
   box-shadow: inset 0 0 8px 2px rgba(#000, .25), 0 0 3px 3px rgba(#000, .15);
   position: relative;
+  grid-column: 3 / 3;
   //overflow: hidden;
   @include respond-below(sm) {
-    grid-row: 2/3;
-    grid-column: 2 / 2;
-    max-width: calc(100vw - 114px);
+	max-width: calc(100vw - 114px);
+	grid-row: 2/3;
+	grid-column: 2 / 2;
   }
 
   &:before {
-    display: block;
-    content: 'Planetary Development ';
-    width: 100%;
-    padding: .5rem 0;
-    font-size: $text-small;
-    text-transform: uppercase;
-    font-weight: bold;
-    text-align: center;
-    color: $color-offwhite;
-    background: rgba(black, .6);
-    border-bottom: 1px solid transparent;
-    border-image: linear-gradient(to right, transparent 0%, rgba($color-primary, .5) 50%, transparent 100%);
-    border-image-slice: 1;
-    transition: ease all 0.5s;
-    position: absolute;
-    top: 0;
+	color: $color-offwhite;
+	font-size: $text-small;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-align: center;
+	padding: .5rem 0;
+	content: 'Planetary Development ';
+	display: block;
+	background: rgba(black, .6);
+	width: 100%;
+	border-bottom: 1px solid transparent;
+	border-image: linear-gradient(to right, transparent 0%, rgba($color-primary, .5) 50%, transparent 100%);
+	border-image-slice: 1;
+	position: absolute;
+	top: 0;
+	transition: ease all 0.5s;
   }
 
   &:hover {
-    &:before {
-      background: rgba(black, 1);
-    }
+	&:before {
+	  background: rgba(black, 1);
+	}
   }
 
   > div {
-    width: 350px;
+	width: 350px;
   }
 
   .textlabel {
-    margin-left: 0;
-    font-size: $text-small;
-    letter-spacing: .5px;
-    text-transform: uppercase;
-    color: #bbb;
-    font-weight: bold;
-    padding: 0 .5rem 0 0;
-    flex-basis: 8rem;
+	color: #bbb;
+	font-size: $text-small;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: .5px;
+	padding: 0 .5rem 0 0;
+	flex-basis: 8rem;
+	margin-left: 0;
   }
 }
 
@@ -384,91 +384,91 @@
 #planet_summary_construction,
 #planet_summary_research,
 #planet_summary_production {
-  margin: .5rem 0;
   padding: 0 1rem;
   display: flex;
   align-items: center;
   flex-flow: row wrap;
+  margin: .5rem 0;
 
   span {
-    &#planet_summary_construction_queue,
-    &#planet_summary_research_queue {
-      position: relative;
+	&#planet_summary_construction_queue,
+	&#planet_summary_research_queue {
+	  position: relative;
 
-      span.tooltip {
-        white-space: nowrap;
-        top: auto !important;
-        left: 0 !important;
-        transform: translateX(-100%);
-      }
-    }
+	  span.tooltip {
+		white-space: nowrap;
+		top: auto !important;
+		left: 0 !important;
+		transform: translateX(-100%);
+	  }
+	}
   }
 }
 
 #planet_summary_construction_complete,
 #planet_summary_research_complete,
 .planet_summary_production_orders {
-  margin: 0 0 0 8rem;
-  padding: 0;
-  text-align: left;
-  width: 100%;
   font-size: $text-small;
+  text-align: left;
+  padding: 0;
+  width: 100%;
+  margin: 0 0 0 8rem;
   @include respond-below(sm) {
-    margin: 0;
-    padding: 0 .25rem 0 0;
-    text-align: right;
-    flex: 1;
+	text-align: right;
+	padding: 0 .25rem 0 0;
+	flex: 1;
+	margin: 0;
   }
 }
 
 .planet_summary_production_orders {
   .planet_summary_production_complete {
-    position: relative;
+	position: relative;
   }
 
   div.tooltip {
-    position: absolute;
-    min-width: 110px;
-    top: 0 !important;
-    right: 0 !important;
-    left: unset !important;
+	min-width: 110px;
+	position: absolute;
+	top: 0 !important;
+	right: 0 !important;
+	left: unset !important;
 
-    .planet_summary_production_shipname,
-    .planet_summary_production_shipcount {
-      width: unset;
-    }
+	.planet_summary_production_shipname,
+	.planet_summary_production_shipcount {
+	  width: unset;
+	}
 
-    .planet_summary_production_shipname {
-      float: left !important;
-      padding-right: .5rem;
-    }
+	.planet_summary_production_shipname {
+	  padding-right: .5rem;
+	  float: left !important;
+	}
 
-    .planet_summary_production_shipcount {
-      float: right !important;
-    }
+	.planet_summary_production_shipcount {
+	  float: right !important;
+	}
 
-    br {
-      display: block;
-      height: 1rem;
-      content: " ";
-      margin-bottom: .25rem;
+	br {
+	  content: ' ';
+	  display: block;
+	  height: 1rem;
+	  margin-bottom: .25rem;
 
-      &:last-of-type {
-        margin-bottom: 0;
-      }
-    }
+	  &:last-of-type {
+		margin-bottom: 0;
+	  }
+	}
   }
 }
 
 .planet_summary_production_shipname {
-  display: inline-block;
   font-size: $text-small;
+  display: inline-block;
   width: 6rem;
 }
 
 .planet_summary_production_shipcount {
-  display: inline-block;
   font-size: $text-small;
-  width: 3.5rem;
   text-align: right;
+  display: inline-block;
+  width: 3.5rem;
 }

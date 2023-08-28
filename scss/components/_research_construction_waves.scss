@@ -4,60 +4,55 @@
 .construction_info .title,
 .scans .title,
 .governments .title {
-  display: block;
-  padding: .25rem .5rem;
-  margin-bottom: .5rem;
-  background: $color-secondary;
-  //background: linear-gradient(135deg, var(--col-panel-light) 0%, var(--col-panel-dark) 100%);
   font-size: 1.3rem;
   text-shadow: 1px 1px 0px #000;
+  padding: .25rem .5rem;
+  display: block;
+  //background: linear-gradient(135deg, var(--col-panel-light) 0%, var(--col-panel-dark) 100%);
+  background: $color-secondary;
+  margin-bottom: .5rem;
 }
-
 
 .research,
 .research_branch {
   .title {
-	display: inline-block;
-	font-size: 1rem;
-	margin-bottom: .25rem;
 	color: $color-primary;
+	font-size: 1rem;
+	display: inline-block;
+	margin-bottom: .25rem;
   }
 }
-
 
 .construction_info,
 .scans {
   p {
-	position: relative;
-	padding-left: 1.5rem;
-	padding-right: 1.5rem;
 	font-size: 1rem;
+	padding-right: 1.5rem;
+	padding-left: 1.5rem;
+	position: relative;
 
 	.desc_link {
+	  font-size: $text-small;
 	  display: inline-block;
 	  position: absolute;
 	  top: -30px;
 	  right: 150px;
-	  font-size: $text-small;
 	}
   }
 }
 
-
 .research,
 .construction_info {
   p {
-	padding-left: 0;
-	padding-right: 15rem;
 	text-align: left;
+	padding-right: 15rem;
+	padding-left: 0;
   }
 }
-
 
 .scans p {
   padding-left: .5rem;
 }
-
 
 #constructions {
   .maintext {
@@ -71,24 +66,24 @@
 	.constructions {
 	  display: flex;
 	  flex-wrap: wrap;
-	  border: none;
-	  position: relative;
+	  background: $color-secondary;
 	  width: 90%;
 	  max-width: 600px;
-	  margin: 0 auto 3rem;
+	  border: none;
 	  border: 1px solid transparent;
 	  border-image: linear-gradient(to right, transparent 0%, rgba($color-primary, .5) 50%, transparent 100%);
 	  border-image-slice: 1;
 	  box-shadow: inset 0 0 8px 2px rgba(#000, .25), 0 0 3px 3px rgba(#000, .15);
-	  background: $color-secondary;
+	  margin: 0 auto 3rem;
+	  position: relative;
 
 	  &:first-of-type {
 		margin-top: 1rem;
 	  }
 
 	  .construction_info {
-		flex-basis: 100%;
 		display: flex;
+		flex-basis: 100%;
 		flex-wrap: wrap;
 		position: relative;
 		order: 1;
@@ -109,25 +104,25 @@
 		}
 
 		.title {
+		  padding: .5rem 2rem;
 		  background: $color-bg-th;
 		  margin-bottom: 0;
-		  padding: .5rem 2rem;
 		}
 
 		.resources {
-		  flex-basis: 33%;
 		  font-size: $text-small;
+		  flex-basis: 33%;
 		  position: absolute;
-		  right: 2rem;
 		  top: 0.85rem;
+		  right: 2rem;
 		  z-index: 20;
 
 		  + p {
-			width: 100%;
-			display: flex;
 			font-size: $text-small;
 			padding: 1rem 50% 1rem 2rem;
+			display: flex;
 			background: $color-secondary-alt;
+			width: 100%;
 			z-index: 10;
 		  }
 		}
@@ -150,23 +145,23 @@
 	  }
 
 	  .construction_built {
-		padding: 0 2rem;
-		margin-top: -2.35rem;
 		font-size: 1rem;
-		width: 206px;
 		text-align: right;
+		padding: 0 2rem;
+		width: 206px;
+		margin-top: -2.35rem;
 		z-index: 10;
 		order: 3;
 
 		.textlabel {
-		  text-transform: uppercase;
 		  font-size: $text-small;
+		  text-transform: uppercase;
 		}
 
 		.textvalue {
-		  font-weight: bold;
 		  color: $color-primary;
 		  font-size: $text-huge;
+		  font-weight: bold;
 		}
 
 		.progress_wrapper {
@@ -181,19 +176,19 @@
 		}
 
 		br {
-		  content: " ";
-		  margin-top: .5rem;
+		  content: ' ';
 		  display: block;
+		  margin-top: .5rem;
 		}
 	  }
 
 	  .construction_build {
+		padding-left: 2rem;
 		display: flex;
 		align-items: flex-start;
 		flex-wrap: wrap;
 		width: calc(100% - 206px) !important;
 		order: 2;
-		padding-left: 2rem;
 
 		> * {
 		  &:first-child {
@@ -202,19 +197,19 @@
 		}
 
 		.resources {
-		  padding: .5rem 0;
-		  margin-bottom: 0;
 		  text-align: left;
-		  width: 100%;
-		  order: 1;
+		  padding: .5rem 0;
 		  display: flex;
 		  flex-wrap: wrap;
+		  width: 100%;
+		  margin-bottom: 0;
+		  order: 1;
 
 		  &:nth-child(3) {
-			order: 3;
+			padding-top: 1rem;
 			border-top: 1px solid rgba($color-primary, .5);
 			margin-top: .75rem;
-			padding-top: 1rem;
+			order: 3;
 		  }
 
 		  li {
@@ -228,10 +223,10 @@
 		}
 
 		form {
-		  width: 100%;
 		  display: flex;
 		  align-items: center;
 		  justify-content: flex-start;
+		  width: 100%;
 		  margin-bottom: .5rem;
 		  order: 2;
 
@@ -240,26 +235,26 @@
 		  }
 
 		  &:nth-child(4) {
-			order: 4;
 			margin-bottom: 1rem;
+			order: 4;
 		  }
 
 		  input {
-			&[type="checkbox"] {
-			  margin: 0 0 0 .5rem;
+			&[type='checkbox'] {
 			  width: 1.5rem;
 			  height: 1.5rem;
+			  margin: 0 0 0 .5rem;
 
 			  &:focus {
 				border: 1px solid rgba($color-negative, .5);
 			  }
 
 			  &:before {
-				display: block;
-				content: '\2718';
-				font-weight: bold;
 				color: rgba($color-negative, .8);
 				font-size: 1.5rem;
+				font-weight: bold;
+				content: '\2718';
+				display: block;
 				position: absolute;
 				top: -0.3125rem;
 				left: 0.1875rem;
@@ -271,14 +266,14 @@
 				}
 
 				&:before {
-				  content: '\2714';
 				  color: $color-positive;
+				  content: '\2714';
 				  left: 0.0625rem;
 				}
 			  }
 			}
 
-			&[type="submit"] {
+			&[type='submit'] {
 			  min-width: 110px;
 			  margin: 0 0 .5rem !important;
 
@@ -296,15 +291,14 @@
 			text-align: left;
 			padding: 0;
 			display: flex;
-			flex-direction: row-reverse;
 			align-items: center;
+			flex-direction: row-reverse;
 		  }
 		}
 	  }
 	}
   }
 }
-
 
 #research {
   > .maintext {
@@ -314,36 +308,35 @@
   }
 }
 
-
 .research {
   text-align: center;
   display: flex;
   flex-wrap: wrap;
-  position: relative;
+  background: $color-secondary;
   width: 90%;
   max-width: 450px;
-  margin: 0 auto 3rem;
   border: 1px solid transparent;
   border-image: linear-gradient(to right, transparent 0%, rgba($color-primary, .5) 50%, transparent 100%);
   border-image-slice: 1;
   box-shadow: inset 0 0 8px 2px rgba(black, .25), 0 2px 10px 2px rgba(black, .15);
-  background: $color-secondary;
+  margin: 0 auto 3rem;
+  position: relative;
 
   .superhighlight {
 	font-size: $text-large;
   }
 
   p {
-	padding-right: 0;
 	text-align: center;
+	padding-right: 0;
 
 	.desc_link {
+	  display: block;
+	  margin-top: .5rem;
 	  position: relative;
 	  top: unset;
 	  right: unset;
 	  clear: both;
-	  display: block;
-	  margin-top: .5rem;
 	}
   }
 
@@ -351,9 +344,9 @@
 	width: 100%;
 
 	h3 {
-	  background: $color-bg-th;
-	  padding: .5rem 2rem;
 	  text-align: center;
+	  padding: .5rem 2rem;
+	  background: $color-bg-th;
 	  margin: 0;
 	}
   }
@@ -375,14 +368,14 @@
 	border-top: 1px solid rgba(82, 165, 248, 0.5);
 
 	&[id] {
-	  position: relative;
 	  font-style: normal;
 	  display: flex;
 	  flex-direction: column;
+	  position: relative;
 
 	  .title {
-		order: 1;
 		text-align: center;
+		order: 1;
 	  }
 
 	  .progress_wrapper {
@@ -396,8 +389,8 @@
 		}
 
 		&:first-of-type {
-		  order: 2;
 		  text-align: center;
+		  order: 2;
 		}
 
 		&.research_queue {
@@ -405,9 +398,9 @@
 		}
 
 		&:last-of-type {
-		  order: 6;
-		  padding-bottom: 10px;
 		  text-align: center;
+		  padding-bottom: 10px;
+		  order: 6;
 		}
 	  }
 
@@ -415,14 +408,14 @@
 		&.cancelform {
 		  order: 4;
 
-		  input[type="submit"] {
+		  input[type='submit'] {
 			margin-top: 0;
 		  }
 
 		  + p.research_queue {
+			padding-top: 1.5rem !important;
 			border-top: 1px solid rgba($color-primary, .5);
 			margin-top: 1rem;
-			padding-top: 1.5rem !important;
 		  }
 		}
 
@@ -431,13 +424,13 @@
 		  order: 7;
 		}
 
-		input[type="submit"] {
+		input[type='submit'] {
 		  width: 200px;
 		  margin: 0 !important;
 		}
 
 		p {
-		  input[type="submit"] {
+		  input[type='submit'] {
 			&:first-child {
 			  margin-top: .5rem !important;
 			}
@@ -454,12 +447,11 @@
 
   .researchform {
 	display: flex;
-	justify-content: flex-end;
 	flex-direction: column;
+	justify-content: flex-end;
 	order: 7;
   }
 }
-
 
 .research_branch {
   max-width: 375px;
@@ -467,15 +459,15 @@
 
   .completed {
 	.title {
-	  position: relative;
-	  margin: 0 auto;
-	  background: $color-bg-th;
-	  padding: .5rem 2rem;
 	  color: $color-text;
+	  padding: .5rem 2rem;
+	  background: $color-bg-th;
+	  margin: 0 auto;
+	  position: relative;
 
 	  &:after {
-		content: '\2714';
 		color: $color-primary;
+		content: '\2714';
 		position: absolute;
 		top: 50%;
 		right: 0;
@@ -485,40 +477,38 @@
   }
 }
 
-
 .research_branch_list {
+  font-style: normal;
+  text-align: center;
   padding: 0;
   background: $color-secondary;
   border: 0;
   margin: 0 auto 1rem;
-  text-align: center;
-  font-style: normal;
 
   &:last-child {
 	margin-bottom: 0;
   }
 
   p {
-	position: relative;
 	text-align: center !important;
-	width: 100%;
 	padding: .5rem 2rem;
+	width: 100%;
+	position: relative;
 
 	a.desc_link {
-	  display: block;
 	  font-size: $text-medium;
+	  display: block;
 	}
   }
 }
-
 
 .scans {
   border: 0;
 
   .resources {
 	font-size: $text-small;
-	margin-top: 1rem;
 	padding-left: .5rem;
+	margin-top: 1rem;
   }
 
   .scan_form {
@@ -528,12 +518,11 @@
 	justify-content: flex-end;
 	margin-top: -2.25rem;
 
-	input[type="submit"] {
+	input[type='submit'] {
 	  margin: 1rem 0 0 !important;
 	}
   }
 }
-
 
 #page_waves {
   table {
@@ -541,7 +530,7 @@
 	  td {
 		background: $color-secondary;
 
-		&[colspan="5"] {
+		&[colspan='5'] {
 		  background: transparent;
 		}
 	  }
@@ -574,13 +563,13 @@
 		}
 
 		td {
-		  &[colspan="2"] {
-			background: $color-background;
-			font-size: $text-large;
-			padding: 1rem 0;
-			font-weight: bold;
+		  &[colspan='2'] {
 			color: white;
+			font-size: $text-large;
+			font-weight: bold;
 			font-style: italic;
+			padding: 1rem 0;
+			background: $color-background;
 		  }
 		}
 	  }
@@ -590,47 +579,47 @@
   #tab1 {
 	.maintext {
 	  display: flex;
-	  flex-wrap: wrap;
 	  align-items: center;
+	  flex-wrap: wrap;
 
 	  .scans {
 		display: flex;
-		justify-content: center;
 		flex-wrap: wrap;
-		border: none;
-		position: relative;
+		justify-content: center;
+		background: $color-secondary-alt;
 		width: 90%;
 		max-width: 450px;
-		margin: 0 auto 3rem;
+		border: none;
 		border: 1px solid transparent;
 		border-image: linear-gradient(to right, transparent 0%, rgba($color-primary, .5) 50%, transparent 100%);
 		border-image-slice: 1;
 		box-shadow: inset 0 0 8px 2px rgba(#000, .25), 0 0 3px 3px rgba(#000, .15);
-		background: $color-secondary-alt;
+		margin: 0 auto 3rem;
+		position: relative;
 
 		.scan_info {
 		  width: 100% !important;
 
 		  .title {
+			padding: .5rem 2rem;
 			background: $color-bg-th;
 			margin-bottom: 0;
-			padding: .5rem 2rem;
 		  }
 
 		  p {
-			background: $color-secondary;
-			padding: 1rem 2rem;
 			text-align: center;
-			box-shadow: inset 0 0 8px 2px rgba(black, .25);
+			padding: 1rem 2rem;
+			background: $color-secondary;
 			border-bottom: 1px solid rgba(black, .25);
+			box-shadow: inset 0 0 8px 2px rgba(black, .25);
 
 			.desc_link {
 			  display: block;
-			  right: unset;
+			  margin-top: .5rem;
 			  position: relative;
 			  top: unset;
+			  right: unset;
 			  left: unset;
-			  margin-top: .5rem;
 			}
 		  }
 
@@ -657,11 +646,11 @@
 			height: 2rem;
 
 			input {
-			  &[type="checkbox"] {
+			  &[type='checkbox'] {
 				margin: 0 .5rem 0 0;
 			  }
 
-			  &[type="submit"] {
+			  &[type='submit'] {
 				margin-top: .5rem !important;
 			  }
 			}
@@ -674,7 +663,7 @@
 	  }
 
 	  > form {
-		input[type="checkbox"] {
+		input[type='checkbox'] {
 		  margin-right: .5rem;
 		}
 	  }
@@ -682,11 +671,11 @@
 	  form {
 		&#stored_scans_form {
 		  p.right {
-			span.superhighlight + input[type="checkbox"] {
+			span.superhighlight + input[type='checkbox'] {
 			  margin: 0 0 0 .5rem;
 
 			  + br {
-				content: "";
+				content: '';
 				display: block;
 				margin: .5rem;
 			  }
@@ -739,26 +728,23 @@
 		line-height: 1.75;
 	  }
 
-	  input[value=" Request Scan "] {
+	  input[value=' Request Scan '] {
 		margin-top: .5rem;
 	  }
 	}
   }
 }
 
-
 #stored_scans_form {
-  input[type="submit"] {
+  input[type='submit'] {
 	margin: 0 0 0 1rem !important;
   }
 }
-
 
 .scan_time {
   font-size: $text-small;
   text-align: center;
 }
-
 
 #scan {
   .maintext {
@@ -777,7 +763,7 @@
 			padding: .25rem .75rem;
 
 			&:first-child {
-			  &:not([colspan="2"]):not(:nth-last-child(3)) {
+			  &:not([colspan='2']):not(:nth-last-child(3)) {
 				text-align: right;
 			  }
 
@@ -788,10 +774,10 @@
 			  span {
 				font-size: 1rem;
 				text-transform: uppercase;
-				padding: 0 .125rem;
-				width: 2.5rem;
 				text-align: center;
+				padding: 0 .125rem;
 				display: inline-block;
+				width: 2.5rem;
 			  }
 			}
 		  }
@@ -809,7 +795,6 @@
   }
 }
 
-
 #waves,
 #search_scans,
 #stored_scans {
@@ -819,7 +804,6 @@
   }
 }
 
-
 #waves {
   p {
 	text-align: center;
@@ -827,9 +811,8 @@
   }
 }
 
-
 #search_scans {
-  input[type="submit"] {
+  input[type='submit'] {
 	margin-top: .25rem;
   }
 }

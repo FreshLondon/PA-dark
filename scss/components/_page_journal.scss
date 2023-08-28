@@ -1,66 +1,66 @@
 #page_journal {
   table {
-    background: $color-secondary;
+	background: $color-secondary;
 
-    table {
-      tr {
-        &:nth-child(odd) {
-          th,
-          td {
-            background: rgba(#000, .15);
-          }
-        }
+	table {
+	  tr {
+		&:nth-child(odd) {
+		  th,
+		  td {
+			background: rgba(#000, .15);
+		  }
+		}
 
-        &:nth-child(even) {
-          th,
-          td {
-            background: rgba(#000, .1);
-          }
-        }
+		&:nth-child(even) {
+		  th,
+		  td {
+			background: rgba(#000, .1);
+		  }
+		}
 
-        &:first-child {
-          th,
-          td {
-            background: transparent;
-          }
-        }
-      }
-    }
+		&:first-child {
+		  th,
+		  td {
+			background: transparent;
+		  }
+		}
+	  }
+	}
   }
 
   #page_logs {
-    table {
-      width: auto;
-      max-width: 350px;
+	table {
+	  width: auto;
+	  max-width: 350px;
 
-      tr {
-        &:nth-child(odd) {
-          th,
-          td {
-            background: rgba(#000, .15);
-          }
-        }
+	  tr {
+		&:nth-child(odd) {
+		  th,
+		  td {
+			background: rgba(#000, .15);
+		  }
+		}
 
-        &:nth-child(even) {
-          th,
-          td {
-            background: rgba(#000, .1);
-          }
-        }
+		&:nth-child(even) {
+		  th,
+		  td {
+			background: rgba(#000, .1);
+		  }
+		}
 
-        &:first-child {
-          th,
-          td {
-            background: transparent;
-          }
-        }
+		&:first-child {
+		  th,
+		  td {
+			background: transparent;
+		  }
+		}
 
-        td {
-          &:nth-child(2) {
-            color: white;
-          }
-        }
-      }
-    }
+		td {
+		  &:nth-child(2) {
+			color: white;
+		  }
+		}
+	  }
+	}
   }
 }

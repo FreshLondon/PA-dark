@@ -11,16 +11,16 @@
 	  }
 
 	  .ally_def_incs_wrapper {
-		margin: 0 0 2rem 5px;
 		background: $color-secondary;
 		border: 1px solid rgba($color-primary, .18);
 		box-shadow: inset 0 0 8px 2px rgba(black, .25), 0 2px 10px 2px rgba(black, .15);
+		margin: 0 0 2rem 5px;
 
 		.ally_def_target {
 		  font-size: 1rem;
 		  padding: .25rem 0;
-		  border-bottom: 1px solid rgba(black, .5);
 		  background: rgba(black, .2);
+		  border-bottom: 1px solid rgba(black, .5);
 
 		  > div {
 			display: flex;
@@ -28,8 +28,8 @@
 		  }
 
 		  .ally_def_target_toggle_link {
-			margin: 0 .125rem 0 -1.25rem;
 			width: 1rem;
+			margin: 0 .125rem 0 -1.25rem;
 			cursor: pointer;
 
 			img {
@@ -39,10 +39,10 @@
 		  }
 
 		  .ally_def_target_coords {
-			width: 55px;
-			justify-content: flex-end;
-			padding-right: 7px;
 			font-size: $text-default;
+			padding-right: 7px;
+			justify-content: flex-end;
+			width: 55px;
 		  }
 
 		  .ally_def_target_mdata {
@@ -55,8 +55,8 @@
 
 			.ally_def_target_mdata_nick {
 			  font-size: 1rem;
-			  min-width: 125px;
 			  overflow: hidden;
+			  min-width: 125px;
 
 			  a {
 				color: $color-offwhite;
@@ -71,8 +71,8 @@
 			  position: relative;
 
 			  &:before {
-				content: "Asteroids:";
 				font-size: .6875rem;
+				content: 'Asteroids:';
 				margin: 5px 5px 0 0;
 			  }
 			}
@@ -81,9 +81,9 @@
 			  margin-left: 70px;
 
 			  &:before {
-				white-space: nowrap;
-				content: "Base fleet:";
 				font-size: .6875rem;
+				white-space: nowrap;
+				content: 'Base fleet:';
 				margin: 5px 5px 0 0;
 			  }
 			}
@@ -92,7 +92,7 @@
 		  .ally_def_target_links {
 			flex: 3;
 
-			span[id^="note_tag"] {
+			span[id^='note_tag'] {
 			  margin-right: .5rem;
 			}
 
@@ -100,24 +100,24 @@
 			  font-size: 0;
 
 			  &:after {
-				content: "Battle Calc";
-				display: inline-block;
-				padding: .25rem .5rem;
 				color: $color-primary !important;
-				background: rgba($color-secondary, .4) !important;
-				border: 1px solid rgba($color-primary, .5) !important;
-				box-shadow: inset 0 2px 4px 2px rgba(#000, .4);
-				cursor: pointer;
-				border-radius: 3px;
-				text-transform: initial;
-				font-weight: bold;
 				font-family: inherit;
 				font-size: $text-small;
+				font-weight: bold;
+				text-transform: initial;
 				line-height: 1;
 				white-space: nowrap;
-				transition-property: color, background, box-shadow;
-				transition-duration: .75s;
+				padding: .25rem .5rem;
+				content: 'Battle Calc';
+				display: inline-block;
+				background: rgba($color-secondary, .4) !important;
+				border: 1px solid rgba($color-primary, .5) !important;
+				border-radius: 3px;
+				box-shadow: inset 0 2px 4px 2px rgba(#000, .4);
+				cursor: pointer;
 				transition-timing-function: linear;
+				transition-duration: .75s;
+				transition-property: color, background, box-shadow;
 
 				&::-moz-focus-inner {
 				  padding: 0;
@@ -127,8 +127,8 @@
 
 			  &:hover {
 				&:after {
-				  text-decoration: none !important;
 				  color: black !important;
+				  text-decoration: none !important;
 				  background: $color-primary !important;
 				  box-shadow: none;
 				}
@@ -136,45 +136,45 @@
 			}
 
 			+ div > a.calcz {
-			  display: inline-block;
-			  padding: .25rem .5rem;
 			  color: #32ab52 !important;
-			  background: rgba($color-secondary, .4) !important;
-			  border: 1px solid rgba(#32ab52, .5) !important;
-			  box-shadow: inset 0 2px 4px 2px rgba(#000, .4);
-			  cursor: pointer;
-			  border-radius: 3px;
-			  text-transform: initial;
-			  font-weight: bold;
 			  font-family: inherit;
 			  font-size: $text-small;
+			  font-weight: bold;
+			  text-transform: initial;
 			  line-height: 1;
 			  white-space: nowrap;
-			  transition-property: color, background, box-shadow;
-			  transition-duration: .75s;
+			  padding: .25rem .5rem;
+			  display: inline-block;
+			  background: rgba($color-secondary, .4) !important;
+			  border: 1px solid rgba(#32ab52, .5) !important;
+			  border-radius: 3px;
+			  box-shadow: inset 0 2px 4px 2px rgba(#000, .4);
+			  cursor: pointer;
 			  transition-timing-function: linear;
+			  transition-duration: .75s;
+			  transition-property: color, background, box-shadow;
 			}
 		  }
 
-			.button-calcz {
-				display: inline-block;
-				padding: .25rem .5rem;
-				color: $color-primary !important;
-				background: rgba($color-secondary, .4) !important;
-				border: 1px solid rgba($color-primary, .5) !important;
-				box-shadow: inset 0 2px 4px 2px rgba(#000, .4);
-				cursor: pointer;
-				border-radius: 3px;
-				text-transform: initial;
-				font-weight: bold;
-				font-family: inherit;
-				font-size: $text-small;
-				line-height: 1;
-				white-space: nowrap;
-				transition-property: color, background, box-shadow;
-				transition-duration: .75s;
-				transition-timing-function: linear;
-			}
+		  .button-calcz {
+			color: $color-primary !important;
+			font-family: inherit;
+			font-size: $text-small;
+			font-weight: bold;
+			text-transform: initial;
+			line-height: 1;
+			white-space: nowrap;
+			padding: .25rem .5rem;
+			display: inline-block;
+			background: rgba($color-secondary, .4) !important;
+			border: 1px solid rgba($color-primary, .5) !important;
+			border-radius: 3px;
+			box-shadow: inset 0 2px 4px 2px rgba(#000, .4);
+			cursor: pointer;
+			transition-timing-function: linear;
+			transition-duration: .75s;
+			transition-property: color, background, box-shadow;
+		  }
 
 		  .ally_def_target_summary {
 			padding-right: 4px;
@@ -190,8 +190,8 @@
 		  font-size: $text-default;
 
 		  > div {
-			background: $color-secondary;
 			padding: 3px 0;
+			background: $color-secondary;
 
 			&:nth-child(even) {
 			  background: $color-secondary-alt;
@@ -203,65 +203,65 @@
 			}
 
 			.ally_def_attacker_coords {
-			  order: 1;
+			  padding-right: 7px;
+			  justify-content: flex-end;
 			  width: 54px;
 			  position: relative;
-			  justify-content: flex-end;
-			  padding-right: 7px;
+			  order: 1;
 
 			  .ally_def_attacker_not_calc {
+				font-size: 0;
 				position: absolute;
 				left: 4px;
 				order: 1;
-				font-size: 0;
 				transform: translateY(2px);
 
 				&:before {
-				  content: "*";
 				  font-size: $text-small;
+				  content: '*';
 				}
 			  }
 			}
 
 			.ally_def_attacker_fleetname {
-			  order: 2;
-			  width: 140px;
-			  max-width: 140px !important;
 			  display: flex;
 			  align-items: center;
 			  overflow: hidden;
+			  width: 140px;
+			  max-width: 140px !important;
 			  margin-right: 4px;
+			  order: 2;
 			}
 
 			.ally_def_attacker_race {
-			  order: 3;
 			  min-width: 30px;
+			  order: 3;
 			}
 
 			.ally_def_attacker_shipcount {
-			  order: 5;
-			  width: 70px;
-			  max-width: 70px;
 			  text-align: right;
 			  justify-content: flex-end;
+			  width: 70px;
+			  max-width: 70px;
+			  order: 5;
 			}
 
 			.ally_def_attacker_links {
-			  order: 6;
-			  padding: 0 10px;
 			  text-align: right;
+			  padding: 0 10px;
 			  justify-content: flex-end;
 			  min-width: 138px;
+			  order: 6;
 
 			  a {
+				color: black !important;
+				font-size: 1rem;
+				line-height: 1rem;
 				display: inline-flex;
 				align-items: center;
 				justify-content: center;
 				border-radius: 4px;
-				color: black !important;
 				margin: 0 1px;
-				font-size: 1rem;
-				line-height: 1rem;
 
 				&:last-child {
 				  margin-right: 0;
@@ -295,31 +295,31 @@
 			  form {
 				select {
 				  font-size: 12px;
-				  height: 18px;
 				  width: 105px;
+				  height: 18px;
 				}
 			  }
 			}
 
 			.ally_def_attacker_orig_eta {
-			  order: 4;
-			  width: 70px;
-			  justify-content: flex-start;
 			  align-items: center;
+			  justify-content: flex-start;
+			  width: 70px;
+			  order: 4;
 
 			  &:before {
-				content: "Reported:";
 				font-size: $text-small;
-				padding-right: 4px;
 				line-height: 0.9rem;
+				padding-right: 4px;
+				content: 'Reported:';
 			  }
 			}
 
 			.ally_def_attacker_classes {
-			  order: 8;
-			  flex: 2;
 			  color: transparent;
 			  text-transform: uppercase;
+			  flex: 2;
+			  order: 8;
 
 			  a {
 				padding-right: 3px;
@@ -331,16 +331,16 @@
 
 			  .btn-default {
 				color: $color-primary !important;
+				font-size: $text-default !important;
 				background-color: transparent !important;
 				border-color: transparent !important;
-				font-size: $text-default !important;
 			  }
 			}
 
 			.ally_def_attacker_intel {
-			  order: 9;
-			  padding-right: 4px;
 			  color: $color-offwhite;
+			  padding-right: 4px;
+			  order: 9;
 			}
 		  }
 		}
@@ -357,7 +357,7 @@
 			  border: none !important;
 			  box-shadow: none !important;
 
-			  input[type="checkbox"] {
+			  input[type='checkbox'] {
 				&:before {
 				  color: rgb(50, 205, 50);
 				}
@@ -368,12 +368,12 @@
 
 		.ally_def_details {
 		  .ally_def_details_fleet {
-			display: flex;
-			align-items: center;
-			padding-left: 4px;
 			font-size: $text-small;
 			text-transform: uppercase;
 			text-align: right;
+			padding-left: 4px;
+			display: flex;
+			align-items: center;
 
 			.ally_def_details_fleetname {
 			  font-style: italic;
@@ -381,16 +381,16 @@
 			  overflow: hidden;
 
 			  &:after {
-				content: "-";
 				padding-left: 5px;
+				content: '-';
 			  }
 			}
 
 			.ally_def_details_classes {
-			  display: flex;
-			  justify-content: flex-end;
-			  align-items: center;
 			  letter-spacing: 1px;
+			  display: flex;
+			  align-items: center;
+			  justify-content: flex-end;
 
 			  form {
 				display: flex;
@@ -401,20 +401,20 @@
 
 		  .ally_def_details_bcalc {
 			form {
-			  text-transform: uppercase;
-			  margin-left: 4px;
 			  font-size: 0;
+			  text-transform: uppercase;
 			  display: flex;
 			  align-items: center;
 			  justify-content: flex-end;
+			  margin-left: 4px;
 
 			  &:before {
-				content: "BATTLE CALC:";
-				position: relative;
-				display: inline;
 				font-size: $text-small;
-				padding-right: 4px;
 				letter-spacing: 1px;
+				padding-right: 4px;
+				content: 'BATTLE CALC:';
+				display: inline;
+				position: relative;
 			  }
 
 			  input[type='text'] {
@@ -432,29 +432,29 @@
 			  justify-content: flex-end;
 
 			  textarea {
+				padding: .5rem .75rem;
 				width: 100%;
 				margin: 0 0 4px 4px;
-				padding: .5rem .75rem;
 			  }
 
-			  input[type="button"] {
-				margin: 2px 4px 4px;
+			  input[type='button'] {
 				min-width: 110px;
+				margin: 2px 4px 4px;
 			  }
 			}
 		  }
 
-		  input[type="button"] {
-			margin: 2px 4px;
+		  input[type='button'] {
 			width: 110px;
+			margin: 2px 4px;
 		  }
 		}
 
 		.ally_def_target_coords,
 		.ally_def_attacker_coords,
 		.ally_def_defender_coords {
-		  width: auto;
 		  padding: 0 4px;
+		  width: auto;
 		}
 
 		.ally_def_target,
@@ -475,8 +475,8 @@
 		}
 
 		.mission_return {
-		  background: unset;
 		  opacity: .7;
+		  background: unset;
 		}
 
 		.ally_def_defenders {
@@ -492,11 +492,11 @@
 			}
 
 			.ally_def_defender_coords {
-			  order: 1;
 			  display: flex;
-			  position: relative;
-			  width: 54px;
 			  align-items: center;
+			  width: 54px;
+			  position: relative;
+			  order: 1;
 
 			  a {
 				position: absolute;
@@ -504,64 +504,64 @@
 			  }
 
 			  .ally_def_defender_not_calc {
+				font-size: 0;
 				position: absolute;
 				left: 4px;
 				order: 1;
-				font-size: 0;
 
 				&:before {
-				  content: "*";
 				  font-size: $text-small;
+				  content: '*';
 				}
 			  }
 			}
 
 			.ally_def_defender_fleetname {
-			  order: 2;
+			  overflow: hidden;
 			  width: 120px;
 			  max-width: 120px !important;
 			  margin-right: 4px;
-			  overflow: hidden;
+			  order: 2;
 			}
 
 			.ally_def_defender_race {
-			  order: 3;
 			  width: 30px;
+			  order: 3;
 			}
 
 			.ally_def_defender_shipcount {
-			  order: 5;
+			  text-align: right;
 			  width: 70px;
 			  max-width: 70px;
-			  text-align: right;
+			  order: 5;
 			}
 
 			.ally_def_defender_orig_eta {
-			  order: 4;
 			  text-align: right;
-			  width: 70px;
-			  justify-content: flex-end;
 			  align-items: flex-end;
+			  justify-content: flex-end;
+			  width: 70px;
+			  order: 4;
 
 			  &:before {
-				content: "Sent:";
 				font-size: $text-small;
 				padding-right: 4px;
+				content: 'Sent:';
 			  }
 			}
 
-			select[id^="recall"] {
-			  order: 5;
-			  margin-left: 110px !important;
+			select[id^='recall'] {
 			  font-size: 12px;
 			  height: 18px;
+			  margin-left: 110px !important;
+			  order: 5;
 			}
 
-			input[id^="recall"] {
-			  order: 6;
-			  margin: .25rem !important;
+			input[id^='recall'] {
 			  font-size: 12px;
 			  height: 18px;
+			  margin: .25rem !important;
+			  order: 6;
 			}
 
 			.ally_def_defender_mdata {
@@ -602,8 +602,8 @@
 	}
 
 	.bcalc_target {
-	  display: flex;
 	  line-height: 0;
+	  display: flex;
 
 	  a {
 		line-height: 1.4;

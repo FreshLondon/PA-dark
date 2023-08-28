@@ -20,8 +20,8 @@
 *
 */
 html, body, .pages {
-  min-height: 100%;
   height: 100%;
+  min-height: 100%;
   margin: 0;
 }
 
@@ -41,8 +41,8 @@ body, p, td {
 
 table, th {
   color: #ccc;
-  margin: 0px;
   padding: 0px;
+  margin: 0px;
 }
 
 table {
@@ -50,8 +50,8 @@ table {
 }
 
 form {
-  margin: 0px;
   padding: 0px;
+  margin: 0px;
 }
 
 th {
@@ -71,14 +71,14 @@ th, td {
 }
 
 p {
-  margin: 0px;
   padding: 0 0 7px 0;
+  margin: 0px;
 }
 
 #top {
+  padding-top: 10px;
   width: 1070px;
   margin: 0 auto;
-  padding-top: 10px;
 }
 
 .tnav_link {
@@ -86,11 +86,11 @@ p {
 }
 
 .tnav_link a {
-  height: 11px;
-  margin: 3px 20px 0 20px;
-  width: 100px;
   text-align: center;
   display: block;
+  width: 100px;
+  height: 11px;
+  margin: 3px 20px 0 20px;
 }
 
 #page_bcalc #top {
@@ -106,38 +106,38 @@ p {
 }
 
 input, .input, textarea, select, .checkbox {
-  background: #2e5b82;
-  border: 1px solid #cfcfcf;
   color: #CCCCCC;
   font-size: 8pt;
+  background: #2e5b82;
+  border: 1px solid #cfcfcf;
 }
 
 #page input[type=submit], #page input[type=button] {
   color: #303135;
-  padding: 2px 10px;
-  font-weight: bold;
   font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+  font-weight: bold;
   text-transform: uppercase;
+  padding: 2px 10px;
   background: rgb(209, 210, 214);
-  -webkit-box-shadow: inset 0 -8px 10px rgba(0, 0, 0, 0.35), 0 1px 0 rgba(255, 255, 255, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
-  -moz-box-shadow: inset 0 -8px 10px rgba(0, 0, 0, 0.35), 0 1px 0 rgba(255, 255, 255, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
-  box-shadow: inset 0 -8px 10px rgba(0, 0, 0, 0.35), 0 1px 0 rgba(255, 255, 255, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
-  -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
   border-radius: 6px;
+  -moz-box-shadow: inset 0 -8px 10px rgba(0, 0, 0, 0.35), 0 1px 0 rgba(255, 255, 255, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  -webkit-box-shadow: inset 0 -8px 10px rgba(0, 0, 0, 0.35), 0 1px 0 rgba(255, 255, 255, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  box-shadow: inset 0 -8px 10px rgba(0, 0, 0, 0.35), 0 1px 0 rgba(255, 255, 255, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
 }
 
 input[type=number] {
-  -moz-appearance: textfield;
   text-align: right;
+  -moz-appearance: textfield;
 }
 
 input[type=number]::-webkit-inner-spin-button,
 input[type=number]::-webkit-outer-spin-button {
+  margin: 0;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  margin: 0;
 }
 
 .input_coords {
@@ -171,13 +171,13 @@ a {
 }
 
 a:hover {
-  text-decoration: none;
   color: #ccc;
+  text-decoration: none;
 }
 
 .caps {
-  text-align: center;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .left {
@@ -304,8 +304,8 @@ li.li_gen:last-child {
 }
 
 .msg_title {
-  font: 150% bold;
   color: #FFFFFF;
+  font: 150% bold;
 }
 
 .msg_subtitle {
@@ -322,9 +322,9 @@ li.li_gen:last-child {
 
 /*	Menu	*/
 ul, li {
+  padding: 0;
   list-style: none;
   margin: 0;
-  padding: 0;
 }
 
 #menu {
@@ -343,10 +343,10 @@ ul, li {
 .menu_grp li {
   text-align: left;
   text-decoration: none;
-  display: block;
   padding: 4px 0 0 15px;
-  margin: 0;
+  display: block;
   width: 131px !important;
+  margin: 0;
 }
 
 #menu a {
@@ -359,8 +359,8 @@ ul, li {
 }
 
 #menu_time {
-  height: 34px;
   line-height: 17px;
+  height: 34px;
 }
 
 #time_loaded {
@@ -386,24 +386,24 @@ ul, li {
 }
 
 #mining td .metal, #galaxy_fund .metal, #alliance_fund .metal, #alliance_fund_trade .metal, #alliance_fund_donate .metal {
+  display: block;
   background: url("/images/template53/metal_48.png") no-repeat;
   width: 48px;
   height: 46px;
-  display: block;
 }
 
 #mining td .crystal, #galaxy_fund .crystal, #alliance_fund .crystal, #alliance_fund_trade .crystal, #alliance_fund_donate .crystal {
+  display: block;
   background: url("/images/template53/crystal_48.png") no-repeat;
   width: 48px;
   height: 43px;
-  display: block;
 }
 
 #mining td .eonium, #galaxy_fund .eonium, #alliance_fund .eonium, #alliance_fund_trade .eonium, #alliance_fund_donate .eonium {
+  display: block;
   background: url("/images/template53/eonium_48.png") no-repeat;
   width: 48px;
   height: 41px;
-  display: block;
 }
 
 #mining td .textlabel, #galaxy_fund .textlabel, #alliance_fund .textlabel, #alliance_fund_trade .textlabel, #alliance_fund_donate .textlabel {
@@ -418,9 +418,9 @@ ul, li {
 
 .constructions, .research, .scans, .training, .governments {
   display: table;
-  margin-bottom: 10px;
-  border-bottom: 1px dotted;
   width: 100%;
+  border-bottom: 1px dotted;
+  margin-bottom: 10px;
 }
 
 .construction_info p, .research p, .scans p {
@@ -436,13 +436,13 @@ ul, li {
 }
 
 .construction_built {
-  width: 225px;
   text-align: center;
+  width: 225px;
 }
 
 .construction_build {
-  width: 175px;
   text-align: center;
+  width: 175px;
 }
 
 .construction_info .title, .research .title, .research_branch .title, .branch_name h3, .scans .title, .training_info .title, .governments .title {
@@ -474,19 +474,19 @@ ul, li {
 }
 
 .research_branch_list {
-  margin-bottom: 10px;
   border-bottom: 1px dotted;
+  margin-bottom: 10px;
 }
 
 .research_branch .completed .title {
-  width: 100%;
   display: block;
   background: url("/images/template53/tick.gif") no-repeat right;
+  width: 100%;
 }
 
 #production_form table .resources li .textvalue, .training_info .resources li .textvalue {
-  width: 30px;
   display: inline-block;
+  width: 30px;
 }
 
 #production_factories_row .textlabel {
@@ -514,8 +514,8 @@ ul, li {
 
 .scan_multi {
   text-align: right;
-  height: 14px;
   display: block;
+  height: 14px;
 }
 
 .scan_form {
@@ -523,13 +523,13 @@ ul, li {
 }
 
 #scan_multi_form {
-  padding: 10px 0;
   text-align: center;
+  padding: 10px 0;
 }
 
 .training_info .resources li.textlabel {
-  width: 80px;
   display: inline-block;
+  width: 80px;
 }
 
 .training_info p {
@@ -549,16 +549,16 @@ ul, li {
 }
 
 .governments .government_effects {
-  margin-bottom: 10px;
-  display: table;
   text-align: left;
+  display: table;
+  margin-bottom: 10px;
 }
 
 .governments .government_effects .textlabel, .governments .government_effects .textvalue {
+  text-align: left;
   display: block;
   width: 100px;
   float: left;
-  text-align: left;
 }
 
 .governments .government_effects .textlabel {
@@ -610,13 +610,13 @@ ul, li {
 }
 
 .change_up {
-  background: url("/images/template53/up.png") no-repeat 1px;
   padding-left: 15px;
+  background: url("/images/template53/up.png") no-repeat 1px;
 }
 
 .change_down {
-  background: url("/images/template53/down.png") no-repeat 1px;
   padding-left: 15px;
+  background: url("/images/template53/down.png") no-repeat 1px;
 }
 
 #important_messages {
@@ -629,24 +629,24 @@ ul, li {
 }
 
 #important_messages_overlay {
+  -moz-opacity: 0.6;
+  opacity: 0.6;
+  background: #000000;
   width: 100%;
   height: 100%;
   position: absolute;
   top: 0px;
   left: 0px;
-  background: #000000;
   filter: alpha(opacity=60);
-  -moz-opacity: 0.6;
-  opacity: 0.6;
 }
 
 #important_messages_contents {
   width: 750px;
   margin-left: -375px;
-  z-index: 2100;
   position: absolute;
-  left: 50%;
   top: 140px;
+  left: 50%;
+  z-index: 2100;
 }
 
 #important_messages_contents .close_link {
@@ -673,8 +673,8 @@ a.questionmark {
 }
 
 .info {
-  max-width: 400px;
   text-align: left;
+  max-width: 400px;
 }
 
 .info_header {
@@ -703,13 +703,13 @@ a.questionmark {
 }
 
 #header .textlabel {
-  float: left;
   margin-left: 5px;
+  float: left;
 }
 
 #header .textvalue {
-  float: right;
   padding-right: 15px;
+  float: right;
 }
 
 #header_tick {
@@ -717,13 +717,13 @@ a.questionmark {
 }
 
 #header #news_new, #header #mail_new {
-  font-weight: bold;
   color: #FF0000;
+  font-weight: bold;
 }
 
 #planet_summary {
-  float: right;
   width: 161px;
+  float: right;
   clear: right;
 }
 
@@ -740,9 +740,9 @@ a.questionmark {
 }
 
 #planet_summary .countdown, #planet_summary_construction_current, #planet_summary_research_current, #planet_summary_production_current, #planet_summary_construction_complete, #planet_summary_research_complete {
-  display: block;
   text-align: right;
   padding-right: 15px;
+  display: block;
 }
 
 .planet_summary_production_orders {
@@ -750,36 +750,36 @@ a.questionmark {
 }
 
 #quest_system .completed {
+  display: block;
   background: url("/images/template53/tick.gif") no-repeat;
   width: 15px;
   height: 13px;
-  display: block;
   margin: 0 auto;
 }
 
 .expand {
+  padding: 0 2px;
+  display: block;
   background: url("/images/template53/expand.gif") no-repeat;
   width: 13px;
   height: 12px;
-  display: block;
   float: left;
-  padding: 0 2px;
   cursor: pointer;
 }
 
 .tooltip, .info {
-  background: #213d58;
-  border: 1px solid #FFFFFF;
-  display: none;
-  position: absolute;
-  padding: 5px;
-  font-size: 9pt !important;
-  z-index: 1001;
   color: #ffffff !important;
+  font-size: 9pt !important;
   font-weight: normal !important;
+  text-transform: none !important;
   line-height: normal !important;
   text-align: left !important;
-  text-transform: none !important;
+  padding: 5px;
+  display: none;
+  background: #213d58;
+  border: 1px solid #FFFFFF;
+  position: absolute;
+  z-index: 1001;
 }
 
 .tooltip {
@@ -787,9 +787,9 @@ a.questionmark {
 }
 
 .close_link {
-  float: right;
-  text-decoration: none;
   font-size: 9pt !important;
+  text-decoration: none;
+  float: right;
 }
 
 .progress_wrapper {
@@ -804,18 +804,18 @@ a.questionmark {
 }
 
 .progress_expected {
-  background: url("/images/template53/progress_bar.jpg");
-  opacity: 0.5;
-  filter: Alpha(opacity=50);
   -moz-opacity: 0.5;
+  opacity: 0.5;
+  background: url("/images/template53/progress_bar.jpg");
   height: 18px;
   margin-top: -18px;
+  filter: Alpha(opacity=50);
 }
 
 .progress_value {
+  text-align: center;
   height: 18px;
   margin-top: -18px;
-  text-align: center;
 }
 
 /*	Table	*/
@@ -824,18 +824,18 @@ a.questionmark {
 }
 
 .header, h2 {
-  font-weight: bold;
   font-size: 14px;
+  font-weight: bold;
   text-align: center;
-  margin: 0px;
   padding: 5px 0;
+  margin: 0px;
 }
 
 .maintext {
   text-align: left;
+  padding: 10px;
   margin-top: 0px;
   margin-bottom: 0px;
-  padding: 10px;
 }
 
 .maintext table {
@@ -852,57 +852,57 @@ a.questionmark {
 }
 
 .slider_track {
-  float: left;
   font-size: 0px;
   line-height: 0px;
-  margin: 0;
   padding: 4px;
   width: 120px;
+  margin: 0;
+  float: left;
 }
 
 .slider_slider {
-  background: #DDDDDD;
-  height: 2px;
   line-height: 0px;
+  background: #DDDDDD;
+  width: 110px;
+  height: 2px;
   margin: 4px 4px 2px 4px;
   position: absolute;
-  width: 110px;
   z-index: 1;
 }
 
 .population_slider {
-  background: #b3b5b6;
-  border: 1px solid #DDDDDD;
-  height: 10px;
   line-height: 0px;
+  background: #b3b5b6;
+  width: 10px;
+  height: 10px;
+  border: 1px solid #DDDDDD;
   margin: 0;
   position: relative;
-  width: 10px;
   z-index: 1;
 }
 
 .display_holder {
-  float: right;
+  text-align: right;
+  padding: 0;
+  width: 34px;
   height: 20px;
   margin: 0;
-  padding: 0;
-  text-align: right;
-  width: 34px;
+  float: right;
 }
 
 .population_display {
-  border: 0;
   color: #b3b5b6;
-  cursor: default;
   font: 11px;
-  padding: 3px 2px 0 0;
   text-align: right;
+  padding: 3px 2px 0 0;
   width: 30px;
+  border: 0;
+  cursor: default;
 }
 
 .forum {
-  display: table;
   padding-bottom: 16px;
+  display: table;
   width: 100%;
 }
 
@@ -912,38 +912,38 @@ div.forum_title {
 }
 
 a.forum_title {
+  line-height: 16px;
   width: 100%;
   height: 16px;
-  line-height: 16px;
 }
 
 .forum_description {
-  width: 100%;
-  display: block;
   color: #FFFFFF;
   font-size: 8px;
+  display: block;
+  width: 100%;
 }
 
 .forum_thread_title {
-  float: left;
-  width: 300px;
   text-align: left;
   padding-left: 5px;
   overflow: visible;
+  width: 300px;
+  float: left;
 }
 
 .forum_thread_lastpost {
-  float: left;
-  width: 160px;
   text-align: right;
   padding-right: 5px;
   overflow: visible;
+  width: 160px;
+  float: left;
 }
 
 .forum_thread_replies {
-  float: left;
-  width: 60px;
   text-align: center;
+  width: 60px;
+  float: left;
 }
 
 .forum_thread_views {
@@ -951,24 +951,24 @@ a.forum_title {
 }
 
 .forum_thread_header_title {
-  float: left;
-  width: 305px;
-  text-align: center;
   font-weight: bold;
+  text-align: center;
+  width: 305px;
+  float: left;
 }
 
 .forum_thread_header_lastpost {
-  float: left;
-  width: 165px;
-  text-align: center;
   font-weight: bold;
+  text-align: center;
+  width: 165px;
+  float: left;
 }
 
 .forum_thread_header_replies {
-  float: left;
-  width: 60px;
-  text-align: center;
   font-weight: bold;
+  text-align: center;
+  width: 60px;
+  float: left;
 }
 
 .forum_thread_header_views {
@@ -976,11 +976,11 @@ a.forum_title {
 }
 
 .forum_thread_actions {
-  width: 150px;
   background: #213d58;
+  width: 150px;
   border: solid 1px #FFFFFF;
-  z-index: 2;
   position: absolute;
+  z-index: 2;
 }
 
 .forum_thread_actions span {
@@ -989,72 +989,72 @@ a.forum_title {
 }
 
 .forum_thread_actions_button {
+  text-indent: -1000px;
   background: url("/images/template53/down_arrow.jpg") no-repeat;
   width: 17px;
   height: 15px;
-  text-indent: -1000px;
 }
 
 .forum_thread_title * {
-  float: left;
   padding-right: 2px;
+  float: left;
 }
 
 #forum_nav {
-  height: 20px;
   padding-bottom: 5px;
+  height: 20px;
 }
 
 .forum_post {
-  width: 100%;
   display: table;
+  width: 100%;
 }
 
 .forum_post_time {
-  float: right;
-  width: 300px;
   text-align: right;
+  width: 300px;
+  float: right;
 }
 
 .forum_post_number {
-  float: left;
-  width: 30px;
   text-align: left;
+  width: 30px;
+  float: left;
 }
 
 .forum_poster {
-  float: left;
-  width: 120px;
-  clear: left;
   text-align: left;
+  width: 120px;
   margin-bottom: 10px;
+  float: left;
+  clear: left;
 }
 
 .forum_post_title {
-  float: left;
-  width: 400px;
   font-weight: bold;
   text-align: center;
+  width: 400px;
   margin-bottom: 10px;
+  float: left;
 }
 
 .forum_post_text {
-  float: left;
-  width: 100%;
   text-align: left;
+  width: 100%;
   margin-bottom: 10px;
+  float: left;
 }
 
 .forum_post_notes {
-  float: left;
-  width: 100%;
   font-size: 80%;
   font-style: italic;
+  width: 100%;
+  float: left;
 }
 
 .forum_post_actions {
-  float: left;
   width: 100%;
+  float: left;
 }
 
 .forum_post_seperator {
@@ -1063,20 +1063,20 @@ a.forum_title {
 }
 
 .forum_post_delete, .forum_post_edit, .forum_post_report {
-  float: left;
   margin-left: 15px;
+  float: left;
 }
 
 .forum_post_quote, .forum_post_reply {
-  float: right;
   margin-right: 15px;
+  float: right;
 }
 
 #forum_poll {
+  display: table;
   width: 300px;
   border: 1px solid #FFFFFF;
   margin: 17px auto;
-  display: table;
 }
 
 .forum_poll_question #forum_poll_options {
@@ -1094,26 +1094,26 @@ a.forum_title {
 }
 
 .forum_poll_option_name {
-  float: left;
   width: 50%;
+  float: left;
   clear: left;
 }
 
 .forum_poll_option_select {
-  float: right;
   width: 50%;
+  float: right;
 }
 
 .forum_poll_votes {
+  font-size: 70%;
   width: 100%;
   height: 20px;
-  font-size: 70%;
 }
 
 .forum_poll_votes div {
+  background: #5292da;
   height: 5px;
   float: left;
-  background: #5292da;
 }
 
 .forum_poll_votes_right {
@@ -1122,10 +1122,10 @@ a.forum_title {
 }
 
 .quote, blockquote {
+  padding: 5px;
   width: 90%;
   border: dashed #FFFFFF 1px;
   margin: 10px auto;
-  padding: 5px;
 }
 
 #d_stats {
@@ -1134,8 +1134,8 @@ a.forum_title {
 }
 
 .mceEditorContainer td {
-  text-align: left;
   color: #000000;
+  text-align: left;
 }
 
 .ter {
@@ -1167,9 +1167,9 @@ a.forum_title {
 }
 
 #ad_vert {
-  float: left;
-  margin-left: 10px;
   margin-top: 33px;
+  margin-left: 10px;
+  float: left;
 }
 
 #ad_horz {
@@ -1185,38 +1185,38 @@ a.forum_title {
 }
 
 .relations_friendly {
-  outline: #004000 1px solid;
   background: rgba(0, 40, 0, 0.2);
+  outline: #004000 1px solid;
 }
 
 .relations_allied {
-  outline: #009000 1px solid;
   background: rgba(0, 90, 0, 0.2);
+  outline: #009000 1px solid;
 }
 
 .relations_hostile {
-  outline: #500000 1px solid;
   background: rgba(50, 0, 0, 0.2);
+  outline: #500000 1px solid;
 }
 
 .relations_war {
-  outline: #900000 1px solid;
   background: rgba(90, 0, 0, 0.2);
+  outline: #900000 1px solid;
 }
 
 .relations_nap {
-  outline: #808000 1px solid;
   background: rgba(80, 80, 0, 0.4);
+  outline: #808000 1px solid;
 }
 
 .relations_own_member {
-  outline: #0082ff 1px solid;
   background: rgba(0, 130, 255, 0.2);
+  outline: #0082ff 1px solid;
 }
 
 .relations_own_recruit {
-  outline: #d57500 1px solid;
   background: rgba(213, 117, 0, 0.3);
+  outline: #d57500 1px solid;
 }
 
 .relations_own_applicant {
@@ -1255,8 +1255,8 @@ a.forum_title {
 }
 
 .def_controls, .global_controls, .att_controls {
-  width: 33%;
   text-align: center;
+  width: 33%;
   height: 25px;
 }
 
@@ -1265,9 +1265,9 @@ a.forum_title {
 }
 
 #scans_area {
-  height: 20px;
-  width: 200px;
   background: transparent;
+  width: 200px;
+  height: 20px;
 }
 
 #edit_comment {
@@ -1275,12 +1275,12 @@ a.forum_title {
 }
 
 #def_side, #att_side {
-  font-weight: bold;
   font-size: 14px;
-  height: 23px;
+  font-weight: bold;
   text-align: center;
-  margin: 0px;
   padding: 5px 0 0 0;
+  height: 23px;
+  margin: 0px;
 }
 
 #def_reports table, #att_reports table {
@@ -1298,10 +1298,10 @@ a.forum_title {
 
 .def_name, #def_header_ship, .att_name, #att_header_ship {
   font-weight: bold;
-  width: 120px;
-  min-width: 120px;
   text-align: left;
   text-indent: 5px;
+  width: 120px;
+  min-width: 120px;
 }
 
 .def_name, .att_name {
@@ -1309,8 +1309,8 @@ a.forum_title {
 }
 
 #def_show, #att_show {
-  padding: 2px;
   text-align: center;
+  padding: 2px;
 }
 
 .def_name span:hover, .att_name span:hover {
@@ -1318,8 +1318,8 @@ a.forum_title {
 }
 
 .def_fleet, .att_fleet, .def_fleet_gaps, .att_fleet_gaps, #def_header_st_ro_amount, #def_header_st_ro_lost {
-  width: 63px;
   text-align: center;
+  width: 63px;
 }
 
 .def_row input, .att_row input {
@@ -1327,15 +1327,15 @@ a.forum_title {
 }
 
 .def_header, .att_header, .def_report_header, .att_report_header {
-  font-weight: bold;
   color: #FFFFFF;
+  font-weight: bold;
   text-align: center;
 }
 
 .def_report_metal, .att_report_metal, .def_report_crystal, .att_report_crystal, .def_report_eonium, .att_report_eonium,
 .def_report_name, .att_report_name, .def_report_arrived, .att_report_arrived, .def_report_lost, .att_report_lost, .def_value_name, .att_score_name {
-  width: 33%;
   font-weight: normal;
+  width: 33%;
 }
 
 .def_report_arrived, .att_report_arrived, .def_report_lost, .att_report_lost, .def_report_salvage * {
@@ -1349,15 +1349,15 @@ a.forum_title {
 }
 
 .def_report_gained, .att_report_gained {
-  width: 67%;
   font-weight: normal;
+  width: 67%;
 }
 
 #def_header_killed, .def_killed, #def_header_emped, .def_emped, #def_header_stolen, .def_stolen,
 #att_header_killed, .att_killed, #att_header_emped, .att_emped, #att_header_stolen, .att_stolen, .def_total, .att_total {
+  text-align: center;
   width: 80px;
   min-width: 80px;
-  text-align: center;
 }
 
 .def_name, .att_name, .def_row, .att_row, .def_structures_lost, .def_metal_asteroids_lost, .def_crystal_asteroids_lost, .def_eonium_asteroids_lost {
@@ -1365,29 +1365,29 @@ a.forum_title {
 }
 
 .def_killed, .att_killed {
-  font-weight: normal;
   color: #d50000;
+  font-weight: normal;
 }
 
 .def_emped, .att_emped {
-  font-weight: normal;
   color: #00FFFF;
+  font-weight: normal;
 }
 
 .def_stolen, .att_stolen {
-  font-weight: normal;
   color: #ed6a12;
+  font-weight: normal;
 }
 
 .def_value_lost, .att_score_lost {
-  font-weight: normal;
   color: #d50000;
+  font-weight: normal;
   text-align: center;
 }
 
 .def_value_gained, .att_score_gained {
-  font-weight: normal;
   color: #00aa01;
+  font-weight: normal;
   text-align: center;
 }
 
@@ -1441,17 +1441,17 @@ a.forum_title {
 }
 
 #info_loading {
-  background: url("/images/template53/loading.gif") center no-repeat;
   display: block;
+  background: url("/images/template53/loading.gif") center no-repeat;
   height: 33px;
 }
 
 #my_bcalcs, #add_other, #add_own, #fleet_select_box, #side_select_box, #edit_comment_box, #con_fleets, #con_planets, #planet_note, #load_box, .display_box_small {
-  width: 500px;
   background: #213d58;
+  width: 500px;
+  border: 1px solid #FFFFFF;
   position: absolute;
   z-index: 1000;
-  border: 1px solid #FFFFFF;
 }
 
 #add_other, #fleet_select_box, #side_select_box, #edit_comment_box, #con_fleets, #con_planets, #planet_note, .display_box_small {
@@ -1469,19 +1469,19 @@ a.forum_title {
 }
 
 #intel_form {
+  padding: 5px;
   background: #213d58;
   border: 1px solid #FFFFFF;
-  padding: 5px;
 }
 
 #tab_links li {
-  display: inline;
   padding: 0 20px;
+  display: inline;
 }
 
 .tab_link_active {
-  text-decoration: none;
   color: #FFFFFF;
+  text-decoration: none;
 }
 
 #alliance_menu {
@@ -1489,8 +1489,8 @@ a.forum_title {
 }
 
 #alliance_menu li {
-  display: inline;
   padding: 0 20px;
+  display: inline;
 }
 
 .alliance_def_error {
@@ -1540,67 +1540,67 @@ a.forum_title {
 }
 
 #pabox_loading {
+  display: none;
+  overflow: hidden;
+  background: url("/images/template53/loading.gif");
+  width: 32px;
+  height: 32px;
+  margin-top: -20px;
+  margin-left: -20px;
   position: fixed;
   top: 50%;
   left: 50%;
-  height: 32px;
-  width: 32px;
-  background: url("/images/template53/loading.gif");
-  margin-top: -20px;
-  margin-left: -20px;
-  cursor: pointer;
-  overflow: hidden;
   z-index: 1104;
-  display: none;
+  cursor: pointer;
 }
 
 #pabox_display {
   padding: 0;
-  margin: 0;
-  border: 0;
-  overflow: auto;
   display: none;
+  overflow: auto;
+  border: 0;
+  margin: 0;
 }
 
 #pabox_overlay {
+  display: none;
+  background: #000000;
   position: fixed;
   top: 0;
-  left: 0;
-  bottom: 0;
   right: 0;
-  background: #000000;
+  bottom: 0;
+  left: 0;
   z-index: 1100;
-  display: none;
 }
 
 #pabox_wrapper {
+  padding: 20px;
+  display: none;
+  margin: 0;
   position: absolute;
   top: 0;
   left: 0;
-  margin: 0;
-  padding: 20px;
   z-index: 1101;
-  display: none;
 }
 
 #pabox_outer {
-  position: relative;
+  background: #213d58;
   width: 100%;
   height: 100%;
-  background: #213d58;
   border: 1px solid #FFFFFF;
+  position: relative;
 }
 
 #pabox_inner {
+  padding: 0;
+  overflow: auto;
+  width: 1px;
+  height: 1px;
+  outline: none;
+  margin: 0;
   position: absolute;
   top: 0;
   left: 0;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: 0;
-  outline: none;
-  overflow: auto;
 }
 
 .pabox_title {
@@ -1609,20 +1609,20 @@ a.forum_title {
 }
 
 #pabox_title_layered {
-  bottom: 0;
   background: #000000;
+  bottom: 0;
 }
 
 #pabox_close {
+  display: none;
+  background: url("/images/template53/close.png");
+  width: 30px;
+  height: 30px;
   position: absolute;
   top: -15px;
   right: -15px;
-  width: 30px;
-  height: 30px;
-  background: url("/images/template53/close.png");
-  cursor: pointer;
   z-index: 1103;
-  display: none;
+  cursor: pointer;
 }
 
 .ally_def_incs_wrapper {
@@ -1634,8 +1634,8 @@ a.forum_title {
 }
 
 .ally_def_eta {
-  font-weight: bold;
   font-size: 14px;
+  font-weight: bold;
   text-align: center;
   padding: 2px 0;
   cursor: pointer;
@@ -1655,8 +1655,8 @@ a.forum_title {
 }
 
 .ally_def_target_toggle_link {
-  margin-left: -10px;
   width: 10px;
+  margin-left: -10px;
   cursor: pointer;
 }
 
@@ -1666,14 +1666,14 @@ a.forum_title {
 }
 
 .ally_def_target_summary {
-  flex: 1 1 auto;
   display: flex;
+  flex: 1 1 auto;
   justify-content: flex-end;
 }
 
 .ally_def_target_mdata {
-  width: 250px;
   display: flex;
+  width: 250px;
 }
 
 .ally_def_target_mdata_nick {
@@ -1681,21 +1681,21 @@ a.forum_title {
 }
 
 .ally_def_target_mdata_roids {
-  width: 50px;
   display: flex;
   justify-content: flex-end;
+  width: 50px;
 }
 
 .ally_def_target_mdata_dp {
-  width: 50px;
   display: flex;
   justify-content: flex-end;
+  width: 50px;
 }
 
 .ally_def_target_mdata_base {
-  width: 60px;
   display: flex;
   justify-content: flex-end;
+  width: 60px;
 }
 
 .ally_def_target_coords, .ally_def_attacker_coords, .ally_def_defender_coords {
@@ -1703,9 +1703,9 @@ a.forum_title {
 }
 
 .ally_def_attacker_fleetname {
-  width: 120px;
-  flex: 1 0 auto;
   white-space: nowrap;
+  flex: 1 0 auto;
+  width: 120px;
 }
 
 .ally_def_attacker_race, .ally_def_defender_race {
@@ -1713,19 +1713,19 @@ a.forum_title {
 }
 
 .ally_def_attacker_orig_eta {
-  width: 1.5em;
   text-align: right;
+  width: 1.5em;
 }
 
 .ally_def_attacker_shipcount {
   text-align: right;
-  width: 3em;
   flex: 1 0 auto;
+  width: 3em;
 }
 
 .ally_def_attacker_links {
-  width: 7em;
   padding-left: 0.5em;
+  width: 7em;
 }
 
 .ally_def_attacker_call_status {
@@ -1733,30 +1733,30 @@ a.forum_title {
 }
 
 .ally_def_attacker_classes {
-  width: 120px;
   padding-left: 0.5em;
+  width: 120px;
 }
 
 .ally_def_attacker_intel {
-  width: 120px;
-  flex: 1 1 auto;
   display: flex;
+  flex: 1 1 auto;
   justify-content: flex-end;
+  width: 120px;
 }
 
 .ally_def_fleetcatch_fleet_name {
-  margin-left: 4em;
   width: 120px;
+  margin-left: 4em;
 }
 
 .ally_def_fleetcatch_fleet_shipcount {
-  width: 6em;
   text-align: right;
+  width: 6em;
 }
 
 .ally_def_defender_fleetname {
-  width: 126px;
   white-space: nowrap;
+  width: 126px;
 }
 
 .ally_def_defender_shipcount {
@@ -1765,25 +1765,25 @@ a.forum_title {
 }
 
 .ally_def_defender_orig_eta {
-  width: 3em;
   text-align: right;
+  width: 3em;
 }
 
 .ally_def_defender_mdata {
-  flex: 1 1 auto;
   display: flex;
+  flex: 1 1 auto;
   justify-content: flex-end;
 }
 
 .ally_def_defender_mdata_nick {
-  width: 100px;
   display: flex;
+  width: 100px;
 }
 
 .ally_def_defender_mdata_ap, .ally_def_defender_mdata_dp {
-  width: 50px;
   display: flex;
   justify-content: flex-end;
+  width: 50px;
 }
 
 .ally_def_details_fleet {
@@ -1792,8 +1792,8 @@ a.forum_title {
 
 .ally_def_details_classes {
   display: flex;
-  justify-content: flex-end;
   flex: 1 1 auto;
+  justify-content: flex-end;
 }
 
 /* Remove most template background images
@@ -1816,8 +1816,8 @@ body, .pages, #top, #logo, #tnav, #bar_manual, #bar_support, #bar_portal, #bar_f
 }
 
 #page, #contents {
-  min-height: auto;
   padding-bottom: 0;
+  min-height: auto;
 }
 
 div#page_login + div + div + div + div#pabox_wrapper {
@@ -1837,10 +1837,10 @@ html {
 
 html,
 body {
-  height: 100%;
-  width: 100%;
-  margin: 0;
   padding: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
 }
 
 body {
@@ -1868,8 +1868,8 @@ body {
 }
 
 p {
-  margin: 0;
   padding: 0 1rem 0.5rem;
+  margin: 0;
 }
 
 th {
@@ -1878,37 +1878,37 @@ th {
 }
 
 option {
-  background-color: #24303f !important;
   color: #ccc !important;
+  background-color: #24303f !important;
 }
 
 hr {
-  background: rgba(82, 165, 248, 0.5);
-  border: none;
-  height: 1px;
   display: none;
+  background: rgba(82, 165, 248, 0.5);
+  height: 1px;
+  border: none;
 }
 
 /* Page Outline
    -------------------------------------------------------*/
 #page {
-  position: relative;
+  padding: 3rem 0.5rem 0;
+  display: grid;
   width: 100%;
   max-width: 90rem;
-  padding: 3rem 0.5rem 0;
   margin: 0 auto;
-  display: grid;
+  position: relative;
   grid-template-columns: 12rem 2fr 1fr;
   grid-template-rows: auto 1fr 1rem;
   grid-column-gap: 1rem;
 }
 @media (max-width: 767px) {
   #page {
+    padding: 0;
+    max-width: 100vw;
     grid-template-columns: 100px auto;
     grid-template-rows: 165px auto auto;
     grid-row-gap: 0;
-    padding: 0;
-    max-width: 100vw;
   }
 }
 #page .maintext {
@@ -1938,12 +1938,12 @@ hr {
 }
 
 #important_messages_contents {
-  width: 80%;
-  background: #24303f !important;
-  border: 0;
   color: #ccc;
-  padding: 0.25rem 0.5rem;
   white-space: initial;
+  padding: 0.25rem 0.5rem;
+  background: #24303f !important;
+  width: 80%;
+  border: 0;
   box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, 0.4);
 }
 
@@ -1954,9 +1954,9 @@ hr {
 }
 #message_form p {
   display: flex;
-  justify-content: center;
   align-items: flex-start;
   flex-wrap: wrap;
+  justify-content: center;
 }
 #message_form p:nth-child(1) {
   display: flex;
@@ -1971,31 +1971,31 @@ hr {
   margin-left: 4rem;
 }
 #message_form p #subject {
-  padding: 0 0.75rem;
   text-align: left;
+  padding: 0 0.75rem;
   display: inline-block;
-  margin-left: 1.7rem;
   width: calc(100% - 6rem);
+  margin-left: 1.7rem;
 }
 #message_form p #message_body {
-  padding: 0.5rem 0.75rem;
   text-align: left;
-  display: inline-block;
   vertical-align: -14rem;
+  padding: 0.5rem 0.75rem;
+  display: inline-block;
   width: calc(100% - 6rem) !important;
-  margin-left: 1.1rem;
   height: 15rem;
+  margin-left: 1.1rem;
 }
 #message_form p #charsleft {
-  display: block;
-  text-align: center !important;
-  margin: 0 auto 0.5rem;
-  width: 100%;
   font-size: 0.75rem;
+  text-align: center !important;
+  display: block;
+  width: 100%;
+  margin: 0 auto 0.5rem;
 }
 #message_form p input[type=submit] {
-  margin: 0 auto;
   color: black;
+  margin: 0 auto;
 }
 #message_form p input[type=submit]:hover {
   color: #52a5f8;
@@ -2013,15 +2013,15 @@ hr {
 }
 
 .important_message .title {
-  display: block;
-  padding: 0.5rem;
-  font-size: 1rem;
-  background: #24303f;
   color: #ccc;
+  font-size: 1rem;
+  padding: 0.5rem;
+  display: block;
+  background: #24303f;
 }
 .important_message .time {
-  display: block;
   font-size: 0.75rem;
+  display: block;
   margin: 0.25rem 0.5rem 1rem;
 }
 .important_message p {
@@ -2041,10 +2041,10 @@ hr {
 #page_login #header,
 #page_support #header,
 #page_manual #header {
-  width: 100% !important;
   padding: 0.5rem;
   background: #010304;
   background: linear-gradient(180deg, #4d5154 0%, #384147 15%, #010304 100%);
+  width: 100% !important;
 }
 
 #top {
@@ -2052,23 +2052,23 @@ hr {
 }
 
 #logo {
+  line-height: 1;
   display: inline-block;
   margin: 0;
-  line-height: 1;
 }
 #logo:before, #logo:after {
+  color: #ccc;
   font-weight: bold;
   text-transform: uppercase;
-  color: #ccc;
 }
 #logo:before {
-  content: "Planetarion";
   font-size: 2.5rem;
+  content: "Planetarion";
 }
 #logo:after {
-  display: block;
-  content: "The original space combat browser game";
   font-size: 0.75rem;
+  content: "The original space combat browser game";
+  display: block;
 }
 #logo:hover {
   text-decoration: none;
@@ -2088,9 +2088,9 @@ hr {
 }
 
 #tnav {
-  margin: 0;
-  padding: 0;
   text-align: left;
+  padding: 0;
+  margin: 0;
 }
 
 .tnav_link a {
@@ -2116,18 +2116,18 @@ hr {
 }
 
 #menu {
+  padding: 0 0 1rem;
+  list-style: none;
+  display: table;
+  background: #1a222c;
   grid-column: 1/2;
   grid-row: 1/3;
-  padding: 0 0 1rem;
-  background: #1a222c;
-  display: table;
-  list-style: none;
 }
 @media (max-width: 767px) {
   #menu {
+    max-width: 100px;
     grid-column: 1/2;
     grid-row: 1/4;
-    max-width: 100px;
   }
 }
 #menu > li {
@@ -2137,50 +2137,50 @@ hr {
   padding: 0 0.5rem 0.15rem;
 }
 #menu > li#menu_preferences, #menu > li#menu_logout {
-  text-align: center;
   font-size: 0.75rem;
-  float: left !important;
+  text-align: center;
   width: 50%;
   margin: 1rem 0;
+  float: left !important;
 }
 #menu > li#menu_view_link {
-  margin-bottom: 0;
   font-size: 0.75rem;
+  margin-bottom: 0;
 }
 #menu > li#menu_view_link a {
-  width: 100%;
-  display: inline-block;
   text-align: center;
+  display: inline-block;
+  width: 100%;
 }
 #menu > li#menu_overview {
   padding: 0.5rem;
   width: 100%;
-  box-shadow: inset 0 0 8px 2px rgba(0, 0, 0, 0.25), 3px 0 6px -3px rgba(0, 0, 0, 0.25);
   border-top: 1px solid transparent;
   border-image: linear-gradient(to right, transparent 0%, rgba(82, 165, 248, 0.5) 100%);
   border-image-slice: 1;
+  box-shadow: inset 0 0 8px 2px rgba(0, 0, 0, 0.25), 3px 0 6px -3px rgba(0, 0, 0, 0.25);
 }
 #menu > li#menu_overview, #menu > li.menu_grp {
   background: #24303f;
 }
 #menu > li.menu_grp {
-  margin: 0;
   padding: 0;
+  margin: 0;
 }
 #menu > li.menu_grp > span {
-  display: block;
-  padding: 0.25rem 0.5rem;
-  background: #19222b;
   font-size: 0.75rem;
   font-weight: bold;
   text-transform: uppercase;
+  padding: 0.25rem 0.5rem;
+  display: block;
+  background: #19222b;
   border-bottom: 1px solid transparent;
   border-image: linear-gradient(to right, transparent 0%, rgba(82, 165, 248, 0.5) 100%);
   border-image-slice: 1;
 }
 #menu > li > ul {
-  box-shadow: inset 0 0 8px 2px rgba(0, 0, 0, 0.25), 3px 0 6px -3px rgba(0, 0, 0, 0.25);
   padding: 0.25rem 0 0.5rem;
+  box-shadow: inset 0 0 8px 2px rgba(0, 0, 0, 0.25), 3px 0 6px -3px rgba(0, 0, 0, 0.25);
 }
 #menu > li > ul > li > ul {
   margin-left: 0.5rem;
@@ -2195,57 +2195,57 @@ hr {
   padding: 0;
 }
 #menu li li li:before {
-  content: "➟";
+  color: rgba(82, 165, 248, 0.5);
   font-size: 1.5rem;
   line-height: 1.5rem;
   vertical-align: middle;
-  left: -5px;
+  content: "➟";
   position: relative;
-  color: rgba(82, 165, 248, 0.5);
+  left: -5px;
 }
 #menu li li li a {
   line-height: 1.5rem;
 }
 #menu #menu_time {
-  margin-top: 2rem;
-  font-size: 0;
   color: rgba(82, 165, 248, 0.55);
+  font-size: 0;
   padding-bottom: 8rem;
+  margin-top: 2rem;
 }
 #menu #menu_time span#time {
-  font-size: 1.2rem;
   color: #ccc;
+  font-size: 1.2rem;
   animation: pulse 1s infinite;
 }
 #menu #menu_time span#time:hover {
   text-shadow: 0 0 0 #52a5f8;
 }
 #menu #menu_time span#time_loaded {
-  font-size: 0.8rem;
   color: rgba(204, 204, 204, 0.5);
+  font-size: 0.8rem;
   position: relative;
 }
 #menu #menu_time span#time_loaded:before {
+  color: rgba(82, 165, 248, 0.5);
+  font-size: 1rem;
+  white-space: nowrap;
+  padding: 0.25rem;
   content: "Ultimate skin v4.05";
+  border: 1px solid rgba(82, 165, 248, 0.5);
   position: absolute;
   bottom: -3.75rem;
-  font-size: 1rem;
-  color: rgba(82, 165, 248, 0.5);
-  white-space: nowrap;
   left: 50%;
-  padding: 0.25rem;
   transform: translateX(-50%);
-  border: 1px solid rgba(82, 165, 248, 0.5);
 }
 #menu #menu_time span#time_loaded:after {
-  content: "contact @UltimateNewbie \aon TG for assistance / bugs";
-  position: absolute;
-  white-space: pre-wrap;
-  line-height: 1.2;
-  bottom: -5.75rem;
-  font-size: 0.75rem;
   color: rgba(82, 165, 248, 0.5);
+  font-size: 0.75rem;
+  line-height: 1.2;
+  white-space: pre-wrap;
+  content: "contact @UltimateNewbie \aon TG for assistance / bugs";
   width: 100%;
+  position: absolute;
+  bottom: -5.75rem;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -2259,27 +2259,27 @@ hr {
 }
 
 #alliance_menu {
-  max-width: 800px;
-  margin: 0 auto;
   display: flex;
+  align-items: center;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
+  max-width: 800px;
+  margin: 0 auto;
 }
 #alliance_menu li {
-  display: inline;
   padding: 0;
+  display: inline;
 }
 #alliance_menu li a {
-  margin: 0.5rem;
-  text-transform: uppercase;
+  color: #52a5f8;
   font-size: 0.8rem;
   font-weight: bold;
-  letter-spacing: 0.5px;
-  color: #52a5f8;
-  position: relative;
-  display: inline-block;
+  text-transform: uppercase;
   white-space: nowrap;
+  letter-spacing: 0.5px;
+  display: inline-block;
+  margin: 0.5rem;
+  position: relative;
   transition: all 0.5s ease-in-out;
 }
 #alliance_menu li a.tab_link_active {
@@ -2296,11 +2296,11 @@ hr {
 }
 #alliance_menu li a:before, #alliance_menu li a:after {
   content: "";
-  position: absolute;
-  bottom: -2px;
   width: 0;
   height: 1px;
   margin: 5px 0 0;
+  position: absolute;
+  bottom: -2px;
   transition: all 0.3s ease-in-out;
 }
 #alliance_menu li a:after, #alliance_menu li a:before {
@@ -2313,12 +2313,12 @@ hr {
   right: 50%;
 }
 #alliance_menu li a:hover {
-  cursor: pointer;
   color: #ccc;
+  cursor: pointer;
 }
 #alliance_menu li a:hover:before, #alliance_menu li a:hover:after {
-  width: 50%;
   opacity: 1;
+  width: 50%;
 }
 #alliance_menu li a:hover:before {
   background: linear-gradient(to right, #52a5f8 250%, transparent 100%);
@@ -2330,55 +2330,55 @@ hr {
 /* Planet Details
    -------------------------------------------------------*/
 #header {
-  grid-column: 2/3;
   padding-top: 38px;
   display: flex;
-  flex-flow: row wrap;
   align-content: space-between;
+  flex-flow: row wrap;
   justify-content: space-around;
   background: #24303f;
-  margin: 0;
   height: unset;
   border: 1px solid transparent;
   border-image: linear-gradient(to right, transparent 0%, rgba(82, 165, 248, 0.5) 50%, transparent 100%);
   border-image-slice: 1;
   box-shadow: inset 0 0 8px 2px rgba(0, 0, 0, 0.25), 0 0 3px 3px rgba(0, 0, 0, 0.15);
+  margin: 0;
   position: relative;
+  grid-column: 2/3;
 }
 @media (max-width: 767px) {
   #header {
+    max-width: calc(100vw - 114px);
     grid-row: 1/3;
     grid-column: 2/2;
-    max-width: calc(100vw - 114px);
   }
   #header > * {
     max-width: 50%;
     float: left;
   }
   #header > *#header_planet {
-    max-width: unset;
     font-size: 0.6875rem !important;
+    max-width: unset;
   }
 }
 #header > div {
-  width: 50%;
-  max-width: 245px;
   padding: 0 2.25rem;
   display: flex;
-  justify-content: space-evenly;
   align-items: center;
+  justify-content: space-evenly;
+  width: 50%;
+  max-width: 245px;
   margin: 0 0 0.5rem;
 }
 #header > div:last-of-type:nth-of-type(even) {
-  max-width: unset;
-  width: 100%;
-  border-top: 1px solid transparent;
-  margin-top: 0.75rem;
   padding-top: 4px;
+  align-items: baseline;
+  justify-content: center;
+  width: 100%;
+  max-width: unset;
+  border-top: 1px solid transparent;
   border-image: linear-gradient(to right, transparent 0%, rgba(82, 165, 248, 0.5) 50%, transparent 100%);
   border-image-slice: 1;
-  justify-content: center;
-  align-items: baseline;
+  margin-top: 0.75rem;
 }
 #header > div:last-of-type:nth-of-type(even) span {
   max-width: 33px;
@@ -2391,8 +2391,8 @@ hr {
 }
 #header #header_mail,
 #header #header_news {
-  max-width: unset;
   background: rgba(0, 0, 0, 0.6);
+  max-width: unset;
   position: absolute;
   top: 0;
 }
@@ -2406,19 +2406,19 @@ hr {
 }
 #header #header_mail a,
 #header #header_news a {
-  flex-basis: 100%;
-  text-align: center;
-  font-size: 0.75rem;
-  text-transform: uppercase;
-  font-weight: bold;
-  padding: 0.5rem 0 !important;
   color: #ccc !important;
+  font-size: 0.75rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 0.5rem 0 !important;
+  flex-basis: 100%;
   transition: ease all 0.5s;
 }
 #header #header_mail #mail_new,
 #header #header_news #mail_new {
-  background: limegreen;
   color: black !important;
+  background: limegreen;
 }
 #header #header_mail #mail_new:hover,
 #header #header_news #mail_new:hover {
@@ -2426,8 +2426,8 @@ hr {
 }
 #header #header_mail #news_new,
 #header #header_news #news_new {
-  background: orange;
   color: black !important;
+  background: orange;
 }
 #header #header_mail #news_new:hover,
 #header #header_news #news_new:hover {
@@ -2435,11 +2435,11 @@ hr {
 }
 #header #header_mail {
   padding: 0;
-  order: 1;
   border: 1px solid transparent;
   border-image: linear-gradient(to left, rgb(60, 107, 156) 0%, #24313f 100%);
   border-image-slice: 1;
   left: 0;
+  order: 1;
 }
 #header #header_mail:hover {
   border-image: linear-gradient(to left, #52a5f8 0%, #24313f 100%);
@@ -2447,23 +2447,23 @@ hr {
 }
 #header #header_news {
   padding: 0;
-  order: 2;
   border: 1px solid transparent;
   border-image: linear-gradient(to right, rgb(60, 107, 156) 0%, #24313f 100%);
   border-image-slice: 1;
   right: 0;
+  order: 2;
 }
 #header #header_news:hover {
   border-image: linear-gradient(to right, #52a5f8 0%, #24313f 100%);
   border-image-slice: 1;
 }
 #header .textlabel {
-  margin-left: 0;
-  font-size: 0.75rem;
-  letter-spacing: 1px;
-  text-transform: uppercase;
   color: #bbb;
+  font-size: 0.75rem;
   font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-left: 0;
 }
 #header .textlabel:after {
   content: ":";
@@ -2474,20 +2474,20 @@ hr {
   padding-right: 0;
 }
 #header #header_planet {
+  text-indent: unset;
+  padding: 0;
   max-width: unset;
   height: unset;
-  text-indent: unset;
   position: absolute;
   top: -35px;
   left: 0;
-  padding: 0;
 }
 #header #header_planet span.textlabel {
-  flex-basis: 100%;
   font-size: 1.2rem;
+  white-space: nowrap;
   letter-spacing: 2px;
   text-shadow: 1px 1px 3px black;
-  white-space: nowrap;
+  flex-basis: 100%;
 }
 #header #header_planet span.textlabel:after {
   display: none;
@@ -2497,8 +2497,8 @@ hr {
 #header #header_planet .xan,
 #header #header_planet .zik,
 #header #header_planet .etd {
-  font-style: italic;
   font-size: 1rem;
+  font-style: italic;
   padding-right: 2px;
 }
 #header #header_metal {
@@ -2548,14 +2548,14 @@ hr {
 #header #header_metal .textvalue:before,
 #header #header_crystal .textvalue:before,
 #header #header_eonium .textvalue:before {
+  content: "";
+  display: inline-block;
   width: 16px;
   height: 13px;
   margin-right: 0.4rem;
-  content: "";
-  display: inline-block;
   position: absolute;
-  right: 0;
   top: 40%;
+  right: 0;
   transform: translate(150%, -50%);
 }
 
@@ -2595,44 +2595,44 @@ hr {
 }
 
 #planet_summary {
-  grid-column: 3/3;
-  background: #24303f;
+  padding: 30px 0 0;
   display: flex;
+  align-items: center;
   flex-flow: column nowrap;
   justify-content: space-around;
-  align-items: center;
+  background: #24303f;
   height: unset;
   border: 1px solid transparent;
   border-image: linear-gradient(to right, transparent 0%, rgba(82, 165, 248, 0.5) 50%, transparent 100%);
   border-image-slice: 1;
-  padding: 30px 0 0;
   box-shadow: inset 0 0 8px 2px rgba(0, 0, 0, 0.25), 0 0 3px 3px rgba(0, 0, 0, 0.15);
   position: relative;
+  grid-column: 3/3;
 }
 @media (max-width: 767px) {
   #planet_summary {
+    max-width: calc(100vw - 114px);
     grid-row: 2/3;
     grid-column: 2/2;
-    max-width: calc(100vw - 114px);
   }
 }
 #planet_summary:before {
-  display: block;
-  content: "Planetary Development ";
-  width: 100%;
-  padding: 0.5rem 0;
-  font-size: 0.75rem;
-  text-transform: uppercase;
-  font-weight: bold;
-  text-align: center;
   color: #ccc;
+  font-size: 0.75rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 0.5rem 0;
+  content: "Planetary Development ";
+  display: block;
   background: rgba(0, 0, 0, 0.6);
+  width: 100%;
   border-bottom: 1px solid transparent;
   border-image: linear-gradient(to right, transparent 0%, rgba(82, 165, 248, 0.5) 50%, transparent 100%);
   border-image-slice: 1;
-  transition: ease all 0.5s;
   position: absolute;
   top: 0;
+  transition: ease all 0.5s;
 }
 #planet_summary:hover:before {
   background: black;
@@ -2641,14 +2641,14 @@ hr {
   width: 350px;
 }
 #planet_summary .textlabel {
-  margin-left: 0;
-  font-size: 0.75rem;
-  letter-spacing: 0.5px;
-  text-transform: uppercase;
   color: #bbb;
+  font-size: 0.75rem;
   font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
   padding: 0 0.5rem 0 0;
   flex-basis: 8rem;
+  margin-left: 0;
 }
 
 #planet_summary .countdown,
@@ -2668,11 +2668,11 @@ hr {
 #planet_summary_construction,
 #planet_summary_research,
 #planet_summary_production {
-  margin: 0.5rem 0;
   padding: 0 1rem;
   display: flex;
   align-items: center;
   flex-flow: row wrap;
+  margin: 0.5rem 0;
 }
 #planet_summary_construction span#planet_summary_construction_queue, #planet_summary_construction span#planet_summary_research_queue,
 #planet_summary_research span#planet_summary_construction_queue,
@@ -2695,20 +2695,20 @@ hr {
 #planet_summary_construction_complete,
 #planet_summary_research_complete,
 .planet_summary_production_orders {
-  margin: 0 0 0 8rem;
-  padding: 0;
-  text-align: left;
-  width: 100%;
   font-size: 0.75rem;
+  text-align: left;
+  padding: 0;
+  width: 100%;
+  margin: 0 0 0 8rem;
 }
 @media (max-width: 767px) {
   #planet_summary_construction_complete,
   #planet_summary_research_complete,
   .planet_summary_production_orders {
-    margin: 0;
-    padding: 0 0.25rem 0 0;
     text-align: right;
+    padding: 0 0.25rem 0 0;
     flex: 1;
+    margin: 0;
   }
 }
 
@@ -2716,8 +2716,8 @@ hr {
   position: relative;
 }
 .planet_summary_production_orders div.tooltip {
-  position: absolute;
   min-width: 110px;
+  position: absolute;
   top: 0 !important;
   right: 0 !important;
   left: unset !important;
@@ -2727,16 +2727,16 @@ hr {
   width: unset;
 }
 .planet_summary_production_orders div.tooltip .planet_summary_production_shipname {
-  float: left !important;
   padding-right: 0.5rem;
+  float: left !important;
 }
 .planet_summary_production_orders div.tooltip .planet_summary_production_shipcount {
   float: right !important;
 }
 .planet_summary_production_orders div.tooltip br {
+  content: " ";
   display: block;
   height: 1rem;
-  content: " ";
   margin-bottom: 0.25rem;
 }
 .planet_summary_production_orders div.tooltip br:last-of-type {
@@ -2744,33 +2744,33 @@ hr {
 }
 
 .planet_summary_production_shipname {
-  display: inline-block;
   font-size: 0.75rem;
+  display: inline-block;
   width: 6rem;
 }
 
 .planet_summary_production_shipcount {
-  display: inline-block;
   font-size: 0.75rem;
-  width: 3.5rem;
   text-align: right;
+  display: inline-block;
+  width: 3.5rem;
 }
 
 /* Page content
    -------------------------------------------------------*/
 #contents {
+  background: transparent;
+  width: auto;
+  border: none;
+  margin: 0.5rem 0;
   grid-column: 2/3;
   grid-column-end: 4;
-  margin: 0.5rem 0;
-  background: transparent;
-  border: none;
-  width: auto;
 }
 @media (max-width: 767px) {
   #contents {
+    max-width: calc(100vw - 8.14rem);
     grid-row: 3/3;
     grid-column: 2/2;
-    max-width: calc(100vw - 8.14rem);
   }
 }
 
@@ -2785,41 +2785,41 @@ hr {
 }
 
 #manual_info {
-  display: block;
-  height: 1.5rem;
-  width: 1.5rem;
-  margin: 0.5rem 0.5rem 0.5rem auto;
-  padding: 0 0 0 0.05rem;
-  border: 1px solid #52a5f8;
-  border-radius: 50%;
-  background: transparent;
+  opacity: 0.5;
   color: #52a5f8;
   font-size: 1rem;
   text-align: center;
-  opacity: 0.5;
+  padding: 0 0 0 0.05rem;
+  display: block;
+  background: transparent;
+  width: 1.5rem;
+  height: 1.5rem;
+  border: 1px solid #52a5f8;
+  border-radius: 50%;
+  margin: 0.5rem 0.5rem 0.5rem auto;
   transition: ease all 0.3s;
 }
 #manual_info:hover {
+  opacity: 1;
+  color: black;
   text-decoration: none;
   background: #52a5f8;
-  color: black;
-  opacity: 1;
 }
 
 .header,
 h2 {
-  margin: 1rem 0;
+  color: #ccc;
   font-size: 1rem;
-  padding: 10px;
   font-weight: bold;
   text-transform: uppercase;
-  color: #ccc;
+  line-height: 100%;
+  padding: 10px;
   background: #24303f;
   background: linear-gradient(to right, #1a222c 0%, #24303f 50%, #1a222c 100%) !important;
   border: 1px solid transparent;
   border-image: linear-gradient(to right, transparent 0%, rgba(82, 165, 248, 0.5) 50%, transparent 100%);
   border-image-slice: 1;
-  line-height: 100%;
+  margin: 1rem 0;
 }
 .header.relations_neutral,
 h2.relations_neutral {
@@ -2866,12 +2866,12 @@ h2 a:hover {
 }
 
 #notice {
-  background: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 50%, rgba(0, 0, 0, 0) 100%);
   padding: 0.5rem;
-  margin-top: 0.5rem;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 50%, rgba(0, 0, 0, 0) 100%);
   border: 1px solid transparent;
   border-image: linear-gradient(to right, transparent 0%, rgba(82, 165, 248, 0.5) 50%, transparent 100%);
   border-image-slice: 1;
+  margin-top: 0.5rem;
   margin-bottom: 1rem;
 }
 #notice .header,
@@ -2879,22 +2879,22 @@ h2 a:hover {
   display: none;
 }
 #notice .maintext {
+  font-size: 0.9rem;
   text-align: center;
   padding: 0;
-  font-size: 0.9rem;
 }
 #notice .maintext a {
   font-weight: normal;
 }
 #notice .maintext a.notice_warning {
-  color: #f35050;
   opacity: 0.75;
+  color: #f35050;
   font-size: 0.75rem;
+  font-weight: 900;
   line-height: 1.8;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  font-weight: 900;
 }
 #notice .maintext > br:last-child {
   display: none;
@@ -2904,9 +2904,9 @@ h2 a:hover {
   margin-top: 0.5rem;
 }
 .maintext table {
-  margin: 0 auto 1rem;
   width: auto;
   min-width: 450px;
+  margin: 0 auto 1rem;
 }
 .maintext table table {
   background: #24303f;
@@ -2944,11 +2944,11 @@ span.center {
 #con_fleets,
 #con_planets,
 #dships_box {
-  background: #1a222c !important;
   color: #ccc !important;
-  border: 1px solid rgba(82, 165, 248, 0.5);
-  padding: 0.25rem 0.5rem;
   white-space: initial;
+  padding: 0.25rem 0.5rem;
+  background: #1a222c !important;
+  border: 1px solid rgba(82, 165, 248, 0.5);
   box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, 0.4);
 }
 
@@ -2957,15 +2957,15 @@ span.center {
 }
 
 #pabox_inner {
+  padding: 0.5rem;
   top: 0 !important;
   left: 0 !important;
-  padding: 0.5rem;
 }
 #pabox_inner h2 {
+  font-size: 1rem;
+  padding: 0;
   background: none;
   margin: 0 0 0.5rem;
-  padding: 0;
-  font-size: 1rem;
 }
 #pabox_inner th,
 #pabox_inner td,
@@ -2975,8 +2975,8 @@ span.center {
 #pabox_inner th b,
 #pabox_inner td b,
 #pabox_inner p b {
-  font-weight: normal;
   font-size: 0.75rem;
+  font-weight: normal;
 }
 #pabox_inner table + table,
 #pabox_inner table + p {
@@ -2991,10 +2991,10 @@ span.center {
 
 #tab_links {
   display: flex;
-  flex-direction: row;
   align-items: center;
-  justify-content: center;
+  flex-direction: row;
   flex-wrap: wrap;
+  justify-content: center;
 }
 #tab_links li {
   padding: 0;
@@ -3017,9 +3017,9 @@ span.center {
 }
 
 #footer {
+  display: none;
   grid-column: 1/4;
   grid-row: 3/4;
-  display: none;
 }
 
 /* OVERVIEW
@@ -3052,13 +3052,13 @@ span.center {
   display: block;
 }
 #page_overview #ships span .superhighlight {
-  display: block;
   font-size: 0.75rem;
+  display: block;
 }
 
 #quest_system table {
-  margin: 0 auto;
   width: 80%;
+  margin: 0 auto;
 }
 #quest_system table th:nth-child(1) {
   width: 0 !important;
@@ -3076,17 +3076,17 @@ span.center {
   width: 0 !important;
 }
 #quest_system table tr:not(:first-child) th {
-  text-transform: initial;
   font-size: 1rem;
+  text-transform: initial;
 }
 #quest_system table tr:not(:first-child) th:nth-child(2) {
   padding: 0.15rem 0;
   background: #24303f;
 }
 #quest_system table tr[id^=quest] p {
+  color: white;
   font-size: 0.75rem;
   margin: 0 1.1rem;
-  color: white;
 }
 #quest_system table table {
   width: calc(100% - 2.4rem);
@@ -3106,23 +3106,23 @@ span.center {
   background: #24303f;
 }
 #quest_system .completed {
-  width: 100%;
   background: none;
+  width: 100%;
 }
 #quest_system .completed:after {
-  content: "✔";
-  font-weight: bold;
   color: #52a5f8;
+  font-weight: bold;
+  content: "✔";
 }
 
 .expand {
   display: inline-block;
-  margin-right: 0.5rem;
   background: none;
+  margin-right: 0.5rem;
 }
 .expand:before {
-  content: "▼";
   color: #52a5f8;
+  content: "▼";
   display: inline;
 }
 .expand:hover:before {
@@ -3130,25 +3130,25 @@ span.center {
 }
 
 .progress_wrapper {
-  background: rgba(36, 48, 63, 0.4);
-  border: 1px solid rgba(82, 165, 248, 0.5);
-  box-shadow: inset 0 2px 4px 2px rgba(0, 0, 0, 0.4), 0 1px 3px 3px rgba(0, 0, 0, 0.15);
   font-size: 0.75rem;
-  height: 1.5rem;
-  width: 100px;
-  border-radius: 4px;
   overflow: hidden;
+  background: rgba(36, 48, 63, 0.4);
+  width: 100px;
+  height: 1.5rem;
+  border: 1px solid rgba(82, 165, 248, 0.5);
+  border-radius: 4px;
+  box-shadow: inset 0 2px 4px 2px rgba(0, 0, 0, 0.4), 0 1px 3px 3px rgba(0, 0, 0, 0.15);
   position: relative;
 }
 .progress_wrapper .progress_bar {
-  height: 1.5rem;
   background: rgba(55, 128, 89, 0.6);
+  height: 1.5rem;
 }
 .progress_wrapper .progress_expected {
   background: rgba(255, 165, 0, 0.2);
+  background-size: 100%;
   height: 100%;
   margin-top: -1.5rem;
-  background-size: 100%;
 }
 .progress_wrapper .progress_value {
   color: #ccc;
@@ -3162,31 +3162,31 @@ span.center {
 
 .info_header {
   color: #ccc;
+  font-size: 0.75rem;
   text-align: left;
+  padding: 0.5rem 1rem 0.5rem 0.5rem;
   margin-bottom: 0.25rem;
   position: relative;
-  padding: 0.5rem 1rem 0.5rem 0.5rem;
-  font-size: 0.75rem;
 }
 .info_header a {
+  text-transform: uppercase;
   position: absolute;
   top: 0.45rem;
   right: 0.25rem;
-  text-transform: uppercase;
 }
 .info_header a:hover {
   color: #0972db;
 }
 
 .info_contents p {
-  min-width: 15rem;
-  font-size: 0.75rem;
   color: #ccc;
+  font-size: 0.75rem;
+  min-width: 15rem;
 }
 
 span.mission_attack, span.mission_defend, span.mission_return, span.mission_fake_defend {
-  background: transparent;
   opacity: 1;
+  background: transparent;
 }
 
 .mission_attack {
@@ -3254,25 +3254,25 @@ span.mission_attack, span.mission_defend, span.mission_return, span.mission_fake
   background: transparent;
 }
 #page_messages #contents .maintext > table tr th a {
-  display: inline-block;
-  height: 1.5rem;
-  margin: 1rem 0;
-  padding: 0 0.5rem;
   color: #52a5f8 !important;
-  background: #24303f !important;
-  border: 1px solid rgba(82, 165, 248, 0.5) !important;
-  cursor: pointer;
-  box-shadow: none;
-  border-radius: 0;
-  text-transform: initial;
-  font-weight: initial;
-  transition: 0.3s;
   font-family: inherit;
   font-size: 1rem;
+  font-weight: initial;
+  text-transform: initial;
+  padding: 0 0.5rem;
+  display: inline-block;
+  background: #24303f !important;
+  height: 1.5rem;
+  border: 1px solid rgba(82, 165, 248, 0.5) !important;
+  border-radius: 0;
+  box-shadow: none;
+  margin: 1rem 0;
+  cursor: pointer;
+  transition: 0.3s;
 }
 #page_messages #contents .maintext > table tr th a:hover {
-  text-decoration: none !important;
   color: black !important;
+  text-decoration: none !important;
   background: #52a5f8 !important;
 }
 #page_messages a[onclick^=read],
@@ -3280,9 +3280,9 @@ span.mission_attack, span.mission_defend, span.mission_return, span.mission_fake
 #page_messages a[href*="action=delete"],
 #page_messages a[href*="action=report"] {
   display: inline-block;
-  position: relative;
   width: 1.5rem;
   height: 1.5rem;
+  position: relative;
 }
 #page_messages a[onclick^=read]:after,
 #page_messages a[onclick^=reply]:after,
@@ -3291,28 +3291,28 @@ span.mission_attack, span.mission_defend, span.mission_return, span.mission_fake
   font-size: 1.3rem;
 }
 #page_messages:after {
-  position: absolute;
-  top: 0;
-  left: 1px;
   color: #c93716;
   font-size: 1.25rem;
   line-height: 1.5rem;
+  position: absolute;
+  top: 0;
+  left: 1px;
 }
 #page_messages a[onclick^=read]::after {
-  content: "✉";
   color: #ccc;
+  content: "✉";
 }
 #page_messages a[onclick^=reply]::after {
-  content: "↩";
   color: #ccc;
+  content: "↩";
 }
 #page_messages a[href*="action=report"]::after {
-  content: "⚠";
   color: orange;
+  content: "⚠";
 }
 #page_messages a[href*="action=delete"]::after {
-  content: "✖";
   color: #c93716;
+  content: "✖";
 }
 #page_messages #tab1 .container:nth-child(2) .header::before {
   content: "Send recall message";
@@ -3336,8 +3336,8 @@ span.mission_attack, span.mission_defend, span.mission_return, span.mission_fake
 /* GALAXY FORUM
    -------------------------------------------------------*/
 .forum_description {
-  font-size: 0.75rem;
   color: #ccc;
+  font-size: 0.75rem;
 }
 
 .forum {
@@ -3361,17 +3361,17 @@ span.mission_attack, span.mission_defend, span.mission_return, span.mission_fake
 
 .forum_thread_header_title,
 .forum_thread_title {
-  flex-basis: 50%;
   text-align: left;
+  flex-basis: 50%;
 }
 
 .forum_thread_header_lastpost,
 .forum_thread_lastpost {
-  flex-basis: 40%;
-  text-align: left;
   font-size: 0.75rem;
+  text-align: left;
   display: inline-flex;
   align-items: center;
+  flex-basis: 40%;
 }
 
 .forum_thread_header_replies,
@@ -3389,9 +3389,9 @@ div[class^=forum_thread_header] {
 }
 
 .forum_thread_actions_button {
-  background: none;
-  display: inline-block;
   text-indent: -99rem;
+  display: inline-block;
+  background: none;
 }
 .forum_thread_actions_button:hover {
   text-decoration: none;
@@ -3400,12 +3400,12 @@ div[class^=forum_thread_header] {
   color: #ccc;
 }
 .forum_thread_actions_button:after {
-  content: "▼";
   color: #52a5f8;
+  font-size: 10px;
+  content: "▼";
   position: relative;
   top: 0;
   left: 95.2rem;
-  font-size: 10px;
 }
 
 .forum_thread_actions span {
@@ -3430,36 +3430,36 @@ div[class^=forum_thread_header] {
 }
 
 .forum_post_number {
-  order: 1;
-  flex-basis: 3rem;
   font-weight: bold;
+  flex-basis: 3rem;
+  order: 1;
 }
 
 .forum_poster {
-  order: 2;
-  flex-grow: 1;
   font-size: 1rem;
+  flex-grow: 1;
+  order: 2;
 }
 
 .forum_post_title {
-  order: 3;
   text-align: left;
   flex-grow: 1;
+  order: 3;
 }
 
 .forum_post_time {
-  order: 4;
-  flex-basis: 10rem;
   text-align: right;
+  flex-basis: 10rem;
+  order: 4;
 }
 
 .forum_post_text {
-  order: 5;
+  padding: 1rem;
   flex-basis: 100%;
   flex-shrink: 0;
   background: #24303f;
   border: 1px solid rgba(82, 165, 248, 0.5);
-  padding: 1rem;
+  order: 5;
 }
 
 .forum_post_notes {
@@ -3474,9 +3474,9 @@ div[class^=forum_thread_header] {
 }
 
 .forum_post_seperator {
+  display: none;
   border: 1px solid rgba(82, 165, 248, 0.5);
   margin: 1rem;
-  display: none;
 }
 
 .forum_post_delete,
@@ -3490,15 +3490,15 @@ div[class^=forum_thread_header] {
 .mceEditor,
 .mceToolbarContainer,
 .mceStatusbarBottom {
+  background: transparent !important;
   border-style: solid !important;
   border-color: #52a5f8 !important;
-  background: transparent !important;
 }
 
 .mceEditor {
-  margin: 0.5rem;
   width: calc(100% - 1rem);
   border-width: 2px !important;
+  margin: 0.5rem;
 }
 
 .mceToolbarContainer {
@@ -3532,8 +3532,8 @@ table.mceEditor tr {
   width: 100%;
 }
 table.mceEditor tr td {
-  width: 100%;
   padding: 0;
+  width: 100%;
 }
 table.mceEditor tr td.mceToolbarTop > span > span,
 table.mceEditor tr td.mceToolbarTop > span > a {
@@ -3546,8 +3546,8 @@ table.mceEditor tr td.mceToolbarTop > span > span > a + a {
   width: auto;
 }
 table.mceEditor tr td .mceToolbarContainer {
-  background: #24303f !important;
   padding: 0.5rem 0.5rem 0;
+  background: #24303f !important;
 }
 table.mceEditor tr td .mceToolbarContainer a {
   background: #ccc !important;
@@ -3556,17 +3556,17 @@ table.mceEditor tr td.mceStatusbarBottom {
   display: none;
 }
 table.mceEditor tr td .mceSeparatorLine {
-  border: 0;
   padding: 0;
-  margin-left: 1rem;
-  margin-right: 1rem;
-  margin-top: 0px;
   height: 26px;
+  border: 0;
+  margin-top: 0px;
+  margin-right: 1rem;
+  margin-left: 1rem;
 }
 table.mceEditor tr td a {
-  margin: 0.5rem 0 !important;
   width: 24px;
   height: 24px;
+  margin: 0.5rem 0 !important;
 }
 table.mceEditor tr td a[accesskey=q], table.mceEditor tr td a[accesskey=z] {
   display: none !important;
@@ -3581,27 +3581,27 @@ table.mceEditor tr td a span.mceMenuButtonSelected img {
   height: 24px;
 }
 table.mceEditor tr td select.mceSelectList {
-  margin: 7px 0.5rem;
   height: 1.8rem;
+  margin: 7px 0.5rem;
 }
 table.mceEditor tr td select.mceSelectList:first-of-type {
   margin-right: 0;
 }
 
 #page_galaxy_status #page #contents .maintext table tr.mission_return {
-  background: rgba(136, 136, 136, 0.1);
   color: #ccc;
+  background: rgba(136, 136, 136, 0.1);
 }
 #page_galaxy_status #page #contents .maintext table tr td.mission_return {
-  background: rgba(136, 136, 136, 0.1);
   color: #ccc;
+  background: rgba(136, 136, 136, 0.1);
 }
 #page_galaxy_status #page #contents .maintext table tr[id*=notes_] input[type=button] {
   margin: 0;
 }
 #page_galaxy_status #page #contents .maintext table tr[id*=notes_] td form ~ form p:not(:first-child) input:nth-of-type(2) {
-  margin: 0.5rem 0 0 0;
   width: 98%;
+  margin: 0.5rem 0 0 0;
 }
 
 /* MINING
@@ -3613,8 +3613,8 @@ table.mceEditor tr td select.mceSelectList:first-of-type {
 }
 #mining table tr td,
 #galaxy_fund table tr td {
-  height: 1.5rem;
   background: #24303f;
+  height: 1.5rem;
 }
 #mining table tr td .textlabel,
 #galaxy_fund table tr td .textlabel {
@@ -3637,9 +3637,9 @@ table.mceEditor tr td select.mceSelectList:first-of-type {
 #galaxy_fund table tr td .metal .textvalue,
 #galaxy_fund table tr td .crystal .textvalue,
 #galaxy_fund table tr td .eonium .textvalue {
+  padding: 0 1rem 0 1.2rem;
   background-repeat: no-repeat;
   background-position-y: 1px;
-  padding: 0 1rem 0 1.2rem;
 }
 #mining table tr td .metal,
 #galaxy_fund table tr td .metal {
@@ -3671,9 +3671,9 @@ table.mceEditor tr td select.mceSelectList:first-of-type {
 #galaxy_fund .resources .metal .textvalue,
 #galaxy_fund .resources .crystal .textvalue,
 #galaxy_fund .resources .eonium .textvalue {
+  padding: 0 1rem 0 1.2rem;
   background-repeat: no-repeat;
   background-position-y: 1px;
-  padding: 0 1rem 0 1.2rem;
 }
 #mining .resources .metal .textvalue,
 #galaxy_fund .resources .metal .textvalue {
@@ -3714,8 +3714,8 @@ table.mceEditor tr td select.mceSelectList:first-of-type {
   margin-bottom: 0;
 }
 #galaxy_fund table tr td[colspan="5"] {
-  background: transparent;
   padding: 1rem 0 0;
+  background: transparent;
 }
 #galaxy_fund table:not(:last-child) tr:first-child th {
   padding-bottom: 0.5rem;
@@ -3737,10 +3737,10 @@ table.mceEditor tr td select.mceSelectList:first-of-type {
 #alliance_fund_donate .metal,
 #alliance_fund_donate .crystal,
 #alliance_fund_donate .eonium {
-  width: 100%;
-  height: 30px;
   display: block;
   background-size: contain;
+  width: 100%;
+  height: 30px;
 }
 
 #alliance_fund .metal,
@@ -3761,43 +3761,43 @@ table.mceEditor tr td select.mceSelectList:first-of-type {
 .construction_info .title,
 .scans .title,
 .governments .title {
-  display: block;
-  padding: 0.25rem 0.5rem;
-  margin-bottom: 0.5rem;
-  background: #24303f;
   font-size: 1.3rem;
   text-shadow: 1px 1px 0px #000;
+  padding: 0.25rem 0.5rem;
+  display: block;
+  background: #24303f;
+  margin-bottom: 0.5rem;
 }
 
 .research .title,
 .research_branch .title {
-  display: inline-block;
-  font-size: 1rem;
-  margin-bottom: 0.25rem;
   color: #52a5f8;
+  font-size: 1rem;
+  display: inline-block;
+  margin-bottom: 0.25rem;
 }
 
 .construction_info p,
 .scans p {
-  position: relative;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
   font-size: 1rem;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+  position: relative;
 }
 .construction_info p .desc_link,
 .scans p .desc_link {
+  font-size: 0.75rem;
   display: inline-block;
   position: absolute;
   top: -30px;
   right: 150px;
-  font-size: 0.75rem;
 }
 
 .research p,
 .construction_info p {
-  padding-left: 0;
-  padding-right: 15rem;
   text-align: left;
+  padding-right: 15rem;
+  padding-left: 0;
 }
 
 .scans p {
@@ -3814,23 +3814,23 @@ table.mceEditor tr td select.mceSelectList:first-of-type {
 #constructions .maintext .constructions {
   display: flex;
   flex-wrap: wrap;
-  border: none;
-  position: relative;
+  background: #24303f;
   width: 90%;
   max-width: 600px;
-  margin: 0 auto 3rem;
+  border: none;
   border: 1px solid transparent;
   border-image: linear-gradient(to right, transparent 0%, rgba(82, 165, 248, 0.5) 50%, transparent 100%);
   border-image-slice: 1;
   box-shadow: inset 0 0 8px 2px rgba(0, 0, 0, 0.25), 0 0 3px 3px rgba(0, 0, 0, 0.15);
-  background: #24303f;
+  margin: 0 auto 3rem;
+  position: relative;
 }
 #constructions .maintext .constructions:first-of-type {
   margin-top: 1rem;
 }
 #constructions .maintext .constructions .construction_info {
-  flex-basis: 100%;
   display: flex;
+  flex-basis: 100%;
   flex-wrap: wrap;
   position: relative;
   order: 1;
@@ -3848,24 +3848,24 @@ table.mceEditor tr td select.mceSelectList:first-of-type {
   transform: translate(50%, 100%);
 }
 #constructions .maintext .constructions .construction_info .title {
+  padding: 0.5rem 2rem;
   background: #171e27;
   margin-bottom: 0;
-  padding: 0.5rem 2rem;
 }
 #constructions .maintext .constructions .construction_info .resources {
-  flex-basis: 33%;
   font-size: 0.75rem;
+  flex-basis: 33%;
   position: absolute;
-  right: 2rem;
   top: 0.85rem;
+  right: 2rem;
   z-index: 20;
 }
 #constructions .maintext .constructions .construction_info .resources + p {
-  width: 100%;
-  display: flex;
   font-size: 0.75rem;
   padding: 1rem 50% 1rem 2rem;
+  display: flex;
   background: #1e2935;
+  width: 100%;
   z-index: 10;
 }
 #constructions .maintext .constructions .construction_info p .time,
@@ -3880,22 +3880,22 @@ table.mceEditor tr td select.mceSelectList:first-of-type {
   padding-left: 0.5rem;
 }
 #constructions .maintext .constructions .construction_built {
-  padding: 0 2rem;
-  margin-top: -2.35rem;
   font-size: 1rem;
-  width: 206px;
   text-align: right;
+  padding: 0 2rem;
+  width: 206px;
+  margin-top: -2.35rem;
   z-index: 10;
   order: 3;
 }
 #constructions .maintext .constructions .construction_built .textlabel {
-  text-transform: uppercase;
   font-size: 0.75rem;
+  text-transform: uppercase;
 }
 #constructions .maintext .constructions .construction_built .textvalue {
-  font-weight: bold;
   color: #52a5f8;
   font-size: 1.2rem;
+  font-weight: bold;
 }
 #constructions .maintext .constructions .construction_built .progress_wrapper {
   margin: 5rem 0 1rem;
@@ -3908,34 +3908,34 @@ table.mceEditor tr td select.mceSelectList:first-of-type {
 }
 #constructions .maintext .constructions .construction_built br {
   content: " ";
-  margin-top: 0.5rem;
   display: block;
+  margin-top: 0.5rem;
 }
 #constructions .maintext .constructions .construction_build {
+  padding-left: 2rem;
   display: flex;
   align-items: flex-start;
   flex-wrap: wrap;
   width: calc(100% - 206px) !important;
   order: 2;
-  padding-left: 2rem;
 }
 #constructions .maintext .constructions .construction_build > *:first-child {
   padding-top: 0.5rem !important;
 }
 #constructions .maintext .constructions .construction_build .resources {
-  padding: 0.5rem 0;
-  margin-bottom: 0;
   text-align: left;
-  width: 100%;
-  order: 1;
+  padding: 0.5rem 0;
   display: flex;
   flex-wrap: wrap;
+  width: 100%;
+  margin-bottom: 0;
+  order: 1;
 }
 #constructions .maintext .constructions .construction_build .resources:nth-child(3) {
-  order: 3;
+  padding-top: 1rem;
   border-top: 1px solid rgba(82, 165, 248, 0.5);
   margin-top: 0.75rem;
-  padding-top: 1rem;
+  order: 3;
 }
 #constructions .maintext .constructions .construction_build .resources li {
   display: inline-block;
@@ -3945,10 +3945,10 @@ table.mceEditor tr td select.mceSelectList:first-of-type {
   width: 100%;
 }
 #constructions .maintext .constructions .construction_build form {
-  width: 100%;
   display: flex;
   align-items: center;
   justify-content: flex-start;
+  width: 100%;
   margin-bottom: 0.5rem;
   order: 2;
 }
@@ -3956,23 +3956,23 @@ table.mceEditor tr td select.mceSelectList:first-of-type {
   order: 4;
 }
 #constructions .maintext .constructions .construction_build form:nth-child(4) {
-  order: 4;
   margin-bottom: 1rem;
+  order: 4;
 }
 #constructions .maintext .constructions .construction_build form input[type=checkbox] {
-  margin: 0 0 0 0.5rem;
   width: 1.5rem;
   height: 1.5rem;
+  margin: 0 0 0 0.5rem;
 }
 #constructions .maintext .constructions .construction_build form input[type=checkbox]:focus {
   border: 1px solid rgba(255, 0, 0, 0.5);
 }
 #constructions .maintext .constructions .construction_build form input[type=checkbox]:before {
-  display: block;
-  content: "✘";
-  font-weight: bold;
   color: rgba(255, 0, 0, 0.8);
   font-size: 1.5rem;
+  font-weight: bold;
+  content: "✘";
+  display: block;
   position: absolute;
   top: -0.3125rem;
   left: 0.1875rem;
@@ -3981,8 +3981,8 @@ table.mceEditor tr td select.mceSelectList:first-of-type {
   border: 1px solid rgba(50, 205, 50, 0.5);
 }
 #constructions .maintext .constructions .construction_build form input[type=checkbox]:checked:before {
-  content: "✔";
   color: limegreen;
+  content: "✔";
   left: 0.0625rem;
 }
 #constructions .maintext .constructions .construction_build form input[type=submit] {
@@ -3999,8 +3999,8 @@ table.mceEditor tr td select.mceSelectList:first-of-type {
   text-align: left;
   padding: 0;
   display: flex;
-  flex-direction: row-reverse;
   align-items: center;
+  flex-direction: row-reverse;
 }
 
 #research > .maintext > p {
@@ -4011,38 +4011,38 @@ table.mceEditor tr td select.mceSelectList:first-of-type {
   text-align: center;
   display: flex;
   flex-wrap: wrap;
-  position: relative;
+  background: #24303f;
   width: 90%;
   max-width: 450px;
-  margin: 0 auto 3rem;
   border: 1px solid transparent;
   border-image: linear-gradient(to right, transparent 0%, rgba(82, 165, 248, 0.5) 50%, transparent 100%);
   border-image-slice: 1;
   box-shadow: inset 0 0 8px 2px rgba(0, 0, 0, 0.25), 0 2px 10px 2px rgba(0, 0, 0, 0.15);
-  background: #24303f;
+  margin: 0 auto 3rem;
+  position: relative;
 }
 .research .superhighlight {
   font-size: 1rem;
 }
 .research p {
-  padding-right: 0;
   text-align: center;
+  padding-right: 0;
 }
 .research p .desc_link {
+  display: block;
+  margin-top: 0.5rem;
   position: relative;
   top: unset;
   right: unset;
   clear: both;
-  display: block;
-  margin-top: 0.5rem;
 }
 .research .branch_name {
   width: 100%;
 }
 .research .branch_name h3 {
-  background: #171e27;
-  padding: 0.5rem 2rem;
   text-align: center;
+  padding: 0.5rem 2rem;
+  background: #171e27;
   margin: 0;
 }
 .research .research_current,
@@ -4062,14 +4062,14 @@ table.mceEditor tr td select.mceSelectList:first-of-type {
   border-top: 1px solid rgba(82, 165, 248, 0.5);
 }
 .research .research_next[id] {
-  position: relative;
   font-style: normal;
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 .research .research_next[id] .title {
-  order: 1;
   text-align: center;
+  order: 1;
 }
 .research .research_next[id] .progress_wrapper {
   margin: 0 auto;
@@ -4079,16 +4079,16 @@ table.mceEditor tr td select.mceSelectList:first-of-type {
   padding: 0;
 }
 .research .research_next[id] p:first-of-type {
-  order: 2;
   text-align: center;
+  order: 2;
 }
 .research .research_next[id] p.research_queue {
   order: 5;
 }
 .research .research_next[id] p:last-of-type {
-  order: 6;
-  padding-bottom: 10px;
   text-align: center;
+  padding-bottom: 10px;
+  order: 6;
 }
 .research .research_next[id] form.cancelform {
   order: 4;
@@ -4097,9 +4097,9 @@ table.mceEditor tr td select.mceSelectList:first-of-type {
   margin-top: 0;
 }
 .research .research_next[id] form.cancelform + p.research_queue {
+  padding-top: 1.5rem !important;
   border-top: 1px solid rgba(82, 165, 248, 0.5);
   margin-top: 1rem;
-  padding-top: 1.5rem !important;
 }
 .research .research_next[id] form.queueform, .research .research_next[id] form.cancelqueueform {
   order: 7;
@@ -4117,8 +4117,8 @@ table.mceEditor tr td select.mceSelectList:first-of-type {
 }
 .research .researchform {
   display: flex;
-  justify-content: flex-end;
   flex-direction: column;
+  justify-content: flex-end;
   order: 7;
 }
 
@@ -4127,15 +4127,15 @@ table.mceEditor tr td select.mceSelectList:first-of-type {
   margin: -2rem auto 3rem;
 }
 .research_branch .completed .title {
-  position: relative;
-  margin: 0 auto;
-  background: #171e27;
-  padding: 0.5rem 2rem;
   color: #ccc;
+  padding: 0.5rem 2rem;
+  background: #171e27;
+  margin: 0 auto;
+  position: relative;
 }
 .research_branch .completed .title:after {
-  content: "✔";
   color: #52a5f8;
+  content: "✔";
   position: absolute;
   top: 50%;
   right: 0;
@@ -4143,25 +4143,25 @@ table.mceEditor tr td select.mceSelectList:first-of-type {
 }
 
 .research_branch_list {
+  font-style: normal;
+  text-align: center;
   padding: 0;
   background: #24303f;
   border: 0;
   margin: 0 auto 1rem;
-  text-align: center;
-  font-style: normal;
 }
 .research_branch_list:last-child {
   margin-bottom: 0;
 }
 .research_branch_list p {
-  position: relative;
   text-align: center !important;
-  width: 100%;
   padding: 0.5rem 2rem;
+  width: 100%;
+  position: relative;
 }
 .research_branch_list p a.desc_link {
-  display: block;
   font-size: 0.8rem;
+  display: block;
 }
 
 .scans {
@@ -4169,8 +4169,8 @@ table.mceEditor tr td select.mceSelectList:first-of-type {
 }
 .scans .resources {
   font-size: 0.75rem;
-  margin-top: 1rem;
   padding-left: 0.5rem;
+  margin-top: 1rem;
 }
 .scans .scan_form {
   padding-right: 2rem;
@@ -4204,55 +4204,55 @@ table.mceEditor tr td select.mceSelectList:first-of-type {
   display: table-cell;
 }
 #page_waves #show_scan table tr td[colspan="2"] {
-  background: #1a222c;
-  font-size: 1rem;
-  padding: 1rem 0;
-  font-weight: bold;
   color: white;
+  font-size: 1rem;
+  font-weight: bold;
   font-style: italic;
+  padding: 1rem 0;
+  background: #1a222c;
 }
 #page_waves #tab1 .maintext {
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
+  flex-wrap: wrap;
 }
 #page_waves #tab1 .maintext .scans {
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
-  border: none;
-  position: relative;
+  justify-content: center;
+  background: #1e2935;
   width: 90%;
   max-width: 450px;
-  margin: 0 auto 3rem;
+  border: none;
   border: 1px solid transparent;
   border-image: linear-gradient(to right, transparent 0%, rgba(82, 165, 248, 0.5) 50%, transparent 100%);
   border-image-slice: 1;
   box-shadow: inset 0 0 8px 2px rgba(0, 0, 0, 0.25), 0 0 3px 3px rgba(0, 0, 0, 0.15);
-  background: #1e2935;
+  margin: 0 auto 3rem;
+  position: relative;
 }
 #page_waves #tab1 .maintext .scans .scan_info {
   width: 100% !important;
 }
 #page_waves #tab1 .maintext .scans .scan_info .title {
+  padding: 0.5rem 2rem;
   background: #171e27;
   margin-bottom: 0;
-  padding: 0.5rem 2rem;
 }
 #page_waves #tab1 .maintext .scans .scan_info p {
-  background: #24303f;
-  padding: 1rem 2rem;
   text-align: center;
-  box-shadow: inset 0 0 8px 2px rgba(0, 0, 0, 0.25);
+  padding: 1rem 2rem;
+  background: #24303f;
   border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+  box-shadow: inset 0 0 8px 2px rgba(0, 0, 0, 0.25);
 }
 #page_waves #tab1 .maintext .scans .scan_info p .desc_link {
   display: block;
-  right: unset;
+  margin-top: 0.5rem;
   position: relative;
   top: unset;
+  right: unset;
   left: unset;
-  margin-top: 0.5rem;
 }
 #page_waves #tab1 .maintext .scans .scan_info .resources {
   position: absolute;
@@ -4341,10 +4341,10 @@ table.mceEditor tr td select.mceSelectList:first-of-type {
 #scan .maintext > table > tbody > tr > td:first-child span {
   font-size: 1rem;
   text-transform: uppercase;
-  padding: 0 0.125rem;
-  width: 2.5rem;
   text-align: center;
+  padding: 0 0.125rem;
   display: inline-block;
+  width: 2.5rem;
 }
 #scan .maintext > table > tbody > tr + p {
   margin-top: 1rem;
@@ -4372,36 +4372,36 @@ table.mceEditor tr td select.mceSelectList:first-of-type {
 /* POPULATION
    -------------------------------------------------------*/
 .slider_track .slider_slider {
-  height: 4px;
   line-height: 0;
+  background: rgba(82, 165, 248, 0.18);
+  width: 110px;
+  height: 4px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  box-shadow: -1px 1px 5px 0px #000, 0px 0px 1px 1px #52a5f8;
   margin: 7px 4px 7px 4px;
   position: absolute;
-  width: 110px;
   z-index: 1;
-  border: 1px solid rgba(0, 0, 0, 0.5);
-  background: rgba(82, 165, 248, 0.18);
-  box-shadow: -1px 1px 5px 0px #000, 0px 0px 1px 1px #52a5f8;
 }
 .slider_track .population_slider {
   background: #52a5f8;
   background: linear-gradient(135deg, #52a5f8 25%, #24303f 100%);
-  height: 1.25rem;
   width: 0.6rem;
-  margin-left: 5px;
+  height: 1.25rem;
   border-top: 1px solid rgba(80, 164, 246, 0.21);
-  border-left: 1px solid rgba(80, 164, 246, 0.21);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.85);
   border-right: 1px solid rgba(0, 0, 0, 0.8);
-  box-shadow: inset 0px -1px 2px 1px rgba(0, 0, 0, 0.5), 0px 0px 3px 2px rgba(0, 0, 0, 0.3);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.85);
+  border-left: 1px solid rgba(80, 164, 246, 0.21);
   border-radius: 6px;
+  box-shadow: inset 0px -1px 2px 1px rgba(0, 0, 0, 0.5), 0px 0px 3px 2px rgba(0, 0, 0, 0.3);
+  margin-left: 5px;
 }
 .slider_track .population_slider:active {
   background: linear-gradient(135deg, #598aad 0%, #000 100%);
 }
 
 .population_display {
-  font-weight: bold;
   color: #ccc;
+  font-weight: bold;
 }
 
 #population table {
@@ -4417,9 +4417,9 @@ table.mceEditor tr td select.mceSelectList:first-of-type {
   text-align: center;
 }
 #population table tr:nth-child(7) th {
+  font-weight: normal;
   text-align: right;
   padding: 0.25rem 1rem;
-  font-weight: normal;
 }
 #population table tr:last-child td {
   text-align: center;
@@ -4444,8 +4444,8 @@ table.mceEditor tr td select.mceSelectList:first-of-type {
   padding: 0.25rem 0.5rem;
 }
 #page_population .container table {
-  margin: 0 auto;
   min-width: unset;
+  margin: 0 auto;
 }
 #page_population .container table tr th input#total {
   background: transparent;
@@ -4460,10 +4460,10 @@ table.mceEditor tr td select.mceSelectList:first-of-type {
   background: transparent !important;
 }
 #page_population .container table tr td input[type=number] {
+  text-align: center;
+  padding: 0 !important;
   border: 1px solid rgba(82, 165, 248, 0.5);
   transition: ease all 0.5s;
-  padding: 0 !important;
-  text-align: center;
 }
 #page_population .container table tr td input[type=number]:focus {
   border: 1px solid #52a5f8;
@@ -4479,16 +4479,16 @@ table.mceEditor tr td select.mceSelectList:first-of-type {
   display: flex;
 }
 #page_population .government_effects li span {
-  display: inline-block;
   padding: 0.15rem 1rem;
+  display: inline-block;
   flex-basis: 50%;
 }
 #page_population .government_effects .textlabel {
   text-align: right;
 }
 #page_population .government_effects .textvalue {
-  text-align: left;
   font-weight: bold;
+  text-align: left;
 }
 #page_population #tab1 input[type=submit] {
   margin: 1rem auto;
@@ -4519,12 +4519,12 @@ table.mceEditor tr td select.mceSelectList:first-of-type {
 #page_covert #contents .container:nth-last-child(4) .maintext > table tr:nth-child(1) th,
 #page_covert #contents .container:nth-last-child(4) .maintext > table tr:nth-child(1) td, #page_covert #contents .container:nth-last-child(4) .maintext > table tr:nth-child(2) th,
 #page_covert #contents .container:nth-last-child(4) .maintext > table tr:nth-child(2) td {
-  background: transparent;
   font-size: 0.75rem;
-  text-transform: uppercase;
   font-weight: normal;
-  padding-left: 2rem;
+  text-transform: uppercase;
   padding-right: 2rem;
+  padding-left: 2rem;
+  background: transparent;
 }
 #page_covert #contents .container:nth-last-child(4) .maintext > table tr:nth-child(1) th, #page_covert #contents .container:nth-last-child(4) .maintext > table tr:nth-child(2) th {
   padding-top: 0.5rem;
@@ -4589,38 +4589,38 @@ table.mceEditor tr td select.mceSelectList:first-of-type {
   background: #1e2935;
 }
 #page_covert .training_info .title {
-  display: block;
-  padding: 0.25rem 0.5rem;
-  margin-bottom: 0.5rem;
-  background: #171e27;
   font-size: 1rem;
+  padding: 0.25rem 0.5rem;
+  display: block;
+  background: #171e27;
+  margin-bottom: 0.5rem;
 }
 #page_covert .description {
-  position: relative;
-  padding-left: 0.5rem;
   padding-right: 15rem;
+  padding-left: 0.5rem;
+  position: relative;
 }
 #page_covert .desc_link {
+  font-size: 0.75rem;
   display: inline-block;
   position: absolute;
   top: 3px;
   right: 2rem;
-  font-size: 0.75rem;
 }
 #page_covert .resources {
   font-size: 0.75rem;
-  margin-top: 0.15rem;
   padding-left: 0.5rem;
   display: flex;
+  margin-top: 0.15rem;
 }
 #page_covert .resources li.textlabel {
   min-width: 7rem;
 }
 #page_covert .training_amounts {
-  margin-top: -2.5rem;
-  margin-right: 2rem;
   display: flex;
   justify-content: flex-end;
+  margin-top: -2.5rem;
+  margin-right: 2rem;
 }
 #page_covert .current_amount {
   padding-right: 2rem;
@@ -4652,8 +4652,8 @@ table.mceEditor tr td select.mceSelectList:first-of-type {
 
 #agents_training,
 #guards_training {
-  background: #24303f;
   padding: 0 0 1rem;
+  background: #24303f;
 }
 
 #agents_training {
@@ -4684,8 +4684,8 @@ table.mceEditor tr td select.mceSelectList:first-of-type {
 
 #production_form tr th,
 #production_form tr td {
-  padding-left: 0;
   font-size: 0.75rem;
+  padding-left: 0;
   background: #24303f;
 }
 @media (min-width: 992px) {
@@ -4702,8 +4702,8 @@ table.mceEditor tr td select.mceSelectList:first-of-type {
 #production_form tr td:nth-child(3),
 #production_form tr td:nth-child(4),
 #production_form tr td:nth-child(5) {
-  width: 2rem;
   text-align: center;
+  width: 2rem;
 }
 #production_form tr th:nth-child(6), #production_form tr th:nth-child(8),
 #production_form tr td:nth-child(6),
@@ -4741,8 +4741,8 @@ table.mceEditor tr td select.mceSelectList:first-of-type {
 #production_form tr td.notice_warning {
   color: rgba(255, 0, 0, 0.75);
   font-size: 0.75rem;
-  background: transparent;
   text-align: center;
+  background: transparent;
 }
 #production_form tr td[colspan="9"], #production_form tr td[colspan="10"] {
   background: rgba(0, 0, 0, 0.12) !important;
@@ -4757,9 +4757,9 @@ table.mceEditor tr td select.mceSelectList:first-of-type {
 }
 
 span.small.notice_warning {
+  color: orange;
   font-size: 0.75rem !important;
   font-style: italic;
-  color: orange;
 }
 
 #ship_cost {
@@ -4780,32 +4780,32 @@ span.small.notice_warning {
 }
 
 #d_stats {
-  background: #1a222c !important;
   padding: 0;
-  z-index: 10;
+  background: #1a222c !important;
   width: 15.5rem !important;
+  z-index: 10;
 }
 #d_stats table {
-  margin: 0 auto;
   max-width: 100%;
+  margin: 0 auto;
 }
 #d_stats table:first-child tr:first-child {
   background: #1a222c;
 }
 #d_stats table:first-child tr:first-child th {
-  text-align: center;
-  padding: 8px 0;
+  color: #ccc;
   font-size: 1rem;
   font-weight: bold;
   text-transform: uppercase;
-  color: #ccc;
+  line-height: 100%;
+  text-align: center;
+  padding: 8px 0;
   background: #24303f;
   background: linear-gradient(to right, #1a222c 0%, #24303f 50%, #1a222c 100%) !important;
   border: 1px solid transparent;
   border-top: none;
   border-image: linear-gradient(to right, transparent 0%, rgba(82, 165, 248, 0.5) 50%, transparent 100%);
   border-image-slice: 1;
-  line-height: 100%;
 }
 #d_stats table tr:nth-child(odd) {
   background: #24303f;
@@ -4838,8 +4838,8 @@ span.small.notice_warning {
 
 #d_from {
   padding: 0;
-  width: unset !important;
   background: #1a222c !important;
+  width: unset !important;
 }
 #d_from table {
   margin: 0;
@@ -4949,8 +4949,8 @@ span.small.notice_warning {
 #page_fleets form tr:nth-last-child(4) td, #page_fleets form tr:nth-last-child(5) th,
 #page_fleets form tr:nth-last-child(5) td, #page_fleets form tr:nth-last-child(6) th,
 #page_fleets form tr:nth-last-child(6) td {
-  background: transparent;
   text-align: right;
+  background: transparent;
 }
 #page_fleets form tr:nth-last-child(1) th,
 #page_fleets form tr:nth-last-child(1) td {
@@ -4963,25 +4963,25 @@ span.small.notice_warning {
   font-size: 1rem;
 }
 #page_fleets form[name=movement] {
-  display: table;
-  margin: 0 auto 0.5rem;
   padding: 15px 30px;
+  display: table;
   background: #24303f;
   border: 1px solid transparent;
   border-image: linear-gradient(to right, transparent 0%, rgba(82, 165, 248, 0.5) 50%, transparent 100%);
   border-image-slice: 1;
   box-shadow: inset 0 0 8px 2px rgba(0, 0, 0, 0.25), 0 0 3px 3px rgba(0, 0, 0, 0.15);
+  margin: 0 auto 0.5rem;
 }
 #page_fleets form[name=movement] div#currentMoves {
+  line-height: 2;
+  text-align: center;
   max-width: 600px;
   margin: 0 auto;
-  text-align: center;
-  line-height: 2;
 }
 #page_fleets form[name=movement] div#currentMoves a {
-  margin: 0 0 0 5px !important;
   line-height: 1.5rem !important;
   width: auto !important;
+  margin: 0 0 0 5px !important;
 }
 #page_fleets form[name=movement] div#currentMoves br + br {
   display: none;
@@ -4992,19 +4992,19 @@ span.small.notice_warning {
 }
 #page_fleets .ct_fleets {
   display: table;
+  background: transparent;
   border-spacing: 2px;
   border: 0;
-  background: transparent;
 }
 #page_fleets .ct_fleets tr {
   display: table-row !important;
 }
 #page_fleets .ct_fleets tr th,
 #page_fleets .ct_fleets tr td {
-  height: auto;
   vertical-align: middle;
-  border: none;
+  height: auto;
   border-spacing: 0;
+  border: none;
 }
 #page_fleets .ct_fleets tr th {
   background: transparent;
@@ -5019,31 +5019,31 @@ span.small.notice_warning {
   display: flex;
 }
 #page_fleets .ct_fleets tr:nth-child(1) th, #page_fleets .ct_fleets tr:nth-child(2) th {
-  width: 100%;
+  color: #ccc;
   font-size: 1rem;
   font-weight: bold;
   text-transform: uppercase;
-  color: #ccc;
+  line-height: 100%;
   background: #24303f;
   background: linear-gradient(to right, #1a222c 0%, #24303f 50%, #1a222c 100%) !important;
+  width: 100%;
   border: 1px solid transparent;
   border-image: linear-gradient(to right, transparent 0%, rgba(82, 165, 248, 0.5) 50%, transparent 100%);
   border-image-slice: 1;
-  line-height: 100%;
 }
 #page_fleets .ct_fleets tr:nth-child(1) th {
-  border-bottom-width: 0;
   padding: 10px 10px 5px;
+  border-bottom-width: 0;
 }
 #page_fleets .ct_fleets tr:nth-child(2) th {
-  border-top-width: 0;
   padding: 5px 10px 10px;
+  border-top-width: 0;
 }
 #page_fleets .ct_fleets tr:nth-child(3) td {
-  background: #171e27;
   font-size: 0.75rem;
-  text-transform: uppercase;
   font-weight: bold;
+  text-transform: uppercase;
+  background: #171e27;
 }
 #page_fleets .ct_fleets tr:nth-child(3) td small {
   font-size: 0.75rem;
@@ -5057,9 +5057,9 @@ span.small.notice_warning {
 }
 #fleet_overview tr.mission_defend .btn, #fleet_overview tr.mission_attack .btn, #fleet_overview tr.mission_return .btn {
   color: #52a5f8;
-  background: transparent !important;
-  padding: 0 2px;
   font-size: 14px;
+  padding: 0 2px;
+  background: transparent !important;
 }
 #fleet_overview tr.mission_defend .btn:hover, #fleet_overview tr.mission_attack .btn:hover, #fleet_overview tr.mission_return .btn:hover {
   color: black;
@@ -5106,8 +5106,8 @@ th.superhighlight {
 #d_from table,
 #d_num table,
 #d_to table {
-  margin-bottom: 0;
   white-space: nowrap;
+  margin-bottom: 0;
 }
 #d_from table tr th,
 #d_from table tr td,
@@ -5139,14 +5139,14 @@ th.superhighlight {
 #d_from table tr:first-child th,
 #d_num table tr:first-child th,
 #d_to table tr:first-child th {
-  background: rgba(0, 0, 0, 0.12);
   padding: 0.25rem 0.5rem;
+  background: rgba(0, 0, 0, 0.12);
 }
 #d_from table tr:last-child td,
 #d_num table tr:last-child td,
 #d_to table tr:last-child td {
-  background: #24303f;
   vertical-align: bottom;
+  background: #24303f;
 }
 #d_from table tr a,
 #d_num table tr a,
@@ -5198,9 +5198,9 @@ th.superhighlight {
   text-align: center;
 }
 #galaxy_banner + script + .container .maintext > p .superhighlight {
-  display: inline-block;
-  padding: 0.5rem 0 0.25rem;
   font-size: 1.3rem;
+  padding: 0.5rem 0 0.25rem;
+  display: inline-block;
 }
 
 .tablesort_asc,
@@ -5221,10 +5221,10 @@ th.superhighlight {
 #page_login #page,
 #page_support #page,
 #page_manual #page {
+  padding: 0;
   display: initial;
   max-width: 100%;
   margin: 0;
-  padding: 0;
 }
 #page_login #header,
 #page_support #header,
@@ -5295,8 +5295,8 @@ th.superhighlight {
 #page_login #contents .maintext {
   padding: 1rem;
   background: #24303f;
-  border-radius: 0.5rem;
   border: 1px solid rgba(82, 165, 248, 0.5);
+  border-radius: 0.5rem;
   box-shadow: inset 0 0 8px 2px rgba(0, 0, 0, 0.25), 1px 8px 30px 3px rgba(0, 0, 0, 0.3);
 }
 #page_login #contents .maintext p:last-child {
@@ -5318,8 +5318,8 @@ th.superhighlight {
   margin: 0 auto 1rem;
 }
 #page_login .container form.login .g-recaptcha {
-  margin: 0 auto 18px;
   display: table;
+  margin: 0 auto 18px;
 }
 #page_login .container form input:not([type=submit]) {
   width: 80%;
@@ -5337,9 +5337,9 @@ th.superhighlight {
 }
 #page_support form input:not([type=submit]),
 #page_support form select {
+  color: #ccc;
   width: 100%;
   margin: 0 auto 1rem;
-  color: #ccc;
 }
 #page_support form textarea {
   width: 100%;
@@ -5354,10 +5354,10 @@ th.superhighlight {
   grid-column-gap: 0.5rem;
 }
 #page_manual #menu {
-  margin: 0.5rem 0 0.5rem 0.5rem;
-  grid-column: 1/2;
   display: flex;
   flex-direction: column;
+  margin: 0.5rem 0 0.5rem 0.5rem;
+  grid-column: 1/2;
 }
 #page_manual #menu li {
   margin: 0;
@@ -5367,20 +5367,20 @@ th.superhighlight {
 }
 #page_manual #menu .entry_sep {
   display: block;
-  margin: 0.5rem 0 0.5rem;
   border-top: 1px solid transparent;
   border-image: linear-gradient(to right, transparent 0%, rgba(82, 165, 248, 0.5) 100%);
   border-image-slice: 1;
+  margin: 0.5rem 0 0.5rem;
 }
 #page_manual #menu #entry_search + .entry_sep + .entries {
   display: none;
 }
 #page_manual #menu #entry_search form {
-  margin: 0;
-  width: auto;
   display: flex;
-  flex-direction: column;
   align-items: center;
+  flex-direction: column;
+  width: auto;
+  margin: 0;
 }
 #page_manual #menu #entry_search form br {
   display: none;
@@ -5394,29 +5394,29 @@ th.superhighlight {
 }
 #page_manual .entries a {
   font-weight: normal;
-  margin-left: 0.5rem;
   text-indent: -0.5rem;
+  margin-left: 0.5rem;
 }
 #page_manual input[type=text] {
   max-width: 10.5rem;
 }
 #page_manual span[style="font-size: 13pt;"] {
-  display: block;
   font-size: 1.5rem !important;
+  display: block;
   border-bottom: 1px solid rgba(82, 165, 248, 0.5);
 }
 #page_manual span[style="font-size: 12pt;"] {
-  display: block;
   font-size: 1.15rem !important;
+  display: block;
   margin-bottom: 0;
 }
 #page_manual span[style="color: lime;"] {
   color: #ccc !important;
   font-size: 0.75rem;
-  margin-left: 1rem;
+  text-transform: uppercase;
   padding-left: 0.5rem;
   border-left: 5px solid red;
-  text-transform: uppercase;
+  margin-left: 1rem;
   /* font-weight: bold; */
 }
 #page_manual .tech_table td:last-child {
@@ -5426,13 +5426,13 @@ th.superhighlight {
 }
 #page_manual h2 {
   color: #ccc;
-  background: #24303f;
-  text-transform: initial;
   font-size: 1rem;
+  text-transform: initial;
+  background: #24303f;
 }
 #page_manual .stats_tbl tr th:not([colspan="17"]).stats_title {
-  background: #24303f;
   color: white;
+  background: #24303f;
 }
 #page_manual .stats_tbl tr.Ter td, #page_manual .stats_tbl tr.Cat td, #page_manual .stats_tbl tr.Xan td, #page_manual .stats_tbl tr.Zik td, #page_manual .stats_tbl tr.Etd td, #page_manual .stats_tbl tr.Kin td, #page_manual .stats_tbl tr.Sly td {
   color: #ccc;
@@ -5441,10 +5441,10 @@ th.superhighlight {
   padding: 0.15rem 0.5rem;
 }
 #page_manual .stats_tbl th[colspan="17"] {
-  background-color: transparent;
   color: white;
   font-size: 1.25rem;
   text-shadow: 1px 2px 2px black;
+  background-color: transparent;
 }
 
 .Ter {
@@ -5602,11 +5602,11 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
   background: transparent;
 }
 #page_universe #contents table tr:first-child th {
-  font-weight: bold;
-  background: #171e27;
   color: #ccc;
   font-size: 0.75rem;
+  font-weight: bold;
   padding: 0.25rem 0.125rem;
+  background: #171e27;
 }
 #page_universe #contents table tr:first-child th.right {
   padding-right: 0.25rem;
@@ -5681,25 +5681,25 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
   position: relative;
 }
 #intel:before {
-  content: "Intel";
-  text-align: center;
-  display: inline-block;
-  width: calc(100% - 4px);
-  position: absolute;
-  top: -32px;
-  left: 0;
-  padding: 8px 0;
+  color: #ccc;
   font-size: 1rem;
   font-weight: bold;
   text-transform: uppercase;
-  color: #ccc;
+  line-height: 100%;
+  text-align: center;
+  padding: 8px 0;
+  content: "Intel";
+  display: inline-block;
   background: #24303f;
   background: linear-gradient(to right, #1a222c 0%, #24303f 50%, #1a222c 100%) !important;
+  width: calc(100% - 4px);
   border: 1px solid transparent;
   border-top: none;
   border-image: linear-gradient(to right, transparent 0%, rgba(82, 165, 248, 0.5) 50%, transparent 100%);
   border-image-slice: 1;
-  line-height: 100%;
+  position: absolute;
+  top: -32px;
+  left: 0;
 }
 #intel tr {
   background: #24303f;
@@ -5720,10 +5720,10 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
 }
 
 #load_box {
-  background: #1a222c;
-  border: 1px solid rgba(82, 165, 248, 0.5);
   color: #ccc !important;
   padding: 0.25rem;
+  background: #1a222c;
+  border: 1px solid rgba(82, 165, 248, 0.5);
 }
 #load_box * {
   color: #ccc !important;
@@ -5781,11 +5781,11 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
   width: auto;
 }
 [id^=page_universe] table tr:first-child th {
-  font-weight: bold;
-  background: #171e27;
   color: #ccc;
   font-size: 0.75rem;
+  font-weight: bold;
   padding: 0.25rem 0.5rem;
+  background: #171e27;
   width: auto !important;
 }
 [id^=page_universe] table tr:first-child th:empty {
@@ -5913,8 +5913,8 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
 }
 #page_universe_combat_reports table table tr br {
   content: "";
-  margin: 2rem;
   display: block;
+  margin: 2rem;
 }
 #page_universe_combat_reports #tab1 {
   width: auto;
@@ -5936,8 +5936,8 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
   background: transparent;
 }
 #page_universe_combat_reports #tab1 .container:first-child table tr:first-child th:nth-child(2) {
-  padding: 0.25rem;
   color: #ccc;
+  padding: 0.25rem;
   background: transparent;
   background: linear-gradient(to right, #1a222c 0%, rgba(255, 0, 0, 0.25) 50%, #1a222c 100%) !important;
   border: 1px solid transparent;
@@ -5945,8 +5945,8 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
   border-image-slice: 1;
 }
 #page_universe_combat_reports #tab1 .container:first-child table tr:first-child th:nth-child(4) {
-  padding: 0.25rem;
   color: #ccc;
+  padding: 0.25rem;
   background: linear-gradient(to right, #1a222c 0%, rgba(50, 205, 50, 0.2) 50%, #1a222c 100%) !important;
   border: 1px solid transparent;
   border-image: linear-gradient(to right, transparent 0%, rgba(50, 205, 50, 0.3) 50%, transparent 100%);
@@ -5983,12 +5983,12 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
   position: relative;
 }
 #page_universe_combat_reports #tab1 .container:nth-child(2) table thead th:nth-child(2):after, #page_universe_combat_reports #tab1 .container:nth-child(2) table thead th:nth-child(3):after, #page_universe_combat_reports #tab1 .container:nth-child(2) table thead th:nth-child(4):after {
+  vertical-align: sub;
+  content: "";
+  display: inline-block;
   width: 1rem;
   height: 1rem;
   margin-left: 0.4rem;
-  content: "";
-  display: inline-block;
-  vertical-align: sub;
 }
 #page_universe_combat_reports #tab1 .container:nth-child(2) table thead th:nth-child(2):after {
   background: url(/images/template53/metal_16.png) no-repeat center, #171e27;
@@ -6010,26 +6010,26 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
   position: relative;
 }
 #page_universe_combat_reports #tab2 table tr[class^=relations] th {
+  font-size: 0.9rem;
+  padding: 6px !important;
   background: transparent;
   border: 1px solid transparent;
   border-image: linear-gradient(to right, transparent 0%, rgba(255, 255, 255, 0.14) 50%, transparent 100%);
   border-image-slice: 1;
-  padding: 6px !important;
-  font-size: 0.9rem;
 }
 #page_universe_combat_reports #tab2 table tr[class^=relations] + tr th {
-  padding: 15px 0 3px !important;
   font-size: 0.75rem;
+  padding: 15px 0 3px !important;
   position: relative;
 }
 #page_universe_combat_reports #tab2 table tr[class^=relations] + tr th:after {
   content: " ";
-  height: 1rem;
   background: #1a222c;
-  position: absolute;
   width: 100%;
-  left: 0;
+  height: 1rem;
+  position: absolute;
   top: -0.14rem;
+  left: 0;
 }
 #page_universe_combat_reports #tab2 table tr th:empty, #page_universe_combat_reports #tab2 table tr th[colspan="8"],
 #page_universe_combat_reports #tab2 table tr td:empty,
@@ -6048,13 +6048,13 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
   width: 12.5%;
 }
 #page_universe_combat_reports #tab2 table tr:not([class^=relations_]) th[colspan="8"] {
+  font-size: 0.75rem;
+  padding: 5px 0;
   background: linear-gradient(to right, #1a222c 25%, rgba(50, 205, 50, 0.2) 50%, #1a222c 75%) !important;
   border: none;
   border-bottom: 1px solid transparent;
   border-image: linear-gradient(to right, transparent 25%, rgba(50, 205, 50, 0.3) 50%, transparent 75%);
   border-image-slice: 1;
-  padding: 5px 0;
-  font-size: 0.75rem;
 }
 #page_universe_combat_reports .pagination_stats,
 #page_universe_combat_reports p.left {
@@ -6071,8 +6071,8 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
 [id^=page_universe] .container#javascriptwarning + #tab_container table tr:first-child td,
 [id^=page_universe] .container#javascriptwarning + #notice + .container table tr:first-child td,
 [id^=page_universe] .container#javascriptwarning + #notice + #tab_container table tr:first-child td {
-  background: transparent !important;
   padding: 0 !important;
+  background: transparent !important;
 }
 [id^=page_universe] .container .header,
 [id^=page_universe] .container h2 {
@@ -6088,14 +6088,14 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
 }
 [id^=page_universe] table th:empty,
 [id^=page_universe] table td:empty {
+  padding: 0 !important;
   background: transparent;
   width: 0 !important;
-  padding: 0 !important;
 }
 [id^=page_universe] table td[colspan="4"], [id^=page_universe] table td[colspan="5"], [id^=page_universe] table td[colspan="6"], [id^=page_universe] table td[colspan="7"], [id^=page_universe] table td[colspan="8"] {
+  font-size: 0;
   background: #1a222c;
   height: 0.75rem;
-  font-size: 0;
 }
 
 #page_galaxy #contents .maintext .superhighlight {
@@ -6106,10 +6106,10 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
   margin: 0 !important;
 }
 #page_galaxy input[type=number] {
+  color: #52a5f8;
   padding: 0.25rem !important;
   min-width: 3rem;
   height: 1.5rem;
-  color: #52a5f8;
 }
 #page_galaxy table {
   width: 100% !important;
@@ -6132,7 +6132,7 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
 .relations_war,
 .relations_nap,
 .relations_own_member,
-.relations_own_recruit):nth-child(odd) td {
+.relations_own_recruit):nth-child(odd) {
   background: #24303f;
 }
 #page_galaxy table#galtable tbody tr:not(.relations_friendly,
@@ -6180,8 +6180,8 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
 }
 #page_galaxy table#galtable th,
 #page_galaxy table#galtable td {
-  padding: 0.25rem 0.5rem;
   white-space: normal;
+  padding: 0.25rem 0.5rem;
 }
 #page_galaxy table#galtable td:nth-last-child(2) {
   padding: 0.25rem;
@@ -6196,20 +6196,20 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
   background: #171e27;
 }
 #page_galaxy #intel_form {
-  background: #1a222c;
-  border: 1px solid rgba(82, 165, 248, 0.5);
   color: #ccc !important;
   padding: 0;
+  background: #1a222c;
+  border: 1px solid rgba(82, 165, 248, 0.5);
 }
 #page_galaxy #intel_form p {
-  margin: 0.5rem 0;
-  padding: 0 0.5rem;
   text-align: center;
+  padding: 0 0.5rem;
+  margin: 0.5rem 0;
 }
 #page_galaxy #intel_form p.right {
   position: absolute;
-  right: -10px;
   top: -4px;
+  right: -10px;
 }
 #page_galaxy #intel_form select#intel,
 #page_galaxy #intel_form input[name=nick] {
@@ -6231,24 +6231,24 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
   height: 0.6875rem;
 }
 #page_alliance_defence .maintext .ally_def_eta_wrapper .ally_def_incs_wrapper {
-  margin: 0 0 2rem 5px;
   background: #24303f;
   border: 1px solid rgba(82, 165, 248, 0.18);
   box-shadow: inset 0 0 8px 2px rgba(0, 0, 0, 0.25), 0 2px 10px 2px rgba(0, 0, 0, 0.15);
+  margin: 0 0 2rem 5px;
 }
 #page_alliance_defence .maintext .ally_def_eta_wrapper .ally_def_incs_wrapper .ally_def_target {
   font-size: 1rem;
   padding: 0.25rem 0;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
   background: rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
 }
 #page_alliance_defence .maintext .ally_def_eta_wrapper .ally_def_incs_wrapper .ally_def_target > div {
   display: flex;
   align-items: center;
 }
 #page_alliance_defence .maintext .ally_def_eta_wrapper .ally_def_incs_wrapper .ally_def_target .ally_def_target_toggle_link {
-  margin: 0 0.125rem 0 -1.25rem;
   width: 1rem;
+  margin: 0 0.125rem 0 -1.25rem;
   cursor: pointer;
 }
 #page_alliance_defence .maintext .ally_def_eta_wrapper .ally_def_incs_wrapper .ally_def_target .ally_def_target_toggle_link img {
@@ -6256,10 +6256,10 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
   height: 1rem;
 }
 #page_alliance_defence .maintext .ally_def_eta_wrapper .ally_def_incs_wrapper .ally_def_target .ally_def_target_coords {
-  width: 55px;
-  justify-content: flex-end;
-  padding-right: 7px;
   font-size: 0.9rem;
+  padding-right: 7px;
+  justify-content: flex-end;
+  width: 55px;
 }
 #page_alliance_defence .maintext .ally_def_eta_wrapper .ally_def_incs_wrapper .ally_def_target .ally_def_target_mdata {
   flex: 7;
@@ -6270,8 +6270,8 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
 }
 #page_alliance_defence .maintext .ally_def_eta_wrapper .ally_def_incs_wrapper .ally_def_target .ally_def_target_mdata .ally_def_target_mdata_nick {
   font-size: 1rem;
-  min-width: 125px;
   overflow: hidden;
+  min-width: 125px;
 }
 #page_alliance_defence .maintext .ally_def_eta_wrapper .ally_def_incs_wrapper .ally_def_target .ally_def_target_mdata .ally_def_target_mdata_nick a {
   color: #ccc;
@@ -6283,17 +6283,17 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
   position: relative;
 }
 #page_alliance_defence .maintext .ally_def_eta_wrapper .ally_def_incs_wrapper .ally_def_target .ally_def_target_mdata .ally_def_target_mdata_roids:before {
-  content: "Asteroids:";
   font-size: 0.6875rem;
+  content: "Asteroids:";
   margin: 5px 5px 0 0;
 }
 #page_alliance_defence .maintext .ally_def_eta_wrapper .ally_def_incs_wrapper .ally_def_target .ally_def_target_mdata .ally_def_target_mdata_base {
   margin-left: 70px;
 }
 #page_alliance_defence .maintext .ally_def_eta_wrapper .ally_def_incs_wrapper .ally_def_target .ally_def_target_mdata .ally_def_target_mdata_base:before {
+  font-size: 0.6875rem;
   white-space: nowrap;
   content: "Base fleet:";
-  font-size: 0.6875rem;
   margin: 5px 5px 0 0;
 }
 #page_alliance_defence .maintext .ally_def_eta_wrapper .ally_def_incs_wrapper .ally_def_target .ally_def_target_links {
@@ -6306,72 +6306,72 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
   font-size: 0;
 }
 #page_alliance_defence .maintext .ally_def_eta_wrapper .ally_def_incs_wrapper .ally_def_target .ally_def_target_links a:after {
-  content: "Battle Calc";
-  display: inline-block;
-  padding: 0.25rem 0.5rem;
   color: #52a5f8 !important;
-  background: rgba(36, 48, 63, 0.4) !important;
-  border: 1px solid rgba(82, 165, 248, 0.5) !important;
-  box-shadow: inset 0 2px 4px 2px rgba(0, 0, 0, 0.4);
-  cursor: pointer;
-  border-radius: 3px;
-  text-transform: initial;
-  font-weight: bold;
   font-family: inherit;
   font-size: 0.75rem;
+  font-weight: bold;
+  text-transform: initial;
   line-height: 1;
   white-space: nowrap;
-  transition-property: color, background, box-shadow;
-  transition-duration: 0.75s;
+  padding: 0.25rem 0.5rem;
+  content: "Battle Calc";
+  display: inline-block;
+  background: rgba(36, 48, 63, 0.4) !important;
+  border: 1px solid rgba(82, 165, 248, 0.5) !important;
+  border-radius: 3px;
+  box-shadow: inset 0 2px 4px 2px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
   transition-timing-function: linear;
+  transition-duration: 0.75s;
+  transition-property: color, background, box-shadow;
 }
 #page_alliance_defence .maintext .ally_def_eta_wrapper .ally_def_incs_wrapper .ally_def_target .ally_def_target_links a:after::-moz-focus-inner {
   padding: 0;
   border: 0;
 }
 #page_alliance_defence .maintext .ally_def_eta_wrapper .ally_def_incs_wrapper .ally_def_target .ally_def_target_links a:hover:after {
-  text-decoration: none !important;
   color: black !important;
+  text-decoration: none !important;
   background: #52a5f8 !important;
   box-shadow: none;
 }
 #page_alliance_defence .maintext .ally_def_eta_wrapper .ally_def_incs_wrapper .ally_def_target .ally_def_target_links + div > a.calcz {
-  display: inline-block;
-  padding: 0.25rem 0.5rem;
   color: #32ab52 !important;
+  font-family: inherit;
+  font-size: 0.75rem;
+  font-weight: bold;
+  text-transform: initial;
+  line-height: 1;
+  white-space: nowrap;
+  padding: 0.25rem 0.5rem;
+  display: inline-block;
   background: rgba(36, 48, 63, 0.4) !important;
   border: 1px solid rgba(50, 171, 82, 0.5) !important;
+  border-radius: 3px;
   box-shadow: inset 0 2px 4px 2px rgba(0, 0, 0, 0.4);
   cursor: pointer;
-  border-radius: 3px;
-  text-transform: initial;
-  font-weight: bold;
-  font-family: inherit;
-  font-size: 0.75rem;
-  line-height: 1;
-  white-space: nowrap;
-  transition-property: color, background, box-shadow;
-  transition-duration: 0.75s;
   transition-timing-function: linear;
+  transition-duration: 0.75s;
+  transition-property: color, background, box-shadow;
 }
 #page_alliance_defence .maintext .ally_def_eta_wrapper .ally_def_incs_wrapper .ally_def_target .button-calcz {
-  display: inline-block;
-  padding: 0.25rem 0.5rem;
   color: #52a5f8 !important;
-  background: rgba(36, 48, 63, 0.4) !important;
-  border: 1px solid rgba(82, 165, 248, 0.5) !important;
-  box-shadow: inset 0 2px 4px 2px rgba(0, 0, 0, 0.4);
-  cursor: pointer;
-  border-radius: 3px;
-  text-transform: initial;
-  font-weight: bold;
   font-family: inherit;
   font-size: 0.75rem;
+  font-weight: bold;
+  text-transform: initial;
   line-height: 1;
   white-space: nowrap;
-  transition-property: color, background, box-shadow;
-  transition-duration: 0.75s;
+  padding: 0.25rem 0.5rem;
+  display: inline-block;
+  background: rgba(36, 48, 63, 0.4) !important;
+  border: 1px solid rgba(82, 165, 248, 0.5) !important;
+  border-radius: 3px;
+  box-shadow: inset 0 2px 4px 2px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
   transition-timing-function: linear;
+  transition-duration: 0.75s;
+  transition-property: color, background, box-shadow;
 }
 #page_alliance_defence .maintext .ally_def_eta_wrapper .ally_def_incs_wrapper .ally_def_target .ally_def_target_summary {
   padding-right: 4px;
@@ -6384,8 +6384,8 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
   font-size: 0.9rem;
 }
 #page_alliance_defence .maintext .ally_def_eta_wrapper .ally_def_incs_wrapper .ally_def_attackers > div {
-  background: #24303f;
   padding: 3px 0;
+  background: #24303f;
 }
 #page_alliance_defence .maintext .ally_def_eta_wrapper .ally_def_incs_wrapper .ally_def_attackers > div:nth-child(even) {
   background: #1e2935;
@@ -6395,59 +6395,59 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
   align-items: center;
 }
 #page_alliance_defence .maintext .ally_def_eta_wrapper .ally_def_incs_wrapper .ally_def_attackers > div .ally_def_attacker_coords {
-  order: 1;
+  padding-right: 7px;
+  justify-content: flex-end;
   width: 54px;
   position: relative;
-  justify-content: flex-end;
-  padding-right: 7px;
+  order: 1;
 }
 #page_alliance_defence .maintext .ally_def_eta_wrapper .ally_def_incs_wrapper .ally_def_attackers > div .ally_def_attacker_coords .ally_def_attacker_not_calc {
+  font-size: 0;
   position: absolute;
   left: 4px;
   order: 1;
-  font-size: 0;
   transform: translateY(2px);
 }
 #page_alliance_defence .maintext .ally_def_eta_wrapper .ally_def_incs_wrapper .ally_def_attackers > div .ally_def_attacker_coords .ally_def_attacker_not_calc:before {
-  content: "*";
   font-size: 0.75rem;
+  content: "*";
 }
 #page_alliance_defence .maintext .ally_def_eta_wrapper .ally_def_incs_wrapper .ally_def_attackers > div .ally_def_attacker_fleetname {
-  order: 2;
-  width: 140px;
-  max-width: 140px !important;
   display: flex;
   align-items: center;
   overflow: hidden;
+  width: 140px;
+  max-width: 140px !important;
   margin-right: 4px;
+  order: 2;
 }
 #page_alliance_defence .maintext .ally_def_eta_wrapper .ally_def_incs_wrapper .ally_def_attackers > div .ally_def_attacker_race {
-  order: 3;
   min-width: 30px;
+  order: 3;
 }
 #page_alliance_defence .maintext .ally_def_eta_wrapper .ally_def_incs_wrapper .ally_def_attackers > div .ally_def_attacker_shipcount {
-  order: 5;
+  text-align: right;
+  justify-content: flex-end;
   width: 70px;
   max-width: 70px;
-  text-align: right;
-  justify-content: flex-end;
+  order: 5;
 }
 #page_alliance_defence .maintext .ally_def_eta_wrapper .ally_def_incs_wrapper .ally_def_attackers > div .ally_def_attacker_links {
-  order: 6;
-  padding: 0 10px;
   text-align: right;
+  padding: 0 10px;
   justify-content: flex-end;
   min-width: 138px;
+  order: 6;
 }
 #page_alliance_defence .maintext .ally_def_eta_wrapper .ally_def_incs_wrapper .ally_def_attackers > div .ally_def_attacker_links a {
+  color: black !important;
+  font-size: 1rem;
+  line-height: 1rem;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   border-radius: 4px;
-  color: black !important;
   margin: 0 1px;
-  font-size: 1rem;
-  line-height: 1rem;
 }
 #page_alliance_defence .maintext .ally_def_eta_wrapper .ally_def_incs_wrapper .ally_def_attackers > div .ally_def_attacker_links a:last-child {
   margin-right: 0;
@@ -6469,26 +6469,26 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
 }
 #page_alliance_defence .maintext .ally_def_eta_wrapper .ally_def_incs_wrapper .ally_def_attackers > div .ally_def_attacker_call_status form select {
   font-size: 12px;
-  height: 18px;
   width: 105px;
+  height: 18px;
 }
 #page_alliance_defence .maintext .ally_def_eta_wrapper .ally_def_incs_wrapper .ally_def_attackers > div .ally_def_attacker_orig_eta {
-  order: 4;
-  width: 70px;
-  justify-content: flex-start;
   align-items: center;
+  justify-content: flex-start;
+  width: 70px;
+  order: 4;
 }
 #page_alliance_defence .maintext .ally_def_eta_wrapper .ally_def_incs_wrapper .ally_def_attackers > div .ally_def_attacker_orig_eta:before {
-  content: "Reported:";
   font-size: 0.75rem;
-  padding-right: 4px;
   line-height: 0.9rem;
+  padding-right: 4px;
+  content: "Reported:";
 }
 #page_alliance_defence .maintext .ally_def_eta_wrapper .ally_def_incs_wrapper .ally_def_attackers > div .ally_def_attacker_classes {
-  order: 8;
-  flex: 2;
   color: transparent;
   text-transform: uppercase;
+  flex: 2;
+  order: 8;
 }
 #page_alliance_defence .maintext .ally_def_eta_wrapper .ally_def_incs_wrapper .ally_def_attackers > div .ally_def_attacker_classes a {
   padding-right: 3px;
@@ -6498,14 +6498,14 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
 }
 #page_alliance_defence .maintext .ally_def_eta_wrapper .ally_def_incs_wrapper .ally_def_attackers > div .ally_def_attacker_classes .btn-default {
   color: #52a5f8 !important;
+  font-size: 0.9rem !important;
   background-color: transparent !important;
   border-color: transparent !important;
-  font-size: 0.9rem !important;
 }
 #page_alliance_defence .maintext .ally_def_eta_wrapper .ally_def_incs_wrapper .ally_def_attackers > div .ally_def_attacker_intel {
-  order: 9;
-  padding-right: 4px;
   color: #ccc;
+  padding-right: 4px;
+  order: 9;
 }
 #page_alliance_defence .maintext .ally_def_eta_wrapper .ally_def_incs_wrapper .ally_def_details .alliance_def_valid,
 #page_alliance_defence .maintext .ally_def_eta_wrapper .ally_def_incs_wrapper .ally_def_attackers .alliance_def_valid {
@@ -6522,12 +6522,12 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
   color: rgb(50, 205, 50);
 }
 #page_alliance_defence .maintext .ally_def_eta_wrapper .ally_def_incs_wrapper .ally_def_details .ally_def_details_fleet {
-  display: flex;
-  align-items: center;
-  padding-left: 4px;
   font-size: 0.75rem;
   text-transform: uppercase;
   text-align: right;
+  padding-left: 4px;
+  display: flex;
+  align-items: center;
 }
 #page_alliance_defence .maintext .ally_def_eta_wrapper .ally_def_incs_wrapper .ally_def_details .ally_def_details_fleet .ally_def_details_fleetname {
   font-style: italic;
@@ -6535,34 +6535,34 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
   overflow: hidden;
 }
 #page_alliance_defence .maintext .ally_def_eta_wrapper .ally_def_incs_wrapper .ally_def_details .ally_def_details_fleet .ally_def_details_fleetname:after {
-  content: "-";
   padding-left: 5px;
+  content: "-";
 }
 #page_alliance_defence .maintext .ally_def_eta_wrapper .ally_def_incs_wrapper .ally_def_details .ally_def_details_fleet .ally_def_details_classes {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
   letter-spacing: 1px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
 #page_alliance_defence .maintext .ally_def_eta_wrapper .ally_def_incs_wrapper .ally_def_details .ally_def_details_fleet .ally_def_details_classes form {
   display: flex;
   align-items: center;
 }
 #page_alliance_defence .maintext .ally_def_eta_wrapper .ally_def_incs_wrapper .ally_def_details .ally_def_details_bcalc form {
-  text-transform: uppercase;
-  margin-left: 4px;
   font-size: 0;
+  text-transform: uppercase;
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  margin-left: 4px;
 }
 #page_alliance_defence .maintext .ally_def_eta_wrapper .ally_def_incs_wrapper .ally_def_details .ally_def_details_bcalc form:before {
-  content: "BATTLE CALC:";
-  position: relative;
-  display: inline;
   font-size: 0.75rem;
-  padding-right: 4px;
   letter-spacing: 1px;
+  padding-right: 4px;
+  content: "BATTLE CALC:";
+  display: inline;
+  position: relative;
 }
 #page_alliance_defence .maintext .ally_def_eta_wrapper .ally_def_incs_wrapper .ally_def_details .ally_def_details_bcalc form input[type=text] {
   width: 215.5px;
@@ -6576,23 +6576,23 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
   justify-content: flex-end;
 }
 #page_alliance_defence .maintext .ally_def_eta_wrapper .ally_def_incs_wrapper .ally_def_details .ally_def_details_notes form textarea {
+  padding: 0.5rem 0.75rem;
   width: 100%;
   margin: 0 0 4px 4px;
-  padding: 0.5rem 0.75rem;
 }
 #page_alliance_defence .maintext .ally_def_eta_wrapper .ally_def_incs_wrapper .ally_def_details .ally_def_details_notes form input[type=button] {
-  margin: 2px 4px 4px;
   min-width: 110px;
+  margin: 2px 4px 4px;
 }
 #page_alliance_defence .maintext .ally_def_eta_wrapper .ally_def_incs_wrapper .ally_def_details input[type=button] {
-  margin: 2px 4px;
   width: 110px;
+  margin: 2px 4px;
 }
 #page_alliance_defence .maintext .ally_def_eta_wrapper .ally_def_incs_wrapper .ally_def_target_coords,
 #page_alliance_defence .maintext .ally_def_eta_wrapper .ally_def_incs_wrapper .ally_def_attacker_coords,
 #page_alliance_defence .maintext .ally_def_eta_wrapper .ally_def_incs_wrapper .ally_def_defender_coords {
-  width: auto;
   padding: 0 4px;
+  width: auto;
 }
 #page_alliance_defence .maintext .ally_def_eta_wrapper .ally_def_incs_wrapper .ally_def_target,
 #page_alliance_defence .maintext .ally_def_eta_wrapper .ally_def_incs_wrapper .ally_def_attacker,
@@ -6609,8 +6609,8 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
   background-color: rgba(255, 0, 0, 0.15);
 }
 #page_alliance_defence .maintext .ally_def_eta_wrapper .ally_def_incs_wrapper .mission_return {
-  background: unset;
   opacity: 0.7;
+  background: unset;
 }
 #page_alliance_defence .maintext .ally_def_eta_wrapper .ally_def_incs_wrapper .ally_def_defenders {
   font-size: 0.9rem;
@@ -6622,66 +6622,66 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
   background: rgba(50, 205, 50, 0.09);
 }
 #page_alliance_defence .maintext .ally_def_eta_wrapper .ally_def_incs_wrapper .ally_def_defenders .ally_def_defender .ally_def_defender_coords {
-  order: 1;
   display: flex;
-  position: relative;
-  width: 54px;
   align-items: center;
+  width: 54px;
+  position: relative;
+  order: 1;
 }
 #page_alliance_defence .maintext .ally_def_eta_wrapper .ally_def_incs_wrapper .ally_def_defenders .ally_def_defender .ally_def_defender_coords a {
   position: absolute;
   right: 8px;
 }
 #page_alliance_defence .maintext .ally_def_eta_wrapper .ally_def_incs_wrapper .ally_def_defenders .ally_def_defender .ally_def_defender_coords .ally_def_defender_not_calc {
+  font-size: 0;
   position: absolute;
   left: 4px;
   order: 1;
-  font-size: 0;
 }
 #page_alliance_defence .maintext .ally_def_eta_wrapper .ally_def_incs_wrapper .ally_def_defenders .ally_def_defender .ally_def_defender_coords .ally_def_defender_not_calc:before {
-  content: "*";
   font-size: 0.75rem;
+  content: "*";
 }
 #page_alliance_defence .maintext .ally_def_eta_wrapper .ally_def_incs_wrapper .ally_def_defenders .ally_def_defender .ally_def_defender_fleetname {
-  order: 2;
+  overflow: hidden;
   width: 120px;
   max-width: 120px !important;
   margin-right: 4px;
-  overflow: hidden;
+  order: 2;
 }
 #page_alliance_defence .maintext .ally_def_eta_wrapper .ally_def_incs_wrapper .ally_def_defenders .ally_def_defender .ally_def_defender_race {
-  order: 3;
   width: 30px;
+  order: 3;
 }
 #page_alliance_defence .maintext .ally_def_eta_wrapper .ally_def_incs_wrapper .ally_def_defenders .ally_def_defender .ally_def_defender_shipcount {
-  order: 5;
+  text-align: right;
   width: 70px;
   max-width: 70px;
-  text-align: right;
+  order: 5;
 }
 #page_alliance_defence .maintext .ally_def_eta_wrapper .ally_def_incs_wrapper .ally_def_defenders .ally_def_defender .ally_def_defender_orig_eta {
-  order: 4;
   text-align: right;
-  width: 70px;
-  justify-content: flex-end;
   align-items: flex-end;
+  justify-content: flex-end;
+  width: 70px;
+  order: 4;
 }
 #page_alliance_defence .maintext .ally_def_eta_wrapper .ally_def_incs_wrapper .ally_def_defenders .ally_def_defender .ally_def_defender_orig_eta:before {
-  content: "Sent:";
   font-size: 0.75rem;
   padding-right: 4px;
+  content: "Sent:";
 }
 #page_alliance_defence .maintext .ally_def_eta_wrapper .ally_def_incs_wrapper .ally_def_defenders .ally_def_defender select[id^=recall] {
-  order: 5;
-  margin-left: 110px !important;
   font-size: 12px;
   height: 18px;
+  margin-left: 110px !important;
+  order: 5;
 }
 #page_alliance_defence .maintext .ally_def_eta_wrapper .ally_def_incs_wrapper .ally_def_defenders .ally_def_defender input[id^=recall] {
-  order: 6;
-  margin: 0.25rem !important;
   font-size: 12px;
   height: 18px;
+  margin: 0.25rem !important;
+  order: 6;
 }
 #page_alliance_defence .maintext .ally_def_eta_wrapper .ally_def_incs_wrapper .ally_def_defenders .ally_def_defender .ally_def_defender_mdata {
   order: 7;
@@ -6703,8 +6703,8 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
   margin: 0 !important;
 }
 #page_alliance_defence p#dbcalc .bcalc_target {
-  display: flex;
   line-height: 0;
+  display: flex;
 }
 #page_alliance_defence p#dbcalc .bcalc_target a {
   line-height: 1.4;
@@ -6715,22 +6715,22 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
   max-width: 800px;
 }
 #page_ship_overview #full_page table tr:nth-child(1) th {
-  margin: 1rem 0;
-  padding: 0.5rem 0;
+  color: #ccc;
+  font-size: 1.2rem;
   font-weight: bold;
   text-transform: uppercase;
-  font-size: 1.2rem;
-  color: #ccc;
+  padding: 0.5rem 0;
   background: #24303f;
   background: linear-gradient(180deg, #24303f 0%, #24303f 15%, #24303f 100%) !important;
   border: 1px solid transparent;
   border-image: linear-gradient(to right, transparent 0%, rgba(82, 165, 248, 0.5) 50%, transparent 100%);
   border-image-slice: 1;
+  margin: 1rem 0;
 }
 #page_ship_overview #full_page table tr:nth-child(2) th {
-  font-weight: bold;
   color: #ccc;
   font-size: 0.75rem;
+  font-weight: bold;
   padding: 0.5rem 0.125rem;
 }
 #page_ship_overview #full_page table tr:nth-child(2) th.right {
@@ -6765,11 +6765,11 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
 }
 #page_alliance_attacks .maintext > table > thead > tr:first-child th,
 #page_alliance_attacks .maintext > table > tbody > tr:first-child th {
-  font-weight: bold;
-  background: #171e27;
   color: #ccc;
   font-size: 0.75rem;
+  font-weight: bold;
   padding: 0.25rem 0.5rem;
+  background: #171e27;
 }
 #page_alliance_attacks .maintext > table > thead > tr[id^=target_],
 #page_alliance_attacks .maintext > table > tbody > tr[id^=target_] {
@@ -6792,12 +6792,12 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
 }
 #page_alliance_attacks .maintext > table > thead > tr[id^=target_] table,
 #page_alliance_attacks .maintext > table > tbody > tr[id^=target_] table {
-  border: 2px solid rgba(82, 165, 248, 0.25);
-  border-left: 12px double rgba(82, 165, 248, 0.15);
-  border-right: 12px double rgba(82, 165, 248, 0.15);
   padding: 0;
   background: #1a222c;
   width: 100%;
+  border: 2px solid rgba(82, 165, 248, 0.25);
+  border-right: 12px double rgba(82, 165, 248, 0.15);
+  border-left: 12px double rgba(82, 165, 248, 0.15);
   margin-bottom: 0;
 }
 #page_alliance_attacks .maintext > table > thead > tr[id^=target_] table tr th,
@@ -6815,20 +6815,20 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
 #page_alliance_attacks .maintext > table > thead > tr[id^=target_] table tr[class^=shadedbackground] td ul.alliance_attack_claims_list,
 #page_alliance_attacks .maintext > table > tbody > tr[id^=target_] table tr[class^=shadedbackground] td ul.alliance_attack_claims_list {
   display: flex;
-  justify-content: flex-start;
   align-items: center;
   flex-wrap: wrap;
+  justify-content: flex-start;
 }
 #page_alliance_attacks .maintext > table > thead > tr[id^=target_] table tr[class^=shadedbackground] td ul.alliance_attack_claims_list li,
 #page_alliance_attacks .maintext > table > tbody > tr[id^=target_] table tr[class^=shadedbackground] td ul.alliance_attack_claims_list li {
-  font-style: italic;
   font-size: 0.75rem;
+  font-style: italic;
   margin: 0 0.5rem;
 }
 #page_alliance_attacks .maintext > table > thead > tr[id^=target_] table tr[class^=shadedbackground] td ul.alliance_attack_claims_list li a,
 #page_alliance_attacks .maintext > table > tbody > tr[id^=target_] table tr[class^=shadedbackground] td ul.alliance_attack_claims_list li a {
-  margin: 0;
   font-style: normal;
+  margin: 0;
 }
 #page_alliance_attacks .maintext > table > thead > tr[id^=target_] table tr[class^=shadedbackground] td ul.alliance_attack_claims_list li table,
 #page_alliance_attacks .maintext > table > tbody > tr[id^=target_] table tr[class^=shadedbackground] td ul.alliance_attack_claims_list li table {
@@ -6849,9 +6849,9 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
 }
 #page_alliance_attacks .maintext > table > thead > tr > td:not([colspan="6"]) > table,
 #page_alliance_attacks .maintext > table > tbody > tr > td:not([colspan="6"]) > table {
+  padding-left: 2rem;
   border-spacing: 0;
   margin: 0;
-  padding-left: 2rem;
 }
 #page_alliance_attacks .maintext > table > thead > tr > td:not([colspan="6"]) > table > tbody > tr > th,
 #page_alliance_attacks .maintext > table > tbody > tr > td:not([colspan="6"]) > table > tbody > tr > th {
@@ -6891,8 +6891,8 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
 }
 #page_alliance_attacks .maintext #wave_table tr td,
 #page_alliance_attacks .maintext #target_table tr td {
-  background: #24303f;
   padding: 0.25rem 0.5rem;
+  background: #24303f;
 }
 #page_alliance_attacks .maintext #wave_table tr td[colspan="5"],
 #page_alliance_attacks .maintext #target_table tr td[colspan="5"] {
@@ -6918,10 +6918,10 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
 
 #attack_claim_form,
 .alliance_attack_claims_status {
-  width: auto !important;
-  border: 1px solid rgba(82, 165, 248, 0.5);
   background: #1a222c;
+  width: auto !important;
   min-width: unset !important;
+  border: 1px solid rgba(82, 165, 248, 0.5);
 }
 #attack_claim_form table,
 .alliance_attack_claims_status table {
@@ -6932,29 +6932,29 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
   padding-top: 36px;
 }
 #attack_claim_form:before {
-  content: "ATTACK CLAIMS";
-  width: calc(100% - 2px);
-  left: 0px;
-  top: 0;
-  position: absolute;
-  text-align: center;
-  padding: 8px 0;
+  color: #ccc;
   font-size: 1rem;
   font-weight: bold;
   text-transform: uppercase;
-  color: #ccc;
+  line-height: 100%;
+  text-align: center;
+  padding: 8px 0;
+  content: "ATTACK CLAIMS";
   background: #24303f;
   background: linear-gradient(to right, #1a222c 0%, #24303f 50%, #1a222c 100%) !important;
+  width: calc(100% - 2px);
   border: 1px solid transparent;
   border-top: none;
   border-image: linear-gradient(to right, transparent 0%, rgba(82, 165, 248, 0.5) 50%, transparent 100%);
   border-image-slice: 1;
-  line-height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0px;
 }
 #attack_claim_form p {
   position: absolute;
-  right: 4px;
   top: 4px;
+  right: 4px;
 }
 #attack_claim_form table tr td {
   padding-top: 0.5rem !important;
@@ -7014,8 +7014,8 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
   max-width: 800px;
 }
 #page_alliance_fund #contents table tr th[colspan="5"] {
-  background: transparent !important;
   padding-bottom: 1rem;
+  background: transparent !important;
 }
 #page_alliance_fund #contents table tr td[colspan="5"] {
   padding: 1rem 0;
@@ -7032,9 +7032,9 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
 }
 
 #page_alliance_members table tr:first-child th {
+  color: #ccc;
   font-weight: bold;
   background: #171e27;
-  color: #ccc;
 }
 #page_alliance_members table tr:nth-child(odd) td {
   background-color: #1e2935;
@@ -7102,17 +7102,17 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
   background: #1a222c;
 }
 #page_history #tab5 .container:first-child table:nth-child(1) tr:first-child th[class=center] {
-  background: #1a222c;
-  font-size: 1rem;
   color: rgba(50, 205, 50, 0.75);
+  font-size: 1rem;
+  background: #1a222c;
 }
 #page_history #tab5 .container:first-child table:nth-child(3) {
   color: red;
 }
 #page_history #tab5 .container:first-child table:nth-child(3) tr:first-child th[class=center] {
-  background: #1a222c;
-  font-size: 1rem;
   color: rgba(255, 0, 0, 0.75);
+  font-size: 1rem;
+  background: #1a222c;
 }
 #page_history #tab5 .container:first-child table tr th:empty,
 #page_history #tab5 .container:first-child table tr td:empty {
@@ -7225,12 +7225,12 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
   text-align: center !important;
 }
 #view_news > .maintext > table > tbody > tr table.news_combat_fleet_salvage tr:nth-child(2) th span:after, #view_news > .maintext > table > tbody > tr table.news_combat_cap_roids tr:nth-child(2) th span:after {
+  vertical-align: sub;
+  content: "";
+  display: inline-block;
   width: 1rem;
   height: 1rem;
   margin-left: 0.4rem;
-  content: "";
-  display: inline-block;
-  vertical-align: sub;
 }
 #view_news > .maintext > table > tbody > tr table.news_combat_fleet_salvage tr:nth-child(2) th.metal span:after, #view_news > .maintext > table > tbody > tr table.news_combat_cap_roids tr:nth-child(2) th.metal span:after {
   background: url(/images/template53/metal_16.png) no-repeat center, #171e27;
@@ -7253,19 +7253,19 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
   text-align: center;
 }
 #view_news > .maintext > table > tbody > tr table.news_combat_fleet_cap_roids td {
-  border-left: 1px solid rgba(82, 165, 248, 0.3);
   text-align: center;
+  border-left: 1px solid rgba(82, 165, 248, 0.3);
 }
 #view_news > .maintext > table > tbody > tr table.news_combat_fleet_cap_roids td:first-of-type {
   border-left: none;
 }
 #view_news > .maintext > table > tbody > tr table.news_combat_fleet_cap_roids td span:first-child:after {
+  vertical-align: sub;
+  content: "";
+  display: inline-block;
   width: 1rem;
   height: 1rem;
   margin-left: 0.4rem;
-  content: "";
-  display: inline-block;
-  vertical-align: sub;
 }
 #view_news > .maintext > table > tbody > tr table.news_combat_fleet_cap_roids td.metal span:first-child:after {
   background: url(/images/template53/metal_16.png) no-repeat center, #171e27;
@@ -7304,8 +7304,8 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
   background: rgba(50, 205, 50, 0.1);
 }
 #view_news > .maintext > table > tbody > tr table.news_combat_report tr:last-child td {
-  border-top: 4px solid #1a222c;
   font-weight: bold;
+  border-top: 4px solid #1a222c;
 }
 #view_news > .maintext > table > tbody > tr.news_fleet table {
   width: auto !important;
@@ -7331,9 +7331,9 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
 #view_news > .maintext > table > tbody > tr:not(.news_fleet) table:last-child tr td:nth-child(2),
 #view_news > .maintext > table > tbody > tr:not(.news_fleet) table:last-child tr td:nth-child(3),
 #view_news > .maintext > table > tbody > tr:not(.news_fleet) table:last-child tr td:nth-child(4) {
-  text-align: center;
   font-size: 0.8rem;
   line-height: 1;
+  text-align: center;
 }
 #view_news > .maintext > table > tbody > tr:not(.news_fleet) table:last-child tr td:nth-child(2), #view_news > .maintext > table > tbody > tr:not(.news_fleet) table:last-child tr td:nth-child(3), #view_news > .maintext > table > tbody > tr:not(.news_fleet) table:last-child tr td:nth-child(4) {
   font-size: 1rem;
@@ -7343,12 +7343,12 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
   position: relative;
 }
 #view_news > .maintext > table > tbody > tr:not(.news_fleet) table:last-child tr:nth-child(2) th:nth-child(2):after, #view_news > .maintext > table > tbody > tr:not(.news_fleet) table:last-child tr:nth-child(2) th:nth-child(3):after, #view_news > .maintext > table > tbody > tr:not(.news_fleet) table:last-child tr:nth-child(2) th:nth-child(4):after {
+  vertical-align: sub;
+  content: "";
+  display: inline-block;
   width: 1rem;
   height: 1rem;
   margin-left: 0.4rem;
-  content: "";
-  display: inline-block;
-  vertical-align: sub;
 }
 #view_news .maintext > table > tbody > tr > td:first-child a {
   color: rgba(82, 165, 248, 0.8);
@@ -7364,33 +7364,33 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
   display: table;
 }
 #page_bcalc #contents #contents_header {
-  display: block;
-  width: 100%;
-  position: relative;
-  height: 2rem;
-  margin: 1rem 0;
-  padding: 0.5rem 0;
+  color: #ccc;
   font-weight: bold;
   text-transform: uppercase;
-  color: #ccc;
+  line-height: 1;
+  padding: 0.5rem 0;
+  display: block;
   background: #24303f;
   background: linear-gradient(to right, #1a222c 0%, #24303f 50%, #1a222c 100%) !important;
+  width: 100%;
+  height: 2rem;
   border: 1px solid transparent;
   border-image: linear-gradient(to right, transparent 0%, rgba(82, 165, 248, 0.5) 50%, transparent 100%);
   border-image-slice: 1;
-  line-height: 1;
+  margin: 1rem 0;
+  position: relative;
 }
 #page_bcalc #contents #contents_header:before {
+  font-size: 0.75rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 0.5rem 0;
   content: "Planetarion Battle Calculator";
+  width: 100%;
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  text-align: center;
-  font-size: 0.75rem;
-  text-transform: uppercase;
-  font-weight: bold;
-  padding: 0.5rem 0;
 }
 #page_bcalc #contents #bcalc_stats th {
   background: transparent;
@@ -7399,8 +7399,8 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
   vertical-align: top !important;
 }
 #page_bcalc #bcalc #controls tr th {
-  width: auto;
   vertical-align: baseline;
+  width: auto;
 }
 #page_bcalc #bcalc input,
 #page_bcalc #bcalc input[type=checkbox],
@@ -7408,8 +7408,8 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
   color: #ccc;
   font-size: 0.9rem;
   background-color: rgba(36, 48, 63, 0.4);
-  box-shadow: inset 0px 2px 4px 2px rgba(0, 0, 0, 0.4);
   border-radius: 3px;
+  box-shadow: inset 0px 2px 4px 2px rgba(0, 0, 0, 0.4);
 }
 #page_bcalc #bcalc input[type=checkbox] {
   vertical-align: middle;
@@ -7460,12 +7460,12 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
   color: limegreen;
 }
 #page_bcalc #bcalc #def_side {
-  background: rgba(50, 205, 50, 0.4);
   padding: 0.25rem;
+  background: rgba(50, 205, 50, 0.4);
 }
 #page_bcalc #bcalc #att_side {
-  background: rgba(255, 0, 0, 0.35);
   padding: 0.25rem;
+  background: rgba(255, 0, 0, 0.35);
 }
 #page_bcalc #bcalc #att_add_to,
 #page_bcalc #bcalc .att_filter,
@@ -7583,9 +7583,9 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
   padding: 0 0.5rem 0.5rem;
 }
 #page_bcalc #bcalc .global_controls.nowrap {
-  box-shadow: 0 2px 4px 2px rgba(0, 0, 0, 0.15), inset 0 2px 1px 1px rgba(82, 165, 248, 0.09);
   background: #24303f;
   border-radius: 4px;
+  box-shadow: 0 2px 4px 2px rgba(0, 0, 0, 0.15), inset 0 2px 1px 1px rgba(82, 165, 248, 0.09);
 }
 #page_bcalc #bcalc .def_ter,
 #page_bcalc #bcalc .att_ter {
@@ -7795,11 +7795,11 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
   background-color: #24303f;
 }
 #page_bcalc #scans_area {
+  padding: 0.5rem;
+  display: block !important;
   background-color: #24303f;
   height: 3rem;
   min-height: unset;
-  display: block !important;
-  padding: 0.5rem;
 }
 #page_bcalc #my_bcalcs p,
 #page_bcalc #add_other p,
@@ -7847,13 +7847,13 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
   right: 0;
 }
 #page_bcalc #fleet_select_box p:nth-child(2) {
-  margin-top: 0.5rem;
   display: flex;
   flex-direction: column;
+  margin-top: 0.5rem;
 }
 #page_bcalc #fleet_select_box p:nth-child(2) select {
-  margin: 0.5rem 0;
   text-align: center !important;
+  margin: 0.5rem 0;
 }
 #page_bcalc #fleet_select_box p:last-child a {
   margin: 0 !important;
@@ -7872,8 +7872,8 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
   margin-top: 0.75rem;
 }
 #page_bcalc #add_other input[type=number] {
-  background-color: rgba(36, 48, 63, 0.4);
   color: #ccc;
+  background-color: rgba(36, 48, 63, 0.4);
 }
 #page_bcalc #add_other input[type=button] {
   margin: 0.5rem 0;
@@ -7888,22 +7888,22 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
   color: #ccc;
 }
 #page_bcalc #add_own {
-  background: #1a222c !important;
   padding: 1px;
-  max-height: 94vh;
   overflow: auto;
+  background: #1a222c !important;
+  max-height: 94vh;
   position: fixed !important;
-  left: 50% !important;
   top: 50% !important;
+  left: 50% !important;
   transform: translate(-50%, -50%);
 }
 #page_bcalc #add_own p:first-child {
-  height: 0;
   padding: 0;
+  height: 0;
 }
 #page_bcalc #add_own p:nth-of-type(2) {
-  background: #171e27;
   padding: 6px;
+  background: #171e27;
 }
 #page_bcalc #add_own p:nth-of-type(2) br {
   display: none;
@@ -7913,25 +7913,25 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
   margin: 0.25rem !important;
 }
 #page_bcalc #add_own p:nth-of-type(2) a:first-of-type {
-  margin: 0 0 0 0.5rem !important;
   color: rgba(50, 205, 50, 0.75) !important;
   border-color: rgba(50, 205, 50, 0.5) !important;
+  margin: 0 0 0 0.5rem !important;
 }
 #page_bcalc #add_own p:nth-of-type(2) a:first-of-type:hover {
   background-color: rgba(50, 205, 50, 0.75) !important;
 }
 #page_bcalc #add_own p:nth-of-type(2) a:nth-of-type(2) {
-  margin: 0 !important;
   color: rgba(255, 0, 0, 0.75) !important;
   border-color: rgba(255, 0, 0, 0.5) !important;
+  margin: 0 !important;
 }
 #page_bcalc #add_own p:nth-of-type(2) a:nth-of-type(2):hover {
   background-color: rgba(255, 0, 0, 0.75) !important;
 }
 #page_bcalc #add_own p:nth-of-type(3) {
   line-height: 24px;
-  display: table;
   text-align: left;
+  display: table;
   width: 350px;
   position: relative;
   left: 50%;
@@ -7939,12 +7939,12 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
 }
 #page_bcalc #add_own p:nth-of-type(3) a {
   text-align: center;
-  position: absolute;
-  width: 34px;
-  margin: 0 !important;
   display: flex !important;
   align-items: center;
   justify-content: center;
+  width: 34px;
+  margin: 0 !important;
+  position: absolute;
   transform: translateY(-23px);
 }
 #page_bcalc #add_own p:nth-of-type(3) a[onclick="show_side_select(event, 'type', 'fi', false);"], #page_bcalc #add_own p:nth-of-type(3) a[onclick="show_side_select(event, 'type', 'fi', true);"] {
@@ -7975,9 +7975,9 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
   background: #171e27;
 }
 #page_bcalc #add_own table tr:first-child th {
-  max-width: 60px;
-  overflow: hidden;
   white-space: nowrap;
+  overflow: hidden;
+  max-width: 60px;
 }
 #page_bcalc #add_own table tr:first-child th:not(:first-child) {
   text-align: right;
@@ -7992,26 +7992,26 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
 }
 #page_bcalc #add_own table tr th {
   font-size: 0.6875rem;
-  background: transparent;
   padding: 0 0 0 5px;
+  background: transparent;
 }
 #page_bcalc #add_own table tr td {
   padding-right: 5px;
 }
 
 #my_bcalcs {
-  top: 50% !important;
-  left: 50% !important;
-  position: fixed;
-  transform: translate(-50%, -50%);
   overflow: auto;
   max-height: 80vh;
+  position: fixed;
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%);
 }
 #my_bcalcs > p:first-child {
-  position: sticky;
-  right: 0.5rem;
-  top: 0;
   display: block;
+  position: sticky;
+  top: 0;
+  right: 0.5rem;
 }
 #my_bcalcs #bcalclist {
   margin-top: -29px;
@@ -8032,12 +8032,12 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
   text-align: center;
 }
 #page_scan div#full_page .maintext > table > tbody > tr:first-child > td[colspan="2"] {
-  background: #1a222c;
-  font-size: 1rem;
-  padding: 1rem 0;
-  font-weight: bold;
   color: white;
+  font-size: 1rem;
+  font-weight: bold;
   font-style: italic;
+  padding: 1rem 0;
+  background: #1a222c;
 }
 #page_scan div#full_page .maintext > table > tbody > tr > th,
 #page_scan div#full_page .maintext > table > tbody > tr > td {
@@ -8050,17 +8050,17 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
   text-align: right;
 }
 #page_scan div#full_page .maintext > table > tbody > tr > td:first-child a {
-  margin-right: 0.5rem;
   text-align: center;
   width: 4rem;
+  margin-right: 0.5rem;
 }
 #page_scan div#full_page .maintext > table > tbody > tr > td:first-child span {
   font-size: 1rem;
   text-transform: uppercase;
-  padding: 0 0.125rem;
-  width: 2.5rem;
   text-align: center;
+  padding: 0 0.125rem;
   display: inline-block;
+  width: 2.5rem;
 }
 #page_scan div#full_page .maintext > table > tbody > tr:nth-child(even) {
   background: #1e2935;
@@ -8100,92 +8100,93 @@ input,
 textarea,
 select,
 .checkbox {
-  font-family: "Ubuntu", "Lato", "Open Sans", sans-serif;
-  background: rgba(36, 48, 63, 0.4);
-  border: 1px solid rgba(82, 165, 248, 0.5);
-  box-shadow: inset 0 2px 4px 2px rgba(0, 0, 0, 0.4);
   color: #ccc;
+  font-family: "Ubuntu", "Lato", "Open Sans", sans-serif;
   font-size: 1rem;
-  height: 1.5rem;
-  transition: ease all 0.3s;
-  display: inline-block;
   vertical-align: middle;
+  display: inline-block;
+  background: rgba(36, 48, 63, 0.4);
+  height: 1.5rem;
+  border: 1px solid rgba(82, 165, 248, 0.5);
   border-radius: 3px;
+  box-shadow: inset 0 2px 4px 2px rgba(0, 0, 0, 0.4);
+  transition: ease all 0.3s;
 }
 input:focus,
 .input:focus,
 textarea:focus,
 select:focus,
 .checkbox:focus {
-  outline: none;
   border: 1px solid #52a5f8 !important;
+  outline: none;
 }
 
 input[type=radio] {
+  display: block;
   background: rgba(36, 48, 63, 0.4) !important;
+  width: 0.8rem;
+  height: 0.8rem;
   border: 1px solid rgba(82, 165, 248, 0.5);
-  box-shadow: inset 0 2px 4px 2px rgba(0, 0, 0, 0.4) !important;
-  vertical-align: -0.5rem;
-  appearance: none;
-  display: inline-block;
-  width: 1.5rem;
-  height: 1.5rem;
   border-radius: 50%;
+  box-shadow: inset 0 2px 4px 2px rgba(0, 0, 0, 0.4) !important;
+  margin: 0 0.5rem 0 0;
   position: relative;
+  appearance: none;
 }
 input[type=radio]:checked:after {
-  position: absolute;
   content: "";
-  height: 1rem;
-  width: 1rem;
   background: #52a5f8;
-  box-shadow: inset 0 2px 4px 2px rgba(0, 0, 0, 0.5);
+  width: 0.5rem;
+  height: 0.5rem;
   border-radius: 50%;
-  left: 0.175rem;
-  top: 0.175rem;
+  box-shadow: inset 0 2px 4px 2px rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 option {
+  color: #ccc;
   font-family: "Ubuntu", "Lato", "Open Sans", sans-serif;
   background: #1a222c !important;
   border: 1px solid rgba(82, 165, 248, 0.5);
   box-shadow: inset 0 2px 4px 2px rgba(0, 0, 0, 0.4);
-  color: #ccc;
 }
 
 input[type=text],
 input[type=number],
 input[type=email],
 input[type=password] {
-  padding: 0.25rem;
   color: #ccc;
+  padding: 0.25rem;
   background: rgba(36, 48, 63, 0.4);
   border: 1px solid rgba(82, 165, 248, 0.5);
   box-shadow: inset 0 2px 4px 2px rgba(0, 0, 0, 0.4);
 }
 
 input[type=checkbox] {
-  position: relative;
   vertical-align: -0.25rem;
+  background: rgba(36, 48, 63, 0.4);
+  width: 1rem;
+  height: 1rem;
+  border: 1px solid rgba(82, 165, 248, 0.5);
+  outline: none;
+  box-shadow: inset 0 2px 4px 2px rgba(0, 0, 0, 0.4);
+  position: relative;
+  cursor: pointer;
+  transition: 0.3s;
   -webkit-appearance: none;
   -moz-appearance: none;
   -o-appearance: none;
   appearance: none;
-  width: 1rem;
-  height: 1rem;
-  background: rgba(36, 48, 63, 0.4);
-  border: 1px solid rgba(82, 165, 248, 0.5);
-  box-shadow: inset 0 2px 4px 2px rgba(0, 0, 0, 0.4);
-  cursor: pointer;
-  outline: none;
-  transition: 0.3s;
 }
 input[type=checkbox]:checked::before {
-  display: block;
-  content: "✔";
-  font-weight: bold;
   color: #52a5f8;
   font-size: 1.2rem;
+  font-weight: bold;
+  content: "✔";
+  display: block;
   position: absolute;
   top: -0.5rem;
 }
@@ -8204,8 +8205,8 @@ table.mceEditor tr td select.mceSelectList {
 }
 
 textarea {
-  min-height: 5rem;
   padding: 0.5rem 1rem;
+  min-height: 5rem;
 }
 
 .mceEditorIframe {
@@ -8229,24 +8230,24 @@ a:hover,
 }
 #menu a:before, #menu a:after {
   content: "";
-  position: absolute;
-  bottom: -2px;
   width: 0;
   height: 1px;
   margin: 5px 0 0;
+  position: absolute;
+  bottom: -2px;
   transition: all 0.5s ease-in-out;
 }
 #menu a:before, #menu a:after {
   left: 0%;
 }
 #menu a:hover {
-  cursor: pointer;
   color: #ccc;
+  cursor: pointer;
 }
 #menu a:hover:before, #menu a:hover:after {
+  opacity: 1;
   background: linear-gradient(to right, #52a5f8 0%, transparent 100%);
   width: 100%;
-  opacity: 1;
 }
 #menu #menu_preferences a:after, #menu #menu_preferences a:before,
 #menu #menu_logout a:after,
@@ -8263,16 +8264,16 @@ a:hover,
 #menu #menu_preferences a:after,
 #menu #menu_logout a:after,
 #menu #menu_view_link a:after {
-  left: unset !important;
   right: 50% !important;
+  left: unset !important;
 }
 #menu #menu_preferences a:hover:before, #menu #menu_preferences a:hover:after,
 #menu #menu_logout a:hover:before,
 #menu #menu_logout a:hover:after,
 #menu #menu_view_link a:hover:before,
 #menu #menu_view_link a:hover:after {
-  width: 50% !important;
   opacity: 1 !important;
+  width: 50% !important;
 }
 #menu #menu_preferences a:hover:before,
 #menu #menu_logout a:hover:before,
@@ -8313,24 +8314,24 @@ ul.alliance_attack_claims_list a,
 #page_alliance_defence #dships_box p#dbcalc a,
 #page_scan .maintext a:not(.coords),
 #side_select_box p:not(:first-child) a {
-  display: inline-block;
-  height: 1.5rem;
-  margin: 1rem 0;
-  padding: 0 0.5rem;
   color: #52a5f8 !important;
-  background: rgba(36, 48, 63, 0.4) !important;
-  border: 1px solid rgba(82, 165, 248, 0.5) !important;
-  box-shadow: inset 0 2px 4px 2px rgba(0, 0, 0, 0.4);
-  cursor: pointer;
-  border-radius: 3px;
-  text-transform: initial;
-  font-weight: initial;
   font-family: inherit;
   font-size: 1rem;
+  font-weight: initial;
+  text-transform: initial;
   white-space: nowrap;
-  transition-property: color, background, box-shadow;
-  transition-duration: 0.75s;
+  padding: 0 0.5rem;
+  display: inline-block;
+  background: rgba(36, 48, 63, 0.4) !important;
+  height: 1.5rem;
+  border: 1px solid rgba(82, 165, 248, 0.5) !important;
+  border-radius: 3px;
+  box-shadow: inset 0 2px 4px 2px rgba(0, 0, 0, 0.4);
+  margin: 1rem 0;
+  cursor: pointer;
   transition-timing-function: linear;
+  transition-duration: 0.75s;
+  transition-property: color, background, box-shadow;
 }
 #page input[type=submit]:hover,
 input[type=submit]:hover,
@@ -8360,8 +8361,8 @@ ul.alliance_attack_claims_list a:hover,
 #page_alliance_defence #dships_box p#dbcalc a:hover,
 #page_scan .maintext a:not(.coords):hover,
 #side_select_box p:not(:first-child) a:hover {
-  text-decoration: none !important;
   color: black !important;
+  text-decoration: none !important;
   background: #52a5f8 !important;
   box-shadow: none;
 }
@@ -8388,9 +8389,9 @@ input[type=submit] {
 }
 
 a[target=scan] {
+  text-align: center;
   display: inline-block;
   min-width: 12px;
-  text-align: center;
 }
 
 #page .container#javascriptwarning + .container table tr,
@@ -8420,15 +8421,15 @@ a[target=scan] {
 #page .container#javascriptwarning + #notice + #tab_container table li a,
 #page .container#javascriptwarning + #notice + #tab_container ul td a,
 #page .container#javascriptwarning + #notice + #tab_container ul li a {
-  margin: 0.75rem;
-  text-transform: uppercase;
+  color: #52a5f8;
   font-size: 0.8rem;
   font-weight: bold;
-  letter-spacing: 0.5px;
-  color: #52a5f8;
-  position: relative;
-  display: inline-block;
+  text-transform: uppercase;
   white-space: nowrap;
+  letter-spacing: 0.5px;
+  display: inline-block;
+  margin: 0.75rem;
+  position: relative;
   transition: all 0.5s ease-in-out;
 }
 #page .container#javascriptwarning + .container table td a.tab_link_active, #page .container#javascriptwarning + .container table li a.tab_link_active,
@@ -8543,12 +8544,12 @@ a[target=scan] {
 #page .container#javascriptwarning + #notice + #tab_container ul li a:before,
 #page .container#javascriptwarning + #notice + #tab_container ul li a:after {
   content: "";
-  position: absolute;
-  bottom: -2px;
+  background: transparent;
   width: 0;
   height: 1px;
   margin: 5px 0 0;
-  background: transparent;
+  position: absolute;
+  bottom: -2px;
   transition: all 0.3s ease-in-out;
 }
 #page .container#javascriptwarning + .container table td a:before, #page .container#javascriptwarning + .container table li a:before,
@@ -8600,8 +8601,8 @@ a[target=scan] {
 #page .container#javascriptwarning + #notice + #tab_container table li a:hover,
 #page .container#javascriptwarning + #notice + #tab_container ul td a:hover,
 #page .container#javascriptwarning + #notice + #tab_container ul li a:hover {
-  cursor: pointer;
   color: #ccc;
+  cursor: pointer;
 }
 #page .container#javascriptwarning + .container table td a:hover:before, #page .container#javascriptwarning + .container table td a:hover:after, #page .container#javascriptwarning + .container table li a:hover:before, #page .container#javascriptwarning + .container table li a:hover:after,
 #page .container#javascriptwarning + .container ul td a:hover:before,
@@ -8632,8 +8633,8 @@ a[target=scan] {
 #page .container#javascriptwarning + #notice + #tab_container ul td a:hover:after,
 #page .container#javascriptwarning + #notice + #tab_container ul li a:hover:before,
 #page .container#javascriptwarning + #notice + #tab_container ul li a:hover:after {
-  width: 50%;
   opacity: 1;
+  width: 50%;
 }
 #page .container#javascriptwarning + .container table td a:hover:before, #page .container#javascriptwarning + .container table li a:hover:before,
 #page .container#javascriptwarning + .container ul td a:hover:before,
@@ -8764,6 +8765,37 @@ form[action^="mining.pl?"] table {
   background-color: #1e2935;
 }
 
+#page_bonuses table tr:nth-child(odd) {
+  background: #24303f;
+}
+#page_bonuses table tr:nth-child(even) {
+  background: #1e2935;
+}
+#page_bonuses table tr td[colspan="4"] {
+  background: #1a222c;
+}
+#page_bonuses #tab2 table {
+  width: auto;
+  min-width: unset;
+  max-width: 450px;
+}
+#page_bonuses #tab2 table tr > *:nth-child(1) {
+  width: 25px !important;
+}
+#page_bonuses #tab2 table tr > *:nth-child(1)[colspan="4"] {
+  width: 100% !important;
+}
+#page_bonuses #tab2 table tr > *:nth-child(2) {
+  width: 140px !important;
+}
+#page_bonuses #tab2 table tr > *:nth-child(3) {
+  width: calc(100% - 199px) !important;
+}
+#page_bonuses #tab2 table tr > *:nth-child(4) {
+  background: #1a222c;
+  width: 34px !important;
+}
+
 body,
 #page_bcalc #add_own,
 #my_bcalcs {
@@ -8789,8 +8821,8 @@ body::-webkit-scrollbar-thumb,
 #my_bcalcs::-webkit-scrollbar-thumb {
   background-color: rgba(36, 48, 63, 0.4);
   border: 1px solid rgba(82, 165, 248, 0.5);
-  box-shadow: inset 0 0 2px 0 rgba(82, 165, 248, 0.4), 0 0 16px 0 rgba(0, 0, 0, 0.9);
   border-radius: 8px;
+  box-shadow: inset 0 0 2px 0 rgba(82, 165, 248, 0.4), 0 0 16px 0 rgba(0, 0, 0, 0.9);
 }
 body::-webkit-scrollbar-button,
 #page_bcalc #add_own::-webkit-scrollbar-button,
@@ -8816,3 +8848,7 @@ body::-webkit-scrollbar-button,
     opacity: 1;
   }
 }
+/*!
+*
+*  P.S. If you can see this and the message at the start then you successfully copied and pasted the entire file, epic.
+*/

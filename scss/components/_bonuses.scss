@@ -1,0 +1,53 @@
+
+#page_bonuses {
+  table {
+	tr {
+	  &:nth-child(odd) {
+		background: $color-secondary;
+	  }
+
+	  &:nth-child(even) {
+		background: $color-secondary-alt;
+	  }
+
+	  td {
+		&[colspan='4'] {
+		  background: $color-background;
+		}
+	  }
+	}
+  }
+
+  #tab2 {
+	table {
+	  width: auto;
+	  min-width: unset;
+	  max-width: 450px;
+
+	  tr {
+		> * {
+		  &:nth-child(1) {
+			width: 25px !important;
+
+			&[colspan='4'] {
+			  width: 100% !important;
+			}
+		  }
+
+		  &:nth-child(2) {
+			width: 140px !important;
+		  }
+
+		  &:nth-child(3) {
+			width: calc(100% - 199px) !important;
+		  }
+
+		  &:nth-child(4) {
+			background: $color-background;
+			width: 34px !important;
+		  }
+		}
+	  }
+	}
+  }
+}

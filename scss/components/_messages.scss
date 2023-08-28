@@ -46,43 +46,42 @@
 			background: transparent;
 
 			a {
-			  display: inline-block;
-			  height: 1.5rem;
-			  margin: 1rem 0;
-			  padding: 0 .5rem;
 			  color: $color-primary !important;
-			  background: $color-secondary !important;
-			  border: 1px solid rgba($color-primary, .5) !important;
-			  cursor: pointer;
-			  box-shadow: none;
-			  border-radius: 0;
-			  text-transform: initial;
-			  font-weight: initial;
-			  transition: .3s;
 			  font-family: inherit;
 			  font-size: 1rem;
+			  font-weight: initial;
+			  text-transform: initial;
+			  padding: 0 .5rem;
+			  display: inline-block;
+			  background: $color-secondary !important;
+			  height: 1.5rem;
+			  border: 1px solid rgba($color-primary, .5) !important;
+			  border-radius: 0;
+			  box-shadow: none;
+			  margin: 1rem 0;
+			  cursor: pointer;
+			  transition: .3s;
 
 			  &:hover {
-				text-decoration: none !important;
 				color: black !important;
+				text-decoration: none !important;
 				background: $color-primary !important;
 			  }
 			}
 		  }
 		}
 	  }
-
 	}
   }
 
-  a[onclick^="read"],
-  a[onclick^="reply"],
+  a[onclick^='read'],
+  a[onclick^='reply'],
   a[href*='action=delete'],
   a[href*='action=report'] {
 	display: inline-block;
-	position: relative;
 	width: 1.5rem;
 	height: 1.5rem;
+	position: relative;
 
 	&:after {
 	  font-size: 1.3rem;
@@ -92,34 +91,33 @@
   //img {
   //  display: none !important;
   //}
-
   &:after {
-	position: absolute;
-	top: 0;
-	left: 1px;
 	color: $color-zikonian;
 	font-size: 1.25rem;
 	line-height: 1.5rem;
+	position: absolute;
+	top: 0;
+	left: 1px;
   }
 
-  a[onclick^="read"]::after {
+  a[onclick^='read']::after {
+	color: $color-text;
 	content: '\2709';
-	color: $color-text;
   }
 
-  a[onclick^="reply"]::after {
-	content: '\21a9';
+  a[onclick^='reply']::after {
 	color: $color-text;
+	content: '\21a9';
   }
 
   a[href*='action=report']::after {
-	content: '\26a0';
 	color: $color-neutral;
+	content: '\26a0';
   }
 
   a[href*='action=delete']::after {
-	content: '\2716';
 	color: $color-zikonian;
+	content: '\2716';
   }
 
   #tab1 .container {

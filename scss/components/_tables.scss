@@ -16,7 +16,7 @@ table {
   }
 }
 
-[id^="form_prod"] {
+[id^='form_prod'] {
   table {
 	min-width: 350px;
   }
@@ -24,7 +24,7 @@ table {
 
 // cool table styling, adding all in one place to save on multiple repeats of the same code:
 #production_form,
-[id^="form_prod_"],
+[id^='form_prod_'],
 #page_covert #contents .container:nth-last-child(2),
 #page_covert #contents .container:nth-last-child(3),
 #page_covert #contents .container:nth-last-child(4) .maintext >,
@@ -41,7 +41,7 @@ table {
 
 #page_scan div#full_page .maintext >,
 #view_news > .maintext > table > tbody > tr,
-form[name="gal_fund_trade"] + p + p +,
+form[name='gal_fund_trade'] + p + p +,
 #page_overview #fleet_overview,
 #page_alliance_scans .tabs#tab2,
 #page_waves #show_scan,
@@ -54,7 +54,7 @@ form[name="gal_fund_trade"] + p + p +,
 #page_history #tab6,
 #page_history #tab7,
 #page_history #tab8,
-[id^="page_universe"] .maintext >,
+[id^='page_universe'] .maintext >,
 #page_alliance_fleets #contents table {
   table {
 	border: 1px solid transparent;
@@ -66,7 +66,7 @@ form[name="gal_fund_trade"] + p + p +,
 
 #page_population #tab1 .container:nth-last-child(5),
 #page_waves #tab1,
-form[action^="mining.pl?"] {
+form[action^='mining.pl?'] {
   table {
 	border-top: 1px solid transparent;
 	border-image: linear-gradient(to right, transparent 0%, rgba($color-primary, .5) 50%, transparent 100%);
@@ -84,8 +84,8 @@ form[action^="mining.pl?"] {
   box-shadow: inset 0 0 8px 2px rgba(black, .25), 0 2px 10px 2px rgba(black, .15);
 }
 
-[id^="page_universe"] #javascriptwarning + .container .maintext >,
-[id^="page_universe"] #javascriptwarning + #notice + .container .maintext >,
+[id^='page_universe'] #javascriptwarning + .container .maintext >,
+[id^='page_universe'] #javascriptwarning + #notice + .container .maintext >,
 #page_universe_races .container:nth-last-child(3) {
   table {
 	border: 1px transparent;

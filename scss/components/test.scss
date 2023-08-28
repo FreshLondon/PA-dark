@@ -1,33 +1,33 @@
 #att_show {
-  input[type="checkbox"] {
-    &#att_race_ter {
-      &:before {
-        color: $color-terran;
-      }
-    }
+  input[type='checkbox'] {
+	&#att_race_ter {
+	  &:before {
+		color: $color-terran;
+	  }
+	}
 
-    &#att_race_cat {
-      &:before {
-        color: $color-cathaar;
-      }
-    }
+	&#att_race_cat {
+	  &:before {
+		color: $color-cathaar;
+	  }
+	}
 
-    &#att_race_xan {
-      &:before {
-        color: $color-xandathrii;
-      }
-    }
+	&#att_race_xan {
+	  &:before {
+		color: $color-xandathrii;
+	  }
+	}
 
-    &#att_race_zik {
-      &:before {
-        color: $color-zikonian;
-      }
-    }
+	&#att_race_zik {
+	  &:before {
+		color: $color-zikonian;
+	  }
+	}
 
-    &#att_race_etd {
-      &:before {
-        color: $color-eitraides;
-      }
-    }
+	&#att_race_etd {
+	  &:before {
+		color: $color-eitraides;
+	  }
+	}
   }
 }

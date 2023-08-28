@@ -32,7 +32,6 @@
 		}
 	  }
 	}
-
   }
 
   #tab3,
@@ -62,10 +61,10 @@
 			tr {
 			  &:first-child {
 				th {
-				  &[class="center"] {
-					background: $color-background;
-					font-size: $text-large;
+				  &[class='center'] {
 					color: rgba($color-positive, .75);
+					font-size: $text-large;
+					background: $color-background;
 				  }
 				}
 			  }
@@ -78,10 +77,10 @@
 			tr {
 			  &:first-child {
 				th {
-				  &[class="center"] {
-					background: $color-background;
-					font-size: $text-large;
+				  &[class='center'] {
 					color: rgba($color-negative, .75);
+					font-size: $text-large;
+					background: $color-background;
 				  }
 				}
 			  }

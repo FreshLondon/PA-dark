@@ -1,8 +1,8 @@
 /* GALAXY FORUM
    -------------------------------------------------------*/
 .forum_description {
-  font-size: $text-small;
   color: $color-offwhite;
+  font-size: $text-small;
 }
 
 .forum {
@@ -31,17 +31,17 @@
 
 .forum_thread_header_title,
 .forum_thread_title {
-  flex-basis: 50%;
   text-align: left;
+  flex-basis: 50%;
 }
 
 .forum_thread_header_lastpost,
 .forum_thread_lastpost {
-  flex-basis: 40%;
-  text-align: left;
   font-size: $text-small;
+  text-align: left;
   display: inline-flex;
   align-items: center;
+  flex-basis: 40%;
 }
 
 .forum_thread_header_replies,
@@ -59,9 +59,9 @@ div[class^='forum_thread_header'] {
 }
 
 .forum_thread_actions_button {
-  background: none;
-  display: inline-block;
   text-indent: -99rem;
+  display: inline-block;
+  background: none;
 
   &:hover {
 	text-decoration: none;
@@ -72,12 +72,12 @@ div[class^='forum_thread_header'] {
   }
 
   &:after {
-	content: '\25BC';
 	color: $color-primary;
+	font-size: 10px;
+	content: '\25BC';
 	position: relative;
 	top: 0;
 	left: 95.2rem;
-	font-size: 10px;
   }
 }
 
@@ -103,36 +103,36 @@ div[class^='forum_thread_header'] {
 }
 
 .forum_post_number {
-  order: 1;
-  flex-basis: 3rem;
   font-weight: bold;
+  flex-basis: 3rem;
+  order: 1;
 }
 
 .forum_poster {
-  order: 2;
-  flex-grow: 1;
   font-size: 1rem;
+  flex-grow: 1;
+  order: 2;
 }
 
 .forum_post_title {
-  order: 3;
   text-align: left;
   flex-grow: 1;
+  order: 3;
 }
 
 .forum_post_time {
-  order: 4;
-  flex-basis: 10rem;
   text-align: right;
+  flex-basis: 10rem;
+  order: 4;
 }
 
 .forum_post_text {
-  order: 5;
+  padding: 1rem;
   flex-basis: 100%;
   flex-shrink: 0;
   background: $color-secondary;
   border: 1px solid rgba($color-primary, .5);
-  padding: 1rem;
+  order: 5;
 }
 
 .forum_post_notes {
@@ -150,9 +150,9 @@ div[class^='forum_thread_header'] {
 }
 
 .forum_post_seperator {
+  display: none;
   border: 1px solid rgba($color-primary, .5);
   margin: 1rem;
-  display: none;
 }
 
 .forum_post_delete,
@@ -166,15 +166,15 @@ div[class^='forum_thread_header'] {
 .mceEditor,
 .mceToolbarContainer,
 .mceStatusbarBottom {
+  background: transparent !important;
   border-style: solid !important;
   border-color: $color-primary !important;
-  background: transparent !important;
 }
 
 .mceEditor {
-  margin: .5rem;
   width: calc(100% - 1rem);
   border-width: 2px !important;
+  margin: .5rem;
 }
 
 .mceToolbarContainer {
@@ -195,7 +195,6 @@ div[class^='forum_thread_header'] {
 
   > .center,
   + .center {
-
 	font-size: $text-small;
 
 	a {
@@ -211,8 +210,8 @@ table.mceEditor {
 	width: 100%;
 
 	td {
-	  width: 100%;
 	  padding: 0;
+	  width: 100%;
 
 	  &.mceToolbarTop {
 		> span {
@@ -234,8 +233,8 @@ table.mceEditor {
 	  }
 
 	  .mceToolbarContainer {
-		background: $color-secondary !important;
 		padding: .5rem .5rem 0;
+		background: $color-secondary !important;
 
 		a {
 		  background: #ccc !important;
@@ -247,21 +246,21 @@ table.mceEditor {
 	  }
 
 	  .mceSeparatorLine {
-		border: 0;
 		padding: 0;
-		margin-left: 1rem;
-		margin-right: 1rem;
-		margin-top: 0px;
 		height: 26px;
+		border: 0;
+		margin-top: 0px;
+		margin-right: 1rem;
+		margin-left: 1rem;
 	  }
 
 	  a {
-		margin: .5rem 0 !important;
 		width: 24px;
 		height: 24px;
+		margin: .5rem 0 !important;
 
-		&[accesskey="q"],
-		&[accesskey="z"] {
+		&[accesskey='q'],
+		&[accesskey='z'] {
 		  display: none !important;
 		}
 
@@ -280,8 +279,8 @@ table.mceEditor {
 	  }
 
 	  select.mceSelectList {
-		margin: 7px .5rem;
 		height: 1.8rem;
+		margin: 7px .5rem;
 
 		&:first-of-type {
 		  margin-right: 0;

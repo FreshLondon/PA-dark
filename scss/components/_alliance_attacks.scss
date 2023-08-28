@@ -33,23 +33,23 @@
 
 		  &:first-child {
 			th {
-			  font-weight: bold;
-			  background: #171e27;
 			  color: $color-text;
 			  font-size: $text-small;
+			  font-weight: bold;
 			  padding: .25rem .5rem;
+			  background: #171e27;
 			}
 		  }
 
-		  &[id^="target_"] {
+		  &[id^='target_'] {
 			height: auto;
 			transition: all 1s linear;
 
-			&[style="display: none;"] {
+			&[style='display: none;'] {
 			  height: 0;
 			}
 
-			&[style="display: table-row;"],
+			&[style='display: table-row;'],
 			&[style] {
 			  height: auto;
 			  animation: fade 1s;
@@ -60,12 +60,12 @@
 			}
 
 			table {
-			  border: 2px solid rgba($color-primary, .25);
-			  border-left: 12px double rgba($color-primary, .15);
-			  border-right: 12px double rgba($color-primary, .15);
 			  padding: 0;
 			  background: $color-background;
 			  width: 100%;
+			  border: 2px solid rgba($color-primary, .25);
+			  border-right: 12px double rgba($color-primary, .15);
+			  border-left: 12px double rgba($color-primary, .15);
 			  margin-bottom: 0;
 
 			  tr {
@@ -73,7 +73,7 @@
 				  white-space: nowrap;
 				}
 
-				&[class^="shadedbackground"] {
+				&[class^='shadedbackground'] {
 				  background: $color-secondary;
 
 				  td {
@@ -82,18 +82,18 @@
 					ul {
 					  &.alliance_attack_claims_list {
 						display: flex;
-						justify-content: flex-start;
 						align-items: center;
 						flex-wrap: wrap;
+						justify-content: flex-start;
 
 						li {
-						  font-style: italic;
 						  font-size: $text-small;
+						  font-style: italic;
 						  margin: 0 .5rem;
 
 						  a {
-							margin: 0;
 							font-style: normal;
+							margin: 0;
 						  }
 
 						  table {
@@ -112,20 +112,20 @@
 			}
 		  }
 
-		  > td:not([colspan="6"]) {
+		  > td:not([colspan='6']) {
 			padding: .25rem .5rem;
 
 			&.center {
-			  &[style="width: 50%;"],
-			  &[style="width: 50%;"] + td {
+			  &[style='width: 50%;'],
+			  &[style='width: 50%;'] + td {
 				background: transparent;
 			  }
 			}
 
 			> table {
+			  padding-left: 2rem;
 			  border-spacing: 0;
 			  margin: 0;
-			  padding-left: 2rem;
 
 			  > tbody {
 				> tr {
@@ -167,10 +167,10 @@
 		}
 
 		td {
-		  background: $color-secondary;
 		  padding: .25rem .5rem;
+		  background: $color-secondary;
 
-		  &[colspan="5"] {
+		  &[colspan='5'] {
 			border-top: 4px double rgba($color-primary, .25);
 		  }
 
@@ -200,48 +200,46 @@
   }
 }
 
-
 #attack_claim_form,
 .alliance_attack_claims_status {
-  width: auto !important;
-  border: 1px solid rgba($color-primary, .5);
   background: $color-background;
+  width: auto !important;
   min-width: unset !important;
+  border: 1px solid rgba($color-primary, .5);
 
   table {
 	margin-bottom: 0;
   }
 }
 
-
 #attack_claim_form {
   padding-top: 36px;
 
   &:before {
-	content: "ATTACK CLAIMS";
-	width: calc(100% - 2px);
-	left: 0px;
-	top: 0;
-	position: absolute;
-	text-align: center;
-	padding: 8px 0;
+	color: $color-offwhite;
 	font-size: 1rem;
 	font-weight: bold;
 	text-transform: uppercase;
-	color: $color-offwhite;
+	line-height: 100%;
+	text-align: center;
+	padding: 8px 0;
+	content: 'ATTACK CLAIMS';
 	background: $color-secondary;
 	background: linear-gradient(to right, $color-background 0%, $color-secondary 50%, $color-background 100%) !important;
+	width: calc(100% - 2px);
 	border: 1px solid transparent;
 	border-top: none;
 	border-image: linear-gradient(to right, transparent 0%, rgba(82, 165, 248, .5) 50%, transparent 100%);
 	border-image-slice: 1;
-	line-height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0px;
   }
 
   p {
 	position: absolute;
-	right: 4px;
 	top: 4px;
+	right: 4px;
   }
 
   table {
@@ -254,16 +252,16 @@
 		}
 
 		input {
-		  &:not([type="checkbox"]) {
+		  &:not([type='checkbox']) {
 			width: 100%;
 			margin: 0;
 		  }
 
-		  &[type="checkbox"] {
+		  &[type='checkbox'] {
 			margin-left: 0;
 		  }
 
-		  &[type="submit"] {
+		  &[type='submit'] {
 			margin: 0 !important;
 		  }
 		}

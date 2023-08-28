@@ -1,198 +1,187 @@
 /* Page content
    -------------------------------------------------------*/
 #contents {
+  background: transparent;
+  width: auto;
+  border: none;
+  margin: .5rem 0;
   grid-column: 2 / 3;
   grid-column-end: 4;
-  margin: .5rem 0;
-  background: transparent;
-  border: none;
-  width: auto;
   @include respond-below(sm) {
-    grid-row: 3/3;
-    grid-column: 2 / 2;
-    max-width: calc(100vw - 8.14rem);
+	max-width: calc(100vw - 8.14rem);
+	grid-row: 3/3;
+	grid-column: 2 / 2;
   }
 }
-
 
 #contents_header,
 #notice .header {
   display: none;
 }
 
-
 #contents_information,
 .container {
   padding: 0;
 }
 
-
 #manual_info {
-  display: block;
-  height: 1.5rem;
-  width: 1.5rem;
-  margin: .5rem .5rem .5rem auto;
-  padding: 0 0 0 .05rem;
-  border: 1px solid $color-primary;
-  border-radius: 50%;
-  background: transparent;
+  opacity: 0.5;
   color: $color-primary;
   font-size: 1rem;
   text-align: center;
-  opacity: 0.5;
+  padding: 0 0 0 .05rem;
+  display: block;
+  background: transparent;
+  width: 1.5rem;
+  height: 1.5rem;
+  border: 1px solid $color-primary;
+  border-radius: 50%;
+  margin: .5rem .5rem .5rem auto;
   transition: ease all 0.3s;
 
   &:hover {
-    text-decoration: none;
-    background: $color-primary;
-    color: black;
-    opacity: 1;
+	opacity: 1;
+	color: black;
+	text-decoration: none;
+	background: $color-primary;
   }
 }
 
-
 .header,
 h2 {
-  margin: 1rem 0;
+  color: $color-offwhite;
   //padding: .5rem 0;
   font-size: 1rem;
   //letter-spacing: 1px;
-  padding: 10px;
   font-weight: bold;
   text-transform: uppercase;
-  color: $color-offwhite;
+  line-height: 100%;
+  padding: 10px;
   background: $color-secondary;
   background: linear-gradient(to right, $color-background 0%, $color-secondary 50%, $color-background 100%) !important;
   border: 1px solid transparent;
   border-image: linear-gradient(to right, transparent 0%, rgba($color-primary, .5) 50%, transparent 100%);
   border-image-slice: 1;
-  line-height: 100%;
+  margin: 1rem 0;
 
   &.relations_neutral {
-    background: linear-gradient(to right, $color-background 0%, $color-secondary 50%, $color-background 100%) !important;
+	background: linear-gradient(to right, $color-background 0%, $color-secondary 50%, $color-background 100%) !important;
   }
 
   &.relations_war {
-    background: linear-gradient(to right, $color-background 0%, rgba($color-negative, .25) 50%, $color-background 100%) !important;
+	background: linear-gradient(to right, $color-background 0%, rgba($color-negative, .25) 50%, $color-background 100%) !important;
   }
 
   &.relations_hostile {
-    background: linear-gradient(to right, $color-background 0%, rgba($color-negative, .125) 50%, $color-background 100%) !important;
-    outline: none;
+	background: linear-gradient(to right, $color-background 0%, rgba($color-negative, .125) 50%, $color-background 100%) !important;
+	outline: none;
   }
 
   &.relations_brokennap {
-    background: linear-gradient(to right, $color-background 0%, rgba($color-broken, .2) 50%, $color-background 100%) !important;
-    outline: none;
+	background: linear-gradient(to right, $color-background 0%, rgba($color-broken, .2) 50%, $color-background 100%) !important;
+	outline: none;
   }
 
   &.relations_nap {
-    background: linear-gradient(to right, $color-background 0%, rgba($color-neutral, .25) 50%, $color-background 100%) !important;
+	background: linear-gradient(to right, $color-background 0%, rgba($color-neutral, .25) 50%, $color-background 100%) !important;
   }
 
   &.relations_friendly {
-    background: linear-gradient(to right, $color-background 0%, rgba($color-positive, .15) 50%, $color-background 100%) !important;
-    outline: none;
+	background: linear-gradient(to right, $color-background 0%, rgba($color-positive, .15) 50%, $color-background 100%) !important;
+	outline: none;
   }
 
   &.relations_allied {
-    background: linear-gradient(to right, $color-background 0%, rgba($color-neutral, .3) 50%, $color-positive 100%) !important;
+	background: linear-gradient(to right, $color-background 0%, rgba($color-neutral, .3) 50%, $color-positive 100%) !important;
   }
 
   &.relations_own_member {
-    background: linear-gradient(to right, $color-background 0%, rgba($color-own, .25) 50%, $color-background 100%) !important;
+	background: linear-gradient(to right, $color-background 0%, rgba($color-own, .25) 50%, $color-background 100%) !important;
   }
 
   &:empty {
-    display: none;
+	display: none;
   }
 
   a:hover {
-    color: rgba($color-primary, .8);
+	color: rgba($color-primary, .8);
   }
 }
 
-
 #notice {
-  background: linear-gradient(to right, rgba(#000, 0) 0%, rgba(#000, .6) 50%, rgba(#000, 0) 100%);
   padding: .5rem;
-  margin-top: .5rem;
+  background: linear-gradient(to right, rgba(#000, 0) 0%, rgba(#000, .6) 50%, rgba(#000, 0) 100%);
   border: 1px solid transparent;
   border-image: linear-gradient(to right, transparent 0%, rgba(82, 165, 248, .5) 50%, transparent 100%);
   border-image-slice: 1;
+  margin-top: .5rem;
   margin-bottom: 1rem;
 
   .header,
   .footer {
-    display: none;
+	display: none;
   }
 
   .maintext {
-    text-align: center;
-    padding: 0;
-    font-size: $text-default;
+	font-size: $text-default;
+	text-align: center;
+	padding: 0;
 
-    a {
-      font-weight: normal;
+	a {
+	  font-weight: normal;
 
-      &.notice_warning {
-        color: #f35050;
-        opacity: 0.75;
-        font-size: $text-small;
-        line-height: 1.8;
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        font-weight: 900;
-        //animation: pulse-incs 1.5s ease-in-out infinite;
-      }
-    }
+	  &.notice_warning {
+		opacity: 0.75;
+		color: #f35050;
+		font-size: $text-small;
+		font-weight: 900;
+		line-height: 1.8;
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		//animation: pulse-incs 1.5s ease-in-out infinite;
+	  }
+	}
 
-    > br {
-      &:last-child {
-        display: none;
-      }
-    }
+	> br {
+	  &:last-child {
+		display: none;
+	  }
+	}
   }
 }
-
 
 .maintext {
   p + p {
-    margin-top: .5rem;
+	margin-top: .5rem;
   }
 
   table {
-    margin: 0 auto 1rem;
-    width: auto;
-    min-width: 450px;
+	width: auto;
+	min-width: 450px;
+	margin: 0 auto 1rem;
 
-    table {
-      background: $color-secondary;
-    }
+	table {
+	  background: $color-secondary;
+	}
   }
 }
-
 
 span.center {
   display: block;
 }
 
-
 .superhighlight {
   color: inherit;
 }
-
 
 .small {
   font-size: $text-small;
 }
 
-
 .container .header:first-child {
   margin-top: .5rem;
 }
-
 
 .tooltip,
 .info,
@@ -210,51 +199,48 @@ span.center {
 #con_fleets,
 #con_planets,
 #dships_box {
-  background: $color-background !important;
   color: $color-offwhite !important;
-  border: 1px solid rgba($color-primary, .5);
-  padding: .25rem .5rem;
   white-space: initial;
+  padding: .25rem .5rem;
+  background: $color-background !important;
+  border: 1px solid rgba($color-primary, .5);
   box-shadow: 3px 3px 5px 0 rgba(#000, .4);
 }
-
 
 #side_select_box {
   width: auto !important;
 }
 
-
 #pabox_inner {
+  padding: .5rem;
   top: 0 !important;
   left: 0 !important;
-  padding: .5rem;
 
   h2 {
-    background: none;
-    margin: 0 0 .5rem;
-    padding: 0;
-    font-size: 1rem;
+	font-size: 1rem;
+	padding: 0;
+	background: none;
+	margin: 0 0 .5rem;
   }
 
   th,
   td,
   p {
-    color: $color-offwhite;
+	color: $color-offwhite;
 
-    b {
-      font-weight: normal;
-      font-size: $text-small;
-    }
+	b {
+	  font-size: $text-small;
+	  font-weight: normal;
+	}
   }
 
   table {
-    + table,
-    + p {
-      margin-top: 1rem;
-    }
+	+ table,
+	+ p {
+	  margin-top: 1rem;
+	}
   }
 }
-
 
 .tooltip a:hover,
 .info a:hover,
@@ -262,23 +248,21 @@ span.center {
   color: $color-primary-dark;
 }
 
-
 #tab_links {
   display: flex;
-  flex-direction: row;
   align-items: center;
-  justify-content: center;
+  flex-direction: row;
   flex-wrap: wrap;
+  justify-content: center;
 
   li {
-    padding: 0;
+	padding: 0;
 
-    a {
-      margin: 0 .75rem;
-    }
+	a {
+	  margin: 0 .75rem;
+	}
   }
 }
-
 
 //#tab_links {
 //  li {
@@ -317,19 +301,16 @@ span.center {
   font-weight: normal;
 }
 
-
 .textvalue {
   font-weight: bold;
 }
-
 
 .resources .textvalue {
   font-weight: normal;
 }
 
-
 #footer {
+  display: none;
   grid-column: 1 / 4;
   grid-row: 3 / 4;
-  display: none;
 }

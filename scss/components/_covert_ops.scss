@@ -23,18 +23,17 @@
 	  &:nth-last-child(4) {
 		.maintext {
 		  > table {
-
 			tr {
 			  &:nth-child(1),
 			  &:nth-child(2) {
 				th,
 				td {
-				  background: transparent;
 				  font-size: $text-small;
-				  text-transform: uppercase;
 				  font-weight: normal;
-				  padding-left: 2rem;
+				  text-transform: uppercase;
 				  padding-right: 2rem;
+				  padding-left: 2rem;
+				  background: transparent;
 				}
 
 				th {
@@ -57,7 +56,6 @@
 			  td {
 				padding: .5rem;
 			  }
-
 			}
 		  }
 		}
@@ -80,7 +78,7 @@
 				  text-align: center;
 				}
 
-				&:last-child:not([colspan="3"]) {
+				&:last-child:not([colspan='3']) {
 				  text-align: right;
 				}
 			  }
@@ -111,15 +109,15 @@
   }
 
   span {
-	&[style*="red"] {
+	&[style*='red'] {
 	  color: $color-negative !important;
 	}
 
-	&[style*="yellow"] {
+	&[style*='yellow'] {
 	  color: $color-neutral !important;
 	}
 
-	&[style*="white"] {
+	&[style*='white'] {
 	  color: inherit !important;
 	  font-weight: bold;
 	}
@@ -144,33 +142,33 @@
   }
 
   .training_info .title {
-	display: block;
+	font-size: 1rem;
 	padding: .25rem .5rem;
-	margin-bottom: .5rem;
+	display: block;
 	background: $color-bg-th;
 	//background: linear-gradient(135deg, var(--col-panel-light) 0%, var(--col-panel-dark) 100%);
-	font-size: 1rem;
+	margin-bottom: .5rem;
   }
 
   .description {
-	position: relative;
-	padding-left: .5rem;
 	padding-right: 15rem;
+	padding-left: .5rem;
+	position: relative;
   }
 
   .desc_link {
+	font-size: $text-small;
 	display: inline-block;
 	position: absolute;
 	top: 3px;
 	right: 2rem;
-	font-size: $text-small;
   }
 
   .resources {
 	font-size: $text-small;
-	margin-top: .15rem;
 	padding-left: .5rem;
 	display: flex;
+	margin-top: .15rem;
 
 	li.textlabel {
 	  min-width: 7rem;
@@ -178,10 +176,10 @@
   }
 
   .training_amounts {
-	margin-top: -2.5rem;
-	margin-right: 2rem;
 	display: flex;
 	justify-content: flex-end;
+	margin-top: -2.5rem;
+	margin-right: 2rem;
   }
 
   .current_amount {
@@ -215,13 +213,12 @@
   #unit_cost .textlabel {
 	text-align: left;
   }
-
 }
 
 #agents_training,
 #guards_training {
-  background: $color-secondary;
   padding: 0 0 1rem;
+  background: $color-secondary;
 }
 
 #agents_training {

@@ -20,49 +20,56 @@
 */
 //
 // necessary stuff, mixins etc
-@import "lib/mixins";
-@import "lib/variables";
+@import 'lib/mixins';
+@import 'lib/variables';
 //
 // start the actual styles here:
-@import "components/base_32";
-@import "components/global";
-@import "components/top_bar";
-@import "components/menu";
-@import "components/planet_details";
-@import "components/page_content";
-@import "components/overview";
-@import "components/messages";
-@import "components/galaxy_forum";
-@import "components/galaxy_status";
-@import "components/mining";
-@import "components/research_construction_waves";
+@import 'components/base_32';
+@import 'components/global';
+@import 'components/top_bar';
+@import 'components/menu';
+@import 'components/planet_details';
+@import 'components/page_content';
+@import 'components/overview';
+@import 'components/messages';
+@import 'components/galaxy_forum';
+@import 'components/galaxy_status';
+@import 'components/mining';
+@import 'components/research_construction_waves';
 //@import "components/research_construction_waves2";
-@import "components/population";
-@import "components/covert_ops";
-@import "components/production";
-@import "components/fleets";
-@import "components/foreign_affairs";
-@import "components/login_support_manual_stats";
-@import "components/universe";
-@import "components/galaxy";
-@import "components/alliance_defence";
-@import "components/alliance_page_ship_overview";
-@import "components/alliance_attacks";
-@import "components/alliance_fleets";
-@import "components/alliance_applicants";
-@import "components/alliance_members";
-@import "components/alliance_access";
-@import "components/alliance_scans";
-@import "components/history";
-@import "components/page_journal";
-@import "components/news";
-@import "components/bcalc";
-@import "components/scans";
+@import 'components/population';
+@import 'components/covert_ops';
+@import 'components/production';
+@import 'components/fleets';
+@import 'components/foreign_affairs';
+@import 'components/login_support_manual_stats';
+@import 'components/universe';
+@import 'components/galaxy';
+@import 'components/alliance_defence';
+@import 'components/alliance_page_ship_overview';
+@import 'components/alliance_attacks';
+@import 'components/alliance_fleets';
+@import 'components/alliance_applicants';
+@import 'components/alliance_members';
+@import 'components/alliance_access';
+@import 'components/alliance_scans';
+@import 'components/history';
+@import 'components/page_journal';
+@import 'components/news';
+@import 'components/bcalc';
+@import 'components/scans';
 //
-@import "components/forms";
-@import "components/buttons_links";
-@import "components/tables";
+@import 'components/forms';
+@import 'components/buttons_links';
+@import 'components/tables';
 //
-@import "components/scrolls";
+@import 'components/bonuses';
 //
-@import "lib/animations";
+@import 'components/scrolls';
+@import 'lib/animations';
+
+/*!
+*
+*  P.S. If you can see this and the message at the start then you successfully copied and pasted the entire file, epic.
+*/
+

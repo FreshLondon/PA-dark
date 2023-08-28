@@ -1,6 +1,6 @@
 html, body, .pages {
-  min-height: 100%;
   height: 100%;
+  min-height: 100%;
   margin: 0;
 }
 
@@ -20,8 +20,8 @@ body, p, td {
 
 table, th {
   color: #ccc;
-  margin: 0px;
   padding: 0px;
+  margin: 0px;
 }
 
 table {
@@ -29,8 +29,8 @@ table {
 }
 
 form {
-  margin: 0px;
   padding: 0px;
+  margin: 0px;
 }
 
 th {
@@ -50,14 +50,14 @@ th, td {
 }
 
 p {
-  margin: 0px;
   padding: 0 0 7px 0;
+  margin: 0px;
 }
 
 #top {
+  padding-top: 10px;
   width: 1070px;
   margin: 0 auto;
-  padding-top: 10px;
 }
 
 .tnav_link {
@@ -65,11 +65,11 @@ p {
 }
 
 .tnav_link a {
-  height: 11px;
-  margin: 3px 20px 0 20px;
-  width: 100px;
   text-align: center;
   display: block;
+  width: 100px;
+  height: 11px;
+  margin: 3px 20px 0 20px;
 }
 
 #page_bcalc #top {
@@ -84,40 +84,39 @@ p {
   display: none;
 }
 
-
 input, .input, textarea, select, .checkbox {
-  background: #2e5b82;
-  border: 1px solid #cfcfcf;
   color: #CCCCCC;
   font-size: 8pt;
+  background: #2e5b82;
+  border: 1px solid #cfcfcf;
 }
 
-#page input[type="submit"], #page input[type="button"] {
+#page input[type='submit'], #page input[type='button'] {
   color: #303135;
-  padding: 2px 10px;
-  font-weight: bold;
   font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+  font-weight: bold;
   text-transform: uppercase;
+  padding: 2px 10px;
   background: rgb(209, 210, 214);
-  -webkit-box-shadow: inset 0 -8px 10px rgba(0, 0, 0, 0.35), 0 1px 0 rgba(255, 255, 255, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
-  -moz-box-shadow: inset 0 -8px 10px rgba(0, 0, 0, 0.35), 0 1px 0 rgba(255, 255, 255, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
-  box-shadow: inset 0 -8px 10px rgba(0, 0, 0, 0.35), 0 1px 0 rgba(255, 255, 255, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
-  -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
   border-radius: 6px;
+  -moz-box-shadow: inset 0 -8px 10px rgba(0, 0, 0, 0.35), 0 1px 0 rgba(255, 255, 255, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  -webkit-box-shadow: inset 0 -8px 10px rgba(0, 0, 0, 0.35), 0 1px 0 rgba(255, 255, 255, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  box-shadow: inset 0 -8px 10px rgba(0, 0, 0, 0.35), 0 1px 0 rgba(255, 255, 255, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
 }
 
 input[type=number] {
-  -moz-appearance: textfield;
   text-align: right;
+  -moz-appearance: textfield;
 }
 
 input[type=number]::-webkit-inner-spin-button,
 input[type=number]::-webkit-outer-spin-button {
+  margin: 0;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  margin: 0;
 }
 
 .input_coords {
@@ -133,7 +132,7 @@ input.disabled:hover {
   border: 1px solid #cfcfcf !important;
 }
 
-#page input[type="submit"]:hover, #page input[type="button"]:hover {
+#page input[type='submit']:hover, #page input[type='button']:hover {
   border: 1px solid #000000;
   cursor: pointer;
 }
@@ -151,13 +150,13 @@ a {
 }
 
 a:hover {
-  text-decoration: none;
   color: #ccc;
+  text-decoration: none;
 }
 
 .caps {
-  text-align: center;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .left {
@@ -284,8 +283,8 @@ li.li_gen:last-child {
 }
 
 .msg_title {
-  font: 150% bold;
   color: #FFFFFF;
+  font: 150% bold;
 }
 
 .msg_subtitle {
@@ -300,12 +299,11 @@ li.li_gen:last-child {
   color: #00AA00;
 }
 
-
 /*	Menu	*/
 ul, li {
+  padding: 0;
   list-style: none;
   margin: 0;
-  padding: 0;
 }
 
 #menu {
@@ -324,10 +322,10 @@ ul, li {
 .menu_grp li {
   text-align: left;
   text-decoration: none;
-  display: block;
   padding: 4px 0 0 15px;
-  margin: 0;
+  display: block;
   width: 131px !important;
+  margin: 0;
 }
 
 #menu a {
@@ -340,8 +338,8 @@ ul, li {
 }
 
 #menu_time {
-  height: 34px;
   line-height: 17px;
+  height: 34px;
 }
 
 #time_loaded {
@@ -367,24 +365,24 @@ ul, li {
 }
 
 #mining td .metal, #galaxy_fund .metal, #alliance_fund .metal, #alliance_fund_trade .metal, #alliance_fund_donate .metal {
+  display: block;
   background: url('/images/template53/metal_48.png') no-repeat;
   width: 48px;
   height: 46px;
-  display: block;
 }
 
 #mining td .crystal, #galaxy_fund .crystal, #alliance_fund .crystal, #alliance_fund_trade .crystal, #alliance_fund_donate .crystal {
+  display: block;
   background: url('/images/template53/crystal_48.png') no-repeat;
   width: 48px;
   height: 43px;
-  display: block;
 }
 
 #mining td .eonium, #galaxy_fund .eonium, #alliance_fund .eonium, #alliance_fund_trade .eonium, #alliance_fund_donate .eonium {
+  display: block;
   background: url('/images/template53/eonium_48.png') no-repeat;
   width: 48px;
   height: 41px;
-  display: block;
 }
 
 #mining td .textlabel, #galaxy_fund .textlabel, #alliance_fund .textlabel, #alliance_fund_trade .textlabel, #alliance_fund_donate .textlabel {
@@ -399,9 +397,9 @@ ul, li {
 
 .constructions, .research, .scans, .training, .governments {
   display: table;
-  margin-bottom: 10px;
-  border-bottom: 1px dotted;
   width: 100%;
+  border-bottom: 1px dotted;
+  margin-bottom: 10px;
 }
 
 .construction_info p, .research p, .scans p {
@@ -417,13 +415,13 @@ ul, li {
 }
 
 .construction_built {
-  width: 225px;
   text-align: center;
+  width: 225px;
 }
 
 .construction_build {
-  width: 175px;
   text-align: center;
+  width: 175px;
 }
 
 .construction_info .title, .research .title, .research_branch .title, .branch_name h3, .scans .title, .training_info .title, .governments .title {
@@ -455,19 +453,19 @@ ul, li {
 }
 
 .research_branch_list {
-  margin-bottom: 10px;
   border-bottom: 1px dotted;
+  margin-bottom: 10px;
 }
 
 .research_branch .completed .title {
-  width: 100%;
   display: block;
   background: url('/images/template53/tick.gif') no-repeat right;
+  width: 100%;
 }
 
 #production_form table .resources li .textvalue, .training_info .resources li .textvalue {
-  width: 30px;
   display: inline-block;
+  width: 30px;
 }
 
 #production_factories_row .textlabel {
@@ -495,8 +493,8 @@ ul, li {
 
 .scan_multi {
   text-align: right;
-  height: 14px;
   display: block;
+  height: 14px;
 }
 
 .scan_form {
@@ -504,13 +502,13 @@ ul, li {
 }
 
 #scan_multi_form {
-  padding: 10px 0;
   text-align: center;
+  padding: 10px 0;
 }
 
 .training_info .resources li.textlabel {
-  width: 80px;
   display: inline-block;
+  width: 80px;
 }
 
 .training_info p {
@@ -530,16 +528,16 @@ ul, li {
 }
 
 .governments .government_effects {
-  margin-bottom: 10px;
-  display: table;
   text-align: left;
+  display: table;
+  margin-bottom: 10px;
 }
 
 .governments .government_effects .textlabel, .governments .government_effects .textvalue {
+  text-align: left;
   display: block;
   width: 100px;
   float: left;
-  text-align: left;
 }
 
 .governments .government_effects .textlabel {
@@ -591,13 +589,13 @@ ul, li {
 }
 
 .change_up {
-  background: url('/images/template53/up.png') no-repeat 1px;
   padding-left: 15px;
+  background: url('/images/template53/up.png') no-repeat 1px;
 }
 
 .change_down {
-  background: url('/images/template53/down.png') no-repeat 1px;
   padding-left: 15px;
+  background: url('/images/template53/down.png') no-repeat 1px;
 }
 
 #important_messages {
@@ -610,24 +608,24 @@ ul, li {
 }
 
 #important_messages_overlay {
+  -moz-opacity: 0.6;
+  opacity: 0.6;
+  background: #000000;
   width: 100%;
   height: 100%;
   position: absolute;
   top: 0px;
   left: 0px;
-  background: #000000;
   filter: alpha(opacity=60);
-  -moz-opacity: 0.6;
-  opacity: 0.6;
 }
 
 #important_messages_contents {
   width: 750px;
   margin-left: -375px;
-  z-index: 2100;
   position: absolute;
-  left: 50%;
   top: 140px;
+  left: 50%;
+  z-index: 2100;
 }
 
 #important_messages_contents .close_link {
@@ -643,7 +641,6 @@ ul, li {
   display: block;
 }
 
-
 .questionmark {
   font-size: 14px;
   font-weight: bold;
@@ -655,8 +652,8 @@ a.questionmark {
 }
 
 .info {
-  max-width: 400px;
   text-align: left;
+  max-width: 400px;
 }
 
 .info_header {
@@ -685,13 +682,13 @@ a.questionmark {
 }
 
 #header .textlabel {
-  float: left;
   margin-left: 5px;
+  float: left;
 }
 
 #header .textvalue {
-  float: right;
   padding-right: 15px;
+  float: right;
 }
 
 #header_tick {
@@ -699,14 +696,13 @@ a.questionmark {
 }
 
 #header #news_new, #header #mail_new {
-  font-weight: bold;
   color: #FF0000;
+  font-weight: bold;
 }
 
-
 #planet_summary {
-  float: right;
   width: 161px;
+  float: right;
   clear: right;
 }
 
@@ -723,9 +719,9 @@ a.questionmark {
 }
 
 #planet_summary .countdown, #planet_summary_construction_current, #planet_summary_research_current, #planet_summary_production_current, #planet_summary_construction_complete, #planet_summary_research_complete {
-  display: block;
   text-align: right;
   padding-right: 15px;
+  display: block;
 }
 
 .planet_summary_production_orders {
@@ -733,36 +729,36 @@ a.questionmark {
 }
 
 #quest_system .completed {
+  display: block;
   background: url('/images/template53/tick.gif') no-repeat;
   width: 15px;
   height: 13px;
-  display: block;
   margin: 0 auto;
 }
 
 .expand {
+  padding: 0 2px;
+  display: block;
   background: url('/images/template53/expand.gif') no-repeat;
   width: 13px;
   height: 12px;
-  display: block;
   float: left;
-  padding: 0 2px;
   cursor: pointer;
 }
 
 .tooltip, .info {
-  background: #213d58;
-  border: 1px solid #FFFFFF;
-  display: none;
-  position: absolute;
-  padding: 5px;
-  font-size: 9pt !important;
-  z-index: 1001;
   color: #ffffff !important;
+  font-size: 9pt !important;
   font-weight: normal !important;
+  text-transform: none !important;
   line-height: normal !important;
   text-align: left !important;
-  text-transform: none !important;
+  padding: 5px;
+  display: none;
+  background: #213d58;
+  border: 1px solid #FFFFFF;
+  position: absolute;
+  z-index: 1001;
 }
 
 .tooltip {
@@ -770,9 +766,9 @@ a.questionmark {
 }
 
 .close_link {
-  float: right;
-  text-decoration: none;
   font-size: 9pt !important;
+  text-decoration: none;
+  float: right;
 }
 
 .progress_wrapper {
@@ -787,18 +783,18 @@ a.questionmark {
 }
 
 .progress_expected {
-  background: url('/images/template53/progress_bar.jpg');
-  opacity: .50;
-  filter: Alpha(opacity=50);
   -moz-opacity: 0.50;
+  opacity: .50;
+  background: url('/images/template53/progress_bar.jpg');
   height: 18px;
   margin-top: -18px;
+  filter: Alpha(opacity=50);
 }
 
 .progress_value {
+  text-align: center;
   height: 18px;
   margin-top: -18px;
-  text-align: center;
 }
 
 /*	Table	*/
@@ -807,18 +803,18 @@ a.questionmark {
 }
 
 .header, h2 {
-  font-weight: bold;
   font-size: 14px;
+  font-weight: bold;
   text-align: center;
-  margin: 0px;
   padding: 5px 0;
+  margin: 0px;
 }
 
 .maintext {
   text-align: left;
+  padding: 10px;
   margin-top: 0px;
   margin-bottom: 0px;
-  padding: 10px;
 }
 
 .maintext table {
@@ -835,58 +831,57 @@ a.questionmark {
 }
 
 .slider_track {
-  float: left;
   font-size: 0px;
   line-height: 0px;
-  margin: 0;
   padding: 4px;
   width: 120px;
+  margin: 0;
+  float: left;
 }
 
 .slider_slider {
-  background: #DDDDDD;
-  height: 2px;
   line-height: 0px;
+  background: #DDDDDD;
+  width: 110px;
+  height: 2px;
   margin: 4px 4px 2px 4px;
   position: absolute;
-  width: 110px;
   z-index: 1;
 }
 
 .population_slider {
-  background: #b3b5b6;
-  border: 1px solid #DDDDDD;
-  height: 10px;
   line-height: 0px;
+  background: #b3b5b6;
+  width: 10px;
+  height: 10px;
+  border: 1px solid #DDDDDD;
   margin: 0;
   position: relative;
-  width: 10px;
   z-index: 1;
 }
 
 .display_holder {
-  float: right;
+  text-align: right;
+  padding: 0;
+  width: 34px;
   height: 20px;
   margin: 0;
-  padding: 0;
-  text-align: right;
-  width: 34px;
+  float: right;
 }
 
 .population_display {
-  border: 0;
   color: #b3b5b6;
-  cursor: default;
   font: 11px;
-  padding: 3px 2px 0 0;
   text-align: right;
+  padding: 3px 2px 0 0;
   width: 30px;
+  border: 0;
+  cursor: default;
 }
 
-
 .forum {
-  display: table;
   padding-bottom: 16px;
+  display: table;
   width: 100%;
 }
 
@@ -896,38 +891,38 @@ div.forum_title {
 }
 
 a.forum_title {
+  line-height: 16px;
   width: 100%;
   height: 16px;
-  line-height: 16px;
 }
 
 .forum_description {
-  width: 100%;
-  display: block;
   color: #FFFFFF;
   font-size: 8px;
+  display: block;
+  width: 100%;
 }
 
 .forum_thread_title {
-  float: left;
-  width: 300px;
   text-align: left;
   padding-left: 5px;
   overflow: visible;
+  width: 300px;
+  float: left;
 }
 
 .forum_thread_lastpost {
-  float: left;
-  width: 160px;
   text-align: right;
   padding-right: 5px;
   overflow: visible;
+  width: 160px;
+  float: left;
 }
 
 .forum_thread_replies {
-  float: left;
-  width: 60px;
   text-align: center;
+  width: 60px;
+  float: left;
 }
 
 .forum_thread_views {
@@ -935,24 +930,24 @@ a.forum_title {
 }
 
 .forum_thread_header_title {
-  float: left;
-  width: 305px;
-  text-align: center;
   font-weight: bold;
+  text-align: center;
+  width: 305px;
+  float: left;
 }
 
 .forum_thread_header_lastpost {
-  float: left;
-  width: 165px;
-  text-align: center;
   font-weight: bold;
+  text-align: center;
+  width: 165px;
+  float: left;
 }
 
 .forum_thread_header_replies {
-  float: left;
-  width: 60px;
-  text-align: center;
   font-weight: bold;
+  text-align: center;
+  width: 60px;
+  float: left;
 }
 
 .forum_thread_header_views {
@@ -960,11 +955,11 @@ a.forum_title {
 }
 
 .forum_thread_actions {
-  width: 150px;
   background: #213d58;
+  width: 150px;
   border: solid 1px #FFFFFF;
-  z-index: 2;
   position: absolute;
+  z-index: 2;
 }
 
 .forum_thread_actions span {
@@ -973,72 +968,72 @@ a.forum_title {
 }
 
 .forum_thread_actions_button {
+  text-indent: -1000px;
   background: url('/images/template53/down_arrow.jpg') no-repeat;
   width: 17px;
   height: 15px;
-  text-indent: -1000px;
 }
 
 .forum_thread_title * {
-  float: left;
   padding-right: 2px;
+  float: left;
 }
 
 #forum_nav {
-  height: 20px;
   padding-bottom: 5px;
+  height: 20px;
 }
 
 .forum_post {
-  width: 100%;
   display: table;
+  width: 100%;
 }
 
 .forum_post_time {
-  float: right;
-  width: 300px;
   text-align: right;
+  width: 300px;
+  float: right;
 }
 
 .forum_post_number {
-  float: left;
-  width: 30px;
   text-align: left;
+  width: 30px;
+  float: left;
 }
 
 .forum_poster {
-  float: left;
-  width: 120px;
-  clear: left;
   text-align: left;
+  width: 120px;
   margin-bottom: 10px;
+  float: left;
+  clear: left;
 }
 
 .forum_post_title {
-  float: left;
-  width: 400px;
   font-weight: bold;
   text-align: center;
+  width: 400px;
   margin-bottom: 10px;
+  float: left;
 }
 
 .forum_post_text {
-  float: left;
-  width: 100%;
   text-align: left;
+  width: 100%;
   margin-bottom: 10px;
+  float: left;
 }
 
 .forum_post_notes {
-  float: left;
-  width: 100%;
   font-size: 80%;
   font-style: italic;
+  width: 100%;
+  float: left;
 }
 
 .forum_post_actions {
-  float: left;
   width: 100%;
+  float: left;
 }
 
 .forum_post_seperator {
@@ -1047,20 +1042,20 @@ a.forum_title {
 }
 
 .forum_post_delete, .forum_post_edit, .forum_post_report {
-  float: left;
   margin-left: 15px;
+  float: left;
 }
 
 .forum_post_quote, .forum_post_reply {
-  float: right;
   margin-right: 15px;
+  float: right;
 }
 
 #forum_poll {
+  display: table;
   width: 300px;
   border: 1px solid #FFFFFF;
   margin: 17px auto;
-  display: table;
 }
 
 .forum_poll_question
@@ -1079,26 +1074,26 @@ a.forum_title {
 }
 
 .forum_poll_option_name {
-  float: left;
   width: 50%;
+  float: left;
   clear: left;
 }
 
 .forum_poll_option_select {
-  float: right;
   width: 50%;
+  float: right;
 }
 
 .forum_poll_votes {
+  font-size: 70%;
   width: 100%;
   height: 20px;
-  font-size: 70%;
 }
 
 .forum_poll_votes div {
+  background: #5292da;
   height: 5px;
   float: left;
-  background: #5292da;
 }
 
 .forum_poll_votes_right {
@@ -1107,10 +1102,10 @@ a.forum_title {
 }
 
 .quote, blockquote {
+  padding: 5px;
   width: 90%;
   border: dashed #FFFFFF 1px;
   margin: 10px auto;
-  padding: 5px;
 }
 
 .code_body {
@@ -1122,8 +1117,8 @@ a.forum_title {
 }
 
 .mceEditorContainer td {
-  text-align: left;
   color: #000000;
+  text-align: left;
 }
 
 .ter {
@@ -1155,9 +1150,9 @@ a.forum_title {
 }
 
 #ad_vert {
-  float: left;
-  margin-left: 10px;
   margin-top: 33px;
+  margin-left: 10px;
+  float: left;
 }
 
 #ad_horz {
@@ -1179,38 +1174,38 @@ a.forum_title {
 }
 
 .relations_friendly {
-  outline: #004000 1px solid;
   background: rgba(00, 40, 00, 0.2);
+  outline: #004000 1px solid;
 }
 
 .relations_allied {
-  outline: #009000 1px solid;
   background: rgba(00, 90, 00, 0.2);
+  outline: #009000 1px solid;
 }
 
 .relations_hostile {
-  outline: #500000 1px solid;
   background: rgba(50, 00, 00, 0.2);
+  outline: #500000 1px solid;
 }
 
 .relations_war {
-  outline: #900000 1px solid;
   background: rgba(90, 00, 00, 0.2);
+  outline: #900000 1px solid;
 }
 
 .relations_nap {
-  outline: #808000 1px solid;
   background: rgba(80, 80, 00, 0.4);
+  outline: #808000 1px solid;
 }
 
 .relations_own_member {
-  outline: #0082ff 1px solid;
   background: rgba(0, 130, 255, 0.2);
+  outline: #0082ff 1px solid;
 }
 
 .relations_own_recruit {
-  outline: #d57500 1px solid;
   background: rgba(213, 117, 0, 0.3);
+  outline: #d57500 1px solid;
 }
 
 .relations_own_applicant {
@@ -1249,8 +1244,8 @@ a.forum_title {
 }
 
 .def_controls, .global_controls, .att_controls {
-  width: 33%;
   text-align: center;
+  width: 33%;
   height: 25px;
 }
 
@@ -1259,9 +1254,9 @@ a.forum_title {
 }
 
 #scans_area {
-  height: 20px;
-  width: 200px;
   background: transparent;
+  width: 200px;
+  height: 20px;
 }
 
 #edit_comment {
@@ -1269,12 +1264,12 @@ a.forum_title {
 }
 
 #def_side, #att_side {
-  font-weight: bold;
   font-size: 14px;
-  height: 23px;
+  font-weight: bold;
   text-align: center;
-  margin: 0px;
   padding: 5px 0 0 0;
+  height: 23px;
+  margin: 0px;
 }
 
 #def_reports table, #att_reports table {
@@ -1292,10 +1287,10 @@ a.forum_title {
 
 .def_name, #def_header_ship, .att_name, #att_header_ship {
   font-weight: bold;
-  width: 120px;
-  min-width: 120px;
   text-align: left;
   text-indent: 5px;
+  width: 120px;
+  min-width: 120px;
 }
 
 .def_name, .att_name {
@@ -1306,8 +1301,8 @@ a.forum_title {
 }
 
 #def_show, #att_show {
-  padding: 2px;
   text-align: center;
+  padding: 2px;
 }
 
 .def_name span:hover, .att_name span:hover {
@@ -1315,8 +1310,8 @@ a.forum_title {
 }
 
 .def_fleet, .att_fleet, .def_fleet_gaps, .att_fleet_gaps, #def_header_st_ro_amount, #def_header_st_ro_lost {
-  width: 63px;
   text-align: center;
+  width: 63px;
 }
 
 .def_row input, .att_row input {
@@ -1324,15 +1319,15 @@ a.forum_title {
 }
 
 .def_header, .att_header, .def_report_header, .att_report_header {
-  font-weight: bold;
   color: #FFFFFF;
+  font-weight: bold;
   text-align: center;
 }
 
 .def_report_metal, .att_report_metal, .def_report_crystal, .att_report_crystal, .def_report_eonium, .att_report_eonium,
 .def_report_name, .att_report_name, .def_report_arrived, .att_report_arrived, .def_report_lost, .att_report_lost, .def_value_name, .att_score_name {
-  width: 33%;
   font-weight: normal;
+  width: 33%;
 }
 
 .def_report_arrived, .att_report_arrived, .def_report_lost, .att_report_lost, .def_report_salvage * {
@@ -1346,15 +1341,15 @@ a.forum_title {
 }
 
 .def_report_gained, .att_report_gained {
-  width: 67%;
   font-weight: normal;
+  width: 67%;
 }
 
 #def_header_killed, .def_killed, #def_header_emped, .def_emped, #def_header_stolen, .def_stolen,
 #att_header_killed, .att_killed, #att_header_emped, .att_emped, #att_header_stolen, .att_stolen, .def_total, .att_total {
+  text-align: center;
   width: 80px;
   min-width: 80px;
-  text-align: center;
 }
 
 .def_name, .att_name, .def_row, .att_row, .def_structures_lost, .def_metal_asteroids_lost, .def_crystal_asteroids_lost, .def_eonium_asteroids_lost {
@@ -1362,29 +1357,29 @@ a.forum_title {
 }
 
 .def_killed, .att_killed {
-  font-weight: normal;
   color: #d50000;
+  font-weight: normal;
 }
 
 .def_emped, .att_emped {
-  font-weight: normal;
   color: #00FFFF;
+  font-weight: normal;
 }
 
 .def_stolen, .att_stolen {
-  font-weight: normal;
   color: #ed6a12;
+  font-weight: normal;
 }
 
 .def_value_lost, .att_score_lost {
-  font-weight: normal;
   color: #d50000;
+  font-weight: normal;
   text-align: center;
 }
 
 .def_value_gained, .att_score_gained {
-  font-weight: normal;
   color: #00aa01;
+  font-weight: normal;
   text-align: center;
 }
 
@@ -1438,17 +1433,17 @@ a.forum_title {
 }
 
 #info_loading {
-  background: url('/images/template53/loading.gif') center no-repeat;
   display: block;
+  background: url('/images/template53/loading.gif') center no-repeat;
   height: 33px;
 }
 
 #my_bcalcs, #add_other, #add_own, #fleet_select_box, #side_select_box, #edit_comment_box, #con_fleets, #con_planets, #planet_note, #load_box, .display_box_small {
-  width: 500px;
   background: #213d58;
+  width: 500px;
+  border: 1px solid #FFFFFF;
   position: absolute;
   z-index: 1000;
-  border: 1px solid #FFFFFF;
 }
 
 #add_other, #fleet_select_box, #side_select_box, #edit_comment_box, #con_fleets, #con_planets, #planet_note, .display_box_small {
@@ -1466,19 +1461,19 @@ a.forum_title {
 }
 
 #intel_form {
+  padding: 5px;
   background: #213d58;
   border: 1px solid #FFFFFF;
-  padding: 5px;
 }
 
 #tab_links li {
-  display: inline;
   padding: 0 20px;
+  display: inline;
 }
 
 .tab_link_active {
-  text-decoration: none;
   color: #FFFFFF;
+  text-decoration: none;
 }
 
 #alliance_menu {
@@ -1486,8 +1481,8 @@ a.forum_title {
 }
 
 #alliance_menu li {
-  display: inline;
   padding: 0 20px;
+  display: inline;
 }
 
 .alliance_def_error {
@@ -1537,67 +1532,67 @@ a.forum_title {
 }
 
 #pabox_loading {
+  display: none;
+  overflow: hidden;
+  background: url('/images/template53/loading.gif');
+  width: 32px;
+  height: 32px;
+  margin-top: -20px;
+  margin-left: -20px;
   position: fixed;
   top: 50%;
   left: 50%;
-  height: 32px;
-  width: 32px;
-  background: url('/images/template53/loading.gif');
-  margin-top: -20px;
-  margin-left: -20px;
-  cursor: pointer;
-  overflow: hidden;
   z-index: 1104;
-  display: none;
+  cursor: pointer;
 }
 
 #pabox_display {
   padding: 0;
-  margin: 0;
-  border: 0;
-  overflow: auto;
   display: none;
+  overflow: auto;
+  border: 0;
+  margin: 0;
 }
 
 #pabox_overlay {
+  display: none;
+  background: #000000;
   position: fixed;
   top: 0;
-  left: 0;
-  bottom: 0;
   right: 0;
-  background: #000000;
+  bottom: 0;
+  left: 0;
   z-index: 1100;
-  display: none;
 }
 
 #pabox_wrapper {
+  padding: 20px;
+  display: none;
+  margin: 0;
   position: absolute;
   top: 0;
   left: 0;
-  margin: 0;
-  padding: 20px;
   z-index: 1101;
-  display: none;
 }
 
 #pabox_outer {
-  position: relative;
+  background: #213d58;
   width: 100%;
   height: 100%;
-  background: #213d58;
   border: 1px solid #FFFFFF;
+  position: relative;
 }
 
 #pabox_inner {
+  padding: 0;
+  overflow: auto;
+  width: 1px;
+  height: 1px;
+  outline: none;
+  margin: 0;
   position: absolute;
   top: 0;
   left: 0;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: 0;
-  outline: none;
-  overflow: auto;
 }
 
 .pabox_title {
@@ -1606,20 +1601,20 @@ a.forum_title {
 }
 
 #pabox_title_layered {
-  bottom: 0;
   background: #000000;
+  bottom: 0;
 }
 
 #pabox_close {
+  display: none;
+  background: url('/images/template53/close.png');
+  width: 30px;
+  height: 30px;
   position: absolute;
   top: -15px;
   right: -15px;
-  width: 30px;
-  height: 30px;
-  background: url('/images/template53/close.png');
-  cursor: pointer;
   z-index: 1103;
-  display: none;
+  cursor: pointer;
 }
 
 .ally_def_incs_wrapper {
@@ -1637,8 +1632,8 @@ a.forum_title {
 }
 
 .ally_def_eta {
-  font-weight: bold;
   font-size: 14px;
+  font-weight: bold;
   text-align: center;
   padding: 2px 0;
   cursor: pointer;
@@ -1658,8 +1653,8 @@ a.forum_title {
 }
 
 .ally_def_target_toggle_link {
-  margin-left: -10px;
   width: 10px;
+  margin-left: -10px;
   cursor: pointer;
 }
 
@@ -1669,14 +1664,14 @@ a.forum_title {
 }
 
 .ally_def_target_summary {
-  flex: 1 1 auto;
   display: flex;
+  flex: 1 1 auto;
   justify-content: flex-end;
 }
 
 .ally_def_target_mdata {
-  width: 250px;
   display: flex;
+  width: 250px;
 }
 
 .ally_def_target_mdata_nick {
@@ -1684,21 +1679,21 @@ a.forum_title {
 }
 
 .ally_def_target_mdata_roids {
-  width: 50px;
   display: flex;
   justify-content: flex-end;
+  width: 50px;
 }
 
 .ally_def_target_mdata_dp {
-  width: 50px;
   display: flex;
   justify-content: flex-end;
+  width: 50px;
 }
 
 .ally_def_target_mdata_base {
-  width: 60px;
   display: flex;
   justify-content: flex-end;
+  width: 60px;
 }
 
 .ally_def_target_coords, .ally_def_attacker_coords, .ally_def_defender_coords {
@@ -1706,9 +1701,9 @@ a.forum_title {
 }
 
 .ally_def_attacker_fleetname {
-  width: 120px;
-  flex: 1 0 auto;
   white-space: nowrap;
+  flex: 1 0 auto;
+  width: 120px;
 }
 
 .ally_def_attacker_race, .ally_def_defender_race {
@@ -1716,19 +1711,19 @@ a.forum_title {
 }
 
 .ally_def_attacker_orig_eta {
-  width: 1.5em;
   text-align: right;
+  width: 1.5em;
 }
 
 .ally_def_attacker_shipcount {
   text-align: right;
-  width: 3em;
   flex: 1 0 auto;
+  width: 3em;
 }
 
 .ally_def_attacker_links {
-  width: 7em;
   padding-left: 0.5em;
+  width: 7em;
 }
 
 .ally_def_attacker_call_status {
@@ -1736,30 +1731,30 @@ a.forum_title {
 }
 
 .ally_def_attacker_classes {
-  width: 120px;
   padding-left: 0.5em;
+  width: 120px;
 }
 
 .ally_def_attacker_intel {
-  width: 120px;
-  flex: 1 1 auto;
   display: flex;
+  flex: 1 1 auto;
   justify-content: flex-end;
+  width: 120px;
 }
 
 .ally_def_fleetcatch_fleet_name {
-  margin-left: 4em;
   width: 120px;
+  margin-left: 4em;
 }
 
 .ally_def_fleetcatch_fleet_shipcount {
-  width: 6em;
   text-align: right;
+  width: 6em;
 }
 
 .ally_def_defender_fleetname {
-  width: 126px;
   white-space: nowrap;
+  width: 126px;
 }
 
 .ally_def_defender_shipcount {
@@ -1768,25 +1763,25 @@ a.forum_title {
 }
 
 .ally_def_defender_orig_eta {
-  width: 3em;
   text-align: right;
+  width: 3em;
 }
 
 .ally_def_defender_mdata {
-  flex: 1 1 auto;
   display: flex;
+  flex: 1 1 auto;
   justify-content: flex-end;
 }
 
 .ally_def_defender_mdata_nick {
-  width: 100px;
   display: flex;
+  width: 100px;
 }
 
 .ally_def_defender_mdata_ap, .ally_def_defender_mdata_dp {
-  width: 50px;
   display: flex;
   justify-content: flex-end;
+  width: 50px;
 }
 
 .ally_def_details_fleet {
@@ -1795,6 +1790,6 @@ a.forum_title {
 
 .ally_def_details_classes {
   display: flex;
-  justify-content: flex-end;
   flex: 1 1 auto;
+  justify-content: flex-end;
 }

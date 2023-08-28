@@ -10,7 +10,6 @@ a,
   }
 }
 
-
 #menu {
   a {
 	color: rgba($color-primary, .8);
@@ -18,12 +17,12 @@ a,
 
 	&:before,
 	&:after {
-	  content: "";
-	  position: absolute;
-	  bottom: -2px;
+	  content: '';
 	  width: 0;
 	  height: 1px;
 	  margin: 5px 0 0;
+	  position: absolute;
+	  bottom: -2px;
 	  transition: all 0.5s ease-in-out;
 	}
 
@@ -33,14 +32,14 @@ a,
 	}
 
 	&:hover {
-	  cursor: pointer;
 	  color: $color-text;
+	  cursor: pointer;
 
 	  &:before,
 	  &:after {
+		opacity: 1;
 		background: linear-gradient(to right, $color-primary 0%, transparent 100%);
 		width: 100%;
-		opacity: 1;
 	  }
 	}
   }
@@ -59,15 +58,15 @@ a,
 	  }
 
 	  &:after {
-		left: unset !important;
 		right: 50% !important;
+		left: unset !important;
 	  }
 
 	  &:hover {
 		&:before,
 		&:after {
-		  width: 50% !important;
 		  opacity: 1 !important;
+		  width: 50% !important;
 		}
 
 		&:before {
@@ -82,9 +81,8 @@ a,
   }
 }
 
-
-#page input[type="submit"],
-input[type="submit"],
+#page input[type='submit'],
+input[type='submit'],
 .forum_thread_new a,
 .forum_post_report a,
 .forum_post_quote a,
@@ -92,84 +90,78 @@ input[type="submit"],
 .forum_post_edit a,
 .forum_post_delete a,
 #mce_editor_0_parent input,
-#bcalc input[type="button"],
-#bcalc input[type="submit"],
+#bcalc input[type='button'],
+#bcalc input[type='submit'],
 #page_bcalc #fleet_select_box p:last-child a,
 #page_bcalc #add_own p:nth-of-type(2) a,
 #page_bcalc #add_own p:nth-of-type(3) a,
-#page input[type="button"],
-#add_other input[type="button"],
+#page input[type='button'],
+#add_other input[type='button'],
 ul.alliance_attack_claims_list a,
 #currentMoves a,
-#wave_table + p a[onclick^="add_row"],
-#target_table + p a[onclick^="add_row"],
+#wave_table + p a[onclick^='add_row'],
+#target_table + p a[onclick^='add_row'],
 #page_universe_races #intel + .container table a,
-#page_alliance_attacks .container#javascriptwarning + .container + .container table tr[id^="target_"] a,
+#page_alliance_attacks .container#javascriptwarning + .container + .container table tr[id^='target_'] a,
 #page_alliance_attacks .container#javascriptwarning + .container + .container + .container table tr:not([class]):not([id]) a,
 #page_alliance_attacks .container#javascriptwarning + #notice + .container + .container + .container table tr:not([class]):not([id]) a,
-#page_alliance_fleets #contents table tr td[style="width: 20%;"] a,
+#page_alliance_fleets #contents table tr td[style='width: 20%;'] a,
 #page_alliance_defence #dships_box p#dbcalc a,
 #page_scan .maintext a:not(.coords),
 #side_select_box p:not(:first-child) a {
-  display: inline-block;
-  height: 1.5rem;
-  margin: 1rem 0;
-  padding: 0 .5rem;
   color: $color-primary !important;
-  background: rgba($color-secondary, .4) !important;
-  border: 1px solid rgba($color-primary, .5) !important;
-  box-shadow: inset 0 2px 4px 2px rgba(#000, .4);
-  cursor: pointer;
-  border-radius: 3px;
-  text-transform: initial;
-  font-weight: initial;
   font-family: inherit;
   font-size: 1rem;
+  font-weight: initial;
+  text-transform: initial;
   white-space: nowrap;
-  transition-property: color, background, box-shadow;
-  transition-duration: .75s;
+  padding: 0 .5rem;
+  display: inline-block;
+  background: rgba($color-secondary, .4) !important;
+  height: 1.5rem;
+  border: 1px solid rgba($color-primary, .5) !important;
+  border-radius: 3px;
+  box-shadow: inset 0 2px 4px 2px rgba(#000, .4);
+  margin: 1rem 0;
+  cursor: pointer;
   transition-timing-function: linear;
+  transition-duration: .75s;
+  transition-property: color, background, box-shadow;
 
   &:hover {
-	text-decoration: none !important;
 	color: black !important;
+	text-decoration: none !important;
 	background: $color-primary !important;
 	box-shadow: none;
   }
 }
 
-#page_alliance_attacks .container#javascriptwarning + .container + .container table tr[id^="target_"] a {
+#page_alliance_attacks .container#javascriptwarning + .container + .container table tr[id^='target_'] a {
   margin: 0;
 }
-
 
 #page_scan .maintext a,
 #side_select_box p:not(:first-child) a {
   margin: 0;
 }
 
-
-#page_scan .maintext a[href^="showscan"] {
+#page_scan .maintext a[href^='showscan'] {
   margin-bottom: 1rem;
 }
-
 
 ul.alliance_attack_claims_list a {
   margin: .25rem 0;
 }
 
-
-input[type="submit"] {
+input[type='submit'] {
   border: none;
 }
 
-
-a[target="scan"] {
+a[target='scan'] {
+  text-align: center;
   display: inline-block;
   min-width: 12px;
-  text-align: center;
 }
-
 
 #page {
   .container {
@@ -188,15 +180,15 @@ a[target="scan"] {
 
 		  td, li {
 			a {
-			  margin: .75rem;
-			  text-transform: uppercase;
+			  color: $color-primary;
 			  font-size: $text-medium;
 			  font-weight: bold;
-			  letter-spacing: .5px;
-			  color: $color-primary;
-			  position: relative;
-			  display: inline-block;
+			  text-transform: uppercase;
 			  white-space: nowrap;
+			  letter-spacing: .5px;
+			  display: inline-block;
+			  margin: .75rem;
+			  position: relative;
 			  transition: all 0.5s ease-in-out;
 
 			  &.tab_link_active {
@@ -218,13 +210,13 @@ a[target="scan"] {
 
 			  &:before,
 			  &:after {
-				content: "";
-				position: absolute;
-				bottom: -2px;
+				content: '';
+				background: transparent;
 				width: 0;
 				height: 1px;
 				margin: 5px 0 0;
-				background: transparent;
+				position: absolute;
+				bottom: -2px;
 				transition: all 0.3s ease-in-out;
 			  }
 
@@ -237,13 +229,13 @@ a[target="scan"] {
 			  }
 
 			  &:hover {
-				cursor: pointer;
 				color: $color-text;
+				cursor: pointer;
 
 				&:before,
 				&:after {
-				  width: 50%;
 				  opacity: 1;
+				  width: 50%;
 				}
 
 				&:before {
