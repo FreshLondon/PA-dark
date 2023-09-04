@@ -83,9 +83,9 @@
 
 	  &.notice_warning {
 		color: rgba($color-negative, .75);
-		font-size: $text-small;
+		font-size: $text-medium;
 		text-align: center;
-		background: transparent;
+		background: $color-background !important;
 	  }
 
 	  &[colspan='9'],
@@ -95,6 +95,18 @@
 		+ td,
 		+ td + td {
 		  background: rgba(#000, .12);
+		}
+	  }
+
+	  ul.resources {
+		display: flex;
+		justify-content: space-between;
+
+		li {
+		  display: inline-flex;
+		  align-items: center;
+		  flex: 1;
+		  justify-content: flex-start;
 		}
 	  }
 	}

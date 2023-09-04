@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*!
-*  v4.06
+*  v4.07
 *  This skin addon is designed to run by itself, with no other added CSS.
 *
 *  If this skin customisation adds even a tiny bit of enjoyment to your gaming experience it was well worth the
@@ -2230,7 +2230,7 @@ hr {
   font-size: 1rem;
   white-space: nowrap;
   padding: 0.25rem;
-  content: "Ultimate skin v4.06";
+  content: "Ultimate skin v4.07";
   border: 1px solid rgba(82, 165, 248, 0.5);
   position: absolute;
   bottom: -3.75rem;
@@ -3843,7 +3843,7 @@ table.mceEditor tr td select.mceSelectList:first-of-type {
   padding: 1rem 2rem;
 }
 #constructions .maintext .constructions .construction_info .description a.desc_link {
-  top: -41px;
+  top: -39px;
   right: 50%;
   transform: translate(50%, 100%);
 }
@@ -4743,9 +4743,9 @@ table.mceEditor tr td select.mceSelectList:first-of-type {
 }
 #production_form tr td.notice_warning {
   color: rgba(255, 0, 0, 0.75);
-  font-size: 0.75rem;
+  font-size: 0.8rem;
   text-align: center;
-  background: transparent;
+  background: #1a222c !important;
 }
 #production_form tr td[colspan="9"], #production_form tr td[colspan="10"] {
   background: rgba(0, 0, 0, 0.12) !important;
@@ -4754,6 +4754,16 @@ table.mceEditor tr td select.mceSelectList:first-of-type {
 #production_form tr td[colspan="9"] + td + td, #production_form tr td[colspan="10"] + td,
 #production_form tr td[colspan="10"] + td + td {
   background: rgba(0, 0, 0, 0.12);
+}
+#production_form tr td ul.resources {
+  display: flex;
+  justify-content: space-between;
+}
+#production_form tr td ul.resources li {
+  display: inline-flex;
+  align-items: center;
+  flex: 1;
+  justify-content: flex-start;
 }
 #production_form tr:nth-child(even) td {
   background: #1e2935;
