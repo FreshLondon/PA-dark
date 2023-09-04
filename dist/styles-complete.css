@@ -4061,6 +4061,9 @@ table.mceEditor tr td select.mceSelectList:first-of-type {
   font-style: italic;
   border-top: 1px solid rgba(82, 165, 248, 0.25);
 }
+.research .research_next > p:first-child {
+  padding-bottom: 0;
+}
 .research .research_next[id] {
   font-style: normal;
   display: flex;
