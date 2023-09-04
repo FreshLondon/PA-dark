@@ -20,8 +20,8 @@ body, p, td {
 
 table, th {
   color: #ccc;
-  padding: 0px;
-  margin: 0px;
+  padding: 0;
+  margin: 0;
 }
 
 table {
@@ -29,8 +29,8 @@ table {
 }
 
 form {
-  padding: 0px;
-  margin: 0px;
+  padding: 0;
+  margin: 0;
 }
 
 th {
@@ -51,7 +51,7 @@ th, td {
 
 p {
   padding: 0 0 7px 0;
-  margin: 0px;
+  margin: 0;
 }
 
 #top {
@@ -602,8 +602,8 @@ ul, li {
   width: 100%;
   height: 100%;
   position: absolute;
-  top: 0px;
-  left: 0px;
+  top: 0;
+  left: 0;
   z-index: 2000;
 }
 
@@ -614,8 +614,8 @@ ul, li {
   width: 100%;
   height: 100%;
   position: absolute;
-  top: 0px;
-  left: 0px;
+  top: 0;
+  left: 0;
   filter: alpha(opacity=60);
 }
 
@@ -807,14 +807,14 @@ a.questionmark {
   font-weight: bold;
   text-align: center;
   padding: 5px 0;
-  margin: 0px;
+  margin: 0;
 }
 
 .maintext {
   text-align: left;
   padding: 10px;
-  margin-top: 0px;
-  margin-bottom: 0px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .maintext table {
@@ -831,8 +831,8 @@ a.questionmark {
 }
 
 .slider_track {
-  font-size: 0px;
-  line-height: 0px;
+  font-size: 0;
+  line-height: 0;
   padding: 4px;
   width: 120px;
   margin: 0;
@@ -840,7 +840,7 @@ a.questionmark {
 }
 
 .slider_slider {
-  line-height: 0px;
+  line-height: 0;
   background: #DDDDDD;
   width: 110px;
   height: 2px;
@@ -850,7 +850,7 @@ a.questionmark {
 }
 
 .population_slider {
-  line-height: 0px;
+  line-height: 0;
   background: #b3b5b6;
   width: 10px;
   height: 10px;
@@ -1269,7 +1269,7 @@ a.forum_title {
   text-align: center;
   padding: 5px 0 0 0;
   height: 23px;
-  margin: 0px;
+  margin: 0;
 }
 
 #def_reports table, #att_reports table {

@@ -41,8 +41,8 @@ body, p, td {
 
 table, th {
   color: #ccc;
-  padding: 0px;
-  margin: 0px;
+  padding: 0;
+  margin: 0;
 }
 
 table {
@@ -50,8 +50,8 @@ table {
 }
 
 form {
-  padding: 0px;
-  margin: 0px;
+  padding: 0;
+  margin: 0;
 }
 
 th {
@@ -72,7 +72,7 @@ th, td {
 
 p {
   padding: 0 0 7px 0;
-  margin: 0px;
+  margin: 0;
 }
 
 #top {
@@ -623,8 +623,8 @@ ul, li {
   width: 100%;
   height: 100%;
   position: absolute;
-  top: 0px;
-  left: 0px;
+  top: 0;
+  left: 0;
   z-index: 2000;
 }
 
@@ -635,8 +635,8 @@ ul, li {
   width: 100%;
   height: 100%;
   position: absolute;
-  top: 0px;
-  left: 0px;
+  top: 0;
+  left: 0;
   filter: alpha(opacity=60);
 }
 
@@ -828,14 +828,14 @@ a.questionmark {
   font-weight: bold;
   text-align: center;
   padding: 5px 0;
-  margin: 0px;
+  margin: 0;
 }
 
 .maintext {
   text-align: left;
   padding: 10px;
-  margin-top: 0px;
-  margin-bottom: 0px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .maintext table {
@@ -852,8 +852,8 @@ a.questionmark {
 }
 
 .slider_track {
-  font-size: 0px;
-  line-height: 0px;
+  font-size: 0;
+  line-height: 0;
   padding: 4px;
   width: 120px;
   margin: 0;
@@ -861,7 +861,7 @@ a.questionmark {
 }
 
 .slider_slider {
-  line-height: 0px;
+  line-height: 0;
   background: #DDDDDD;
   width: 110px;
   height: 2px;
@@ -871,7 +871,7 @@ a.questionmark {
 }
 
 .population_slider {
-  line-height: 0px;
+  line-height: 0;
   background: #b3b5b6;
   width: 10px;
   height: 10px;
@@ -1280,7 +1280,7 @@ a.forum_title {
   text-align: center;
   padding: 5px 0 0 0;
   height: 23px;
-  margin: 0px;
+  margin: 0;
 }
 
 #def_reports table, #att_reports table {
@@ -3559,7 +3559,7 @@ table.mceEditor tr td .mceSeparatorLine {
   padding: 0;
   height: 26px;
   border: 0;
-  margin-top: 0px;
+  margin-top: 0;
   margin-right: 1rem;
   margin-left: 1rem;
 }
@@ -3761,8 +3761,8 @@ table.mceEditor tr td select.mceSelectList:first-of-type {
 .construction_info .title,
 .scans .title,
 .governments .title {
-  font-size: 1.3rem;
-  text-shadow: 1px 1px 0px #000;
+  font-size: 1rem;
+  text-shadow: 1px 1px 0 #000;
   padding: 0.25rem 0.5rem;
   display: block;
   background: #24303f;
@@ -4048,7 +4048,7 @@ table.mceEditor tr td select.mceSelectList:first-of-type {
 .research .research_current,
 .research .research_next {
   text-align: center;
-  padding: 1rem 2rem;
+  padding: 0.5rem 2rem;
   width: 100% !important;
 }
 .research .research_current .time,
@@ -4059,7 +4059,7 @@ table.mceEditor tr td select.mceSelectList:first-of-type {
 }
 .research .research_next {
   font-style: italic;
-  border-top: 1px solid rgba(82, 165, 248, 0.5);
+  border-top: 1px solid rgba(82, 165, 248, 0.25);
 }
 .research .research_next[id] {
   font-style: normal;
@@ -4087,7 +4087,7 @@ table.mceEditor tr td select.mceSelectList:first-of-type {
 }
 .research .research_next[id] p:last-of-type {
   text-align: center;
-  padding-bottom: 10px;
+  padding-bottom: 0;
   order: 6;
 }
 .research .research_next[id] form.cancelform {
@@ -4377,7 +4377,7 @@ table.mceEditor tr td select.mceSelectList:first-of-type {
   width: 110px;
   height: 4px;
   border: 1px solid rgba(0, 0, 0, 0.5);
-  box-shadow: -1px 1px 5px 0px #000, 0px 0px 1px 1px #52a5f8;
+  box-shadow: -1px 1px 5px 0 #000, 0 0 1px 1px #52a5f8;
   margin: 7px 4px 7px 4px;
   position: absolute;
   z-index: 1;
@@ -4392,7 +4392,7 @@ table.mceEditor tr td select.mceSelectList:first-of-type {
   border-bottom: 1px solid rgba(0, 0, 0, 0.85);
   border-left: 1px solid rgba(80, 164, 246, 0.21);
   border-radius: 6px;
-  box-shadow: inset 0px -1px 2px 1px rgba(0, 0, 0, 0.5), 0px 0px 3px 2px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 -1px 2px 1px rgba(0, 0, 0, 0.5), 0 0 3px 2px rgba(0, 0, 0, 0.3);
   margin-left: 5px;
 }
 .slider_track .population_slider:active {
@@ -6990,7 +6990,7 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
   border-image-slice: 1;
   position: absolute;
   top: 0;
-  left: 0px;
+  left: 0;
 }
 #attack_claim_form p {
   position: absolute;
@@ -7450,7 +7450,7 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
   font-size: 0.9rem;
   background-color: rgba(36, 48, 63, 0.4);
   border-radius: 3px;
-  box-shadow: inset 0px 2px 4px 2px rgba(0, 0, 0, 0.4);
+  box-shadow: inset 0 2px 4px 2px rgba(0, 0, 0, 0.4);
 }
 #page_bcalc #bcalc input[type=checkbox] {
   vertical-align: middle;
