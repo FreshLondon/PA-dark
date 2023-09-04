@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*!
-*  v4.05
+*  v4.06
 *  This skin addon is designed to run by itself, with no other added CSS.
 *
 *  If this skin customisation adds even a tiny bit of enjoyment to your gaming experience it was well worth the
@@ -2230,7 +2230,7 @@ hr {
   font-size: 1rem;
   white-space: nowrap;
   padding: 0.25rem;
-  content: "Ultimate skin v4.05";
+  content: "Ultimate skin v4.06";
   border: 1px solid rgba(82, 165, 248, 0.5);
   position: absolute;
   bottom: -3.75rem;
@@ -5677,7 +5677,7 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
 }
 
 #intel {
-  margin: 36px 0 0;
+  margin: 33px 0 0;
   position: relative;
 }
 #intel:before {
@@ -5730,6 +5730,47 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
 }
 #load_box *:not([colspan="2"]) {
   text-align: right;
+}
+#load_box table tr#intel_ally_row #intel_ally {
+  text-align: center;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  display: inline-block;
+  overflow: hidden;
+  width: 102px;
+  float: right;
+}
+#load_box table tr:nth-child(6) {
+  background: rgba(255, 0, 0, 0.15);
+}
+#load_box table tr:nth-child(7) {
+  background: rgba(50, 205, 50, 0.15);
+}
+#load_box table tr:nth-child(8) {
+  background: rgba(255, 165, 0, 0.15);
+}
+#load_box table tr th[colspan="2"] {
+  color: #ccc;
+  font-size: 0.8rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 100%;
+  text-align: center !important;
+  padding: 12px 0 8px;
+  content: "Intel";
+  background: #24303f;
+  background: linear-gradient(to right, #1a222c 0%, #24303f 50%, #1a222c 100%) !important;
+  width: calc(100% - 4px);
+  border: 1px solid transparent;
+  border-top: none;
+  border-image: linear-gradient(to right, transparent 0%, rgba(82, 165, 248, 0.5) 50%, transparent 100%);
+  border-image-slice: 1;
+}
+#load_box table tr th {
+  text-align: right !important;
+}
+#load_box table tr td {
+  text-align: left !important;
 }
 
 .relations_own_member,

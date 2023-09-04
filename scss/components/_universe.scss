@@ -312,7 +312,7 @@ div[id^='page_universe_'] {
 }
 
 #intel {
-  margin: 36px 0 0;
+  margin: 33px 0 0;
   position: relative;
 
   &:before {
@@ -372,6 +372,70 @@ div[id^='page_universe_'] {
 
   *:not([colspan='2']) {
 	text-align: right;
+  }
+
+  table {
+	tr {
+	  &#intel_ally_row {
+		#intel_ally {
+		  text-align: center;
+		  white-space: nowrap;
+		  text-overflow: ellipsis;
+		  display: inline-block;
+		  overflow: hidden;
+		  width: 102px;
+		  float: right;
+		}
+	  }
+
+	  &#intel_rel_row {
+		#intel_rel {
+		}
+	  }
+
+	  &:nth-child(6) {
+		background: rgba($color-negative, .15);
+	  }
+
+	  &:nth-child(7) {
+		background: rgba($color-positive, .15);
+	  }
+
+	  &:nth-child(8) {
+		background: rgba($color-neutral, .15);
+	  }
+
+	  td {
+	  }
+
+	  th {
+		&[colspan='2'] {
+		  color: #ccc;
+		  font-size: .8rem;
+		  font-weight: bold;
+		  text-transform: uppercase;
+		  line-height: 100%;
+		  text-align: center !important;
+		  padding: 12px 0 8px;
+		  content: 'Intel';
+		  background: #24303f;
+		  background: linear-gradient(to right, #1a222c 0%, #24303f 50%, #1a222c 100%) !important;
+		  width: calc(100% - 4px);
+		  border: 1px solid transparent;
+		  border-top: none;
+		  border-image: linear-gradient(to right, transparent 0%, rgba(82, 165, 248, 0.5) 50%, transparent 100%);
+		  border-image-slice: 1;
+		}
+	  }
+
+	  th {
+		text-align: right !important;
+	  }
+
+	  td {
+		text-align: left !important;
+	  }
+	}
   }
 }
 
