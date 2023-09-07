@@ -128,7 +128,7 @@ hr {
 /* Page Outline
    -------------------------------------------------------*/
 #page {
-  padding: 3rem 0.5rem 0;
+  padding: 3.75rem 0.5rem 0;
   display: grid;
   width: 100%;
   max-width: 90rem;
@@ -703,8 +703,18 @@ hr {
   max-width: unset;
   height: unset;
   position: absolute;
-  top: -35px;
-  left: -5px;
+  top: -50px;
+  left: -183px;
+}
+#header #header_planet:before {
+  content: "";
+  display: block;
+  background-image: url("/images/template60/planetarion-icon.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 212px;
+  height: 43px;
+  position: relative;
 }
 #header #header_planet span.textlabel {
   font-size: 1.2rem;
