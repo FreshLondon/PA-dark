@@ -128,7 +128,7 @@ hr {
 /* Page Outline
    -------------------------------------------------------*/
 #page {
-  padding: 3rem 0.5rem 0;
+  padding: 3.75rem 0.5rem 0;
   display: grid;
   width: 100%;
   max-width: 90rem;
@@ -473,18 +473,6 @@ hr {
   left: 50%;
   transform: translateX(-50%);
 }
-#menu #menu_time span#time_loaded:after {
-  color: rgba(82, 165, 248, 0.5);
-  font-size: 0.75rem;
-  line-height: 1.2;
-  white-space: pre-wrap;
-  content: "contact @UltimateNewbie \aon TG for assistance / bugs";
-  width: 100%;
-  position: absolute;
-  bottom: -5.75rem;
-  left: 50%;
-  transform: translateX(-50%);
-}
 
 #hc_links a.ally_def_selected {
   color: limegreen;
@@ -715,8 +703,18 @@ hr {
   max-width: unset;
   height: unset;
   position: absolute;
-  top: -35px;
-  left: 0;
+  top: -50px;
+  left: -183px;
+}
+#header #header_planet:before {
+  content: "";
+  display: block;
+  background-image: url("/images/template60/planetarion-icon.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 212px;
+  height: 43px;
+  position: relative;
 }
 #header #header_planet span.textlabel {
   font-size: 1.2rem;
@@ -724,6 +722,7 @@ hr {
   letter-spacing: 2px;
   text-shadow: 1px 1px 3px black;
   flex-basis: 100%;
+  margin-left: 16px;
 }
 #header #header_planet span.textlabel:after {
   display: none;

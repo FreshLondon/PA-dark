@@ -163,8 +163,19 @@
 	max-width: unset;
 	height: unset;
 	position: absolute;
-	top: -35px;
-	left: 0;
+	top: -50px;
+	left: -183px;
+
+	&:before {
+	  content: '';
+	  display: block;
+	  background-image: url('/images/template60/planetarion-icon.png');
+	  background-repeat: no-repeat;
+	  background-size: contain;
+	  width: 212px;
+	  height: 43px;
+	  position: relative;
+	}
 
 	span.textlabel {
 	  font-size: $text-huge;
@@ -172,6 +183,7 @@
 	  letter-spacing: 2px;
 	  text-shadow: 1px 1px 3px black;
 	  flex-basis: 100%;
+	  margin-left: 16px;
 
 	  &:after {
 		display: none;

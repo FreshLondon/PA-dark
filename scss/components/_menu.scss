@@ -152,19 +152,6 @@
 		  left: 50%;
 		  transform: translateX(-50%);
 		}
-
-		&:after {
-		  color: rgba($color-primary, .5);
-		  font-size: $text-small;
-		  line-height: 1.2;
-		  white-space: pre-wrap;
-		  content: 'contact @UltimateNewbie \A on TG for assistance / bugs';
-		  width: 100%;
-		  position: absolute;
-		  bottom: -5.75rem;
-		  left: 50%;
-		  transform: translateX(-50%);
-		}
 	  }
 	}
   }
