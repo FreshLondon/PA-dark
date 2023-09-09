@@ -7141,6 +7141,15 @@ body::-webkit-scrollbar-button,
     opacity: 1;
   }
 }
+#header #header_planet:before {
+  display: none;
+}
+
+#menu {
+  padding: 0 0 1rem;
+  margin-top: -25px;
+}
+
 /*!
 *
 *  P.S. If you can see this and the message at the start then you successfully copied and pasted the entire file, epic.
