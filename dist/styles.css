@@ -7141,8 +7141,14 @@ body::-webkit-scrollbar-button,
     opacity: 1;
   }
 }
+#header #header_planet {
+  left: 0;
+}
 #header #header_planet:before {
   display: none;
+}
+#header #header_planet span.textlabel {
+  padding: 19px 0 0;
 }
 
 #menu {

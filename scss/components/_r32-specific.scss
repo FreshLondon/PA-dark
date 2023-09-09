@@ -1,5 +1,13 @@
-#header #header_planet:before {
-  display: none;
+#header #header_planet {
+  left: 0;
+
+  &:before {
+	display: none;
+  }
+
+  span.textlabel {
+	padding: 19px 0 0;
+  }
 }
 
 #menu {
