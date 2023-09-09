@@ -128,7 +128,7 @@ hr {
 /* Page Outline
    -------------------------------------------------------*/
 #page {
-  padding: 3.75rem 0.5rem 0;
+  padding: 36px 0.5rem 0;
   display: grid;
   width: 100%;
   max-width: 90rem;
@@ -352,7 +352,7 @@ hr {
 }
 
 #menu {
-  padding: 0 0 1rem;
+  padding: 83px 0 1rem;
   list-style: none;
   display: table;
   background: #1a222c;
@@ -709,12 +709,15 @@ hr {
 #header #header_planet:before {
   content: "";
   display: block;
-  background-image: url("/images/template60/planetarion-icon.png");
+  background-image: url("/images/template60/ultimate-planetarion.jpg");
   background-repeat: no-repeat;
   background-size: contain;
-  width: 212px;
-  height: 43px;
-  position: relative;
+  background-position: center top;
+  width: 168px;
+  height: 127px;
+  position: absolute;
+  top: 23px;
+  left: 0;
 }
 #header #header_planet span.textlabel {
   font-size: 1.2rem;
@@ -722,7 +725,7 @@ hr {
   letter-spacing: 2px;
   text-shadow: 1px 1px 3px black;
   flex-basis: 100%;
-  margin-left: 16px;
+  padding: 19px 0 0 183px;
 }
 #header #header_planet span.textlabel:after {
   display: none;
