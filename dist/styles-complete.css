@@ -2227,15 +2227,16 @@ hr {
 }
 #menu #menu_time span#time_loaded:before {
   color: rgba(82, 165, 248, 0.5);
-  font-size: 1rem;
-  white-space: nowrap;
+  font-size: 0.4rem;
+  line-height: 1.2;
   padding: 0.25rem;
-  content: "Ultimate skin v4.07";
+  content: "If this skin customisation adds even a tiny bit of enjoyment to your gaming experience it was well worth the countless hours of development. Made with love, for my fellow spreadsheet warriors. UltimateNewbie ♥";
   border: 1px solid rgba(82, 165, 248, 0.5);
   position: absolute;
-  bottom: -3.75rem;
+  bottom: -5rem;
   left: 50%;
   transform: translateX(-50%);
+  width: 106px;
 }
 
 #hc_links a.ally_def_selected {
