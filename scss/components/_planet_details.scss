@@ -3,8 +3,8 @@
 #header {
   padding-top: 38px;
   display: flex;
-  align-content: space-between;
   flex-flow: row wrap;
+  align-content: space-between;
   justify-content: space-around;
   background: $color-secondary;
   height: unset;
@@ -171,8 +171,8 @@
 	  display: block;
 	  background-image: url('/images/template60/ultimate-planetarion.jpg');
 	  background-repeat: no-repeat;
-	  background-size: contain;
 	  background-position: center top;
+	  background-size: contain;
 	  width: 168px;
 	  height: 127px;
 	  position: absolute;
@@ -185,8 +185,8 @@
 	  white-space: nowrap;
 	  letter-spacing: 2px;
 	  text-shadow: 1px 1px 3px black;
-	  flex-basis: 100%;
 	  padding: 19px 0 0 183px;
+	  flex-basis: 100%;
 
 	  &:after {
 		display: none;
@@ -323,8 +323,8 @@
   padding: 30px 0 0;
   display: flex;
   //background: linear-gradient(135deg, var(--col-panel-light) 0%, var(--col-panel-dark) 100%);
-  align-items: center;
   flex-flow: column nowrap;
+  align-items: center;
   justify-content: space-around;
   background: $color-secondary;
   height: unset;
@@ -401,8 +401,8 @@
 #planet_summary_production {
   padding: 0 1rem;
   display: flex;
-  align-items: center;
   flex-flow: row wrap;
+  align-items: center;
   margin: .5rem 0;
 
   span {

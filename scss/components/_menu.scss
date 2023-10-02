@@ -146,12 +146,12 @@
 		  line-height: 1.2;
 		  padding: 0.25rem;
 		  content: 'If this skin customisation adds even a tiny bit of enjoyment to your gaming experience it was well worth the countless hours of development. Made with love, for my fellow spreadsheet warriors. UltimateNewbie \2665';
+		  width: 106px;
 		  border: 1px solid rgba(82, 165, 248, .5);
 		  position: absolute;
 		  bottom: -5rem;
 		  left: 50%;
 		  transform: translateX(-50%);
-		  width: 106px;
 		}
 	  }
 	}
@@ -170,8 +170,8 @@
 
 #alliance_menu {
   display: flex;
-  align-items: center;
   flex-wrap: wrap;
+  align-items: center;
   justify-content: center;
   max-width: 800px;
   margin: 0 auto;

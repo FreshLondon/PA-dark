@@ -185,8 +185,8 @@
 	  .construction_build {
 		padding-left: 2rem;
 		display: flex;
-		align-items: flex-start;
 		flex-wrap: wrap;
+		align-items: flex-start;
 		width: calc(100% - 206px) !important;
 		order: 2;
 
@@ -291,8 +291,8 @@
 			text-align: left;
 			padding: 0;
 			display: flex;
-			align-items: center;
 			flex-direction: row-reverse;
+			align-items: center;
 		  }
 		}
 	  }
@@ -583,8 +583,8 @@
   #tab1 {
 	.maintext {
 	  display: flex;
-	  align-items: center;
 	  flex-wrap: wrap;
+	  align-items: center;
 
 	  .scans {
 		display: flex;

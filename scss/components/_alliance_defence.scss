@@ -224,6 +224,7 @@
 			}
 
 			.ally_def_attacker_fleetname {
+			  text-overflow: ellipsis;
 			  display: flex;
 			  align-items: center;
 			  overflow: hidden;
@@ -377,6 +378,7 @@
 
 			.ally_def_details_fleetname {
 			  font-style: italic;
+			  text-overflow: ellipsis;
 			  flex-grow: 100;
 			  overflow: hidden;
 
@@ -517,6 +519,7 @@
 			}
 
 			.ally_def_defender_fleetname {
+			  text-overflow: ellipsis;
 			  overflow: hidden;
 			  width: 120px;
 			  max-width: 120px !important;

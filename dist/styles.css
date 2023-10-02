@@ -190,8 +190,8 @@ hr {
 }
 #message_form p {
   display: flex;
-  align-items: flex-start;
   flex-wrap: wrap;
+  align-items: flex-start;
   justify-content: center;
 }
 #message_form p:nth-child(1) {
@@ -467,12 +467,12 @@ hr {
   line-height: 1.2;
   padding: 0.25rem;
   content: "If this skin customisation adds even a tiny bit of enjoyment to your gaming experience it was well worth the countless hours of development. Made with love, for my fellow spreadsheet warriors. UltimateNewbie ♥";
+  width: 106px;
   border: 1px solid rgba(82, 165, 248, 0.5);
   position: absolute;
   bottom: -5rem;
   left: 50%;
   transform: translateX(-50%);
-  width: 106px;
 }
 
 #hc_links a.ally_def_selected {
@@ -485,8 +485,8 @@ hr {
 
 #alliance_menu {
   display: flex;
-  align-items: center;
   flex-wrap: wrap;
+  align-items: center;
   justify-content: center;
   max-width: 800px;
   margin: 0 auto;
@@ -557,8 +557,8 @@ hr {
 #header {
   padding-top: 38px;
   display: flex;
-  align-content: space-between;
   flex-flow: row wrap;
+  align-content: space-between;
   justify-content: space-around;
   background: #24303f;
   height: unset;
@@ -712,8 +712,8 @@ hr {
   display: block;
   background-image: url("/images/template60/ultimate-planetarion.jpg");
   background-repeat: no-repeat;
-  background-size: contain;
   background-position: center top;
+  background-size: contain;
   width: 168px;
   height: 127px;
   position: absolute;
@@ -725,8 +725,8 @@ hr {
   white-space: nowrap;
   letter-spacing: 2px;
   text-shadow: 1px 1px 3px black;
-  flex-basis: 100%;
   padding: 19px 0 0 183px;
+  flex-basis: 100%;
 }
 #header #header_planet span.textlabel:after {
   display: none;
@@ -836,8 +836,8 @@ hr {
 #planet_summary {
   padding: 30px 0 0;
   display: flex;
-  align-items: center;
   flex-flow: column nowrap;
+  align-items: center;
   justify-content: space-around;
   background: #24303f;
   height: unset;
@@ -909,8 +909,8 @@ hr {
 #planet_summary_production {
   padding: 0 1rem;
   display: flex;
-  align-items: center;
   flex-flow: row wrap;
+  align-items: center;
   margin: 0.5rem 0;
 }
 #planet_summary_construction span#planet_summary_construction_queue, #planet_summary_construction span#planet_summary_research_queue,
@@ -1230,9 +1230,9 @@ span.center {
 
 #tab_links {
   display: flex;
-  align-items: center;
   flex-direction: row;
   flex-wrap: wrap;
+  align-items: center;
   justify-content: center;
 }
 #tab_links li {
@@ -1609,8 +1609,8 @@ span.mission_attack, span.mission_defend, span.mission_return, span.mission_fake
   font-size: 0.75rem;
   text-align: left;
   display: inline-flex;
-  align-items: center;
   flex-basis: 40%;
+  align-items: center;
 }
 
 .forum_thread_header_replies,
@@ -2153,8 +2153,8 @@ table.mceEditor tr td select.mceSelectList:first-of-type {
 #constructions .maintext .constructions .construction_build {
   padding-left: 2rem;
   display: flex;
-  align-items: flex-start;
   flex-wrap: wrap;
+  align-items: flex-start;
   width: calc(100% - 206px) !important;
   order: 2;
 }
@@ -2238,8 +2238,8 @@ table.mceEditor tr td select.mceSelectList:first-of-type {
   text-align: left;
   padding: 0;
   display: flex;
-  align-items: center;
   flex-direction: row-reverse;
+  align-items: center;
 }
 
 #research > .maintext > p {
@@ -2455,8 +2455,8 @@ table.mceEditor tr td select.mceSelectList:first-of-type {
 }
 #page_waves #tab1 .maintext {
   display: flex;
-  align-items: center;
   flex-wrap: wrap;
+  align-items: center;
 }
 #page_waves #tab1 .maintext .scans {
   display: flex;
@@ -3000,8 +3000,8 @@ table.mceEditor tr td select.mceSelectList:first-of-type {
 }
 #production_form tr td ul.resources li {
   display: inline-flex;
-  align-items: center;
   flex: 1;
+  align-items: center;
   justify-content: flex-start;
 }
 #production_form tr:nth-child(even) td {
@@ -3629,8 +3629,8 @@ th.superhighlight {
 }
 #page_manual #menu #entry_search form {
   display: flex;
-  align-items: center;
   flex-direction: column;
+  align-items: center;
   width: auto;
   margin: 0;
 }
@@ -4706,6 +4706,7 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
   content: "*";
 }
 #page_alliance_defence .maintext .ally_def_eta_wrapper .ally_def_incs_wrapper .ally_def_attackers > div .ally_def_attacker_fleetname {
+  text-overflow: ellipsis;
   display: flex;
   align-items: center;
   overflow: hidden;
@@ -4824,6 +4825,7 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
 }
 #page_alliance_defence .maintext .ally_def_eta_wrapper .ally_def_incs_wrapper .ally_def_details .ally_def_details_fleet .ally_def_details_fleetname {
   font-style: italic;
+  text-overflow: ellipsis;
   flex-grow: 100;
   overflow: hidden;
 }
@@ -4936,6 +4938,7 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
   content: "*";
 }
 #page_alliance_defence .maintext .ally_def_eta_wrapper .ally_def_incs_wrapper .ally_def_defenders .ally_def_defender .ally_def_defender_fleetname {
+  text-overflow: ellipsis;
   overflow: hidden;
   width: 120px;
   max-width: 120px !important;
@@ -5108,8 +5111,8 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
 #page_alliance_attacks .maintext > table > thead > tr[id^=target_] table tr[class^=shadedbackground] td ul.alliance_attack_claims_list,
 #page_alliance_attacks .maintext > table > tbody > tr[id^=target_] table tr[class^=shadedbackground] td ul.alliance_attack_claims_list {
   display: flex;
-  align-items: center;
   flex-wrap: wrap;
+  align-items: center;
   justify-content: flex-start;
 }
 #page_alliance_attacks .maintext > table > thead > tr[id^=target_] table tr[class^=shadedbackground] td ul.alliance_attack_claims_list li,
