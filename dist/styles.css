@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*!
-*  v4.07
+*  v4.08
 *  This skin addon is designed to run with the r32 skin selected in PA preferences.
 *
 *  If this skin customisation adds even a tiny bit of enjoyment to your gaming experience it was well worth the countless hours of development.
@@ -5343,6 +5343,9 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
 }
 #page_alliance_members table tr:nth-child(even) td:empty {
   background: transparent;
+}
+#page_alliance_members table tr:hover td {
+  background: rgba(82, 165, 248, 0.2);
 }
 
 #page_alliance_access .maintext table tr th {
