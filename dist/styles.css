@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*!
-*  v4.08
+*  v4.09
 *  This skin addon is designed to run with the r32 skin selected in PA preferences.
 *
 *  If this skin customisation adds even a tiny bit of enjoyment to your gaming experience it was well worth the countless hours of development.
@@ -820,7 +820,7 @@ hr {
 
 .etd,
 #page_manual .Etd td {
-  color: #a76cc3;
+  color: #c3af6c;
 }
 
 .kin,
@@ -2969,6 +2969,7 @@ table.mceEditor tr td select.mceSelectList:first-of-type {
   text-align: right;
 }
 #production_form tr th {
+  text-align: center;
   background: #171e27;
 }
 #production_form tr td:nth-child(1) {
@@ -3004,8 +3005,14 @@ table.mceEditor tr td select.mceSelectList:first-of-type {
   align-items: center;
   justify-content: flex-start;
 }
+#production_form tr td[id^=stock_], #production_form tr td[id^=total_] {
+  font-size: 0.9rem;
+}
 #production_form tr:nth-child(even) td {
   background: #1e2935;
+}
+#production_form tr:hover td {
+  background: rgba(82, 165, 248, 0.2);
 }
 
 span.small.notice_warning {
@@ -3728,10 +3735,10 @@ th.superhighlight {
 }
 
 .Etd {
-  background: rgba(167, 108, 195, 0.3);
+  background: rgba(195, 175, 108, 0.3);
 }
 .Etd:nth-child(odd) {
-  background: rgba(167, 108, 195, 0.4);
+  background: rgba(195, 175, 108, 0.4);
 }
 
 .Kin {
@@ -3844,7 +3851,7 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
   color: #00b7ff;
 }
 #page_universe #contents table a.gc {
-  color: #ffffff;
+  color: #00e413;
   font-weight: bold;
 }
 #page_universe #contents table tr {
@@ -4106,7 +4113,7 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
   color: #c93716;
 }
 [id^=page_universe] table tr .etd {
-  color: #a76cc3;
+  color: #c3af6c;
 }
 [id^=page_universe] table tr .kin {
   color: #7745d2;
@@ -5819,10 +5826,10 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
   color: #c93716;
 }
 #page_bcalc #bcalc #def_show input[type=checkbox]#def_race_etd {
-  border-color: #a76cc3 !important;
+  border-color: #c3af6c !important;
 }
 #page_bcalc #bcalc #def_show input[type=checkbox]#def_race_etd:before {
-  color: #a76cc3;
+  color: #c3af6c;
 }
 #page_bcalc #bcalc #def_show input[type=checkbox]#def_race_kin {
   border-color: #7745d2 !important;
@@ -5861,10 +5868,10 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
   color: #c93716;
 }
 #page_bcalc #bcalc #att_show input[type=checkbox]#att_race_etd {
-  border-color: #a76cc3;
+  border-color: #c3af6c;
 }
 #page_bcalc #bcalc #att_show input[type=checkbox]#att_race_etd:before {
-  color: #a76cc3;
+  color: #c3af6c;
 }
 #page_bcalc #bcalc #att_show input[type=checkbox]#att_race_kin {
   border-color: #7745d2 !important;
@@ -5958,13 +5965,13 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
 #page_bcalc #bcalc .def_etd td,
 #page_bcalc #bcalc .att_etd th,
 #page_bcalc #bcalc .att_etd td {
-  background-color: rgba(167, 108, 195, 0.3);
+  background-color: rgba(195, 175, 108, 0.3);
 }
 #page_bcalc #bcalc .def_etd:hover th,
 #page_bcalc #bcalc .def_etd:hover td,
 #page_bcalc #bcalc .att_etd:hover th,
 #page_bcalc #bcalc .att_etd:hover td {
-  background-color: rgba(167, 108, 195, 0.4);
+  background-color: rgba(195, 175, 108, 0.4);
 }
 #page_bcalc #bcalc .def_kin,
 #page_bcalc #bcalc .att_kin {
@@ -6632,34 +6639,61 @@ ul.alliance_attack_claims_list a,
   transition-duration: 0.75s;
   transition-property: color, background, box-shadow;
 }
-#page input[type=submit]:hover,
+#page input[type=submit]:hover, #page input[type=submit]:focus,
 input[type=submit]:hover,
+input[type=submit]:focus,
 .forum_thread_new a:hover,
+.forum_thread_new a:focus,
 .forum_post_report a:hover,
+.forum_post_report a:focus,
 .forum_post_quote a:hover,
+.forum_post_quote a:focus,
 .forum_post_reply a:hover,
+.forum_post_reply a:focus,
 .forum_post_edit a:hover,
+.forum_post_edit a:focus,
 .forum_post_delete a:hover,
+.forum_post_delete a:focus,
 #mce_editor_0_parent input:hover,
+#mce_editor_0_parent input:focus,
 #bcalc input[type=button]:hover,
+#bcalc input[type=button]:focus,
 #bcalc input[type=submit]:hover,
+#bcalc input[type=submit]:focus,
 #page_bcalc #fleet_select_box p:last-child a:hover,
+#page_bcalc #fleet_select_box p:last-child a:focus,
 #page_bcalc #add_own p:nth-of-type(2) a:hover,
+#page_bcalc #add_own p:nth-of-type(2) a:focus,
 #page_bcalc #add_own p:nth-of-type(3) a:hover,
+#page_bcalc #add_own p:nth-of-type(3) a:focus,
 #page input[type=button]:hover,
+#page input[type=button]:focus,
 #add_other input[type=button]:hover,
+#add_other input[type=button]:focus,
 ul.alliance_attack_claims_list a:hover,
+ul.alliance_attack_claims_list a:focus,
 #currentMoves a:hover,
+#currentMoves a:focus,
 #wave_table + p a[onclick^=add_row]:hover,
+#wave_table + p a[onclick^=add_row]:focus,
 #target_table + p a[onclick^=add_row]:hover,
+#target_table + p a[onclick^=add_row]:focus,
 #page_universe_races #intel + .container table a:hover,
+#page_universe_races #intel + .container table a:focus,
 #page_alliance_attacks .container#javascriptwarning + .container + .container table tr[id^=target_] a:hover,
+#page_alliance_attacks .container#javascriptwarning + .container + .container table tr[id^=target_] a:focus,
 #page_alliance_attacks .container#javascriptwarning + .container + .container + .container table tr:not([class]):not([id]) a:hover,
+#page_alliance_attacks .container#javascriptwarning + .container + .container + .container table tr:not([class]):not([id]) a:focus,
 #page_alliance_attacks .container#javascriptwarning + #notice + .container + .container + .container table tr:not([class]):not([id]) a:hover,
+#page_alliance_attacks .container#javascriptwarning + #notice + .container + .container + .container table tr:not([class]):not([id]) a:focus,
 #page_alliance_fleets #contents table tr td[style="width: 20%;"] a:hover,
+#page_alliance_fleets #contents table tr td[style="width: 20%;"] a:focus,
 #page_alliance_defence #dships_box p#dbcalc a:hover,
+#page_alliance_defence #dships_box p#dbcalc a:focus,
 #page_scan .maintext a:not(.coords):hover,
-#side_select_box p:not(:first-child) a:hover {
+#page_scan .maintext a:not(.coords):focus,
+#side_select_box p:not(:first-child) a:hover,
+#side_select_box p:not(:first-child) a:focus {
   color: black !important;
   text-decoration: none !important;
   background: #52a5f8 !important;

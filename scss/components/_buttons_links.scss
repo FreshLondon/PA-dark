@@ -128,7 +128,8 @@ ul.alliance_attack_claims_list a,
   transition-duration: .75s;
   transition-property: color, background, box-shadow;
 
-  &:hover {
+  &:hover,
+  &:focus {
 	color: black !important;
 	text-decoration: none !important;
 	background: $color-primary !important;

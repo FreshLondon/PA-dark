@@ -64,6 +64,7 @@
 	}
 
 	th {
+	  text-align: center;
 	  background: $color-bg-th;
 	}
 
@@ -109,11 +110,22 @@
 		  justify-content: flex-start;
 		}
 	  }
+
+	  &[id^='stock_'],
+	  &[id^='total_'] {
+		font-size: .9rem;
+	  }
 	}
 
 	&:nth-child(even) {
 	  td {
 		background: $color-secondary-alt;
+	  }
+	}
+
+	&:hover {
+	  td {
+		background: rgba($color-primary, .2);
 	  }
 	}
   }
