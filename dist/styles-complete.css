@@ -5691,12 +5691,12 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
   background-color: #7745d2 !important;
 }
 #page_universe_races #intel + .container table tr td:nth-child(7) a {
-  color: #c2146a !important;
-  border-color: #c2146a !important;
+  color: #c3af6c !important;
+  border-color: #c3af6c !important;
 }
 #page_universe_races #intel + .container table tr td:nth-child(7) a:hover {
   color: #1a222c !important;
-  background-color: #c2146a !important;
+  background-color: #c3af6c !important;
 }
 
 #intel {
