@@ -4970,6 +4970,7 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
 }
 #page_alliance_defence .maintext .ally_def_eta_wrapper .ally_def_incs_wrapper .ally_def_fleetcatch {
   font-size: 0.9rem;
+  background: rgba(136, 136, 136, 0.1);
 }
 #page_alliance_defence .maintext .ally_def_eta_wrapper .ally_def_incs_wrapper .ally_def_fleetcatch .ally_def_fleetcatch_fleet .ally_def_fleetcatch_fleet_name {
   font-size: 0.9rem !important;
@@ -7294,7 +7295,6 @@ body::-webkit-scrollbar-button,
 
 #menu {
   padding: 0 0 14px;
-  margin-top: -25px;
 }
 
 /*!
