@@ -2166,7 +2166,7 @@ table.mceEditor tr td select.mceSelectList:first-of-type {
 }
 #constructions .maintext .constructions .construction_build .resources {
   text-align: left;
-  padding: 0 28px 0 0;
+  padding: 0;
   display: flex;
   align-items: center;
   justify-content: flex-start;
