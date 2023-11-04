@@ -4160,10 +4160,6 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
   margin: 0 !important;
 }
 
-#page_universe_feed table tr:first-child td {
-  background: #1e2935;
-}
-
 #page_universe table,
 #page_universe_launches table,
 #page_universe_covert_ops table,

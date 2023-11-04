@@ -569,17 +569,6 @@ div[id^='page_universe_'] {
   }
 }
 
-#page_universe_feed {
-  table {
-	tr {
-	  &:first-child {
-		td {
-		  background: $color-secondary-alt;
-		}
-	  }
-	}
-  }
-}
 
 #page_universe,
 #page_universe_launches,
