@@ -5543,6 +5543,10 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
 }
 #page_universe #contents .container:nth-last-child(2) table tr, #page_universe #contents .container:nth-last-child(3) table tr {
   background-color: #24303f;
+  transition: all 0.3s ease-in-out;
+}
+#page_universe #contents .container:nth-last-child(2) table tr:hover td, #page_universe #contents .container:nth-last-child(3) table tr:hover td {
+  background-color: rgba(255, 255, 255, 0.06);
 }
 #page_universe #contents .container:nth-last-child(2) table tr.relations_war, #page_universe #contents .container:nth-last-child(3) table tr.relations_war {
   background: rgba(255, 0, 0, 0.25);
@@ -5619,7 +5623,12 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
   font-weight: bold;
 }
 #page_universe #contents table tr {
+  opacity: 0.9;
   margin: 0.125rem 0;
+  transition: all 0.3s ease-in-out;
+}
+#page_universe #contents table tr:hover {
+  opacity: 1;
 }
 #page_universe #contents table tr:first-child {
   background: transparent;
@@ -5907,9 +5916,25 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
 
 #page_universe table,
 #page_universe_launches table,
-#page_universe_covert_ops table {
+#page_universe_covert_ops table,
+#page_universe_feed table,
+#page_universe_combat_reports table {
   width: 100%;
   max-width: unset;
+}
+#page_universe table tr:hover td,
+#page_universe_launches table tr:hover td,
+#page_universe_covert_ops table tr:hover td,
+#page_universe_feed table tr:hover td,
+#page_universe_combat_reports table tr:hover td {
+  background-color: rgba(255, 255, 255, 0.06);
+}
+#page_universe table tr td,
+#page_universe_launches table tr td,
+#page_universe_covert_ops table tr td,
+#page_universe_feed table tr td,
+#page_universe_combat_reports table tr td {
+  transition: all 0.3s ease-in-out;
 }
 #page_universe table tr td[colspan="4"], #page_universe table tr td[colspan="5"], #page_universe table tr td[colspan="6"], #page_universe table tr td[colspan="8"],
 #page_universe_launches table tr td[colspan="4"],
@@ -5919,7 +5944,15 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
 #page_universe_covert_ops table tr td[colspan="4"],
 #page_universe_covert_ops table tr td[colspan="5"],
 #page_universe_covert_ops table tr td[colspan="6"],
-#page_universe_covert_ops table tr td[colspan="8"] {
+#page_universe_covert_ops table tr td[colspan="8"],
+#page_universe_feed table tr td[colspan="4"],
+#page_universe_feed table tr td[colspan="5"],
+#page_universe_feed table tr td[colspan="6"],
+#page_universe_feed table tr td[colspan="8"],
+#page_universe_combat_reports table tr td[colspan="4"],
+#page_universe_combat_reports table tr td[colspan="5"],
+#page_universe_combat_reports table tr td[colspan="6"],
+#page_universe_combat_reports table tr td[colspan="8"] {
   background: #1a222c !important;
 }
 
@@ -6326,8 +6359,8 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
   width: 55px;
 }
 #page_alliance_defence .maintext .ally_def_eta_wrapper .ally_def_incs_wrapper .ally_def_target .ally_def_target_mdata {
-  width: 525px;
   flex: unset;
+  width: 525px;
 }
 #page_alliance_defence .maintext .ally_def_eta_wrapper .ally_def_incs_wrapper .ally_def_target .ally_def_target_mdata > span {
   flex: 1;
@@ -6345,9 +6378,9 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
   color: rgba(204, 204, 204, 0.7);
 }
 #page_alliance_defence .maintext .ally_def_eta_wrapper .ally_def_incs_wrapper .ally_def_target .ally_def_target_mdata .ally_def_target_mdata_roids {
-  position: relative;
   display: flex;
   align-items: center;
+  position: relative;
 }
 #page_alliance_defence .maintext .ally_def_eta_wrapper .ally_def_incs_wrapper .ally_def_target .ally_def_target_mdata .ally_def_target_mdata_roids:before {
   font-size: 0.6875rem;
@@ -6355,11 +6388,11 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
   margin: 0 5px 0 0;
 }
 #page_alliance_defence .maintext .ally_def_eta_wrapper .ally_def_incs_wrapper .ally_def_target .ally_def_target_mdata .ally_def_target_mdata_base {
-  flex: unset;
-  width: 138px;
   padding-right: 12px;
   display: flex;
+  flex: unset;
   align-items: center;
+  width: 138px;
 }
 #page_alliance_defence .maintext .ally_def_eta_wrapper .ally_def_incs_wrapper .ally_def_target .ally_def_target_mdata .ally_def_target_mdata_base:before {
   font-size: 0.6875rem;
@@ -6368,8 +6401,8 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
   margin: 0 5px 0 0;
 }
 #page_alliance_defence .maintext .ally_def_eta_wrapper .ally_def_incs_wrapper .ally_def_target .ally_def_target_links {
-  flex: 3;
   display: flex;
+  flex: 3;
   align-items: center;
   margin: 0;
 }
@@ -6378,8 +6411,8 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
   order: 2;
 }
 #page_alliance_defence .maintext .ally_def_eta_wrapper .ally_def_incs_wrapper .ally_def_target .ally_def_target_links a {
-  order: 1;
   font-size: 0;
+  order: 1;
 }
 #page_alliance_defence .maintext .ally_def_eta_wrapper .ally_def_incs_wrapper .ally_def_target .ally_def_target_links a:after {
   color: #52a5f8 !important;
@@ -6391,7 +6424,11 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
   white-space: nowrap;
   padding: 3.5px 0;
   content: "Battle Calc";
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background: rgba(36, 48, 63, 0.4) !important;
+  width: 90px;
   border: 1px solid rgba(82, 165, 248, 0.5) !important;
   border-radius: 3px;
   box-shadow: inset 0 2px 4px 2px rgba(0, 0, 0, 0.4);
@@ -6399,10 +6436,6 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
   transition-timing-function: linear;
   transition-duration: 0.75s;
   transition-property: color, background, box-shadow;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 90px;
 }
 #page_alliance_defence .maintext .ally_def_eta_wrapper .ally_def_incs_wrapper .ally_def_target .ally_def_target_links a:after::-moz-focus-inner {
   padding: 0;
@@ -6555,8 +6588,8 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
 }
 #page_alliance_defence .maintext .ally_def_eta_wrapper .ally_def_incs_wrapper .ally_def_attackers > div .ally_def_attacker_call_status form select {
   font-size: 12px;
-  height: 18px;
   width: 92px;
+  height: 18px;
 }
 #page_alliance_defence .maintext .ally_def_eta_wrapper .ally_def_incs_wrapper .ally_def_attackers > div .ally_def_attacker_orig_eta {
   display: flex;
@@ -6595,13 +6628,13 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
   order: 9;
 }
 #page_alliance_defence .maintext .ally_def_eta_wrapper .ally_def_incs_wrapper .ally_def_attackers > div .ally_def_attacker_intel span {
-  width: 50px;
   display: flex;
   justify-content: flex-end;
+  width: 50px;
 }
 #page_alliance_defence .maintext .ally_def_eta_wrapper .ally_def_incs_wrapper .ally_def_attackers > div .ally_def_attacker_intel span:nth-child(1) {
-  margin-left: 15px;
   width: 44px;
+  margin-left: 15px;
 }
 #page_alliance_defence .maintext .ally_def_eta_wrapper .ally_def_incs_wrapper .ally_def_details .alliance_def_valid,
 #page_alliance_defence .maintext .ally_def_eta_wrapper .ally_def_incs_wrapper .ally_def_attackers .alliance_def_valid {
@@ -6646,9 +6679,9 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
   align-items: center;
 }
 #page_alliance_defence .maintext .ally_def_eta_wrapper .ally_def_incs_wrapper .ally_def_details .ally_def_details_fleet .ally_def_details_classes form label {
-  width: 20px;
-  text-align: left;
   line-height: 20px;
+  text-align: left;
+  width: 20px;
 }
 #page_alliance_defence .maintext .ally_def_eta_wrapper .ally_def_incs_wrapper .ally_def_details .ally_def_details_bcalc form {
   font-size: 0;
@@ -6807,8 +6840,8 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
   order: 6;
 }
 #page_alliance_defence .maintext .ally_def_eta_wrapper .ally_def_incs_wrapper .ally_def_defenders .ally_def_defender .ally_def_defender_mdata {
-  order: 7;
   padding-right: 10px;
+  order: 7;
 }
 #page_alliance_defence .maintext .ally_def_eta_wrapper .ally_def_incs_wrapper .ally_def_defenders .ally_def_defender .ally_def_defender_mdata .ally_def_defender_mdata_nick {
   white-space: nowrap;
@@ -6824,8 +6857,8 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
   justify-content: flex-end;
 }
 #page_alliance_defence .maintext .ally_def_eta_wrapper .ally_def_incs_wrapper .ally_def_defenders .ally_def_defender .ally_def_defender_mdata .ally_def_defender_mdata_ap {
-  margin-left: 15px;
   width: 50px;
+  margin-left: 15px;
 }
 #page_alliance_defence .maintext .ally_def_eta_wrapper .ally_def_incs_wrapper .ally_def_defenders .ally_def_defender .ally_def_defender_mdata .ally_def_defender_mdata_dp {
   width: 54px;
