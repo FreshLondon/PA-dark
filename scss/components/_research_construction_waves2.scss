@@ -240,9 +240,12 @@
 
 		  &:nth-child(1) {
 			order: 3;
+			width: 100%;
+			margin-bottom: 10.5px;
 		  }
 
-		  &:nth-child(2) {
+		  &:nth-child(2),
+		  &:nth-child(3) {
 			order: 2;
 		  }
 
@@ -252,11 +255,19 @@
 			order: 4;
 		  }
 
+		  p {
+			text-align: left;
+			padding: 0;
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+		  }
+
 		  input {
 			&[type='checkbox'] {
 			  width: 1.5rem;
 			  height: 1.5rem;
-			  margin: 0 0 0 7px;
+			  margin: 0 7px 0 0;
 
 			  &:focus {
 				border: 1px solid rgba($color-negative, .5);
@@ -298,14 +309,6 @@
 				margin: 0 !important;
 			  }
 			}
-		  }
-
-		  p {
-			text-align: left;
-			padding: 0;
-			display: flex;
-			flex-direction: row-reverse;
-			align-items: center;
 		  }
 		}
 	  }
