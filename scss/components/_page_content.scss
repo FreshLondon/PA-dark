@@ -4,7 +4,7 @@
   background: transparent;
   width: auto;
   border: none;
-  margin: .5rem 0;
+  margin: 7px 0;
   grid-column: 2 / 3;
   grid-column-end: 4;
   @include respond-below(sm) {
@@ -27,7 +27,7 @@
 #manual_info {
   opacity: 0.5;
   color: $color-primary;
-  font-size: 1rem;
+  font-size: 14px;
   text-align: center;
   padding: 0 0 0 .05rem;
   display: block;
@@ -36,7 +36,7 @@
   height: 1.5rem;
   border: 1px solid $color-primary;
   border-radius: 50%;
-  margin: .5rem .5rem .5rem auto;
+  margin: 7px 7px 7px auto;
   transition: ease all 0.3s;
 
   &:hover {
@@ -50,8 +50,8 @@
 .header,
 h2 {
   color: $color-offwhite;
-  //padding: .5rem 0;
-  font-size: 1rem;
+  //padding: 7px 0;
+  font-size: 14px;
   //letter-spacing: 1px;
   font-weight: bold;
   text-transform: uppercase;
@@ -62,7 +62,7 @@ h2 {
   border: 1px solid transparent;
   border-image: linear-gradient(to right, transparent 0%, rgba($color-primary, .5) 50%, transparent 100%);
   border-image-slice: 1;
-  margin: 1rem 0;
+  margin: 14px 0;
 
   &.relations_neutral {
 	background: linear-gradient(to right, $color-background 0%, $color-secondary 50%, $color-background 100%) !important;
@@ -109,13 +109,13 @@ h2 {
 }
 
 #notice {
-  padding: .5rem;
+  padding: 7px;
   background: linear-gradient(to right, rgba(#000, 0) 0%, rgba(#000, .6) 50%, rgba(#000, 0) 100%);
   border: 1px solid transparent;
   border-image: linear-gradient(to right, transparent 0%, rgba(82, 165, 248, .5) 50%, transparent 100%);
   border-image-slice: 1;
-  margin-top: .5rem;
-  margin-bottom: 1rem;
+  margin-top: 7px;
+  margin-bottom: 14px;
 
   .header,
   .footer {
@@ -153,13 +153,13 @@ h2 {
 
 .maintext {
   p + p {
-	margin-top: .5rem;
+	margin-top: 7px;
   }
 
   table {
 	width: auto;
 	min-width: 450px;
-	margin: 0 auto 1rem;
+	margin: 0 auto 14px;
 
 	table {
 	  background: $color-secondary;
@@ -180,7 +180,7 @@ span.center {
 }
 
 .container .header:first-child {
-  margin-top: .5rem;
+  margin-top: 7px;
 }
 
 .tooltip,
@@ -201,7 +201,7 @@ span.center {
 #dships_box {
   color: $color-offwhite !important;
   white-space: initial;
-  padding: .25rem .5rem;
+  padding: 3.5px 7px;
   background: $color-background !important;
   border: 1px solid rgba($color-primary, .5);
   box-shadow: 3px 3px 5px 0 rgba(#000, .4);
@@ -212,15 +212,15 @@ span.center {
 }
 
 #pabox_inner {
-  padding: .5rem;
+  padding: 7px;
   top: 0 !important;
   left: 0 !important;
 
   h2 {
-	font-size: 1rem;
+	font-size: 14px;
 	padding: 0;
 	background: none;
-	margin: 0 0 .5rem;
+	margin: 0 0 7px;
   }
 
   th,
@@ -237,7 +237,7 @@ span.center {
   table {
 	+ table,
 	+ p {
-	  margin-top: 1rem;
+	  margin-top: 14px;
 	}
   }
 }
@@ -259,7 +259,7 @@ span.center {
 	padding: 0;
 
 	a {
-	  margin: 0 .75rem;
+	  margin: 0 10.5px;
 	}
   }
 }
@@ -269,13 +269,13 @@ span.center {
 //	padding: 0;
 //
 //	+ li {
-//	  margin-left: 1rem;
+//	  margin-left: 14px;
 //	}
 //  }
 //
 //  .tab_link {
 //	position: relative;
-//	padding: .4rem 1rem;
+//	padding: .4rem 14px;
 //	font-size: $text-small;
 //	color: $color-primary;
 //	letter-spacing: 1px;

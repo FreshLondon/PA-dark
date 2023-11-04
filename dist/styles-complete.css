@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*!
-*  v4.09
+*  v4.10
 *  This skin addon is designed to run by itself, with no other added CSS.
 *
 *  If this skin customisation adds even a tiny bit of enjoyment to your gaming experience it was well worth the
@@ -1859,7 +1859,7 @@ td,
 th,
 input {
   font-family: "Ubuntu", "Lato", "Open Sans", sans-serif;
-  font-size: 1rem;
+  font-size: 14px;
   line-height: 1.4;
 }
 
@@ -1868,7 +1868,7 @@ body {
 }
 
 p {
-  padding: 0 1rem 0.5rem;
+  padding: 0 14px 7px;
   margin: 0;
 }
 
@@ -1892,15 +1892,15 @@ hr {
 /* Page Outline
    -------------------------------------------------------*/
 #page {
-  padding: 36px 0.5rem 0;
+  padding: 36px 7px 0;
   display: grid;
   width: 100%;
   max-width: 90rem;
   margin: 0 auto;
   position: relative;
   grid-template-columns: 12rem 2fr 1fr;
-  grid-template-rows: auto 1fr 1rem;
-  grid-column-gap: 1rem;
+  grid-template-rows: auto 1fr 14px;
+  grid-column-gap: 14px;
 }
 @media (max-width: 767px) {
   #page {
@@ -1940,7 +1940,7 @@ hr {
 #important_messages_contents {
   color: #ccc;
   white-space: initial;
-  padding: 0.25rem 0.5rem;
+  padding: 3.5px 7px;
   background: #24303f !important;
   width: 80%;
   border: 0;
@@ -1972,7 +1972,7 @@ hr {
 }
 #message_form p #subject {
   text-align: left;
-  padding: 0 0.75rem;
+  padding: 0 10.5px;
   display: inline-block;
   width: calc(100% - 6rem);
   margin-left: 1.7rem;
@@ -1980,7 +1980,7 @@ hr {
 #message_form p #message_body {
   text-align: left;
   vertical-align: -14rem;
-  padding: 0.5rem 0.75rem;
+  padding: 7px 10.5px;
   display: inline-block;
   width: calc(100% - 6rem) !important;
   height: 15rem;
@@ -1991,7 +1991,7 @@ hr {
   text-align: center !important;
   display: block;
   width: 100%;
-  margin: 0 auto 0.5rem;
+  margin: 0 auto 7px;
 }
 #message_form p input[type=submit] {
   color: black;
@@ -2014,18 +2014,18 @@ hr {
 
 .important_message .title {
   color: #ccc;
-  font-size: 1rem;
-  padding: 0.5rem;
+  font-size: 14px;
+  padding: 7px;
   display: block;
   background: #24303f;
 }
 .important_message .time {
   font-size: 0.75rem;
   display: block;
-  margin: 0.25rem 0.5rem 1rem;
+  margin: 3.5px 7px 14px;
 }
 .important_message p {
-  margin: 0.5rem;
+  margin: 7px;
 }
 
 #page_journal #notice + .container .header {
@@ -2041,7 +2041,7 @@ hr {
 #page_login #header,
 #page_support #header,
 #page_manual #header {
-  padding: 0.5rem;
+  padding: 7px;
   background: #010304;
   background: linear-gradient(180deg, #4d5154 0%, #384147 15%, #010304 100%);
   width: 100% !important;
@@ -2062,7 +2062,7 @@ hr {
   text-transform: uppercase;
 }
 #logo:before {
-  font-size: 2.5rem;
+  font-size: 35px;
   content: "Planetarion";
 }
 #logo:after {
@@ -2105,7 +2105,7 @@ hr {
   background: #52a5f8;
 }
 .tnav_link span {
-  padding: 0.25rem 1rem;
+  padding: 3.5px 14px;
 }
 
 /* Menu
@@ -2116,7 +2116,7 @@ hr {
 }
 
 #menu {
-  padding: 106px 0 1rem;
+  padding: 106px 0 14px;
   list-style: none;
   display: table;
   background: #1a222c;
@@ -2131,16 +2131,16 @@ hr {
   }
 }
 #menu > li {
-  padding: 0 0 0.15rem;
+  padding: 0 0 2.1px;
 }
 #menu > li#menu_overview, #menu > li#menu_preferences, #menu > li#menu_logout {
-  padding: 0 0.5rem 0.15rem;
+  padding: 0 7px 2.1px;
 }
 #menu > li#menu_preferences, #menu > li#menu_logout {
   font-size: 0.75rem;
   text-align: center;
   width: 50%;
-  margin: 1rem 0;
+  margin: 14px 0;
   float: left !important;
 }
 #menu > li#menu_view_link {
@@ -2153,7 +2153,7 @@ hr {
   width: 100%;
 }
 #menu > li#menu_overview {
-  padding: 0.5rem;
+  padding: 7px;
   width: 100%;
   border-top: 1px solid transparent;
   border-image: linear-gradient(to right, transparent 0%, rgba(82, 165, 248, 0.5) 100%);
@@ -2171,7 +2171,7 @@ hr {
   font-size: 0.75rem;
   font-weight: bold;
   text-transform: uppercase;
-  padding: 0.25rem 0.5rem;
+  padding: 3.5px 7px;
   display: block;
   background: #19222b;
   border-bottom: 1px solid transparent;
@@ -2179,17 +2179,17 @@ hr {
   border-image-slice: 1;
 }
 #menu > li > ul {
-  padding: 0.25rem 0 0.5rem;
+  padding: 3.5px 0 7px;
   box-shadow: inset 0 0 8px 2px rgba(0, 0, 0, 0.25), 3px 0 6px -3px rgba(0, 0, 0, 0.25);
 }
 #menu > li > ul > li > ul {
-  margin-left: 0.5rem;
+  margin-left: 7px;
 }
 #menu ul {
   list-style: none;
 }
 #menu li {
-  padding: 0 0.5rem 0.15rem;
+  padding: 0 7px 2.1px;
 }
 #menu li li li {
   padding: 0;
@@ -2210,7 +2210,7 @@ hr {
   color: rgba(82, 165, 248, 0.55);
   font-size: 0;
   padding-bottom: 8rem;
-  margin-top: 2rem;
+  margin-top: 28px;
 }
 #menu #menu_time span#time {
   color: #ccc;
@@ -2229,7 +2229,7 @@ hr {
   color: rgba(82, 165, 248, 0.5);
   font-size: 0.4rem;
   line-height: 1.2;
-  padding: 0.25rem;
+  padding: 3.5px;
   content: "If this skin customisation adds even a tiny bit of enjoyment to your gaming experience it was well worth the countless hours of development. Made with love, for my fellow spreadsheet warriors. UltimateNewbie ♥";
   width: 106px;
   border: 1px solid rgba(82, 165, 248, 0.5);
@@ -2267,7 +2267,7 @@ hr {
   white-space: nowrap;
   letter-spacing: 0.5px;
   display: inline-block;
-  margin: 0.5rem;
+  margin: 7px;
   position: relative;
   transition: all 0.5s ease-in-out;
 }
@@ -2356,7 +2356,7 @@ hr {
   justify-content: space-evenly;
   width: 50%;
   max-width: 245px;
-  margin: 0 0 0.5rem;
+  margin: 0 0 7px;
 }
 #header > div:last-of-type:nth-of-type(even) {
   padding-top: 4px;
@@ -2367,13 +2367,13 @@ hr {
   border-top: 1px solid transparent;
   border-image: linear-gradient(to right, transparent 0%, rgba(82, 165, 248, 0.5) 50%, transparent 100%);
   border-image-slice: 1;
-  margin-top: 0.75rem;
+  margin-top: 10.5px;
 }
 #header > div:last-of-type:nth-of-type(even) span {
   max-width: 33px;
 }
 #header > div:last-of-type:nth-of-type(odd) {
-  margin-bottom: 0.75rem;
+  margin-bottom: 10.5px;
 }
 #header > div span {
   flex-basis: 50%;
@@ -2400,7 +2400,7 @@ hr {
   font-weight: bold;
   text-transform: uppercase;
   text-align: center;
-  padding: 0.5rem 0 !important;
+  padding: 7px 0 !important;
   flex-basis: 100%;
   transition: ease all 0.5s;
 }
@@ -2625,7 +2625,7 @@ hr {
   font-weight: bold;
   text-transform: uppercase;
   text-align: center;
-  padding: 0.5rem 0;
+  padding: 7px 0;
   content: "Planetary Development ";
   display: block;
   background: rgba(0, 0, 0, 0.6);
@@ -2649,7 +2649,7 @@ hr {
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 0.5px;
-  padding: 0 0.5rem 0 0;
+  padding: 0 7px 0 0;
   flex-basis: 8rem;
   margin-left: 0;
 }
@@ -2671,11 +2671,11 @@ hr {
 #planet_summary_construction,
 #planet_summary_research,
 #planet_summary_production {
-  padding: 0 1rem;
+  padding: 0 14px;
   display: flex;
   flex-flow: row wrap;
   align-items: center;
-  margin: 0.5rem 0;
+  margin: 7px 0;
 }
 #planet_summary_construction span#planet_summary_construction_queue, #planet_summary_construction span#planet_summary_research_queue,
 #planet_summary_research span#planet_summary_construction_queue,
@@ -2709,7 +2709,7 @@ hr {
   #planet_summary_research_complete,
   .planet_summary_production_orders {
     text-align: right;
-    padding: 0 0.25rem 0 0;
+    padding: 0 3.5px 0 0;
     flex: 1;
     margin: 0;
   }
@@ -2730,7 +2730,7 @@ hr {
   width: unset;
 }
 .planet_summary_production_orders div.tooltip .planet_summary_production_shipname {
-  padding-right: 0.5rem;
+  padding-right: 7px;
   float: left !important;
 }
 .planet_summary_production_orders div.tooltip .planet_summary_production_shipcount {
@@ -2739,8 +2739,8 @@ hr {
 .planet_summary_production_orders div.tooltip br {
   content: " ";
   display: block;
-  height: 1rem;
-  margin-bottom: 0.25rem;
+  height: 14px;
+  margin-bottom: 3.5px;
 }
 .planet_summary_production_orders div.tooltip br:last-of-type {
   margin-bottom: 0;
@@ -2765,7 +2765,7 @@ hr {
   background: transparent;
   width: auto;
   border: none;
-  margin: 0.5rem 0;
+  margin: 7px 0;
   grid-column: 2/3;
   grid-column-end: 4;
 }
@@ -2790,7 +2790,7 @@ hr {
 #manual_info {
   opacity: 0.5;
   color: #52a5f8;
-  font-size: 1rem;
+  font-size: 14px;
   text-align: center;
   padding: 0 0 0 0.05rem;
   display: block;
@@ -2799,7 +2799,7 @@ hr {
   height: 1.5rem;
   border: 1px solid #52a5f8;
   border-radius: 50%;
-  margin: 0.5rem 0.5rem 0.5rem auto;
+  margin: 7px 7px 7px auto;
   transition: ease all 0.3s;
 }
 #manual_info:hover {
@@ -2812,7 +2812,7 @@ hr {
 .header,
 h2 {
   color: #ccc;
-  font-size: 1rem;
+  font-size: 14px;
   font-weight: bold;
   text-transform: uppercase;
   line-height: 100%;
@@ -2822,7 +2822,7 @@ h2 {
   border: 1px solid transparent;
   border-image: linear-gradient(to right, transparent 0%, rgba(82, 165, 248, 0.5) 50%, transparent 100%);
   border-image-slice: 1;
-  margin: 1rem 0;
+  margin: 14px 0;
 }
 .header.relations_neutral,
 h2.relations_neutral {
@@ -2869,13 +2869,13 @@ h2 a:hover {
 }
 
 #notice {
-  padding: 0.5rem;
+  padding: 7px;
   background: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 50%, rgba(0, 0, 0, 0) 100%);
   border: 1px solid transparent;
   border-image: linear-gradient(to right, transparent 0%, rgba(82, 165, 248, 0.5) 50%, transparent 100%);
   border-image-slice: 1;
-  margin-top: 0.5rem;
-  margin-bottom: 1rem;
+  margin-top: 7px;
+  margin-bottom: 14px;
 }
 #notice .header,
 #notice .footer {
@@ -2904,12 +2904,12 @@ h2 a:hover {
 }
 
 .maintext p + p {
-  margin-top: 0.5rem;
+  margin-top: 7px;
 }
 .maintext table {
   width: auto;
   min-width: 450px;
-  margin: 0 auto 1rem;
+  margin: 0 auto 14px;
 }
 .maintext table table {
   background: #24303f;
@@ -2928,7 +2928,7 @@ span.center {
 }
 
 .container .header:first-child {
-  margin-top: 0.5rem;
+  margin-top: 7px;
 }
 
 .tooltip,
@@ -2949,7 +2949,7 @@ span.center {
 #dships_box {
   color: #ccc !important;
   white-space: initial;
-  padding: 0.25rem 0.5rem;
+  padding: 3.5px 7px;
   background: #1a222c !important;
   border: 1px solid rgba(82, 165, 248, 0.5);
   box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, 0.4);
@@ -2960,15 +2960,15 @@ span.center {
 }
 
 #pabox_inner {
-  padding: 0.5rem;
+  padding: 7px;
   top: 0 !important;
   left: 0 !important;
 }
 #pabox_inner h2 {
-  font-size: 1rem;
+  font-size: 14px;
   padding: 0;
   background: none;
-  margin: 0 0 0.5rem;
+  margin: 0 0 7px;
 }
 #pabox_inner th,
 #pabox_inner td,
@@ -2983,7 +2983,7 @@ span.center {
 }
 #pabox_inner table + table,
 #pabox_inner table + p {
-  margin-top: 1rem;
+  margin-top: 14px;
 }
 
 .tooltip a:hover,
@@ -3003,7 +3003,7 @@ span.center {
   padding: 0;
 }
 #tab_links li a {
-  margin: 0 0.75rem;
+  margin: 0 10.5px;
 }
 
 .error {
@@ -3073,17 +3073,17 @@ span.center {
   width: 100px !important;
 }
 #quest_system table th:nth-child(4) {
-  width: 1rem !important;
+  width: 14px !important;
 }
 #quest_system table th:nth-child(5) {
   width: 0 !important;
 }
 #quest_system table tr:not(:first-child) th {
-  font-size: 1rem;
+  font-size: 14px;
   text-transform: initial;
 }
 #quest_system table tr:not(:first-child) th:nth-child(2) {
-  padding: 0.15rem 0;
+  padding: 2.1px 0;
   background: #24303f;
 }
 #quest_system table tr[id^=quest] p {
@@ -3093,7 +3093,7 @@ span.center {
 }
 #quest_system table table {
   width: calc(100% - 2.4rem);
-  margin-left: 1rem;
+  margin-left: 14px;
 }
 #quest_system table table td:nth-child(1) {
   width: auto !important;
@@ -3105,7 +3105,7 @@ span.center {
   width: 162px;
 }
 #quest_system table table td:nth-child(2n+2) td {
-  padding: 0.5rem;
+  padding: 7px;
   background: #24303f;
 }
 #quest_system .completed {
@@ -3121,7 +3121,7 @@ span.center {
 .expand {
   display: inline-block;
   background: none;
-  margin-right: 0.5rem;
+  margin-right: 7px;
 }
 .expand:before {
   color: #52a5f8;
@@ -3167,15 +3167,15 @@ span.center {
   color: #ccc;
   font-size: 0.75rem;
   text-align: left;
-  padding: 0.5rem 1rem 0.5rem 0.5rem;
-  margin-bottom: 0.25rem;
+  padding: 7px 14px 7px 7px;
+  margin-bottom: 3.5px;
   position: relative;
 }
 .info_header a {
   text-transform: uppercase;
   position: absolute;
   top: 0.45rem;
-  right: 0.25rem;
+  right: 3.5px;
 }
 .info_header a:hover {
   color: #0972db;
@@ -3259,17 +3259,17 @@ span.mission_attack, span.mission_defend, span.mission_return, span.mission_fake
 #page_messages #contents .maintext > table tr th a {
   color: #52a5f8 !important;
   font-family: inherit;
-  font-size: 1rem;
+  font-size: 14px;
   font-weight: initial;
   text-transform: initial;
-  padding: 0 0.5rem;
+  padding: 0 7px;
   display: inline-block;
   background: #24303f !important;
   height: 1.5rem;
   border: 1px solid rgba(82, 165, 248, 0.5) !important;
   border-radius: 0;
   box-shadow: none;
-  margin: 1rem 0;
+  margin: 14px 0;
   cursor: pointer;
   transition: 0.3s;
 }
@@ -3359,7 +3359,7 @@ span.mission_attack, span.mission_defend, span.mission_return, span.mission_fake
 
 .forum_title {
   flex-basis: 100%;
-  margin-bottom: 1rem;
+  margin-bottom: 14px;
 }
 
 .forum_thread_header_title,
@@ -3416,11 +3416,11 @@ div[class^=forum_thread_header] {
 }
 
 #forum_nav {
-  margin-bottom: 1rem;
+  margin-bottom: 14px;
 }
 
 .forum_post {
-  padding: 2rem 1rem;
+  padding: 28px 14px;
   display: flex;
   flex-flow: row wrap;
 }
@@ -3439,7 +3439,7 @@ div[class^=forum_thread_header] {
 }
 
 .forum_poster {
-  font-size: 1rem;
+  font-size: 14px;
   flex-grow: 1;
   order: 2;
 }
@@ -3457,7 +3457,7 @@ div[class^=forum_thread_header] {
 }
 
 .forum_post_text {
-  padding: 1rem;
+  padding: 14px;
   flex-basis: 100%;
   flex-shrink: 0;
   background: #24303f;
@@ -3479,7 +3479,7 @@ div[class^=forum_thread_header] {
 .forum_post_seperator {
   display: none;
   border: 1px solid rgba(82, 165, 248, 0.5);
-  margin: 1rem;
+  margin: 14px;
 }
 
 .forum_post_delete,
@@ -3499,9 +3499,9 @@ div[class^=forum_thread_header] {
 }
 
 .mceEditor {
-  width: calc(100% - 1rem);
+  width: calc(100% - 14px);
   border-width: 2px !important;
-  margin: 0.5rem;
+  margin: 7px;
 }
 
 .mceToolbarContainer {
@@ -3513,12 +3513,12 @@ div[class^=forum_thread_header] {
 }
 
 .mceContentBody {
-  font-size: 1rem !important;
-  padding: 0.5rem;
+  font-size: 14px !important;
+  padding: 7px;
 }
 
 #editor {
-  margin: 0 1rem;
+  margin: 0 14px;
 }
 #editor > .center,
 #editor + .center {
@@ -3527,7 +3527,7 @@ div[class^=forum_thread_header] {
 #editor > .center a,
 #editor + .center a {
   display: inline-block;
-  margin-right: 1rem;
+  margin-right: 14px;
 }
 
 table.mceEditor tr {
@@ -3540,16 +3540,16 @@ table.mceEditor tr td {
 }
 table.mceEditor tr td.mceToolbarTop > span > span,
 table.mceEditor tr td.mceToolbarTop > span > a {
-  margin: 0.25rem;
+  margin: 3.5px;
 }
 table.mceEditor tr td.mceToolbarTop > span > span > a {
-  margin: 0 0.25rem;
+  margin: 0 3.5px;
 }
 table.mceEditor tr td.mceToolbarTop > span > span > a + a {
   width: auto;
 }
 table.mceEditor tr td .mceToolbarContainer {
-  padding: 0.5rem 0.5rem 0;
+  padding: 7px 7px 0;
   background: #24303f !important;
 }
 table.mceEditor tr td .mceToolbarContainer a {
@@ -3563,13 +3563,13 @@ table.mceEditor tr td .mceSeparatorLine {
   height: 26px;
   border: 0;
   margin-top: 0;
-  margin-right: 1rem;
-  margin-left: 1rem;
+  margin-right: 14px;
+  margin-left: 14px;
 }
 table.mceEditor tr td a {
   width: 24px;
   height: 24px;
-  margin: 0.5rem 0 !important;
+  margin: 7px 0 !important;
 }
 table.mceEditor tr td a[accesskey=q], table.mceEditor tr td a[accesskey=z] {
   display: none !important;
@@ -3585,7 +3585,7 @@ table.mceEditor tr td a span.mceMenuButtonSelected img {
 }
 table.mceEditor tr td select.mceSelectList {
   height: 1.8rem;
-  margin: 7px 0.5rem;
+  margin: 7px 7px;
 }
 table.mceEditor tr td select.mceSelectList:first-of-type {
   margin-right: 0;
@@ -3604,7 +3604,7 @@ table.mceEditor tr td select.mceSelectList:first-of-type {
 }
 #page_galaxy_status #page #contents .maintext table tr[id*=notes_] td form ~ form p:not(:first-child) input:nth-of-type(2) {
   width: 98%;
-  margin: 0.5rem 0 0 0;
+  margin: 7px 0 0 0;
 }
 
 /* MINING
@@ -3612,7 +3612,7 @@ table.mceEditor tr td select.mceSelectList:first-of-type {
 #mining table,
 #galaxy_fund table {
   max-width: 900px;
-  margin: 1rem auto;
+  margin: 14px auto;
 }
 #mining table tr td,
 #galaxy_fund table tr td {
@@ -3622,7 +3622,7 @@ table.mceEditor tr td select.mceSelectList:first-of-type {
 #mining table tr td .textlabel,
 #galaxy_fund table tr td .textlabel {
   display: inline-block;
-  margin: 0.2rem 0 0 2rem;
+  margin: 0.2rem 0 0 28px;
 }
 #mining table tr td .metal,
 #mining table tr td .crystal,
@@ -3640,7 +3640,7 @@ table.mceEditor tr td select.mceSelectList:first-of-type {
 #galaxy_fund table tr td .metal .textvalue,
 #galaxy_fund table tr td .crystal .textvalue,
 #galaxy_fund table tr td .eonium .textvalue {
-  padding: 0 1rem 0 1.2rem;
+  padding: 0 14px 0 1.2rem;
   background-repeat: no-repeat;
   background-position-y: 1px;
 }
@@ -3674,7 +3674,7 @@ table.mceEditor tr td select.mceSelectList:first-of-type {
 #galaxy_fund .resources .metal .textvalue,
 #galaxy_fund .resources .crystal .textvalue,
 #galaxy_fund .resources .eonium .textvalue {
-  padding: 0 1rem 0 1.2rem;
+  padding: 0 14px 0 1.2rem;
   background-repeat: no-repeat;
   background-position-y: 1px;
 }
@@ -3692,7 +3692,7 @@ table.mceEditor tr td select.mceSelectList:first-of-type {
 }
 #mining #guard_cost,
 #galaxy_fund #guard_cost {
-  margin-bottom: 0.5rem;
+  margin-bottom: 7px;
 }
 #mining input[type=number],
 #galaxy_fund input[type=number] {
@@ -3717,11 +3717,11 @@ table.mceEditor tr td select.mceSelectList:first-of-type {
   margin-bottom: 0;
 }
 #galaxy_fund table tr td[colspan="5"] {
-  padding: 1rem 0 0;
+  padding: 14px 0 0;
   background: transparent;
 }
 #galaxy_fund table:not(:last-child) tr:first-child th {
-  padding-bottom: 0.5rem;
+  padding-bottom: 7px;
   background: transparent;
 }
 
@@ -3766,23 +3766,23 @@ table.mceEditor tr td select.mceSelectList:first-of-type {
 .governments .title {
   font-size: 1rem;
   text-shadow: 1px 1px 0 #000;
-  padding: 0.25rem 0.5rem;
+  padding: 3.5px 7px;
   display: block;
   background: #24303f;
-  margin-bottom: 0.5rem;
+  margin-bottom: 7px;
 }
 
 .research .title,
 .research_branch .title {
   color: #52a5f8;
-  font-size: 1rem;
+  font-size: 14px;
   display: inline-block;
-  margin-bottom: 0.25rem;
+  margin-bottom: 3.5px;
 }
 
 .construction_info p,
 .scans p {
-  font-size: 1rem;
+  font-size: 14px;
   padding-right: 1.5rem;
   padding-left: 1.5rem;
   position: relative;
@@ -3804,7 +3804,7 @@ table.mceEditor tr td select.mceSelectList:first-of-type {
 }
 
 .scans p {
-  padding-left: 0.5rem;
+  padding-left: 7px;
 }
 
 #constructions .maintext {
@@ -3829,7 +3829,7 @@ table.mceEditor tr td select.mceSelectList:first-of-type {
   position: relative;
 }
 #constructions .maintext .constructions:first-of-type {
-  margin-top: 1rem;
+  margin-top: 14px;
 }
 #constructions .maintext .constructions .construction_info {
   display: flex;
@@ -3843,7 +3843,7 @@ table.mceEditor tr td select.mceSelectList:first-of-type {
   flex-basis: 100%;
 }
 #constructions .maintext .constructions .construction_info .description {
-  padding: 1rem 2rem;
+  padding: 14px 28px;
 }
 #constructions .maintext .constructions .construction_info .description a.desc_link {
   top: -39px;
@@ -3851,7 +3851,7 @@ table.mceEditor tr td select.mceSelectList:first-of-type {
   transform: translate(50%, 100%);
 }
 #constructions .maintext .constructions .construction_info .title {
-  padding: 0.5rem 2rem;
+  padding: 7px 28px;
   background: #171e27;
   margin-bottom: 0;
 }
@@ -3860,12 +3860,12 @@ table.mceEditor tr td select.mceSelectList:first-of-type {
   flex-basis: 33%;
   position: absolute;
   top: 0.85rem;
-  right: 2rem;
+  right: 28px;
   z-index: 20;
 }
 #constructions .maintext .constructions .construction_info .resources + p {
   font-size: 0.75rem;
-  padding: 1rem 50% 1rem 2rem;
+  padding: 14px 50% 14px 28px;
   display: flex;
   background: #1e2935;
   width: 100%;
@@ -3880,12 +3880,12 @@ table.mceEditor tr td select.mceSelectList:first-of-type {
 }
 #constructions .maintext .constructions .construction_info p,
 #constructions .maintext .constructions .construction_info .resources {
-  padding-left: 0.5rem;
+  padding-left: 7px;
 }
 #constructions .maintext .constructions .construction_built {
-  font-size: 1rem;
+  font-size: 14px;
   text-align: right;
-  padding: 0 2rem;
+  padding: 0 28px;
   width: 206px;
   margin-top: -2.35rem;
   z-index: 10;
@@ -3901,21 +3901,21 @@ table.mceEditor tr td select.mceSelectList:first-of-type {
   font-weight: bold;
 }
 #constructions .maintext .constructions .construction_built .progress_wrapper {
-  margin: 5rem 0 1rem;
+  margin: 5rem 0 14px;
 }
 #constructions .maintext .constructions .construction_built .progress_wrapper + p {
   font-size: 0.9rem;
   line-height: 0.9rem;
   text-align: left;
-  padding: 0 0 1rem;
+  padding: 0 0 14px;
 }
 #constructions .maintext .constructions .construction_built br {
   content: " ";
   display: block;
-  margin-top: 0.5rem;
+  margin-top: 7px;
 }
 #constructions .maintext .constructions .construction_build {
-  padding-left: 2rem;
+  padding-left: 28px;
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
@@ -3923,11 +3923,11 @@ table.mceEditor tr td select.mceSelectList:first-of-type {
   order: 2;
 }
 #constructions .maintext .constructions .construction_build > *:first-child {
-  padding-top: 0.5rem !important;
+  padding-top: 7px !important;
 }
 #constructions .maintext .constructions .construction_build .resources {
   text-align: left;
-  padding: 0.5rem 0;
+  padding: 7px 0;
   display: flex;
   flex-wrap: wrap;
   width: 100%;
@@ -3935,14 +3935,14 @@ table.mceEditor tr td select.mceSelectList:first-of-type {
   order: 1;
 }
 #constructions .maintext .constructions .construction_build .resources:nth-child(3) {
-  padding-top: 1rem;
+  padding-top: 14px;
   border-top: 1px solid rgba(82, 165, 248, 0.5);
-  margin-top: 0.75rem;
+  margin-top: 10.5px;
   order: 3;
 }
 #constructions .maintext .constructions .construction_build .resources li {
   display: inline-block;
-  margin: 0 2rem 0 0;
+  margin: 0 28px 0 0;
 }
 #constructions .maintext .constructions .construction_build .resources li:nth-child(1) {
   width: 100%;
@@ -3952,20 +3952,20 @@ table.mceEditor tr td select.mceSelectList:first-of-type {
   align-items: center;
   justify-content: flex-start;
   width: 100%;
-  margin-bottom: 0.5rem;
+  margin-bottom: 7px;
   order: 2;
 }
 #constructions .maintext .constructions .construction_build form:nth-child(1) {
   order: 4;
 }
 #constructions .maintext .constructions .construction_build form:nth-child(4) {
-  margin-bottom: 1rem;
+  margin-bottom: 14px;
   order: 4;
 }
 #constructions .maintext .constructions .construction_build form input[type=checkbox] {
   width: 1.5rem;
   height: 1.5rem;
-  margin: 0 0 0 0.5rem;
+  margin: 0 0 0 7px;
 }
 #constructions .maintext .constructions .construction_build form input[type=checkbox]:focus {
   border: 1px solid rgba(255, 0, 0, 0.5);
@@ -3990,7 +3990,7 @@ table.mceEditor tr td select.mceSelectList:first-of-type {
 }
 #constructions .maintext .constructions .construction_build form input[type=submit] {
   min-width: 110px;
-  margin: 0 0 0.5rem !important;
+  margin: 0 0 7px !important;
 }
 #constructions .maintext .constructions .construction_build form input[type=submit]:hover {
   background: red;
@@ -4007,7 +4007,7 @@ table.mceEditor tr td select.mceSelectList:first-of-type {
 }
 
 #research > .maintext > p {
-  margin-bottom: 1rem;
+  margin-bottom: 14px;
 }
 
 .research {
@@ -4033,7 +4033,7 @@ table.mceEditor tr td select.mceSelectList:first-of-type {
 }
 .research p .desc_link {
   display: block;
-  margin-top: 0.5rem;
+  margin-top: 7px;
   position: relative;
   top: unset;
   right: unset;
@@ -4044,14 +4044,14 @@ table.mceEditor tr td select.mceSelectList:first-of-type {
 }
 .research .branch_name h3 {
   text-align: center;
-  padding: 0.5rem 2rem;
+  padding: 7px 28px;
   background: #171e27;
   margin: 0;
 }
 .research .research_current,
 .research .research_next {
   text-align: center;
-  padding: 0.5rem 2rem;
+  padding: 7px 28px;
   width: 100% !important;
 }
 .research .research_current .time,
@@ -4105,7 +4105,7 @@ table.mceEditor tr td select.mceSelectList:first-of-type {
 .research .research_next[id] form.cancelform + p.research_queue {
   padding-top: 1.5rem !important;
   border-top: 1px solid rgba(82, 165, 248, 0.5);
-  margin-top: 1rem;
+  margin-top: 14px;
 }
 .research .research_next[id] form.queueform, .research .research_next[id] form.cancelqueueform {
   order: 7;
@@ -4115,11 +4115,11 @@ table.mceEditor tr td select.mceSelectList:first-of-type {
   margin: 0 !important;
 }
 .research .research_next[id] form p input[type=submit]:first-child {
-  margin-top: 0.5rem !important;
+  margin-top: 7px !important;
 }
 .research .research_next[id] .researchform p {
   padding-right: 0;
-  margin-right: 2rem;
+  margin-right: 28px;
 }
 .research .researchform {
   display: flex;
@@ -4134,7 +4134,7 @@ table.mceEditor tr td select.mceSelectList:first-of-type {
 }
 .research_branch .completed .title {
   color: #ccc;
-  padding: 0.5rem 2rem;
+  padding: 7px 28px;
   background: #171e27;
   margin: 0 auto;
   position: relative;
@@ -4154,14 +4154,14 @@ table.mceEditor tr td select.mceSelectList:first-of-type {
   padding: 0;
   background: #24303f;
   border: 0;
-  margin: 0 auto 1rem;
+  margin: 0 auto 14px;
 }
 .research_branch_list:last-child {
   margin-bottom: 0;
 }
 .research_branch_list p {
   text-align: center !important;
-  padding: 0.5rem 2rem;
+  padding: 7px 28px;
   width: 100%;
   position: relative;
 }
@@ -4175,18 +4175,18 @@ table.mceEditor tr td select.mceSelectList:first-of-type {
 }
 .scans .resources {
   font-size: 0.75rem;
-  padding-left: 0.5rem;
-  margin-top: 1rem;
+  padding-left: 7px;
+  margin-top: 14px;
 }
 .scans .scan_form {
-  padding-right: 2rem;
+  padding-right: 28px;
   display: flex;
   flex-flow: row nowrap;
   justify-content: flex-end;
   margin-top: -2.25rem;
 }
 .scans .scan_form input[type=submit] {
-  margin: 1rem 0 0 !important;
+  margin: 14px 0 0 !important;
 }
 
 #page_waves table tr td {
@@ -4214,7 +4214,7 @@ table.mceEditor tr td select.mceSelectList:first-of-type {
   font-size: 1rem;
   font-weight: bold;
   font-style: italic;
-  padding: 1rem 0;
+  padding: 14px 0;
   background: #1a222c;
 }
 #page_waves #tab1 .maintext {
@@ -4241,20 +4241,20 @@ table.mceEditor tr td select.mceSelectList:first-of-type {
   width: 100% !important;
 }
 #page_waves #tab1 .maintext .scans .scan_info .title {
-  padding: 0.5rem 2rem;
+  padding: 7px 28px;
   background: #171e27;
   margin-bottom: 0;
 }
 #page_waves #tab1 .maintext .scans .scan_info p {
   text-align: center;
-  padding: 1rem 2rem;
+  padding: 14px 28px;
   background: #24303f;
   border-bottom: 1px solid rgba(0, 0, 0, 0.25);
   box-shadow: inset 0 0 8px 2px rgba(0, 0, 0, 0.25);
 }
 #page_waves #tab1 .maintext .scans .scan_info p .desc_link {
   display: block;
-  margin-top: 0.5rem;
+  margin-top: 7px;
   position: relative;
   top: unset;
   right: unset;
@@ -4263,47 +4263,47 @@ table.mceEditor tr td select.mceSelectList:first-of-type {
 #page_waves #tab1 .maintext .scans .scan_info .resources {
   position: absolute;
   top: 0;
-  right: 2rem;
+  right: 28px;
 }
 #page_waves #tab1 .maintext .scans .scan_action {
-  padding-top: 1rem;
+  padding-top: 14px;
 }
 #page_waves #tab1 .maintext .scans .scan_action .scan_multi {
   position: absolute;
-  right: 1rem;
-  bottom: 1rem;
+  right: 14px;
+  bottom: 14px;
 }
 #page_waves #tab1 .maintext .scans .scan_action .scan_fund {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 2rem;
+  height: 28px;
 }
 #page_waves #tab1 .maintext .scans .scan_action .scan_fund input[type=checkbox] {
-  margin: 0 0.5rem 0 0;
+  margin: 0 7px 0 0;
 }
 #page_waves #tab1 .maintext .scans .scan_action .scan_fund input[type=submit] {
-  margin-top: 0.5rem !important;
+  margin-top: 7px !important;
 }
 #page_waves #tab1 .maintext .scans .scan_action .scan_fund .textlabel {
   font-size: 0.75rem;
 }
 #page_waves #tab1 .maintext > form input[type=checkbox] {
-  margin-right: 0.5rem;
+  margin-right: 7px;
 }
 #page_waves #tab1 .maintext form#stored_scans_form p.right span.superhighlight + input[type=checkbox] {
-  margin: 0 0 0 0.5rem;
+  margin: 0 0 0 7px;
 }
 #page_waves #tab1 .maintext form#stored_scans_form p.right span.superhighlight + input[type=checkbox] + br {
   content: "";
   display: block;
-  margin: 0.5rem;
+  margin: 7px;
 }
 #page_waves #tab1 #waves .maintext form tr:not(:first-child) td {
   background: transparent;
 }
 #page_waves #tab1 #waves .maintext form tr:not(:first-child) td .resources {
-  padding-top: 0.75rem;
+  padding-top: 10.5px;
 }
 #page_waves #tab3 .container:nth-child(2) th:first-child,
 #page_waves #tab3 .container:nth-child(2) td:first-child {
@@ -4317,11 +4317,11 @@ table.mceEditor tr td select.mceSelectList:first-of-type {
   line-height: 1.75;
 }
 #page_waves #tab3 form input[value=" Request Scan "] {
-  margin-top: 0.5rem;
+  margin-top: 7px;
 }
 
 #stored_scans_form input[type=submit] {
-  margin: 0 0 0 1rem !important;
+  margin: 0 0 0 14px !important;
 }
 
 .scan_time {
@@ -4336,24 +4336,24 @@ table.mceEditor tr td select.mceSelectList:first-of-type {
   text-align: center;
 }
 #scan .maintext > table > tbody > tr > td {
-  padding: 0.25rem 0.75rem;
+  padding: 3.5px 10.5px;
 }
 #scan .maintext > table > tbody > tr > td:first-child:not([colspan="2"]):not(:nth-last-child(3)) {
   text-align: right;
 }
 #scan .maintext > table > tbody > tr > td:first-child a {
-  margin-right: 0.5rem;
+  margin-right: 7px;
 }
 #scan .maintext > table > tbody > tr > td:first-child span {
-  font-size: 1rem;
+  font-size: 14px;
   text-transform: uppercase;
   text-align: center;
   padding: 0 0.125rem;
   display: inline-block;
-  width: 2.5rem;
+  width: 35px;
 }
 #scan .maintext > table > tbody > tr + p {
-  margin-top: 1rem;
+  margin-top: 14px;
 }
 #scan .maintext p {
   text-align: center;
@@ -4372,7 +4372,7 @@ table.mceEditor tr td select.mceSelectList:first-of-type {
 }
 
 #search_scans input[type=submit] {
-  margin-top: 0.25rem;
+  margin-top: 3.5px;
 }
 
 /* POPULATION
@@ -4417,7 +4417,7 @@ table.mceEditor tr td select.mceSelectList:first-of-type {
 #population table th:first-child,
 #population table td:first-child {
   text-align: left;
-  padding: 0.25rem 0.5rem;
+  padding: 3.5px 7px;
 }
 #population table td:last-child {
   text-align: center;
@@ -4425,14 +4425,14 @@ table.mceEditor tr td select.mceSelectList:first-of-type {
 #population table tr:nth-child(7) th {
   font-weight: normal;
   text-align: right;
-  padding: 0.25rem 1rem;
+  padding: 3.5px 14px;
 }
 #population table tr:last-child td {
   text-align: center;
 }
 #population table #total {
   padding: 0 !important;
-  min-width: 2rem;
+  min-width: 28px;
 }
 #population table #max_total {
   font-weight: bold;
@@ -4447,7 +4447,7 @@ table.mceEditor tr td select.mceSelectList:first-of-type {
 }
 #page_population .container:nth-child(4) table th,
 #page_population .container:nth-child(4) table td {
-  padding: 0.25rem 0.5rem;
+  padding: 3.5px 7px;
 }
 #page_population .container table {
   min-width: unset;
@@ -4485,7 +4485,7 @@ table.mceEditor tr td select.mceSelectList:first-of-type {
   display: flex;
 }
 #page_population .government_effects li span {
-  padding: 0.15rem 1rem;
+  padding: 2.1px 14px;
   display: inline-block;
   flex-basis: 50%;
 }
@@ -4497,7 +4497,7 @@ table.mceEditor tr td select.mceSelectList:first-of-type {
   text-align: left;
 }
 #page_population #tab1 input[type=submit] {
-  margin: 1rem auto;
+  margin: 14px auto;
 }
 #page_population #tab2 .container:nth-child(2) .header {
   display: none;
@@ -4507,7 +4507,7 @@ table.mceEditor tr td select.mceSelectList:first-of-type {
   border: none;
 }
 .governments p {
-  margin-left: 0.5rem;
+  margin-left: 7px;
 }
 
 /* COVERT OPS
@@ -4528,15 +4528,15 @@ table.mceEditor tr td select.mceSelectList:first-of-type {
   font-size: 0.75rem;
   font-weight: normal;
   text-transform: uppercase;
-  padding-right: 2rem;
-  padding-left: 2rem;
+  padding-right: 28px;
+  padding-left: 28px;
   background: transparent;
 }
 #page_covert #contents .container:nth-last-child(4) .maintext > table tr:nth-child(1) th, #page_covert #contents .container:nth-last-child(4) .maintext > table tr:nth-child(2) th {
-  padding-top: 0.5rem;
+  padding-top: 7px;
 }
 #page_covert #contents .container:nth-last-child(4) .maintext > table tr:nth-child(1) td, #page_covert #contents .container:nth-last-child(4) .maintext > table tr:nth-child(2) td {
-  padding-bottom: 0.5rem;
+  padding-bottom: 7px;
   border-bottom: 1px solid rgba(82, 165, 248, 0.3);
 }
 #page_covert #contents .container:nth-last-child(4) .maintext > table tr:nth-child(1) th {
@@ -4544,14 +4544,14 @@ table.mceEditor tr td select.mceSelectList:first-of-type {
   font-weight: bold;
 }
 #page_covert #contents .container:nth-last-child(4) .maintext > table tr td {
-  padding: 0.5rem;
+  padding: 7px;
 }
 #page_covert #contents .container:nth-last-child(4) table {
   max-width: 600px;
 }
 #page_covert #contents .container:nth-last-child(4) form {
   max-width: 600px;
-  margin: 1rem auto 0;
+  margin: 14px auto 0;
 }
 #page_covert #contents .container:nth-last-child(4) form table tr th,
 #page_covert #contents .container:nth-last-child(4) form table tr td {
@@ -4586,7 +4586,7 @@ table.mceEditor tr td select.mceSelectList:first-of-type {
   font-weight: bold;
 }
 #page_covert table + p {
-  padding-top: 1rem;
+  padding-top: 14px;
 }
 #page_covert table tr td {
   background: #24303f;
@@ -4595,15 +4595,15 @@ table.mceEditor tr td select.mceSelectList:first-of-type {
   background: #1e2935;
 }
 #page_covert .training_info .title {
-  font-size: 1rem;
-  padding: 0.25rem 0.5rem;
+  font-size: 14px;
+  padding: 3.5px 7px;
   display: block;
   background: #171e27;
-  margin-bottom: 0.5rem;
+  margin-bottom: 7px;
 }
 #page_covert .description {
   padding-right: 15rem;
-  padding-left: 0.5rem;
+  padding-left: 7px;
   position: relative;
 }
 #page_covert .desc_link {
@@ -4611,13 +4611,13 @@ table.mceEditor tr td select.mceSelectList:first-of-type {
   display: inline-block;
   position: absolute;
   top: 3px;
-  right: 2rem;
+  right: 28px;
 }
 #page_covert .resources {
   font-size: 0.75rem;
-  padding-left: 0.5rem;
+  padding-left: 7px;
   display: flex;
-  margin-top: 0.15rem;
+  margin-top: 2.1px;
 }
 #page_covert .resources li.textlabel {
   min-width: 7rem;
@@ -4626,10 +4626,10 @@ table.mceEditor tr td select.mceSelectList:first-of-type {
   display: flex;
   justify-content: flex-end;
   margin-top: -2.5rem;
-  margin-right: 2rem;
+  margin-right: 28px;
 }
 #page_covert .current_amount {
-  padding-right: 2rem;
+  padding-right: 28px;
 }
 #page_covert .new_amount {
   margin-top: -0.2rem;
@@ -4641,11 +4641,11 @@ table.mceEditor tr td select.mceSelectList:first-of-type {
 #page_covert #wage_bill {
   display: flex;
   justify-content: center;
-  margin-bottom: 0.5rem;
+  margin-bottom: 7px;
 }
 #page_covert #unit_cost .resources,
 #page_covert #wage_bill .resources {
-  font-size: 1rem;
+  font-size: 14px;
 }
 #page_covert #unit_cost .resources > .textlabel,
 #page_covert #wage_bill .resources > .textlabel {
@@ -4658,17 +4658,17 @@ table.mceEditor tr td select.mceSelectList:first-of-type {
 
 #agents_training,
 #guards_training {
-  padding: 0 0 1rem;
+  padding: 0 0 14px;
   background: #24303f;
 }
 
 #agents_training {
-  margin-bottom: 2rem;
+  margin-bottom: 28px;
 }
 
 #security_redundancy_form th,
 #security_redundancy_form td {
-  padding: 0.15rem 1rem;
+  padding: 2.1px 14px;
 }
 
 .save_cost {
@@ -4697,19 +4697,19 @@ table.mceEditor tr td select.mceSelectList:first-of-type {
 @media (min-width: 992px) {
   #production_form tr th,
   #production_form tr td {
-    padding: 0.25rem 0.5rem;
+    padding: 3.5px 7px;
   }
 }
 #production_form tr th:nth-child(1),
 #production_form tr td:nth-child(1) {
-  padding-left: 0.5rem;
+  padding-left: 7px;
 }
 #production_form tr th:nth-child(3), #production_form tr th:nth-child(4), #production_form tr th:nth-child(5),
 #production_form tr td:nth-child(3),
 #production_form tr td:nth-child(4),
 #production_form tr td:nth-child(5) {
   text-align: center;
-  width: 2rem;
+  width: 28px;
 }
 #production_form tr th:nth-child(6), #production_form tr th:nth-child(8),
 #production_form tr td:nth-child(6),
@@ -4737,10 +4737,10 @@ table.mceEditor tr td select.mceSelectList:first-of-type {
   background: #171e27;
 }
 #production_form tr td:nth-child(1) {
-  font-size: 1rem;
+  font-size: 14px;
 }
 #production_form tr td:nth-child(9), #production_form tr td:nth-child(11) {
-  font-size: 1rem;
+  font-size: 14px;
 }
 #production_form tr td:nth-child(11) {
   font-weight: bold;
@@ -4786,7 +4786,7 @@ span.small.notice_warning {
 }
 
 #ship_cost {
-  margin: 1rem 0;
+  margin: 14px 0;
 }
 #ship_cost + table {
   max-width: 600px;
@@ -4799,7 +4799,7 @@ span.small.notice_warning {
 #production_factories_row td .textlabel {
   font-size: 0.75rem;
   font-weight: bold;
-  padding-bottom: 0.5rem;
+  padding-bottom: 7px;
 }
 
 #d_stats {
@@ -4817,7 +4817,7 @@ span.small.notice_warning {
 }
 #d_stats table:first-child tr:first-child th {
   color: #ccc;
-  font-size: 1rem;
+  font-size: 14px;
   font-weight: bold;
   text-transform: uppercase;
   line-height: 100%;
@@ -4838,10 +4838,10 @@ span.small.notice_warning {
 }
 #d_stats table tr:nth-child(2) th,
 #d_stats table tr:nth-child(2) td {
-  padding-top: 0.25rem;
+  padding-top: 3.5px;
 }
 #d_stats table tr:nth-child(6) th {
-  padding-top: 0.5rem;
+  padding-top: 7px;
 }
 #d_stats table tr th,
 #d_stats table tr td {
@@ -4890,7 +4890,7 @@ span.small.notice_warning {
   background: #1e2935;
 }
 .production_orders .resources {
-  margin: 1rem 0;
+  margin: 14px 0;
 }
 .production_orders form.cancelform input[type=submit] {
   margin: 0;
@@ -4911,7 +4911,7 @@ span.small.notice_warning {
   display: none;
 }
 #page_fleets #base_behavior .maintext {
-  margin-top: 0.5rem;
+  margin-top: 7px;
 }
 #page_fleets #base_behavior p {
   color: #ccc;
@@ -4993,7 +4993,7 @@ span.small.notice_warning {
   border-image: linear-gradient(to right, transparent 0%, rgba(82, 165, 248, 0.5) 50%, transparent 100%);
   border-image-slice: 1;
   box-shadow: inset 0 0 8px 2px rgba(0, 0, 0, 0.25), 0 0 3px 3px rgba(0, 0, 0, 0.15);
-  margin: 0 auto 0.5rem;
+  margin: 0 auto 7px;
 }
 #page_fleets form[name=movement] div#currentMoves {
   line-height: 2;
@@ -5011,7 +5011,7 @@ span.small.notice_warning {
 }
 #page_fleets form[name=movement] div#currentMoves input[type=submit] {
   display: block !important;
-  margin: 1rem auto 0 !important;
+  margin: 14px auto 0 !important;
 }
 #page_fleets .ct_fleets {
   display: table;
@@ -5043,7 +5043,7 @@ span.small.notice_warning {
 }
 #page_fleets .ct_fleets tr:nth-child(1) th, #page_fleets .ct_fleets tr:nth-child(2) th {
   color: #ccc;
-  font-size: 1rem;
+  font-size: 14px;
   font-weight: bold;
   text-transform: uppercase;
   line-height: 100%;
@@ -5063,13 +5063,13 @@ span.small.notice_warning {
   border-top-width: 0;
 }
 #page_fleets .ct_fleets tr:nth-child(3) td {
-  font-size: 0.75rem;
+  font-size: 10.5px;
   font-weight: bold;
   text-transform: uppercase;
   background: #171e27;
 }
 #page_fleets .ct_fleets tr:nth-child(3) td small {
-  font-size: 0.75rem;
+  font-size: 10.5px;
 }
 
 #fleet_overview tr {
@@ -5162,7 +5162,7 @@ th.superhighlight {
 #d_from table tr:first-child th,
 #d_num table tr:first-child th,
 #d_to table tr:first-child th {
-  padding: 0.25rem 0.5rem;
+  padding: 3.5px 7px;
   background: rgba(0, 0, 0, 0.12);
 }
 #d_from table tr:last-child td,
@@ -5180,7 +5180,7 @@ th.superhighlight {
 #d_from table tr a[class*=d_fleet_],
 #d_num table tr a[class*=d_fleet_],
 #d_to table tr a[class*=d_fleet_] {
-  padding: 0.25rem 0.5rem;
+  padding: 3.5px 7px;
 }
 #d_from a:hover,
 #d_num a:hover,
@@ -5222,7 +5222,7 @@ th.superhighlight {
 }
 #galaxy_banner + script + .container .maintext > p .superhighlight {
   font-size: 1.3rem;
-  padding: 0.5rem 0 0.25rem;
+  padding: 7px 0 3.5px;
   display: inline-block;
 }
 
@@ -5257,7 +5257,7 @@ th.superhighlight {
 #page_login #tnav,
 #page_support #tnav,
 #page_manual #tnav {
-  margin: -2.25rem 0.5rem 0;
+  margin: -2.25rem 7px 0;
 }
 #page_login #contents_header,
 #page_login #contents_footer,
@@ -5283,7 +5283,7 @@ th.superhighlight {
 }
 #page_login #contents .header,
 #page_support #contents .header {
-  height: 2rem;
+  height: 28px;
 }
 #page_login .container,
 #page_support .container {
@@ -5292,7 +5292,7 @@ th.superhighlight {
 #page_login input[type=submit],
 #page_support input[type=submit] {
   display: block;
-  margin: 0 auto 1rem;
+  margin: 0 auto 14px;
 }
 
 #page_login #header,
@@ -5316,17 +5316,17 @@ th.superhighlight {
   margin: 0 auto;
 }
 #page_login #contents .maintext {
-  padding: 1rem;
+  padding: 14px;
   background: #24303f;
   border: 1px solid rgba(82, 165, 248, 0.5);
-  border-radius: 0.5rem;
+  border-radius: 7px;
   box-shadow: inset 0 0 8px 2px rgba(0, 0, 0, 0.25), 1px 8px 30px 3px rgba(0, 0, 0, 0.3);
 }
 #page_login #contents .maintext p:last-child {
   display: none;
 }
 #page_login .container {
-  border-radius: 0.5rem;
+  border-radius: 7px;
 }
 #page_login .container .header:first-child {
   margin-top: 0;
@@ -5338,7 +5338,7 @@ th.superhighlight {
   text-align: center;
 }
 #page_login .container form.login input[type=submit] {
-  margin: 0 auto 1rem;
+  margin: 0 auto 14px;
 }
 #page_login .container form.login .g-recaptcha {
   display: table;
@@ -5346,7 +5346,7 @@ th.superhighlight {
 }
 #page_login .container form input:not([type=submit]) {
   width: 80%;
-  margin: 0 auto 1rem;
+  margin: 0 auto 14px;
 }
 
 #page_support ~ div[id^=pabox],
@@ -5362,38 +5362,38 @@ th.superhighlight {
 #page_support form select {
   color: #ccc;
   width: 100%;
-  margin: 0 auto 1rem;
+  margin: 0 auto 14px;
 }
 #page_support form textarea {
   width: 100%;
   min-width: 35rem;
   min-height: 15rem;
-  margin-bottom: 1rem;
+  margin-bottom: 14px;
 }
 
 #page_manual #contents {
   display: grid;
   grid-template-columns: 12rem minmax(12rem, 60rem) 1fr;
-  grid-column-gap: 0.5rem;
+  grid-column-gap: 7px;
 }
 #page_manual #menu {
   display: flex;
   flex-direction: column;
-  margin: 0.5rem 0 0.5rem 0.5rem;
+  margin: 7px 0 7px 7px;
   grid-column: 1/2;
 }
 #page_manual #menu li {
   margin: 0;
 }
 #page_manual #menu li a {
-  font-size: 0.75rem;
+  font-size: 10.5px;
 }
 #page_manual #menu .entry_sep {
   display: block;
   border-top: 1px solid transparent;
   border-image: linear-gradient(to right, transparent 0%, rgba(82, 165, 248, 0.5) 100%);
   border-image-slice: 1;
-  margin: 0.5rem 0 0.5rem;
+  margin: 7px 0 7px;
 }
 #page_manual #menu #entry_search + .entry_sep + .entries {
   display: none;
@@ -5418,7 +5418,7 @@ th.superhighlight {
 #page_manual .entries a {
   font-weight: normal;
   text-indent: -0.5rem;
-  margin-left: 0.5rem;
+  margin-left: 7px;
 }
 #page_manual input[type=text] {
   max-width: 10.5rem;
@@ -5437,9 +5437,9 @@ th.superhighlight {
   color: #ccc !important;
   font-size: 0.75rem;
   text-transform: uppercase;
-  padding-left: 0.5rem;
+  padding-left: 7px;
   border-left: 5px solid red;
-  margin-left: 1rem;
+  margin-left: 14px;
   /* font-weight: bold; */
 }
 #page_manual .tech_table td:last-child {
@@ -5449,7 +5449,7 @@ th.superhighlight {
 }
 #page_manual h2 {
   color: #ccc;
-  font-size: 1rem;
+  font-size: 14px;
   text-transform: initial;
   background: #24303f;
 }
@@ -5461,7 +5461,7 @@ th.superhighlight {
   color: #ccc;
 }
 #page_manual .stats_tbl th, #page_manual .stats_tbl td {
-  padding: 0.15rem 0.5rem;
+  padding: 2.1px 7px;
 }
 #page_manual .stats_tbl th[colspan="17"] {
   color: white;
@@ -5608,7 +5608,7 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
 }
 @media (max-width: 767px) {
   #page_universe #contents table a {
-    padding: 0 0.5rem;
+    padding: 0 7px;
   }
 }
 #page_universe #contents table a.moc {
@@ -5628,11 +5628,11 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
   color: #ccc;
   font-size: 0.75rem;
   font-weight: bold;
-  padding: 0.25rem 0.125rem;
+  padding: 3.5px 0.125rem;
   background: #171e27;
 }
 #page_universe #contents table tr:first-child th.right {
-  padding-right: 0.25rem;
+  padding-right: 3.5px;
 }
 #page_universe #contents table tr td.moc, #page_universe #contents table tr td.mow, #page_universe #contents table tr td.mod, #page_universe #contents table tr td.gc {
   color: #ccc;
@@ -5705,7 +5705,7 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
 }
 #intel:before {
   color: #ccc;
-  font-size: 1rem;
+  font-size: 14px;
   font-weight: bold;
   text-transform: uppercase;
   line-height: 100%;
@@ -5739,12 +5739,12 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
   background: transparent;
 }
 #intel tr:nth-child(5) th {
-  padding: 1rem 0 0.25rem;
+  padding: 14px 0 3.5px;
 }
 
 #load_box {
   color: #ccc !important;
-  padding: 0.25rem;
+  padding: 3.5px;
   background: #1a222c;
   border: 1px solid rgba(82, 165, 248, 0.5);
 }
@@ -5848,7 +5848,7 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
   color: #ccc;
   font-size: 0.75rem;
   font-weight: bold;
-  padding: 0.25rem 0.5rem;
+  padding: 3.5px 7px;
   background: #171e27;
   width: auto !important;
 }
@@ -5894,7 +5894,7 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
   [id^=page_universe] table tr a,
   [id^=page_universe] table tr .tablesort_asc,
   [id^=page_universe] table tr .tablesort_desc {
-    padding: 0 0.5rem;
+    padding: 0 7px;
   }
 }
 [id^=page_universe] input[type=submit] {
@@ -5940,7 +5940,7 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
 #page_universe_misc table tr td[style="width: 30%;"],
 #page_universe_races table tr td[style="width: 30%;"],
 #page_universe_xp table tr td[style="width: 30%;"] {
-  width: 0.25rem !important;
+  width: 3.5px !important;
 }
 
 #page_universe_misc table tr:first-child td.left, #page_universe_misc table tr:first-child td.right,
@@ -5967,7 +5967,7 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
 }
 #page_universe_combat_reports table table tr th,
 #page_universe_combat_reports table table tr td {
-  padding: 0 0.75rem;
+  padding: 0 10.5px;
 }
 #page_universe_combat_reports table table tr th:empty {
   background: transparent !important;
@@ -5978,7 +5978,7 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
 #page_universe_combat_reports table table tr br {
   content: "";
   display: block;
-  margin: 2rem;
+  margin: 28px;
 }
 #page_universe_combat_reports #tab1 {
   width: auto;
@@ -5990,7 +5990,7 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
 }
 #page_universe_combat_reports #tab1 table th,
 #page_universe_combat_reports #tab1 table td {
-  padding: 0 0.75rem;
+  padding: 0 10.5px;
 }
 #page_universe_combat_reports #tab1 table th:empty,
 #page_universe_combat_reports #tab1 table td:empty {
@@ -6001,7 +6001,7 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
 }
 #page_universe_combat_reports #tab1 .container:first-child table tr:first-child th:nth-child(2) {
   color: #ccc;
-  padding: 0.25rem;
+  padding: 3.5px;
   background: transparent;
   background: linear-gradient(to right, #1a222c 0%, rgba(255, 0, 0, 0.25) 50%, #1a222c 100%) !important;
   border: 1px solid transparent;
@@ -6010,7 +6010,7 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
 }
 #page_universe_combat_reports #tab1 .container:first-child table tr:first-child th:nth-child(4) {
   color: #ccc;
-  padding: 0.25rem;
+  padding: 3.5px;
   background: linear-gradient(to right, #1a222c 0%, rgba(50, 205, 50, 0.2) 50%, #1a222c 100%) !important;
   border: 1px solid transparent;
   border-image: linear-gradient(to right, transparent 0%, rgba(50, 205, 50, 0.3) 50%, transparent 100%);
@@ -6050,8 +6050,8 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
   vertical-align: sub;
   content: "";
   display: inline-block;
-  width: 1rem;
-  height: 1rem;
+  width: 14px;
+  height: 14px;
   margin-left: 0.4rem;
 }
 #page_universe_combat_reports #tab1 .container:nth-child(2) table thead th:nth-child(2):after {
@@ -6090,7 +6090,7 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
   content: " ";
   background: #1a222c;
   width: 100%;
-  height: 1rem;
+  height: 14px;
   position: absolute;
   top: -0.14rem;
   left: 0;
@@ -6129,7 +6129,7 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
 [id^=page_universe] .container#javascriptwarning + #tab_container table,
 [id^=page_universe] .container#javascriptwarning + #notice + .container table,
 [id^=page_universe] .container#javascriptwarning + #notice + #tab_container table {
-  margin-bottom: 1rem;
+  margin-bottom: 14px;
 }
 [id^=page_universe] .container#javascriptwarning + .container table tr:first-child td,
 [id^=page_universe] .container#javascriptwarning + #tab_container table tr:first-child td,
@@ -6140,15 +6140,15 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
 }
 [id^=page_universe] .container .header,
 [id^=page_universe] .container h2 {
-  margin-bottom: 2rem;
+  margin-bottom: 28px;
 }
 [id^=page_universe] table {
   width: auto !important;
-  margin-bottom: 2.5rem;
+  margin-bottom: 35px;
 }
 [id^=page_universe] table th,
 [id^=page_universe] table td {
-  padding: 0.25rem 0.75rem !important;
+  padding: 3.5px 10.5px !important;
 }
 [id^=page_universe] table th:empty,
 [id^=page_universe] table td:empty {
@@ -6159,7 +6159,7 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
 [id^=page_universe] table td[colspan="4"], [id^=page_universe] table td[colspan="5"], [id^=page_universe] table td[colspan="6"], [id^=page_universe] table td[colspan="7"], [id^=page_universe] table td[colspan="8"] {
   font-size: 0;
   background: #1a222c;
-  height: 0.75rem;
+  height: 10.5px;
 }
 
 #page_galaxy #contents .maintext .superhighlight {
@@ -6171,7 +6171,7 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
 }
 #page_galaxy input[type=number] {
   color: #52a5f8;
-  padding: 0.25rem !important;
+  padding: 3.5px !important;
   min-width: 3rem;
   height: 1.5rem;
 }
@@ -6245,10 +6245,10 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
 #page_galaxy table#galtable th,
 #page_galaxy table#galtable td {
   white-space: normal;
-  padding: 0.25rem 0.5rem;
+  padding: 3.5px 7px;
 }
 #page_galaxy table#galtable td:nth-last-child(2) {
-  padding: 0.25rem;
+  padding: 3.5px;
 }
 #page_galaxy table#galtable td:nth-last-child(2) a {
   padding: 0 0.125rem;
@@ -6267,8 +6267,8 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
 }
 #page_galaxy #intel_form p {
   text-align: center;
-  padding: 0 0.5rem;
-  margin: 0.5rem 0;
+  padding: 0 7px;
+  margin: 7px 0;
 }
 #page_galaxy #intel_form p.right {
   position: absolute;
@@ -6278,17 +6278,17 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
 #page_galaxy #intel_form select#intel,
 #page_galaxy #intel_form input[name=nick] {
   width: 100%;
-  margin: 0.25rem auto 0.5rem;
+  margin: 3.5px auto 7px;
 }
 #page_galaxy #intel_form input[name=nick] {
   margin-bottom: 0;
 }
 #page_galaxy #intel_form input[type=submit] {
-  margin: 0.5rem;
+  margin: 7px;
 }
 
 #page_alliance_defence .maintext .ally_def_eta_wrapper .ally_def_eta {
-  font-size: 2rem;
+  font-size: 28px;
 }
 #page_alliance_defence .maintext .ally_def_eta_wrapper .ally_def_eta img.ally_def_eta_toggle_img {
   width: 0.6875rem;
@@ -6298,11 +6298,11 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
   background: #24303f;
   border: 1px solid rgba(82, 165, 248, 0.18);
   box-shadow: inset 0 0 8px 2px rgba(0, 0, 0, 0.25), 0 2px 10px 2px rgba(0, 0, 0, 0.15);
-  margin: 0 0 2rem 5px;
+  margin: 0 0 28px 5px;
 }
 #page_alliance_defence .maintext .ally_def_eta_wrapper .ally_def_incs_wrapper .ally_def_target {
-  font-size: 1rem;
-  padding: 0.25rem 0;
+  font-size: 14px;
+  padding: 3.5px 0;
   background: rgba(0, 0, 0, 0.2);
   border-bottom: 1px solid rgba(0, 0, 0, 0.5);
 }
@@ -6311,13 +6311,13 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
   align-items: center;
 }
 #page_alliance_defence .maintext .ally_def_eta_wrapper .ally_def_incs_wrapper .ally_def_target .ally_def_target_toggle_link {
-  width: 1rem;
+  width: 14px;
   margin: 0 0.125rem 0 -1.25rem;
   cursor: pointer;
 }
 #page_alliance_defence .maintext .ally_def_eta_wrapper .ally_def_incs_wrapper .ally_def_target .ally_def_target_toggle_link img {
-  width: 1rem;
-  height: 1rem;
+  width: 14px;
+  height: 14px;
 }
 #page_alliance_defence .maintext .ally_def_eta_wrapper .ally_def_incs_wrapper .ally_def_target .ally_def_target_coords {
   font-size: 0.9rem;
@@ -6333,7 +6333,7 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
   min-width: 40px;
 }
 #page_alliance_defence .maintext .ally_def_eta_wrapper .ally_def_incs_wrapper .ally_def_target .ally_def_target_mdata .ally_def_target_mdata_nick {
-  font-size: 1rem;
+  font-size: 14px;
   overflow: hidden;
   min-width: 125px;
 }
@@ -6364,7 +6364,7 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
   flex: 3;
 }
 #page_alliance_defence .maintext .ally_def_eta_wrapper .ally_def_incs_wrapper .ally_def_target .ally_def_target_links span[id^=note_tag] {
-  margin-right: 0.5rem;
+  margin-right: 7px;
 }
 #page_alliance_defence .maintext .ally_def_eta_wrapper .ally_def_incs_wrapper .ally_def_target .ally_def_target_links a {
   font-size: 0;
@@ -6377,7 +6377,7 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
   text-transform: initial;
   line-height: 1;
   white-space: nowrap;
-  padding: 0.25rem 0.5rem;
+  padding: 3.5px 7px;
   content: "Battle Calc";
   display: inline-block;
   background: rgba(36, 48, 63, 0.4) !important;
@@ -6407,7 +6407,7 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
   text-transform: initial;
   line-height: 1;
   white-space: nowrap;
-  padding: 0.25rem 0.5rem;
+  padding: 3.5px 7px;
   display: inline-block;
   background: rgba(36, 48, 63, 0.4) !important;
   border: 1px solid rgba(50, 171, 82, 0.5) !important;
@@ -6426,7 +6426,7 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
   text-transform: initial;
   line-height: 1;
   white-space: nowrap;
-  padding: 0.25rem 0.5rem;
+  padding: 3.5px 7px;
   display: inline-block;
   background: rgba(36, 48, 63, 0.4) !important;
   border: 1px solid rgba(82, 165, 248, 0.5) !important;
@@ -6506,8 +6506,8 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
 }
 #page_alliance_defence .maintext .ally_def_eta_wrapper .ally_def_incs_wrapper .ally_def_attackers > div .ally_def_attacker_links a {
   color: black !important;
-  font-size: 1rem;
-  line-height: 1rem;
+  font-size: 14px;
+  line-height: 14px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -6642,7 +6642,7 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
   justify-content: flex-end;
 }
 #page_alliance_defence .maintext .ally_def_eta_wrapper .ally_def_incs_wrapper .ally_def_details .ally_def_details_notes form textarea {
-  padding: 0.5rem 0.75rem;
+  padding: 7px 10.5px;
   width: 100%;
   margin: 0 0 4px 4px;
 }
@@ -6747,7 +6747,7 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
 #page_alliance_defence .maintext .ally_def_eta_wrapper .ally_def_incs_wrapper .ally_def_defenders .ally_def_defender input[id^=recall] {
   font-size: 12px;
   height: 18px;
-  margin: 0.25rem !important;
+  margin: 3.5px !important;
   order: 6;
 }
 #page_alliance_defence .maintext .ally_def_eta_wrapper .ally_def_incs_wrapper .ally_def_defenders .ally_def_defender .ally_def_defender_mdata {
@@ -6775,7 +6775,7 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
 }
 #page_alliance_defence p#dbcalc .bcalc_target a {
   line-height: 1.4;
-  margin-top: 0.5rem !important;
+  margin-top: 7px !important;
 }
 
 #page_ship_overview #full_page {
@@ -6786,22 +6786,22 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
   font-size: 1.2rem;
   font-weight: bold;
   text-transform: uppercase;
-  padding: 0.5rem 0;
+  padding: 7px 0;
   background: #24303f;
   background: linear-gradient(180deg, #24303f 0%, #24303f 15%, #24303f 100%) !important;
   border: 1px solid transparent;
   border-image: linear-gradient(to right, transparent 0%, rgba(82, 165, 248, 0.5) 50%, transparent 100%);
   border-image-slice: 1;
-  margin: 1rem 0;
+  margin: 14px 0;
 }
 #page_ship_overview #full_page table tr:nth-child(2) th {
   color: #ccc;
   font-size: 0.75rem;
   font-weight: bold;
-  padding: 0.5rem 0.125rem;
+  padding: 7px 0.125rem;
 }
 #page_ship_overview #full_page table tr:nth-child(2) th.right {
-  padding-right: 0.25rem;
+  padding-right: 3.5px;
 }
 #page_ship_overview #full_page table tr td {
   background: #24303f;
@@ -6835,7 +6835,7 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
   color: #ccc;
   font-size: 0.75rem;
   font-weight: bold;
-  padding: 0.25rem 0.5rem;
+  padding: 3.5px 7px;
   background: #171e27;
 }
 #page_alliance_attacks .maintext > table > thead > tr[id^=target_],
@@ -6890,7 +6890,7 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
 #page_alliance_attacks .maintext > table > tbody > tr[id^=target_] table tr[class^=shadedbackground] td ul.alliance_attack_claims_list li {
   font-size: 0.75rem;
   font-style: italic;
-  margin: 0 0.5rem;
+  margin: 0 7px;
 }
 #page_alliance_attacks .maintext > table > thead > tr[id^=target_] table tr[class^=shadedbackground] td ul.alliance_attack_claims_list li a,
 #page_alliance_attacks .maintext > table > tbody > tr[id^=target_] table tr[class^=shadedbackground] td ul.alliance_attack_claims_list li a {
@@ -6907,7 +6907,7 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
 }
 #page_alliance_attacks .maintext > table > thead > tr > td:not([colspan="6"]),
 #page_alliance_attacks .maintext > table > tbody > tr > td:not([colspan="6"]) {
-  padding: 0.25rem 0.5rem;
+  padding: 3.5px 7px;
 }
 #page_alliance_attacks .maintext > table > thead > tr > td:not([colspan="6"]).center[style="width: 50%;"], #page_alliance_attacks .maintext > table > thead > tr > td:not([colspan="6"]).center[style="width: 50%;"] + td,
 #page_alliance_attacks .maintext > table > tbody > tr > td:not([colspan="6"]).center[style="width: 50%;"],
@@ -6916,20 +6916,20 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
 }
 #page_alliance_attacks .maintext > table > thead > tr > td:not([colspan="6"]) > table,
 #page_alliance_attacks .maintext > table > tbody > tr > td:not([colspan="6"]) > table {
-  padding-left: 2rem;
+  padding-left: 28px;
   border-spacing: 0;
   margin: 0;
 }
 #page_alliance_attacks .maintext > table > thead > tr > td:not([colspan="6"]) > table > tbody > tr > th,
 #page_alliance_attacks .maintext > table > tbody > tr > td:not([colspan="6"]) > table > tbody > tr > th {
   font-size: 0.75rem;
-  padding: 0.25rem;
+  padding: 3.5px;
 }
 #page_alliance_attacks .maintext > table > thead > tr > td:not([colspan="6"]) > table > tbody > tr > th,
 #page_alliance_attacks .maintext > table > thead > tr > td:not([colspan="6"]) > table > tbody > tr > td,
 #page_alliance_attacks .maintext > table > tbody > tr > td:not([colspan="6"]) > table > tbody > tr > th,
 #page_alliance_attacks .maintext > table > tbody > tr > td:not([colspan="6"]) > table > tbody > tr > td {
-  padding: 0.25rem 0;
+  padding: 3.5px 0;
 }
 #page_alliance_attacks .maintext > table > thead > tr > td:not([colspan="6"]) > table > tbody > tr > th:nth-child(1), #page_alliance_attacks .maintext > table > thead > tr > td:not([colspan="6"]) > table > tbody > tr > th:nth-child(2),
 #page_alliance_attacks .maintext > table > thead > tr > td:not([colspan="6"]) > table > tbody > tr > td:nth-child(1),
@@ -6945,7 +6945,7 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
 #page_alliance_attacks .maintext > table > tbody > tr > td:not([colspan="6"]) > table > tbody > tr > th.center,
 #page_alliance_attacks .maintext > table > tbody > tr > td:not([colspan="6"]) > table > tbody > tr > td.center {
   text-align: left;
-  padding-left: 1rem;
+  padding-left: 14px;
 }
 #page_alliance_attacks .maintext #wave_table,
 #page_alliance_attacks .maintext #target_table {
@@ -6954,11 +6954,11 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
 }
 #page_alliance_attacks .maintext #wave_table tr th,
 #page_alliance_attacks .maintext #target_table tr th {
-  padding: 0.25rem 0.5rem;
+  padding: 3.5px 7px;
 }
 #page_alliance_attacks .maintext #wave_table tr td,
 #page_alliance_attacks .maintext #target_table tr td {
-  padding: 0.25rem 0.5rem;
+  padding: 3.5px 7px;
   background: #24303f;
 }
 #page_alliance_attacks .maintext #wave_table tr td[colspan="5"],
@@ -7000,7 +7000,7 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
 }
 #attack_claim_form:before {
   color: #ccc;
-  font-size: 1rem;
+  font-size: 14px;
   font-weight: bold;
   text-transform: uppercase;
   line-height: 100%;
@@ -7024,10 +7024,10 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
   right: 4px;
 }
 #attack_claim_form table tr td {
-  padding-top: 0.5rem !important;
+  padding-top: 7px !important;
 }
 #attack_claim_form table tr td:nth-child(2) {
-  padding-left: 0.25rem !important;
+  padding-left: 3.5px !important;
 }
 #attack_claim_form table tr td input:not([type=checkbox]) {
   width: 100%;
@@ -7081,11 +7081,11 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
   max-width: 800px;
 }
 #page_alliance_fund #contents table tr th[colspan="5"] {
-  padding-bottom: 1rem;
+  padding-bottom: 14px;
   background: transparent !important;
 }
 #page_alliance_fund #contents table tr td[colspan="5"] {
-  padding: 1rem 0;
+  padding: 14px 0;
 }
 #page_alliance_fund #contents table tr td[colspan="5"][class=center] {
   padding: 0;
@@ -7154,7 +7154,7 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
 }
 #page_history .maintext table tr th,
 #page_history .maintext table tr td {
-  padding: 0.25rem 0.75rem;
+  padding: 3.5px 10.5px;
 }
 #page_history .maintext table tr td {
   background: #24303f;
@@ -7249,13 +7249,13 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
   background: transparent;
 }
 #view_news > .maintext > table > tbody > tr:first-child > th {
-  padding: 0.5rem 0.125rem;
+  padding: 7px 0.125rem;
 }
 #view_news > .maintext > table > tbody > tr > td {
   background: #24303f;
 }
 #view_news > .maintext > table > tbody > tr > td:last-child {
-  padding: 2rem 1rem;
+  padding: 28px 14px;
 }
 #view_news > .maintext > table > tbody > tr:nth-child(even) > td {
   background: #1e2935;
@@ -7263,7 +7263,7 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
 #view_news > .maintext > table > tbody > tr table {
   background: transparent;
   width: 100%;
-  margin: 0 auto 1rem;
+  margin: 0 auto 14px;
 }
 #view_news > .maintext > table > tbody > tr table tr th {
   background: #1a222c;
@@ -7298,8 +7298,8 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
   vertical-align: sub;
   content: "";
   display: inline-block;
-  width: 1rem;
-  height: 1rem;
+  width: 14px;
+  height: 14px;
   margin-left: 0.4rem;
 }
 #view_news > .maintext > table > tbody > tr table.news_combat_fleet_salvage tr:nth-child(2) th.metal span:after, #view_news > .maintext > table > tbody > tr table.news_combat_cap_roids tr:nth-child(2) th.metal span:after {
@@ -7333,8 +7333,8 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
   vertical-align: sub;
   content: "";
   display: inline-block;
-  width: 1rem;
-  height: 1rem;
+  width: 14px;
+  height: 14px;
   margin-left: 0.4rem;
 }
 #view_news > .maintext > table > tbody > tr table.news_combat_fleet_cap_roids td.metal span:first-child:after {
@@ -7380,7 +7380,7 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
 #view_news > .maintext > table > tbody > tr.news_fleet table {
   width: auto !important;
   min-width: 70%;
-  margin: 0 0 1rem !important;
+  margin: 0 0 14px !important;
 }
 #view_news > .maintext > table > tbody > tr.news_fleet table:first-child tr:first-child th {
   text-align: center;
@@ -7416,8 +7416,8 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
   vertical-align: sub;
   content: "";
   display: inline-block;
-  width: 1rem;
-  height: 1rem;
+  width: 14px;
+  height: 14px;
   margin-left: 0.4rem;
 }
 #view_news .maintext > table > tbody > tr > td:first-child a {
@@ -7438,16 +7438,16 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
   font-weight: bold;
   text-transform: uppercase;
   line-height: 1;
-  padding: 0.5rem 0;
-  display: block;
+  padding: 7px 0;
+  display: none;
   background: #24303f;
   background: linear-gradient(to right, #1a222c 0%, #24303f 50%, #1a222c 100%) !important;
   width: 100%;
-  height: 2rem;
+  height: 28px;
   border: 1px solid transparent;
   border-image: linear-gradient(to right, transparent 0%, rgba(82, 165, 248, 0.5) 50%, transparent 100%);
   border-image-slice: 1;
-  margin: 1rem 0;
+  margin: 14px 0;
   position: relative;
 }
 #page_bcalc #contents #contents_header:before {
@@ -7455,7 +7455,7 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
   font-weight: bold;
   text-transform: uppercase;
   text-align: center;
-  padding: 0.5rem 0;
+  padding: 7px 0;
   content: "Planetarion Battle Calculator";
   width: 100%;
   position: absolute;
@@ -7480,6 +7480,9 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
   background-color: rgba(36, 48, 63, 0.4);
   border-radius: 3px;
   box-shadow: inset 0 2px 4px 2px rgba(0, 0, 0, 0.4);
+}
+#page_bcalc #bcalc input[type=button] {
+  margin: 3.5px 0;
 }
 #page_bcalc #bcalc input[type=checkbox] {
   vertical-align: middle;
@@ -7530,11 +7533,11 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
   color: limegreen;
 }
 #page_bcalc #bcalc #def_side {
-  padding: 0.25rem;
+  padding: 3.5px;
   background: rgba(50, 205, 50, 0.4);
 }
 #page_bcalc #bcalc #att_side {
-  padding: 0.25rem;
+  padding: 3.5px;
   background: rgba(255, 0, 0, 0.35);
 }
 #page_bcalc #bcalc #att_add_to,
@@ -7650,7 +7653,7 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
   color: #c2146a;
 }
 #page_bcalc #bcalc .global_controls {
-  padding: 0 0.5rem 0.5rem;
+  padding: 0 7px 7px;
 }
 #page_bcalc #bcalc .global_controls.nowrap {
   background: #24303f;
@@ -7812,8 +7815,14 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
 #page_bcalc #bcalc .att_report_fleet tr:nth-child(2) th {
   font-weight: bold;
 }
-#page_bcalc #bcalc #att_war + .att_row_sep {
-  height: 4.35rem;
+#page_bcalc #bcalc .def_row_sep,
+#page_bcalc #bcalc .att_row_sep {
+  height: 7px;
+}
+#page_bcalc #bcalc .def_row_sep td,
+#page_bcalc #bcalc .att_row_sep td {
+  line-height: 0;
+  padding: 0;
 }
 #page_bcalc #bcalc input[id^=att_race] {
   border-color: orange;
@@ -7853,7 +7862,7 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
 }
 #page_bcalc #def_value_table tr td:last-of-type,
 #page_bcalc #att_score_table tr td:last-of-type {
-  font-size: 1rem;
+  font-size: 14px;
 }
 #page_bcalc #def_value_table tr td:first-child,
 #page_bcalc #att_score_table tr td:first-child {
@@ -7865,10 +7874,10 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
   background-color: #24303f;
 }
 #page_bcalc #scans_area {
-  padding: 0.5rem;
+  padding: 3.5px 7px;
   display: block !important;
   background-color: #24303f;
-  height: 3rem;
+  height: 28px;
   min-height: unset;
 }
 #page_bcalc #my_bcalcs p,
@@ -7904,13 +7913,13 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
   width: 216px !important;
 }
 #page_bcalc #side_select_box p#side_select {
-  padding: 0 0 0.5rem;
+  padding: 0 0 7px;
 }
 #page_bcalc #side_select_box p#side_select a:first-of-type {
-  margin-right: 0.5rem;
+  margin-right: 7px;
 }
 #page_bcalc #side_select_box p#side_select a:not(:first-of-type) {
-  margin-left: 0.5rem;
+  margin-left: 7px;
 }
 #page_bcalc #fleet_select_box p:first-child {
   position: absolute;
@@ -7932,21 +7941,28 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
   width: 230px !important;
 }
 #page_bcalc #add_other p {
-  padding: 0 0 0.5rem;
+  padding: 0 0 7px;
 }
 #page_bcalc #add_other p:first-child {
-  height: 1rem;
+  height: 14px;
+}
+#page_bcalc #add_other p:nth-child(3) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 #page_bcalc #add_other p #add_other_side_fleet {
   display: block;
-  margin-top: 0.75rem;
 }
 #page_bcalc #add_other input[type=number] {
   color: #ccc;
   background-color: rgba(36, 48, 63, 0.4);
 }
+#page_bcalc #add_other input[type=radio] {
+  margin: 0 11px 0 4px;
+}
 #page_bcalc #add_other input[type=button] {
-  margin: 0.5rem 0;
+  margin: 3.5px 0;
 }
 #page_bcalc #my_bcalcs a:hover,
 #page_bcalc #add_own a:hover,
@@ -7980,12 +7996,12 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
 }
 #page_bcalc #add_own p:nth-of-type(2) a {
   display: inline-block;
-  margin: 0.25rem !important;
+  margin: 3.5px !important;
 }
 #page_bcalc #add_own p:nth-of-type(2) a:first-of-type {
   color: rgba(50, 205, 50, 0.75) !important;
   border-color: rgba(50, 205, 50, 0.5) !important;
-  margin: 0 0 0 0.5rem !important;
+  margin: 0 0 0 7px !important;
 }
 #page_bcalc #add_own p:nth-of-type(2) a:first-of-type:hover {
   background-color: rgba(50, 205, 50, 0.75) !important;
@@ -8051,7 +8067,7 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
 }
 #page_bcalc #add_own table tr:first-child th:not(:first-child) {
   text-align: right;
-  padding: 0.25rem;
+  padding: 3.5px;
 }
 #page_bcalc #add_own table tr:nth-child(even) {
   background: #1e2935;
@@ -8081,7 +8097,7 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
   display: block;
   position: sticky;
   top: 0;
-  right: 0.5rem;
+  right: 7px;
 }
 #my_bcalcs #bcalclist {
   margin-top: -29px;
@@ -8106,7 +8122,7 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
   font-size: 1rem;
   font-weight: bold;
   font-style: italic;
-  padding: 1rem 0;
+  padding: 14px 0;
   background: #1a222c;
 }
 #page_scan div#full_page .maintext > table > tbody > tr > th,
@@ -8114,7 +8130,7 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
   vertical-align: middle;
 }
 #page_scan div#full_page .maintext > table > tbody > tr > td {
-  padding: 0.25rem 0.75rem;
+  padding: 3.5px 10.5px;
 }
 #page_scan div#full_page .maintext > table > tbody > tr > td:first-child:not([colspan="2"]):not(:nth-last-child(3)) {
   text-align: right;
@@ -8122,15 +8138,15 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
 #page_scan div#full_page .maintext > table > tbody > tr > td:first-child a {
   text-align: center;
   width: 4rem;
-  margin-right: 0.5rem;
+  margin-right: 7px;
 }
 #page_scan div#full_page .maintext > table > tbody > tr > td:first-child span {
-  font-size: 1rem;
+  font-size: 14px;
   text-transform: uppercase;
   text-align: center;
   padding: 0 0.125rem;
   display: inline-block;
-  width: 2.5rem;
+  width: 35px;
 }
 #page_scan div#full_page .maintext > table > tbody > tr:nth-child(even) {
   background: #1e2935;
@@ -8151,7 +8167,7 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
   background: #1a222c;
 }
 #page_scan div#full_page .maintext p span[id^=bcalc_target] {
-  padding-top: 1rem;
+  padding-top: 14px;
   display: block;
 }
 #page_scan div#full_page .maintext p span[id^=bcalc_target]:empty {
@@ -8159,7 +8175,7 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
 }
 
 #page table td:first-child input[type=submit] {
-  margin: 1rem 0 0;
+  margin: 14px 0 0;
 }
 #page table td input[type=submit] {
   margin: 0;
@@ -8172,7 +8188,7 @@ select,
 .checkbox {
   color: #ccc;
   font-family: "Ubuntu", "Lato", "Open Sans", sans-serif;
-  font-size: 1rem;
+  font-size: 14px;
   vertical-align: middle;
   display: inline-block;
   background: rgba(36, 48, 63, 0.4);
@@ -8199,15 +8215,15 @@ input[type=radio] {
   border: 1px solid rgba(82, 165, 248, 0.5);
   border-radius: 50%;
   box-shadow: inset 0 2px 4px 2px rgba(0, 0, 0, 0.4) !important;
-  margin: 0 0.5rem 0 0;
+  margin: 0 7px 0 0;
   position: relative;
   appearance: none;
 }
 input[type=radio]:checked:after {
   content: "";
   background: #52a5f8;
-  width: 0.5rem;
-  height: 0.5rem;
+  width: 7px;
+  height: 7px;
   border-radius: 50%;
   box-shadow: inset 0 2px 4px 2px rgba(0, 0, 0, 0.5);
   position: absolute;
@@ -8229,7 +8245,7 @@ input[type=number],
 input[type=email],
 input[type=password] {
   color: #ccc;
-  padding: 0.25rem;
+  padding: 3.5px;
   background: rgba(36, 48, 63, 0.4);
   border: 1px solid rgba(82, 165, 248, 0.5);
   box-shadow: inset 0 2px 4px 2px rgba(0, 0, 0, 0.4);
@@ -8238,8 +8254,8 @@ input[type=password] {
 input[type=checkbox] {
   vertical-align: -0.25rem;
   background: rgba(36, 48, 63, 0.4);
-  width: 1rem;
-  height: 1rem;
+  width: 14px;
+  height: 14px;
   border: 1px solid rgba(82, 165, 248, 0.5);
   outline: none;
   box-shadow: inset 0 2px 4px 2px rgba(0, 0, 0, 0.4);
@@ -8275,7 +8291,7 @@ table.mceEditor tr td select.mceSelectList {
 }
 
 textarea {
-  padding: 0.5rem 1rem;
+  padding: 7px 14px;
   min-height: 5rem;
 }
 
@@ -8386,18 +8402,18 @@ ul.alliance_attack_claims_list a,
 #side_select_box p:not(:first-child) a {
   color: #52a5f8 !important;
   font-family: inherit;
-  font-size: 1rem;
+  font-size: 14px;
   font-weight: initial;
   text-transform: initial;
   white-space: nowrap;
-  padding: 0 0.5rem;
+  padding: 0 7px;
   display: inline-block;
   background: rgba(36, 48, 63, 0.4) !important;
   height: 1.5rem;
   border: 1px solid rgba(82, 165, 248, 0.5) !important;
   border-radius: 3px;
   box-shadow: inset 0 2px 4px 2px rgba(0, 0, 0, 0.4);
-  margin: 1rem 0;
+  margin: 14px 0;
   cursor: pointer;
   transition-timing-function: linear;
   transition-duration: 0.75s;
@@ -8474,11 +8490,11 @@ ul.alliance_attack_claims_list a:focus,
 }
 
 #page_scan .maintext a[href^=showscan] {
-  margin-bottom: 1rem;
+  margin-bottom: 14px;
 }
 
 ul.alliance_attack_claims_list a {
-  margin: 0.25rem 0;
+  margin: 3.5px 0;
 }
 
 input[type=submit] {
@@ -8525,7 +8541,7 @@ a[target=scan] {
   white-space: nowrap;
   letter-spacing: 0.5px;
   display: inline-block;
-  margin: 0.75rem;
+  margin: 10.5px;
   position: relative;
   transition: all 0.5s ease-in-out;
 }
@@ -8769,7 +8785,7 @@ a[target=scan] {
 }
 
 table {
-  margin-bottom: 1rem;
+  margin-bottom: 14px;
 }
 table th {
   background: #171e27;
@@ -8780,7 +8796,7 @@ table tr:first-child th {
 table th,
 table td {
   vertical-align: middle;
-  padding: 0.25rem 0.5rem;
+  padding: 3.5px 7px;
 }
 
 [id^=form_prod] table {

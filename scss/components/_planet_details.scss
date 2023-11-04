@@ -37,7 +37,7 @@
 	justify-content: space-evenly;
 	width: 50%;
 	max-width: 245px;
-	margin: 0 0 .5rem;
+	margin: 0 0 7px;
 
 	&:last-of-type:nth-of-type(even) {
 	  padding-top: 4px;
@@ -48,7 +48,7 @@
 	  border-top: 1px solid transparent;
 	  border-image: linear-gradient(to right, transparent 0%, rgba($color-primary, .5) 50%, transparent 100%);
 	  border-image-slice: 1;
-	  margin-top: .75rem;
+	  margin-top: 10.5px;
 
 	  span {
 		max-width: 33px;
@@ -56,7 +56,7 @@
 	}
 
 	&:last-of-type:nth-of-type(odd) {
-	  margin-bottom: .75rem;
+	  margin-bottom: 10.5px;
 	}
 
 	span {
@@ -86,7 +86,7 @@
 	  font-weight: bold;
 	  text-transform: uppercase;
 	  text-align: center;
-	  padding: .5rem 0 !important;
+	  padding: 7px 0 !important;
 	  flex-basis: 100%;
 	  transition: ease all .5s;
 	}
@@ -347,7 +347,7 @@
 	font-weight: bold;
 	text-transform: uppercase;
 	text-align: center;
-	padding: .5rem 0;
+	padding: 7px 0;
 	content: 'Planetary Development ';
 	display: block;
 	background: rgba(black, .6);
@@ -376,7 +376,7 @@
 	font-weight: bold;
 	text-transform: uppercase;
 	letter-spacing: .5px;
-	padding: 0 .5rem 0 0;
+	padding: 0 7px 0 0;
 	flex-basis: 8rem;
 	margin-left: 0;
   }
@@ -399,11 +399,11 @@
 #planet_summary_construction,
 #planet_summary_research,
 #planet_summary_production {
-  padding: 0 1rem;
+  padding: 0 14px;
   display: flex;
   flex-flow: row wrap;
   align-items: center;
-  margin: .5rem 0;
+  margin: 7px 0;
 
   span {
 	&#planet_summary_construction_queue,
@@ -430,7 +430,7 @@
   margin: 0 0 0 8rem;
   @include respond-below(sm) {
 	text-align: right;
-	padding: 0 .25rem 0 0;
+	padding: 0 3.5px 0 0;
 	flex: 1;
 	margin: 0;
   }
@@ -454,7 +454,7 @@
 	}
 
 	.planet_summary_production_shipname {
-	  padding-right: .5rem;
+	  padding-right: 7px;
 	  float: left !important;
 	}
 
@@ -465,8 +465,8 @@
 	br {
 	  content: ' ';
 	  display: block;
-	  height: 1rem;
-	  margin-bottom: .25rem;
+	  height: 14px;
+	  margin-bottom: 3.5px;
 
 	  &:last-of-type {
 		margin-bottom: 0;

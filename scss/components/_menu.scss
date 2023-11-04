@@ -6,7 +6,7 @@
 }
 
 #menu {
-  padding: 106px 0 1rem;
+  padding: 106px 0 14px;
   list-style: none;
   display: table;
   background: $color-background;
@@ -19,12 +19,12 @@
   }
 
   > li {
-	padding: 0 0 .15rem;
+	padding: 0 0 2.1px;
 
 	&#menu_overview,
 	&#menu_preferences,
 	&#menu_logout {
-	  padding: 0 .5rem .15rem;
+	  padding: 0 7px 2.1px;
 	}
 
 	&#menu_preferences,
@@ -32,7 +32,7 @@
 	  font-size: $text-small;
 	  text-align: center;
 	  width: 50%;
-	  margin: 1rem 0;
+	  margin: 14px 0;
 	  float: left !important;
 	}
 
@@ -48,7 +48,7 @@
 	}
 
 	&#menu_overview {
-	  padding: .5rem;
+	  padding: 7px;
 	  width: 100%;
 	  border-top: 1px solid transparent;
 	  border-image: linear-gradient(to right, transparent 0%, rgba($color-primary, .5) 100%);
@@ -69,7 +69,7 @@
 		font-size: $text-small;
 		font-weight: bold;
 		text-transform: uppercase;
-		padding: .25rem .5rem;
+		padding: 3.5px 7px;
 		display: block;
 		background: #19222b;
 		border-bottom: 1px solid transparent;
@@ -79,12 +79,12 @@
 	}
 
 	> ul {
-	  padding: .25rem 0 .5rem;
+	  padding: 3.5px 0 7px;
 	  box-shadow: inset 0 0 8px 2px rgba(#000, .25), 3px 0 6px -3px rgba(#000, .25);
 
 	  > li {
 		> ul {
-		  margin-left: .5rem;
+		  margin-left: 7px;
 		}
 	  }
 	}
@@ -95,7 +95,7 @@
   }
 
   li {
-	padding: 0 .5rem .15rem;
+	padding: 0 7px 2.1px;
 
 	li {
 	  li {
@@ -122,7 +122,7 @@
 	color: rgba($color-primary, .55);
 	font-size: 0;
 	padding-bottom: 8rem;
-	margin-top: 2rem;
+	margin-top: 28px;
 
 	span {
 	  &#time {
@@ -144,7 +144,7 @@
 		  color: rgba($color-primary, .5);
 		  font-size: .4rem;
 		  line-height: 1.2;
-		  padding: 0.25rem;
+		  padding: 3.5px;
 		  content: 'If this skin customisation adds even a tiny bit of enjoyment to your gaming experience it was well worth the countless hours of development. Made with love, for my fellow spreadsheet warriors. UltimateNewbie \2665';
 		  width: 106px;
 		  border: 1px solid rgba(82, 165, 248, .5);
@@ -188,7 +188,7 @@
 	  white-space: nowrap;
 	  letter-spacing: .5px;
 	  display: inline-block;
-	  margin: .5rem;
+	  margin: 7px;
 	  position: relative;
 	  transition: all 0.5s ease-in-out;
 

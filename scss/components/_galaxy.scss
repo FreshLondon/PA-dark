@@ -11,7 +11,7 @@
 
 	&[type='number'] {
 	  color: $color-primary;
-	  padding: .25rem !important;
+	  padding: 3.5px !important;
 	  min-width: 3rem;
 	  height: 1.5rem;
 	}
@@ -103,12 +103,12 @@
 	  th,
 	  td {
 		white-space: normal;
-		padding: .25rem .5rem;
+		padding: 3.5px 7px;
 	  }
 
 	  td {
 		&:nth-last-child(2) {
-		  padding: .25rem;
+		  padding: 3.5px;
 
 		  a {
 			padding: 0 .125rem;
@@ -140,8 +140,8 @@
 
 	p {
 	  text-align: center;
-	  padding: 0 .5rem;
-	  margin: .5rem 0;
+	  padding: 0 7px;
+	  margin: 7px 0;
 
 	  &.right {
 		position: absolute;
@@ -153,7 +153,7 @@
 	select#intel,
 	input[name='nick'] {
 	  width: 100%;
-	  margin: .25rem auto .5rem;
+	  margin: 3.5px auto 7px;
 	}
 
 	input[name='nick'] {
@@ -161,7 +161,7 @@
 	}
 
 	input[type='submit'] {
-	  margin: .5rem;
+	  margin: 7px;
 	}
   }
 }

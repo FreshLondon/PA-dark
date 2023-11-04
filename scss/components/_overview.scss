@@ -76,7 +76,7 @@
 	  }
 
 	  &:nth-child(4) {
-		width: 1rem !important;
+		width: 14px !important;
 	  }
 
 	  &:nth-child(5) {
@@ -87,11 +87,11 @@
 	tr {
 	  &:not(:first-child) {
 		th {
-		  font-size: 1rem;
+		  font-size: 14px;
 		  text-transform: initial;
 
 		  &:nth-child(2) {
-			padding: .15rem 0;
+			padding: 2.1px 0;
 			background: $color-secondary;
 			//background: linear-gradient(135deg, var(--col-panel-light) 0%, var(--col-panel-dark) 100%);
 		  }
@@ -107,7 +107,7 @@
 
 	table {
 	  width: calc(100% - 2.4rem);
-	  margin-left: 1rem;
+	  margin-left: 14px;
 
 	  td {
 		&:nth-child(1) {
@@ -124,7 +124,7 @@
 
 		&:nth-child(2n+2) {
 		  td {
-			padding: .5rem;
+			padding: 7px;
 			background: $color-secondary;
 			//background: linear-gradient(135deg, var(--col-panel-light) 0%, var(--col-panel-dark) 100%);
 		  }
@@ -148,7 +148,7 @@
 .expand {
   display: inline-block;
   background: none;
-  margin-right: .5rem;
+  margin-right: 7px;
 
   &:before {
 	color: $color-primary;
@@ -201,15 +201,15 @@
   color: $color-offwhite;
   font-size: $text-small;
   text-align: left;
-  padding: .5rem 1rem .5rem .5rem;
-  margin-bottom: .25rem;
+  padding: 7px 14px 7px 7px;
+  margin-bottom: 3.5px;
   position: relative;
 
   a {
 	text-transform: uppercase;
 	position: absolute;
 	top: .45rem;
-	right: .25rem;
+	right: 3.5px;
 
 	&:hover {
 	  color: $color-primary-dark;

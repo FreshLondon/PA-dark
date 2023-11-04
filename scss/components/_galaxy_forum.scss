@@ -26,7 +26,7 @@
 
 .forum_title {
   flex-basis: 100%;
-  margin-bottom: 1rem;
+  margin-bottom: 14px;
 }
 
 .forum_thread_header_title,
@@ -86,11 +86,11 @@ div[class^='forum_thread_header'] {
 }
 
 #forum_nav {
-  margin-bottom: 1rem;
+  margin-bottom: 14px;
 }
 
 .forum_post {
-  padding: 2rem 1rem;
+  padding: 28px 14px;
   display: flex;
   flex-flow: row wrap;
 }
@@ -109,7 +109,7 @@ div[class^='forum_thread_header'] {
 }
 
 .forum_poster {
-  font-size: 1rem;
+  font-size: 14px;
   flex-grow: 1;
   order: 2;
 }
@@ -127,7 +127,7 @@ div[class^='forum_thread_header'] {
 }
 
 .forum_post_text {
-  padding: 1rem;
+  padding: 14px;
   flex-basis: 100%;
   flex-shrink: 0;
   background: $color-secondary;
@@ -152,7 +152,7 @@ div[class^='forum_thread_header'] {
 .forum_post_seperator {
   display: none;
   border: 1px solid rgba($color-primary, .5);
-  margin: 1rem;
+  margin: 14px;
 }
 
 .forum_post_delete,
@@ -172,9 +172,9 @@ div[class^='forum_thread_header'] {
 }
 
 .mceEditor {
-  width: calc(100% - 1rem);
+  width: calc(100% - 14px);
   border-width: 2px !important;
-  margin: .5rem;
+  margin: 7px;
 }
 
 .mceToolbarContainer {
@@ -186,12 +186,12 @@ div[class^='forum_thread_header'] {
 }
 
 .mceContentBody {
-  font-size: 1rem !important;
-  padding: .5rem;
+  font-size: 14px !important;
+  padding: 7px;
 }
 
 #editor {
-  margin: 0 1rem;
+  margin: 0 14px;
 
   > .center,
   + .center {
@@ -199,7 +199,7 @@ div[class^='forum_thread_header'] {
 
 	a {
 	  display: inline-block;
-	  margin-right: 1rem;
+	  margin-right: 14px;
 	}
   }
 }
@@ -217,12 +217,12 @@ table.mceEditor {
 		> span {
 		  > span,
 		  > a {
-			margin: .25rem;
+			margin: 3.5px;
 		  }
 
 		  > span {
 			> a {
-			  margin: 0 .25rem;
+			  margin: 0 3.5px;
 
 			  + a {
 				width: auto;
@@ -233,7 +233,7 @@ table.mceEditor {
 	  }
 
 	  .mceToolbarContainer {
-		padding: .5rem .5rem 0;
+		padding: 7px 7px 0;
 		background: $color-secondary !important;
 
 		a {
@@ -250,14 +250,14 @@ table.mceEditor {
 		height: 26px;
 		border: 0;
 		margin-top: 0;
-		margin-right: 1rem;
-		margin-left: 1rem;
+		margin-right: 14px;
+		margin-left: 14px;
 	  }
 
 	  a {
 		width: 24px;
 		height: 24px;
-		margin: .5rem 0 !important;
+		margin: 7px 0 !important;
 
 		&[accesskey='q'],
 		&[accesskey='z'] {
@@ -280,7 +280,7 @@ table.mceEditor {
 
 	  select.mceSelectList {
 		height: 1.8rem;
-		margin: 7px .5rem;
+		margin: 7px 7px;
 
 		&:first-of-type {
 		  margin-right: 0;

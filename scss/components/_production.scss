@@ -27,18 +27,18 @@
 	  padding-left: 0;
 	  background: $color-secondary;
 	  @include respond-above(md) {
-		padding: .25rem .5rem;
+		padding: 3.5px 7px;
 	  }
 
 	  &:nth-child(1) {
-		padding-left: .5rem;
+		padding-left: 7px;
 	  }
 
 	  &:nth-child(3),
 	  &:nth-child(4),
 	  &:nth-child(5) {
 		text-align: center;
-		width: 2rem;
+		width: 28px;
 	  }
 
 	  &:nth-child(6),
@@ -70,12 +70,12 @@
 
 	td {
 	  &:nth-child(1) {
-		font-size: 1rem;
+		font-size: 14px;
 	  }
 
 	  &:nth-child(9),
 	  &:nth-child(11) {
-		font-size: 1rem;
+		font-size: 14px;
 	  }
 
 	  &:nth-child(11) {
@@ -138,7 +138,7 @@ span.small.notice_warning {
 }
 
 #ship_cost {
-  margin: 1rem 0;
+  margin: 14px 0;
 
   + table {
 	max-width: 600px;
@@ -153,7 +153,7 @@ span.small.notice_warning {
 	.textlabel {
 	  font-size: $text-small;
 	  font-weight: bold;
-	  padding-bottom: .5rem;
+	  padding-bottom: 7px;
 	}
   }
 }
@@ -175,7 +175,7 @@ span.small.notice_warning {
 
 		  th {
 			color: $color-offwhite;
-			font-size: 1rem;
+			font-size: 14px;
 			font-weight: bold;
 			text-transform: uppercase;
 			line-height: 100%;
@@ -204,12 +204,12 @@ span.small.notice_warning {
 	  &:nth-child(2) {
 		th,
 		td {
-		  padding-top: .25rem;
+		  padding-top: 3.5px;
 		}
 	  }
 
 	  &:nth-child(6) th {
-		padding-top: .5rem;
+		padding-top: 7px;
 	  }
 
 	  th,
@@ -286,7 +286,7 @@ span.small.notice_warning {
   }
 
   .resources {
-	margin: 1rem 0;
+	margin: 14px 0;
   }
 
   form.cancelform {

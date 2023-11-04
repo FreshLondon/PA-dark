@@ -15,7 +15,7 @@
 			&:first-child {
 			  //background: transparent;
 			  th {
-				//padding: .5rem .125rem;
+				//padding: 7px .125rem;
 				//background: $color-bg-th;
 				text-align: center;
 			  }
@@ -26,7 +26,7 @@
 				  font-size: $text-large;
 				  font-weight: bold;
 				  font-style: italic;
-				  padding: 1rem 0;
+				  padding: 14px 0;
 				  background: $color-background;
 				}
 			  }
@@ -38,7 +38,7 @@
 			}
 
 			> td {
-			  padding: .25rem .75rem;
+			  padding: 3.5px 10.5px;
 
 			  &:first-child {
 				&:not([colspan='2']):not(:nth-last-child(3)) {
@@ -48,16 +48,16 @@
 				a {
 				  text-align: center;
 				  width: 4rem;
-				  margin-right: .5rem;
+				  margin-right: 7px;
 				}
 
 				span {
-				  font-size: 1rem;
+				  font-size: 14px;
 				  text-transform: uppercase;
 				  text-align: center;
 				  padding: 0 .125rem;
 				  display: inline-block;
-				  width: 2.5rem;
+				  width: 35px;
 				}
 			  }
 			}
@@ -98,7 +98,7 @@
 
 	  p {
 		span[id^='bcalc_target'] {
-		  padding-top: 1rem;
+		  padding-top: 14px;
 		  display: block;
 
 		  &:empty {

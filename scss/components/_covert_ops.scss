@@ -31,17 +31,17 @@
 				  font-size: $text-small;
 				  font-weight: normal;
 				  text-transform: uppercase;
-				  padding-right: 2rem;
-				  padding-left: 2rem;
+				  padding-right: 28px;
+				  padding-left: 28px;
 				  background: transparent;
 				}
 
 				th {
-				  padding-top: .5rem;
+				  padding-top: 7px;
 				}
 
 				td {
-				  padding-bottom: .5rem;
+				  padding-bottom: 7px;
 				  border-bottom: 1px solid rgba($color-primary, .3);
 				}
 			  }
@@ -54,7 +54,7 @@
 			  }
 
 			  td {
-				padding: .5rem;
+				padding: 7px;
 			  }
 			}
 		  }
@@ -66,7 +66,7 @@
 
 		form {
 		  max-width: 600px;
-		  margin: 1rem auto 0;
+		  margin: 14px auto 0;
 
 		  table {
 			tr {
@@ -125,7 +125,7 @@
 
   table {
 	+ p {
-	  padding-top: 1rem;
+	  padding-top: 14px;
 	}
 
 	tr {
@@ -142,17 +142,17 @@
   }
 
   .training_info .title {
-	font-size: 1rem;
-	padding: .25rem .5rem;
+	font-size: 14px;
+	padding: 3.5px 7px;
 	display: block;
 	background: $color-bg-th;
 	//background: linear-gradient(135deg, var(--col-panel-light) 0%, var(--col-panel-dark) 100%);
-	margin-bottom: .5rem;
+	margin-bottom: 7px;
   }
 
   .description {
 	padding-right: 15rem;
-	padding-left: .5rem;
+	padding-left: 7px;
 	position: relative;
   }
 
@@ -161,14 +161,14 @@
 	display: inline-block;
 	position: absolute;
 	top: 3px;
-	right: 2rem;
+	right: 28px;
   }
 
   .resources {
 	font-size: $text-small;
-	padding-left: .5rem;
+	padding-left: 7px;
 	display: flex;
-	margin-top: .15rem;
+	margin-top: 2.1px;
 
 	li.textlabel {
 	  min-width: 7rem;
@@ -179,11 +179,11 @@
 	display: flex;
 	justify-content: flex-end;
 	margin-top: -2.5rem;
-	margin-right: 2rem;
+	margin-right: 28px;
   }
 
   .current_amount {
-	padding-right: 2rem;
+	padding-right: 28px;
   }
 
   .new_amount {
@@ -198,10 +198,10 @@
   #wage_bill {
 	display: flex;
 	justify-content: center;
-	margin-bottom: .5rem;
+	margin-bottom: 7px;
 
 	.resources {
-	  font-size: 1rem;
+	  font-size: 14px;
 
 	  > .textlabel {
 		display: inline-block;
@@ -217,18 +217,18 @@
 
 #agents_training,
 #guards_training {
-  padding: 0 0 1rem;
+  padding: 0 0 14px;
   background: $color-secondary;
 }
 
 #agents_training {
-  margin-bottom: 2rem;
+  margin-bottom: 28px;
 }
 
 #security_redundancy_form {
   th,
   td {
-	padding: .15rem 1rem;
+	padding: 2.1px 14px;
   }
 }
 

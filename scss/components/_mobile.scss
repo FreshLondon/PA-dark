@@ -8,7 +8,7 @@
 body.mobile {
   //font-size: 1.6rem;
   #page {
-	padding: 1rem .5rem 0;
+	padding: 14px 7px 0;
 	display: grid;
 	width: 100%;
 	position: relative;
@@ -17,7 +17,7 @@ body.mobile {
 	grid-column-gap: 0;
 
 	#menu {
-	  padding: 105px 0 1rem;
+	  padding: 105px 0 14px;
 	  display: grid;
 	  grid-column: 1/2;
 	  grid-column-end: 3;
@@ -54,7 +54,7 @@ body.mobile {
 		&#menu_time {
 		  display: flex;
 		  align-items: center;
-		  margin: 0 1rem 0 0;
+		  margin: 0 14px 0 0;
 		  grid-column: 1;
 		  grid-column-end: 3;
 		  grid-row: 1;

@@ -151,7 +151,7 @@ div[id^='page_universe_'] {
 	  a {
 		color: $color-text;
 		@include respond-below(sm) {
-		  padding: 0 .5rem;
+		  padding: 0 7px;
 		}
 
 		&.moc {
@@ -175,11 +175,11 @@ div[id^='page_universe_'] {
 			color: $color-text;
 			font-size: $text-small;
 			font-weight: bold;
-			padding: .25rem .125rem;
+			padding: 3.5px .125rem;
 			background: $color-bg-th;
 
 			&.right {
-			  padding-right: .25rem;
+			  padding-right: 3.5px;
 			}
 		  }
 		}
@@ -317,7 +317,7 @@ div[id^='page_universe_'] {
 
   &:before {
 	color: $color-offwhite;
-	font-size: 1rem;
+	font-size: 14px;
 	font-weight: bold;
 	text-transform: uppercase;
 	line-height: 100%;
@@ -354,7 +354,7 @@ div[id^='page_universe_'] {
 	  background: transparent;
 
 	  th {
-		padding: 1rem 0 .25rem;
+		padding: 14px 0 3.5px;
 	  }
 	}
   }
@@ -362,7 +362,7 @@ div[id^='page_universe_'] {
 
 #load_box {
   color: $color-offwhite !important;
-  padding: .25rem;
+  padding: 3.5px;
   background: $color-background;
   border: 1px solid rgba($color-primary, .5);
 
@@ -495,7 +495,7 @@ div[id^='page_universe_'] {
 		  color: #ccc;
 		  font-size: $text-small;
 		  font-weight: bold;
-		  padding: .25rem .5rem;
+		  padding: 3.5px 7px;
 		  background: $color-bg-th;
 		  width: auto !important;
 
@@ -550,7 +550,7 @@ div[id^='page_universe_'] {
 	  .tablesort_desc {
 		color: $color-text;
 		@include respond-below(sm) {
-		  padding: 0 .5rem;
+		  padding: 0 7px;
 		}
 	  }
 	}
@@ -625,7 +625,7 @@ div[id^='page_universe_'] {
 	tr {
 	  td {
 		&[style='width: 30%;'] {
-		  width: .25rem !important;
+		  width: 3.5px !important;
 		}
 	  }
 	}
@@ -671,7 +671,7 @@ div[id^='page_universe_'] {
 	  tr {
 		th,
 		td {
-		  padding: 0 .75rem;
+		  padding: 0 10.5px;
 		}
 
 		th {
@@ -689,7 +689,7 @@ div[id^='page_universe_'] {
 		br {
 		  content: '';
 		  display: block;
-		  margin: 2rem;
+		  margin: 28px;
 		}
 	  }
 	}
@@ -705,7 +705,7 @@ div[id^='page_universe_'] {
 
 	  th,
 	  td {
-		padding: 0 .75rem;
+		padding: 0 10.5px;
 
 		&:empty {
 		  background: transparent;
@@ -725,7 +725,7 @@ div[id^='page_universe_'] {
 
 				&:nth-child(2) {
 				  color: $color-text;
-				  padding: .25rem;
+				  padding: 3.5px;
 				  background: transparent;
 				  background: linear-gradient(to right, $color-background 0%, rgba($color-negative, .25) 50%, $color-background 100%) !important;
 				  border: 1px solid transparent;
@@ -735,7 +735,7 @@ div[id^='page_universe_'] {
 
 				&:nth-child(4) {
 				  color: $color-text;
-				  padding: .25rem;
+				  padding: 3.5px;
 				  background: linear-gradient(to right, $color-background 0%, rgba($color-positive, .2) 50%, $color-background 100%) !important;
 				  border: 1px solid transparent;
 				  border-image: linear-gradient(to right, transparent 0%, rgba(limegreen, .3) 50%, transparent 100%);
@@ -794,8 +794,8 @@ div[id^='page_universe_'] {
 				  vertical-align: sub;
 				  content: '';
 				  display: inline-block;
-				  width: 1rem;
-				  height: 1rem;
+				  width: 14px;
+				  height: 14px;
 				  margin-left: .4rem;
 				}
 			  }
@@ -857,7 +857,7 @@ div[id^='page_universe_'] {
 			  content: ' ';
 			  background: $color-background;
 			  width: 100%;
-			  height: 1rem;
+			  height: 14px;
 			  position: absolute;
 			  top: -0.14rem;
 			  left: 0;
@@ -919,7 +919,7 @@ div[id^='page_universe_'] {
 	  + #notice + .container,
 	  + #notice + #tab_container {
 		table {
-		  margin-bottom: 1rem;
+		  margin-bottom: 14px;
 
 		  tr {
 			&:first-child {
@@ -935,17 +935,17 @@ div[id^='page_universe_'] {
 
 	.header,
 	h2 {
-	  margin-bottom: 2rem;
+	  margin-bottom: 28px;
 	}
   }
 
   table {
 	width: auto !important;
-	margin-bottom: 2.5rem;
+	margin-bottom: 35px;
 
 	th,
 	td {
-	  padding: .25rem .75rem !important;
+	  padding: 3.5px 10.5px !important;
 
 	  &:empty {
 		padding: 0 !important;
@@ -962,7 +962,7 @@ div[id^='page_universe_'] {
 	  &[colspan='8'] {
 		font-size: 0;
 		background: $color-background;
-		height: .75rem;
+		height: 10.5px;
 	  }
 	}
   }

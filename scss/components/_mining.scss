@@ -4,7 +4,7 @@
 #galaxy_fund {
   table {
 	max-width: 900px;
-	margin: 1rem auto;
+	margin: 14px auto;
 
 	tr {
 	  td {
@@ -13,7 +13,7 @@
 
 		.textlabel {
 		  display: inline-block;
-		  margin: .2rem 0 0 2rem;
+		  margin: .2rem 0 0 28px;
 		}
 
 		.metal,
@@ -24,7 +24,7 @@
 		  height: 1.5rem;
 
 		  .textvalue {
-			padding: 0 1rem 0 1.2rem;
+			padding: 0 14px 0 1.2rem;
 			background-repeat: no-repeat;
 			background-position-y: 1px;
 		  }
@@ -70,7 +70,7 @@
 	.crystal,
 	.eonium {
 	  .textvalue {
-		padding: 0 1rem 0 1.2rem;
+		padding: 0 14px 0 1.2rem;
 		background-repeat: no-repeat;
 		background-position-y: 1px;
 	  }
@@ -90,7 +90,7 @@
   }
 
   #guard_cost {
-	margin-bottom: .5rem;
+	margin-bottom: 7px;
   }
 
   input[type='number'] {
@@ -125,14 +125,14 @@
 	tr {
 	  td {
 		&[colspan='5'] {
-		  padding: 1rem 0 0;
+		  padding: 14px 0 0;
 		  background: transparent;
 		}
 	  }
 	}
 
 	&:not(:last-child) tr:first-child th {
-	  padding-bottom: .5rem;
+	  padding-bottom: 7px;
 	  background: transparent;
 	}
   }

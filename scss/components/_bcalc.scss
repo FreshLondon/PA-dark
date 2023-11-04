@@ -9,16 +9,17 @@
 	  font-weight: bold;
 	  text-transform: uppercase;
 	  line-height: 1;
-	  padding: .5rem 0;
-	  display: block;
+	  padding: 7px 0;
+	  //display: block;
+	  display: none;
 	  background: $color-secondary;
 	  background: linear-gradient(to right, $color-background 0%, $color-secondary 50%, $color-background 100%) !important;
 	  width: 100%;
-	  height: 2rem;
+	  height: 28px;
 	  border: 1px solid transparent;
 	  border-image: linear-gradient(to right, transparent 0%, rgba($color-primary, .5) 50%, transparent 100%);
 	  border-image-slice: 1;
-	  margin: 1rem 0;
+	  margin: 14px 0;
 	  position: relative;
 
 	  &:before {
@@ -26,7 +27,7 @@
 		font-weight: bold;
 		text-transform: uppercase;
 		text-align: center;
-		padding: .5rem 0;
+		padding: 7px 0;
 		content: 'Planetarion Battle Calculator';
 		width: 100%;
 		position: absolute;
@@ -73,8 +74,14 @@
 	  box-shadow: inset 0 2px 4px 2px rgba(#000, .4);
 	}
 
-	input[type='checkbox'] {
-	  vertical-align: middle;
+	input {
+	  &[type='button'] {
+		margin: 3.5px 0;
+	  }
+
+	  &[type='checkbox'] {
+		vertical-align: middle;
+	  }
 	}
 
 	option {
@@ -135,12 +142,12 @@
 	}
 
 	#def_side {
-	  padding: .25rem;
+	  padding: 3.5px;
 	  background: rgba($color-positive, .4);
 	}
 
 	#att_side {
-	  padding: .25rem;
+	  padding: 3.5px;
 	  background: rgba($color-negative, .35);
 	}
 
@@ -289,7 +296,7 @@
 	}
 
 	.global_controls {
-	  padding: 0 .5rem .5rem;
+	  padding: 0 7px 7px;
 
 	  &.nowrap {
 		background: $color-secondary;
@@ -472,10 +479,20 @@
 	  }
 	}
 
-	#att_war + .att_row_sep {
-	  height: 4.35rem;
+	.def_row_sep,
+	.att_row_sep {
+	  height: 7px;
+
+	  td {
+		line-height: 0;
+		padding: 0;
+	  }
 	}
 
+	//#att_war + .att_row_sep {
+	//  height: 4.35rem;
+	//  display: table-row;
+	//}
 	input[id^='att_race'] {
 	  border-color: $color-neutral;
 	}
@@ -524,7 +541,7 @@
 	tr {
 	  td {
 		&:last-of-type {
-		  font-size: 1rem;
+		  font-size: 14px;
 		}
 	  }
 
@@ -543,10 +560,10 @@
   }
 
   #scans_area {
-	padding: .5rem;
+	padding: 3.5px 7px;
 	display: block !important;
 	background-color: $color-secondary;
-	height: 3rem;
+	height: 28px;
 	min-height: unset;
   }
 
@@ -581,15 +598,15 @@
 	width: 216px !important;
 
 	p#side_select {
-	  padding: 0 0 .5rem;
+	  padding: 0 0 7px;
 
 	  a {
 		&:first-of-type {
-		  margin-right: .5rem;
+		  margin-right: 7px;
 		}
 
 		&:not(:first-of-type) {
-		  margin-left: .5rem;
+		  margin-left: 7px;
 		}
 	  }
 	}
@@ -625,15 +642,20 @@
 	width: 230px !important;
 
 	p {
-	  padding: 0 0 .5rem;
+	  padding: 0 0 7px;
 
 	  &:first-child {
-		height: 1rem;
+		height: 14px;
+	  }
+
+	  &:nth-child(3) {
+		display: flex;
+		align-items: center;
+		justify-content: center;
 	  }
 
 	  #add_other_side_fleet {
 		display: block;
-		margin-top: .75rem;
 	  }
 	}
 
@@ -643,8 +665,12 @@
 		background-color: rgba($color-secondary, .4);
 	  }
 
+	  &[type='radio'] {
+		margin: 0 11px 0 4px;
+	  }
+
 	  &[type='button'] {
-		margin: .5rem 0;
+		margin: 3.5px 0;
 	  }
 	}
   }
@@ -685,12 +711,12 @@
 
 		a {
 		  display: inline-block;
-		  margin: .25rem !important;
+		  margin: 3.5px !important;
 
 		  &:first-of-type {
 			color: rgba($color-positive, .75) !important;
 			border-color: rgba($color-positive, .5) !important;
-			margin: 0 0 0 .5rem !important;
+			margin: 0 0 0 7px !important;
 
 			&:hover {
 			  background-color: rgba($color-positive, .75) !important;
@@ -777,7 +803,7 @@
 
 			&:not(:first-child) {
 			  text-align: right;
-			  padding: .25rem;
+			  padding: 3.5px;
 			}
 		  }
 		}
@@ -818,7 +844,7 @@
 	  display: block;
 	  position: sticky;
 	  top: 0;
-	  right: .5rem;
+	  right: 7px;
 	}
   }
 
