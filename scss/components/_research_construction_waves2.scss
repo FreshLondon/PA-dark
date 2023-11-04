@@ -94,8 +94,8 @@
 		}
 
 		.description {
-		  padding: 14px 28px;
 		  font-size: $text-medium;
+		  padding: 14px 28px;
 
 		  a.desc_link {
 			top: -39px;
@@ -219,9 +219,9 @@
 		  }
 
 		  li {
+			font-size: $text-small;
 			display: inline-block;
 			margin: 0;
-			font-size: $text-small;
 
 			&:nth-child(1) {
 			  font-size: $text-default;
@@ -239,9 +239,9 @@
 		  margin: 10.5px 28px 0 0;
 
 		  &:nth-child(1) {
-			order: 3;
 			width: 100%;
 			margin-bottom: 10.5px;
+			order: 3;
 		  }
 
 		  &:nth-child(2),

@@ -78,25 +78,34 @@
 			}
 
 			.ally_def_target_mdata_base {
-			  margin-left: 70px;
+			  flex: unset;
+			  width: 138px;
+			  padding-right: 12px;
+			  display: flex;
+			  align-items: center;
 
 			  &:before {
 				font-size: .6875rem;
 				white-space: nowrap;
 				content: 'Base fleet:';
-				margin: 5px 5px 0 0;
+				margin: 0 5px 0 0;
 			  }
 			}
 		  }
 
 		  .ally_def_target_links {
 			flex: 3;
+			display: flex;
+			align-items: center;
+			margin: 0;
 
 			span[id^='note_tag'] {
-			  margin-right: 7px;
+			  margin-left: 7px;
+			  order: 2;
 			}
 
 			a {
+			  order: 1;
 			  font-size: 0;
 
 			  &:after {
@@ -107,9 +116,8 @@
 				text-transform: initial;
 				line-height: 1;
 				white-space: nowrap;
-				padding: 3.5px 7px;
+				padding: 3.5px 0;
 				content: 'Battle Calc';
-				display: inline-block;
 				background: rgba($color-secondary, .4) !important;
 				border: 1px solid rgba($color-primary, .5) !important;
 				border-radius: 3px;
@@ -118,6 +126,10 @@
 				transition-timing-function: linear;
 				transition-duration: .75s;
 				transition-property: color, background, box-shadow;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				width: 90px;
 
 				&::-moz-focus-inner {
 				  padding: 0;
@@ -174,6 +186,13 @@
 			transition-timing-function: linear;
 			transition-duration: .75s;
 			transition-property: color, background, box-shadow;
+
+			&:hover {
+			  color: black !important;
+			  text-decoration: none !important;
+			  background: $color-primary !important;
+			  box-shadow: none;
+			}
 		  }
 
 		  .ally_def_target_summary {
@@ -190,7 +209,6 @@
 		  font-size: $text-default;
 
 		  > div {
-			padding: 3px 0;
 			background: $color-secondary;
 
 			&:nth-child(even) {
@@ -224,12 +242,13 @@
 			}
 
 			.ally_def_attacker_fleetname {
+			  font-size: $text-default !important;
 			  text-overflow: ellipsis;
 			  display: flex;
 			  align-items: center;
 			  overflow: hidden;
-			  width: 140px;
-			  max-width: 140px !important;
+			  width: 218px;
+			  max-width: 218px !important;
 			  margin-right: 4px;
 			  order: 2;
 			}
@@ -251,7 +270,7 @@
 			  text-align: right;
 			  padding: 0 10px;
 			  justify-content: flex-end;
-			  min-width: 138px;
+			  min-width: 139px;
 			  order: 6;
 
 			  a {
@@ -296,16 +315,17 @@
 			  form {
 				select {
 				  font-size: 12px;
-				  width: 105px;
 				  height: 18px;
+				  width: 92px;
 				}
 			  }
 			}
 
 			.ally_def_attacker_orig_eta {
+			  display: flex;
 			  align-items: center;
-			  justify-content: flex-start;
-			  width: 70px;
+			  justify-content: space-between;
+			  width: 64px;
 			  order: 4;
 
 			  &:before {
@@ -340,8 +360,19 @@
 
 			.ally_def_attacker_intel {
 			  color: $color-offwhite;
-			  padding-right: 4px;
+			  padding-right: 10px;
 			  order: 9;
+
+			  span {
+				width: 50px;
+				display: flex;
+				justify-content: flex-end;
+
+				&:nth-child(1) {
+				  margin-left: 15px;
+				  width: 44px;
+				}
+			  }
 			}
 		  }
 		}
@@ -397,6 +428,12 @@
 			  form {
 				display: flex;
 				align-items: center;
+
+				label {
+				  width: 20px;
+				  text-align: left;
+				  line-height: 20px;
+				}
 			  }
 			}
 		  }
@@ -420,13 +457,13 @@
 			  }
 
 			  input[type='text'] {
-				width: 215.5px;
+				width: 242px;
 			  }
 			}
 		  }
 
 		  .ally_def_details_notes {
-			margin-top: 4px;
+			margin-top: 2px;
 
 			form {
 			  display: flex;
@@ -481,6 +518,31 @@
 		  background: unset;
 		}
 
+		.ally_def_attackers,
+		.ally_def_fleetcatch,
+		.ally_def_defenders {
+		  > div {
+			padding: 3px 0;
+		  }
+		}
+
+		.ally_def_fleetcatch {
+		  font-size: 0.9rem;
+
+		  .ally_def_fleetcatch_fleet {
+			.ally_def_fleetcatch_fleet_name {
+			  font-size: $text-default !important;
+			  width: 317px;
+			  margin-left: 54px;
+			}
+
+			.ally_def_fleetcatch_fleet_shipcount {
+			  text-align: right;
+			  width: 70px;
+			}
+		  }
+		}
+
 		.ally_def_defenders {
 		  font-size: $text-default;
 
@@ -519,10 +581,11 @@
 			}
 
 			.ally_def_defender_fleetname {
+			  font-size: $text-default !important;
 			  text-overflow: ellipsis;
 			  overflow: hidden;
-			  width: 120px;
-			  max-width: 120px !important;
+			  width: 218px;
+			  max-width: 218px !important;
 			  margin-right: 4px;
 			  order: 2;
 			}
@@ -541,9 +604,10 @@
 
 			.ally_def_defender_orig_eta {
 			  text-align: right;
-			  align-items: flex-end;
-			  justify-content: flex-end;
-			  width: 70px;
+			  display: flex;
+			  align-items: center;
+			  justify-content: space-between;
+			  width: 64px;
 			  order: 4;
 
 			  &:before {
@@ -569,10 +633,30 @@
 
 			.ally_def_defender_mdata {
 			  order: 7;
+			  padding-right: 10px;
 
-			  .ally_def_defender_mdata_ap, .ally_def_defender_mdata_dp {
+			  .ally_def_defender_mdata_nick {
+				white-space: nowrap;
+				text-overflow: ellipsis;
 				display: flex;
-				justify-content: flex-start;
+				justify-content: flex-end;
+				overflow: hidden;
+				width: 100px;
+			  }
+
+			  .ally_def_defender_mdata_ap,
+			  .ally_def_defender_mdata_dp {
+				display: flex;
+				justify-content: flex-end;
+			  }
+
+			  .ally_def_defender_mdata_ap {
+				margin-left: 15px;
+				width: 50px;
+			  }
+
+			  .ally_def_defender_mdata_dp {
+				width: 54px;
 			  }
 			}
 		  }
