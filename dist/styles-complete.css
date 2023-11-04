@@ -7293,9 +7293,13 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
 
 #page_alliance_scans .tabs table tr td {
   background: #24303f;
+  transition: all 0.3s ease-in-out;
 }
 #page_alliance_scans .tabs table tr:nth-child(even) td {
   background: #1e2935;
+}
+#page_alliance_scans .tabs table tr:hover td {
+  background-color: rgba(255, 255, 255, 0.06);
 }
 
 #page_history .maintext img {

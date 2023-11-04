@@ -4,11 +4,18 @@
 	  tr {
 		td {
 		  background: $color-secondary;
+		  transition: all .3s ease-in-out;
 		}
 
 		&:nth-child(even) {
 		  td {
 			background: $color-secondary-alt;
+		  }
+		}
+
+		&:hover {
+		  td {
+			background-color: rgba(#fff, .06);
 		  }
 		}
 	  }
