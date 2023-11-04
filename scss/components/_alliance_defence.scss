@@ -69,11 +69,13 @@
 
 			.ally_def_target_mdata_roids {
 			  position: relative;
+			  display: flex;
+			  align-items: center;
 
 			  &:before {
 				font-size: .6875rem;
 				content: 'Asteroids:';
-				margin: 5px 5px 0 0;
+				margin: 0 5px 0 0;
 			  }
 			}
 

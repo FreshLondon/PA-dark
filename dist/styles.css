@@ -4595,11 +4595,13 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
 }
 #page_alliance_defence .maintext .ally_def_eta_wrapper .ally_def_incs_wrapper .ally_def_target .ally_def_target_mdata .ally_def_target_mdata_roids {
   position: relative;
+  display: flex;
+  align-items: center;
 }
 #page_alliance_defence .maintext .ally_def_eta_wrapper .ally_def_incs_wrapper .ally_def_target .ally_def_target_mdata .ally_def_target_mdata_roids:before {
   font-size: 0.6875rem;
   content: "Asteroids:";
-  margin: 5px 5px 0 0;
+  margin: 0 5px 0 0;
 }
 #page_alliance_defence .maintext .ally_def_eta_wrapper .ally_def_incs_wrapper .ally_def_target .ally_def_target_mdata .ally_def_target_mdata_base {
   flex: unset;
