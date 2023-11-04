@@ -33,12 +33,143 @@
 	  width: auto;
 	  min-width: unset;
 
+	  tbody {
+		tr {
+		  transition: all .3s ease-in-out;
+
+		  &.mission_attack,
+		  &.mission_defend,
+		  &.mission_return,
+		  &.ter,
+		  &.xan,
+		  &.cat,
+		  &.zik,
+		  &.kin,
+		  &.sly,
+		  &.etd {
+			&:hover {
+			  td {
+				color: $color-offwhite;
+
+				a {
+				  color: $color-offwhite;
+				}
+			  }
+			}
+		  }
+
+		  &.mission_attack {
+			&:hover {
+			  td {
+				background: rgba($color-negative, .375);
+			  }
+			}
+
+			&.relations_hostile {
+			  td {
+				background: rgba($color-negative, .125);
+			  }
+
+			  &:hover {
+				td {
+				  background: rgba($color-negative, .375);
+				}
+			  }
+			}
+		  }
+
+		  &.mission_defend {
+			&:hover {
+			  td {
+				background: rgba($color-positive, .375);
+			  }
+			}
+		  }
+
+		  &.mission_return {
+			&:hover {
+			  td {
+				background: rgba($color-grey, .375);
+			  }
+			}
+		  }
+
+		  &.ter {
+			&:hover {
+			  td {
+				background: rgba($color-terran, .125);
+			  }
+			}
+		  }
+
+		  &.xan {
+			&:hover {
+			  td {
+				background: rgba($color-xandathrii, .125);
+			  }
+			}
+		  }
+
+		  &.cat {
+			&:hover {
+			  td {
+				background: rgba($color-cathaar, .125);
+			  }
+			}
+		  }
+
+		  &.zik {
+			&:hover {
+			  td {
+				background: rgba($color-zikonian, .125);
+			  }
+			}
+		  }
+
+		  &.kin {
+			&:hover {
+			  td {
+				background: rgba($color-kinthia, .125);
+			  }
+			}
+		  }
+
+		  &.sly {
+			&:hover {
+			  td {
+				background: rgba($color-slythonian, .125);
+			  }
+			}
+		  }
+
+		  &.etd {
+			&:hover {
+			  td {
+				background: rgba($color-eitraides, .125);
+			  }
+			}
+		  }
+
+		  td {
+			a {
+			  transition: none;
+			}
+
+			&.right {
+			  a {
+				float: left !important;
+			  }
+			}
+		  }
+		}
+	  }
+
 	  tr {
 		th,
 		td {
-		  //&:empty {
-		  //background: $color-background !important;
-		  //}
+		  &:empty {
+			background: $color-background !important;
+		  }
 		}
 
 		td {

@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*!
-*  v4.11
+*  v4.12
 *  This skin addon is designed to run with the r32 skin selected in PA preferences.
 *
 *  If this skin customisation adds even a tiny bit of enjoyment to your gaming experience it was well worth the countless hours of development.
@@ -4576,7 +4576,8 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
   width: 55px;
 }
 #page_alliance_defence .maintext .ally_def_eta_wrapper .ally_def_incs_wrapper .ally_def_target .ally_def_target_mdata {
-  flex: 7;
+  width: 525px;
+  flex: unset;
 }
 #page_alliance_defence .maintext .ally_def_eta_wrapper .ally_def_incs_wrapper .ally_def_target .ally_def_target_mdata > span {
   flex: 1;
@@ -5388,6 +5389,61 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
 #page_alliance_fleets #contents table {
   width: auto;
   min-width: unset;
+}
+#page_alliance_fleets #contents table tbody tr {
+  transition: all 0.3s ease-in-out;
+}
+#page_alliance_fleets #contents table tbody tr.mission_attack:hover td, #page_alliance_fleets #contents table tbody tr.mission_defend:hover td, #page_alliance_fleets #contents table tbody tr.mission_return:hover td, #page_alliance_fleets #contents table tbody tr.ter:hover td, #page_alliance_fleets #contents table tbody tr.xan:hover td, #page_alliance_fleets #contents table tbody tr.cat:hover td, #page_alliance_fleets #contents table tbody tr.zik:hover td, #page_alliance_fleets #contents table tbody tr.kin:hover td, #page_alliance_fleets #contents table tbody tr.sly:hover td, #page_alliance_fleets #contents table tbody tr.etd:hover td {
+  color: #ccc;
+}
+#page_alliance_fleets #contents table tbody tr.mission_attack:hover td a, #page_alliance_fleets #contents table tbody tr.mission_defend:hover td a, #page_alliance_fleets #contents table tbody tr.mission_return:hover td a, #page_alliance_fleets #contents table tbody tr.ter:hover td a, #page_alliance_fleets #contents table tbody tr.xan:hover td a, #page_alliance_fleets #contents table tbody tr.cat:hover td a, #page_alliance_fleets #contents table tbody tr.zik:hover td a, #page_alliance_fleets #contents table tbody tr.kin:hover td a, #page_alliance_fleets #contents table tbody tr.sly:hover td a, #page_alliance_fleets #contents table tbody tr.etd:hover td a {
+  color: #ccc;
+}
+#page_alliance_fleets #contents table tbody tr.mission_attack:hover td {
+  background: rgba(255, 0, 0, 0.375);
+}
+#page_alliance_fleets #contents table tbody tr.mission_attack.relations_hostile td {
+  background: rgba(255, 0, 0, 0.125);
+}
+#page_alliance_fleets #contents table tbody tr.mission_attack.relations_hostile:hover td {
+  background: rgba(255, 0, 0, 0.375);
+}
+#page_alliance_fleets #contents table tbody tr.mission_defend:hover td {
+  background: rgba(50, 205, 50, 0.375);
+}
+#page_alliance_fleets #contents table tbody tr.mission_return:hover td {
+  background: rgba(136, 136, 136, 0.375);
+}
+#page_alliance_fleets #contents table tbody tr.ter:hover td {
+  background: rgba(161, 129, 129, 0.125);
+}
+#page_alliance_fleets #contents table tbody tr.xan:hover td {
+  background: rgba(43, 168, 126, 0.125);
+}
+#page_alliance_fleets #contents table tbody tr.cat:hover td {
+  background: rgba(77, 136, 188, 0.125);
+}
+#page_alliance_fleets #contents table tbody tr.zik:hover td {
+  background: rgba(201, 55, 22, 0.125);
+}
+#page_alliance_fleets #contents table tbody tr.kin:hover td {
+  background: rgba(119, 69, 210, 0.125);
+}
+#page_alliance_fleets #contents table tbody tr.sly:hover td {
+  background: rgba(194, 20, 106, 0.125);
+}
+#page_alliance_fleets #contents table tbody tr.etd:hover td {
+  background: rgba(195, 175, 108, 0.125);
+}
+#page_alliance_fleets #contents table tbody tr td a {
+  transition: none;
+}
+#page_alliance_fleets #contents table tbody tr td.right a {
+  float: left !important;
+}
+#page_alliance_fleets #contents table tr th:empty,
+#page_alliance_fleets #contents table tr td:empty {
+  background: #1a222c !important;
 }
 #page_alliance_fleets #contents table tr td[style="width: 20%;"] {
   background: transparent !important;
