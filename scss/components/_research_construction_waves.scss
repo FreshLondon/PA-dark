@@ -27,8 +27,8 @@
 .scans {
   p {
 	font-size: 14px;
-	padding-right: 1.5rem;
-	padding-left: 1.5rem;
+	padding-right: 21px;
+	padding-left: 21px;
 	position: relative;
 
 	.desc_link {
@@ -231,8 +231,9 @@
 		  order: 2;
 
 		  &:nth-child(1) {
-			order: 4;
+			height: 28px;
 			margin: 0 28px 0 0;
+			order: 4;
 		  }
 
 		  &:nth-child(4) {
@@ -242,8 +243,8 @@
 
 		  input {
 			&[type='checkbox'] {
-			  width: 1.5rem;
-			  height: 1.5rem;
+			  width: 21px;
+			  height: 21px;
 			  margin: 0 0 0 7px;
 
 			  &:focus {
@@ -252,7 +253,7 @@
 
 			  &:before {
 				color: rgba($color-negative, .8);
-				font-size: 1.5rem;
+				font-size: 21px;
 				font-weight: bold;
 				content: '\2718';
 				display: block;
@@ -418,7 +419,7 @@
 		  }
 
 		  + p.research_queue {
-			padding-top: 1.5rem !important;
+			padding-top: 21px !important;
 			border-top: 1px solid rgba($color-primary, .5);
 			margin-top: 14px;
 		  }

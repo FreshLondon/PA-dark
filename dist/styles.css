@@ -432,15 +432,15 @@ hr {
 }
 #menu li li li:before {
   color: rgba(82, 165, 248, 0.5);
-  font-size: 1.5rem;
-  line-height: 1.5rem;
+  font-size: 21px;
+  line-height: 21px;
   vertical-align: middle;
   content: "➟";
   position: relative;
   left: -5px;
 }
 #menu li li li a {
-  line-height: 1.5rem;
+  line-height: 21px;
 }
 #menu #menu_time {
   color: rgba(82, 165, 248, 0.55);
@@ -1031,8 +1031,8 @@ hr {
   padding: 0 0 0 0.05rem;
   display: block;
   background: transparent;
-  width: 1.5rem;
-  height: 1.5rem;
+  width: 21px;
+  height: 21px;
   border: 1px solid #52a5f8;
   border-radius: 50%;
   margin: 7px 7px 7px auto;
@@ -1373,7 +1373,7 @@ span.center {
   overflow: hidden;
   background: rgba(36, 48, 63, 0.4);
   width: 100px;
-  height: 1.5rem;
+  height: 21px;
   border: 1px solid rgba(82, 165, 248, 0.5);
   border-radius: 4px;
   box-shadow: inset 0 2px 4px 2px rgba(0, 0, 0, 0.4), 0 1px 3px 3px rgba(0, 0, 0, 0.15);
@@ -1381,7 +1381,7 @@ span.center {
 }
 .progress_wrapper .progress_bar {
   background: rgba(55, 128, 89, 0.6);
-  height: 1.5rem;
+  height: 21px;
 }
 .progress_wrapper .progress_expected {
   background: rgba(255, 165, 0, 0.2);
@@ -1501,7 +1501,7 @@ span.mission_attack, span.mission_defend, span.mission_return, span.mission_fake
   padding: 0 7px;
   display: inline-block;
   background: #24303f !important;
-  height: 1.5rem;
+  height: 21px;
   border: 1px solid rgba(82, 165, 248, 0.5) !important;
   border-radius: 0;
   box-shadow: none;
@@ -1519,8 +1519,8 @@ span.mission_attack, span.mission_defend, span.mission_return, span.mission_fake
 #page_messages a[href*="action=delete"],
 #page_messages a[href*="action=report"] {
   display: inline-block;
-  width: 1.5rem;
-  height: 1.5rem;
+  width: 21px;
+  height: 21px;
   position: relative;
 }
 #page_messages a[onclick^=read]:after,
@@ -1532,7 +1532,7 @@ span.mission_attack, span.mission_defend, span.mission_return, span.mission_fake
 #page_messages:after {
   color: #c93716;
   font-size: 1.25rem;
-  line-height: 1.5rem;
+  line-height: 21px;
   position: absolute;
   top: 0;
   left: 1px;
@@ -1853,7 +1853,7 @@ table.mceEditor tr td select.mceSelectList:first-of-type {
 #mining table tr td,
 #galaxy_fund table tr td {
   background: #24303f;
-  height: 1.5rem;
+  height: 21px;
 }
 #mining table tr td .textlabel,
 #galaxy_fund table tr td .textlabel {
@@ -1867,8 +1867,8 @@ table.mceEditor tr td select.mceSelectList:first-of-type {
 #galaxy_fund table tr td .crystal,
 #galaxy_fund table tr td .eonium {
   background-repeat: no-repeat;
-  background-size: 1.5rem 1.5rem;
-  height: 1.5rem;
+  background-size: 21px 21px;
+  height: 21px;
 }
 #mining table tr td .metal .textvalue,
 #mining table tr td .crystal .textvalue,
@@ -1902,7 +1902,7 @@ table.mceEditor tr td select.mceSelectList:first-of-type {
 }
 #mining table td,
 #galaxy_fund table td {
-  height: 1.5rem;
+  height: 21px;
 }
 #mining .resources .metal .textvalue,
 #mining .resources .crystal .textvalue,
@@ -2019,8 +2019,8 @@ table.mceEditor tr td select.mceSelectList:first-of-type {
 .construction_info p,
 .scans p {
   font-size: 14px;
-  padding-right: 1.5rem;
-  padding-left: 1.5rem;
+  padding-right: 21px;
+  padding-left: 21px;
   position: relative;
 }
 .construction_info p .desc_link,
@@ -2102,7 +2102,7 @@ table.mceEditor tr td select.mceSelectList:first-of-type {
 }
 #constructions .maintext .constructions .construction_info .resources + p {
   font-size: 0.75rem;
-  padding: 14px 50% 14px 28px;
+  padding: 7px 50% 7px 28px;
   display: flex;
   flex-direction: column;
   background: #1e2935;
@@ -2121,7 +2121,7 @@ table.mceEditor tr td select.mceSelectList:first-of-type {
   align-items: center;
   justify-content: flex-end;
   width: 100%;
-  margin-top: -58px;
+  margin-top: -43px;
   z-index: 10;
   order: 3;
 }
@@ -2171,15 +2171,17 @@ table.mceEditor tr td select.mceSelectList:first-of-type {
   align-items: center;
   justify-content: flex-start;
   width: calc(100% - 241px);
-  height: 30px;
-  margin: 10.5px 0 0;
+  height: 29px;
+  margin: 0;
   order: 1;
   column-gap: 14px;
 }
+#constructions .maintext .constructions .construction_build .resources:nth-child(2) {
+  margin-bottom: -4px;
+}
 #constructions .maintext .constructions .construction_build .resources:nth-child(3) {
-  height: 50px;
+  height: 29px;
   border-top: 1px solid rgba(82, 165, 248, 0.5);
-  margin-top: 10.5px;
   order: 3;
 }
 #constructions .maintext .constructions .construction_build .resources li {
@@ -2196,19 +2198,22 @@ table.mceEditor tr td select.mceSelectList:first-of-type {
   align-items: center;
   justify-content: flex-end;
   width: 213px;
-  height: 30px;
-  margin: 10.5px 28px 0 0;
+  height: 29px;
+  margin: 0 28px 0 0;
 }
 #constructions .maintext .constructions .construction_build form:nth-child(1) {
   width: 100%;
-  margin-bottom: 10.5px;
+  height: 29px;
   order: 3;
 }
 #constructions .maintext .constructions .construction_build form:nth-child(2), #constructions .maintext .constructions .construction_build form:nth-child(3) {
   order: 2;
 }
+#constructions .maintext .constructions .construction_build form:nth-child(3) {
+  margin-bottom: -4px;
+}
 #constructions .maintext .constructions .construction_build form:nth-child(4) {
-  height: 50px;
+  height: 29px;
   border-top: 1px solid rgba(82, 165, 248, 0.5);
   order: 4;
 }
@@ -2220,16 +2225,16 @@ table.mceEditor tr td select.mceSelectList:first-of-type {
   align-items: center;
 }
 #constructions .maintext .constructions .construction_build form input[type=checkbox] {
-  width: 1.5rem;
-  height: 1.5rem;
-  margin: 0 7px 0 0;
+  width: 21px;
+  height: 21px;
+  margin: 0 4px 0 0;
 }
 #constructions .maintext .constructions .construction_build form input[type=checkbox]:focus {
   border: 1px solid rgba(255, 0, 0, 0.5);
 }
 #constructions .maintext .constructions .construction_build form input[type=checkbox]:before {
   color: rgba(255, 0, 0, 0.8);
-  font-size: 1.5rem;
+  font-size: 21px;
   font-weight: bold;
   content: "✘";
   display: block;
@@ -2353,7 +2358,7 @@ table.mceEditor tr td select.mceSelectList:first-of-type {
   margin-top: 0;
 }
 .research .research_next[id] form.cancelform + p.research_queue {
-  padding-top: 1.5rem !important;
+  padding-top: 21px !important;
   border-top: 1px solid rgba(82, 165, 248, 0.5);
   margin-top: 14px;
 }
@@ -3252,7 +3257,7 @@ span.small.notice_warning {
   margin: 0 auto;
 }
 #page_fleets form[name=movement] div#currentMoves a {
-  line-height: 1.5rem !important;
+  line-height: 21px !important;
   width: auto !important;
   margin: 0 0 0 5px !important;
 }
@@ -3674,7 +3679,7 @@ th.superhighlight {
   max-width: 10.5rem;
 }
 #page_manual span[style="font-size: 13pt;"] {
-  font-size: 1.5rem !important;
+  font-size: 21px !important;
   display: block;
   border-bottom: 1px solid rgba(82, 165, 248, 0.5);
 }
@@ -4440,7 +4445,7 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
 
 #page_galaxy #contents .maintext .superhighlight {
   color: inherit;
-  font-size: 1.5rem;
+  font-size: 21px;
 }
 #page_galaxy input {
   margin: 0 !important;
@@ -4449,7 +4454,7 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
   color: #52a5f8;
   padding: 3.5px !important;
   min-width: 3rem;
-  height: 1.5rem;
+  height: 21px;
 }
 #page_galaxy table {
   width: 100% !important;
@@ -4867,8 +4872,8 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
   border-color: transparent !important;
 }
 #page_alliance_defence .maintext .ally_def_eta_wrapper .ally_def_incs_wrapper .ally_def_attackers > div .ally_def_attacker_intel {
-  font-size: 0.9rem;
   color: #ccc;
+  font-size: 0.9rem;
   padding-right: 10px;
   display: flex;
   flex: auto;
@@ -6616,7 +6621,7 @@ select,
   vertical-align: middle;
   display: inline-block;
   background: rgba(36, 48, 63, 0.4);
-  height: 1.5rem;
+  height: 21px;
   border: 1px solid rgba(82, 165, 248, 0.5);
   border-radius: 3px;
   box-shadow: inset 0 2px 4px 2px rgba(0, 0, 0, 0.4);
@@ -6833,7 +6838,7 @@ ul.alliance_attack_claims_list a,
   padding: 0 7px;
   display: inline-block;
   background: rgba(36, 48, 63, 0.4) !important;
-  height: 1.5rem;
+  height: 21px;
   border: 1px solid rgba(82, 165, 248, 0.5) !important;
   border-radius: 3px;
   box-shadow: inset 0 2px 4px 2px rgba(0, 0, 0, 0.4);

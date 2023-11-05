@@ -9,7 +9,7 @@
 	tr {
 	  td {
 		background: $color-secondary;
-		height: 1.5rem;
+		height: 21px;
 
 		.textlabel {
 		  display: inline-block;
@@ -20,8 +20,8 @@
 		.crystal,
 		.eonium {
 		  background-repeat: no-repeat;
-		  background-size: 1.5rem 1.5rem;
-		  height: 1.5rem;
+		  background-size: 21px 21px;
+		  height: 21px;
 
 		  .textvalue {
 			padding: 0 14px 0 1.2rem;
@@ -61,7 +61,7 @@
 	}
 
 	td {
-	  height: 1.5rem;
+	  height: 21px;
 	}
   }
 

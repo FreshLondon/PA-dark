@@ -54,7 +54,7 @@
 			  padding: 0 7px;
 			  display: inline-block;
 			  background: $color-secondary !important;
-			  height: 1.5rem;
+			  height: 21px;
 			  border: 1px solid rgba($color-primary, .5) !important;
 			  border-radius: 0;
 			  box-shadow: none;
@@ -79,8 +79,8 @@
   a[href*='action=delete'],
   a[href*='action=report'] {
 	display: inline-block;
-	width: 1.5rem;
-	height: 1.5rem;
+	width: 21px;
+	height: 21px;
 	position: relative;
 
 	&:after {
@@ -94,7 +94,7 @@
   &:after {
 	color: $color-zikonian;
 	font-size: 1.25rem;
-	line-height: 1.5rem;
+	line-height: 21px;
 	position: absolute;
 	top: 0;
 	left: 1px;
