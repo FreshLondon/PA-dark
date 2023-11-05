@@ -46,9 +46,9 @@
 		  }
 
 		  .ally_def_target_mdata {
+			line-height: 1;
 			flex: unset;
 			width: 467px;
-			line-height: 1;
 
 			> span {
 			  flex: 1;
@@ -213,8 +213,8 @@
 		  font-size: $text-default;
 
 		  > div {
-			background: $color-secondary;
 			line-height: 1;
+			background: $color-secondary;
 
 			&:nth-child(even) {
 			  background: $color-secondary-alt;

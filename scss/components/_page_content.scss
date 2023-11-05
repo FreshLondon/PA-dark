@@ -198,13 +198,54 @@ span.center {
 #side_select_box,
 #con_fleets,
 #con_planets,
-#dships_box {
+#dships_box,
+#scan_request {
   color: $color-offwhite !important;
   white-space: initial;
   padding: 3.5px 7px;
   background: $color-background !important;
   border: 1px solid rgba($color-primary, .5);
   box-shadow: 3px 3px 5px 0 rgba(#000, .4);
+}
+
+#scan_request {
+  p {
+	padding: 0 7px 14px;
+
+	&:first-child {
+	  position: absolute;
+	  right: 0;
+	  z-index: 999999;
+
+	  a {
+		color: $color_primary;
+		font-size: 0;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 15px;
+		height: 15px;
+
+		&:before {
+		  content: '\2716';
+		  font-weight: 900;
+		  font-size: $text-medium;
+		}
+	  }
+	}
+  }
+
+  form {
+	margin-top: 10px;
+
+	p {
+	  line-height: 22px;
+	}
+
+	select {
+	  text-align: center;
+	}
+  }
 }
 
 #side_select_box {

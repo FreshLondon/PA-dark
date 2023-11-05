@@ -59,6 +59,11 @@
 		  }
 
 		  td {
+			&:nth-child(2),
+			&:nth-child(3), {
+			  font-size: 13px;
+			}
+
 			&:nth-child(9) {
 			  a {
 				color: $color-primary;

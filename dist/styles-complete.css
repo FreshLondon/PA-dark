@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*!
-*  v4.14
+*  v4.15
 *  This skin addon is designed to run by itself, with no other added CSS.
 *
 *  If this skin customisation adds even a tiny bit of enjoyment to your gaming experience it was well worth the
@@ -2946,13 +2946,46 @@ span.center {
 #side_select_box,
 #con_fleets,
 #con_planets,
-#dships_box {
+#dships_box,
+#scan_request {
   color: #ccc !important;
   white-space: initial;
   padding: 3.5px 7px;
   background: #1a222c !important;
   border: 1px solid rgba(82, 165, 248, 0.5);
   box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, 0.4);
+}
+
+#scan_request p {
+  padding: 0 7px 14px;
+}
+#scan_request p:first-child {
+  position: absolute;
+  right: 0;
+  z-index: 999999;
+}
+#scan_request p:first-child a {
+  color: #52a5f8;
+  font-size: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 15px;
+  height: 15px;
+}
+#scan_request p:first-child a:before {
+  content: "✖";
+  font-weight: 900;
+  font-size: 0.8rem;
+}
+#scan_request form {
+  margin-top: 10px;
+}
+#scan_request form p {
+  line-height: 22px;
+}
+#scan_request form select {
+  text-align: center;
 }
 
 #side_select_box {
@@ -6239,6 +6272,9 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
 .relations_own_recruit):nth-child(even) {
   background: #1e2935;
 }
+#page_galaxy table#galtable tbody tr td:nth-child(2), #page_galaxy table#galtable tbody tr td:nth-child(3) {
+  font-size: 13px;
+}
 #page_galaxy table#galtable tbody tr td:nth-child(9) a {
   color: #52a5f8;
   padding-right: 2px;
@@ -6357,9 +6393,9 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
   width: 68px;
 }
 #page_alliance_defence .maintext .ally_def_eta_wrapper .ally_def_incs_wrapper .ally_def_target .ally_def_target_mdata {
+  line-height: 1;
   flex: unset;
   width: 467px;
-  line-height: 1;
 }
 #page_alliance_defence .maintext .ally_def_eta_wrapper .ally_def_incs_wrapper .ally_def_target .ally_def_target_mdata > span {
   flex: 1;
@@ -6501,8 +6537,8 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
   font-size: 0.9rem;
 }
 #page_alliance_defence .maintext .ally_def_eta_wrapper .ally_def_incs_wrapper .ally_def_attackers > div {
-  background: #24303f;
   line-height: 1;
+  background: #24303f;
 }
 #page_alliance_defence .maintext .ally_def_eta_wrapper .ally_def_incs_wrapper .ally_def_attackers > div:nth-child(even) {
   background: #1e2935;
