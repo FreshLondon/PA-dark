@@ -4457,10 +4457,13 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
   height: 21px;
 }
 #page_galaxy table {
-  width: 100% !important;
+  width: 100%;
 }
 #page_galaxy table:not(#galtable) {
   margin-bottom: 0;
+}
+#page_galaxy table#galtable {
+  width: auto;
 }
 #page_galaxy table#galtable thead {
   background: #1a222c;
