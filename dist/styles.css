@@ -2107,6 +2107,9 @@ table.mceEditor tr td select.mceSelectList:first-of-type {
 #constructions .maintext .constructions:first-of-type {
   margin-top: 14px;
 }
+#constructions .maintext .constructions .superhighlight {
+  color: #52a5f8;
+}
 #constructions .maintext .constructions .construction_info {
   display: flex;
   flex-basis: 100%;
