@@ -364,6 +364,10 @@
 			.ally_def_attacker_intel {
 			  color: $color-offwhite;
 			  padding-right: 10px;
+			  display: flex;
+			  flex: auto;
+			  justify-content: flex-end;
+			  width: auto;
 			  order: 9;
 
 			  span {
@@ -637,6 +641,10 @@
 
 			.ally_def_defender_mdata {
 			  padding-right: 10px;
+			  display: flex;
+			  flex: auto;
+			  justify-content: flex-end;
+			  width: auto;
 			  order: 7;
 
 			  .ally_def_defender_mdata_nick {

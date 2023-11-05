@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*!
-*  v4.12
+*  v4.13
 *  This skin addon is designed to run by itself, with no other added CSS.
 *
 *  If this skin customisation adds even a tiny bit of enjoyment to your gaming experience it was well worth the
@@ -6617,6 +6617,10 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
 #page_alliance_defence .maintext .ally_def_eta_wrapper .ally_def_incs_wrapper .ally_def_attackers > div .ally_def_attacker_intel {
   color: #ccc;
   padding-right: 10px;
+  display: flex;
+  flex: auto;
+  justify-content: flex-end;
+  width: auto;
   order: 9;
 }
 #page_alliance_defence .maintext .ally_def_eta_wrapper .ally_def_incs_wrapper .ally_def_attackers > div .ally_def_attacker_intel span {
@@ -6833,6 +6837,10 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
 }
 #page_alliance_defence .maintext .ally_def_eta_wrapper .ally_def_incs_wrapper .ally_def_defenders .ally_def_defender .ally_def_defender_mdata {
   padding-right: 10px;
+  display: flex;
+  flex: auto;
+  justify-content: flex-end;
+  width: auto;
   order: 7;
 }
 #page_alliance_defence .maintext .ally_def_eta_wrapper .ally_def_incs_wrapper .ally_def_defenders .ally_def_defender .ally_def_defender_mdata .ally_def_defender_mdata_nick {
