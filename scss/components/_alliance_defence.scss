@@ -42,7 +42,7 @@
 			font-size: $text-default;
 			padding-right: 7px;
 			justify-content: flex-end;
-			width: 55px;
+			width: 68px;
 		  }
 
 		  .ally_def_target_mdata {
@@ -226,7 +226,7 @@
 			.ally_def_attacker_coords {
 			  padding-right: 7px;
 			  justify-content: flex-end;
-			  width: 54px;
+			  width: 67px;
 			  position: relative;
 			  order: 1;
 
@@ -363,6 +363,7 @@
 			}
 
 			.ally_def_attacker_intel {
+			  font-size: $text-default;
 			  color: $color-offwhite;
 			  padding-right: 10px;
 			  display: flex;
@@ -372,13 +373,18 @@
 			  order: 9;
 
 			  span {
+				font-size: $text-medium;
 				display: flex;
 				justify-content: flex-end;
 				width: 50px;
 
 				&:nth-child(1) {
-				  width: 44px;
+				  width: 33px;
 				  margin-left: 15px;
+				}
+
+				&:nth-child(2) {
+				  width: 38px;
 				}
 			  }
 			}
@@ -567,7 +573,7 @@
 			.ally_def_defender_coords {
 			  display: flex;
 			  align-items: center;
-			  width: 54px;
+			  width: 67px;
 			  position: relative;
 			  order: 1;
 
@@ -649,6 +655,7 @@
 			  order: 7;
 
 			  .ally_def_defender_mdata_nick {
+				font-size: $text-default;
 				white-space: nowrap;
 				text-overflow: ellipsis;
 				display: flex;
@@ -659,17 +666,18 @@
 
 			  .ally_def_defender_mdata_ap,
 			  .ally_def_defender_mdata_dp {
+				font-size: $text-medium;
 				display: flex;
 				justify-content: flex-end;
 			  }
 
 			  .ally_def_defender_mdata_ap {
-				width: 50px;
-				margin-left: 15px;
+				width: 40px;
+				margin-left: 13px;
 			  }
 
 			  .ally_def_defender_mdata_dp {
-				width: 54px;
+				width: 44px;
 			  }
 			}
 		  }
