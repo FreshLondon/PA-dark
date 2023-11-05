@@ -47,7 +47,7 @@
 
 		  .ally_def_target_mdata {
 			flex: unset;
-			width: 525px;
+			width: 467px;
 
 			> span {
 			  flex: 1;
@@ -245,13 +245,13 @@
 			}
 
 			.ally_def_attacker_fleetname {
-			  font-size: $text-default !important;
+			  font-size: $text-medium !important;
 			  text-overflow: ellipsis;
 			  display: flex;
 			  align-items: center;
 			  overflow: hidden;
-			  width: 218px;
-			  max-width: 218px !important;
+			  width: 160px;
+			  max-width: 160px !important;
 			  margin-right: 4px;
 			  order: 2;
 			}
@@ -590,11 +590,11 @@
 			}
 
 			.ally_def_defender_fleetname {
-			  font-size: $text-default !important;
+			  font-size: $text-medium !important;
 			  text-overflow: ellipsis;
 			  overflow: hidden;
-			  width: 218px;
-			  max-width: 218px !important;
+			  width: 160px;
+			  max-width: 160px !important;
 			  margin-right: 4px;
 			  order: 2;
 			}
