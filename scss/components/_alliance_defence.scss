@@ -48,6 +48,7 @@
 		  .ally_def_target_mdata {
 			flex: unset;
 			width: 467px;
+			line-height: 1;
 
 			> span {
 			  flex: 1;
@@ -213,6 +214,7 @@
 
 		  > div {
 			background: $color-secondary;
+			line-height: 1;
 
 			&:nth-child(even) {
 			  background: $color-secondary-alt;
@@ -250,8 +252,8 @@
 			  display: flex;
 			  align-items: center;
 			  overflow: hidden;
-			  width: 160px;
-			  max-width: 160px !important;
+			  width: 130px;
+			  max-width: 130px !important;
 			  margin-right: 4px;
 			  order: 2;
 			}
@@ -599,8 +601,8 @@
 			  font-size: $text-medium !important;
 			  text-overflow: ellipsis;
 			  overflow: hidden;
-			  width: 160px;
-			  max-width: 160px !important;
+			  width: 130px;
+			  max-width: 130px !important;
 			  margin-right: 4px;
 			  order: 2;
 			}

@@ -4609,6 +4609,7 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
 #page_alliance_defence .maintext .ally_def_eta_wrapper .ally_def_incs_wrapper .ally_def_target .ally_def_target_mdata {
   flex: unset;
   width: 467px;
+  line-height: 1;
 }
 #page_alliance_defence .maintext .ally_def_eta_wrapper .ally_def_incs_wrapper .ally_def_target .ally_def_target_mdata > span {
   flex: 1;
@@ -4751,6 +4752,7 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
 }
 #page_alliance_defence .maintext .ally_def_eta_wrapper .ally_def_incs_wrapper .ally_def_attackers > div {
   background: #24303f;
+  line-height: 1;
 }
 #page_alliance_defence .maintext .ally_def_eta_wrapper .ally_def_incs_wrapper .ally_def_attackers > div:nth-child(even) {
   background: #1e2935;
@@ -4783,8 +4785,8 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
   display: flex;
   align-items: center;
   overflow: hidden;
-  width: 160px;
-  max-width: 160px !important;
+  width: 130px;
+  max-width: 130px !important;
   margin-right: 4px;
   order: 2;
 }
@@ -5057,8 +5059,8 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
   font-size: 0.8rem !important;
   text-overflow: ellipsis;
   overflow: hidden;
-  width: 160px;
-  max-width: 160px !important;
+  width: 130px;
+  max-width: 130px !important;
   margin-right: 4px;
   order: 2;
 }
