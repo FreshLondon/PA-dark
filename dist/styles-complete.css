@@ -2956,15 +2956,17 @@ span.center {
   box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, 0.4);
 }
 
-#scan_request p {
-  padding: 0 7px 14px;
-}
-#scan_request p:first-child {
-  position: absolute;
-  right: 0;
+#scan_request p:first-child,
+#intel_form p:first-child {
+  padding: 0 !important;
+  position: absolute !important;
+  right: 4px !important;
+  top: 4px !important;
+  margin: 0 !important;
   z-index: 999999;
 }
-#scan_request p:first-child a {
+#scan_request p:first-child a,
+#intel_form p:first-child a {
   color: #52a5f8;
   font-size: 0;
   display: flex;
@@ -2973,10 +2975,15 @@ span.center {
   width: 15px;
   height: 15px;
 }
-#scan_request p:first-child a:before {
+#scan_request p:first-child a:before,
+#intel_form p:first-child a:before {
   content: "✖";
   font-weight: 900;
   font-size: 0.8rem;
+}
+
+#scan_request p {
+  padding: 0 7px 14px;
 }
 #scan_request form {
   margin-top: 10px;

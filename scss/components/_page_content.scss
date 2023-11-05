@@ -208,13 +208,15 @@ span.center {
   box-shadow: 3px 3px 5px 0 rgba(#000, .4);
 }
 
-#scan_request {
+#scan_request,
+#intel_form {
   p {
-	padding: 0 7px 14px;
-
 	&:first-child {
-	  position: absolute;
-	  right: 0;
+	  padding: 0 !important;
+	  position: absolute !important;
+	  right: 4px !important;
+	  top: 4px !important;
+	  margin: 0 !important;
 	  z-index: 999999;
 
 	  a {
@@ -233,6 +235,12 @@ span.center {
 		}
 	  }
 	}
+  }
+}
+
+#scan_request {
+  p {
+	padding: 0 7px 14px;
   }
 
   form {
