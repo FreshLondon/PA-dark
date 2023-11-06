@@ -4658,7 +4658,7 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
 #page_alliance_defence .maintext .ally_def_eta_wrapper .ally_def_incs_wrapper .ally_def_target .ally_def_target_mdata {
   line-height: 1;
   flex: unset;
-  width: 467px;
+  width: 437px;
 }
 #page_alliance_defence .maintext .ally_def_eta_wrapper .ally_def_incs_wrapper .ally_def_target .ally_def_target_mdata > span {
   flex: 1;
