@@ -2234,7 +2234,10 @@ table.mceEditor tr td select.mceSelectList:first-of-type {
 }
 #constructions .maintext .constructions .construction_build .resources li:nth-child(1) {
   font-size: 0.9rem;
-  flex: auto;
+}
+#constructions .maintext .constructions .construction_build .resources li .textvalue {
+  display: inline-block;
+  width: 62px;
 }
 #constructions .maintext .constructions .construction_build form {
   display: flex;

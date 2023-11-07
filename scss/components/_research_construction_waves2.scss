@@ -232,7 +232,11 @@
 
 			&:nth-child(1) {
 			  font-size: $text-default;
-			  flex: auto;
+			}
+
+			.textvalue {
+			  display: inline-block;
+			  width: 62px;
 			}
 		  }
 		}
