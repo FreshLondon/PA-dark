@@ -213,10 +213,10 @@ span.center {
   p {
 	&:first-child {
 	  padding: 0 !important;
-	  position: absolute !important;
-	  right: 4px !important;
-	  top: 4px !important;
 	  margin: 0 !important;
+	  position: absolute !important;
+	  top: 4px !important;
+	  right: 4px !important;
 	  z-index: 999999;
 
 	  a {
@@ -229,9 +229,9 @@ span.center {
 		height: 15px;
 
 		&:before {
-		  content: '\2716';
-		  font-weight: 900;
 		  font-size: $text-medium;
+		  font-weight: 900;
+		  content: '\2716';
 		}
 	  }
 	}

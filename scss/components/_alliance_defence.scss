@@ -39,16 +39,14 @@
 		  }
 
 		  .ally_def_target_coords {
-			font-size: $text-default;
-			padding-right: 7px;
-			justify-content: flex-end;
-			width: 68px;
+			order: 1;
 		  }
 
 		  .ally_def_target_mdata {
+			order: 2;
 			line-height: 1;
 			flex: unset;
-			width: 437px;
+			width: 438px;
 
 			> span {
 			  flex: 1;
@@ -57,8 +55,9 @@
 
 			.ally_def_target_mdata_nick {
 			  font-size: 14px;
+			  padding-left: 16px;
 			  overflow: hidden;
-			  min-width: 125px;
+			  min-width: 132px;
 
 			  a {
 				color: $color-offwhite;
@@ -91,13 +90,14 @@
 			  &:before {
 				font-size: .6875rem;
 				white-space: nowrap;
-				content: 'Base fleet:';
+				content: 'Base:';
 				margin: 0 5px 0 0;
 			  }
 			}
 		  }
 
 		  .ally_def_target_links {
+			order: 3;
 			display: flex;
 			flex: 3;
 			align-items: center;
@@ -173,6 +173,7 @@
 		  }
 
 		  .button-calcz {
+			order: 4;
 			color: $color-primary !important;
 			font-family: inherit;
 			font-size: $text-small;
@@ -200,6 +201,7 @@
 		  }
 
 		  .ally_def_target_summary {
+			order: 5;
 			padding-right: 4px;
 			flex: 3;
 
@@ -225,27 +227,28 @@
 			  align-items: center
 			}
 
-			.ally_def_attacker_coords {
-			  padding-right: 7px;
-			  justify-content: flex-end;
-			  width: 67px;
-			  position: relative;
-			  order: 1;
-
-			  .ally_def_attacker_not_calc {
-				font-size: 0;
-				position: absolute;
-				left: 4px;
-				order: 1;
-				transform: translateY(2px);
-
-				&:before {
-				  font-size: $text-small;
-				  content: '*';
-				}
-			  }
-			}
-
+			//.ally_def_attacker_coords {
+			//  padding-right: 7px;
+			//  justify-content: flex-start;
+			//  width: 62px;
+			//  position: relative;
+			//  order: 1;
+			//  flex-direction: row-reverse;
+			//
+			//  .ally_def_attacker_not_calc {
+			//	font-size: 0;
+			//	order: 1;
+			//	padding-right: 3px;
+			//	display: flex;
+			//	align-items: center;
+			//
+			//	&:before {
+			//	  font-size: $text-large;
+			//	  content: '*';
+			//	  height: 7px;
+			//	}
+			//  }
+			//}
 			.ally_def_attacker_fleetname {
 			  font-size: $text-medium !important;
 			  text-overflow: ellipsis;
@@ -508,8 +511,28 @@
 		.ally_def_target_coords,
 		.ally_def_attacker_coords,
 		.ally_def_defender_coords {
-		  padding: 0 4px;
-		  width: auto;
+		  font-weight: 700;
+		  padding: 0 7px 0 4px;
+		  display: flex;
+		  flex-direction: row-reverse;
+		  justify-content: flex-start;
+		  width: 62px;
+		  position: relative;
+		  order: 1;
+
+		  > span {
+			font-size: 0;
+			padding-right: 3px;
+			display: flex;
+			align-items: center;
+			order: 1;
+
+			&:before {
+			  font-size: $text-large;
+			  content: '*';
+			  height: 7px;
+			}
+		  }
 		}
 
 		.ally_def_target,
@@ -569,31 +592,6 @@
 
 			  &:nth-child(even) {
 				background: rgba($color-positive, .09);
-			  }
-			}
-
-			.ally_def_defender_coords {
-			  display: flex;
-			  align-items: center;
-			  width: 67px;
-			  position: relative;
-			  order: 1;
-
-			  a {
-				position: absolute;
-				right: 8px;
-			  }
-
-			  .ally_def_defender_not_calc {
-				font-size: 0;
-				position: absolute;
-				left: 4px;
-				order: 1;
-
-				&:before {
-				  font-size: $text-small;
-				  content: '*';
-				}
 			  }
 			}
 
