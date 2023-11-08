@@ -5046,6 +5046,7 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
   font-size: 1rem;
   content: "*";
   height: 7px;
+  line-height: 0.9rem;
 }
 #page_alliance_defence .maintext .ally_def_eta_wrapper .ally_def_incs_wrapper .ally_def_target,
 #page_alliance_defence .maintext .ally_def_eta_wrapper .ally_def_incs_wrapper .ally_def_attacker,

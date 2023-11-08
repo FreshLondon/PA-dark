@@ -531,6 +531,7 @@
 			  font-size: $text-large;
 			  content: '*';
 			  height: 7px;
+			  line-height: $text-default;
 			}
 		  }
 		}
@@ -592,6 +593,13 @@
 
 			  &:nth-child(even) {
 				background: rgba($color-positive, .09);
+			  }
+
+			  .ally_def_defender_coords {
+				span {
+				  &:after {
+				  }
+				}
 			  }
 			}
 
