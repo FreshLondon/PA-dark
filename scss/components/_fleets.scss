@@ -156,6 +156,21 @@
 		}
 	  }
 	}
+
+	+ p {
+	  &.center.superhighlight {
+		color: #fff;
+		font-size: 13px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 8px;
+
+		span {
+		  font-size: 15px;
+		}
+	  }
+	}
   }
 
   //#d_stats {

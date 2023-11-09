@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*!
-*  v4.16
+*  v5.0
 *  This skin addon is designed to run by itself, with no other added CSS.
 *
 *  If this skin customisation adds even a tiny bit of enjoyment to your gaming experience it was well worth the
@@ -2574,7 +2574,7 @@ hr {
 
 .xan,
 #page_manual .Xan td {
-  color: #2ba87e;
+  color: #3EB266;
 }
 
 .zik,
@@ -2584,17 +2584,17 @@ hr {
 
 .etd,
 #page_manual .Etd td {
-  color: #c3af6c;
+  color: #a3c386;
 }
 
 .kin,
 #page_manual .Kin td {
-  color: #b916c9;
+  color: #21b0b8;
 }
 
 .sly,
 #page_manual .Sly td {
-  color: #c2146a;
+  color: #937c32;
 }
 
 #planet_summary {
@@ -5055,6 +5055,17 @@ span.small.notice_warning {
   display: block !important;
   margin: 14px auto 0 !important;
 }
+#page_fleets form + p.center.superhighlight {
+  color: #fff;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+#page_fleets form + p.center.superhighlight span {
+  font-size: 15px;
+}
 #page_fleets .ct_fleets {
   display: table;
   background: transparent;
@@ -5527,10 +5538,10 @@ th.superhighlight {
 }
 
 .Xan {
-  background: rgba(43, 168, 126, 0.3);
+  background: rgba(62, 178, 102, 0.3);
 }
 .Xan:nth-child(odd) {
-  background: rgba(43, 168, 126, 0.4);
+  background: rgba(62, 178, 102, 0.4);
 }
 
 .Zik {
@@ -5541,24 +5552,24 @@ th.superhighlight {
 }
 
 .Etd {
-  background: rgba(195, 175, 108, 0.3);
+  background: rgba(163, 195, 134, 0.3);
 }
 .Etd:nth-child(odd) {
-  background: rgba(195, 175, 108, 0.4);
+  background: rgba(163, 195, 134, 0.4);
 }
 
 .Kin {
-  background: rgba(185, 22, 201, 0.3);
+  background: rgba(33, 176, 184, 0.3);
 }
 .Kin:nth-child(odd) {
-  background: rgba(185, 22, 201, 0.4);
+  background: rgba(33, 176, 184, 0.4);
 }
 
 .Sly {
-  background: rgba(194, 20, 106, 0.3);
+  background: rgba(147, 124, 50, 0.3);
 }
 .Sly:nth-child(odd) {
-  background: rgba(194, 20, 106, 0.4);
+  background: rgba(147, 124, 50, 0.4);
 }
 
 div[id^=page_universe_] table tr:not([class*=relations]) td {
@@ -5714,12 +5725,12 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
   background-color: #4d88bc !important;
 }
 #page_universe_races #intel + .container table tr td:nth-child(4) a {
-  color: #2ba87e !important;
-  border-color: #2ba87e !important;
+  color: #3EB266 !important;
+  border-color: #3EB266 !important;
 }
 #page_universe_races #intel + .container table tr td:nth-child(4) a:hover {
   color: #1a222c !important;
-  background-color: #2ba87e !important;
+  background-color: #3EB266 !important;
 }
 #page_universe_races #intel + .container table tr td:nth-child(5) a {
   color: #c93716 !important;
@@ -5730,20 +5741,20 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
   background-color: #c93716 !important;
 }
 #page_universe_races #intel + .container table tr td:nth-child(6) a {
-  color: #b916c9 !important;
-  border-color: #b916c9 !important;
+  color: #21b0b8 !important;
+  border-color: #21b0b8 !important;
 }
 #page_universe_races #intel + .container table tr td:nth-child(6) a:hover {
   color: #1a222c !important;
-  background-color: #b916c9 !important;
+  background-color: #21b0b8 !important;
 }
 #page_universe_races #intel + .container table tr td:nth-child(7) a {
-  color: #c3af6c !important;
-  border-color: #c3af6c !important;
+  color: #a3c386 !important;
+  border-color: #a3c386 !important;
 }
 #page_universe_races #intel + .container table tr td:nth-child(7) a:hover {
   color: #1a222c !important;
-  background-color: #c3af6c !important;
+  background-color: #a3c386 !important;
 }
 
 #intel {
@@ -5919,19 +5930,19 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
   color: #4d88bc;
 }
 [id^=page_universe] table tr .xan {
-  color: #2ba87e;
+  color: #3EB266;
 }
 [id^=page_universe] table tr .zik {
   color: #c93716;
 }
 [id^=page_universe] table tr .etd {
-  color: #c3af6c;
+  color: #a3c386;
 }
 [id^=page_universe] table tr .kin {
-  color: #b916c9;
+  color: #21b0b8;
 }
 [id^=page_universe] table tr .sly {
-  color: #c2146a;
+  color: #937c32;
 }
 [id^=page_universe] table tr a,
 [id^=page_universe] table tr .tablesort_asc,
@@ -6397,10 +6408,10 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
   order: 1;
 }
 #page_alliance_defence .maintext .ally_def_eta_wrapper .ally_def_incs_wrapper .ally_def_target .ally_def_target_mdata {
-  order: 2;
   line-height: 1;
   flex: unset;
   width: 438px;
+  order: 2;
 }
 #page_alliance_defence .maintext .ally_def_eta_wrapper .ally_def_incs_wrapper .ally_def_target .ally_def_target_mdata > span {
   flex: 1;
@@ -6442,11 +6453,11 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
   margin: 0 5px 0 0;
 }
 #page_alliance_defence .maintext .ally_def_eta_wrapper .ally_def_incs_wrapper .ally_def_target .ally_def_target_links {
-  order: 3;
   display: flex;
   flex: 3;
   align-items: center;
   margin: 0;
+  order: 3;
 }
 #page_alliance_defence .maintext .ally_def_eta_wrapper .ally_def_incs_wrapper .ally_def_target .ally_def_target_links span[id^=note_tag] {
   margin-left: 7px;
@@ -6509,7 +6520,6 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
   transition-property: color, background, box-shadow;
 }
 #page_alliance_defence .maintext .ally_def_eta_wrapper .ally_def_incs_wrapper .ally_def_target .button-calcz {
-  order: 4;
   color: #52a5f8 !important;
   font-family: inherit;
   font-size: 0.75rem;
@@ -6523,6 +6533,7 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
   border: 1px solid rgba(82, 165, 248, 0.5) !important;
   border-radius: 3px;
   box-shadow: inset 0 2px 4px 2px rgba(0, 0, 0, 0.4);
+  order: 4;
   cursor: pointer;
   transition-timing-function: linear;
   transition-duration: 0.75s;
@@ -6535,9 +6546,9 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
   box-shadow: none;
 }
 #page_alliance_defence .maintext .ally_def_eta_wrapper .ally_def_incs_wrapper .ally_def_target .ally_def_target_summary {
-  order: 5;
   padding-right: 4px;
   flex: 3;
+  order: 5;
 }
 #page_alliance_defence .maintext .ally_def_eta_wrapper .ally_def_incs_wrapper .ally_def_target .ally_def_target_summary span {
   background: transparent !important;
@@ -6785,9 +6796,9 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
 #page_alliance_defence .maintext .ally_def_eta_wrapper .ally_def_incs_wrapper .ally_def_attacker_coords > span:before,
 #page_alliance_defence .maintext .ally_def_eta_wrapper .ally_def_incs_wrapper .ally_def_defender_coords > span:before {
   font-size: 1rem;
+  line-height: 0.9rem;
   content: "*";
   height: 7px;
-  line-height: 0.9rem;
 }
 #page_alliance_defence .maintext .ally_def_eta_wrapper .ally_def_incs_wrapper .ally_def_target,
 #page_alliance_defence .maintext .ally_def_eta_wrapper .ally_def_incs_wrapper .ally_def_attacker,
@@ -7246,7 +7257,7 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
   background: rgba(161, 129, 129, 0.125);
 }
 #page_alliance_fleets #contents table tbody tr.xan:hover td {
-  background: rgba(43, 168, 126, 0.125);
+  background: rgba(62, 178, 102, 0.125);
 }
 #page_alliance_fleets #contents table tbody tr.cat:hover td {
   background: rgba(77, 136, 188, 0.125);
@@ -7255,13 +7266,13 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
   background: rgba(201, 55, 22, 0.125);
 }
 #page_alliance_fleets #contents table tbody tr.kin:hover td {
-  background: rgba(185, 22, 201, 0.125);
+  background: rgba(33, 176, 184, 0.125);
 }
 #page_alliance_fleets #contents table tbody tr.sly:hover td {
-  background: rgba(194, 20, 106, 0.125);
+  background: rgba(147, 124, 50, 0.125);
 }
 #page_alliance_fleets #contents table tbody tr.etd:hover td {
-  background: rgba(195, 175, 108, 0.125);
+  background: rgba(163, 195, 134, 0.125);
 }
 #page_alliance_fleets #contents table tbody tr td a {
   transition: none;
@@ -7791,10 +7802,10 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
   color: #4d88bc;
 }
 #page_bcalc #bcalc #def_show input[type=checkbox]#def_race_xan {
-  border-color: #2ba87e !important;
+  border-color: #3EB266 !important;
 }
 #page_bcalc #bcalc #def_show input[type=checkbox]#def_race_xan:before {
-  color: #2ba87e;
+  color: #3EB266;
 }
 #page_bcalc #bcalc #def_show input[type=checkbox]#def_race_zik {
   border-color: #c93716 !important;
@@ -7803,22 +7814,22 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
   color: #c93716;
 }
 #page_bcalc #bcalc #def_show input[type=checkbox]#def_race_etd {
-  border-color: #c3af6c !important;
+  border-color: #a3c386 !important;
 }
 #page_bcalc #bcalc #def_show input[type=checkbox]#def_race_etd:before {
-  color: #c3af6c;
+  color: #a3c386;
 }
 #page_bcalc #bcalc #def_show input[type=checkbox]#def_race_kin {
-  border-color: #b916c9 !important;
+  border-color: #21b0b8 !important;
 }
 #page_bcalc #bcalc #def_show input[type=checkbox]#def_race_kin:before {
-  color: #b916c9;
+  color: #21b0b8;
 }
 #page_bcalc #bcalc #def_show input[type=checkbox]#def_race_sly {
-  border-color: #c2146a !important;
+  border-color: #937c32 !important;
 }
 #page_bcalc #bcalc #def_show input[type=checkbox]#def_race_sly:before {
-  color: #c2146a;
+  color: #937c32;
 }
 #page_bcalc #bcalc #att_show input[type=checkbox]#att_race_ter {
   border-color: #a18181;
@@ -7833,10 +7844,10 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
   color: #4d88bc;
 }
 #page_bcalc #bcalc #att_show input[type=checkbox]#att_race_xan {
-  border-color: #2ba87e;
+  border-color: #3EB266;
 }
 #page_bcalc #bcalc #att_show input[type=checkbox]#att_race_xan:before {
-  color: #2ba87e;
+  color: #3EB266;
 }
 #page_bcalc #bcalc #att_show input[type=checkbox]#att_race_zik {
   border-color: #c93716;
@@ -7845,22 +7856,22 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
   color: #c93716;
 }
 #page_bcalc #bcalc #att_show input[type=checkbox]#att_race_etd {
-  border-color: #c3af6c;
+  border-color: #a3c386;
 }
 #page_bcalc #bcalc #att_show input[type=checkbox]#att_race_etd:before {
-  color: #c3af6c;
+  color: #a3c386;
 }
 #page_bcalc #bcalc #att_show input[type=checkbox]#att_race_kin {
-  border-color: #b916c9 !important;
+  border-color: #21b0b8 !important;
 }
 #page_bcalc #bcalc #att_show input[type=checkbox]#att_race_kin:before {
-  color: #b916c9;
+  color: #21b0b8;
 }
 #page_bcalc #bcalc #att_show input[type=checkbox]#att_race_sly {
-  border-color: #c2146a !important;
+  border-color: #937c32 !important;
 }
 #page_bcalc #bcalc #att_show input[type=checkbox]#att_race_sly:before {
-  color: #c2146a;
+  color: #937c32;
 }
 #page_bcalc #bcalc .global_controls {
   padding: 0 7px 7px;
@@ -7910,13 +7921,13 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
 #page_bcalc #bcalc .def_xan td,
 #page_bcalc #bcalc .att_xan th,
 #page_bcalc #bcalc .att_xan td {
-  background-color: rgba(43, 168, 126, 0.3);
+  background-color: rgba(62, 178, 102, 0.3);
 }
 #page_bcalc #bcalc .def_xan:hover th,
 #page_bcalc #bcalc .def_xan:hover td,
 #page_bcalc #bcalc .att_xan:hover th,
 #page_bcalc #bcalc .att_xan:hover td {
-  background-color: rgba(43, 168, 126, 0.4);
+  background-color: rgba(62, 178, 102, 0.4);
 }
 #page_bcalc #bcalc .def_zik,
 #page_bcalc #bcalc .att_zik {
@@ -7942,13 +7953,13 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
 #page_bcalc #bcalc .def_etd td,
 #page_bcalc #bcalc .att_etd th,
 #page_bcalc #bcalc .att_etd td {
-  background-color: rgba(195, 175, 108, 0.3);
+  background-color: rgba(163, 195, 134, 0.3);
 }
 #page_bcalc #bcalc .def_etd:hover th,
 #page_bcalc #bcalc .def_etd:hover td,
 #page_bcalc #bcalc .att_etd:hover th,
 #page_bcalc #bcalc .att_etd:hover td {
-  background-color: rgba(195, 175, 108, 0.4);
+  background-color: rgba(163, 195, 134, 0.4);
 }
 #page_bcalc #bcalc .def_kin,
 #page_bcalc #bcalc .att_kin {
@@ -7958,13 +7969,13 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
 #page_bcalc #bcalc .def_kin td,
 #page_bcalc #bcalc .att_kin th,
 #page_bcalc #bcalc .att_kin td {
-  background-color: rgba(185, 22, 201, 0.3);
+  background-color: rgba(33, 176, 184, 0.3);
 }
 #page_bcalc #bcalc .def_kin:hover th,
 #page_bcalc #bcalc .def_kin:hover td,
 #page_bcalc #bcalc .att_kin:hover th,
 #page_bcalc #bcalc .att_kin:hover td {
-  background-color: rgba(185, 22, 201, 0.4);
+  background-color: rgba(33, 176, 184, 0.4);
 }
 #page_bcalc #bcalc .def_sly,
 #page_bcalc #bcalc .att_sly {
@@ -7974,13 +7985,13 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
 #page_bcalc #bcalc .def_sly td,
 #page_bcalc #bcalc .att_sly th,
 #page_bcalc #bcalc .att_sly td {
-  background-color: rgba(194, 20, 106, 0.3);
+  background-color: rgba(147, 124, 50, 0.3);
 }
 #page_bcalc #bcalc .def_sly:hover th,
 #page_bcalc #bcalc .def_sly:hover td,
 #page_bcalc #bcalc .att_sly:hover th,
 #page_bcalc #bcalc .att_sly:hover td {
-  background-color: rgba(194, 20, 106, 0.4);
+  background-color: rgba(147, 124, 50, 0.4);
 }
 #page_bcalc #bcalc .def_ter th,
 #page_bcalc #bcalc .def_ter td,

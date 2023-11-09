@@ -1,3 +1,4 @@
+@use 'sass:color';
 //
 // variables for the skin
 //
@@ -9,12 +10,16 @@ $text-small: .75rem;
 //
 $color-terran: #a18181;
 $color-cathaar: #4d88bc;
-$color-xandathrii: #2ba87e;
+$color-xandathrii: #3EB266; // v2
 $color-zikonian: #c93716;
-$color-eitraides: #c3af6c;
-//$color-kinthia: #7745d2;
-$color-kinthia: #b916c9;
-$color-slythonian: #c2146a;
+$color-eitraides-1: color.adjust(#717b68, $saturation: 25%); // perfect color blend between Cat, Zik, and Xan is: #717b68, but lightening for visibility
+$color-eitraides: lighten($color-eitraides-1, 20%); // Increasing brightness
+$color-kinthia: color.adjust(#3C989D, $saturation: 25%); // perfect color blend between Cat and Xan is: #3C989D, increasing saturation for visibility
+$color-slythonian: color.adjust(#7a6f4a, $saturation: 25%); // perfect color blend between Cat and Xan is: #7a6f4a
+// old colors
+//$color-xandathrii: #2ba87e; // v1
+//$color-kinthia: #7745d2; // v1
+//$color-kinthia: #b916c9; // v2
 //
 $color-primary: #52a5f8;
 $color-primary-dark: darken($color-primary, 20%);
