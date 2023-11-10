@@ -12,11 +12,10 @@ For anyone wishing to use the styles, please see the raw compiled output found a
 ### INSTALL INSTRUCTIONS:
 You'll need to enable the 'Round 32' as the base skin in preferences, and a browser extension to add the new CSS to the PA pages.
 1. use a browser extension that allows you to add CSS to a page:
-* [Chrome or other chromium based browsers](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne) (Brave, Opera, Yandex beta, etc.. pretty much any non-FireFox browser).
-* [FireFox stylus extension](https://addons.mozilla.org/en-US/firefox/addon/styl-us/)
-
+    - [Chrome or other chromium based browsers](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne) (Brave, Opera, Yandex beta, etc.. pretty much any non-FireFox browser).
+    - [FireFox stylus extension](https://addons.mozilla.org/en-US/firefox/addon/styl-us/)
 1. Add the CSS:
-* This Dark skin CSS can always be refreshed for new updates etc, it's [found here](https://raw.githubusercontent.com/FreshLondon/PA-dark/master/dist/styles.css).
+    - This Dark skin CSS can always be refreshed for new updates etc, it's [found here](https://raw.githubusercontent.com/FreshLondon/PA-dark/master/dist/styles.css).
 ---
 ###  MOBILE USE:
 *  Any chromium based browser (yandex beta, brave, opera, etc) or FireFox (probably use this as that annoying PA calc import bug isn't present) supports addons, use the chrome extension above for any non-Firefox browser.
