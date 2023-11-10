@@ -2149,8 +2149,8 @@ table.mceEditor tr td select.mceSelectList:first-of-type {
   display: flex;
   flex-direction: column;
   background: #24303f;
-  box-shadow: inset 0 0 8px 2px rgba(0, 0, 0, 0.25), 0 0 3px 3px rgba(0, 0, 0, 0.15);
   width: 100%;
+  box-shadow: inset 0 0 8px 2px rgba(0, 0, 0, 0.25), 0 0 3px 3px rgba(0, 0, 0, 0.15);
   z-index: 10;
 }
 #constructions .maintext .constructions .construction_info p,
@@ -4091,6 +4091,9 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
 #load_box table tr:nth-child(8) {
   background: rgba(255, 165, 0, 0.15);
 }
+#load_box table tr th {
+  text-align: right !important;
+}
 #load_box table tr th[colspan="2"] {
   color: #ccc;
   font-size: 0.8rem;
@@ -4108,11 +4111,13 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
   border-image: linear-gradient(to right, transparent 0%, rgba(82, 165, 248, 0.5) 50%, transparent 100%);
   border-image-slice: 1;
 }
-#load_box table tr th {
-  text-align: right !important;
-}
 #load_box table tr td {
   text-align: left !important;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  display: inline-block;
+  overflow: hidden;
+  width: 100%;
 }
 
 .relations_own_member,

@@ -409,10 +409,9 @@ div[id^='page_universe_'] {
 		background: rgba($color-neutral, .15);
 	  }
 
-	  td {
-	  }
-
 	  th {
+		text-align: right !important;
+
 		&[colspan='2'] {
 		  color: #ccc;
 		  font-size: .8rem;
@@ -432,12 +431,13 @@ div[id^='page_universe_'] {
 		}
 	  }
 
-	  th {
-		text-align: right !important;
-	  }
-
 	  td {
 		text-align: left !important;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+		display: inline-block;
+		overflow: hidden;
+		width: 100%;
 	  }
 	}
   }
