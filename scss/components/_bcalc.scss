@@ -451,6 +451,10 @@
 
 	#def_table,
 	#att_table {
+	  border-top: 1px solid transparent;
+	  border-image: linear-gradient(to right, transparent 0%, rgba($color-primary, .5) 50%, transparent 100%);
+	  border-image-slice: 1;
+
 	  tr {
 		&:first-child {
 		  th {
