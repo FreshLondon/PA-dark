@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*!
-*  v5.1
+*  v5.2
 *  This skin addon is designed to run by itself, with no other added CSS.
 *
 *  If this skin customisation adds even a tiny bit of enjoyment to your gaming experience it was well worth the
@@ -5851,7 +5851,7 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
 #load_box *:not([colspan="2"]) {
   text-align: right;
 }
-#load_box table tr#intel_ally_row #intel_ally {
+#load_box table tr#intel_ally_row #intel_ally, #load_box table tr#intel_rel_row #intel_rel, #load_box table tr#intel_nick_row #intel_nick {
   text-align: center;
   white-space: nowrap;
   text-overflow: ellipsis;
