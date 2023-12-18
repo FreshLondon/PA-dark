@@ -112,8 +112,8 @@
 
 	  .construction_info {
 		display: flex;
-		flex-basis: 100%;
 		flex-wrap: wrap;
+		flex-basis: 100%;
 		position: relative;
 		order: 1;
 
@@ -578,8 +578,8 @@
   .scan_form {
 	padding-right: 14px;
 	display: flex;
-	flex-flow: row nowrap;
 	justify-content: flex-end;
+	flex-flow: row nowrap;
 	margin-top: -2.25rem;
 
 	input[type='submit'] {
