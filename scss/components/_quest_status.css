@@ -1,0 +1,92 @@
+#page .container#javascriptwarning + #notice + .container#quest_system table tr {
+  display: table-row!important;
+}
+
+#quest_system {
+  table {
+	width: 80%;
+	margin: 0 auto;
+
+	th {
+	  &:nth-child(1) {
+		width: 0 !important;
+	  }
+
+	  &:nth-child(2) {
+		width: auto !important;
+	  }
+
+	  &:nth-child(3) {
+		width: 100px !important;
+	  }
+
+	  &:nth-child(4) {
+		width: 14px !important;
+	  }
+
+	  &:nth-child(5) {
+		width: 0 !important;
+	  }
+	}
+
+	tr {
+	  &:not(:first-child) {
+		th {
+		  font-size: 14px;
+		  text-transform: initial;
+
+		  &:nth-child(2) {
+			padding: 2.1px 0;
+			background: $color-secondary;
+			//background: linear-gradient(135deg, var(--col-panel-light) 0%, var(--col-panel-dark) 100%);
+		  }
+		}
+	  }
+
+	  &[id^='quest'] p {
+		color: white;
+		font-size: $text-small;
+		margin: 0 1.1rem;
+	  }
+	}
+
+	table {
+	  width: calc(100% - 2.4rem);
+	  margin-left: 14px;
+
+	  td {
+		&:nth-child(1) {
+		  width: auto !important;
+		}
+
+		&:nth-child(2) {
+		  width: 100px !important;
+		}
+
+		&:nth-child(3) {
+		  width: 162px;
+		}
+
+		&:nth-child(2n+2) {
+		  td {
+			padding: 7px;
+			background: $color-secondary;
+			//background: linear-gradient(135deg, var(--col-panel-light) 0%, var(--col-panel-dark) 100%);
+		  }
+		}
+	  }
+	}
+  }
+
+  .completed {
+	background: none;
+	width: 100%;
+
+	&:after {
+	  color: $color-primary;
+	  font-weight: bold;
+	  content: '\2714';
+	}
+  }
+}
+
