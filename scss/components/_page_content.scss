@@ -258,6 +258,9 @@ span.center {
 
 #side_select_box {
   width: auto !important;
+  left: calc(50% + 91px) !important;
+  position: fixed;
+  transform: translateX(-50%);
 }
 
 #pabox_inner {
