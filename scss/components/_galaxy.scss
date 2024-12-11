@@ -149,6 +149,8 @@
 	  text-align: center;
 	  padding: 0 7px;
 	  margin: 7px 0;
+	  display: flex;
+	  flex-direction: column;
 
 	  &.right {
 		position: absolute;
@@ -159,7 +161,8 @@
 
 	select#intel,
 	input[name='nick'] {
-	  width: 100%;
+	  width: auto;
+	  min-width: 100%;
 	  margin: 3.5px auto 7px;
 	}
 

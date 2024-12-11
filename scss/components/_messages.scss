@@ -44,30 +44,6 @@
 
 		  th {
 			background: transparent;
-
-			a {
-			  color: $color-primary !important;
-			  font-family: inherit;
-			  font-size: 14px;
-			  font-weight: initial;
-			  text-transform: initial;
-			  padding: 0 7px;
-			  display: inline-block;
-			  background: $color-secondary !important;
-			  height: 21px;
-			  border: 1px solid rgba($color-primary, .5) !important;
-			  border-radius: 0;
-			  box-shadow: none;
-			  margin: 14px 0;
-			  cursor: pointer;
-			  transition: .3s;
-
-			  &:hover {
-				color: black !important;
-				text-decoration: none !important;
-				background: $color-primary !important;
-			  }
-			}
 		  }
 		}
 	  }

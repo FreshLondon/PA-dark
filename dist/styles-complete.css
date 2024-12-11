@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*!
-*  v5.2
+*  v5.4
 *  This skin addon is designed to run by itself, with no other added CSS.
 *
 *  If this skin customisation adds even a tiny bit of enjoyment to your gaming experience it was well worth the
@@ -3338,28 +3338,6 @@ span.mission_attack, span.mission_defend, span.mission_return, span.mission_fake
 #page_messages #contents .maintext > table tr th {
   background: transparent;
 }
-#page_messages #contents .maintext > table tr th a {
-  color: #52a5f8 !important;
-  font-family: inherit;
-  font-size: 14px;
-  font-weight: initial;
-  text-transform: initial;
-  padding: 0 7px;
-  display: inline-block;
-  background: #24303f !important;
-  height: 21px;
-  border: 1px solid rgba(82, 165, 248, 0.5) !important;
-  border-radius: 0;
-  box-shadow: none;
-  margin: 14px 0;
-  cursor: pointer;
-  transition: 0.3s;
-}
-#page_messages #contents .maintext > table tr th a:hover {
-  color: black !important;
-  text-decoration: none !important;
-  background: #52a5f8 !important;
-}
 #page_messages a[onclick^=read],
 #page_messages a[onclick^=reply],
 #page_messages a[href*="action=delete"],
@@ -5510,6 +5488,10 @@ th.superhighlight {
 #page_manual #menu #entry_search form input[type=submit] {
   margin-top: 4px;
 }
+#page_manual .maintext ul,
+#page_manual .maintext ol {
+  padding: 0 0 0 24px;
+}
 #page_manual .entries a {
   font-weight: normal;
   text-indent: -0.5rem;
@@ -5535,7 +5517,12 @@ th.superhighlight {
   padding-left: 7px;
   border-left: 5px solid red;
   margin-left: 14px;
-  /* font-weight: bold; */
+}
+#page_manual span[style="color: red;"] {
+  color: red !important;
+}
+#page_manual span[style="color: green;"] {
+  color: limegreen !important;
 }
 #page_manual .tech_table td:last-child {
   color: #ccc;
@@ -5563,6 +5550,10 @@ th.superhighlight {
   font-size: 1.25rem;
   text-shadow: 1px 2px 2px black;
   background-color: transparent;
+}
+
+#page_quest_list maintext table {
+  max-width: 650px;
 }
 
 .Ter {
@@ -6399,6 +6390,8 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
   text-align: center;
   padding: 0 7px;
   margin: 7px 0;
+  display: flex;
+  flex-direction: column;
 }
 #page_galaxy #intel_form p.right {
   position: absolute;
@@ -6407,7 +6400,8 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
 }
 #page_galaxy #intel_form select#intel,
 #page_galaxy #intel_form input[name=nick] {
-  width: 100%;
+  width: auto;
+  min-width: 100%;
   margin: 3.5px auto 7px;
 }
 #page_galaxy #intel_form input[name=nick] {
@@ -8672,7 +8666,8 @@ ul.alliance_attack_claims_list a,
 #page_alliance_fleets #contents table tr td[style="width: 20%;"] a,
 #page_alliance_defence #dships_box p#dbcalc a,
 #page_scan .maintext a:not(.coords),
-#side_select_box p:not(:first-child) a {
+#side_select_box p:not(:first-child) a,
+#page_messages #contents .maintext > table tr th a {
   color: #52a5f8 !important;
   font-family: inherit;
   font-size: 14px;
@@ -8746,7 +8741,9 @@ ul.alliance_attack_claims_list a:focus,
 #page_scan .maintext a:not(.coords):hover,
 #page_scan .maintext a:not(.coords):focus,
 #side_select_box p:not(:first-child) a:hover,
-#side_select_box p:not(:first-child) a:focus {
+#side_select_box p:not(:first-child) a:focus,
+#page_messages #contents .maintext > table tr th a:hover,
+#page_messages #contents .maintext > table tr th a:focus {
   color: black !important;
   text-decoration: none !important;
   background: #52a5f8 !important;

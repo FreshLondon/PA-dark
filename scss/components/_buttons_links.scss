@@ -108,7 +108,8 @@ ul.alliance_attack_claims_list a,
 #page_alliance_fleets #contents table tr td[style='width: 20%;'] a,
 #page_alliance_defence #dships_box p#dbcalc a,
 #page_scan .maintext a:not(.coords),
-#side_select_box p:not(:first-child) a {
+#side_select_box p:not(:first-child) a,
+#page_messages #contents .maintext > table tr th a {
   color: $color-primary !important;
   font-family: inherit;
   font-size: 14px;
