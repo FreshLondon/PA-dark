@@ -116,7 +116,7 @@ div[id^='page_universe_'] {
 			}
 
 			th {
-			  background: #171e27 !important;
+			  background: #171E27 !important;
 			}
 
 			th,
@@ -162,11 +162,11 @@ div[id^='page_universe_'] {
 		}
 
 		&.moc {
-		  color: #00b7ff;
+		  color: #00B7FF;
 		}
 
 		&.gc {
-		  color: #00e413;
+		  color: #00E413;
 		  //color: #ffffff;
 		  font-weight: bold;
 		}
@@ -413,7 +413,7 @@ div[id^='page_universe_'] {
 		text-align: right !important;
 
 		&[colspan='2'] {
-		  color: #ccc;
+		  color: #CCC;
 		  font-size: .8rem;
 		  font-weight: bold;
 		  text-transform: uppercase;
@@ -421,8 +421,8 @@ div[id^='page_universe_'] {
 		  text-align: center !important;
 		  padding: 12px 0 8px;
 		  content: 'Intel';
-		  background: #24303f;
-		  background: linear-gradient(to right, #1a222c 0%, #24303f 50%, #1a222c 100%) !important;
+		  background: #24303F;
+		  background: linear-gradient(to right, #1A222C 0%, #24303F 50%, #1A222C 100%) !important;
 		  width: calc(100% - 4px);
 		  border: 1px solid transparent;
 		  border-top: none;
@@ -496,7 +496,7 @@ div[id^='page_universe_'] {
 	tr {
 	  &:first-child {
 		th {
-		  color: #ccc;
+		  color: #CCC;
 		  font-size: $text-small;
 		  font-weight: bold;
 		  padding: 3.5px 7px;
@@ -514,11 +514,11 @@ div[id^='page_universe_'] {
 	  }
 
 	  .moc {
-		color: #00b7ff;
+		color: #00B7FF;
 	  }
 
 	  .gc {
-		color: #00e413;
+		color: #00E413;
 	  }
 
 	  .ter {

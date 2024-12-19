@@ -96,7 +96,7 @@ hr {
    -------------------------------------------------------*/
 #page {
   padding: 36px 7px 0;
-  display: grid;
+  display: grid !important;
   width: 100%;
   max-width: 90rem;
   margin: 0 auto;

@@ -1,4 +1,4 @@
-# Ultimate v5.2
+# Ultimate v5.5
 
 Customised dark theme for [Planetarion](https://planetarion.com) created to enhance the 'Round 32' skin. Made with :purple_heart: for my fellow spreadsheet warriors
 

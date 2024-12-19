@@ -132,7 +132,7 @@ h2 {
 
 	  &.notice_warning {
 		opacity: 0.75;
-		color: #f35050;
+		color: #F35050;
 		font-size: $text-small;
 		font-weight: 900;
 		line-height: 1.8;
@@ -258,8 +258,8 @@ span.center {
 
 #side_select_box {
   width: auto !important;
-  left: calc(50% + 91px) !important;
   position: fixed;
+  left: calc(50% + 91px) !important;
   transform: translateX(-50%);
 }
 

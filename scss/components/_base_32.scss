@@ -19,7 +19,7 @@ body, p, td {
 }
 
 table, th {
-  color: #ccc;
+  color: #CCC;
   padding: 0;
   margin: 0;
 }
@@ -87,8 +87,8 @@ p {
 input, .input, textarea, select, .checkbox {
   color: #CCCCCC;
   font-size: 8pt;
-  background: #2e5b82;
-  border: 1px solid #cfcfcf;
+  background: #2E5B82;
+  border: 1px solid #CFCFCF;
 }
 
 #page input[type='submit'], #page input[type='button'] {
@@ -129,7 +129,7 @@ input.disabled {
 }
 
 input.disabled:hover {
-  border: 1px solid #cfcfcf !important;
+  border: 1px solid #CFCFCF !important;
 }
 
 #page input[type='submit']:hover, #page input[type='button']:hover {
@@ -138,7 +138,7 @@ input.disabled:hover {
 }
 
 option {
-  background: #213d58;
+  background: #213D58;
 }
 
 textarea {
@@ -146,11 +146,11 @@ textarea {
 }
 
 a {
-  color: #fff;
+  color: #FFF;
 }
 
 a:hover {
-  color: #ccc;
+  color: #CCC;
   text-decoration: none;
 }
 
@@ -174,7 +174,7 @@ a:hover {
 }
 
 #motd span {
-  color: #ffffff !important;
+  color: #FFFFFF !important;
 }
 
 .waiting {
@@ -225,7 +225,7 @@ a:hover {
 
 /*	Font stuff	*/
 .incs_hostile, .exile_vote {
-  color: #ff2b2b;
+  color: #FF2B2B;
   font-weight: bold;
 }
 
@@ -258,7 +258,7 @@ a:hover {
 }
 
 .bashlimit {
-  color: #ff8c00;
+  color: #FF8C00;
 }
 
 .fund_transfer {
@@ -266,11 +266,11 @@ a:hover {
 }
 
 .notice_protection {
-  color: #ccc;
+  color: #CCC;
 }
 
 .notice_allies {
-  color: #0082ff;
+  color: #0082FF;
 }
 
 li.li_gen {
@@ -292,7 +292,7 @@ li.li_gen:last-child {
 }
 
 .bad {
-  color: #ff2b2b;
+  color: #FF2B2B;
 }
 
 .good {
@@ -334,7 +334,7 @@ ul, li {
 }
 
 #menu a:hover {
-  color: #5292da;
+  color: #5292DA;
 }
 
 #menu_time {
@@ -747,7 +747,7 @@ a.questionmark {
 }
 
 .tooltip, .info {
-  color: #ffffff !important;
+  color: #FFFFFF !important;
   font-size: 9pt !important;
   font-weight: normal !important;
   text-transform: none !important;
@@ -755,7 +755,7 @@ a.questionmark {
   text-align: left !important;
   padding: 5px;
   display: none;
-  background: #213d58;
+  background: #213D58;
   border: 1px solid #FFFFFF;
   position: absolute;
   z-index: 1001;
@@ -851,7 +851,7 @@ a.questionmark {
 
 .population_slider {
   line-height: 0;
-  background: #b3b5b6;
+  background: #B3B5B6;
   width: 10px;
   height: 10px;
   border: 1px solid #DDDDDD;
@@ -870,7 +870,7 @@ a.questionmark {
 }
 
 .population_display {
-  color: #b3b5b6;
+  color: #B3B5B6;
   font: 11px;
   text-align: right;
   padding: 3px 2px 0 0;
@@ -955,7 +955,7 @@ a.forum_title {
 }
 
 .forum_thread_actions {
-  background: #213d58;
+  background: #213D58;
   width: 150px;
   border: solid 1px #FFFFFF;
   position: absolute;
@@ -1091,7 +1091,7 @@ a.forum_title {
 }
 
 .forum_poll_votes div {
-  background: #5292da;
+  background: #5292DA;
   height: 5px;
   float: left;
 }
@@ -1112,7 +1112,7 @@ a.forum_title {
 }
 
 #d_stats {
-  background: #213d58 !important;
+  background: #213D58 !important;
   border: 1px solid #FFFFFF;
 }
 
@@ -1160,7 +1160,7 @@ a.forum_title {
 }
 
 .mail_unread th {
-  color: #5292da;
+  color: #5292DA;
 }
 
 .mail_read {
@@ -1200,12 +1200,12 @@ a.forum_title {
 
 .relations_own_member {
   background: rgba(0, 130, 255, 0.2);
-  outline: #0082ff 1px solid;
+  outline: #0082FF 1px solid;
 }
 
 .relations_own_recruit {
   background: rgba(213, 117, 0, 0.3);
-  outline: #d57500 1px solid;
+  outline: #D57500 1px solid;
 }
 
 .relations_own_applicant {
@@ -1306,7 +1306,7 @@ a.forum_title {
 }
 
 .def_name span:hover, .att_name span:hover {
-  color: #5292da;
+  color: #5292DA;
 }
 
 .def_fleet, .att_fleet, .def_fleet_gaps, .att_fleet_gaps, #def_header_st_ro_amount, #def_header_st_ro_lost {
@@ -1357,7 +1357,7 @@ a.forum_title {
 }
 
 .def_killed, .att_killed {
-  color: #d50000;
+  color: #D50000;
   font-weight: normal;
 }
 
@@ -1367,18 +1367,18 @@ a.forum_title {
 }
 
 .def_stolen, .att_stolen {
-  color: #ed6a12;
+  color: #ED6A12;
   font-weight: normal;
 }
 
 .def_value_lost, .att_score_lost {
-  color: #d50000;
+  color: #D50000;
   font-weight: normal;
   text-align: center;
 }
 
 .def_value_gained, .att_score_gained {
-  color: #00aa01;
+  color: #00AA01;
   font-weight: normal;
   text-align: center;
 }
@@ -1389,7 +1389,7 @@ a.forum_title {
 }
 
 .def_ter, .att_ter {
-  background: #1b1b1b;
+  background: #1B1B1B;
 }
 
 .def_cat, .att_cat {
@@ -1439,7 +1439,7 @@ a.forum_title {
 }
 
 #my_bcalcs, #add_other, #add_own, #fleet_select_box, #side_select_box, #edit_comment_box, #con_fleets, #con_planets, #planet_note, #load_box, .display_box_small {
-  background: #213d58;
+  background: #213D58;
   width: 500px;
   border: 1px solid #FFFFFF;
   position: absolute;
@@ -1456,13 +1456,13 @@ a.forum_title {
 }
 
 .bcalc_row_selected {
-  color: #5292da;
+  color: #5292DA;
   font-weight: bold;
 }
 
 #intel_form {
   padding: 5px;
-  background: #213d58;
+  background: #213D58;
   border: 1px solid #FFFFFF;
 }
 
@@ -1576,7 +1576,7 @@ a.forum_title {
 }
 
 #pabox_outer {
-  background: #213d58;
+  background: #213D58;
   width: 100%;
   height: 100%;
   border: 1px solid #FFFFFF;
@@ -1640,7 +1640,7 @@ a.forum_title {
 }
 
 .ally_def_selected {
-  color: #5292da;
+  color: #5292DA;
   font-weight: bold;
 }
 

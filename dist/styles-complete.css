@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*!
-*  v5.4
+*  v5.5
 *  This skin addon is designed to run by itself, with no other added CSS.
 *
 *  If this skin customisation adds even a tiny bit of enjoyment to your gaming experience it was well worth the
@@ -40,7 +40,7 @@ body, p, td {
 }
 
 table, th {
-  color: #ccc;
+  color: #CCC;
   padding: 0;
   margin: 0;
 }
@@ -108,8 +108,8 @@ p {
 input, .input, textarea, select, .checkbox {
   color: #CCCCCC;
   font-size: 8pt;
-  background: #2e5b82;
-  border: 1px solid #cfcfcf;
+  background: #2E5B82;
+  border: 1px solid #CFCFCF;
 }
 
 #page input[type=submit], #page input[type=button] {
@@ -150,7 +150,7 @@ input.disabled {
 }
 
 input.disabled:hover {
-  border: 1px solid #cfcfcf !important;
+  border: 1px solid #CFCFCF !important;
 }
 
 #page input[type=submit]:hover, #page input[type=button]:hover {
@@ -159,7 +159,7 @@ input.disabled:hover {
 }
 
 option {
-  background: #213d58;
+  background: #213D58;
 }
 
 textarea {
@@ -167,11 +167,11 @@ textarea {
 }
 
 a {
-  color: #fff;
+  color: #FFF;
 }
 
 a:hover {
-  color: #ccc;
+  color: #CCC;
   text-decoration: none;
 }
 
@@ -195,7 +195,7 @@ a:hover {
 }
 
 #motd span {
-  color: #ffffff !important;
+  color: #FFFFFF !important;
 }
 
 .waiting {
@@ -246,7 +246,7 @@ a:hover {
 
 /*	Font stuff	*/
 .incs_hostile, .exile_vote {
-  color: #ff2b2b;
+  color: #FF2B2B;
   font-weight: bold;
 }
 
@@ -279,7 +279,7 @@ a:hover {
 }
 
 .bashlimit {
-  color: #ff8c00;
+  color: #FF8C00;
 }
 
 .fund_transfer {
@@ -287,11 +287,11 @@ a:hover {
 }
 
 .notice_protection {
-  color: #ccc;
+  color: #CCC;
 }
 
 .notice_allies {
-  color: #0082ff;
+  color: #0082FF;
 }
 
 li.li_gen {
@@ -313,7 +313,7 @@ li.li_gen:last-child {
 }
 
 .bad {
-  color: #ff2b2b;
+  color: #FF2B2B;
 }
 
 .good {
@@ -355,7 +355,7 @@ ul, li {
 }
 
 #menu a:hover {
-  color: #5292da;
+  color: #5292DA;
 }
 
 #menu_time {
@@ -768,7 +768,7 @@ a.questionmark {
 }
 
 .tooltip, .info {
-  color: #ffffff !important;
+  color: #FFFFFF !important;
   font-size: 9pt !important;
   font-weight: normal !important;
   text-transform: none !important;
@@ -776,7 +776,7 @@ a.questionmark {
   text-align: left !important;
   padding: 5px;
   display: none;
-  background: #213d58;
+  background: #213D58;
   border: 1px solid #FFFFFF;
   position: absolute;
   z-index: 1001;
@@ -872,7 +872,7 @@ a.questionmark {
 
 .population_slider {
   line-height: 0;
-  background: #b3b5b6;
+  background: #B3B5B6;
   width: 10px;
   height: 10px;
   border: 1px solid #DDDDDD;
@@ -891,7 +891,7 @@ a.questionmark {
 }
 
 .population_display {
-  color: #b3b5b6;
+  color: #B3B5B6;
   font: 11px;
   text-align: right;
   padding: 3px 2px 0 0;
@@ -976,7 +976,7 @@ a.forum_title {
 }
 
 .forum_thread_actions {
-  background: #213d58;
+  background: #213D58;
   width: 150px;
   border: solid 1px #FFFFFF;
   position: absolute;
@@ -1111,7 +1111,7 @@ a.forum_title {
 }
 
 .forum_poll_votes div {
-  background: #5292da;
+  background: #5292DA;
   height: 5px;
   float: left;
 }
@@ -1129,7 +1129,7 @@ a.forum_title {
 }
 
 #d_stats {
-  background: #213d58 !important;
+  background: #213D58 !important;
   border: 1px solid #FFFFFF;
 }
 
@@ -1177,7 +1177,7 @@ a.forum_title {
 }
 
 .mail_unread th {
-  color: #5292da;
+  color: #5292DA;
 }
 
 #view_news .new {
@@ -1211,12 +1211,12 @@ a.forum_title {
 
 .relations_own_member {
   background: rgba(0, 130, 255, 0.2);
-  outline: #0082ff 1px solid;
+  outline: #0082FF 1px solid;
 }
 
 .relations_own_recruit {
   background: rgba(213, 117, 0, 0.3);
-  outline: #d57500 1px solid;
+  outline: #D57500 1px solid;
 }
 
 .relations_own_applicant {
@@ -1314,7 +1314,7 @@ a.forum_title {
 }
 
 .def_name span:hover, .att_name span:hover {
-  color: #5292da;
+  color: #5292DA;
 }
 
 .def_fleet, .att_fleet, .def_fleet_gaps, .att_fleet_gaps, #def_header_st_ro_amount, #def_header_st_ro_lost {
@@ -1365,7 +1365,7 @@ a.forum_title {
 }
 
 .def_killed, .att_killed {
-  color: #d50000;
+  color: #D50000;
   font-weight: normal;
 }
 
@@ -1375,18 +1375,18 @@ a.forum_title {
 }
 
 .def_stolen, .att_stolen {
-  color: #ed6a12;
+  color: #ED6A12;
   font-weight: normal;
 }
 
 .def_value_lost, .att_score_lost {
-  color: #d50000;
+  color: #D50000;
   font-weight: normal;
   text-align: center;
 }
 
 .def_value_gained, .att_score_gained {
-  color: #00aa01;
+  color: #00AA01;
   font-weight: normal;
   text-align: center;
 }
@@ -1397,7 +1397,7 @@ a.forum_title {
 }
 
 .def_ter, .att_ter {
-  background: #1b1b1b;
+  background: #1B1B1B;
 }
 
 .def_cat, .att_cat {
@@ -1447,7 +1447,7 @@ a.forum_title {
 }
 
 #my_bcalcs, #add_other, #add_own, #fleet_select_box, #side_select_box, #edit_comment_box, #con_fleets, #con_planets, #planet_note, #load_box, .display_box_small {
-  background: #213d58;
+  background: #213D58;
   width: 500px;
   border: 1px solid #FFFFFF;
   position: absolute;
@@ -1464,13 +1464,13 @@ a.forum_title {
 }
 
 .bcalc_row_selected {
-  color: #5292da;
+  color: #5292DA;
   font-weight: bold;
 }
 
 #intel_form {
   padding: 5px;
-  background: #213d58;
+  background: #213D58;
   border: 1px solid #FFFFFF;
 }
 
@@ -1584,7 +1584,7 @@ a.forum_title {
 }
 
 #pabox_outer {
-  background: #213d58;
+  background: #213D58;
   width: 100%;
   height: 100%;
   border: 1px solid #FFFFFF;
@@ -1642,7 +1642,7 @@ a.forum_title {
 }
 
 .ally_def_selected {
-  color: #5292da;
+  color: #5292DA;
   font-weight: bold;
 }
 
@@ -1893,7 +1893,7 @@ hr {
    -------------------------------------------------------*/
 #page {
   padding: 36px 7px 0;
-  display: grid;
+  display: grid !important;
   width: 100%;
   max-width: 90rem;
   margin: 0 auto;
@@ -2173,7 +2173,7 @@ hr {
   text-transform: uppercase;
   padding: 3.5px 7px;
   display: block;
-  background: #19222b;
+  background: #19222B;
   border-bottom: 1px solid transparent;
   border-image: linear-gradient(to right, transparent 0%, rgba(82, 165, 248, 0.5) 100%);
   border-image-slice: 1;
@@ -2459,29 +2459,29 @@ hr {
 #header #header_mail {
   padding: 0;
   border: 1px solid transparent;
-  border-image: linear-gradient(to left, rgb(60, 107, 156) 0%, #24313f 100%);
+  border-image: linear-gradient(to left, rgb(60, 107, 156) 0%, #24313F 100%);
   border-image-slice: 1;
   left: 0;
   order: 1;
 }
 #header #header_mail:hover {
-  border-image: linear-gradient(to left, #52a5f8 0%, #24313f 100%);
+  border-image: linear-gradient(to left, #52a5f8 0%, #24313F 100%);
   border-image-slice: 1;
 }
 #header #header_news {
   padding: 0;
   border: 1px solid transparent;
-  border-image: linear-gradient(to right, rgb(60, 107, 156) 0%, #24313f 100%);
+  border-image: linear-gradient(to right, rgb(60, 107, 156) 0%, #24313F 100%);
   border-image-slice: 1;
   right: 0;
   order: 2;
 }
 #header #header_news:hover {
-  border-image: linear-gradient(to right, #52a5f8 0%, #24313f 100%);
+  border-image: linear-gradient(to right, #52a5f8 0%, #24313F 100%);
   border-image-slice: 1;
 }
 #header .textlabel {
-  color: #bbb;
+  color: #BBB;
   font-size: 0.75rem;
   font-weight: bold;
   text-transform: uppercase;
@@ -2685,7 +2685,7 @@ hr {
   width: 350px;
 }
 #planet_summary .textlabel {
-  color: #bbb;
+  color: #BBB;
   font-size: 0.75rem;
   font-weight: bold;
   text-transform: uppercase;
@@ -2931,7 +2931,7 @@ h2 a:hover {
 }
 #notice .maintext a.notice_warning {
   opacity: 0.75;
-  color: #f35050;
+  color: #F35050;
   font-size: 0.75rem;
   font-weight: 900;
   line-height: 1.8;
@@ -3036,8 +3036,8 @@ span.center {
 
 #side_select_box {
   width: auto !important;
-  left: calc(50% + 91px) !important;
   position: fixed;
+  left: calc(50% + 91px) !important;
   transform: translateX(-50%);
 }
 
@@ -3299,7 +3299,7 @@ span.mission_attack, span.mission_defend, span.mission_return, span.mission_fake
 }
 
 .mission_defend {
-  color: #0a0;
+  color: #0A0;
   background: rgba(50, 205, 50, 0.14);
 }
 .mission_defend .mission_defend {
@@ -3613,7 +3613,7 @@ table.mceEditor tr td .mceToolbarContainer {
   background: #24303f !important;
 }
 table.mceEditor tr td .mceToolbarContainer a {
-  background: #ccc !important;
+  background: #CCC !important;
 }
 table.mceEditor tr td.mceStatusbarBottom {
   display: none;
@@ -4464,7 +4464,7 @@ table.mceEditor tr td select.mceSelectList:first-of-type {
   margin-left: 5px;
 }
 .slider_track .population_slider:active {
-  background: linear-gradient(135deg, #598aad 0%, #000 100%);
+  background: linear-gradient(135deg, #598AAD 0%, #000 100%);
 }
 
 .population_display {
@@ -5076,7 +5076,7 @@ span.small.notice_warning {
   margin: 14px auto 0 !important;
 }
 #page_fleets form + p.center.superhighlight {
-  color: #fff;
+  color: #FFF;
   font-size: 13px;
   display: flex;
   align-items: center;
@@ -5659,7 +5659,7 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
   background: rgba(0, 130, 255, 0.25);
 }
 #page_universe #contents .container:nth-last-child(2) table tr th, #page_universe #contents .container:nth-last-child(3) table tr th {
-  background: #171e27 !important;
+  background: #171E27 !important;
 }
 #page_universe #contents .container:nth-last-child(2) table tr th,
 #page_universe #contents .container:nth-last-child(2) table tr td, #page_universe #contents .container:nth-last-child(3) table tr th,
@@ -5702,10 +5702,10 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
   }
 }
 #page_universe #contents table a.moc {
-  color: #00b7ff;
+  color: #00B7FF;
 }
 #page_universe #contents table a.gc {
-  color: #00e413;
+  color: #00E413;
   font-weight: bold;
 }
 #page_universe #contents table tr {
@@ -5868,7 +5868,7 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
   text-align: right !important;
 }
 #load_box table tr th[colspan="2"] {
-  color: #ccc;
+  color: #CCC;
   font-size: 0.8rem;
   font-weight: bold;
   text-transform: uppercase;
@@ -5876,8 +5876,8 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
   text-align: center !important;
   padding: 12px 0 8px;
   content: "Intel";
-  background: #24303f;
-  background: linear-gradient(to right, #1a222c 0%, #24303f 50%, #1a222c 100%) !important;
+  background: #24303F;
+  background: linear-gradient(to right, #1A222C 0%, #24303F 50%, #1A222C 100%) !important;
   width: calc(100% - 4px);
   border: 1px solid transparent;
   border-top: none;
@@ -5942,7 +5942,7 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
   width: auto;
 }
 [id^=page_universe] table tr:first-child th {
-  color: #ccc;
+  color: #CCC;
   font-size: 0.75rem;
   font-weight: bold;
   padding: 3.5px 7px;
@@ -5956,10 +5956,10 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
   text-decoration: none;
 }
 [id^=page_universe] table tr .moc {
-  color: #00b7ff;
+  color: #00B7FF;
 }
 [id^=page_universe] table tr .gc {
-  color: #00e413;
+  color: #00E413;
 }
 [id^=page_universe] table tr .ter {
   color: #a18181;
@@ -6389,9 +6389,9 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
 #page_galaxy #intel_form p {
   text-align: center;
   padding: 0 7px;
-  margin: 7px 0;
   display: flex;
   flex-direction: column;
+  margin: 7px 0;
 }
 #page_galaxy #intel_form p.right {
   position: absolute;
@@ -6540,7 +6540,7 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
   box-shadow: none;
 }
 #page_alliance_defence .maintext .ally_def_eta_wrapper .ally_def_incs_wrapper .ally_def_target .ally_def_target_links + div > a.calcz {
-  color: #32ab52 !important;
+  color: #32AB52 !important;
   font-family: inherit;
   font-size: 0.75rem;
   font-weight: bold;
@@ -7037,7 +7037,7 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
   font-size: 0.75rem;
   font-weight: bold;
   padding: 3.5px 7px;
-  background: #171e27;
+  background: #171E27;
 }
 #page_alliance_attacks .maintext > table > thead > tr[id^=target_],
 #page_alliance_attacks .maintext > table > tbody > tr[id^=target_] {
@@ -8254,7 +8254,7 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
 }
 #page_bcalc #add_own p:nth-of-type(2) {
   padding: 6px;
-  background: #171e27;
+  background: #171E27;
 }
 #page_bcalc #add_own p:nth-of-type(2) br {
   display: none;
@@ -8368,6 +8368,10 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
   margin-top: -29px;
 }
 
+#page_scan #side_select_box {
+  top: 50% !important;
+  left: 50% !important;
+}
 #page_scan div#full_page {
   display: table;
   max-width: 900px;

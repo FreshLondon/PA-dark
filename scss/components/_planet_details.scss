@@ -96,7 +96,6 @@
   #header_news {
 	background: rgba(black, .6);
 	max-width: unset;
-	//transition: ease background-color .5s;
 	position: absolute;
 	top: -1px;
 
@@ -145,13 +144,13 @@
   #header_mail {
 	padding: 0;
 	border: 1px solid transparent;
-	border-image: linear-gradient(to left, rgb(60, 107, 156) 0%, #24313f 100%);
+	border-image: linear-gradient(to left, rgb(60, 107, 156) 0%, #24313F 100%);
 	border-image-slice: 1;
 	left: 0;
 	order: 1;
 
 	&:hover {
-	  border-image: linear-gradient(to left, $color-primary 0%, #24313f 100%);
+	  border-image: linear-gradient(to left, $color-primary 0%, #24313F 100%);
 	  border-image-slice: 1;
 	}
   }
@@ -159,19 +158,19 @@
   #header_news {
 	padding: 0;
 	border: 1px solid transparent;
-	border-image: linear-gradient(to right, rgb(60, 107, 156) 0%, #24313f 100%);
+	border-image: linear-gradient(to right, rgb(60, 107, 156) 0%, #24313F 100%);
 	border-image-slice: 1;
 	right: 0;
 	order: 2;
 
 	&:hover {
-	  border-image: linear-gradient(to right, $color-primary 0%, #24313f 100%);
+	  border-image: linear-gradient(to right, $color-primary 0%, #24313F 100%);
 	  border-image-slice: 1;
 	}
   }
 
   .textlabel {
-	color: #bbb;
+	color: #BBB;
 	font-size: $text-small;
 	font-weight: bold;
 	text-transform: uppercase;
@@ -413,7 +412,7 @@
   }
 
   .textlabel {
-	color: #bbb;
+	color: #BBB;
 	font-size: $text-small;
 	font-weight: bold;
 	text-transform: uppercase;
