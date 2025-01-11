@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*!
-*  v5.5
+*  v5.6
 *  This skin addon is designed to run by itself, with no other added CSS.
 *
 *  If this skin customisation adds even a tiny bit of enjoyment to your gaming experience it was well worth the
@@ -2632,7 +2632,7 @@ hr {
 }
 
 #planet_summary {
-  padding: 30px 0 0;
+  padding: 28px 0 0;
   display: flex;
   align-items: center;
   justify-content: space-around;
