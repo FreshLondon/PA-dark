@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*!
-*  v5.6
+*  v5.7
 *  This skin addon is designed to run with the r32 skin selected in PA preferences.
 *
 *  If this skin customisation adds even a tiny bit of enjoyment to your gaming experience it was well worth the countless hours of development.
@@ -914,7 +914,7 @@ hr {
   border-image: linear-gradient(to right, transparent 0%, rgba(82, 165, 248, 0.5) 50%, transparent 100%);
   border-image-slice: 1;
   position: absolute;
-  top: -31px;
+  top: -35px;
   transition: ease all 0.5s;
 }
 #planet_summary > div {
@@ -7530,6 +7530,116 @@ body::-webkit-scrollbar-button,
 
 #menu {
   padding: 0 0 14px;
+}
+
+#admin_page {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  width: auto;
+  max-width: 90rem;
+  gap: 14px;
+}
+#admin_page #admin_menu {
+  background: #1a222c;
+  display: flex;
+  margin: 30px 0;
+  background: transparent;
+  border: none;
+  flex-direction: column;
+  justify-content: center;
+  white-space: nowrap;
+  gap: 2px;
+  position: relative;
+  width: 168px;
+}
+#admin_page #admin_menu li {
+  background: #24303f;
+}
+#admin_page #admin_menu li#admin_menu_game {
+  padding: 7px;
+  width: 100%;
+  border-top: 1px solid transparent;
+  border-image: linear-gradient(to right, transparent 0%, rgba(82, 165, 248, 0.5) 100%);
+  border-image-slice: 1;
+  box-shadow: inset 0 0 8px 2px rgba(0, 0, 0, 0.25), 3px 0 6px -3px rgba(0, 0, 0, 0.25);
+  width: 100% !important;
+}
+#admin_page #admin_menu li#admin_menu_game a {
+  color: #52a5f8 !important;
+}
+#admin_page #admin_menu li#admin_menu_game a:hover {
+  color: #CCC !important;
+}
+#admin_page #admin_menu li.admin_menu_grp {
+  padding: 0;
+  margin: 0;
+  display: flex !important;
+  flex-direction: column;
+  width: 100%;
+}
+#admin_page #admin_menu li.admin_menu_grp:empty {
+  display: none;
+}
+#admin_page #admin_menu li.admin_menu_grp > span {
+  font-size: 0.75rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 3.5px 7px;
+  display: block;
+  background: #19222B;
+  border-bottom: 1px solid transparent;
+  border-image: linear-gradient(to right, transparent 0%, rgba(82, 165, 248, 0.5) 100%);
+  border-image-slice: 1;
+}
+#admin_page #admin_menu li.admin_menu_grp > ul {
+  height: auto;
+  padding: 3.5px 0 7px;
+  border: none;
+  border-right: 1px solid transparent;
+  border-image: linear-gradient(to bottom, rgba(82, 165, 248, 0.3) 0%, transparent 75%);
+  border-image-slice: 1;
+  box-shadow: inset 0 0 8px 2px rgba(0, 0, 0, 0.25), 3px 0 6px -3px rgba(0, 0, 0, 0.25);
+}
+#admin_page #admin_menu li.admin_menu_grp > ul > li {
+  padding: 0 7px 2.1px;
+}
+#admin_page #admin_menu li.admin_menu_grp > ul > li > ul {
+  margin-left: 7px;
+}
+#admin_page #admin_menu li.admin_menu_grp a {
+  color: #52a5f8;
+}
+#admin_page #admin_menu li.admin_menu_grp a:hover {
+  color: #CCC;
+}
+#admin_page #contents {
+  width: calc(100% - 182px) !important;
+}
+#admin_page #contents .container {
+  width: 100% !important;
+}
+#admin_page #contents .container input[name=case_name] {
+  width: 225px;
+}
+#admin_page #contents table {
+  min-width: 600px;
+  max-width: 100%;
+  overflow: auto;
+  white-space: nowrap;
+}
+#admin_page #contents table tr:nth-child(odd) {
+  background: #24303f;
+}
+#admin_page #contents table tr:nth-child(even) {
+  background: #1e2935;
+}
+#admin_page #contents table tr:not(:first-child):hover td {
+  background: rgba(82, 165, 248, 0.15);
+}
+#admin_page #contents table tr th,
+#admin_page #contents table tr td {
+  border: none;
 }
 
 /*!
