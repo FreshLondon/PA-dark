@@ -66,6 +66,8 @@
 	width: 50%;
 	max-width: 245px;
 	margin: 0 0 7px;
+	text-indent: 0;
+	height: auto;
 
 	&:last-of-type:nth-of-type(even) {
 	  padding-top: 4px;
@@ -402,7 +404,7 @@
 	  border-image: linear-gradient(to right, transparent 0%, rgba($color-primary, .5) 50%, transparent 100%);
 	  border-image-slice: 1;
 	  position: absolute;
-	  top: -35px;
+	  top: -31px;
 	  transition: ease all 0.5s;
 	}
   }

@@ -39,6 +39,8 @@
 	&#menu_view_link {
 	  font-size: $text-small;
 	  margin-bottom: 0;
+	  padding: 0;
+	  width: 100%;
 
 	  a {
 		text-align: center;
@@ -127,6 +129,7 @@
 	font-size: 0;
 	padding-bottom: 8rem;
 	margin-top: 28px;
+	width: 100%;
 
 	span {
 	  &#time {
@@ -143,6 +146,7 @@
 		color: rgba($color-text, .5);
 		font-size: $text-medium;
 		position: relative;
+		text-align: center;
 
 		&:before {
 		  color: rgba($color-primary, .5);

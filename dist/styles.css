@@ -382,6 +382,8 @@ hr {
 #menu > li#menu_view_link {
   font-size: 0.75rem;
   margin-bottom: 0;
+  padding: 0;
+  width: 100%;
 }
 #menu > li#menu_view_link a {
   text-align: center;
@@ -451,6 +453,7 @@ hr {
   font-size: 0;
   padding-bottom: 8rem;
   margin-top: 28px;
+  width: 100%;
 }
 #menu #menu_time span#time {
   color: #ccc;
@@ -464,6 +467,7 @@ hr {
   color: rgba(204, 204, 204, 0.5);
   font-size: 0.8rem;
   position: relative;
+  text-align: center;
 }
 #menu #menu_time span#time_loaded:before {
   color: rgba(82, 165, 248, 0.5);
@@ -623,6 +627,8 @@ hr {
   width: 50%;
   max-width: 245px;
   margin: 0 0 7px;
+  text-indent: 0;
+  height: auto;
 }
 #header > div:last-of-type:nth-of-type(even) {
   padding-top: 4px;
@@ -914,7 +920,7 @@ hr {
   border-image: linear-gradient(to right, transparent 0%, rgba(82, 165, 248, 0.5) 50%, transparent 100%);
   border-image-slice: 1;
   position: absolute;
-  top: -35px;
+  top: -31px;
   transition: ease all 0.5s;
 }
 #planet_summary > div {

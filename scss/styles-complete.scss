@@ -1,5 +1,5 @@
 /*!
-*  v5.6
+*  v5.7
 *  This skin addon is designed to run by itself, with no other added CSS.
 *
 *  If this skin customisation adds even a tiny bit of enjoyment to your gaming experience it was well worth the
@@ -35,8 +35,8 @@
 @import 'components/galaxy_forum';
 @import 'components/galaxy_status';
 @import 'components/mining';
-@import 'components/research_construction_waves';
-//@import "components/research_construction_waves2";
+//@import 'components/research_construction_waves';
+@import 'components/research_construction_waves2';
 @import 'components/population';
 @import 'components/covert_ops';
 @import 'components/production';
@@ -67,6 +67,9 @@
 //
 @import 'components/scrolls';
 @import 'lib/animations';
+
+@import 'components/r32-specific';
+@import 'components/admin';
 
 /*!
 *
