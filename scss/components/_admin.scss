@@ -92,6 +92,14 @@
 	}
   }
 
+  #maintext {
+	overflow: auto;
+
+	p {
+	  text-wrap: auto;
+	}
+  }
+
   #contents {
 	width: calc(100% - 182px) !important;
 

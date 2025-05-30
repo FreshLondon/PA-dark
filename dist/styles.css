@@ -7619,6 +7619,12 @@ body::-webkit-scrollbar-button,
 #admin_page #admin_menu li.admin_menu_grp a:hover {
   color: #CCC;
 }
+#admin_page #maintext {
+  overflow: auto;
+}
+#admin_page #maintext p {
+  text-wrap: auto;
+}
 #admin_page #contents {
   width: calc(100% - 182px) !important;
 }
