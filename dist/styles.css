@@ -7653,6 +7653,9 @@ body::-webkit-scrollbar-button,
 #admin_page #contents table tr td {
   border: none;
 }
+#admin_page textarea {
+  min-height: 300px;
+}
 
 /*!
 *
