@@ -693,11 +693,13 @@
 	padding: 1px;
 	overflow: auto;
 	background: $color-background !important;
-	max-height: 94vh;
-	position: fixed !important;
-	top: 50% !important;
-	left: 50% !important;
-	transform: translate(-50%, -50%);
+	@include respond-above(md) {
+	  max-height: 94vh;
+	  position: fixed !important;
+	  top: 50% !important;
+	  left: 50% !important;
+	  transform: translate(-50%, -50%);
+	}
 
 	p {
 	  &:first-child {

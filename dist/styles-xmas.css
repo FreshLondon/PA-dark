@@ -6531,11 +6531,15 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
   padding: 1px;
   overflow: auto;
   background: #1a222c !important;
-  max-height: 94vh;
-  position: fixed !important;
-  top: 50% !important;
-  left: 50% !important;
-  transform: translate(-50%, -50%);
+}
+@media (min-width: 992px) {
+  #page_bcalc #add_own {
+    max-height: 94vh;
+    position: fixed !important;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%);
+  }
 }
 #page_bcalc #add_own p:first-child {
   padding: 0;
