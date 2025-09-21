@@ -251,6 +251,11 @@
 		  padding-left: 3.5px !important;
 		}
 
+		input,
+		select {
+		  max-width: 125px;
+		}
+
 		input {
 		  &:not([type='checkbox']) {
 			width: 100%;

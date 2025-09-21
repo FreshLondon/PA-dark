@@ -3041,9 +3041,6 @@ span.center {
 
 #side_select_box {
   width: auto !important;
-  position: fixed;
-  left: calc(50% + 91px) !important;
-  transform: translateX(-50%);
 }
 
 #pabox_inner {
@@ -7282,6 +7279,10 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
 #attack_claim_form table tr td:nth-child(2) {
   padding-left: 3.5px !important;
 }
+#attack_claim_form table tr td input,
+#attack_claim_form table tr td select {
+  max-width: 125px;
+}
 #attack_claim_form table tr td input:not([type=checkbox]) {
   width: 100%;
   margin: 0;
@@ -8218,14 +8219,6 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
 #page_bcalc #side_select_box .right a {
   font-weight: bold;
 }
-#page_bcalc #add_other,
-#page_bcalc #fleet_select_box,
-#page_bcalc #side_select_box {
-  position: fixed;
-  top: 25% !important;
-  left: 50% !important;
-  transform: translateX(-50%);
-}
 #page_bcalc #side_select_box {
   width: 216px !important;
 }
@@ -8424,10 +8417,6 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
   margin-top: -29px;
 }
 
-#page_scan #side_select_box {
-  top: 50% !important;
-  left: 50% !important;
-}
 #page_scan div#full_page {
   display: table;
   max-width: 900px;
