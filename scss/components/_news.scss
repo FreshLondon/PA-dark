@@ -64,8 +64,11 @@
 
 		  table {
 			background: transparent;
-			width: 100%;
-			margin: 0 auto 14px;
+			width: auto;
+			margin: 0 0 14px;
+			@include respond-above(md) {
+			  min-width: 350px;
+			}
 
 			tr {
 			  th {
@@ -110,6 +113,8 @@
 
 			&.news_combat_fleet_salvage,
 			&.news_combat_cap_roids {
+			  width: auto;
+
 			  tr {
 				th,
 				td {
@@ -154,12 +159,6 @@
 					}
 				  }
 				}
-			  }
-			}
-
-			&.news_combat_cap_roids {
-			  span.textlabel {
-				padding-left: 3rem;
 			  }
 			}
 
@@ -237,6 +236,7 @@
 
 			&.news_combat_report {
 			  text-align: center;
+			  width: auto;
 
 			  tr {
 				&:nth-child(n + 3) {
@@ -394,6 +394,32 @@
 			  a {
 				color: rgba($color-primary, .8);
 			  }
+			}
+		  }
+		}
+	  }
+	}
+
+	table {
+	  &.news_combat_surface {
+		max-width: 350px;
+
+		tr {
+		  th {
+			text-align: center;
+		  }
+
+		  td {
+			&:first-child {
+			  text-align: center;
+			}
+
+			&:last-child {
+			  text-align: left !important;
+			}
+
+			&[colspan='2'] {
+			  text-align: center !important;
 			}
 		  }
 		}

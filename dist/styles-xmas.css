@@ -5811,8 +5811,13 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
 }
 #view_news > .maintext > table > tbody > tr table {
   background: transparent;
-  width: 100%;
-  margin: 0 auto 14px;
+  width: auto;
+  margin: 0 0 14px;
+}
+@media (min-width: 992px) {
+  #view_news > .maintext > table > tbody > tr table {
+    min-width: 350px;
+  }
 }
 #view_news > .maintext > table > tbody > tr table tr th {
   background: #1a222c;
@@ -5838,6 +5843,9 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
 #view_news > .maintext > table > tbody > tr table:last-child {
   margin-bottom: 0;
 }
+#view_news > .maintext > table > tbody > tr table.news_combat_fleet_salvage, #view_news > .maintext > table > tbody > tr table.news_combat_cap_roids {
+  width: auto;
+}
 #view_news > .maintext > table > tbody > tr table.news_combat_fleet_salvage tr th,
 #view_news > .maintext > table > tbody > tr table.news_combat_fleet_salvage tr td, #view_news > .maintext > table > tbody > tr table.news_combat_cap_roids tr th,
 #view_news > .maintext > table > tbody > tr table.news_combat_cap_roids tr td {
@@ -5859,9 +5867,6 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
 }
 #view_news > .maintext > table > tbody > tr table.news_combat_fleet_salvage tr:nth-child(2) th.eonium span:after, #view_news > .maintext > table > tbody > tr table.news_combat_cap_roids tr:nth-child(2) th.eonium span:after {
   background: url(/images/template53/eonium_16.png) no-repeat center, #171e27;
-}
-#view_news > .maintext > table > tbody > tr table.news_combat_cap_roids span.textlabel {
-  padding-left: 3rem;
 }
 #view_news > .maintext > table > tbody > tr table.news_combat_fleet_stolen_ships, #view_news > .maintext > table > tbody > tr table.news_combat_fleet_loss {
   min-width: unset;
@@ -5903,6 +5908,7 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
 }
 #view_news > .maintext > table > tbody > tr table.news_combat_report {
   text-align: center;
+  width: auto;
 }
 #view_news > .maintext > table > tbody > tr table.news_combat_report tr:nth-child(n+3) td:nth-child(2) {
   background: rgba(255, 0, 0, 0.15);
@@ -5971,6 +5977,21 @@ div[id^=page_universe_] table tr:not([class*=relations]):nth-child(odd) td:empty
 }
 #view_news .maintext > table > tbody > tr > td:first-child a {
   color: rgba(82, 165, 248, 0.8);
+}
+#view_news .maintext table.news_combat_surface {
+  max-width: 350px;
+}
+#view_news .maintext table.news_combat_surface tr th {
+  text-align: center;
+}
+#view_news .maintext table.news_combat_surface tr td:first-child {
+  text-align: center;
+}
+#view_news .maintext table.news_combat_surface tr td:last-child {
+  text-align: left !important;
+}
+#view_news .maintext table.news_combat_surface tr td[colspan="2"] {
+  text-align: center !important;
 }
 
 #page_news_entry table table tr:nth-child(even) {
