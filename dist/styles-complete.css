@@ -2663,6 +2663,7 @@ hr {
 }
 #planet_summary #planet_summary_header {
   position: relative;
+  width: 100%;
 }
 #planet_summary #planet_summary_header:after {
   color: #ccc;
@@ -2688,6 +2689,11 @@ hr {
 }
 #planet_summary > div {
   width: 350px;
+}
+@media (max-width: 767px) {
+  #planet_summary > div {
+    width: 100%;
+  }
 }
 #planet_summary .textlabel {
   color: #BBB;

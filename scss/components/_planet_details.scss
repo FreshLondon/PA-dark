@@ -384,6 +384,7 @@
 
   #planet_summary_header {
 	position: relative;
+	width: 100%;
 
 	&:after {
 	  color: $color-offwhite;
@@ -411,6 +412,9 @@
 
   > div {
 	width: 350px;
+	@include respond-below(sm) {
+	  width: 100%;
+	}
   }
 
   .textlabel {
